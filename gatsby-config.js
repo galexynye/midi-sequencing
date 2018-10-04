@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
+    title: 'Midi Sequencing',
+    author: 'Alex Nye',
     description: 'A starter blog demonstrating what Gatsby can do.',
     siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
   },
@@ -65,5 +65,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    'gatsby-plugin-sass'
   ],
 }
