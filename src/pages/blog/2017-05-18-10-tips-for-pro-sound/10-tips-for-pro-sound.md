@@ -2,6 +2,7 @@
 title: "10 Tips for Professional Sounding Tracks"
 date: '2017-05-18'
 # tags: 'gear', 'software', 'virtual instrument'
+tags: ['gear', 'softwar']
 ---
 
 <!-- TODO: Links -->

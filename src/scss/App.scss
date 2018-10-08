@@ -1,5 +1,5 @@
 h1 {
-    color: rgb(114, 114, 236);
+    color: rgb(109, 75, 204);
     margin-bottom: 40px;
 }
 
@@ -8,4 +8,21 @@ ol {
         text-align: center;
     }
     
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+#noUnderLine{
+    text-decoration: none;
+}
+
+.phov:hover{
+    cursor: pointer;
+   
+}
+
+a {
+    // text-decoration: line-through;
 }

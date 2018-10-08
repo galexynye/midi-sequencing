@@ -6,7 +6,6 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
-import '../scss/App.scss'
 
 class BlogIndex extends React.Component {
   render() {
@@ -23,6 +22,9 @@ class BlogIndex extends React.Component {
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: '../assets/midi-sequencing-icon.png' }
+          ]}
         />
         <Bio />
         {posts.map(({ node }) => {

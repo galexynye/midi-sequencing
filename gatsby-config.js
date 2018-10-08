@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: 'Midi Sequencing',
     author: 'Alex Nye',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    description: 'Music production Blog.',
+    siteUrl: 'https://midisequencing.com',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,7 +21,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 630,
+              wrapperStyle: `margin-bottom: 1.0725rem`
             },
           },
           {
@@ -54,7 +55,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/assets/midi-sequencing-icon-circle.png`,
       },
     },
     `gatsby-plugin-offline`,

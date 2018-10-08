@@ -13,7 +13,7 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          marginBottom: rhythm(2.5),
+          marginBottom: rhythm(0),
         }}
       >
         {/* <img
@@ -26,7 +26,11 @@ class Bio extends React.Component {
             height: rhythm(2),
           }}
         /> */}
-        <p>
+        <p 
+          style={{
+            marginBottom: "0px"
+          }}
+        >
           Written by <strong>Alex Nye</strong>{' '}
         </p>
       </div>

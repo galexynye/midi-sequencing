@@ -13,7 +13,23 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
-
+    let tags 
+    // TODO: make tags a link to a component that loads a query of tags
+    if(post.frontmatter.tags){
+      tags = post.frontmatter.tags.map(tag => 
+        <li>
+          <Link
+            class="phov"
+            style={{
+              textDecoration: 'none',
+              boxShadow: 'none',
+              'margin-right': '10px',
+        }}
+          >{`${tag}`} </Link> 
+        </li>
+        )
+    }
+    
     return (
       <Layout location={this.props.location}>
         <Helmet
@@ -22,6 +38,15 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <h1>{post.frontmatter.title}</h1>
+        <ul
+          style={{
+            listStyle: 'none',
+            display: 'flex',
+            marginTop: rhythm(-1),
+          }}
+        >
+          {tags}
+        </ul>
         <p
           style={{
             ...scale(-1 / 5),
@@ -32,6 +57,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
+        
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -88,6 +114,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
     }
   }
