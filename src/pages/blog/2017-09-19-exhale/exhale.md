@@ -1,6 +1,8 @@
 ---
+path: '/blog/2017-09-19-exhale/exhale'
 title: Exhale by Output
 date: "2017-09-19"
+tags: ['output', 'gear']
 ---
 <!-- TODO: Fix Link at bottom -->
 <p style="text-align: center;"><iframe src="https://www.youtube.com/embed/gu18sGiSR7Y" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>

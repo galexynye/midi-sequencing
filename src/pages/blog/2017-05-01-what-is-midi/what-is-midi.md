@@ -1,6 +1,8 @@
 ---
-title: "What Midi Really Is"
+path: "/blog/2017-05-01-what-is-midi/what-is/midi"
 date: "2017-05-01"
+title: "What Midi Really Is"
+tags: ['basics', 'midi']
 ---
 <div>Sometime in my first couple weeks at Berklee I saw a poster that said, “Midi is for people with no friends. Come to Jam Club!”, and I thought, "Midi must be for me."</div>
 <div>But little did the jerks at jam club know, with midi you can control a whole kaleidoscope of sound with looper pedals, drum triggers, software synths, or entire sampled orchestras.</div>

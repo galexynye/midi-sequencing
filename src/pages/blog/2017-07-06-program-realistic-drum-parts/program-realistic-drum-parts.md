@@ -1,6 +1,8 @@
 ---
+path: '/blog/2017-07-06-program-realistic-drum-parts/program-realistic-drum-parts'
 title: How to Program Realistic Drum Parts
 date: "2017-07-06"
+tags: ['tips', 'midi']
 ---
 <p ><iframe src="https://www.youtube.com/embed/5wRu8phxn10" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 The key to programming realistic drum parts is to play them in with your midi controller. Fortunately, you don't have to have amazing rhythm to sound like a studio drummer. Playing in your drum parts will give a human feel that you can get right by tightening up your midi manually and using proper quantinization techniques.

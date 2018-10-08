@@ -1,6 +1,8 @@
 ---
+path: "/blog/2017-05-09-anaolog-strings/analog-strings"
 title: Analog Strings by Output
 date: "2017-05-09"
+tags: ['output', 'gear', 'plugins']
 ---
 <iframe src="https://www.youtube.com/embed/ILChxpZ76TQ?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 

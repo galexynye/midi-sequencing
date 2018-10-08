@@ -1,6 +1,8 @@
 ---
+path: '/blog/2017-06-09-mix-drums-like-phil-collins/mix-drums-like-phil-collins'
 title: "How to Mix Drums to Sound Like Phil Collins"
 date: "2017-06-09"
+tags: ['mixing', 'gear']
 ---
 <p ><iframe src="https://www.youtube.com/embed/X1S9RqgFHy0?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <p> The basic concept to getting big roomy drum sounds like the classic Phil Collins drums from "In the Air Tonight" comes from compressing a reverb onto the drums and then gating the result. Mixing drums like this can yield big powerful drum hits yet still leave space for the music around the drums.</p>

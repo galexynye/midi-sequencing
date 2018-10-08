@@ -1,6 +1,8 @@
 ---
+path: '/blog/2017-08-08-how-to-set-up-a-mix/how-to-set-up-a-mix'
 title: How to Set Up A Mix Session
 date: "2017-08-08"
+tags: ['basics', 'mixing']
 ---
 <!-- <img class="aligncenter wp-image-1639 size-full" src="https://www.midisequencing.com/wp-content/uploads/2017/08/Routing-Audio-1.png" alt="Pictoral Guide to Routing Audio" width="4840" height="2961" /> -->
 <!-- [mix guide]: ../media/Routing-Audio-1-1024x626.png -->

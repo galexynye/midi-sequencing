@@ -1,6 +1,8 @@
 ---
+path: "/blog/2017-05-05-humanize-midi/humanize-midi"
 title: "Automatically Humanize Midi"
 date: "2017-05-05"
+tags: ["midi", "tips"]
 ---
 <iframe src="https://www.youtube.com/embed/KIQ3yvUSK00?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 

@@ -1,6 +1,8 @@
 ---
+path: '/blog/2017-06-17-eq-essential-techniques/essential-eq'
 title: Essential Eq Techniques
 date: "2017-06-17"
+tags: ['mixing', 'basics']
 ---
 
 

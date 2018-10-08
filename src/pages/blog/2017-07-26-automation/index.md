@@ -1,7 +1,8 @@
 ---
+path: '/blog/2017-07-26-automation/index'
 title: "Automation: Everything You Need to Know"
 date: '2017-07-26'
-# tags: 'gear', 'software', 'virtual instrument'
+tags: ['mixing', 'basics']
 ---
 <!-- TODO: Style Fotos -->
 <!-- TODO: Fix Links -->

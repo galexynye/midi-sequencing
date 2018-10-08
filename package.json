@@ -27,6 +27,7 @@
     "lodash": "^4.17.11",
     "node-sass": "^4.9.3",
     "prismjs": "^1.15.0",
+    "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
@@ -34,7 +35,8 @@
     "typeface-merriweather": "0.0.43",
     "typeface-montserrat": "0.0.43",
     "typography": "^0.16.17",
-    "typography-theme-wordpress-2016": "^0.15.10"
+    "typography-theme-wordpress-2016": "^0.15.10",
+    "urlize": "git://github.com/ile/urlize.git"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

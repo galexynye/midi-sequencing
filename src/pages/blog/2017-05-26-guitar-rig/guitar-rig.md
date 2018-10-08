@@ -1,6 +1,8 @@
 ---
+path: '/blog/2017-05-26-guitar-rig/guitar-rig'
 title: Guitar Rig by Native Instruments
 date: "2017-05-26"
+tags: ['native-instruments', 'gear', 'guitar']
 ---
 
 <iframe src="https://www.youtube.com/embed/akDrNX4Jdzg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

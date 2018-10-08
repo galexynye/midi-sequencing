@@ -13,22 +13,22 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
-    let tags 
-    // TODO: make tags a link to a component that loads a query of tags
-    if(post.frontmatter.tags){
-      tags = post.frontmatter.tags.map(tag => 
-        <li>
-          <Link
-            class="phov"
-            style={{
-              textDecoration: 'none',
-              boxShadow: 'none',
-              'margin-right': '10px',
-        }}
-          >{`${tag}`} </Link> 
-        </li>
-        )
-    }
+    // let tags 
+    // // TODO: make tags a link to a component that loads a query of tags
+    // if(post.frontmatter.tags){
+    //   tags = post.frontmatter.tags.map(tag => 
+    //     <li>
+    //       <Link
+    //         class="phov"
+    //         style={{
+    //           textDecoration: 'none',
+    //           boxShadow: 'none',
+    //           'margin-right': '10px',
+    //     }}
+    //       >{`${tag}`} </Link> 
+    //     </li>
+    //     )
+    // }
     
     return (
       <Layout location={this.props.location}>
@@ -38,7 +38,7 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <h1>{post.frontmatter.title}</h1>
-        <ul
+        {/* <ul
           style={{
             listStyle: 'none',
             display: 'flex',
@@ -46,7 +46,7 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           {tags}
-        </ul>
+        </ul> */}
         <p
           style={{
             ...scale(-1 / 5),

@@ -1,6 +1,8 @@
 ---
+path: '/blog/2017-05-04-which-daw-should-i-move/which-daw-should-i-use'
 title: "Which DAW Should I Use?"
 date: "2017-05-04"
+tags: ['basics', 'software', 'daw']
 ---
 Each <strong>D</strong>igital <strong>A</strong>udio <strong>W</strong>orkstation has different advantages and pitfalls for music creation. If you want to work professionally in audio you might want get to know Pro Tools, if you're making tracks in your bedroom on a PC, FL Studio might be your best choice, here's why.
 <h3 style="text-align: center;">NOT Audio Quality</h3>

@@ -1,7 +1,8 @@
 ---
+path: '/blog/2017-08-01-boscomac/boscomac'
 title: Boscomac!
 date: '2017-08-01'
-# tags: 'gear', 'software', 'virtual instrument'
+tags: ['gear', 'native-instruments', 'free']
 ---
 
 <p ><iframe src="https://www.youtube.com/embed/Ay4M8fi5zRM" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>

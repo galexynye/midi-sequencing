@@ -21,14 +21,15 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
-              wrapperStyle: `margin-bottom: 1.0725rem`
+              maxWidth: 800,
+              // wrapperStyle: `margin-bottom: 1.0725rem`
+              wrapperStyle: `margin-bottom: 1.2rem`
             },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: `margin-bottom: 1.2rem`,
             },
           },
           'gatsby-remark-prismjs',

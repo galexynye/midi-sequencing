@@ -1,6 +1,8 @@
 ---
+path: '../../blog/2017-05-12-how-to-edit-midi-sustain-pedal/how-to-edit-midi-sustain-pedal'
 title: How to Edit Midi Sustain Pedal
 date: "2017-05-12"
+tags: ['tips', 'midi']
 ---
 <iframe src="https://www.youtube.com/embed/pa_8N7Hp_JA?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
