@@ -1,5 +1,5 @@
 ---
-path: "/blog/2017-09-22-hear-compression/hear-compression"
+path: "/blog/hear-compression"
 title: How to Use Compression
 date: "2017-09-22"
 tags: ["mixing", "compression"]

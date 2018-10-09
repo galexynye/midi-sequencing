@@ -1,5 +1,5 @@
 ---
-path: '/blog/2017-06-12-reverb-essentials/reverb-essentials'
+path: '/blog/reverb-essentials'
 title: "Reverb: Everything You Should Know"
 date: "2017-06-12"
 tags: ['mixing', 'basics']

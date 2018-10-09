@@ -1,5 +1,5 @@
 ---
-path: '/blog/2017-08-01-boscomac/boscomac'
+path: '/blog/boscomac'
 title: Boscomac!
 date: '2017-08-01'
 tags: ['gear', 'native-instruments', 'free']

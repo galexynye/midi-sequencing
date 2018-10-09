@@ -1,5 +1,5 @@
 ---
-path: '/blog/2017-07-26-automation/index'
+path: '/blog/automation'
 title: "Automation: Everything You Need to Know"
 date: '2017-07-26'
 tags: ['mixing', 'basics']

@@ -1,5 +1,5 @@
 ---
-path: "/blog/2017-05-09-anaolog-strings/analog-strings"
+path: "/blog/analog-strings"
 title: Analog Strings by Output
 date: "2017-05-09"
 tags: ['output', 'gear', 'plugins']

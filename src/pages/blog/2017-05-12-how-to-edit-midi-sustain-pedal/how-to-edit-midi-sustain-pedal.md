@@ -1,5 +1,5 @@
 ---
-path: '../../blog/2017-05-12-how-to-edit-midi-sustain-pedal/how-to-edit-midi-sustain-pedal'
+path: '/blog/how-to-edit-midi-sustain-pedal'
 title: How to Edit Midi Sustain Pedal
 date: "2017-05-12"
 tags: ['tips', 'midi']

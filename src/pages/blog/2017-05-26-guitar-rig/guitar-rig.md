@@ -1,5 +1,5 @@
 ---
-path: '/blog/2017-05-26-guitar-rig/guitar-rig'
+path: '/blog/guitar-rig'
 title: Guitar Rig by Native Instruments
 date: "2017-05-26"
 tags: ['native-instruments', 'gear', 'guitar']

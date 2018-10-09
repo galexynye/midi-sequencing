@@ -9,13 +9,8 @@ const Tags = ({ pageContext, data }) => {
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+    } tagged with "${tag}"`
 
-  if(tag){
-    return (
-      <div>Fuck</div>
-    )
-  }
   return (
     <div>
       <h1>{tagHeader}</h1>
@@ -39,7 +34,7 @@ const Tags = ({ pageContext, data }) => {
 }
 
 Tags.propTypes = {
-  pageContext: PropTypes.shape({
+  pathContext: PropTypes.shape({
     tag: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({

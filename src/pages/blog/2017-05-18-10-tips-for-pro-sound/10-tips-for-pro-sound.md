@@ -1,8 +1,8 @@
 ---
-path: '/blog/2017-05-18-10-tips-for-pro-sound/10-tips-for-pro-sound'
+path: '/blog/10-tips-for-pro-sound'
 title: "10 Tips for Professional Sounding Tracks"
 date: '2017-05-18'
-tags: ['gear', 'softwar']
+tags: ['gear', 'mixing']
 ---
 
 <!-- TODO: Links -->

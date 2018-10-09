@@ -1,5 +1,5 @@
 ---
-path: '/blog/2017-06-09-mix-drums-like-phil-collins/mix-drums-like-phil-collins'
+path: '/blog/mix-drums-like-phil-collins'
 title: "How to Mix Drums to Sound Like Phil Collins"
 date: "2017-06-09"
 tags: ['mixing', 'gear']

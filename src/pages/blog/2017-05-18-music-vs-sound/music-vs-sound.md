@@ -1,5 +1,5 @@
 ---
-path: '../../blog/2017-05-18-music-vs-sound/music-vs-sound'
+path: '/blog/music-vs-sound'
 title: Music VS Sound
 date: "2017-05-18"
 tags: ['basics', 'mixing', 'philosophy']

@@ -3,6 +3,9 @@ import { Link } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
 import '../scss/App.scss'
+import Footer from './Footer'
+import MidiSequencingWords from '../assets/WordsLogoTransparent.png'
+
 
 class Template extends React.Component {
   render() {
@@ -12,24 +15,30 @@ class Template extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
+        // <h1
+        //   style={{
+        //     ...scale(1.5),
+        //     marginBottom: rhythm(1.5),
+        //     marginTop: 0,
+        //   }}
+        // >
+        
           <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
+            // style={{
+            //   boxShadow: 'none',
+            //   textDecoration: 'none',
+            //   color: 'inherit',
+            // }}
             to={'/'}
           >
-            Midi Sequencing
+            {/* Midi Sequencing */}
+            <img 
+              style={{
+                marginBottom:'0px'
+              }}
+              src={MidiSequencingWords} alt=""/>
           </Link>
-        </h1>
+        // </h1>
       )
     } else {
       header = (
@@ -64,6 +73,7 @@ class Template extends React.Component {
       >
         {header}
         {children}
+        <Footer />
       </div>
     )
   }

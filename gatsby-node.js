@@ -21,6 +21,7 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                   frontmatter {
                     title
+                    tags
                   }
                 }
               }
@@ -64,8 +65,7 @@ exports.createPages = ({ graphql, actions }) => {
         // Make tag pages
         tags.forEach(tag => {
           createPage({
-            // path: `/tags/${_.kebabCase(tag)}/`,
-            path: `/tags/${tag}/`,
+            path: `/tags/${_.kebabCase(tag)}/`,
             component: tagTemplate,
             context: {
               tag,
@@ -80,15 +80,7 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  // if (node.internal.type === `MarkdownRemark`) {
-  //   const value = createFilePath({ node, getNode })
-  //   createNodeField({
-  //     name: `slug`,
-  //     node,
-  //     value,
-  //   });
-  //   return
-  // }
+
   if (node.internal.type === `MarkdownRemark` && getNode(node.parent).internal.type === `File`) {
     if (node.frontmatter.slug) {
       createNodeField({
@@ -137,6 +129,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       }
     }
   }
+
+  //   if (node.internal.type === `MarkdownRemark`) {
+  //   const value = createFilePath({ node, getNode })
+  //   createNodeField({
+  //     name: `slug`,
+  //     node,
+  //     value,
+  //   });
+  //   return
+  // }
 }
 
 

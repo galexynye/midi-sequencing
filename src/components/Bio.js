@@ -6,6 +6,7 @@ import 'typeface-merriweather'
 
 // import profilePic from './profile-pic.jpg'
 import { rhythm } from '../utils/typography'
+import Social from './Social'
 
 class Bio extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
+          flexFlow: 'column',
           marginBottom: rhythm(0),
         }}
       >
@@ -31,8 +33,12 @@ class Bio extends React.Component {
             marginBottom: "0px"
           }}
         >
-          Written by <strong>Alex Nye</strong>{' '}
+          Gear Reviews and Music Production Techniques
         </p>
+        <div className="marTSmall">
+          <Social size="1x" />
+        </div>
+        
       </div>
     )
   }

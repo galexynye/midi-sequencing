@@ -1,10 +1,10 @@
 ---
-path: '/blog/2017-06-01-how-to-build-a-studio/how-to-build-a-studio'
+path: '/blog/how-to-build-a-studio'
 title: "How to Build A Home Studio From Nothing to Everything"
 date: "2017-06-01"
 tags: ['tips', 'gear', 'mixing']
 ---
-
+<!-- TODO: Change to affiliate Links -->
 <p ><img src="./media/how-to-build-a-home-studio/studio-1.jpg" alt="A very nice Home Studio " width="1024" height="620" /></p>
 <p >You will continually upgrade your studio from the second you download your first DAW to long after, when modular synths line the walls of your home like a mad science lab. Knowing what equipment to buy and when to buy it is vital to improving your sound without wasting time and money. We are going to take a look at how a home studio build evolves from humble beginnings to touring some of the best home studio's ever built and what gear to get each step of the way. Tier 3 includes a large checklist of different tools and quality gear essential to a studio. Here is the overview.</p>
 

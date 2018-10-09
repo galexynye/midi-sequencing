@@ -1,5 +1,5 @@
 ---
-path: "/blog/2017-05-01-what-is-midi/what-is/midi"
+path: "/blog/what-is-midi"
 date: "2017-05-01"
 title: "What Midi Really Is"
 tags: ['basics', 'midi']

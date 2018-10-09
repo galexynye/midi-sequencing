@@ -1,5 +1,5 @@
 ---
-path: '/blog/2017-08-08-how-to-set-up-a-mix/how-to-set-up-a-mix'
+path: '/blog/how-to-set-up-a-mix'
 title: How to Set Up A Mix Session
 date: "2017-08-08"
 tags: ['basics', 'mixing']

@@ -1,5 +1,5 @@
 ---
-path: "/blog/2017-05-05-humanize-midi/humanize-midi"
+path: "/blog/humanize-midi"
 title: "Automatically Humanize Midi"
 date: "2017-05-05"
 tags: ["midi", "tips"]

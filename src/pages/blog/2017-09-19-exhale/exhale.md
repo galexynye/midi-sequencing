@@ -1,5 +1,5 @@
 ---
-path: '/blog/2017-09-19-exhale/exhale'
+path: '/blog/exhale'
 title: Exhale by Output
 date: "2017-09-19"
 tags: ['output', 'gear']

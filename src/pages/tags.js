@@ -1,12 +1,15 @@
 import React from "react"
+import { Link, graphql } from "gatsby"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 
 // Utilities
 import kebabCase from "lodash/kebabCase"
+import Layout from '../components/layout'
 
 // Components
-import Helmet from "react-helmet"
-import { Link, graphql } from "gatsby"
+
+
 
 const TagsPage = ({
     data: {
@@ -16,8 +19,7 @@ const TagsPage = ({
         },
     },
 }) => (
-        <div>
-            <Helmet title={title} />
+  
             <div>
                 <h1>Tags</h1>
                 <ul>
@@ -25,12 +27,13 @@ const TagsPage = ({
                         <li key={tag.fieldValue}>
                             <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
                                 {tag.fieldValue} ({tag.totalCount})
-            </Link>
+                            </Link>
                         </li>
                     ))}
                 </ul>
             </div>
-        </div>
+
+ 
     )
 
 TagsPage.propTypes = {

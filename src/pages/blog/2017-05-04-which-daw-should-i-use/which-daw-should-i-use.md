@@ -1,5 +1,5 @@
 ---
-path: '/blog/2017-05-04-which-daw-should-i-move/which-daw-should-i-use'
+path: '/blog/which-daw-should-i-use'
 title: "Which DAW Should I Use?"
 date: "2017-05-04"
 tags: ['basics', 'software', 'daw']

@@ -1,5 +1,5 @@
 ---
-path: '/blog/2017-07-06-program-realistic-drum-parts/program-realistic-drum-parts'
+path: '/blog/program-realistic-drum-parts'
 title: How to Program Realistic Drum Parts
 date: "2017-07-06"
 tags: ['tips', 'midi']
