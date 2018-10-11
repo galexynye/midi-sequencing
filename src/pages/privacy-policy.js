@@ -1,12 +1,23 @@
 import React from 'react';
 import Layout from '../components/layout'
-
+import { rhythm, scale } from '../utils/typography'
+import HomeLink from '../components/HomeLinkLogo'
+import Footer from '../components/Footer'
 class Privacy extends React.Component {
     render(){
     return (
         <div
+            style={{
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                maxWidth: rhythm(27),
+                padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            }}
         >
-        <h1>Privacy Policy</h1>
+            <HomeLink />
+            <h1 style={{
+                marginTop: "10px"
+            }}>Privacy Policy</h1>
             This privacy policy governs the manner in which Midi Sequencing collects, uses, maintains, and discloses the information we collect from users of our website.
 <h3>Personal identification information</h3>
             We may collect personal identification information from you in a number of ways, including, but not limited to, when you place an order, subscribe to our newsletter, or fill out a form on our site. We only collect personal identification information when you voluntarily submit such information to us. You may choose to visit our site anonymously.
@@ -32,8 +43,10 @@ class Privacy extends React.Component {
             As part of the California Online Privacy Protection Act, all users of our site may make any changes to their information at any time through our Contact page.
 <h3>Changes to our privacy policy</h3>
 By using our site, you consent to our privacy policy.
+                        
+                        Midi Sequencing has the discretion to update this privacy policy at any time. You acknowledge and agree that it is your responsibility to return to this page periodically to become aware of any modifications that may have taken place.
             
-            Midi Sequencing has the discretion to update this privacy policy at any time. You acknowledge and agree that it is your responsibility to return to this page periodically to become aware of any modifications that may have taken place.
+            <Footer />
         </div>
     )
     }

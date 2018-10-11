@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-
+import { rhythm, scale } from '../utils/typography'
+import HomeLink from '../components/HomeLinkLogo'
+import Footer from '../components/Footer'
 // Components
 import { Link, graphql } from "gatsby"
 
@@ -12,9 +14,25 @@ const Tags = ({ pageContext, data }) => {
     } tagged with "${tag}"`
 
   return (
-    <div>
-      <h1>{tagHeader}</h1>
-      <ul>
+    <div
+      style={{
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        maxWidth: rhythm(27),
+        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+      }}
+    >
+      <HomeLink />
+      <h1
+        style={{
+          marginTop: '10px'
+        }}
+      >{tagHeader}</h1>
+      <ul
+        style={{
+          listStyle:'none'
+        }}
+      >
         {edges.map(({ node }) => {
           const { path, title } = node.frontmatter
           return (
@@ -29,12 +47,13 @@ const Tags = ({ pageContext, data }) => {
               We'll come back to it!
             */}
       <Link to="/tags">All tags</Link>
+      <Footer />
     </div>
   )
 }
 
 Tags.propTypes = {
-  pathContext: PropTypes.shape({
+  pageContext: PropTypes.shape({
     tag: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({

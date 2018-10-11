@@ -29,6 +29,25 @@ class BlogIndex extends React.Component {
         <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
+          let tags
+          if (node.frontmatter.tags) {
+            tags = node.frontmatter.tags.map(tag =>
+              <li>
+                <Link
+                  to={`/tags/${tag}`}
+                  class="phov"
+                  style={{
+                    textDecoration: 'none',
+                    boxShadow: 'none',
+                    'margin-right': '10px',
+                  }}
+                >
+                  {`${tag}`}
+                </Link>
+              </li>
+            )
+          }
+
           return (
             <div key={node.fields.slug}>
               <h3
@@ -41,7 +60,17 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
+             
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <ul
+                style={{
+                  listStyle: 'none',
+                  display: 'flex',
+                  marginTop: rhythm(-.5),
+                }}
+              >
+                {tags}
+              </ul> 
             </div>
           )
         })}
@@ -70,6 +99,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            tags
           }
         }
       }

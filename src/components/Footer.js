@@ -1,14 +1,24 @@
 import React from 'react'
 import Social from './Social'
 import {Link} from 'gatsby'
-import MidiSequencing from '../assets/WordsLogoTransparent.png'
+import HomeLink from './HomeLinkLogo'
 
 class Footer extends React.Component {
     render(){
         return(
-        <div>
+        <div 
+            style={{
+                // width: '600px',
+                marginTop: '50px',
+                display:'flex',
+                flexFlow: 'column',
+                alignItems: 'center'
+                
+            }}
+        >
             <div
                 style={{
+                    width: '100%',
                     display: 'flex',
                     justifyContent: 'space-between'
                 }}
@@ -16,16 +26,17 @@ class Footer extends React.Component {
                 <Social size="1x" />
                 {/* Contact */}
                 {/* Privacy Policy */}
-                <Link to="/privacy-policy"> Privacy Policy </Link>
                 <a href="mailto:midisequencingdotcom@gmail.com">Contact</a>
+                <Link to="/privacy-policy"> Privacy Policy </Link>
             </div>
             <div
                 style={{
-                    marginTop:"20px",
+                    marginTop:"40px",
                     maxWidth: "200px"
                 }}
             >
-                <Link to="/"><img src={MidiSequencing} alt="" /></Link>
+                {/* <Link to="/"><img src={MidiSequencing} alt="" /></Link> */}
+                <HomeLink />
             </div>
         </div>
         )
