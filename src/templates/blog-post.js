@@ -15,14 +15,16 @@ class BlogPostTemplate extends React.Component {
     let tags 
     if(post.frontmatter.tags){
       tags = post.frontmatter.tags.map(tag => 
-        <li>
+        <li
+          key={tag}
+        >
           <Link
             to={`/tags/${tag}`}
             className="hoverPointer"
             style={{
               textDecoration: 'none',
               boxShadow: 'none',
-              'margin-right': '10px',
+              marginRight: '10px',
              }}
           >
           { `${tag}`} 

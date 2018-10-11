@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import { rhythm, scale } from '../utils/typography'
 import Wrapper from '../components/Wrapper'
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'

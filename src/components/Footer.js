@@ -24,8 +24,6 @@ class Footer extends React.Component {
                 }}
             >
                 <Social size="1x" />
-                {/* Contact */}
-                {/* Privacy Policy */}
                 <a href="mailto:midisequencingdotcom@gmail.com">Contact</a>
                 <Link to="/privacy-policy"> Privacy Policy </Link>
             </div>

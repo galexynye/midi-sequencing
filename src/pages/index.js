@@ -32,14 +32,16 @@ class BlogIndex extends React.Component {
           let tags
           if (node.frontmatter.tags) {
             tags = node.frontmatter.tags.map(tag =>
-              <li>
+              <li
+                key={tag}
+              >
                 <Link
                   to={`/tags/${tag}`}
                   className="hoverPointer"
                   style={{
                     textDecoration: 'none',
                     boxShadow: 'none',
-                    'margin-right': '10px',
+                    marginRight: '10px',
                   }}
                 >
                   {`${tag}`}

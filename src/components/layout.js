@@ -1,11 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
 import { rhythm, scale } from '../utils/typography'
 import '../scss/App.scss'
 import Footer from './Footer'
 import MidiSequencingWords from '../assets/WordsLogoTransparent.png'
 import Wrapper from './Wrapper'
+import styled from 'styled-components'
+
+const SmallHeading = styled.h3`
+            font-family: 'Montserrat', 'sans-serif';
+            margin-top: 0px;
+            margin-bottom: ${rhythm(-1)};
+`
 
 class Template extends React.Component {
   render() {
@@ -42,13 +48,7 @@ class Template extends React.Component {
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
+        <SmallHeading>
           <Link
             style={{
               boxShadow: 'none',
@@ -59,7 +59,7 @@ class Template extends React.Component {
           >
             Midi Sequencing 
           </Link>
-        </h3>
+        </SmallHeading>
       )
     }
     return (

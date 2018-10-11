@@ -12,13 +12,14 @@ class Social extends React.Component {
         return (
             <div>
                 <a href="https://www.youtube.com/channel/UCRh5xwjVbFb0PI9JKOeZAIg" target="blank" className="marRMedium">
-                    <FontAwesomeIcon icon={faYoutube} size={this.props.size} />
+                    {/* <FontAwesomeIcon icon={faYoutube} size={this.props.size} /> */}
+                    <FontAwesomeIcon icon={faYoutube} size='1x' />
                 </a> 
                 <a href="https://www.facebook.com/midisequencing/" target="blank" className="marRMedium">
-                    <FontAwesomeIcon icon={faFacebook} size={this.props.size} />
+                    <FontAwesomeIcon icon={faFacebook} size='1x' />
                 </a>
                 <a href="https://twitter.com/midisequencing" target="blank" className="marRMedium">
-                    <FontAwesomeIcon icon={faTwitter} size={this.props.size} />
+                    <FontAwesomeIcon icon={faTwitter} size='1x' />
                 </a>               
             </div>
         )
