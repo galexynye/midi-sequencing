@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link,graphql } from 'gatsby'
 import get from 'lodash/get'
-
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
@@ -19,7 +18,7 @@ class BlogPostTemplate extends React.Component {
         <li>
           <Link
             to={`/tags/${tag}`}
-            class="phov"
+            className="hoverPointer"
             style={{
               textDecoration: 'none',
               boxShadow: 'none',

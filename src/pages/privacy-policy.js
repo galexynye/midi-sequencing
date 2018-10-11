@@ -1,19 +1,12 @@
 import React from 'react';
-import Layout from '../components/layout'
-import { rhythm, scale } from '../utils/typography'
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'
+import Wrapper from '../components/Wrapper'
+
 class Privacy extends React.Component {
     render(){
     return (
-        <div
-            style={{
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                maxWidth: rhythm(27),
-                padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-            }}
-        >
+        <Wrapper>
             <HomeLink />
             <h1 style={{
                 marginTop: "10px"
@@ -47,7 +40,7 @@ By using our site, you consent to our privacy policy.
                         Midi Sequencing has the discretion to update this privacy policy at any time. You acknowledge and agree that it is your responsibility to return to this page periodically to become aware of any modifications that may have taken place.
             
             <Footer />
-        </div>
+        </Wrapper>
     )
     }
 }

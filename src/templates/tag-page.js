@@ -1,8 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { rhythm, scale } from '../utils/typography'
+// import { rhythm, scale } from '../utils/typography'
+import Wrapper from '../components/Wrapper'
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'
+
 // Components
 import { Link, graphql } from "gatsby"
 
@@ -14,14 +16,7 @@ const Tags = ({ pageContext, data }) => {
     } tagged with "${tag}"`
 
   return (
-    <div
-      style={{
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        maxWidth: rhythm(27),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
-      }}
-    >
+    <Wrapper>
       <HomeLink />
       <h1
         style={{
@@ -48,7 +43,7 @@ const Tags = ({ pageContext, data }) => {
             */}
       <Link to="/tags">All tags</Link>
       <Footer />
-    </div>
+    </Wrapper>
   )
 }
 

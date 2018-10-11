@@ -2,11 +2,12 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import { rhythm, scale } from '../utils/typography'
+// import { rhythm, scale } from '../utils/typography'
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'
 // Utilities
 import kebabCase from "lodash/kebabCase"
+import Wrapper from "../components/Wrapper"
 
 // Components
 
@@ -21,14 +22,7 @@ const TagsPage = ({
     },
 }) => (
     
-            <div
-                style={{
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    maxWidth: rhythm(27),
-                    padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
-                }}
-            >
+            <Wrapper>
                 <HomeLink />
                 <h1
                 style={{ marginTop:'10px'}}
@@ -55,7 +49,7 @@ const TagsPage = ({
                     ))}
                 </ul>
                 <Footer />
-            </div>
+            </ Wrapper>
 
  
     )

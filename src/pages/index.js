@@ -35,7 +35,7 @@ class BlogIndex extends React.Component {
               <li>
                 <Link
                   to={`/tags/${tag}`}
-                  class="phov"
+                  className="hoverPointer"
                   style={{
                     textDecoration: 'none',
                     boxShadow: 'none',

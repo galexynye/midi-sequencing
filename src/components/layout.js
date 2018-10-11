@@ -5,7 +5,7 @@ import { rhythm, scale } from '../utils/typography'
 import '../scss/App.scss'
 import Footer from './Footer'
 import MidiSequencingWords from '../assets/WordsLogoTransparent.png'
-
+import Wrapper from './Wrapper'
 
 class Template extends React.Component {
   render() {
@@ -63,18 +63,11 @@ class Template extends React.Component {
       )
     }
     return (
-      <div
-        style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: rhythm(27),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <Wrapper>
         {header}
         {children}
         <Footer />
-      </div>
+      </Wrapper>
     )
   }
 }

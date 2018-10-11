@@ -67,6 +67,12 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      // options: {
+      //   // Add any options here
+      // },
+    },
   ],
 }
