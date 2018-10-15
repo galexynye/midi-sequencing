@@ -11,7 +11,7 @@ tags: ['mixing', 'basics', 'eq']
 
 <strong>EQ is THE most important tool in mixing and mastering.</strong> Your ability to mix great sounding tracks will come down to how well you understand the frequencies shaking people's eardrums and how to make those vibrations feel good.  Most of the time you can make sounds better using EQ. In this article we will talk about the different types of EQs, how you use them, and some of the best EQs ever invented (including a freebie you should download today).
 
-A quick word of advice. Once you understand the power of EQ you might be tempted to "fix" things in the mix rather than doing it right from the start. As I mention in the <a href="https://www.midisequencing.com/music-vs-sound/">Music VS Sound</a> article, this is recipe for pain. When you are setting up your mics, designing a synth patch or choosing samples, try to get it sounding as good as possible without telling yourself you can fix it later. Sometimes this means abandoning ideas entirely. Just know the sooner you find great sound in the process, the better off you'll be.
+A quick word of advice. Once you understand the power of EQ you might be tempted to "fix" things in the mix rather than doing it right from the start. As I mention in the <a href="blog/music-vs-sound/">Music VS Sound</a> article, this is recipe for pain. When you are setting up your mics, designing a synth patch or choosing samples, try to get it sounding as good as possible without telling yourself you can fix it later. Sometimes this means abandoning ideas entirely. Just know the sooner you find great sound in the process, the better off you'll be.
 
 
 <h2 >Types of EQ</h2>
@@ -132,7 +132,7 @@ Check out what Bruce Swedien says about mixing Billie Jean.
 
 One last thing to note, your system, whether it be your room with monitors, or headphones or whatever, will probably boost and cut certain frequencies thus tricking you into thinking you are sculpting a sound one way but it will sound completely different on other systems. Be sure to check your mixes on multiple sources to get an idea of how your system may be deceiving you so you can compensate for it.
 
-Thanks for reading, you might want to check out <a href="https://www.midisequencing.com/mixing-basics-reverb/">Everything You Need To Know About Reverb</a> or <a href="https://www.midisequencing.com/how-to-build-a-home-recording-studio-from-nothing-to-everything/">How to Build A Home Studio From Nothing to Everything</a>.
+Thanks for reading, you might want to check out <a href="/blog/reverb-essentials">Everything You Need To Know About Reverb</a> or <a href="/blog/how-to-build-a-studio">How to Build A Home Studio From Nothing to Everything</a>.
 
 Here is the full tutorial if you would like to watch it :)
 <p ><iframe src="https://www.youtube.com/embed/k-MBRGvmIWU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>

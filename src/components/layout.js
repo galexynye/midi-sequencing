@@ -1,7 +1,8 @@
 import React from 'react'
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import '../scss/App.scss'
 import { Link } from 'gatsby'
 import { rhythm, scale } from '../utils/typography'
-import '../scss/App.scss'
 import Footer from './Footer'
 import MidiSequencingWords from '../assets/WordsLogoTransparent.png'
 import Wrapper from './Wrapper'

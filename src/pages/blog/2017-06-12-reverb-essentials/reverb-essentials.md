@@ -113,7 +113,7 @@ On the other hand, there are times that you have a super dry sound that you want
 <h3 >Conclusion</h3>
 That about covers it. As always, EXPERIMENT! Try new things, add delays to your reverb, go looking for wacky impulse responses, compress the crap out of your reverbs. Reverb is deceptively hard to get right but it is much easier to use if you start with a good reverb sound. Take some time and find some go-to reverbs that you can depend on to sound beautiful.
 
-If you want to review most everything we talked about press play and watch the full video below. Want to learn about all the best quality gear in audio? Check out <a href="https://www.midisequencing.com/how-to-build-a-home-recording-studio-from-nothing-to-everything/">How To Build A Studio From Nothing to Everything</a>. Not sure what DAW is right for you? <a href="https://www.midisequencing.com/which-daw-should-i-use/">Check out Which DAW Should I Use?</a>  More articles on Mixing Basics are coming soon :)
+If you want to review most everything we talked about press play and watch the full video below. Want to learn about all the best quality gear in audio? Check out <a href="/blog/how-to-build-a-studio">How To Build A Studio From Nothing to Everything</a>. Not sure what DAW is right for you? <a href="/blog/which-daw-should-i-use">Check out Which DAW Should I Use?</a>  More articles on Mixing Basics are coming soon :)
 
 &nbsp;
 <p ><iframe src="https://www.youtube.com/embed/EErrKkgy8Ck" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>

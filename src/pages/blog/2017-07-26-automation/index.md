@@ -4,8 +4,7 @@ title: "Automation: Everything You Need to Know"
 date: '2017-07-26'
 tags: ['mixing', 'basics']
 ---
-<!-- TODO: Style Fotos -->
-<!-- TODO: Fix Links -->
+
 <img src="./media/automation-basics/automation-1.png" alt="Ableton Automation Example" width="1024" height="665" />
 
 Automation is changing an element in your mix over time. For example, if you want your entire mix to gradually fade out, you would use volume automation on the mix bus to gradually turn the volume down. Other times you might want to add a long delay only to a couple words on your lead vocal, you can do this by either automating a send to a delay or by automating the wet/dry knob on a delay placed as an insert directly on the lead vocals.
@@ -81,7 +80,7 @@ Adding the ability to control plugin parameters or synth patch parameters with a
 
 By now, if you've watch the automation videos above, you've seen the power of automating effects on a track. Sometimes to achieve a certain result you might want to automate a parameter of an effect inserted directly on your track while other times you will want to automate a send to a certain effect.
 
-For example, if you wanted to filter a certain track and have the filter gradually open up, you will want to insert an eq or filter directly on your track and then add the automation. On the other hand, if you want to add more reverb to a certain word or section, it's better to set up your reverb on a send and automate the send. If you don't know how to set up a reverb on a send or want to learn more about classic reverbs, <a href="https://www.midisequencing.com/mixing-fundamentals-reverb/">check out this article</a>.
+For example, if you wanted to filter a certain track and have the filter gradually open up, you will want to insert an eq or filter directly on your track and then add the automation. On the other hand, if you want to add more reverb to a certain word or section, it's better to set up your reverb on a send and automate the send. If you don't know how to set up a reverb on a send or want to learn more about classic reverbs, <a href="/blog/reverb-essentials">check out this article</a>.
 
 Delays are typically set up on a send rather so multiple elements can be sent to the same delay.
 <h3 >Full Video</h3>

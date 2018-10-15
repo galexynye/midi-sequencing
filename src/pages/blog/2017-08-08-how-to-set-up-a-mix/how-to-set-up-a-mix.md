@@ -4,12 +4,11 @@ title: How to Set Up A Mix Session
 date: "2017-08-08"
 tags: ['basics', 'mixing']
 ---
-<!-- <img class="aligncenter wp-image-1639 size-full" src="https://www.midisequencing.com/wp-content/uploads/2017/08/Routing-Audio-1.png" alt="Pictoral Guide to Routing Audio" width="4840" height="2961" /> -->
-<!-- [mix guide]: ../media/Routing-Audio-1-1024x626.png -->
+
 <img src="./media/how-to-set-up-a-mix/Routing-Audio-1-1024x626.png" alt="Image Guide">
 
-Mixing/producing will be much easier when you understand how to properly set up your audio routing and all of your wildest dreams will come true. If you've made some tracks without a good routing scheme then you've felt the pain and difficulty of balancing your mix when the instruments start piling up. When you start adding <a href="https://www.midisequencing.com/mixing-fundamentals-automation/" target="_blank" rel="noopener">automation</a> to elements and want to make some major mix adjustments then you really can start to lose control of the mix and your melon in the process.
-<!-- TODO: Link to automation -->
+Mixing/producing will be much easier when you understand how to properly set up your audio routing and all of your wildest dreams will come true. If you've made some tracks without a good routing scheme then you've felt the pain and difficulty of balancing your mix when the instruments start piling up. When you start adding <a href="/blog/automation" target="_blank" rel="noopener">automation</a> to elements and want to make some major mix adjustments then you really can start to lose control of the mix and your melon in the process.
+
 This article will show you that, whether you have 10 tracks or a 1000 tracks, if you set up your routing right you'll be able to control your mix with ease.
 
 Note: These concepts work for all DAWs, live mixing applications, foley or whatever you're mixing but the exact names/methods can vary a bit and they will be addressed as much as possible.

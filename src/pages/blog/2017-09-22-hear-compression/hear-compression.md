@@ -20,7 +20,7 @@ This section of the compression video demonstrates level matching using the trac
 
 Hearing exactly how the compressor is changing the sound can be difficult, so in the beginning rely on your gut feelings by asking, "<strong>Is this actually making things better or am I throwing a compressor on just because?"</strong>
 
-If something isn't sounding how you want, try to describe what is wrong in words. Is it too harsh? Then maybe you will want to try some <a href="https://www.midisequencing.com/mixing-fundamentals-essential-eq-techniques/">subtractive EQing</a> instead of compression...Honestly, most of the time mixing you will want to use an EQ to change the sound over any other tool besides your volume faders.
+If something isn't sounding how you want, try to describe what is wrong in words. Is it too harsh? Then maybe you will want to try some <a href="/blog/eq-essential-techniques">subtractive EQing</a> instead of compression...Honestly, most of the time mixing you will want to use an EQ to change the sound over any other tool besides your volume faders.
 
 
 <h4>When would you want to use a compressor?</h4>

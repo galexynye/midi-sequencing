@@ -41,4 +41,4 @@ I strongly recommend performing in drum parts but midi functions are a good alte
 <p ><iframe src="https://www.youtube.com/embed/KIQ3yvUSK00" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 
 
-Thanks for reading, you might like <a href="https://www.midisequencing.com/how-to-build-a-home-recording-studio-from-nothing-to-everything/">How to Build a Home Recording Studio From Nothing to Everything</a> that truly details everything you'd need, even if you have a billion dollars, or checking out <a href="https://www.midisequencing.com/gear/">our gear reviews</a>.
+Thanks for reading, you might like <a href="/blog/how-to-build-a-studio">How to Build a Home Recording Studio From Nothing to Everything</a> that truly details everything you'd need, even if you have a billion dollars.

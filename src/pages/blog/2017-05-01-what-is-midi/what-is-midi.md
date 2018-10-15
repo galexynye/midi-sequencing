@@ -49,6 +49,7 @@ tags: ['basics', 'midi']
 <div ></div>
 <div > Back in 1983, when midi first came out, these ports along with midi cables is how devices transmitted midi. These days, most midi is transmitted over USB cables. So here's how you can use your modern computer to play that vintage synth for you.</div>
 <div ></div>
+<!-- TODO: CHANGE GUITAR CENTER TO AMAZON AFFILIATE -->
 <div >Create a midi track and a midi part for your synth to play inside your DAW. You need some kind of midi interface so you can go out of the USB port on your computer and into the standard midi port your synth has. This is <a href="http://www.guitarcenter.com/Roland/UM-ONE-MK2-USB-MIDI-Interface.gc" target="_blank" rel="noopener noreferrer">this the midi interface I use</a> for this. You send the midi out of the computer and into your analog synth, triggering the sound of that sweet, sweet analog warmth. To record the analog synth into your computer, hook up an audio cable (1/4 guitar cable or mic cable depending on what the synth has) out of the synth and route it back into one of your audio interface's inputs. (This can be tricky, there may be some issues with the timing you need to figure out, but I just want you give you a sense of the potential). Depending on how far you are into learning about audio production that may or may not really make sense. Don't worry about it now, just know that there are old school midi cables but they can still be utilized in modern production.</div>
 <div ></div>
 <h3 >Midi Can Control Your DAW</h3>

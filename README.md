@@ -1,9 +1,10 @@
 # Midi Sequencing
-Gatsby starter for creating a blog
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+This is a blog about music production and the gear/software used in music production.
+You can view it live at [Midi Sequencing.com](https://www.midisequencing.com)
 
 ## Running in development
 `gatsby develop`
+
+## To Build
+`gatsby build`
