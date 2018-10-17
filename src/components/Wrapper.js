@@ -7,6 +7,7 @@ const Wrapper = styled.div`
         margin-right: auto;
         max-width: ${rhythm(27)};
         padding: ${ rhythm(1.5)} ${rhythm(3 / 4)};
+        position: relative;
         h1 {
             color: #700bea;
             margin-bottom: 40px;

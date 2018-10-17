@@ -69,6 +69,12 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-catch-links`
+    `gatsby-plugin-catch-links`,
+    {
+    resolve: 'gatsby-plugin-mailchimp',
+    options: {
+      endpoint: 'https://midisequencing.us15.list-manage.com/subscribe/post?u=959ef0b4d1c6a701f90f85f9e&amp;id=59168d9d12', // see instructions section below
+      },
+    },
   ],
 }

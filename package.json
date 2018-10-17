@@ -2,7 +2,7 @@
   "name": "midi-sequencing",
   "description": "Starter Gatsby Blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Alex Nye <midisequencingdotcom@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
@@ -17,6 +17,7 @@
     "gatsby-plugin-catch-links": "^2.0.4",
     "gatsby-plugin-feed": "^2.0.5",
     "gatsby-plugin-google-analytics": "^2.0.5",
+    "gatsby-plugin-mailchimp": "git+https://github.com/benjaminhoffman/gatsby-plugin-mailchimp.git#gatsby-v2",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",

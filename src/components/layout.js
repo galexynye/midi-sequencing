@@ -3,10 +3,12 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import '../scss/App.scss'
 import { Link } from 'gatsby'
 import { rhythm, scale } from '../utils/typography'
+import styled from 'styled-components'
+import Wrapper from './Wrapper'
 import Footer from './Footer'
 import MidiSequencingWords from '../assets/WordsLogoTransparent.png'
-import Wrapper from './Wrapper'
-import styled from 'styled-components'
+import ScrollToTop from '../components/ScrollToTop'
+// import theSinatra from '../assets/theSinatra.svg'
 
 const SmallHeading = styled.h3`
             font-family: 'Montserrat', 'sans-serif';
@@ -25,25 +27,20 @@ class Template extends React.Component {
         // <h1
         //   style={{
         //     ...scale(1.5),
-        //     marginBottom: rhythm(1.5),
+        //     marginBottom: rhythm(0),
         //     marginTop: 0,
         //   }}
         // >
         
           <Link
-            // style={{
-            //   boxShadow: 'none',
-            //   textDecoration: 'none',
-            //   color: 'inherit',
-            // }}
             to={'/'}
+            id="top"
           >
-            {/* Midi Sequencing */}
             <img 
               style={{
                 marginBottom:'0px'
               }}
-              src={MidiSequencingWords} alt=""/>
+              src={MidiSequencingWords} alt="Midi Sequencing Home link"/>
           </Link>
         // </h1>
       )
@@ -57,6 +54,7 @@ class Template extends React.Component {
               color: 'inherit',
             }}
             to={'/'}
+            id="top"
           >
             Midi Sequencing 
           </Link>
@@ -65,9 +63,11 @@ class Template extends React.Component {
     }
     return (
       <Wrapper>
+        {/* <img src={theSinatra} alt=""/> */}
         {header}
         {children}
         <Footer />
+        <ScrollToTop scrollStepInPx="60" delayInMs="20"/>
       </Wrapper>
     )
   }
