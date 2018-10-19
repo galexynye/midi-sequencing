@@ -2,7 +2,7 @@
 path: "/blog/vocal-synth-2"
 title: Vocal Synth 2 by iZotope
 date: "2018-06-09"
-tags: ["synths", "izotope", 'gear' ]
+tags: ["synths", "izotope", 'gear', 'vocals' ]
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sN-ftVq9owU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

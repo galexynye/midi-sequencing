@@ -5,8 +5,8 @@ date: "2017-09-22"
 tags: ["mixing", "compression"]
 ---
 
-<p><iframe src="https://www.youtube.com/embed/KBYHGCzqGGA?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
-
+<!-- <iframe src="https://www.youtube.com/embed/KBYHGCzqGGA?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
+`youtube:https://www.youtube.com/embed/KBYHGCzqGGA?html5=1`
 
 Compression is tricky, especially for beginners. Compressors often fool people into thinking they are getting a better sound because the compressor can make sounds louder.
 <h3>Louder ≠ Better</h3>
