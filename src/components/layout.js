@@ -8,7 +8,6 @@ import Wrapper from './Wrapper'
 import Footer from './Footer'
 import MidiSequencingWords from '../assets/WordsLogoTransparent.png'
 import ScrollToTop from '../components/ScrollToTop'
-// import theSinatra from '../assets/theSinatra.svg'
 
 const SmallHeading = styled.h3`
             font-family: 'Montserrat', 'sans-serif';

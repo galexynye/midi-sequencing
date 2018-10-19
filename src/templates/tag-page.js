@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Wrapper from '../components/Wrapper'
+// import Wrapper from '../components/Wrapper'
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'
 
@@ -15,7 +15,7 @@ const Tags = ({ pageContext, data }) => {
     } tagged with "${tag}"`
 
   return (
-    <Wrapper>
+    <div>
       <HomeLink />
       <h1
         style={{
@@ -42,7 +42,7 @@ const Tags = ({ pageContext, data }) => {
             */}
       <Link to="/tags">All tags</Link>
       <Footer />
-    </Wrapper>
+    </div>
   )
 }
 

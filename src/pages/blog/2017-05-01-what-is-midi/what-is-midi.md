@@ -17,7 +17,7 @@ tags: ['basics', 'midi']
 <div>Here's where most people today come to find about midi. You have a computer. You want to make music. So you download a DAW, create an "instrument track", load up a patch and "draw" a rectangle. You press play, the computer goes across the rectangle, boom, you hear a sound. It might have gone something like this.</div>
 <div></div>
 <div>
-<p ><iframe src="https://www.youtube.com/embed/IJk4O6FnpIs?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p ><iframe src="https://www.youtube.com/embed/IJk4O6FnpIs?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 
 </div>
 <div></div>
@@ -61,7 +61,7 @@ tags: ['basics', 'midi']
 <div ></div>
 <div >
 
-<iframe src="https://www.youtube.com/embed/1Fa0wTIyyJw?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/1Fa0wTIyyJw?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 </div>
 <div ></div>

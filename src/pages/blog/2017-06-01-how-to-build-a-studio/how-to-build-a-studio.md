@@ -2,7 +2,7 @@
 path: '/blog/how-to-build-a-studio'
 title: "How to Build A Home Studio From Nothing to Everything"
 date: "2017-06-01"
-tags: ['tips', 'gear', 'mixing']
+tags: ['tips', 'gear', 'mixing', 'basics']
 ---
 <!-- TODO: Add More Affiliate Links (Or Link To Store) -->
 <p ><img src="./media/how-to-build-a-home-studio/studio-1.jpg" alt="A very nice Home Studio " width="1024" height="620" /></p>
