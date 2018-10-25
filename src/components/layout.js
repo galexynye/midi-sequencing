@@ -23,14 +23,6 @@ class Template extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        // <h1
-        //   style={{
-        //     ...scale(1.5),
-        //     marginBottom: rhythm(0),
-        //     marginTop: 0,
-        //   }}
-        // >
-        
           <Link
             to={'/'}
             id="top"
@@ -41,7 +33,6 @@ class Template extends React.Component {
               }}
               src={MidiSequencingWords} alt="Midi Sequencing Home link"/>
           </Link>
-        // </h1>
       )
     } else {
       header = (
@@ -62,7 +53,6 @@ class Template extends React.Component {
     }
     return (
       <Wrapper>
-        {/* <img src={theSinatra} alt=""/> */}
         {header}
         {children}
         <Footer />

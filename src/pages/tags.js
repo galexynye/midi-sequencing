@@ -2,17 +2,11 @@ import React from "react"
 import Wrapper from "../components/Wrapper"
 import { Link, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-// import { rhythm, scale } from '../utils/typography'
+// import Helmet from "react-helmet"
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'
 // Utilities
 import kebabCase from "lodash/kebabCase"
-
-
-// Components
-
-
 
 const TagsPage = ({
     data: {

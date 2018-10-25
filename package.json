@@ -1,6 +1,6 @@
 {
   "name": "midi-sequencing",
-  "description": "Starter Gatsby Blog",
+  "description": "Music Production Blog",
   "version": "1.0.0",
   "author": "Alex Nye <midisequencingdotcom@gmail.com>",
   "bugs": {
@@ -26,7 +26,6 @@
     "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-plugin-typography": "^2.2.0",
     "gatsby-remark-copy-linked-files": "^2.0.5",
-    "gatsby-remark-embed-youtube": "0.0.7",
     "gatsby-remark-images": "^2.0.1",
     "gatsby-remark-prismjs": "^3.0.0",
     "gatsby-remark-responsive-iframe": "^2.0.5",

@@ -14,6 +14,7 @@ module.exports = {
         name: 'pages',
       },
     },
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -25,13 +26,6 @@ module.exports = {
               // wrapperStyle: `margin-bottom: 1.0725rem`
               wrapperStyle: `margin-bottom: 1.2rem`
             },
-          },
-          {
-            resolve: "gatsby-remark-embed-youtube",
-            options: {
-              width: 800,
-              height: 400
-            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -76,7 +70,6 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-catch-links`,
     {
     resolve: 'gatsby-plugin-mailchimp',
     options: {
