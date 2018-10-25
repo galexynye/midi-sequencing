@@ -2,8 +2,8 @@
 path: '/blog/automation'
 title: "Automation: Everything You Need to Know"
 date: '2017-07-26'
-category: ['Tutorials']
-subcategory: ['Basics']
+category: 'Tutorials'
+subcategory: 'Basics'
 subject: 'Automation'
 tags: ['mixing', 'basics', 'automation', 'fadeout']
 ---

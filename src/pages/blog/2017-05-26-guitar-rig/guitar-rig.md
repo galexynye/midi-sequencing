@@ -2,8 +2,8 @@
 path: '/blog/guitar-rig'
 title: Guitar Rig by Native Instruments
 date: "2017-05-26"
-category: ['Gear Reviews']
-subcategory: ['Creative']
+category: 'Gear Reviews'
+subcategory: 'Creative'
 company: 'Native Instruments'
 tags: ['native-instruments', 'gear', 'guitar']
 ---

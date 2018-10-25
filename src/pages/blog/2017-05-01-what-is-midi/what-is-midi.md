@@ -2,8 +2,8 @@
 path: "/blog/what-is-midi"
 date: "2017-05-01"
 title: "What Midi Really Is"
-category: ['Tutorials']
-subcategory: ['Basics']
+category: 'Tutorials'
+subcategory: 'Basics'
 subject: 'Midi'
 tags: ['basics', 'midi']
 ---

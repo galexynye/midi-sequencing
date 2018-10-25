@@ -2,8 +2,8 @@
 path: '/blog/10-tips-for-pro-sound'
 title: "10 Tips for Professional Sounding Tracks"
 date: '2017-05-18'
-category: ['Tutorials']
-subcategory: ['Producing']
+category: 'Tutorials'
+subcategory: 'Producing'
 subject: 'Sound'
 tags: ['gear', 'mixing']
 ---

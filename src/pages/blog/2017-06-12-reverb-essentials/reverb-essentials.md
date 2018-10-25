@@ -2,8 +2,8 @@
 path: '/blog/reverb-essentials'
 title: "Reverb: Everything You Should Know"
 date: "2017-06-12"
-category: ['Tutorials']
-subcategory: ['Basics']
+category: 'Tutorials'
+subcategory: 'Basics'
 subject: 'Reverb'
 tags: ['mixing', 'basics', 'reverb']
 ---

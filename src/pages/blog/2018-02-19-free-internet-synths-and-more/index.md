@@ -2,8 +2,8 @@
 path: "/blog/free-internet-synths-and-more"
 title: Free Internet Synths and More
 date: "2018-02-19"
-category: ['Gear Reviews']
-subcategory: ['Free']
+category: 'Gear Reviews'
+subcategory: 'Free'
 company: "Misc"
 tags: ["free", "synths", "internet", "drum machine" ]
 ---

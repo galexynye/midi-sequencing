@@ -2,8 +2,8 @@
 path: "/blog/analog-strings"
 title: Analog Strings by Output
 date: "2017-05-09"
-category: ['Gear Reviews']
-subcategory: ['Soft Synth']
+category: 'Gear Reviews'
+subcategory: 'Soft Synths'
 company: 'Output'
 tags: ['output', 'gear', 'plugins']
 ---

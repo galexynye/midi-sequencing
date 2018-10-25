@@ -2,8 +2,8 @@
 path: "/blog/humanize-midi"
 title: "Automatically Humanize Midi"
 date: "2017-05-05"
-category: ['Tutorials']
-subcategory: ['Producing']
+category: 'Tutorials'
+subcategory: 'Producing'
 subject: 'Midi'
 tags: ["midi", "tips"]
 ---

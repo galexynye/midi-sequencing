@@ -8,6 +8,7 @@ import Wrapper from './Wrapper'
 import Footer from './Footer'
 import MidiSequencingWords from '../assets/WordsLogoTransparent.png'
 import ScrollToTop from '../components/ScrollToTop'
+import Menu from './Menu/Menu'
 
 const SmallHeading = styled.h3`
             font-family: 'Montserrat', 'sans-serif';
@@ -53,6 +54,7 @@ class Template extends React.Component {
     }
     return (
       <Wrapper>
+        <Menu />
         {header}
         {children}
         <Footer />

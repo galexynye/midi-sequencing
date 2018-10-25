@@ -2,8 +2,8 @@
 path: '/blog/boscomac'
 title: Boscomac!
 date: '2017-08-01'
-category: ['Gear']
-subcategory: ['Free']
+category: 'Gear'
+subcategory: 'Free'
 company: 'Native Instruments'
 tags: ['gear', 'native-instruments', 'free']
 ---

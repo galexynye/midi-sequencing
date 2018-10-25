@@ -2,8 +2,8 @@
 path: '/blog/program-realistic-drum-parts'
 title: How to Program Realistic Drum Parts
 date: "2017-07-06"
-category: ['Tutorials']
-subcategory: ['Producing']
+category: 'Tutorials'
+subcategory: 'Producing'
 subject: 'Drum Programming'
 tags: ['tips', 'midi', 'drum-programming', 'midi-sequencing']
 ---

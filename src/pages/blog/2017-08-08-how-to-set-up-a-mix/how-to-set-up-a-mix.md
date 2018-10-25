@@ -2,8 +2,8 @@
 path: '/blog/how-to-set-up-a-mix'
 title: How to Set Up A Mix Session
 date: "2017-08-08"
-category: ['Tutorials']
-subcategory: ['Mixing']
+category: 'Tutorials'
+subcategory: 'Mixing'
 subject: 'Signal Flow'
 tags: ['organize', 'mixing']
 ---

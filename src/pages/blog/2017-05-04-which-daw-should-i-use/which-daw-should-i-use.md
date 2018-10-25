@@ -2,8 +2,8 @@
 path: '/blog/which-daw-should-i-use'
 title: "Which DAW Should I Use?"
 date: "2017-05-04"
-category: ['Tutorials']
-subcategory: ['Basics']
+category: 'Tutorials'
+subcategory: 'Basics'
 subject: 'DAW'
 tags: ['basics', 'software', 'daw']
 ---

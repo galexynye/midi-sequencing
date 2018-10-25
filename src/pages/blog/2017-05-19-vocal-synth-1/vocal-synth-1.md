@@ -2,8 +2,8 @@
 path: '/blog/vocal-synth-1'
 title: Vocal Synth by iZotope
 date: "2017-05-19"
-category: ['Gear Reviews']
-subcategory: ['Soft Synths']
+category: 'Gear Reviews'
+subcategory: 'Soft Synths'
 company: 'iZotope'
 tags: ['izotope', 'gear', 'plugins', 'vocals']
 ---
