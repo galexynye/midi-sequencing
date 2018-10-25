@@ -2,7 +2,10 @@
 path: '/blog/how-to-set-up-a-mix'
 title: How to Set Up A Mix Session
 date: "2017-08-08"
-tags: ['basics', 'mixing']
+category: ['Tutorials']
+subcategory: ['Mixing']
+subject: 'Signal Flow'
+tags: ['organize', 'mixing']
 ---
 
 <img src="./media/how-to-set-up-a-mix/Routing-Audio-1-1024x626.png" alt="Image Guide">

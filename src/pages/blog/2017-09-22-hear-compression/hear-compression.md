@@ -2,6 +2,9 @@
 path: "/blog/hear-compression"
 title: How to Use Compression
 date: "2017-09-22"
+category: ['Tutorials']
+subcategory: ['Mixing']
+subject: 'Compression'
 tags: ["mixing", "compression"]
 ---
 

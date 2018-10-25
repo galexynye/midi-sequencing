@@ -2,6 +2,9 @@
 path: '/blog/how-to-build-a-studio'
 title: "How to Build A Home Studio From Nothing to Everything"
 date: "2017-06-01"
+category: ['Tutorials']
+subcategory: ['How to Build A Studio']
+subject: 'Studio'
 tags: ['tips', 'gear', 'mixing', 'basics']
 ---
 <!-- TODO: Add More Affiliate Links (Or Link To Store) -->

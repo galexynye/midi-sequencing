@@ -2,6 +2,9 @@
 path: "/blog/humanize-midi"
 title: "Automatically Humanize Midi"
 date: "2017-05-05"
+category: ['Tutorials']
+subcategory: ['Producing']
+subject: 'Midi'
 tags: ["midi", "tips"]
 ---
 <iframe src="https://www.youtube.com/embed/KIQ3yvUSK00?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

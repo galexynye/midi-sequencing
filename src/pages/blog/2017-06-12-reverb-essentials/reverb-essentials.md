@@ -2,7 +2,10 @@
 path: '/blog/reverb-essentials'
 title: "Reverb: Everything You Should Know"
 date: "2017-06-12"
-tags: ['mixing', 'basics']
+category: ['Tutorials']
+subcategory: ['Basics']
+subject: 'Reverb'
+tags: ['mixing', 'basics', 'reverb']
 ---
 
 <img src="./media/reverb-essentials/Reverb-Diagram-1.png" alt="Stick Figure Drawing of How Reverb Sends used to be set up analog"  /> 

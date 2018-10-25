@@ -2,6 +2,9 @@
 path: '/blog/exhale'
 title: Exhale by Output
 date: "2017-09-19"
+category: ['Gear']
+subcategory: ['Software']
+company: 'Output'
 tags: ['output', 'gear']
 ---
 <!-- TODO: Fix Link at bottom -->

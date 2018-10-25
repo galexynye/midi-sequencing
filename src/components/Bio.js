@@ -34,7 +34,7 @@ class Bio extends React.Component {
             textAlign: 'center'
           }}
         >
-          Gear Reviews and Music Production Techniques
+          Gear Reviews and Music Production Tutorials
         </p>
         <div className="marTSmall"
           style={{

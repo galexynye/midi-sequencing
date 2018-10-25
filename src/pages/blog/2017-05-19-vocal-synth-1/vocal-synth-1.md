@@ -2,6 +2,9 @@
 path: '/blog/vocal-synth-1'
 title: Vocal Synth by iZotope
 date: "2017-05-19"
+category: ['Gear Reviews']
+subcategory: ['Soft Synths']
+company: 'iZotope'
 tags: ['izotope', 'gear', 'plugins', 'vocals']
 ---
 <iframe src="https://www.youtube.com/embed/_D-HhAn8OeI" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

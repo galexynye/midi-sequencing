@@ -2,6 +2,9 @@
 path: '/blog/eq-essential-techniques'
 title: 'EQ: Essential Techniques'
 date: "2017-06-17"
+category: ['Tutorials']
+subcategory: ['Basics']
+subject: 'EQ'
 tags: ['mixing', 'basics', 'eq']
 ---
 

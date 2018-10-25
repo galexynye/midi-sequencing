@@ -2,6 +2,9 @@
 path: "/blog/what-is-midi"
 date: "2017-05-01"
 title: "What Midi Really Is"
+category: ['Tutorials']
+subcategory: ['Basics']
+subject: 'Midi'
 tags: ['basics', 'midi']
 ---
 <div>Sometime in my first couple weeks at Berklee I saw a poster that said, “Midi is for people with no friends. Come to Jam Club!”, and I thought, "Midi must be for me."</div>

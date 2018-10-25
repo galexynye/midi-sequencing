@@ -2,6 +2,9 @@
 path: '/blog/mix-drums-like-phil-collins'
 title: "How to Mix Drums to Sound Like Phil Collins"
 date: "2017-06-09"
+category: ['Tutorials']
+subcategory: ['Mixing']
+subject: 'Creative Mixing'
 tags: ['mixing', 'gear']
 ---
 <p ><iframe src="https://www.youtube.com/embed/X1S9RqgFHy0?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>

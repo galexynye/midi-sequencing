@@ -40,6 +40,8 @@ class BlogIndex extends React.Component {
           ]}
         />
         <Bio />
+
+        {/* Below is the Posts list Render */}
         {showPosts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           // Retrieves and creats tag info for each Post

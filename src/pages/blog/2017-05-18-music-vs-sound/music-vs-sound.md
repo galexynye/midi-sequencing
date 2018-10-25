@@ -1,6 +1,9 @@
 ---
 path: '/blog/music-vs-sound'
 title: Music VS Sound
+category: ['Tutorials']
+subcategory: ['Basics']
+subject: 'Sound'
 date: "2017-05-18"
 tags: ['basics', 'mixing', 'philosophy']
 ---

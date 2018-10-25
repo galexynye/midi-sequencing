@@ -2,7 +2,10 @@
 path: '/blog/automation'
 title: "Automation: Everything You Need to Know"
 date: '2017-07-26'
-tags: ['mixing', 'basics']
+category: ['Tutorials']
+subcategory: ['Basics']
+subject: 'Automation'
+tags: ['mixing', 'basics', 'automation', 'fadeout']
 ---
 
 <img src="./media/automation-basics/automation-1.png" alt="Ableton Automation Example" width="1024" height="665" />
