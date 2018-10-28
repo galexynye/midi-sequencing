@@ -41,7 +41,7 @@ class SubMenu extends React.Component {
 
     render() {
         let links = this.props.links.map(x =>
-            <li>
+            <li key={x.title}>
                 <Link to={`${x.link}`}>
                     {x.title}
                 </Link>

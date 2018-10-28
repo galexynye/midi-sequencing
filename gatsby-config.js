@@ -24,13 +24,13 @@ module.exports = {
             options: {
               maxWidth: 800,
               // wrapperStyle: `margin-bottom: 1.0725rem`
-              wrapperStyle: `margin-bottom: 1.2rem`
+              wrapperStyle: `margin-bottom: 1.2rem; z-index: -1`
             },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.2rem`,
+              wrapperStyle: `margin-bottom: 1.2rem; z-index:-1`,
             },
           },
           'gatsby-remark-prismjs',
