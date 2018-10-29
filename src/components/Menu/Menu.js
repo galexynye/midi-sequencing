@@ -193,13 +193,11 @@ class Menu extends React.Component {
                     {gearReviews}
                 </ul>
             </MenuMobile>
-        const Bars = <BarsButton onClick={this.handleClick}
-                    >
+        const Bars = <BarsButton onClick={this.handleClick}>
                             <FontAwesomeIcon icon={faBars} />
                     </BarsButton>
         return(
             <MenuContainer>
-                {/* <MenuWrapper> */}
                     <MenuLargeWrapper>
                     <MenuLarge>
                         <HomeLink />
@@ -216,11 +214,11 @@ class Menu extends React.Component {
                     <div>
                         {!this.state.displayMobile && Bars}
                     </div>
-                {this.state.displayMobile && <MenuSmallWrapper>
-                        {MobileMenu}
-                    </MenuSmallWrapper>
-                     } 
-                {/* </MenuWrapper> */}
+                    {this.state.displayMobile && 
+                        <MenuSmallWrapper>
+                            {MobileMenu}
+                        </MenuSmallWrapper>
+                    }            
              </MenuContainer>
         )
     }

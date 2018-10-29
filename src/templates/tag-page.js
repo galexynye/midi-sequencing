@@ -24,8 +24,6 @@ const Tags = ({ pageContext, data }) => {
       >{tagHeader}</h1>
       <ul
         style={{
-          display: 'flex',
-          flexFlow: 'wrap',
           listStyle:'none',
           marginLeft: "0px"
         }}
