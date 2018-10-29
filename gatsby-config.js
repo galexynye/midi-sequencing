@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Midi Sequencing',
+    title: 'Music Sequencing',
     author: 'Alex Nye',
     description: 'Music production Blog.',
     siteUrl: 'https://midisequencing.com',

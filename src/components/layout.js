@@ -6,7 +6,7 @@ import { rhythm, scale } from '../utils/typography'
 import styled from 'styled-components'
 import Wrapper from './Wrapper'
 import Footer from './Footer'
-import MidiSequencingWords from '../assets/WordsLogoTransparent.png'
+import MidiSequencingWords from '../assets/MusicSequencingWordsLogo.png'
 import ScrollToTop from '../components/ScrollToTop'
 import Menu from './Menu/Menu'
 
@@ -32,7 +32,7 @@ class Template extends React.Component {
               style={{
                 marginBottom:'0px'
               }}
-              src={MidiSequencingWords} alt="Midi Sequencing Home link"/>
+              src={MidiSequencingWords} alt="Music Sequencing Home link"/>
           </Link>
       )
     } else {
@@ -47,7 +47,7 @@ class Template extends React.Component {
             to={'/'}
             id="top"
           >
-            Midi Sequencing 
+            Music Sequencing 
           </Link>
         </SmallHeading>
       )

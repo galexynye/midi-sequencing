@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby'
-import MidiSequencing from '../assets/WordsLogoTransparent.png'
+import MidiSequencing from '../assets/MusicSequencingWordsLogo.png'
 
 const HomeLink = () => {
     return (

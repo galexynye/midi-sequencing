@@ -80,7 +80,7 @@ const MenuMobile = styled.div`
     @media(max-width: 480px){
         ul {
             li {
-                margin-left: 0px;
+                margin-left: 9px;
             }
         }
     } 

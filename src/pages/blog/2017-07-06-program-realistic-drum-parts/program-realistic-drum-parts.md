@@ -36,7 +36,7 @@ As you are creating new tracks, try recording in a few extra drum takes for prac
 
 
 <h3 >If You Refuse to Play</h3>
-If, for whatever reason, you really hate the idea of playing in drum parts. The very first tutorial I ever made on Midi Sequencing shows you how to use midi functions to add randomization to your midi, bring it off the grid, and vary velocities.
+If, for whatever reason, you really hate the idea of playing in drum parts. The very first tutorial I ever made on Music Sequencing shows you how to use midi functions to add randomization to your midi, bring it off the grid, and vary velocities.
 
 I strongly recommend performing in drum parts but midi functions are a good alternative to know. Some programs, like Digital Performer, include midi functions to quantize midi to human grooves. Still, they're not going to be tailored specifically to your song in the same way you recording them in would be.
 
