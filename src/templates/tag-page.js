@@ -24,7 +24,10 @@ const Tags = ({ pageContext, data }) => {
       >{tagHeader}</h1>
       <ul
         style={{
-          listStyle:'none'
+          display: 'flex',
+          flexFlow: 'wrap',
+          listStyle:'none',
+          marginLeft: "0px"
         }}
       >
         {edges.map(({ node }) => {

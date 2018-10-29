@@ -27,7 +27,8 @@ const TagsPage = ({
                 style={{
                     listStyle: 'none',
                     display: 'flex',
-                    flexFlow: 'wrap'
+                    flexFlow: 'wrap',
+                    marginLeft: "0px"
                 }}
             >
                 {group.map(tag => (

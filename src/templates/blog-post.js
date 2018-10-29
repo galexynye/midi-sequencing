@@ -46,7 +46,9 @@ class BlogPostTemplate extends React.Component {
           style={{
             listStyle: 'none',
             display: 'flex',
+            flexFlow: 'wrap',
             marginTop: rhythm(-1),
+            marginLeft: "0px"
           }}
         >
           {tags}

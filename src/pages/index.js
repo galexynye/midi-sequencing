@@ -55,7 +55,9 @@ class BlogIndex extends React.Component {
                   to={`/tags/${tag}`}
                   className="hoverPointer"
                   style={{
+                    display: 'flex',
                     textDecoration: 'none',
+                    flexFlow: 'wrap',
                     boxShadow: 'none',
                     marginRight: '10px',
                   }}
@@ -84,7 +86,9 @@ class BlogIndex extends React.Component {
                 style={{
                   listStyle: 'none',
                   display: 'flex',
+                  flexFlow: 'wrap',
                   marginTop: rhythm(-.5),
+                  marginLeft: "0px"
                 }}
               >
                 {tags}
