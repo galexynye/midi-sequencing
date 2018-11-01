@@ -63,6 +63,7 @@ const MenuMobile = styled.div`
     min-height: 100vh;
     background: #fdfdfd;
     z-index: 1000;
+    padding-bottom: 20px;
     img{
         margin-top: 40px;
         max-width: 200px;
@@ -102,6 +103,7 @@ const MenuLargeWrapper = styled.div`
     top: 0;
     bottom: 0;
     left: 0;
+    /* margin-top: 50px; */
     overflow-y: scroll;
     @media (max-width: 1430px){
         display: none;  
@@ -110,12 +112,14 @@ const MenuLargeWrapper = styled.div`
 `
 
 const MenuLarge = styled.div`
+    max-width: 250px;
+    margin-top: 50px;
     margin-right: 30px;
-    margin-left: 20px;
-    max-width: 225px;
+    margin-left: 30px;
+/*    
     img{
         margin-top: 20px;
-    }
+    } */
     
 `
 

@@ -8,6 +8,14 @@ const Wrapper = styled.div`
         max-width: ${rhythm(27)};
         padding: ${ rhythm(1.5)} ${rhythm(3 / 4)};
         position: relative;
+        /* *{
+            font-family: 'Roboto'
+        } */
+
+        /* h1, h2, h3, h4, h5 {
+            font-family: 'Julius Sans One'
+        } */
+
         h1 {
             color: #700bea;
             margin-bottom: 40px;

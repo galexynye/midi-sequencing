@@ -5,7 +5,7 @@ import MidiSequencing from '../assets/MusicSequencingWordsLogo.png'
 const HomeLink = () => {
     return (
         <div>
-            <Link to="/"><img src={MidiSequencing} alt="" /></Link>
+            <Link to="/"><img src={MidiSequencing} alt="Home Link" /></Link>
         </div>
     )
 }
