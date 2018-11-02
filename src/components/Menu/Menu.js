@@ -59,7 +59,6 @@ const MenuSmallWrapper = styled.div`
 `
 
 const MenuMobile = styled.div`
-    /* min-width: 100vw; */
     min-height: 100vh;
     background: #fdfdfd;
     z-index: 1000;
@@ -115,12 +114,7 @@ const MenuLarge = styled.div`
     max-width: 250px;
     margin-top: 50px;
     margin-right: 30px;
-    margin-left: 30px;
-/*    
-    img{
-        margin-top: 20px;
-    } */
-    
+    margin-left: 30px; 
 `
 
 

@@ -15,6 +15,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
+    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -78,8 +85,7 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    'gatsby-plugin-sass',
-    `gatsby-plugin-styled-components`,
+   
     {
     resolve: 'gatsby-plugin-mailchimp',
     options: {
