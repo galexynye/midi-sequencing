@@ -1,9 +1,8 @@
 import React from 'react'
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import '../scss/App.scss'
 import { Link } from 'gatsby'
-import { rhythm, scale } from '../utils/typography'
 import styled from 'styled-components'
+// import { rhythm, scale } from '../utils/typography'
 import Wrapper from './Wrapper'
 import Footer from './Footer'
 import MusicSequencingWords from '../assets/MusicSequencingWordsLogo.png'
@@ -13,7 +12,12 @@ import Menu from './Menu/Menu'
 const SmallHeading = styled.h3`
             font-family: 'Montserrat', 'sans-serif';
             margin-top: 0px;
-            margin-bottom: ${rhythm(-1)};
+            /* margin-bottom: ${rhythm(-1)}; */
+            margin-bottom: -40px;
+            a {
+              color: inherit;
+            }
+            
 `
 
 class Template extends React.Component {
@@ -29,9 +33,6 @@ class Template extends React.Component {
             id="top"
           >
             <img 
-              style={{
-                marginBottom:'0px'
-              }}
               src={MusicSequencingWords} alt="Music Sequencing Home link"/>
           </Link>
       )
@@ -39,11 +40,6 @@ class Template extends React.Component {
       header = (
         <SmallHeading>
           <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
             to={'/'}
             id="top"
           >

@@ -51,6 +51,9 @@ const MenuSmallWrapper = styled.div`
     @media(max-width: 700px){
         min-width: 100vw
     }
+    ul{
+        margin-left: 10px;
+    }
     /* button{
         position: absolute;
         top: 0;
@@ -77,13 +80,13 @@ const MenuMobile = styled.div`
     }
 
 
-    @media(max-width: 480px){
+    /* @media(max-width: 480px){
         ul {
             li {
                 margin-left: 9px;
             }
         }
-    } 
+    }  */
 `
 
 const BarsButton= styled.button`
