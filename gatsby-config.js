@@ -43,7 +43,7 @@ module.exports = {
             options: {
               fonts: [
                 {
-                  family: `Roboto`
+                  family: `Raleway`
                 },
               ],
             },

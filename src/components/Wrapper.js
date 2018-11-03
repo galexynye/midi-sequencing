@@ -9,7 +9,8 @@ const Wrapper = styled.div`
         padding: ${ rhythm(1.5)} ${rhythm(3 / 4)};
         position: relative;
         *{
-            font-family: 'Roboto'
+            /* font-family: 'Roboto' */
+            font-family: 'Avenir';
             /* font-family: 'Monts errat', 'sans-serif'; */
         }
         
