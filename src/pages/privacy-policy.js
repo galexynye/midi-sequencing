@@ -2,11 +2,13 @@ import React from 'react';
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'
 import Wrapper from '../components/Wrapper'
+import Menu from '../components/Menu/Menu'
 
 class Privacy extends React.Component {
     render(){
     return (
         <Wrapper>
+            <Menu />
             <HomeLink />
             <h1 style={{
                 marginTop: "10px"

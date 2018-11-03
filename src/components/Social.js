@@ -15,7 +15,7 @@ class Social extends React.Component {
                     {/* <FontAwesomeIcon icon={faYoutube} size={this.props.size} /> */}
                     <FontAwesomeIcon icon={faYoutube} size='1x' />
                 </a> 
-                <a href="https://www.facebook.com/midisequencing/" target="blank" className="marRMedium">
+                <a href="https://www.facebook.com/musicsequencing/" target="blank" className="marRMedium">
                     <FontAwesomeIcon icon={faFacebook} size='1x' />
                 </a>
                 <a href="https://twitter.com/midisequencing" target="blank" className="marRMedium">

@@ -79,14 +79,6 @@ const MenuMobile = styled.div`
         margin: 0px;
     }
 
-
-    /* @media(max-width: 480px){
-        ul {
-            li {
-                margin-left: 9px;
-            }
-        }
-    }  */
 `
 
 const BarsButton= styled.button`

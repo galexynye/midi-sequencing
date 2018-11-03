@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
 // import Helmet from "react-helmet"
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'
+import Menu from '../components/Menu/Menu'
 // Utilities
 import kebabCase from "lodash/kebabCase"
 
@@ -17,6 +18,7 @@ const TagsPage = ({
     },
 }) => (
         <Wrapper>
+            <Menu />
             <HomeLink />
             <h1
             style={{ marginTop:'10px'}}

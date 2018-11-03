@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Wrapper from '../components/Wrapper'
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'
-
+import Menu from '../components/Menu/Menu'
 // Components
 import { Link, graphql } from "gatsby"
 
@@ -16,6 +16,7 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Wrapper>
+      <Menu />
       <HomeLink />
       <h1
         style={{
