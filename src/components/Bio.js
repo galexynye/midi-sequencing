@@ -1,11 +1,4 @@
 import React from 'react'
-
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
-
-// import profilePic from './profile-pic.jpg'
-import { rhythm } from '../utils/typography'
 import Social from './Social'
 
 class Bio extends React.Component {
@@ -15,35 +8,24 @@ class Bio extends React.Component {
         style={{
           display: 'flex',
           flexFlow: 'column',
-          marginBottom: rhythm(0),
         }}
       >
-        {/* <img
-          src={profilePic}
-          alt={`Kyle Mathews`}
+        <p
           style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-          }}
-        /> */}
-        <p 
-          style={{
-            marginBottom: "0px",
-            textAlign: 'center'
+            marginBottom: '0px',
+            textAlign: 'center',
           }}
         >
           Gear Reviews and Music Production Tutorials
         </p>
-        <div className="marTSmall"
+        <div
+          className="marTSmall"
           style={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Social size="1x" />
         </div>
-        
       </div>
     )
   }

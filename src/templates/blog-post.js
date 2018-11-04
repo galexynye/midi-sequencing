@@ -1,10 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link,graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
-import { rhythm, scale } from '../utils/typography'
+// import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -12,12 +12,10 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
-    let tags 
-    if(post.frontmatter.tags){
-      tags = post.frontmatter.tags.map(tag => 
-        <li
-          key={tag}
-        >
+    let tags
+    if (post.frontmatter.tags) {
+      tags = post.frontmatter.tags.map(tag => (
+        <li key={tag}>
           <Link
             to={`/tags/${tag}`}
             className="hoverPointer"
@@ -25,14 +23,14 @@ class BlogPostTemplate extends React.Component {
               textDecoration: 'none',
               boxShadow: 'none',
               marginRight: '10px',
-             }}
+            }}
           >
-          { `${tag}`} 
-          </Link> 
+            {`${tag}`}
+          </Link>
         </li>
-        )
+      ))
     }
-    
+
     return (
       <Layout location={this.props.location}>
         <Helmet
@@ -40,37 +38,46 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{post.frontmatter.title}</h1>
-         
+        <h1
+          style={{
+            marginTop: '25px',
+          }}
+        >
+          {post.frontmatter.title}
+        </h1>
+
         <ul
           style={{
             listStyle: 'none',
             display: 'flex',
             flexFlow: 'wrap',
-            marginTop: rhythm(-1),
-            marginLeft: "0px"
+            // marginTop: rhythm(-1),
+            marginLeft: '0px',
+            marginBottom: '0px',
           }}
         >
           {tags}
-        </ul> 
+        </ul>
 
         <p
           style={{
-            ...scale(-1 / 5),
+            // ...scale(-1 / 5),
             display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            // marginBottom: rhythm(1),
+            // marginTop: rhythm(-1),
           }}
         >
           {post.frontmatter.date}
         </p>
-        
+
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
-          style={{
-            marginTop: rhythm(1),
-            marginBottom: rhythm(1),
-          }}
+          style={
+            {
+              // marginTop: rhythm(1),
+              // marginBottom: rhythm(1),
+            }
+          }
         />
         {/* <Bio /> */}
 
@@ -84,20 +91,18 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           <li>
-            {
-              previous &&
+            {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-            }
+            )}
           </li>
           <li>
-            {
-              next &&
+            {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-            }
+            )}
           </li>
         </ul>
       </Layout>

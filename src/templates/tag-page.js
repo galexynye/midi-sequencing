@@ -1,18 +1,18 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 import Wrapper from '../components/Wrapper'
 import HomeLink from '../components/HomeLinkLogo'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu/Menu'
 // Components
-import { Link, graphql } from "gatsby"
+import { Link, graphql } from 'gatsby'
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-    } tagged with "${tag}"`
+    totalCount === 1 ? '' : 's'
+  } tagged with "${tag}"`
 
   return (
     <Wrapper>
@@ -20,13 +20,15 @@ const Tags = ({ pageContext, data }) => {
       <HomeLink />
       <h1
         style={{
-          marginTop: '10px'
+          marginTop: '10px',
         }}
-      >{tagHeader}</h1>
+      >
+        {tagHeader}
+      </h1>
       <ul
         style={{
-          listStyle:'none',
-          marginLeft: "0px"
+          listStyle: 'none',
+          marginLeft: '0px',
         }}
       >
         {edges.map(({ node }) => {

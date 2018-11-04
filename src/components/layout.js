@@ -1,5 +1,5 @@
 import React from 'react'
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 // import { rhythm, scale } from '../utils/typography'
@@ -28,22 +28,19 @@ class Template extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-          <Link
-            to={'/'}
-            id="top"
-          >
-            <img 
-              src={MusicSequencingWords} alt="Music Sequencing Home link"/>
-          </Link>
+        <Link to={'/'} id="top">
+          <img
+            style={{ marginBottom: '0px' }}
+            src={MusicSequencingWords}
+            alt="Music Sequencing Home link"
+          />
+        </Link>
       )
     } else {
       header = (
         <SmallHeading>
-          <Link
-            to={'/'}
-            id="top"
-          >
-            Music Sequencing 
+          <Link to={'/'} id="top">
+            Music Sequencing
           </Link>
         </SmallHeading>
       )
@@ -54,7 +51,7 @@ class Template extends React.Component {
         {header}
         {children}
         <Footer />
-        <ScrollToTop scrollStepInPx="60" delayInMs="20"/>
+        <ScrollToTop scrollStepInPx="60" delayInMs="20" />
       </Wrapper>
     )
   }

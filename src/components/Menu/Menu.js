@@ -1,118 +1,108 @@
 import React from 'react'
-import {StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import _ from 'lodash'
 import SubMenu from './SubMenu'
 import HomeLink from '../HomeLinkLogo'
+import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const MenuContainer = styled.div`
-    h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: #e76900;
-        /* text-decoration: underline; */
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #e76900;
+  }
+  h3 {
+    margin: 0px 0px;
+  }
+  ul {
+    list-style-type: circle;
+    font-size: 1em;
+    list-style-position: outside;
+    margin-top: 5px;
+    li {
+      margin-left: 25px;
     }
-    ul{
-        list-style-type: circle;
-        font-size: 1em;
-        
-        li{
-            margin-left: 25px;
-        }
-        
+  }
+  img {
+    margin-bottom: 0px;
+  }
+  button {
+    border: none;
+    background-color: #ffffff00;
+    &:hover {
+      cursor: pointer;
     }
-    img{
-        margin-bottom: 0px;
+    @media (min-height: 1200) {
+      display: none;
     }
-    button{
-        border: none;
-        background-color: white;
-        &:hover{
-            cursor:pointer
-        }
-        @media (min-height: 1430){
-        display: none;
-        }
-    }
-    
+  }
 `
+
+// SMALL MENU STYLING
 const MenuSmallWrapper = styled.div`
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    
-    overflow-y: scroll;
-     @media(min-width: 1430px){
-        display: none;
-    }
-    @media(max-width: 700px){
-        min-width: 100vw
-    }
-    ul{
-        margin-left: 10px;
-    }
-    /* button{
-        position: absolute;
-        top: 0;
-        left: 0;
-    } */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+  @media (max-width: 700px) {
+    min-width: 100vw;
+  }
 `
 
 const MenuMobile = styled.div`
-    min-height: 100vh;
-    background: #fdfdfd;
-    z-index: 1000;
-    padding-bottom: 20px;
-    img{
-        margin-top: 40px;
-        max-width: 200px;
-    }
-    > * {
-        margin-left: 20px;
-        margin-right: 25px;
-    }
+  min-height: 100vh;
+  background: #fdfdfd;
+  z-index: 1000;
+  padding-bottom: 20px;
+  padding: 20px 20px;
+  img {
+    margin-top: 40px;
+    max-width: 200px;
+  }
+  /* > * {
+    margin-left: 20px;
+    margin-right: 25px;
+  } */
 
-    button{
-        margin: 0px;
-    }
-
+  button {
+    margin: 0px;
+  }
 `
 
-const BarsButton= styled.button`
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 5px 15px;
-    @media(min-width: 1430px){
-        display: none;
-    }
+const BarsButton = styled.button`
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5px 15px;
+  @media (min-width: 1200px) {
+    display: none;
+  }
 `
-
-
+// DESKTOP MENU STYLING
 const MenuLargeWrapper = styled.div`
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    /* margin-top: 50px; */
-    overflow-y: scroll;
-    @media (max-width: 1430px){
-        display: none;  
-    }
-
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `
 
 const MenuLarge = styled.div`
-    max-width: 250px;
-    margin-top: 50px;
-    margin-right: 30px;
-    margin-left: 30px; 
+  max-width: 250px;
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-left: 30px;
 `
-
-
 
 /* Categories get parsed into Objects where each subcategory is a property.
 The subcategory properties' values are an array of the posts that are in that subcategory, represented
@@ -121,131 +111,128 @@ ie subTutorials = {Basics: [{title: "Post1", link: "/blog/post1"}]}
 */
 // const Menu = ({data})=>{
 class Menu extends React.Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            displayMobile: false
+  constructor(props) {
+    super(props)
+    this.state = {
+      displayMobile: false,
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick() {
+    this.setState({
+      displayMobile: !this.state.displayMobile,
+    })
+  }
+  render() {
+    console.log(this.state.displayMobile)
+    const posts = this.props.data.allMarkdownRemark.edges
+    let tutorials = posts.filter(
+      post => post.node.frontmatter.category == 'Tutorials'
+    )
+    let gearReviews = posts.filter(
+      post => post.node.frontmatter.category == 'Gear Reviews'
+    )
+    // Category objects (Each property is a subcategory, see notes above)
+    let subTutorials = {}
+    let subGearReviews = {}
+    // Parses the posts into subCategory Objects
+    posts.forEach(post => {
+      let link = post.node.fields.slug
+      let title = post.node.frontmatter.title
+      let subCategory = post.node.frontmatter.subcategory
+      if (post.node.frontmatter.category == 'Tutorials') {
+        if (subTutorials.hasOwnProperty(subCategory)) {
+          subTutorials[subCategory].push({ title, link })
+        } else {
+          subTutorials[subCategory] = [{ title, link }]
         }
-        this.handleClick = this.handleClick.bind(this)
-    }
-
-    handleClick(){
-        this.setState({
-            displayMobile: !this.state.displayMobile
-        })
-        
-    }
-    render(){
-        console.log(this.state.displayMobile)
-        const posts = this.props.data.allMarkdownRemark.edges
-        let tutorials = posts.filter(post => post.node.frontmatter.category == "Tutorials" )
-        let gearReviews = posts.filter(post => post.node.frontmatter.category == "Gear Reviews")
-  // Category objects (Each property is a subcategory, see notes above)
-        let subTutorials = {}
-        let subGearReviews = {}
-  // Parses the posts into subCategory Objects
-        posts.forEach(post => {
-            let link = post.node.fields.slug
-            let title = post.node.frontmatter.title
-            let subCategory = post.node.frontmatter.subcategory 
-            if (post.node.frontmatter.category == "Tutorials"){
-                if (subTutorials.hasOwnProperty(subCategory)){
-                    subTutorials[subCategory].push({title, link})
-                } else {
-                    subTutorials[subCategory] = [{title, link}]
-                }
-            } else if (post => post.node.frontmatter.category == "Gear Reviews"){
-                if (subGearReviews.hasOwnProperty(subCategory)) {
-                    subGearReviews[subCategory].push({ title, link })
-                } else {
-                    subGearReviews[subCategory] = [{ title, link }]
-                }
-            }
-        })
+      } else if (post => post.node.frontmatter.category == 'Gear Reviews') {
+        if (subGearReviews.hasOwnProperty(subCategory)) {
+          subGearReviews[subCategory].push({ title, link })
+        } else {
+          subGearReviews[subCategory] = [{ title, link }]
+        }
+      }
+    })
     // Returns and Array of SubMenu Components to be rendered in menu
-        tutorials =  Object.keys(subTutorials).map(function (key) {
-            return <SubMenu title={key} links={subTutorials[key]} key={key}></SubMenu>
-            })
+    tutorials = Object.keys(subTutorials).map(function(key) {
+      return <SubMenu title={key} links={subTutorials[key]} key={key} />
+    })
 
-        gearReviews = Object.keys(subGearReviews).map(function (key) {
-            return <SubMenu title={key} links={subGearReviews[key]} key={key}></SubMenu>
-        })
+    gearReviews = Object.keys(subGearReviews).map(function(key) {
+      return <SubMenu title={key} links={subGearReviews[key]} key={key} />
+    })
 
-        const MobileMenu = 
-            <MenuMobile >
-                <BarsButton onClick={this.handleClick}>
-                    <FontAwesomeIcon icon={faTimes} />
-                </BarsButton>   
-                <HomeLink onClick={this.handleClick}/>
-                <h2>Tutorials</h2>
-                <ul>
-                    {tutorials}
-                </ul>
-                <h2>Gear Reviews</h2>
-                <ul>
-                    {gearReviews}
-                </ul>
-            </MenuMobile>
-        const Bars = <BarsButton onClick={this.handleClick}>
-                            <FontAwesomeIcon icon={faBars} />
-                    </BarsButton>
-        return(
-            <MenuContainer>
-                    <MenuLargeWrapper>
-                    <MenuLarge>
-                        <HomeLink />
-                        <h2>Tutorials</h2>
-                        <ul>
-                            {tutorials}
-                        </ul>
-                        <h2>Gear Reviews</h2>
-                        <ul>
-                            {gearReviews}
-                        </ul>
-                    </MenuLarge>
-                    </MenuLargeWrapper>
-                    <div>
-                        {!this.state.displayMobile && Bars}
-                    </div>
-                    {this.state.displayMobile && 
-                        <MenuSmallWrapper>
-                            {MobileMenu}
-                        </MenuSmallWrapper>
-                    }            
-             </MenuContainer>
-        )
+    const MenuLinks = () => {
+      return (
+        <div>
+          <h2>Tutorials</h2>
+          <ul>{tutorials}</ul>
+          <h2>Gear Reviews</h2>
+          <ul>{gearReviews}</ul>
+          <Link to={`/lessons`}>
+            <h2>Lessons</h2>
+          </Link>
+        </div>
+      )
     }
+
+    const MobileMenu = (
+      <MenuMobile>
+        <BarsButton onClick={this.handleClick}>
+          <FontAwesomeIcon icon={faTimes} />
+        </BarsButton>
+        <HomeLink onClick={this.handleClick} />
+        <MenuLinks />
+      </MenuMobile>
+    )
+    // Hamburger Button For Menu Expansion on Mobile
+    const Bars = (
+      <BarsButton onClick={this.handleClick}>
+        <FontAwesomeIcon icon={faBars} />
+      </BarsButton>
+    )
+
+    return (
+      <MenuContainer>
+        <MenuLargeWrapper>
+          <MenuLarge>
+            <HomeLink />
+            <MenuLinks />
+          </MenuLarge>
+        </MenuLargeWrapper>
+        <div>{!this.state.displayMobile && Bars}</div>
+        {this.state.displayMobile && (
+          <MenuSmallWrapper>{MobileMenu}</MenuSmallWrapper>
+        )}
+      </MenuContainer>
+    )
+  }
 }
 
-
-
-export default (props)=> (
-    
-    <StaticQuery
-        query = {graphql`
-        query{
-            allMarkdownRemark(
-                sort: { fields: [frontmatter___date], 
-                order: DESC }) {
-                edges {
-                    node {
-                        fields {
-                            slug
-                        }
-                        frontmatter {
-                            title
-                            category
-                            subcategory
-                            company
-                            subject          
-                        }   
-                    }
-                }
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                category
+                subcategory
+                company
+                subject
+              }
             }
+          }
         }
-        `} 
-        render = { data => <Menu data={data} {...props} />}
-    />
-   
+      }
+    `}
+    render={data => <Menu data={data} {...props} />}
+  />
 )
-
