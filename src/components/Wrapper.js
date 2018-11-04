@@ -4,14 +4,12 @@ import { rhythm, scale } from '../utils/typography'
 
 const Wrapper = styled.div`
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; 
         max-width: ${rhythm(27)};
         padding: ${ rhythm(1.5)} ${rhythm(3 / 4)};
         position: relative;
-        *{
-            /* font-family: 'Roboto' */
+        *{            
             font-family: 'Avenir';
-            /* font-family: 'Monts errat', 'sans-serif'; */
         }
         
         h1 {
@@ -42,18 +40,6 @@ const Wrapper = styled.div`
         a {
             box-shadow: none;
             color: #700bea;
-        }
-
-        .marRSmall{
-            margin-right: 10px;
-        }
-
-        .marTSmall {
-            margin-top: 10px;
-        }
-
-        .marRMedium{
-            margin-right: 25px;
         }
 `
 
