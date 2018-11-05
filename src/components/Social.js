@@ -1,5 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styled from 'styled-components'
+
 import {
   faFacebook,
   faYoutube,
@@ -7,10 +9,14 @@ import {
   faReddit,
 } from '@fortawesome/free-brands-svg-icons'
 
+const SocialWrapper = styled.div`
+  margin-bottom: 20px;
+`
+
 class Social extends React.Component {
   render() {
     return (
-      <div>
+      <SocialWrapper>
         <a
           href="https://www.youtube.com/channel/UCRh5xwjVbFb0PI9JKOeZAIg"
           target="blank"
@@ -40,7 +46,7 @@ class Social extends React.Component {
         >
           <FontAwesomeIcon icon={faTwitter} size={this.props.size} />
         </a>
-      </div>
+      </SocialWrapper>
     )
   }
 }

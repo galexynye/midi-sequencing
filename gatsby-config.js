@@ -15,7 +15,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
-    // 'gatsby-plugin-sass',
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -28,12 +27,14 @@ module.exports = {
               // TODO: Change 1170 to a variable
               // wrapperStyle: `margin-bottom: 1.0725rem`
               wrapperStyle: `margin-bottom: 1.2rem; z-index: -1`,
+              // wrapperStyle: `margin-bottom: 1.2rem;`,
             },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.2rem; z-index:-1`,
+              wrapperStyle: `margin-bottom: 1.2rem; z-index: 1`,
+              // wrapperStyle: `margin-bottom: 1.2rem;`,
             },
           },
           'gatsby-remark-prismjs',
@@ -75,12 +76,12 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-typography',
+    //   options: {
+    //     pathToConfigModule: 'src/utils/typography',
+    //   },
+    // },
 
     {
       resolve: 'gatsby-plugin-mailchimp',

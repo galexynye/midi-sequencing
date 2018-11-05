@@ -5,39 +5,48 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const SubMenuWrapper = styled.div`
-  margin-left: -13px;
+  /* margin-left: -13px; */
   padding: 0px;
   ul {
-    /* margin-left: 10px; */
-    li {
-      &:hover {
-        color: #c393ff;
-      }
-      a {
-        &:hover {
-          color: #c393ff;
-        }
-      }
-    }
+    /* margin-left: -9px; */
   }
 `
 
 const TitleButton = styled.div`
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
+  margin-bottom: 15px;
   h3 {
-    margin: 10px 0px;
+    margin: 20px 0px 20px 0px;
     &:hover {
       cursor: pointer;
     }
   }
   button {
-    height: 30px;
+    /* height: 30px; */
+    font-size: 20px;
+    padding: 0px;
     background: none;
     border: none;
-    color: #700bea;
+    color: #2c3e50;
     &:hover {
       cursor: pointer;
+      color: #2c62a2;
+    }
+  }
+`
+
+const SubMenuLinks = styled.div`
+  ul {
+    li {
+      a {
+        /* color: #879394; */
+        color: #2c62a2;
+        &:hover {
+          /* color: #2c62a2; */
+          color: #879394;
+        }
+      }
     }
   }
 `
@@ -66,15 +75,15 @@ class SubMenu extends React.Component {
     return (
       <SubMenuWrapper>
         <TitleButton>
-          <button onClick={this.handleButton}>
-            {/* {!this.state.showLinks && <FontAwesomeIcon icon={faArrowRight} />} */}
-            {/* {this.state.showLinks && <FontAwesomeIcon icon={faArrowDown} />} */}
-          </button>
-          <h3 onClick={this.handleButton}>{this.props.title}</h3>
+          {/* <button onClick={this.handleButton}> */}
+          {/* {!this.state.showLinks && <FontAwesomeIcon icon={faArrowRight} />} */}
+          {/* {this.state.showLinks && <FontAwesomeIcon icon={faArrowDown} />} */}
+          {/* </button> */}
+          <button onClick={this.handleButton}>{this.props.title}</button>
         </TitleButton>
-        <div>
+        <SubMenuLinks>
           <ul>{this.state.showLinks && links}</ul>
-        </div>
+        </SubMenuLinks>
       </SubMenuWrapper>
     )
   }

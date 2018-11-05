@@ -3,14 +3,19 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  max-width: 1170px;
+  max-width: 800px;
   /*TODO: Change to variable */
-  padding-left: 325px;
+  padding-left: 315px;
+  padding-right: 20px;
   /* box-sizing: border-box; */
-  padding-top: calc(100vh - 95vh);
+  /* padding-top: calc(100vh - 97vh); */
   position: relative;
   * {
     font-family: 'Avenir';
+  }
+
+  a {
+    text-decoration: none;
   }
 
   h1 {
@@ -20,10 +25,10 @@ const Wrapper = styled.div`
 
   h2 {
     color: #2c3e50;
+    margin: 10px 0px;
   }
 
   h3 {
-    margin-top: 20px;
     margin-bottom: 10px;
     color: #2c3e50;
   }
@@ -31,14 +36,13 @@ const Wrapper = styled.div`
   ol,
   ul {
     list-style-position: inside;
+    padding: 0px;
   }
 
   img {
+    margin-top: 20px;
     margin-bottom: 20px;
-  }
-
-  #noUnderLine {
-    text-decoration: none;
+    max-width: 100%;
   }
 
   .hoverPointer:hover {
@@ -62,7 +66,7 @@ const Wrapper = styled.div`
     margin-right: 25px;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 900px) {
     padding: 40px 10px;
     max-width: 800px;
   }

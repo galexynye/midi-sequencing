@@ -13,7 +13,10 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              limit: 1000
+            ) {
               edges {
                 node {
                   fields {
@@ -35,11 +38,12 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMarkdownRemark.edges
 
         _.each(posts, (post, index) => {
-          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
+          const previous =
+            index === posts.length - 1 ? null : posts[index + 1].node
+          const next = index === 0 ? null : posts[index - 1].node
 
           createPage({
             path: post.node.fields.slug,
@@ -55,7 +59,7 @@ exports.createPages = ({ graphql, actions }) => {
         let tags = []
         // Iterate through each post, putting all found tags into `tags`
         _.each(posts, edge => {
-          if (_.get(edge, "node.frontmatter.tags")) {
+          if (_.get(edge, 'node.frontmatter.tags')) {
             tags = tags.concat(edge.node.frontmatter.tags)
           }
         })
@@ -80,38 +84,40 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-
-  if (node.internal.type === `MarkdownRemark` && getNode(node.parent).internal.type === `File`) {
+  if (
+    node.internal.type === `MarkdownRemark` &&
+    getNode(node.parent).internal.type === `File`
+  ) {
     if (node.frontmatter.slug) {
       createNodeField({
         name: `slug`,
         node,
         value: node.frontmatter.slug,
-      });
-      return;
+      })
+      return
     }
 
-    const fileNode = getNode(node.parent);
+    const fileNode = getNode(node.parent)
     if (fileNode.sourceInstanceName === 'pages') {
-      let slug;
+      let slug
       if (fileNode.relativeDirectory) {
         // Remove date stamp in front, it's only useful for arranging our files/folders
-        const paths = fileNode.relativeDirectory.split('/');
-        const directParent = paths.pop();
-        const dateString = directParent.substring(0, 10);
+        const paths = fileNode.relativeDirectory.split('/')
+        const directParent = paths.pop()
+        const dateString = directParent.substring(0, 10)
 
         if (isNaN(new Date(dateString).valueOf())) {
           // We'll use the path to the MD file as the slug.
           // eg: http://localhost:8000/blog/my-first-post
-          slug = `/${fileNode.relativeDirectory}`;
+          slug = `/${fileNode.relativeDirectory}`
         } else {
           // Remove the trailing hypen after the dateString
-          slug = `/${paths.join('/')}/${directParent.substring(11)}`;
+          slug = `/${paths.join('/')}/${directParent.substring(11)}`
         }
       } else {
         // If the MD file is at src/pages, we'll use the filename instead.
         // eg: http://localhost:8000/about
-        slug = `/${fileNode.name}`;
+        slug = `/${fileNode.name}`
       }
 
       if (slug) {
@@ -130,6 +136,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
   }
 }
-
-
-

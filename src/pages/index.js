@@ -79,8 +79,6 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               {/* <small>{node.frontmatter.date}</small> */}
-
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
               <ul
                 style={{
                   listStyle: 'none',
@@ -93,6 +91,7 @@ class BlogIndex extends React.Component {
               >
                 {tags}
               </ul>
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
         })}
@@ -112,7 +111,7 @@ class BlogIndex extends React.Component {
           <div>
             That's all my posts :)
             <br />
-            <p>Please consider signing up for my mailing list below. </p>
+            {/* <p>Please consider signing up for my mailing list below. </p> */}
           </div>
         )}
       </Layout>

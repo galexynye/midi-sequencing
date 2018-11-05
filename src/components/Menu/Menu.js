@@ -11,21 +11,25 @@ import Social from '../Social'
 import MailSignUp from '../MailSignUp'
 
 const MenuContainer = styled.div`
+  z-index: 10;
   h2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     color: #e76900;
   }
   h3 {
     margin: 0px 0px;
   }
   ul {
-    list-style-type: circle;
+    list-style-type: none;
     font-size: 1em;
     list-style-position: outside;
     margin-top: 5px;
+    margin-left: 10px;
     li {
-      margin-left: 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      /* margin-left: 20px; */
     }
   }
   img {
@@ -37,7 +41,7 @@ const MenuContainer = styled.div`
     &:hover {
       cursor: pointer;
     }
-    @media (min-height: 1200) {
+    @media (min-height: 900) {
       display: none;
     }
   }
@@ -46,11 +50,12 @@ const MenuContainer = styled.div`
 // SMALL MENU STYLING
 const MenuSmallWrapper = styled.div`
   position: fixed;
+  z-index: 10;
   top: 0;
   bottom: 0;
   left: 0;
   overflow-y: scroll;
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
     display: none;
   }
   @media (max-width: 700px) {
@@ -61,7 +66,6 @@ const MenuSmallWrapper = styled.div`
 const MenuMobile = styled.div`
   min-height: 100vh;
   background: #fdfdfd;
-  z-index: 1000;
   /* padding-bottom: 20px; */
   ul {
     margin-left: 0px;
@@ -84,7 +88,7 @@ const BarsButton = styled.button`
   top: 0;
   left: 0;
   padding: 5px 15px;
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
     display: none;
   }
 `
@@ -95,16 +99,19 @@ const MenuLargeWrapper = styled.div`
   bottom: 0;
   left: 0;
   overflow-y: scroll;
-  @media (max-width: 1200px) {
+
+  @media (max-width: 900px) {
     display: none;
   }
 `
 
 const MenuLarge = styled.div`
-  max-width: 250px;
+  max-width: 225px;
   margin-top: 50px;
   margin-right: 30px;
   margin-left: 30px;
+  @media (max-width: 1200px) {
+  }
 `
 
 //END MENU STYLING
@@ -123,6 +130,8 @@ class Menu extends React.Component {
     super(props)
     this.state = {
       displayMobile: false,
+      displayTutorials: false,
+      displayGearReviews: false,
     }
     this.handleClick = this.handleClick.bind(this)
   }
@@ -178,10 +187,10 @@ class Menu extends React.Component {
       return (
         <div>
           <h2>Tutorials</h2>
-          <ul>{tutorials}</ul>
+          <ul style={{ marginTop: '-10px' }}>{tutorials}</ul>
           <h2 style={{ color: '#adaa08' }}>Gear Reviews</h2>
           {/* <h2 style={{ color: '#1f8cd1' }}>Gear Reviews</h2> */}
-          <ul>{gearReviews}</ul>
+          <ul style={{ marginTop: '-10px' }}>{gearReviews}</ul>
           <Link to={`/lessons`}>
             <h2 style={{ color: '#00ce78' }}>Lessons</h2>
           </Link>
@@ -193,9 +202,8 @@ class Menu extends React.Component {
             {' '}
             <h2 style={{ color: '#af0069' }}>Privacy Policy</h2>
           </Link>
-
-          {/* <MailSignUp /> */}
-          <Social size="2x" />
+          <MailSignUp />
+          <Social size="1x" />
         </div>
       )
     }
