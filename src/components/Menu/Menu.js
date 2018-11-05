@@ -7,11 +7,13 @@ import HomeLink from '../HomeLinkLogo'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import Social from '../Social'
+import MailSignUp from '../MailSignUp'
 
 const MenuContainer = styled.div`
   h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #e76900;
   }
   h3 {
@@ -60,17 +62,18 @@ const MenuMobile = styled.div`
   min-height: 100vh;
   background: #fdfdfd;
   z-index: 1000;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
+  ul {
+    margin-left: 0px;
+    li {
+      margin-left: 35px;
+    }
+  }
   padding: 20px 20px;
   img {
     margin-top: 40px;
     max-width: 200px;
   }
-  /* > * {
-    margin-left: 20px;
-    margin-right: 25px;
-  } */
-
   button {
     margin: 0px;
   }
@@ -104,12 +107,17 @@ const MenuLarge = styled.div`
   margin-left: 30px;
 `
 
-/* Categories get parsed into Objects where each subcategory is a property.
+//END MENU STYLING
+
+/* 
+How The Menu Works 
+Categories get parsed into Objects where each subcategory is a property.
 The subcategory properties' values are an array of the posts that are in that subcategory, represented
 as an object with {title, link}
 ie subTutorials = {Basics: [{title: "Post1", link: "/blog/post1"}]}
 */
-// const Menu = ({data})=>{
+
+// Menu
 class Menu extends React.Component {
   constructor(props) {
     super(props)
@@ -155,6 +163,7 @@ class Menu extends React.Component {
         }
       }
     })
+
     // Returns and Array of SubMenu Components to be rendered in menu
     tutorials = Object.keys(subTutorials).map(function(key) {
       return <SubMenu title={key} links={subTutorials[key]} key={key} />
@@ -164,16 +173,29 @@ class Menu extends React.Component {
       return <SubMenu title={key} links={subGearReviews[key]} key={key} />
     })
 
+    // Menu Links Rendered in Both Menus
     const MenuLinks = () => {
       return (
         <div>
           <h2>Tutorials</h2>
           <ul>{tutorials}</ul>
-          <h2>Gear Reviews</h2>
+          <h2 style={{ color: '#adaa08' }}>Gear Reviews</h2>
+          {/* <h2 style={{ color: '#1f8cd1' }}>Gear Reviews</h2> */}
           <ul>{gearReviews}</ul>
           <Link to={`/lessons`}>
-            <h2>Lessons</h2>
+            <h2 style={{ color: '#00ce78' }}>Lessons</h2>
           </Link>
+          <a href="mailto:midisequencingdotcom@gmail.com">
+            <h2 style={{ color: '#1f8cd1' }}>Contact</h2>
+          </a>
+
+          <Link to="/privacy-policy">
+            {' '}
+            <h2 style={{ color: '#af0069' }}>Privacy Policy</h2>
+          </Link>
+
+          {/* <MailSignUp /> */}
+          <Social size="2x" />
         </div>
       )
     }

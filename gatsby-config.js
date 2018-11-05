@@ -24,9 +24,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 800,
+              maxWidth: 1170,
+              // TODO: Change 1170 to a variable
               // wrapperStyle: `margin-bottom: 1.0725rem`
-              wrapperStyle: `margin-bottom: 1.2rem; z-index: -1`
+              wrapperStyle: `margin-bottom: 1.2rem; z-index: -1`,
             },
           },
           {
@@ -43,11 +44,11 @@ module.exports = {
             options: {
               fonts: [
                 {
-                  family: `Raleway`
+                  family: `Raleway`,
                 },
               ],
             },
-          }
+          },
         ],
       },
     },
@@ -80,11 +81,12 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-   
+
     {
-    resolve: 'gatsby-plugin-mailchimp',
-    options: {
-      endpoint: 'https://midisequencing.us15.list-manage.com/subscribe/post?u=959ef0b4d1c6a701f90f85f9e&amp;id=59168d9d12', // see instructions section below
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://midisequencing.us15.list-manage.com/subscribe/post?u=959ef0b4d1c6a701f90f85f9e&amp;id=59168d9d12', // see instructions section below
       },
     },
   ],

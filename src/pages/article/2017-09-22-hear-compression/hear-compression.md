@@ -1,6 +1,6 @@
 ---
 path: '/article/hear-compression'
-title: How to Use Compression
+title: How to Hear Compression
 date: '2017-09-22'
 category: 'Tutorials'
 subcategory: 'Mixing'

@@ -3,13 +3,11 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  /* max-width: ${rhythm(27)}; */
   max-width: 1170px;
+  /*TODO: Change to variable */
   padding-left: 325px;
   /* box-sizing: border-box; */
   padding-top: calc(100vh - 95vh);
-
-  /* padding: ${rhythm(1.5)} ${rhythm(3 / 4)}; */
   position: relative;
   * {
     font-family: 'Avenir';
@@ -20,13 +18,18 @@ const Wrapper = styled.div`
     margin: 15px 0px;
   }
 
+  h2 {
+    color: #2c3e50;
+  }
+
   h3 {
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #212121;
+    color: #2c3e50;
   }
 
-  ol, ul {
+  ol,
+  ul {
     list-style-position: inside;
   }
 
@@ -60,7 +63,7 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 1200px) {
-    padding: 40px 10px ;
+    padding: 40px 10px;
     max-width: 800px;
   }
 `

@@ -25,24 +25,25 @@ class Footer extends React.Component {
       <div
         style={{
           // width: '600px',
-          marginTop: '50px',
+          // marginTop: '50px',
           display: 'flex',
           flexFlow: 'column',
           alignItems: 'center',
         }}
       >
-        <Info>
+        {/* <Info>
           <Social size="1x" />
           <a href="mailto:midisequencingdotcom@gmail.com">Contact</a>
           <Link to="/privacy-policy"> Privacy Policy </Link>
-        </Info>
-        <div>
+        </Info> */}
+        {/* <div>
           <MailSignUp />
-        </div>
+        </div> */}
         <div
           style={{
             marginTop: '30px',
             maxWidth: '200px',
+            marginBottom: '40px',
           }}
         >
           <HomeLink />

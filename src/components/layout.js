@@ -39,9 +39,9 @@ class Template extends React.Component {
     } else {
       header = (
         <SmallHeading>
-          <Link to={'/'} id="top">
+          {/* <Link to={'/'} id="top">
             Music Sequencing
-          </Link>
+          </Link> */}
         </SmallHeading>
       )
     }

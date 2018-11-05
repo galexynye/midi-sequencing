@@ -4,6 +4,24 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
+const SubMenuWrapper = styled.div`
+  margin-left: -13px;
+  padding: 0px;
+  ul {
+    /* margin-left: 10px; */
+    li {
+      &:hover {
+        color: #c393ff;
+      }
+      a {
+        &:hover {
+          color: #c393ff;
+        }
+      }
+    }
+  }
+`
+
 const TitleButton = styled.div`
   display: flex;
   align-items: center;
@@ -46,18 +64,18 @@ class SubMenu extends React.Component {
     ))
 
     return (
-      <div>
+      <SubMenuWrapper>
         <TitleButton>
           <button onClick={this.handleButton}>
-            {!this.state.showLinks && <FontAwesomeIcon icon={faArrowRight} />}
-            {this.state.showLinks && <FontAwesomeIcon icon={faArrowDown} />}
+            {/* {!this.state.showLinks && <FontAwesomeIcon icon={faArrowRight} />} */}
+            {/* {this.state.showLinks && <FontAwesomeIcon icon={faArrowDown} />} */}
           </button>
           <h3 onClick={this.handleButton}>{this.props.title}</h3>
         </TitleButton>
         <div>
           <ul>{this.state.showLinks && links}</ul>
         </div>
-      </div>
+      </SubMenuWrapper>
     )
   }
 }

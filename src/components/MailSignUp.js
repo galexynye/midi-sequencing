@@ -3,12 +3,13 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 import styled from 'styled-components'
 
 const MailChimp = styled.div`
-  margin-top: 40px;
+  margin-top: -10px;
+  margin-bottom: 20px;
   display: flex;
   flex-flow: column;
-  h3 {
+  h4 {
     margin-top: 0px;
-    text-align: center;
+    /* text-align: center; */
   }
   input[type='submit'] {
     margin: 0px;
@@ -20,7 +21,7 @@ const MailChimp = styled.div`
   form {
     margin: 0px;
     display: flex;
-    flex-flow: wrap;
+    /* flex-flow: wrap; */
   }
 `
 
@@ -67,7 +68,7 @@ export default class MailSignUP extends React.Component {
   render() {
     return (
       <MailChimp>
-        <h3>Mailing List :)</h3>
+        <h4 style={{ margin: '10px 0px' }}>Mailing List :)</h4>
         <form onSubmit={this._handleSubmit}>
           <input
             type="email"
@@ -75,7 +76,7 @@ export default class MailSignUP extends React.Component {
             placeholder="email"
             name="email"
           />
-          <input type="submit" value="Submit" />
+          <input style={{ width: '60px' }} type="submit" value="Sub!" />
         </form>
       </MailChimp>
     )
