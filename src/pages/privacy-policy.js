@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeLink from '../components/HomeLinkLogo'
+import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Footer from '../components/Footer'
 import Wrapper from '../components/Wrapper'
 import Menu from '../components/Menu/Menu'

@@ -1,10 +1,10 @@
 import React from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import styled from 'styled-components'
+import HeaderButton from './HeaderButton'
 
 const MailChimp = styled.div`
-  margin-top: -10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: flex;
   flex-flow: column;
   h3 {
@@ -22,6 +22,7 @@ const MailChimp = styled.div`
   form {
     margin: 0px;
     padding: 5px;
+    max-width: 217px;
     display: flex;
     border: 1px solid #2c3e50;
     border-radius: 5px;
@@ -78,24 +79,13 @@ export default class MailSignUP extends React.Component {
   render() {
     return (
       <MailChimp>
-        <button
-          onClick={this._handleShowSubmit}
-          style={{
-            margin: '10px 0px 10px 0px',
-            color: '#ce0a00',
-            fontSize: `25px`,
-            fontWeight: '800',
-            padding: '0',
-            textAlign: 'left',
-          }}
-        >
+        <HeaderButton inputColor="#ce0a00" onClick={this._handleShowSubmit}>
           Mailing List :)
-        </button>
+        </HeaderButton>
         {this.state.showSubmit && (
           <div>
             <p style={{ marginTop: '0px' }}>
-              Please enter your email below if you want to get sweet emails
-              every once in awhile.
+              Enter your email below for sweet emails every once in awhile.
             </p>
             <form onSubmit={this._handleSubmit}>
               <input

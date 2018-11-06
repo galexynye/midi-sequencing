@@ -4,48 +4,37 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
+/* About the SubMenu
+  Submenu generates the link to the actual articles. 
+  It consists of a button that shows or hides the links
+*/
+
 const SubMenuWrapper = styled.div`
-  /* margin-left: -13px; */
+  /* margin-top: -15px; */
+`
+
+const TitleButton = styled.button`
   padding: 0px;
-  ul {
-    /* margin-left: -9px; */
+  /* padding-bottom: 10px; */
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: #2c3e50;
+  &:hover {
+    cursor: pointer;
   }
 `
 
-const TitleButton = styled.div`
-  /* display: flex; */
-  /* align-items: center; */
-  margin-bottom: 15px;
-  h3 {
-    margin: 20px 0px 20px 0px;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  button {
-    /* height: 30px; */
-    font-size: 20px;
-    padding: 0px;
-    background: none;
-    border: none;
-    color: #2c3e50;
-    &:hover {
-      cursor: pointer;
+const SubMenuLinks = styled.ul`
+  margin-bottom: 10px !important;
+  /* margin-top: -20px !important; */
+  li {
+    font-size: 15px;
+    /* margin-left: 10px !important; */
+    a {
       color: #2c62a2;
-    }
-  }
-`
-
-const SubMenuLinks = styled.div`
-  ul {
-    li {
-      a {
+      &:hover {
         /* color: #879394; */
-        color: #2c62a2;
-        &:hover {
-          /* color: #2c62a2; */
-          color: #879394;
-        }
       }
     }
   }
@@ -74,16 +63,10 @@ class SubMenu extends React.Component {
 
     return (
       <SubMenuWrapper>
-        <TitleButton>
-          {/* <button onClick={this.handleButton}> */}
-          {/* {!this.state.showLinks && <FontAwesomeIcon icon={faArrowRight} />} */}
-          {/* {this.state.showLinks && <FontAwesomeIcon icon={faArrowDown} />} */}
-          {/* </button> */}
-          <button onClick={this.handleButton}>{this.props.title}</button>
+        <TitleButton onClick={this.handleButton}>
+          {this.props.title}
         </TitleButton>
-        <SubMenuLinks>
-          <ul>{this.state.showLinks && links}</ul>
-        </SubMenuLinks>
+        <SubMenuLinks>{this.state.showLinks && links}</SubMenuLinks>
       </SubMenuWrapper>
     )
   }

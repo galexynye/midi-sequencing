@@ -3,29 +3,25 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import _ from 'lodash'
 import SubMenu from './SubMenu'
-import HomeLink from '../HomeLinkLogo'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import Social from '../Social'
 import MailSignUp from '../MailSignUp'
+import HeaderButton from '../HeaderButton'
+import MSLogo from '../../assets/MusicSeq-Logo_200px.png'
+import HomeLink from '../HomeLinks/HomeLinkLogo'
+import TopNav from './TopNav'
 
-const MenuContainer = styled.div`
+const MenuContainer = styled.nav`
   z-index: 10;
-  h2 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: #e76900;
-  }
-  h3 {
-    margin: 0px 0px;
-  }
   ul {
     list-style-type: none;
     font-size: 1em;
     list-style-position: outside;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 10px;
+    margin-bottom: 0px;
     li {
       margin-top: 10px;
       margin-bottom: 10px;
@@ -51,7 +47,7 @@ const MenuContainer = styled.div`
 const MenuSmallWrapper = styled.div`
   position: fixed;
   z-index: 10;
-  top: 0;
+  top: 41px;
   bottom: 0;
   left: 0;
   overflow-y: scroll;
@@ -64,7 +60,7 @@ const MenuSmallWrapper = styled.div`
 `
 
 const MenuMobile = styled.div`
-  min-height: 100vh;
+  min-height: calc(100vh - 40px);
   background: #fdfdfd;
   /* padding-bottom: 20px; */
   ul {
@@ -83,19 +79,10 @@ const MenuMobile = styled.div`
   }
 `
 
-const BarsButton = styled.button`
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 5px 15px;
-  @media (min-width: 900px) {
-    display: none;
-  }
-`
 // DESKTOP MENU STYLING
 const MenuLargeWrapper = styled.div`
   position: fixed;
-  top: 0;
+  top: 50px;
   bottom: 0;
   left: 0;
   overflow-y: scroll;
@@ -106,12 +93,18 @@ const MenuLargeWrapper = styled.div`
 `
 
 const MenuLarge = styled.div`
-  max-width: 225px;
-  margin-top: 50px;
+  width: 225px;
+  margin-top: 20px;
   margin-right: 30px;
   margin-left: 30px;
-  @media (max-width: 1200px) {
-  }
+`
+
+const MenuLinksWrapper = styled.div`
+  display: flex;
+  flex-flow: column;
+`
+const SubMenus = styled.div`
+  margin-left: 10px;
 `
 
 //END MENU STYLING
@@ -130,17 +123,31 @@ class Menu extends React.Component {
     super(props)
     this.state = {
       displayMobile: false,
-      displayTutorials: false,
-      displayGearReviews: false,
+      displayTutorials: true,
+      displayGearReviews: true,
     }
-    this.handleClick = this.handleClick.bind(this)
+    this._handleClick = this._handleClick.bind(this)
+    this._toggleTutorials = this._toggleTutorials.bind(this)
+    this._toggleGearReviews = this._toggleGearReviews.bind(this)
   }
 
-  handleClick() {
+  _handleClick() {
     this.setState({
       displayMobile: !this.state.displayMobile,
     })
   }
+
+  _toggleTutorials() {
+    this.setState({
+      displayTutorials: !this.state.displayTutorials,
+    })
+  }
+  _toggleGearReviews() {
+    this.setState({
+      displayGearReviews: !this.state.displayGearReviews,
+    })
+  }
+
   render() {
     console.log(this.state.displayMobile)
     const posts = this.props.data.allMarkdownRemark.edges
@@ -185,58 +192,58 @@ class Menu extends React.Component {
     // Menu Links Rendered in Both Menus
     const MenuLinks = () => {
       return (
-        <div>
-          <h2>Tutorials</h2>
-          <ul style={{ marginTop: '-10px' }}>{tutorials}</ul>
-          <h2 style={{ color: '#adaa08' }}>Gear Reviews</h2>
-          {/* <h2 style={{ color: '#1f8cd1' }}>Gear Reviews</h2> */}
-          <ul style={{ marginTop: '-10px' }}>{gearReviews}</ul>
+        <MenuLinksWrapper>
+          <HeaderButton onClick={this._toggleTutorials} inputColor="#e76900">
+            Tutorials
+          </HeaderButton>
+          {this.state.displayTutorials && <SubMenus>{tutorials}</SubMenus>}
+          {/* <ul style={{ marginTop: '-10px' }}>{tutorials}</ul> */}
+          <HeaderButton onClick={this._toggleGearReviews} inputColor="#adaa08">
+            Gear Reviews
+          </HeaderButton>
+          {this.state.displayGearReviews && <SubMenus>{gearReviews}</SubMenus>}
+          {/* <ul style={{ marginTop: '-10px' }}>{gearReviews}</ul> */}
           <Link to={`/lessons`}>
-            <h2 style={{ color: '#00ce78' }}>Lessons</h2>
+            <HeaderButton inputColor="#00ce78">Lessons</HeaderButton>
           </Link>
           <a href="mailto:midisequencingdotcom@gmail.com">
-            <h2 style={{ color: '#1f8cd1' }}>Contact</h2>
+            <HeaderButton inputColor="#1f8cd1">Contact</HeaderButton>
           </a>
-
           <Link to="/privacy-policy">
             {' '}
-            <h2 style={{ color: '#af0069' }}>Privacy Policy</h2>
+            <HeaderButton inputColor="#af0069">Privacy Policy</HeaderButton>
           </Link>
           <MailSignUp />
-          <Social size="1x" />
-        </div>
+          <Social size="1x" margin="5px 0px 0px 1px" />
+        </MenuLinksWrapper>
       )
     }
 
     const MobileMenu = (
       <MenuMobile>
-        <BarsButton onClick={this.handleClick}>
-          <FontAwesomeIcon icon={faTimes} />
-        </BarsButton>
-        <HomeLink onClick={this.handleClick} />
+        {/* <HomeLink onClick={this._handleClick} /> */}
         <MenuLinks />
       </MenuMobile>
     )
-    // Hamburger Button For Menu Expansion on Mobile
-    const Bars = (
-      <BarsButton onClick={this.handleClick}>
-        <FontAwesomeIcon icon={faBars} />
-      </BarsButton>
-    )
 
     return (
-      <MenuContainer>
-        <MenuLargeWrapper>
-          <MenuLarge>
-            <HomeLink />
-            <MenuLinks />
-          </MenuLarge>
-        </MenuLargeWrapper>
-        <div>{!this.state.displayMobile && Bars}</div>
-        {this.state.displayMobile && (
-          <MenuSmallWrapper>{MobileMenu}</MenuSmallWrapper>
-        )}
-      </MenuContainer>
+      <div>
+        <TopNav
+          displayMobile={this.state.displayMobile}
+          toggleMobile={this._handleClick}
+        />
+        <MenuContainer>
+          <MenuLargeWrapper>
+            <MenuLarge>
+              {/* <HomeLink width="150px" /> */}
+              <MenuLinks />
+            </MenuLarge>
+          </MenuLargeWrapper>
+          {this.state.displayMobile && (
+            <MenuSmallWrapper>{MobileMenu}</MenuSmallWrapper>
+          )}
+        </MenuContainer>
+      </div>
     )
   }
 }

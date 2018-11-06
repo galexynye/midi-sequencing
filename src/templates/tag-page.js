@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Wrapper from '../components/Wrapper'
-import HomeLink from '../components/HomeLinkLogo'
+import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu/Menu'
 // Components

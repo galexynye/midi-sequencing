@@ -3,7 +3,7 @@ import Wrapper from '../components/Wrapper'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 // import Helmet from "react-helmet"
-import HomeLink from '../components/HomeLinkLogo'
+import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu/Menu'
 // Utilities

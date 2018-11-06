@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
+
   max-width: 800px;
   /*TODO: Change to variable */
   padding-left: 315px;
@@ -67,7 +69,8 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 900px) {
-    padding: 40px 10px;
+    margin-top: 45px;
+    padding: 0px 10px;
     max-width: 800px;
   }
 `

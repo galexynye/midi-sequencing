@@ -1,7 +1,7 @@
 import React from 'react'
 import Social from './Social'
 import { Link } from 'gatsby'
-import HomeLink from './HomeLinkLogo'
+import HomeLink from './HomeLinks/HomeLinkLogo'
 import styled from 'styled-components'
 import MailSignUp from '../components/MailSignUp'
 

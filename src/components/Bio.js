@@ -12,20 +12,21 @@ class Bio extends React.Component {
       >
         <p
           style={{
+            marginTop: '0px',
             marginBottom: '0px',
             textAlign: 'center',
           }}
         >
-          Gear Reviews and Music Production Tutorials
+          Gear Reviews and Music (Production) Tutorials
         </p>
-        <div
+        {/* <div
           className="marTSmall"
           style={{
             textAlign: 'center',
           }}
         >
           <Social size="1x" />
-        </div>
+        </div> */}
       </div>
     )
   }
