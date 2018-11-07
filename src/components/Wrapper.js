@@ -1,39 +1,14 @@
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-
-  max-width: 800px;
-  /*TODO: Change to variable */
-  padding-left: 315px;
-  padding-right: 20px;
-  /* box-sizing: border-box; */
-  /* padding-top: calc(100vh - 97vh); */
   position: relative;
-  * {
-    font-family: 'Avenir';
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  h1 {
-    color: #700bea;
-    margin: 15px 0px;
-  }
-
-  h2 {
-    color: #2c3e50;
-    margin: 10px 0px;
-  }
-
-  h3 {
-    margin-bottom: 10px;
-    color: #2c3e50;
-  }
+  max-width: 800px;
+  margin-top: 95px;
+  margin-right: auto;
+  margin-left: auto;
+  /*TODO: Change to variable */
+  padding-left: 240px;
+  padding-right: 20px;
 
   ol,
   ul {
@@ -42,35 +17,26 @@ const Wrapper = styled.div`
   }
 
   img {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     max-width: 100%;
   }
 
-  .hoverPointer:hover {
+  /* .hoverPointer:hover {
     cursor: pointer;
+  } */
+
+  iframe {
+    margin: 15px 0px;
   }
 
-  a {
-    box-shadow: none;
-    color: #700bea;
-  }
-
-  .marRSmall {
-    margin-right: 10px;
-  }
-
-  .marTSmall {
-    margin-top: 10px;
-  }
-
-  .marRMedium {
-    margin-right: 25px;
+  @media (max-width: 1500px) {
+    padding-left: 290px;
   }
 
   @media (max-width: 900px) {
-    margin-top: 45px;
-    padding: 0px 10px;
+    margin-top: 85px;
+    padding: 0px 15px;
     max-width: 800px;
   }
 `

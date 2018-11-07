@@ -8,6 +8,45 @@ import Footer from './Footer'
 import MusicSequencingWords from '../assets/MusicSequencingWordsLogo.png'
 import ScrollToTop from '../components/ScrollToTop'
 import Menu from './Menu/Menu'
+import { injectGlobal } from 'styled-components'
+
+// Global Styling
+injectGlobal`
+  * {
+    font-family: 'Avenir';
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    line-height: 1.6;
+  }
+
+  a {
+    box-shadow: none;
+    color: #700bea;
+    text-decoration: none;
+  }
+  p {
+    margin: 15px 0px;
+  }
+
+  h1 {
+    color: #700bea;
+    margin: 15px 0px;
+  }
+
+  h2 {
+    color: #2c3e50;
+    margin: 10px 0px;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+
+`
 
 const SmallHeading = styled.h3`
             font-family: 'Montserrat', 'sans-serif';
@@ -46,13 +85,13 @@ class Template extends React.Component {
       )
     }
     return (
-      <Wrapper>
-        <Menu />
+      <div>
+        <Menu sideNav={true} />
         {header}
         {children}
         <Footer />
         <ScrollToTop scrollStepInPx="60" delayInMs="20" />
-      </Wrapper>
+      </div>
     )
   }
 }

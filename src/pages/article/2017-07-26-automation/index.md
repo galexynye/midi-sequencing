@@ -15,11 +15,12 @@ Automation is changing an element in your mix over time. For example, if you wan
 The possibilities of automation for mixing and sound design are endless but there are some instances where you will want to be sure to use automation on every mix.
 
 <h2 >Essential Volume Automation</h2>
+
 Volume automation is the most common form of automation and will be used on most every single mix. A mix can live or die by how well you take care of the automation.
 
-<h3 >Lead Vocals</h3>
+<h3>Lead Vocals</h3>
 
-<p ><iframe src="https://www.youtube.com/embed/ADb5uY6Y_yI?start=56" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe src="https://www.youtube.com/embed/ADb5uY6Y_yI?start=56" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe >
 
 Lead vocals will often need a fair amount of volume automation. How to automate the lead vocals depends on the recording of course, but the overall goal is to level the performance and to reduce any harsh sounds. If the vocals were recorded by a world class engineer with amazing outboard gear and an stunning singer who knows how to work a mic, you might not need to do much but that's usually not the situation.
 
@@ -31,14 +32,14 @@ When it comes to treating background vocals, there is no reason to go through ev
 
 <strong>After you have automated a parameter, such as the volume fader, the automation has taken control over that parameter. If you want to adjust volume of an entire track after adding automation, you can do so with a gain plugin, vca, or busing to an aux track. As demonstrated here. </strong>
 
-<p ><iframe src="https://www.youtube.com/embed/ADb5uY6Y_yI?start=220" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe src="https://www.youtube.com/embed/ADb5uY6Y_yI?start=220" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe >
 
-<h3 >Mixbus Automation</h3>
+<h3>Mixbus Automation</h3>
 It is common in both mixing and mastering to add slight volume changes for different sections of a piece of music. Most often you will see that mixing engineers turn down the volume of a track sometime before the chorus and then turn the volume back to unity (0 db) at the chorus for impact. Normally it is not a change of more than a db or two but these subtle variations bring life to the mix.
 
 <h2 >The Automation Modes</h2>
 
-<p ><iframe src="https://www.youtube.com/embed/ADb5uY6Y_yI?start=288" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe src="https://www.youtube.com/embed/ADb5uY6Y_yI?start=288" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe >
 
 If you only ever draw in automation using a pencil tool then "Read Mode" is the only automation mode you'll ever need. Read mode ensures that your DAW is actually reading the automation and moving your knobs and faders according to the automation data there. When you want to record in automation on the fly, as the track is playing, then you'll want to jump into either touch or latch mode. (Not necessary in Ableton or FL studio, note is listed below).
 
@@ -61,16 +62,22 @@ Special note: <strong>Ableton Live and FL Studio don't have automation modes</st
 
 Ableton automation recording functions like touch mode automation.
 
-<h3 >Writing Automation With a Midi Controller</h3>
+<h2 >Writing Automation With a Midi Controller</h2>
+
 It is much more fun to automate with an actual knob or fader than flailing your mouse around like you're having arm spasms. Albeton makes assigning midi controllers to parameters stupidly easy. Click the midi button, click a parameter, move something on the midi controller, click the midi button again, and you're done. (Video has no sound).
-<p ><iframe src="https://www.youtube.com/embed/1Fa0wTIyyJw" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+<iframe src="https://www.youtube.com/embed/1Fa0wTIyyJw" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe >
+
 Setting up a midi controller to control track and plugin parameters in Logic is a bit more complicated but luckily for all y'all, I made a tutorial about it embedded right here.
-<p ><iframe src="https://www.youtube.com/embed/kklqArrdHk8" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+<iframe src="https://www.youtube.com/embed/kklqArrdHk8" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe >
+
 Controlling parameters with a midi controller is not necessary and a lot of times it is easier to just open the plugin, change the track into Touch or Latch mode, press play, and drag the parameter you want to change with your mouse.
 
 Adding the ability to control plugin parameters or synth patch parameters with a midi controller can make for a more musical experience where you might move a control, perform with the synth and maybe have a happy accident. Try both methods, see what you dig.
 
 <h2 >Automating Effects</h2>
+
 <img src="./media/automation-basics/Logic-Automation-5.png" alt="Bunch of Automation Lanes" width="1024" height="627" />
 
 By now, if you've watch the automation videos above, you've seen the power of automating effects on a track. Sometimes to achieve a certain result you might want to automate a parameter of an effect inserted directly on your track while other times you will want to automate a send to a certain effect.
@@ -79,10 +86,13 @@ For example, if you wanted to filter a certain track and have the filter gradual
 
 Delays are typically set up on a send rather so multiple elements can be sent to the same delay.
 
-<h3 >Full Video</h3>
-There are really endless possibilities when it comes to automation. If you have any questions or comments, please leave them below. Here is the full video and time stamps of what is inside, demonstrating automation.
+<h2 >Full Video</h2>
 
-- <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">0:39</a> - Example, watch the automation
+There are really endless possibilities when it comes to automation.
+
+<!-- If you have any questions or comments, please leave them below. Here is the full video and time stamps of what is inside, demonstrating automation. -->
+
+<!-- - <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">0:39</a> - Example, watch the automation
 - <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">0:56</a> - Automate the Volume of Lead Vocals
 - <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">1:40</a> - Turning up the "over and over"
 - <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">2:45</a> - Turn Down your "S" and your breaths with automation!
@@ -94,6 +104,6 @@ There are really endless possibilities when it comes to automation. If you have 
 - <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">5:48</a> - Automating your Sends.
 - <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">6:20</a> - Automating a filter
 - <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">6:40</a> - How to automate your panning
-- <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">7:08</a> - Put Back into Read Mode to hear automation, and stop writing
+- <a href="https://www.youtube.com/watch?v=ADb5uY6Y_yI&amp;t=58s#">7:08</a> - Put Back into Read Mode to hear automation, and stop writing -->
 
-<p ><iframe src="https://www.youtube.com/embed/ADb5uY6Y_yI?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe src="https://www.youtube.com/embed/ADb5uY6Y_yI?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe >

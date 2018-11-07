@@ -16,6 +16,7 @@ const SubMenuWrapper = styled.div`
 const TitleButton = styled.button`
   padding: 0px;
   /* padding-bottom: 10px; */
+  text-align: left;
   font-size: 18px;
   background: none;
   border: none;
@@ -27,15 +28,13 @@ const TitleButton = styled.button`
 
 const SubMenuLinks = styled.ul`
   margin-bottom: 10px !important;
-  /* margin-top: -20px !important; */
   li {
     font-size: 15px;
-    /* margin-left: 10px !important; */
+    /* Something is wonky with mobile menu */
+    margin-left: 10px !important;
+    margin-left: -10px;
     a {
       color: #2c62a2;
-      &:hover {
-        /* color: #879394; */
-      }
     }
   }
 `

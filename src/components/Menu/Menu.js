@@ -12,6 +12,7 @@ import HeaderButton from '../HeaderButton'
 import MSLogo from '../../assets/MusicSeq-Logo_200px.png'
 import HomeLink from '../HomeLinks/HomeLinkLogo'
 import TopNav from './TopNav'
+import MusicSequencing from '../../assets/MusicSeq-Words.png'
 
 const MenuContainer = styled.nav`
   z-index: 10;
@@ -20,12 +21,12 @@ const MenuContainer = styled.nav`
     font-size: 1em;
     list-style-position: outside;
     margin-top: 10px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-bottom: 0px;
     li {
       margin-top: 10px;
       margin-bottom: 10px;
-      /* margin-left: 20px; */
+      margin-left: 0px;
     }
   }
   img {
@@ -37,6 +38,7 @@ const MenuContainer = styled.nav`
     &:hover {
       cursor: pointer;
     }
+
     @media (min-height: 900) {
       display: none;
     }
@@ -54,13 +56,14 @@ const MenuSmallWrapper = styled.div`
   @media (min-width: 900px) {
     display: none;
   }
+
   @media (max-width: 700px) {
     min-width: 100vw;
   }
 `
 
 const MenuMobile = styled.div`
-  min-height: calc(100vh - 40px);
+  /* min-height: calc(100vh - 40px); */
   background: #fdfdfd;
   /* padding-bottom: 20px; */
   ul {
@@ -76,6 +79,13 @@ const MenuMobile = styled.div`
   }
   button {
     margin: 0px;
+  }
+  @media (max-width: 900px) {
+    width: 250px;
+    min-height: 100%;
+  }
+  @media (max-width: 700px) {
+    min-height: 50%;
   }
 `
 
@@ -94,9 +104,12 @@ const MenuLargeWrapper = styled.div`
 
 const MenuLarge = styled.div`
   width: 225px;
-  margin-top: 20px;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 50px;
+  @media (max-width: 1200px) {
+    width: 200px;
+  }
 `
 
 const MenuLinksWrapper = styled.div`
@@ -214,15 +227,19 @@ class Menu extends React.Component {
             <HeaderButton inputColor="#af0069">Privacy Policy</HeaderButton>
           </Link>
           <MailSignUp />
-          <Social size="1x" margin="5px 0px 0px 1px" />
+          {/* <Social size="1x" margin="0px 0px 0px 1px" /> */}
         </MenuLinksWrapper>
       )
     }
 
     const MobileMenu = (
       <MenuMobile>
+        <Link to={'/'} onClick={this._handleClick}>
+          <img style={{ marginTop: '0px' }} src={MusicSequencing} />
+        </Link>
         {/* <HomeLink onClick={this._handleClick} /> */}
         <MenuLinks />
+        <Social />
       </MenuMobile>
     )
 
@@ -233,12 +250,14 @@ class Menu extends React.Component {
           toggleMobile={this._handleClick}
         />
         <MenuContainer>
-          <MenuLargeWrapper>
-            <MenuLarge>
-              {/* <HomeLink width="150px" /> */}
-              <MenuLinks />
-            </MenuLarge>
-          </MenuLargeWrapper>
+          {this.props.sideNav && (
+            <MenuLargeWrapper>
+              <MenuLarge>
+                {/* <HomeLink width="150px" /> */}
+                <MenuLinks />
+              </MenuLarge>
+            </MenuLargeWrapper>
+          )}
           {this.state.displayMobile && (
             <MenuSmallWrapper>{MobileMenu}</MenuSmallWrapper>
           )}

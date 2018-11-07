@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
+import Wrapper from '../components/Wrapper'
 // import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
@@ -31,90 +32,87 @@ class BlogIndex extends React.Component {
       <button onClick={this.showMorePosts}>Show More</button>
     )
     return (
-      <Layout location={this.props.location}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
-          link={[
-            {
-              rel: 'shortcut icon',
-              type: 'image/png',
-              href: '../assets/midi-sequencing-icon.png',
-            },
-          ]}
-        />
-        <Bio />
+      <Wrapper>
+        <Layout location={this.props.location}>
+          <Helmet
+            htmlAttributes={{ lang: 'en' }}
+            meta={[{ name: 'description', content: siteDescription }]}
+            title={siteTitle}
+            link={[
+              {
+                rel: 'shortcut icon',
+                type: 'image/png',
+                href: '../assets/midi-sequencing-icon.png',
+              },
+            ]}
+          />
+          <Bio />
 
-        {/* Below is the Posts list Render */}
-        {showPosts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          // Retrieves and creats tag info for each Post
-          let tags
-          if (node.frontmatter.tags) {
-            tags = node.frontmatter.tags.map(tag => (
-              <li key={tag}>
-                <Link
-                  to={`/tags/${tag}`}
-                  className="hoverPointer"
+          {/* Below is the Posts list Render */}
+          {showPosts.map(({ node }) => {
+            const title = get(node, 'frontmatter.title') || node.fields.slug
+            // Retrieves and creats tag info for each Post
+            let tags
+            if (node.frontmatter.tags) {
+              tags = node.frontmatter.tags.map(tag => (
+                <li key={tag}>
+                  <Link
+                    to={`/tags/${tag}`}
+                    className="hoverPointer"
+                    style={{
+                      display: 'flex',
+                      textDecoration: 'none',
+                      flexFlow: 'wrap',
+                      boxShadow: 'none',
+                      marginRight: '10px',
+                    }}
+                  >
+                    {`${tag}`}
+                  </Link>
+                </li>
+              ))
+            }
+
+            return (
+              <div key={node.fields.slug}>
+                <h3>
+                  <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+                {/* <small>{node.frontmatter.date}</small> */}
+                <ul
                   style={{
+                    listStyle: 'none',
                     display: 'flex',
-                    textDecoration: 'none',
-                    flexFlow: 'wrap',
-                    boxShadow: 'none',
-                    marginRight: '10px',
+                    flexFlow: 'wrap', // marginTop: rhythm(-0.5),
+                    marginTop: '-10px',
+                    marginLeft: '0px',
                   }}
                 >
-                  {`${tag}`}
-                </Link>
-              </li>
-            ))
-          }
-
-          return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              {/* <small>{node.frontmatter.date}</small> */}
-              <ul
-                style={{
-                  listStyle: 'none',
-                  display: 'flex',
-                  flexFlow: 'wrap',
-                  // marginTop: rhythm(-0.5),
-                  marginTop: '-10px',
-                  marginLeft: '0px',
-                }}
-              >
-                {tags}
-              </ul>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                  {tags}
+                </ul>
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </div>
+            )
+          })}
+          {/* Conitional rendering of show more button */}
+          {this.state.postsShown < posts.length ? (
+            <div>
+              {showPostsButton} <br />
+              <p style={{ marginTop: '10px' }}>
+                {this.state.postsShown} of {posts.length} posts
+              </p>
             </div>
-          )
-        })}
-        {/* Conitional rendering of show more button */}
-        {this.state.postsShown < posts.length ? (
-          <div>
-            {showPostsButton} <br />
-            <p
-              style={{
-                marginTop: '10px',
-              }}
-            >
-              {this.state.postsShown} of {posts.length} posts
-            </p>
-          </div>
-        ) : (
-          <div>
-            That's all my posts :)
-            <br />
-            {/* <p>Please consider signing up for my mailing list below. </p> */}
-          </div>
-        )}
-      </Layout>
+          ) : (
+            <div>
+              That's all my posts :)
+              <br />
+              {/* <p>Please consider signing up for my mailing list below. </p> */}
+            </div>
+          )}
+        </Layout>
+      </Wrapper>
     )
   }
 }

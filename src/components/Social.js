@@ -9,6 +9,10 @@ import {
   faReddit,
 } from '@fortawesome/free-brands-svg-icons'
 
+const SocialLink = styled.a`
+  margin-right: 25px;
+`
+
 const SocialWrapper = styled.div`
   margin: ${props => props.margin || '0px'};
   @media (max-width: 900px) {
@@ -19,35 +23,28 @@ const SocialWrapper = styled.div`
 const Social = props => {
   return (
     <SocialWrapper margin={props.margin} displayMobile={props.displayMobile}>
-      <a
+      <SocialLink
         href="https://www.youtube.com/channel/UCRh5xwjVbFb0PI9JKOeZAIg"
         target="blank"
-        className="marRMedium"
       >
         <FontAwesomeIcon icon={faYoutube} size={props.size} />
         {/* <FontAwesomeIcon icon={faYoutube} size="1x" /> */}
-      </a>
-      <a
+      </SocialLink>
+      <SocialLink
         href="https://www.reddit.com/user/midisequencing"
         target="blank"
-        className="marRMedium"
       >
         <FontAwesomeIcon icon={faReddit} size={props.size} />
-      </a>
-      <a
+      </SocialLink>
+      <SocialLink
         href="https://www.facebook.com/musicsequencing/"
         target="blank"
-        className="marRMedium"
       >
         <FontAwesomeIcon icon={faFacebook} size={props.size} />
-      </a>
-      <a
-        href="https://twitter.com/midisequencing"
-        target="blank"
-        className="marRMedium"
-      >
+      </SocialLink>
+      <SocialLink href="https://twitter.com/midisequencing" target="blank">
         <FontAwesomeIcon icon={faTwitter} size={props.size} />
-      </a>
+      </SocialLink>
     </SocialWrapper>
   )
 }

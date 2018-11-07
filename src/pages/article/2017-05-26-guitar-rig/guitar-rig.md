@@ -14,7 +14,7 @@ Curious about using amp simulators for DI Guitar recording? Check out what you c
 
 Even if you don't play guitar there are tons of different effects inside of guitar rig you will find useful on anything.
 
-Time Stamps: Two Main Sections, Guitar Sounds and Effects
+<!-- Time Stamps: Two Main Sections, Guitar Sounds and Effects
 
 <ul>
  	<li>Preset Organization - <a  href="https://www.youtube.com/watch?v=akDrNX4Jdzg&amp;t=50s">0:50</a></li>
@@ -38,4 +38,4 @@ Time Stamps: Two Main Sections, Guitar Sounds and Effects
  	<li>Tools (Loop Machine) - <a  href="https://www.youtube.com/watch?v=akDrNX4Jdzg&amp;t=890s">14:50</a></li>
  	<li>Come by Midisequencing.com - <a  href="https://www.youtube.com/watch?v=akDrNX4Jdzg&amp;t=944s">15:44</a></li>
  	<li>Please Subscribe :) - <a  href="https://www.youtube.com/watch?v=akDrNX4Jdzg&amp;t=952s">15:52</a></li>
-</ul>
+</ul> -->

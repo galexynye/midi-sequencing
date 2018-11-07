@@ -14,12 +14,12 @@ What will make or break you as a music creator is your understanding of both mus
 
 When you are making a recording you are not only responsible for getting the right notes, rhythms and feel, but also for making sure the sound coming out of the monitors feels good on the ears.
 
-<h4>Any unpleasant sound will push and scratch against your ear like a toddler smacking your head for attention. You want to feel as if a master Thai masseuse is caressing your ear drums.</h4>
+<h3>Any unpleasant sound will push and scratch against your ear like a toddler smacking your head for attention. You want to feel as if a master Thai masseuse is caressing your ear drums.</h3>
 Let's look at <em>some</em> of the adjectives people might used to describe the quality of a sound.
 
 Sound can be warm, cold, wet(lots of reverb), dry(no or little reverb), distorted, clean, noisy, soft, loud, harsh, thick, brittle, gushy, buttery, round, pointy, dull, fat, thin, shrill, sizzle-y, smashed, dynamic, detailed, jagged, smooth, velvety, grovel-y, dark(missing high frequencies), bright(lot's of high frequencies), open, muffled, airy, earthy, watery, magical, shiny, shimmery, bad or good.
 
-<h4>Describing sound is like describing the taste of wine. Because it is so abstract, you have to use the closest feeling adjectives that jump to mind.</h4>
+<h3>Describing sound is like describing the taste of wine. Because it is so abstract, you have to use the closest feeling adjectives that jump to mind.</h3>
 Your job as a music maker is to understand when a sound is bad and to either make it good or get rid of it. Musical choices obviously can sound bad or good but if you are making recordings you have to take extra care that the sonic qualities as well as the music feels good when it comes spilling out of the speakers.
 
 There might be a vocal that is hard to hear in the mix, if you understand sound, you think, OK I'll make it brighter with an EQ so it cuts through the mix. So you make the vocal sound brighter but then it sounds too harsh. Uh oh. Maybe try distorting it slightly instead? These are the types of battles you get into when you are on a quest for good sound. The main question to ask yourself is always, "Is it good or is it bad?". If it's bad, what qualities make it sound bad? If it sounds good but not great, "Can I make the sound better?" Who is to say what is good or bad? Well it takes years of listening to sound in this way to train your ear to recognize good and bad. It takes years of experience by experimentation to know how to sculpt the sound from bad to good. When you cross a certain threshold of acceptable quality, then it is a matter of personal taste.
@@ -38,7 +38,7 @@ Luckily, this high pitched thing can be filtered out with an EQ. Using today's t
 
 Now listen to this.
 
-<iframe src="https://www.youtube.com/embed/YPiXsyIG3h4" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/YPiXsyIG3h3" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 There is also some room noise in the recording too. Ignore that, ignore the lady, ignore the background music and movies for a moment and just listen to the sound of his voice as he is being interviewed. Compared to the first video, James Earl Jones is older, he kind of sounds like he has a little cold, and he is being recorded with different equipment. As far as the sound goes in pure abstractions, one difference I hear is the high-mid frequencies aren't as present as they were in the first video, it sounds a little bit flatter. I also hear the low frequencies in his voice aren't quite as warm or controlled as they were in the first video but they are more present in the sub range.<strong>
 </strong>
@@ -47,8 +47,7 @@ When you are listening to the sound, purely the sound, the fact that it is a voi
 
 When you start to understand how EQs can add sizzle or warmth, or how compression can add presence and control, you might be tempted during the recording or sound design phases of production to <em>put off</em> making the voice or instrument "sound right" until the mixing phase. That is a mistake.
 
-<h3></h3>
-<h4><strong>Thinking you can fix your sounds in the mix is a recipe for pain. You need to try to get the best possible sound out of the monitors as soon as possible.</strong></h4>
+<h3><strong>Thinking you can fix your sounds in the mix is a recipe for pain. You need to try to get the best possible sound out of the monitors as soon as possible.</strong></h3>
 Having great quality audio is something that you need to care for from the start. If you are tracking an electric guitar through an amp, the first thing you need is a killer guitar "tone".
 
 Jimi Hendrix was master. Jimi created his own custom mix of string gauge sizes to balance the levels on his guitar. Ever think of that? Then he would spend considerable time adjusting the dials on his amps, eqs, distortion pedals, ect. to get things juuuuuust right. Every detail and nuance he could think of was considered. All of this special care adds up to make better music. Be like Jimi.
@@ -57,7 +56,7 @@ So let's say you've made managed to make your guitar sound awesome out of the am
 
 There are no exact scientific rules to apply here. You learn how to get a great sound through experimentation and experience. When you are recording a sound, choosing a sample, or designing a synth patch your goal is to get the best fidelity possible. So how do you know when you have a decent sound?
 
-<h3 style="text-align: center;">Let your gut be your guide.</h3>
+<h2 style="text-align: center;">Let your gut be your guide.</h2>
 To be honest, you could easily go crazy chasing down a synth patch, moving your mic around, or looking for a drum sample that sounds juuuuuuuust right. (If you <em>never</em> go crazy you aren't trying hard enough) Other times the first sound you pull up is a sound that makes you go 'YES!!!!'. You hear it and instantly know it's right. Yet, other times, you might have to abandon an idea all together.
 
 For me personally, there is a relationship my conscious brain has with my subconscious mind. If I am hunting for that sweet spot there is a feeling in the pit of my stomach that feels almost queasy until I hear that <em>something</em> that relaxes my gut and brings a balance to my mind. This feeling is my guiding force to make choices in the music, sound, writing and art as a whole. But that's a different story all together.

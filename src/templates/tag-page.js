@@ -16,21 +16,10 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Wrapper>
-      <Menu />
+      <Menu sideNav={true} />
       <HomeLink />
-      <h1
-        style={{
-          marginTop: '10px',
-        }}
-      >
-        {tagHeader}
-      </h1>
-      <ul
-        style={{
-          listStyle: 'none',
-          marginLeft: '0px',
-        }}
-      >
+      <h1 style={{ marginTop: '10px' }}>{tagHeader}</h1>
+      <ul style={{ listStyle: 'none', marginLeft: '0px' }}>
         {edges.map(({ node }) => {
           const { path, title } = node.frontmatter
           return (

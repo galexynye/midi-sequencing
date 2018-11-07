@@ -1,6 +1,6 @@
 ---
 path: '/article/how-to-set-up-a-mix'
-title: How to Set Up A Mix Session
+title: Setting Up A Mix Session
 date: '2017-08-08'
 category: 'Tutorials'
 subcategory: 'Mixing'

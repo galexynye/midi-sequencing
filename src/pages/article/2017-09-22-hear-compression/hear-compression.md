@@ -12,12 +12,13 @@ tags: ['mixing', 'compression']
 
 Compression is tricky, especially for beginners. Compressors often fool people into thinking they are getting a better sound because the compressor can make sounds louder.
 
-<h3>Louder ≠ Better</h3>
+**Louder ≠ Better**
+
 When adding compression to anything, make sure you are matching the levels of the <strong>uncompressed</strong> signal and the compressed signal to avoid getting tricked by loudness.
 
 This section of the compression video demonstrates level matching using the track's volume fader. The main idea is to check your meters to make sure that they are both hitting at the same level when A/B-ing the difference. More commonly, level matching is done using the make up gain in your compressor.
 
-<p><iframe src="https://www.youtube.com/embed/KBYHGCzqGGA?start=90&amp;end=125" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe  src="https://www.youtube.com/embed/KBYHGCzqGGA?start=90&amp;end=125" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 Hearing exactly how the compressor is changing the sound can be difficult, so in the beginning rely on your gut feelings by asking, "<strong>Is this actually making things better or am I throwing a compressor on just because?"</strong>
 
@@ -53,7 +54,7 @@ If you understand how adjusting the different settings on a compressor affect th
 
 <strong>Attack and release give the compression it's main character</strong>. Here is a demonstration of how just adjusting the release affects a vocal.
 
-<p><iframe src="https://www.youtube.com/embed/KBYHGCzqGGA?start=263&amp;end=305" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe  src="https://www.youtube.com/embed/KBYHGCzqGGA?start=263&amp;end=305" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 In the video, when the compressor is held down with a release setting that is too long, there is a flatness or dullness to the sound and a whole bunch of other negative adjectives on this list. If you are using a compression take note if any of these bad adjectives start to creep into the sound.
 
@@ -71,18 +72,22 @@ In the video, when the compressor is held down with a release setting that is to
 </ol>
 
 <h2 >Compressing A Mix or Group</h2>
-The best was I've heard for listening to compression was described by mastering engineer Warren Sokol as
-<h4 >"Listening to between sounds"</h4>
-<p ><iframe src="https://www.youtube.com/embed/8tOb-xYWum4?start=2358&amp;end=2399" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+The best was I've heard for listening to compression was described by mastering engineer Warren Sokol as **"Listening to between sounds"**
+
+<iframe src="https://www.youtube.com/embed/8tOb-xYWum4?start=2358&amp;end=2399" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 <p>In his specific case he is talking about adding compression to an entire mix of a quieter genre of music. There are details that start to emerge with compression that are heard if you aren't focusing your listening on the main sound sources.</p>
+
 What does that mean for other music like EDM? Even if the difference in dynamic range isn't huge, and there isn't a lot of space between the loud parts, there are still beats that are hitting harder and then there is the sound between. Your compression on your entire mix is adjusting this relationship.
 
 Listen to how the impact of the beats change and how well you can hear what is between them. You can also think in a similar way for individual instruments.
 
-<h3 >Compressing Individual Instruments</h3>
+<h2 >Compressing Individual Instruments</h2>
+
 If you are compressing a snare for example, there is the initial loud hit(controlled by attack), and then there is a body to the snare (controlled by release). When listening to how your compressor is working on an individual element, try to focus on which aspects are being turned down and which ones are turned up.
 
 For a snare you will be turning down the initial hit and turning up the the body. Zero in on how your compressor is changing that relationship rather than the tonal quality of the snare. If you turn the initial hit down too much, you might have a full bodied snare but it won't have any impact.
 
-<h3 >It's Abstract</h3>
+<h2 >It's Abstract</h2>
 Mixing is an abstract art form and compression is the most abstract tool in the bag. It takes time and practice to be able to get good at. Just remember to ask yourself, "Does it feel better or worse?".

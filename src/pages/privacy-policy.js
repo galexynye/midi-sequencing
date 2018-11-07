@@ -8,15 +8,9 @@ class Privacy extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Menu />
+        <Menu sideNav={true} />
         <HomeLink />
-        <h1
-          style={{
-            marginTop: '10px',
-          }}
-        >
-          Privacy Policy
-        </h1>
+        <h1 style={{ marginTop: '10px' }}>Privacy Policy</h1>
         This privacy policy governs the manner in which Music Sequencing
         collects, uses, maintains, and discloses the information we collect from
         users of our website.

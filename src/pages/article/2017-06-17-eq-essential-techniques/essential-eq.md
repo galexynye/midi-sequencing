@@ -10,7 +10,7 @@ tags: ['mixing', 'basics', 'eq']
 
 <img src="./media/essential-eq/Bunch-Of-EQs-picture-1.png" alt="" />
 
-<strong>EQ is THE most important tool in mixing and mastering.</strong> Your ability to mix great sounding tracks will come down to how well you understand the frequencies shaking people's eardrums and how to make those vibrations feel good. Most of the time you can make sounds better using EQ. In this article we will talk about the different types of EQs, how you use them, and some of the best EQs ever invented (including a freebie you should download today).
+<strong>EQ is THE most important tool in mixing and mastering.</strong> The ability to mix great sounding tracks comes down whether or not the frequencies shaking people's eardrums feels good. Most of the time the best tool to make sounds better is EQ. In this article we will talk about the different types of EQs,how to use them, and some of the best EQs ever invented (including a freebie you should download today).
 
 A quick word of advice. Once you understand the power of EQ you might be tempted to "fix" things in the mix rather than doing it right from the start. As I mention in the <a href="article/music-vs-sound/">Music VS Sound</a> article, this is recipe for pain. When you are setting up your mics, designing a synth patch or choosing samples, try to get it sounding as good as possible without telling yourself you can fix it later. Sometimes this means abandoning ideas entirely. Just know the sooner you find great sound in the process, the better off you'll be.
 
@@ -39,8 +39,10 @@ The vast majority of time you will use some version of parametric EQ when mixing
 Human hearing ranges from 20 herz on the low end all the way up to 20,000 herz. If you check back to the API 560, there are 10 frequencies options to choose from, so if you wanted to cut only around 400 herz for example, you couldn't do it. Hallelujah, we have parametric EQ!
 
 <h3 >Band Compression</h3>
+     
 Technically band compression is a form of compression but functionally it is a form of EQ. If you are just learning the fundamentals of mixing, band compression isn't something you need to try and wrap your head around right now. The basic idea is to turn down a certain frequency range, under certain conditions, in a certain way. One of the most common uses for this is when D'essing.
-<p ><iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=785" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+<iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=785" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 <h2 >How To Use EQ</h2>
 <h3 >High-Pass Filter and Low-Pass Filter</h3>
@@ -48,18 +50,21 @@ Technically band compression is a form of compression but functionally it is a f
 
 <strong>A High-Pass filter is placed on the low end of the frequency spectrum</strong> and allows high frequencies to pass through while eliminating the frequencies below entirely. The higher up the frequency spectrum you move a high-pass filter, the thinner the sound will become. High-pass filters are vital for removing unwanted low frequencies that will muddy up a mix, <strong>most times you will want to put a high-pass frequency up to about 80 hz on everything besides bass instruments and low drums</strong>, like kicks, to carve out room for the low frequencies you actually want to hear. Watch this example below.
 
-<p ><iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=161" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
-Not only is a high-pass filter great to put on many instruments, you most likely will want to put one on your entire mix as well, going up to around 30-40 hz. The reason you do this is because, especially with today's soft synths, there might be low frequencies you can't hear that will muddy things up and mess with any compressors or effects you put on your master bus. When you do this use a <strong>LINEAR PHASE EQ. </strong>A linear phase EQ removes the phasing found in normal eqs but can be more processing intensive. If you're not sure if you have one, the <a href="http://www.tokyodawn.net/tdr-vos-slickeq/" target="_blank" rel="noopener">TDR VOS SlickEQ</a> by Tokyo Dawn Labs is a free linear EQ and it is amazing!!!!!! Seriously, download that $h!*.
+<iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=161" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+Not only is a high-pass filter great to put on many instruments, you most likely will want to put one on your entire mix as well, going up to around 30-40 hz. The reason you do this is because, especially with today's soft synths, there might be low frequencies you can't hear that will muddy things up and mess with any compressors or effects you put on your master bus. When you do this use a <strong>LINEAR PHASE EQ. </strong>A linear phase EQ removes the phasing found in normal eqs but can be more processing intensive. If you're not sure if you have one, the <a href="http://www.tokyodawn.net/tdr-vos-slickeq/" target="_blank" rel="noopener">TDR VOS SlickEQ</a> by Tokyo Dawn Labs is a free linear EQ and it is amazing!!!!!! Seriously, download that $h!\*.
 
 <img class="wp-image-1536 size-full" src="./media/essential-eq/Low-Pass-Filter-6.png" alt="Low-Pass Filter EQ" width="761" height="276" />
 
 When a bomb explodes next to someone in a movie and the character's hearing is muffled, that is a low pass filter. It might be a little confusing that a low-pass filter filters out high frequencies while a high-pass filter filters out low frequencies....the important word to remember is <strong>PASS. The name of the filter indicates which frequencies you will be able to hear</strong>. If you get confused try to come up with your own naming trick to remember the proper name for what the different filters do.
 
-<p ><iframe src="https://www.youtube.com/embed/E5P5c1InZNk?start=24" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe src="https://www.youtube.com/embed/E5P5c1InZNk?start=24" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 <h3 >Subtractive EQ</h3>
 Subtractive EQ is the process of finding crappy frequencies and cutting them out. This works by boosting a narrow band to find the bad stuff then simply turning it down. Looks like this.
-<p ><iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=414" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+<iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=414" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 Your ability to determine when there are crappy frequencies that need zapping comes with experience. Many engineers will develop an emotional attachment to frequencies. Personally, I hate 2500-3000 hz, they're rotten, harsh, stinkin' frequencies that are like rubbing gravel against my ear drums, I gut em like a fish for fun...On the other hand 4500 hz -5000 hz are my buddies :)
 
 To help guide you in the right direction there are a ton of EQ charts that tell you what frequencies are associated with common adjectives we use to describe sound. This great chart made by <a href="http://www.independentrecording.net/irn/resources/freqchart/main_display.htm" target="_blank" rel="noopener">IndependentRecording.net</a> tells you where different instruments are heard, names of the frequency ranges (ie high mids, sub bass ect.), and the adjectives that describe the frequencies.
@@ -69,7 +74,7 @@ To help guide you in the right direction there are a ton of EQ charts that tell 
 <h3 >Additive EQ</h3>
 Subtractive EQ cuts frequencies and as you've probably guessed, Additive EQ boosts frequencies. Boosting frequencies can sweeten the sound of an element, make it cut through the mix, or simply change the sound. Normally when you are doing additive EQ you'll get better results by boosting with a wider band-width as oppose to the narrow notch that you might use when doing subtractive EQ. Looks like this.
 
-<p ><iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=589" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=589" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 Personally, when I'm doing additive EQ I prefer to use EQs modeled from famous channel strips rather than an EQ with a visualizer. The Helios sounds great for boosting high frequencies for example.
 
@@ -98,27 +103,29 @@ A solo'd instrument might sound completely weird alone while it sounds really go
  	<li><strong>Boost/Gain - </strong>Making louder</li>
  	<li><strong>Cut/Attenuation</strong> - Making softer.</li>
 </ul>
+
 <h3 >Mastering</h3>
+
 <img class="wp-image-1564 size-full" src="./media/essential-eq/Manley-Passive-EQ-9.png" alt="Manley Massive Passive EQ" width="946" height="262" />
 
 When you are starting out, you will be mastering your own tracks. <strong>Most of mastering is EQing</strong>. As mentioned in the High-Pass section, you will want to use a Linear Phase EQ on your master bus to cut out frequencies below 30-40 hz. These frequencies will not benefit you in anyway but can hurt your mix.
 
 When you are using an EQ on the mastering bus you will usually only want to cut or boost 1-2 db, maybe 3. Adding EQ on the master bus is like adding an EQ to every single instrument in your mix. If you find yourself having to do extreme cuts or boosst in mastering, you probably want to go back and fix your mix.
 
-<h3></h3>
 <h3 >Loose Ends</h3>
+
 EQing is very situation specific, so presets are useless. I would go so far to say presets will hinder your development as a mixer and suggest you don't bother with them. It will take time to develop a sense of what you can a should do with an EQ, keep at it and you will learn.
 
 You can very easily lose your mind while EQing and make something that sound worse without realizing it. A lot of times your first instincts will be correct. The first bit of EQing you apply will sound as good as you can make the sound but then you start to think, "wellllllll, would if I tried boosting here more. Wellllll maybe I need a sharper cut here....Welllllll..." And you end up with some alien sound that is nowhere near as good as what you did in the first 2 minutes.
 
 Check out what Bruce Swedien says about mixing Billie Jean.
 
-<p ><iframe src="https://www.youtube.com/embed/8OjqM6uHsY4" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe src="https://www.youtube.com/embed/8OjqM6uHsY4" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-One last thing to note, your system, whether it be your room with monitors, or headphones or whatever, will probably boost and cut certain frequencies thus tricking you into thinking you are sculpting a sound one way but it will sound completely different on other systems. Be sure to check your mixes on multiple sources to get an idea of how your system may be deceiving you so you can compensate for it.
+One last thing to note, your system, whether it be your room with monitors, or headphones or whatever, will probably boost and cut certain frequencies thus tricking you into thinking you are sculpting a sound one way but it will sound completely different on other systems. **Be sure to check your mixes on multiple sources** to get an idea of how your system may be deceiving you so you can compensate for it.
 
 Thanks for reading, you might want to check out <a href="/article/reverb-essentials">Everything You Need To Know About Reverb</a> or <a href="/article/how-to-build-a-studio">How to Build A Home Studio From Nothing to Everything</a>.
 
 Here is the full tutorial if you would like to watch it :)
 
-<p ><iframe src="https://www.youtube.com/embed/k-MBRGvmIWU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<iframe src="https://www.youtube.com/embed/k-MBRGvmIWU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

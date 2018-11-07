@@ -21,10 +21,10 @@ const MailChimp = styled.div`
   }
   form {
     margin: 0px;
-    padding: 5px;
+    /* padding: 5px; */
     max-width: 217px;
     display: flex;
-    border: 1px solid #2c3e50;
+    /* border: 1px solid #2c3e50; */
     border-radius: 5px;
     /* flex-flow: wrap; */
   }

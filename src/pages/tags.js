@@ -18,7 +18,7 @@ const TagsPage = ({
   },
 }) => (
   <Wrapper>
-    <Menu />
+    <Menu sideNav={true} />
     <HomeLink />
     <h1 style={{ marginTop: '10px' }}>Tags</h1>
     <ul
