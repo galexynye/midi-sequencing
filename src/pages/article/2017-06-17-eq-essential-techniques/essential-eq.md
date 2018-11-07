@@ -86,15 +86,19 @@ There are two great benefits to using channel strip EQs.
  	<li>You have to use your ears. There are only knobs and no visualizer to influence you.</li>
  	<li>Channel strip EQs have distinct sounds that come from their designers well informed choices. Moving these knobs were simply designed to sound good when used.</li>
 </ol>
+
 When you are EQing do not rely on your eyes. <strong>Use visual analyzers infrequently</strong>, only when you really need to check something!
 
 <h3 >Soloing EQ VS In the Mix</h3>
+
 In the videos above we only listened to solo'd instruments while EQing. Generally, even though it is more difficult to hear, you will want to EQ your elements while still hearing the entire mix. This isn't a rule, there are no rules, but it is a good method of practice because people don't hear the instruments solo'd, they'll hear the entire mix.
 
 A solo'd instrument might sound completely weird alone while it sounds really good when surrounded by the mix. Different instruments in the mix might fill in strange frequency gaps from something that sounds bad solo'd but good in the mix. The times you would want to solo an instrument to EQ is when you suspect there is a crappy frequency and you want to do some subtractive EQing.
 
 <h2 >More Vital EQ Info</h2>
+
 <h3 >EQ Parameters</h3>
+
 <ul>
  	<li><strong>Frequency</strong> - High, low, mid? You know frequency by now. The literal definition is measured in Herz and it is how frequent the peaks and valley of the sound wave is.</li>
  	<li><strong>Shelf</strong> - Looks like a shelf, as pictured in the High-pass/Low-pass section, it's when all the frequencies above or below will be boosted or cut but not entirely as in a High-pass or low-pass</li>
