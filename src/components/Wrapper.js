@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   position: relative;
   max-width: 800px;
-  margin-top: 95px;
+  margin-top: 60px;
   margin-right: auto;
   margin-left: auto;
   /*TODO: Change to variable */

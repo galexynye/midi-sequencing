@@ -27,6 +27,7 @@ injectGlobal`
     color: #700bea;
     text-decoration: none;
   }
+
   p {
     margin: 15px 0px;
   }
@@ -42,7 +43,7 @@ injectGlobal`
   }
 
   h3 {
-    margin-bottom: 10px;
+    margin: 10px 0px;
     color: #2c3e50;
   }
 

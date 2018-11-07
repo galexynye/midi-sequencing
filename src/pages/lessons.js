@@ -60,7 +60,11 @@ const LessonContentContainer = styled.div`
     font-size: 2rem;
   }
   ul {
-    list-style-position: inside;
+    /* list-style-position: inside; */
+    margin-left: 16px;
+    li {
+      padding-bottom: 5px;
+    }
   }
 `
 const LessonInfoWrapper = styled.div`
@@ -73,7 +77,7 @@ const LessonInfoWrapper = styled.div`
 `
 
 const LessonInfoSubject = styled.div`
-  padding-bottom: 15px;
+  /* padding-bottom: 10px; */
 `
 
 const Lessons = () => {
@@ -95,9 +99,9 @@ const Lessons = () => {
             <h2>Music Production Lessons</h2>
             <p>
               The world of Music Production is both vast and complicated. There
-              are human factors such as capturing great perfomances, many
-              technical tools to learn such as compressors, EQs and Reverbs (and
-              what the good ones are) and of course, there is music theory.
+              are human factors such as capturing great perfomances, technical
+              tools to learn like compressors, EQs and reverbs (and what the
+              good ones are) and of course, there is music theory.
             </p>
             <p>
               Music Production lessons aim to help students discover their true
@@ -144,7 +148,7 @@ const Lessons = () => {
                 Fundamentals of Production: What the Tools Are and How To Use
                 Them
               </li>
-              <li>Creating Templates and finding your workflow</li>
+              <li>Creating Templates and Finding Your Workflow</li>
               <li>Whatever you are interested in!</li>
             </ul>
           </LessonInfoSubject>

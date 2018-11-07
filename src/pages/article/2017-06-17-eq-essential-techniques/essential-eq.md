@@ -10,33 +10,37 @@ tags: ['mixing', 'basics', 'eq']
 
 <img src="./media/essential-eq/Bunch-Of-EQs-picture-1.png" alt="" />
 
-<strong>EQ is THE most important tool in mixing and mastering.</strong> The ability to mix great sounding tracks comes down whether or not the frequencies shaking people's eardrums feels good. Most of the time the best tool to make sounds better is EQ. In this article we will talk about the different types of EQs,how to use them, and some of the best EQs ever invented (including a freebie you should download today).
+<strong>EQ is THE most important tool in mixing and mastering.</strong> The ability to mix great sounding tracks comes down whether or not the frequencies shaking people's eardrums feels good. Most of the time the best tool to make sounds better is EQ. In this article we will talk about the different types of EQs, how to use them, and some of the best EQs ever invented (including a freebie you should download today).
 
-A quick word of advice. Once you understand the power of EQ you might be tempted to "fix" things in the mix rather than doing it right from the start. As I mention in the <a href="article/music-vs-sound/">Music VS Sound</a> article, this is recipe for pain. When you are setting up your mics, designing a synth patch or choosing samples, try to get it sounding as good as possible without telling yourself you can fix it later. Sometimes this means abandoning ideas entirely. Just know the sooner you find great sound in the process, the better off you'll be.
+<!-- A quick word of advice. Once you understand the power of EQ you might be tempted to "fix" things in the mix rather than doing it right from the start. As I mention in the <a href="article/music-vs-sound/">Music VS Sound</a> article, this is recipe for pain. When you are setting up your mics, designing a synth patch or choosing samples, try to get it sounding as good as possible without telling yourself you can fix it later. Sometimes this means abandoning ideas entirely. Just know the sooner you find great sound in the process, the better off you'll be. -->
 
 <h2 >Types of EQ</h2>
+
 In this day and age you can sculpt out frequencies with lazer precision. Despite having that ability, sometimes simpler tools with only a few knobs will ultimately sound better.
 
 <h3 >Shelving EQ</h3>
-<img class="wp-image-1547 size-full" src="./media/essential-eq/Pultec-EQP-1A-2.png" alt="Classic Pultec EQP-1A EQ"  /> Classic Pultec EQP-1A -the Low Frequency acts as a shelving EQ[/caption]
 
-A shelf in EQ is when every frequency above or below a certain point is turned up or turned down. For the most part you won't see or use EQs than only do shelving when mixing, you'll see them more in something like a car stereo where this is one knob for the treble and one for the bass. You will use more capable EQs to create EQ shelves all the time along with the shelf's more extreme cousin, which we'll get to in the high-pass and low-pass filter section.
+<img class="wp-image-1547 size-full" src="./media/essential-eq/Pultec-EQP-1A-2.png" alt="Classic Pultec EQP-1A EQ"  />
 
-The EQ pictured above, the Pultec EQP-1A is one of those simple EQs that has some sort of magic sound to it despite not being able to choose exactly what you want. Another thing that's nice about EQs with just knobs and no visual interface is they force you to use your ears instead of getting duped by your eyes.
+A shelf in EQ is when every frequency above or below a certain point is turned up or turned down. For the most part, you won't see or use EQs that only do shelving when mixing, you'll see them more in something like a car stereo where there is one knob for the treble and one for the bass. You will use more capable EQs to create EQ shelves all the time along with the shelf's more extreme cousin, which we'll get to in the high-pass and low-pass filter section.
+
+The EQ pictured above, the Pultec EQP-1A is one of those simple EQs that has some sort of magic sound to it despite not being able to choose exactly what you want. Another thing that's nice about EQs with no visual interface is they force you to use your ears instead of getting duped by your eyes.
 
 <h3 >Graphic EQ</h3>
+
 <img class="wp-image-1525 size-full" src="./media/essential-eq/API-560-Graphic-EQ-3.png" alt="API 560 Graphic EQ"/>
 
-Graphic EQs are simple and limited in use as well but simplicity can turn out some really nice results. On the API 560 pictured above there are 10 frequency "<strong>bands</strong>" to choose from. You can <strong>boost these frequencies </strong>(make louder) or <strong>cut them</strong> (make softer). Looks like what you would have on a stereo and it's basically the same thing but designed better.
+Graphic EQs are simple and limited in use as well but simplicity can turn out some really nice results. On the API 560 pictured above there are 10 frequency "<strong>bands</strong>" to choose from. You can <strong>boost these frequencies </strong>(make louder) or <strong>cut them</strong> (make softer).
 
 In practical mixing usage, graphic EQs are best used as a sweetener, possibly in conjunction with a parametric EQ. Graphic EQs are good for live music where you would want to grab a certain frequency fast and not have to muck around.
 
 <h3 >Parametric EQ</h3>
+
 <img class="wp-image-1527 size-full" src="./media/essential-eq/Massenburg-EQ-Picture-4.png" alt="Massenburg EQ plugin picture"  />
 
-The vast majority of time you will use some version of parametric EQ when mixing. George Massenburg coined the term "parametric eq" in the 1972 AES preprint and later designed the awesome plugin pictured above. What makes a parametric EQ so special is the ability to select essentially any frequency or range of frequency with surgical precision and boost or cut them.
+The vast majority of time you will use some version of parametric EQ when mixing. George Massenburg coined the term "parametric eq" in the 1972 AES preprint and later designed the awesome plugin pictured above. What makes a parametric EQ so special is the ability to select essentially any frequency or range of frequencies with surgical precision and boost or cut them.
 
-Human hearing ranges from 20 herz on the low end all the way up to 20,000 herz. If you check back to the API 560, there are 10 frequencies options to choose from, so if you wanted to cut only around 400 herz for example, you couldn't do it. Hallelujah, we have parametric EQ!
+<!-- Human hearing ranges from 20 hz on the low end all the way up to 20,000 hz. If you check back to the API 560, there are 10 frequencies options to choose from, so if you wanted to cut only around 400 herz for example, you couldn't do it. Hallelujah, we have parametric EQ! -->
 
 <h3 >Band Compression</h3>
      
@@ -45,7 +49,9 @@ Technically band compression is a form of compression but functionally it is a f
 <iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=785" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 <h2 >How To Use EQ</h2>
+
 <h3 >High-Pass Filter and Low-Pass Filter</h3>
+
 <img class="wp-image-1537 size-full" src="./media/essential-eq/High-Pass-Filter-5.png" alt="High-Pass Filter EQ " width="760" height="280" />
 
 <strong>A High-Pass filter is placed on the low end of the frequency spectrum</strong> and allows high frequencies to pass through while eliminating the frequencies below entirely. The higher up the frequency spectrum you move a high-pass filter, the thinner the sound will become. High-pass filters are vital for removing unwanted low frequencies that will muddy up a mix, <strong>most times you will want to put a high-pass frequency up to about 80 hz on everything besides bass instruments and low drums</strong>, like kicks, to carve out room for the low frequencies you actually want to hear. Watch this example below.
@@ -103,7 +109,7 @@ A solo'd instrument might sound completely weird alone while it sounds really go
  	<li><strong>Frequency</strong> - High, low, mid? You know frequency by now. The literal definition is measured in Herz and it is how frequent the peaks and valley of the sound wave is.</li>
  	<li><strong>Shelf</strong> - Looks like a shelf, as pictured in the High-pass/Low-pass section, it's when all the frequencies above or below will be boosted or cut but not entirely as in a High-pass or low-pass</li>
  	<li><strong>Filter</strong> - When all of the frequencies in a range are taken out</li>
- 	<li><strong>Band/Bandwidth/Q/Bell/Trough/Notch</strong> - This is the range of frequencies you are EQing. A wide/broad Q could be from 1000 to 5000 hz or more, and generally you want to boost using a wide Q. A narrow/sharp Q might only be a couple frequencies wide and is generally used in subtractive EQ</li>
+ 	<li><strong>Band/Bandwidth/Q/Bell/Trough/Notch</strong> - This is the range of frequencies you are EQing. A wide/broad Q could be from 1000 to 5000 hz or more, and in general, you want to boost using a wide Q. A narrow Q might only be a couple frequencies wide. A narrow Q is generally used for subtractive EQing</li>
  	<li><strong>Boost/Gain - </strong>Making louder</li>
  	<li><strong>Cut/Attenuation</strong> - Making softer.</li>
 </ul>
@@ -112,7 +118,7 @@ A solo'd instrument might sound completely weird alone while it sounds really go
 
 <img class="wp-image-1564 size-full" src="./media/essential-eq/Manley-Passive-EQ-9.png" alt="Manley Massive Passive EQ" width="946" height="262" />
 
-When you are starting out, you will be mastering your own tracks. <strong>Most of mastering is EQing</strong>. As mentioned in the High-Pass section, you will want to use a Linear Phase EQ on your master bus to cut out frequencies below 30-40 hz. These frequencies will not benefit you in anyway but can hurt your mix.
+<strong>Most of mastering is EQing</strong>. As mentioned in the High-Pass section, you will want to use a Linear Phase EQ on your master bus to cut out frequencies below 20-40 hz. These frequencies will not benefit you in anyway but can hurt your mix.
 
 When you are using an EQ on the mastering bus you will usually only want to cut or boost 1-2 db, maybe 3. Adding EQ on the master bus is like adding an EQ to every single instrument in your mix. If you find yourself having to do extreme cuts or boosst in mastering, you probably want to go back and fix your mix.
 

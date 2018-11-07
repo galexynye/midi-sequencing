@@ -104,7 +104,7 @@ const MenuLargeWrapper = styled.div`
 
 const MenuLarge = styled.div`
   width: 225px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-right: 10px;
   margin-left: 50px;
   @media (max-width: 1200px) {
@@ -194,9 +194,12 @@ class Menu extends React.Component {
     })
 
     // Returns and Array of SubMenu Components to be rendered in menu
+    // Order the array alphabetically by title?
     tutorials = Object.keys(subTutorials).map(function(key) {
       return <SubMenu title={key} links={subTutorials[key]} key={key} />
     })
+
+    console.log(tutorials)
 
     gearReviews = Object.keys(subGearReviews).map(function(key) {
       return <SubMenu title={key} links={subGearReviews[key]} key={key} />
@@ -210,7 +213,6 @@ class Menu extends React.Component {
             Tutorials
           </HeaderButton>
           {this.state.displayTutorials && <SubMenus>{tutorials}</SubMenus>}
-          {/* <ul style={{ marginTop: '-10px' }}>{tutorials}</ul> */}
           <HeaderButton onClick={this._toggleGearReviews} inputColor="#adaa08">
             Gear Reviews
           </HeaderButton>
@@ -219,9 +221,9 @@ class Menu extends React.Component {
           <Link to={`/lessons`}>
             <HeaderButton inputColor="#00ce78">Lessons</HeaderButton>
           </Link>
-          <a href="mailto:midisequencingdotcom@gmail.com">
+          <Link to={`/contact`}>
             <HeaderButton inputColor="#1f8cd1">Contact</HeaderButton>
-          </a>
+          </Link>
           <Link to="/privacy-policy">
             {' '}
             <HeaderButton inputColor="#af0069">Privacy Policy</HeaderButton>
@@ -271,7 +273,12 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMarkdownRemark(
+          sort: {
+            fields: [frontmatter___subcategory, frontmatter___title]
+            order: ASC
+          }
+        ) {
           edges {
             node {
               fields {
