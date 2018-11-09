@@ -7,6 +7,7 @@ import Wrapper from '../components/Wrapper'
 import Menu from '../components/Menu/Menu'
 import Layout from '../components/layout'
 import Footer from '../components/Footer'
+import ScrollToTop from '../components/ScrollToTop'
 
 // import { rhythm, scale } from '../utils/typography'
 
@@ -46,13 +47,15 @@ class BlogPostTemplate extends React.Component {
         <h1>{post.frontmatter.title}</h1>
 
         <ul
-          style={{
-            listStyle: 'none',
-            display: 'flex',
-            flexFlow: 'wrap', // marginTop: rhythm(-1),
-            marginLeft: '0px',
-            marginBottom: '0px',
-          }}
+          style={
+            {
+              listStyle: 'none',
+              display: 'flex',
+              flexFlow: 'wrap',
+              marginLeft: '0px',
+              marginBottom: '0px',
+            } // marginTop: rhythm(-1),
+          }
         >
           {tags}
         </ul>
@@ -107,6 +110,7 @@ class BlogPostTemplate extends React.Component {
           </li>
         </ul>
         {/* </Layout> */}
+        <ScrollToTop scrollStepInPx="60" delayInMs="20" />
         <Footer />
       </Wrapper>
     )

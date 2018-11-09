@@ -1,6 +1,6 @@
 ---
 path: '/article/eq-essential-techniques'
-title: 'EQ: Essential Techniques'
+title: 'EQ Essentials'
 date: '2017-06-17'
 category: 'Tutorials'
 subcategory: 'Basics'

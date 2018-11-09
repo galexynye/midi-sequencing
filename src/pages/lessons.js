@@ -115,7 +115,7 @@ const Lessons = () => {
             <h2>Are lessons right for you?</h2>
             <p>
               Whether you are completely new to Music Production or want to take
-              your abilities to the next level the guidance of an experienceced
+              your abilities to the next level, the guidance of an experienceced
               teacher is invaluable.
             </p>
 
@@ -131,7 +131,10 @@ const Lessons = () => {
             <ul>
               <li>1-on-1 Analysis of Your Tracks and Mixes</li>
               <li>Music Theory: Notes, Intervals, Scales and Chords</li>
-
+              <li>
+                Fundamentals of Production: What the Tools Are and How To Use
+                Them
+              </li>
               <li>Sound Design and Synthesis</li>
               <li>
                 Producing Vocals: Getting Great Perfomances and Recording Them
@@ -139,15 +142,18 @@ const Lessons = () => {
               </li>
               <li>Advice On Building Your Studio</li>
               <li>Songwriting and Lyrics: How to Create the World of a Song</li>
+              <li>Micing and Recording Techniques</li>
+              <li>
+                Multitrack Recording: How to run a recording session with
+                multiple players
+              </li>
+
               <li>
                 Advanced Midi Sequencing: Creating Humanistic and Unbelievably
                 Realistic Parts
               </li>
               <li>Film Scoring Techniques</li>
-              <li>
-                Fundamentals of Production: What the Tools Are and How To Use
-                Them
-              </li>
+
               <li>Creating Templates and Finding Your Workflow</li>
               <li>Whatever you are interested in!</li>
             </ul>

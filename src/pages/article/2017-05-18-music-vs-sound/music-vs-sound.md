@@ -2,7 +2,7 @@
 path: '/article/music-vs-sound'
 title: Music VS Sound
 category: 'Tutorials'
-subcategory: 'Basics'
+subcategory: 'Producing'
 subject: 'Sound'
 date: '2017-05-18'
 tags: ['basics', 'mixing', 'philosophy']

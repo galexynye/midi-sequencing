@@ -15,7 +15,7 @@ const GeneralContact = styled.div`
       padding: 8px;
       text-align: center;
       border: none;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid #737373;
     }
     p {
       margin-top: 50px;
@@ -64,7 +64,7 @@ const Contact = () => {
           <p>
             {/* <label> */}
             {/* Your Name:  */}
-            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="name" placeholder="*Name" required />
             {/* </label> */}
           </p>
           <p>

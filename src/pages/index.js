@@ -5,7 +5,13 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import Wrapper from '../components/Wrapper'
-// import { rhythm } from '../utils/typography'
+import HomeWrapper from '../styled/HomeWrapper'
+import HomeCardsWrapper from '../styled/HomeCardsWrapper'
+// import ImgBuildStudio from '../assets/LandingCards/BuildAStudio.jpg'
+// import ImgEQ from '../assets/LandingCards/Bunch-Of-EQs-picture-1.png'
+// import ImgReverb from '../assets/LandingCards/Reverb-Diagram-1.png'
+// import ImgRouting from '../assets/LandingCards/Routing-Audio-1-1024x626.png'
+import LandingCard from '../components/LandingCards/LandingCard'
 
 class BlogIndex extends React.Component {
   constructor(props) {
@@ -32,7 +38,7 @@ class BlogIndex extends React.Component {
       <button onClick={this.showMorePosts}>Show More</button>
     )
     return (
-      <Wrapper>
+      <HomeWrapper>
         <Layout location={this.props.location}>
           <Helmet
             htmlAttributes={{ lang: 'en' }}
@@ -46,9 +52,51 @@ class BlogIndex extends React.Component {
               },
             ]}
           />
-          <Bio />
 
+          <Bio />
+          {/* <HomeCardsWrapper> */}
+          <HomeCardsWrapper>
+            <LandingCard
+              image={require('../assets/LandingCards/BuildAStudio.jpg')}
+              title="How To Build A Studio from Nothing to Everything"
+              link="/article/how-to-build-a-studio"
+              caption="This article goes from downloading your first DAW all the way to 
+            the top gear used by the worlds best pros."
+            />
+            <LandingCard
+              image={require('../assets/LandingCards/Bunch-Of-EQs-picture-1.png')}
+              title="EQ Essentials"
+              link="/article/eq-essential-techniques"
+              caption="In this guide you will learn the different types of EQs, why they are important, and how to use them."
+            />
+            <LandingCard
+              image={require('../assets/LandingCards/Reverb-Diagram-1.png')}
+              title="Reverb: The Definitive Guide"
+              link="/article/reverb-essentials"
+              caption={`Called, "The Best Reverb tutorial on the internet" this comprehensive guide details the different types of reverbs, how to set them up in a mix, and some history behind reverb.`}
+            />
+            <LandingCard
+              image={require('../assets/LandingCards/Routing-Audio-1-1024x626.png')}
+              title="Mix Routing Guide"
+              link="/article/how-to-set-up-a-mix"
+              caption="Sessions can get out of hand if you don't have a plan in place. This Mix Routing Guide will keep you organized even if you have thousands of tracks."
+            />
+            <LandingCard
+              image={require('../assets/LandingCards/Routing-Audio-1-1024x626.png')}
+              title="Mix Routing Guide"
+              link="/article/how-to-set-up-a-mix"
+              caption="Sessions can get out of hand if you don't have a plan in place. This Mix Routing Guide will keep you organized even if you have thousands of tracks."
+            />
+            <LandingCard
+              image={require('../assets/LandingCards/Routing-Audio-1-1024x626.png')}
+              title="Mix Routing Guide"
+              link="/article/how-to-set-up-a-mix"
+              caption="Sessions can get out of hand if you don't have a plan in place. This Mix Routing Guide will keep you organized even if you have thousands of tracks."
+            />
+          </HomeCardsWrapper>
+          {/* </HomeCardsWrapper> */}
           {/* Below is the Posts list Render */}
+          {/* */}
           {showPosts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug
             // Retrieves and creats tag info for each Post
@@ -82,13 +130,15 @@ class BlogIndex extends React.Component {
                 </h3>
                 {/* <small>{node.frontmatter.date}</small> */}
                 <ul
-                  style={{
-                    listStyle: 'none',
-                    display: 'flex',
-                    flexFlow: 'wrap', // marginTop: rhythm(-0.5),
-                    marginTop: '-10px',
-                    marginLeft: '0px',
-                  }}
+                  style={
+                    {
+                      listStyle: 'none',
+                      display: 'flex',
+                      flexFlow: 'wrap',
+                      marginTop: '-10px',
+                      marginLeft: '0px',
+                    } // marginTop: rhythm(-0.5),
+                  }
                 >
                   {tags}
                 </ul>
@@ -112,7 +162,7 @@ class BlogIndex extends React.Component {
             </div>
           )}
         </Layout>
-      </Wrapper>
+      </HomeWrapper>
     )
   }
 }

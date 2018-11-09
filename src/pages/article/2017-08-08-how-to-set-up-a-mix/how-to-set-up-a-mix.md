@@ -34,11 +34,11 @@ There are no rules on where to specifically put your elements, you can put the b
 
 The master-bus or 1-2 bus is the track where all of the sounds in your session will ultimately wind up. <strong>If you mute the master bus you should not hear any sounds.</strong> Any effects applied on the master bus will affect the entire mix.
 
-This next paragraph is like a chunk of raw broccoli, not necessarily entertaining, but good to digest. In your DAW there might already be a track that automatically appears in every session called a "Stereo Out" or "Master" which functions as a master-bus. When I use Logic or Pro Tools as my DAW, I prefer to create a new Aux track and have all my audio routed to that so I have the flexibility of sending the audio back into my session to print my mix on an audio track in the session or re-sample the mix for use in the track. In a DAW like Ableton, you an create any old audio track and set the input of that track to be from the "Master", thus this step isn't necessary.
+This next paragraph is like a chunk of raw broccoli, not necessarily entertaining, but good to digest. In your DAW there might already be a track that automatically appears in every session called a "Stereo Out" or "Master" which functions as a master-bus. When I use Logic or Pro Tools as my DAW, I prefer to create a new Aux track and have all my audio routed to that so I have the flexibility of sending the audio back into my session to print(record) my mix on an audio track in the session or re-sample the mix for use in the track. In a DAW like Ableton, you an create any old audio track and set the input of that track to be from the "Master", thus this step isn't necessary.
 
 <h4 >Sub-Master Sums</h4>
 
-"Sub-Master Sums" is a name that I made up (as far as I kn0w) for 3-6 tracks that can control your entire mix. If you turn down all of the sub-master sum tracks, you shouldn't hear any sound. What is the purpose of this extra layer track groupings?
+"Sub-Master Sums" is a name that I made up (as far as I know) for 3-6 tracks that can control your entire mix. If you turn down all of the sub-master sum tracks, you shouldn't hear any sound. What is the purpose of this extra layer track groupings?
 
 A very standard "sub-master sum" track would be something like a drum sum or what's more commonly called, a drum bus. If you set the output of all your drums, or groups of drums, to one track (aka the drum sum), then you have the ability to turn the volume of all your drums up or down with one fader. Not only can you turn the drums up or down, but you can add effects as inserts such as compression to glue them together or send out to a reverb.
 
