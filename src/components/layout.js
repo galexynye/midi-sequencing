@@ -2,8 +2,6 @@ import React from 'react'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-// import { rhythm, scale } from '../utils/typography'
-import Wrapper from './Wrapper'
 import Footer from './Footer'
 import MusicSequencingWords from '../assets/MusicSequencingWordsLogo.png'
 import ScrollToTop from '../components/ScrollToTop'
@@ -70,7 +68,7 @@ class Template extends React.Component {
       header = (
         <Link to={'/'} id="top">
           <img
-            style={{ marginBottom: '0px' }}
+            style={{ marginBottom: '0px', display: 'none' }}
             src={MusicSequencingWords}
             alt="Music Sequencing Home link"
           />

@@ -35,7 +35,7 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 900px) {
-    margin-top: 85px;
+    margin-top: 45px;
     padding: 0px 15px;
     max-width: 800px;
   }
