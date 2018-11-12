@@ -158,7 +158,6 @@ class Menu extends React.Component {
   }
 
   render() {
-    console.log(this.state.displayMobile)
     const posts = this.props.data.allMarkdownRemark.edges
     let tutorials = posts.filter(
       post => post.node.frontmatter.category == 'Tutorials'
@@ -194,8 +193,6 @@ class Menu extends React.Component {
     tutorials = Object.keys(subTutorials).map(function(key) {
       return <SubMenu title={key} links={subTutorials[key]} key={key} />
     })
-
-    console.log(tutorials)
 
     gearReviews = Object.keys(subGearReviews).map(function(key) {
       return <SubMenu title={key} links={subGearReviews[key]} key={key} />

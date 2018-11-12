@@ -7,13 +7,7 @@ import Footer from '../components/Footer'
 import Wrapper from '../components/Wrapper'
 import ContactForm from '../components/ContactForm'
 import { Link } from 'gatsby'
-
-const ContactBlurb = styled.div`
-  text-align: center;
-  p {
-    text-align: left;
-  }
-`
+import Blurb from '../styled/Blurb'
 
 const Contact = () => {
   return (
@@ -26,7 +20,7 @@ const Contact = () => {
       <Menu sideNav={true} />
 
       <HomeLink margin="0px 0px 10px 0px" />
-      <ContactBlurb>
+      <Blurb>
         <h1>Write Us</h1>
         <p>
           If you have any questions or requests we look forward to hearing you!
@@ -42,7 +36,7 @@ const Contact = () => {
           time(s) and date(s) you would prefer. See the{' '}
           <Link to="/lessons">lessons page</Link> for more information.
         </p>
-      </ContactBlurb>
+      </Blurb>
       <ContactForm subject={true} />
       <Footer />
     </Wrapper>

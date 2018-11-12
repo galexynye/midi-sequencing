@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigateTo } from 'gatsby'
 import styled from 'styled-components'
 
 const GeneralContact = styled.div`
@@ -53,83 +54,131 @@ const GeneralContact = styled.div`
   }
 `
 
-const ContactForm = props => {
-  return (
-    <GeneralContact margin={props.margin} textAlign={props.textAlign}>
-      <form
-        name="contact"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
+
+class ContactForm extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+    this._handleChange = this._handleChange.bind(this)
+    this._handleSubmit = this._handleSubmit.bind(this)
+  }
+
+  _handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value })
+    console.log(this.state)
+  }
+
+  _handleSubmit(e) {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
+    })
+      .then(() => navigateTo(form.getAttribute('action')))
+      .catch(error => alert(error))
+  }
+
+  render() {
+    return (
+      <GeneralContact
+        margin={this.props.margin}
+        textAlign={this.props.textAlign}
       >
-        <p>
-          {/* <label> */}
-          {/* Your Name:  */}
-          <input
-            type="text"
-            name="name"
-            placeholder="Name (Required)"
-            required
-          />
-          {/* </label> */}
-        </p>
-        <p>
-          <label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email (Required)"
-              required
-            />
-          </label>
-        </p>
-        {props.subject && (
-          <p>
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          action="/thanks"
+          data-netlify-honeypot="bot-field"
+          onSubmit={this._handleSubmit}
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
             <label>
-              <input type="text" name="subject" placeholder="Subject" />
+              Don’t fill this out:{' '}
+              <input name="bot-field" onChange={this._handleChange} />
             </label>
           </p>
-        )}
-        {props.lesson && (
-          <div>
+          <p>
+            {/* <label> */}
+            {/* Your Name:  */}
+            <input
+              type="text"
+              name="name"
+              placeholder="Name (Required)"
+              onChange={this._handleChange}
+              required
+            />
+            {/* </label> */}
+          </p>
+          <p>
+            <label>
+              <input
+                type="email"
+                name="email"
+                onChange={this._handleChange}
+                placeholder="Email (Required)"
+                required
+              />
+            </label>
+          </p>
+          {this.props.subject && (
             <p>
-              {/* <label>
+              <label>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  onChange={this._handleChange}
+                />
+              </label>
+            </p>
+          )}
+          {this.props.lesson && (
+            <div>
+              <p>
+                {/* <label>
               Subject:{' '} */}
-              <select name="role[]">
-                <option value="schedule">Schedule Lesson(s)</option>
-                {/* <option value="schedule">Schedule Free Meet and Greet</option> */}
-                <option value="lesson Details">
-                  Ask further details about Lessons
-                </option>
-                <option value="other lessons">Other</option>
-              </select>
-              {/* </label> */}
-            </p>
-            {/* <p>Date Preferences</p>
-            <p>
-              <input type="date" placeholder="Date" />
-            </p>
-            <p>
-              <input type="date" placeholder="Date" />
-            </p>
-            <p>
-              <input type="date" placeholder="Date" />
-            </p> */}
-          </div>
-        )}
+                <select name="lesson subject" onChange={this._handleChange}>
+                  <option value="schedule">Schedule Lesson(s)</option>
+                  {/* <option value="schedule">Schedule Free Meet and Greet</option> */}
+                  <option value="lesson Details">
+                    Ask further details about Lessons
+                  </option>
+                  <option value="other lessons">Other</option>
+                </select>
+                {/* </label> */}
+              </p>
+            </div>
+          )}
 
-        <p>
-          {/* <label>
+          <p>
+            {/* <label>
               Message */}
-          <textarea name="message" placeholder="Message" />
-          {/* </label> */}
-        </p>
-        <p>
-          <button>Submit</button>
-        </p>
-      </form>
-    </GeneralContact>
-  )
+            <textarea
+              name="message"
+              placeholder="Message"
+              onChange={this._handleChange}
+            />
+            {/* </label> */}
+          </p>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </GeneralContact>
+    )
+  }
 }
 
 export default ContactForm
