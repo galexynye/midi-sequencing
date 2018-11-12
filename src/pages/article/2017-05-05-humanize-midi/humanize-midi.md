@@ -3,7 +3,7 @@ path: '/article/humanize-midi'
 title: 'Automatically Humanize Midi'
 date: '2017-05-05'
 category: 'Tutorials'
-subcategory: 'Producing'
+subcategory: 'Midi'
 subject: 'Midi'
 tags: ['midi', 'tips']
 ---

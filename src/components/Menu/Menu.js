@@ -132,8 +132,8 @@ class Menu extends React.Component {
     super(props)
     this.state = {
       displayMobile: false,
-      displayTutorials: true,
-      displayGearReviews: true,
+      displayTutorials: false,
+      displayGearReviews: false,
     }
     this._handleClick = this._handleClick.bind(this)
     this._toggleTutorials = this._toggleTutorials.bind(this)

@@ -4,48 +4,13 @@ import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Menu from '../components/Menu/Menu'
 import Footer from '../components/Footer'
 import Wrapper from '../components/Wrapper'
+import ContactForm from '../components/ContactForm'
+import { Link } from 'gatsby'
 
-const GeneralContact = styled.div`
-  form {
-    text-align: center;
-    input {
-      box-sizing: border-box;
-      font-size: 1rem;
-      width: 100%;
-      padding: 8px;
-      text-align: center;
-      border: none;
-      border-bottom: 1px solid #737373;
-    }
-    p {
-      margin-top: 50px;
-    }
-    textarea {
-      box-sizing: border-box;
-      width: 100%;
-      min-height: 100px;
-      margin-top: 30px;
-      padding: 8px;
-      ::placeholder {
-        text-align: center;
-      }
-    }
-
-    button {
-      margin-left: auto;
-      padding: 5px 10px;
-      font-size: 1rem;
-      color: #777777;
-      background-color: white;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    @media (max-width: 900px) {
-      p {
-        margin-top: 20px;
-      }
-    }
+const ContactBlurb = styled.div`
+  text-align: center;
+  p {
+    text-align: left;
   }
 `
 
@@ -53,45 +18,26 @@ const Contact = () => {
   return (
     <Wrapper>
       <Menu sideNav={true} />
-      <HomeLink />
-      <GeneralContact>
-        <form
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          <p>
-            {/* <label> */}
-            {/* Your Name:  */}
-            <input type="text" name="name" placeholder="*Name" required />
-            {/* </label> */}
-          </p>
-          <p>
-            <label>
-              <input type="email" name="email" placeholder="*Email" required />
-            </label>
-          </p>
-          {/* <p>
-            <label>
-              Subject:{' '}
-              <select name="role[]">
-                <option value="leader">Lessons</option>
-                <option value="follower">Product Review</option>
-              </select>
-            </label>
-          </p> */}
-          <p>
-            {/* <label>
-              Message */}
-            <textarea name="message" placeholder="Message" />
-            {/* </label> */}
-          </p>
-          <p>
-            <button>Submit</button>
-          </p>
-        </form>
-      </GeneralContact>
+
+      <HomeLink margin="0px 0px 10px 0px" />
+      <ContactBlurb>
+        <h1>Write Us</h1>
+        <p>
+          If you have any questions or requests we look forward to hearing you!
+          Feel free to{' '}
+          <a href="mailto:contact@musicsequencing.com">email us here</a> or use
+          the contact form below.
+        </p>
+        {/* </p>
+        <p>
+        */}
+        <p>
+          Those interested in booking private lessons please indicate the
+          time(s) and date(s) you would prefer. See the{' '}
+          <Link to="/lessons">lessons page</Link> for more information.
+        </p>
+      </ContactBlurb>
+      <ContactForm subject={true} />
       <Footer />
     </Wrapper>
   )

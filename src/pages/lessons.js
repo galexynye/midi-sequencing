@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Menu from '../components/Menu/Menu'
 import BGVideo from '../assets/MidiSequencing Title_1_Sound.mp4'
 import Footer from '../components/Footer'
+import ContactForm from '../components/ContactForm'
 // import Alex from '../assets/AlexPics/singingcut.jpg'
 
 const VideoWrapper = styled.div`
@@ -106,8 +107,8 @@ const Lessons = () => {
             <p>
               Music Production lessons aim to help students discover their true
               potential as music makers. 1-on-1 lessons give the advantage of
-              honest feedback and methods for improvement in an abstract
-              artform.
+              direct feedback on a student's work and methods for improvement in
+              an abstract artform.
             </p>
           </LessonInfoSubject>
 
@@ -135,12 +136,16 @@ const Lessons = () => {
                 Fundamentals of Production: What the Tools Are and How To Use
                 Them
               </li>
+              <li>Taking an idea to a fully produced track</li>
               <li>Sound Design and Synthesis</li>
               <li>
                 Producing Vocals: Getting Great Perfomances and Recording Them
                 Properly
               </li>
-              <li>Advice On Building Your Studio</li>
+              <li>
+                Advice On Building Your Studio: What tools should you get and
+                what's a waste of money
+              </li>
               <li>Songwriting and Lyrics: How to Create the World of a Song</li>
               <li>Micing and Recording Techniques</li>
               <li>
@@ -150,7 +155,7 @@ const Lessons = () => {
 
               <li>
                 Advanced Midi Sequencing: Creating Humanistic and Unbelievably
-                Realistic Parts
+                Realistic Parts and Mockups
               </li>
               <li>Film Scoring Techniques</li>
 
@@ -161,15 +166,28 @@ const Lessons = () => {
           <LessonInfoSubject>
             <h2>How Lessons Work</h2>
             <p>
-              Lessons are conducted online over a Skype or Google Hangout call.
-              We can discuss other options of communication as well.
+              Lessons are conducted online and require internet speeds capable
+              of audio and video streaming.
             </p>
             <p>
-              Music Production concepts are universal, however, some specifics,
-              like your Digital Audio Workstation (or DAW) of choice, play a
-              part in the production process. DAW specific instructions and
-              lessons can be given on Abelton Live, Pro Tools and Logic X.
+              <b>
+                {' '}
+                To ensure a great experience there is a free meet and greet
+                offered for first time students to discuss goals, musical
+                influences and to ensure online lessons work for you.
+              </b>
             </p>
+            <p>
+              Note: Music Production concepts are universal, however, some
+              specifics, like your Digital Audio Workstation (or DAW) of choice,
+              play a part in the production process. DAW specific instructions
+              and lessons can be given on Abelton Live, Pro Tools and Logic X.
+            </p>
+          </LessonInfoSubject>
+          <LessonInfoSubject>
+            <h2>Pricing</h2>
+            <p>1hr Lesson - $65</p>
+            <p>2hr Lesson - $120</p>
           </LessonInfoSubject>
           <LessonInfoSubject>
             <h2>About the Instructor</h2>
@@ -182,14 +200,44 @@ const Lessons = () => {
                 Berklee College of Music
               </a>{' '}
               Majoring in Contemporary Writing and Production. He has composed
-              extensively for films and shows such as Amazon's Hand of God and
-              20th Century Fox's Poltergeist.
+              and engineered extensively for films and shows such as Amazon's
+              <a href="https://www.imdb.com/title/tt3973768/" target="blank">
+                {' '}
+                Hand of God
+              </a>{' '}
+              and 20th Century Fox's{' '}
+              <a
+                href="https://www.imdb.com/title/tt1029360/?ref_=nv_sr_2"
+                target="blank"
+              >
+                {' '}
+                Poltergeist{' '}
+              </a>
+              .
               {/* Before Berklee,
               he studied classical bass with Scott Haigh of the Cleveland
               Orchestra. */}
             </p>
           </LessonInfoSubject>
+
+          <LessonInfoSubject>
+            <h2>Contact for Lessons</h2>
+            <p>
+              Booking lessons can be done by{' '}
+              <a href="mailto:contact@musicsequencing.com">emailing here</a> or
+              by filling out the contact form below. In your message please
+              indicate if you have any preferences for dates or times. You will
+              be contacted shortly with additional information for schedule,
+              setup and payment information.
+            </p>
+            <ContactForm
+              margin="-30px 0px 0px 0px"
+              textAlign="left"
+              lesson={true}
+            />
+          </LessonInfoSubject>
         </LessonInfoWrapper>
+
         <Footer />
       </LessonContentContainer>
     </div>

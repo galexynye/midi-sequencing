@@ -1,12 +1,14 @@
 ---
 path: '/article/which-daw-should-i-use'
-title: 'Which DAW Should I Use?'
+title: 'Which DAW Should You Use?'
 date: '2017-05-04'
 category: 'Tutorials'
 subcategory: 'Build A Studio'
 subject: 'DAW'
 tags: ['basics', 'software', 'daw']
 ---
+
+![Logos of Digital Audio Workstations](./Daws-20.jpg 'Famous DAWS')
 
 Each <strong>D</strong>igital <strong>A</strong>udio <strong>W</strong>orkstation has different advantages and pitfalls for music creation. If you want to work professionally in audio you might want get to know Pro Tools, if you're making tracks in your bedroom on a PC, FL Studio might be your best choice, here's why.
 

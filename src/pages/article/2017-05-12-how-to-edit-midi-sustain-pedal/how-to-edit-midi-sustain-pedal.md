@@ -3,7 +3,7 @@ path: '/article/how-to-edit-midi-sustain-pedal'
 title: How to Edit Midi Sustain Pedal
 date: '2017-05-12'
 category: 'Tutorials'
-subcategory: 'Producing'
+subcategory: 'Midi'
 subject: 'Midi'
 tags: ['tips', 'midi']
 ---

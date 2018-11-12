@@ -6,6 +6,7 @@ import styled from 'styled-components'
 // Refactor Home Links to One Component, use props to set the break points and
 // the images
 
+//Shows link only on mobile
 const HomeLinkLogoStyle = styled.div`
   position: absolute;
   left: 50%;

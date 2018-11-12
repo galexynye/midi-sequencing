@@ -87,8 +87,8 @@ class BlogIndex extends React.Component {
             <LandingCard
               image={require('../assets/LandingCards/Daws-20.jpg')}
               title="Which DAW should you Use?"
-              link="/article/which-daw-should-i-use"
-              caption="A electronic producer uses different tools than a producer recording bands. Find out which DAW is best for your needs."
+              link="/article/which-daw-should-you-use"
+              caption="An electronic producer uses different tools than a producer recording bands. Find out which DAW is best for your needs."
             />
             <LandingCard
               image={require('../assets/LandingCards/Routing-Audio-1-1024x626.png')}
