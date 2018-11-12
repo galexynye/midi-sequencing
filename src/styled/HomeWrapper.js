@@ -8,7 +8,7 @@ const HomeWrapper = styled.div`
   margin-left: auto;
   /*TODO: Change to variable */
   padding-left: 320px;
-  padding-right: 20px;
+  padding-right: 25px;
 
   img {
     margin-top: 15px;
@@ -25,7 +25,7 @@ const HomeWrapper = styled.div`
   }
 
   @media (max-width: 1500px) {
-    padding-left: 320px;
+    padding-left: 310px;
   }
 
   @media (max-width: 900px) {

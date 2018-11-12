@@ -36,7 +36,7 @@ export default class MailSignUP extends React.Component {
     this.state = {
       // name: '',
       email: '',
-      showSubmit: false,
+      // showSubmit: false,
     }
     this._handleChange = this._handleChange.bind(this)
     this._handleSubmit = this._handleSubmit.bind(this)
@@ -44,9 +44,9 @@ export default class MailSignUP extends React.Component {
   }
 
   _handleChange(e) {
-    console.log({
-      [`${e.target.name}`]: e.target.value,
-    })
+    // console.log({
+    //   [`${e.target.name}`]: e.target.value,
+    // })
     this.setState({
       [`${e.target.name}`]: e.target.value,
     })
@@ -54,18 +54,14 @@ export default class MailSignUP extends React.Component {
 
   _handleSubmit(e) {
     e.preventDefault()
-    console.log('submit', this.state)
     addToMailchimp(this.state.email)
       .then(({ msg, result }) => {
-        console.log('msg', `${result}: ${msg}`)
         if (result !== 'success') {
           throw msg
         }
-        this.setState({ email: '', showSubmit: false })
         alert(msg)
       })
       .catch(err => {
-        console.log('err', err)
         alert(err)
       })
   }

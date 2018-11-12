@@ -103,7 +103,7 @@ const MenuLarge = styled.div`
   margin-top: 20px;
   margin-right: 10px;
   margin-left: 50px;
-  @media (max-width: 1200px) {
+  @media (max-width: 1500px) {
     width: 200px;
   }
 `
