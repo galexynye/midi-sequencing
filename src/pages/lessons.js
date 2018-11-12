@@ -94,11 +94,8 @@ class Lessons extends React.Component {
     this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this)
   }
 
-  componentWillMount() {
-    window.addEventListener('resize', this.handleWindowSizeChange)
-  }
-
   componentDidMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange)
     this.setState({
       isBig: window.innerWidth > 700,
     })
