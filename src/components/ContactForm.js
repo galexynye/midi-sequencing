@@ -149,13 +149,17 @@ class ContactForm extends React.Component {
               <p>
                 {/* <label>
               Subject:{' '} */}
-                <select name="lesson subject" onChange={this._handleChange}>
+                <select
+                  name="lessonSubject[]"
+                  onChange={this._handleChange}
+                  multiple
+                >
                   <option value="schedule">Schedule Lesson(s)</option>
                   {/* <option value="schedule">Schedule Free Meet and Greet</option> */}
-                  <option value="lesson Details">
+                  <option value="lessonDetails">
                     Ask further details about Lessons
                   </option>
-                  <option value="other lessons">Other</option>
+                  <option value="other">Other</option>
                 </select>
                 {/* </label> */}
               </p>
