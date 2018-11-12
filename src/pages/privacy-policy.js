@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Footer from '../components/Footer'
 import Wrapper from '../components/Wrapper'
@@ -8,6 +9,11 @@ class Privacy extends React.Component {
   render() {
     return (
       <Wrapper>
+        <Helmet
+          htmlAttributes={{ lang: 'en' }}
+          // meta={[{ name: 'description', content: siteDescription }]}
+          title={`Privacy | Music Sequencing`}
+        />
         <Menu sideNav={true} />
         <HomeLink />
         <h1 style={{ marginTop: '10px' }}>Privacy Policy</h1>

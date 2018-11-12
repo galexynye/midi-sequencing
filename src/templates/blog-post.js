@@ -27,6 +27,7 @@ class BlogPostTemplate extends React.Component {
               textDecoration: 'none',
               boxShadow: 'none',
               marginRight: '10px',
+              color: '#2c62a9',
             }}
           >
             {`${tag}`}
@@ -53,25 +54,27 @@ class BlogPostTemplate extends React.Component {
               display: 'flex',
               flexFlow: 'wrap',
               marginLeft: '0px',
-              marginBottom: '0px',
+              marginBottom: '20px',
             } // marginTop: rhythm(-1),
           }
         >
           {tags}
         </ul>
 
-        <p
-          style={
-            {
-              // ...scale(-1 / 5),
-              display: 'block',
+        {!post.frontmatter.hideDate && (
+          <p
+            style={
+              {
+                // ...scale(-1 / 5),
+                display: 'block',
+              }
+              // marginBottom: rhythm(1),
+              // marginTop: rhythm(-1),
             }
-            // marginBottom: rhythm(1),
-            // marginTop: rhythm(-1),
-          }
-        >
-          {post.frontmatter.date}
-        </p>
+          >
+            {post.frontmatter.date}
+          </p>
+        )}
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         {/* <hr
@@ -134,6 +137,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        hideDate
         tags
       }
     }

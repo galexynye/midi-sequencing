@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import Wrapper from '../components/Wrapper'
 import HomeLink from '../components/HomeLinks/HomeLinkLogo'
@@ -6,6 +7,14 @@ import Footer from '../components/Footer'
 import Menu from '../components/Menu/Menu'
 // Components
 import { Link, graphql } from 'gatsby'
+import Styled from 'styled-components'
+
+const TagsList = Styled.ul`
+  list-style-type: '';
+  display: 'flex';
+  flex-flow: 'wrap';
+  margin: '0px 0px 50px 0px';
+`
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -16,24 +25,30 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Wrapper>
+      <Helmet
+        htmlAttributes={{ lang: 'en' }} // meta={[{ name: 'description', content: siteDescription }]}
+        title={`${tag} | Music Sequencing`}
+      />
       <Menu sideNav={true} />
       <HomeLink />
       <h1 style={{ marginTop: '10px' }}>{tagHeader}</h1>
-      <ul style={{ listStyle: 'none', marginLeft: '0px' }}>
+      <TagsList>
         {edges.map(({ node }) => {
           const { path, title } = node.frontmatter
           return (
-            <li key={path}>
+            <li key={path} style={{ marginBottom: '10px' }}>
               <Link to={path}>{title}</Link>
             </li>
           )
         })}
-      </ul>
+      </TagsList>
       {/*
               This links to a page that does not yet exist.
               We'll come back to it!
             */}
-      <Link to="/tags">All tags</Link>
+      <Link to="/tags" style={{ marginTop: '10px' }}>
+        All tags
+      </Link>
       <Footer />
     </Wrapper>
   )

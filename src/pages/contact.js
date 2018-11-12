@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Menu from '../components/Menu/Menu'
@@ -17,6 +18,11 @@ const ContactBlurb = styled.div`
 const Contact = () => {
   return (
     <Wrapper>
+      <Helmet
+        htmlAttributes={{ lang: 'en' }}
+        // meta={[{ name: 'description', content: siteDescription }]}
+        title={`Contact | Music Sequencing`}
+      />
       <Menu sideNav={true} />
 
       <HomeLink margin="0px 0px 10px 0px" />

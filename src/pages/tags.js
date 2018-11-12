@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Wrapper from '../components/Wrapper'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
@@ -8,6 +9,14 @@ import Footer from '../components/Footer'
 import Menu from '../components/Menu/Menu'
 // Utilities
 import kebabCase from 'lodash/kebabCase'
+import styled from 'styled-components'
+
+const TagsList = styled.ul`
+  list-style-type: '';
+  display: 'flex';
+  flex-flow: 'wrap';
+  margin: '0px 0px 20px 0px';
+`
 
 const TagsPage = ({
   data: {
@@ -18,17 +27,14 @@ const TagsPage = ({
   },
 }) => (
   <Wrapper>
+    <Helmet
+      htmlAttributes={{ lang: 'en' }} // meta={[{ name: 'description', content: siteDescription }]}
+      title={`All Tags | Music Sequencing`}
+    />
     <Menu sideNav={true} />
     <HomeLink />
-    <h1 style={{ marginTop: '10px' }}>Tags</h1>
-    <ul
-      style={{
-        listStyle: 'none',
-        display: 'flex',
-        flexFlow: 'wrap',
-        marginLeft: '0px',
-      }}
-    >
+    <h1 style={{ marginTop: '10px' }}>All Tags</h1>
+    <TagsList>
       {group.map(tag => (
         <li
           key={tag.fieldValue}
@@ -41,7 +47,7 @@ const TagsPage = ({
           </Link>
         </li>
       ))}
-    </ul>
+    </TagsList>
     <Footer />
   </Wrapper>
 )

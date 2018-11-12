@@ -1,9 +1,11 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Menu from '../components/Menu/Menu'
 import BGVideo from '../assets/MidiSequencing Title_1_Sound.mp4'
 import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
+import LessonsPoster from '../assets/Lessons/LessonsPoster.jpg'
 // import Alex from '../assets/AlexPics/singingcut.jpg'
 
 const VideoWrapper = styled.div`
@@ -84,9 +86,14 @@ const LessonInfoSubject = styled.div`
 const Lessons = () => {
   return (
     <div>
+      <Helmet
+        htmlAttributes={{ lang: 'en' }}
+        // meta={[{ name: 'description', content: siteDescription }]}
+        title={`Lessons | Music Sequencing`}
+      />
       <Menu />
       <VideoWrapper>
-        <video autoPlay muted loop>
+        <video poster={LessonsPoster} autoPlay muted loop>
           <source src={BGVideo} type="video/mp4" />
         </video>
       </VideoWrapper>
