@@ -27,24 +27,40 @@ const Social = props => {
         href="https://www.youtube.com/channel/UCRh5xwjVbFb0PI9JKOeZAIg"
         target="blank"
       >
-        <FontAwesomeIcon icon={faYoutube} size={props.size} />
+        <FontAwesomeIcon
+          icon={faYoutube}
+          size={props.size}
+          style={{ maxHeight: '20px' }}
+        />
         {/* <FontAwesomeIcon icon={faYoutube} size="1x" /> */}
       </SocialLink>
       <SocialLink
         href="https://www.reddit.com/user/midisequencing"
         target="blank"
       >
-        <FontAwesomeIcon icon={faReddit} size={props.size} />
+        <FontAwesomeIcon
+          icon={faReddit}
+          size={props.size}
+          style={{ maxHeight: '20px' }}
+        />
       </SocialLink>
       <SocialLink
         href="https://www.facebook.com/musicsequencing/"
         target="blank"
       >
-        <FontAwesomeIcon icon={faFacebook} size={props.size} />
+        <FontAwesomeIcon
+          icon={faFacebook}
+          size={props.size}
+          style={{ maxHeight: '20px' }}
+        />
       </SocialLink>
-      <SocialLink href="https://twitter.com/midisequencing" target="blank">
-        <FontAwesomeIcon icon={faTwitter} size={props.size} />
-      </SocialLink>
+      {/* <SocialLink href="https://twitter.com/midisequencing" target="blank">
+        <FontAwesomeIcon
+          icon={faTwitter}
+          size={props.size}
+          style={{ maxHeight: '20px' }}
+        />
+      </SocialLink> */}
     </SocialWrapper>
   )
 }

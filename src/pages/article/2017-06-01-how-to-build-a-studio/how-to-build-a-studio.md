@@ -10,35 +10,40 @@ tags: ['tips', 'gear', 'mixing', 'basics']
 ---
 
 <!-- TODO: Add More Affiliate Links (Or Link To Store) -->
-<img src="./media/how-to-build-a-home-studio/studio-1.jpg" alt="A very nice Home Studio " width="1024" height="620" />
-<p >You will continually upgrade your studio from the second you download your first DAW to long after, when modular synths line the walls of your home like a mad science lab. Knowing what equipment to buy and when to buy it is vital to improving your sound without wasting time and money. We are going to take a look at how a home studio build evolves from humble beginnings to touring some of the best home studio's ever built and what gear to get each step of the way. Tier 3 includes a large checklist of different tools and quality gear essential to a studio. Here is the overview.</p>
+<img src="./media/how-to-build-a-home-studio/studio-1.jpg" alt="A very nice Home Studio " />
+Building and upgrading a studio is a skill of music production. 
+<!-- Knowing what equipment to buy and when to buy it will improve your sound without wasting time and money. -->
+
+We are going to take a look at how a studio build evolves from very humble beginnings to touring some of the best home studio's ever built along with a heap of gear each step of the way.
+
+Note: Tier 3 includes a large checklist of different tools and quality gear essential to a studio. Here is the overview
 
 <ul>
- 	<li >Tier 1: A computer, DAW and headphones</li>
- 	<li >Tier 2: Interface, Mic, Midi controller and Monitors</li>
- 	<li >Tier 3: Capability to record, mix, and master hit records</li>
- 	<li >Tier 4: Pro</li>
- 	<li >Tier 5: Top Pro</li>
- 	<li >Tier 6: I'm rich bitch!</li>
- 	<li >Tier 7: Hans Zimmer</li>
+ 	<li ><a href="#tier1">Tier 1: A computer, DAW and headphones</a></li>
+ 	<li ><a href="#tier2">Tier 2: Interface, Mic, Midi controller and Monitors</a></li>
+ 	<li ><a href="#tier3">Tier 3: Capability to record, mix, and master hit records</a></li>
+ 	<li ><a href="#tier4">Tier 4: Pro</a></li>
+ 	<li ><a href="#tier5">Tier 5: Top Pro</li>
+ 	<li ><a href="#tier6">Tier 6: I'm rich bitch!</a></li>
+ 	<li ><a href="#tier7">Tier 7: Hans Zimmer</a></li>
 </ul>
-<h2 >Tier 1 : A Computer, DAW, and Headphones</h2>
+<h2 style="padding-top:60px" id="tier1">Tier 1 : A Computer, DAW, and Headphones</h2>
 
 So it begins. Starting with just a computer, you download a DAW like <a href="https://shop.presonus.com/products/software/studio-one-prods/Studio-One-3-Digital-Downloads" target="_blank" rel="noopener noreferrer">Studio One Prime</a>, <a href="http://www.avid.com/pro-tools-first" target="_blank" rel="noopener noreferrer">Pro Tools First</a> or <a href="https://www.apple.com/mac/garageband/" target="_blank" rel="noopener noreferrer">Garage Band</a> for freeeeeeeee and start fiddling around. After making a couple little tracks and feeling the music drugs taking hold of your system the limitations of the free DAWs might not be enough anymore. Good old midisequencing.com will tell you <a href="/article/which-daw-should-i-use">what DAW is best for your situation.</a>
 
-After installing a fresh, shiny new DAW you might think, "Wow, look at all these built in soft synths, samples and different plugins." The more music you make the more familiar you'll get with the tools in your DAW and what you are capable of making. Eventually there will be a day you say, "hey, this is pretty good, I'm the bomb." and post some stuff on SoundCloud. Nobody else likes it. It's devastating, "I suck, I am shit and should just quit."
+After installing a fresh, shiny new DAW you might think, "Wow, look at all these built in soft synths, samples and different plugins." The more music you make the more familiar you'll get with the tools in your DAW and what you are capable of making. Eventually there will be a day you say, "hey, this is pretty good, I'm the bomb." and post some stuff on SoundCloud. Nobody else likes it. It can be devastating, "I suck, I am shit and should just quit."
 
-<strong>Don't get down on yourself. This cycle of "I'm dope...no wait, I suck" will continue a long time if not forever, it's part of being creative.</strong> You do it because you love it and <em>eventually</em> a hot neighbor girl says, "I heard you are making some tracks, I've been writing some songs and sing a bit, maybe you could record me." you say, "YES!" Always say yes! Problem is, you've been recording samples on your phone and don't have a real mic. It's time to upgrade the home studio.
+<strong>Don't get down on yourself. This cycle of "I'm dope...no wait, I suck" will continue a long time if not forever, it's part of being creative.</strong> You do it because you love it and <em>eventually</em> your buddy or casual aquantince/hot neighbor or whatever says, "I heard you are making some tracks, I've been writing some songs and sing a bit, maybe you could record me." You say, "YES!" Always say yes! Problem is, you've been recording samples on your phone and don't have a real mic. It's time to upgrade.
 
-<h2 >Tier 2: Interface, Mic, Midi Controller and Monitors</h2>
+<h2 style="padding-top:60px" id="tier2" >Tier 2: Interface, Mic, Midi Controller and Monitors</h2>
 
-Luckily these days you can get a pretty decent mic and interface for not a ton of money. If you'll mainly be recording vocals you probably want a Large Diaphram Condensor mic (LDC for short). If you only have a hundred bucks to spend on a LDC I would recommend the <a href="https://amzn.to/2Rzrz3d" target="_blank" rel="noopener">Audio Technica 2020</a>. If you have a bit more money a lot of people recommend the <a href="http://amzn.to/2Nvd3pL" target="_blank" rel="nofollow noopener">Rhode NT1</a>, which will run you about 270. If you have even more money, a dynamic mic like the <a href="https://amzn.to/2IL2ZbN" target="_blank" rel="noopener">Shure SM7b</a> might be your best choice because you'll definitely use it forever and it won't pick up as much room noise as a LDC.
+These days you can get a pretty decent mic and interface for not a ton of money. If you'll mainly be recording vocals you probably want a **Large Diaphram Condensor** mic (LDC for short). If you only have a hundred bucks to spend on a LDC I would recommend the <a href="https://amzn.to/2Rzrz3d" target="_blank" rel="noopener">Audio Technica 2020</a>. If you have a bit more money a lot of people recommend the <a href="http://amzn.to/2Nvd3pL" target="_blank" rel="nofollow noopener">Rhode NT1</a>, which will run you about $270. If you have even more money($400), a dynamic mic like the <a href="https://amzn.to/2IL2ZbN" target="_blank" rel="noopener">Shure SM7b</a> might be your best choice because you'll definitely use it forever and it won't pick up as much room noise as a LDC.
 
 Like all things in life, <strong>buy the best quality you can afford</strong> <strong>because it saves money in the long run.</strong> You should consider buying a higher quality mic or a high quality used mic if your budget allows. For cheaper gear it's best to buy new unless you know for a fact that it was well taken care of.
 
-Your hot neighbor texts you and says her boyfriend wants to come play electric guitar on the song too. Lame. But you say it's cool, and text back, "Will he play at the same time as ur singing?" She says "Yeah maybe."
+Your hot neighbor texts you and says their friend wants to come play electric guitar on the song too. **If they are going to record together you will need an interface with 2 inputs.**
 
-You have to get an audio interface with 2 inputs. The guitar goes directly into the interface DI(hi-Z input), and the mic your neighbor sings into goes on the other input. A lot of people starting out these days are using the Focusrite Scarlett 2i2 which will do the job. I can't personally attest to it's sound because I haven't used one but it's very popular, cheap, and gets great reviews.
+The guitar goes directly into the interface DI(hi-Z input), and the mic your neighbor sings into goes on the other input. A lot of people starting out these days are using the Focusrite Scarlett 2i2 which will do the job. I can't personally attest to it's sound because I haven't used one but it's very popular, cheap, and gets great reviews.
 
 What about monitors? My opinion is you shouldn't invest in monitors until you can afford ones that you'll use for awhile. A lot of hip hop and EDM producer's get KRK rockets, which is the bottom of what I would feel ok recommending. A pair would run you around $300. If you are serious about mixing and not doing just EDM or Hip Hop, then you probably want to save for something different. I use Adam A7x, which are great for film scoring and I would keep them even if I won the 200 million dollar powerball, which is a great litmus test for gear. "If I had unlimited money, would I still use this?"
 
@@ -48,9 +53,9 @@ If you can't afford decent monitors, fortunately/unfortunately most people liste
 
 You got the mic and interface - Check. You test the setup to make sure everything is running alright - Check. You realize the interface only has one headphone output - Crap. How are all three of you going to listen at the same time? After doing some googling you find a 5 dollar headphone splitter will do the trick, it's a smart and cheap solution, good job. So much of recording is preparing and anticipating everything that can go wrong.
 
-The neighbor girl shows up with her guitar playing boyfriend to do some recording. She sings into the mic and you set the gain levels on your interface to get a decent signal going in, same with her boyfriend's guitar. Ready?
+The singer shows up with their guitar playing friend to do some recording. You've already set up, and after some pleasantries are exchanged the singer sings into the mic and you set the gain levels on your interface to get a decent signal going in, same for guitar. Ready?
 
-Half way through recording the first take the singer starts getting really into it, she's singing way louder than she was when you first set the levels. Horrible distortion. They stop playing and look at you. WTF man? What's wrong with the sound? Killing the vibe is the opposite of an engineers job, you screwed up.
+Half way through recording the first take the singer starts getting really into it, they're singing way louder than when you first set the levels. Horrible distortion. They stop playing and look at you. WTF man? What's wrong with the sound? Killing the vibe is the opposite of an engineers job, you screwed up.
 
 Every time you go into the studio and make a mistake you learn a lesson. As time goes on you'll mess up less, it's a part of the process. Turn down the levels, try something new.
 
@@ -58,9 +63,9 @@ Always be experimenting so you can figure out what you are capable of with the g
 
 A more upgraded "tier 2" studio owner will definitely <em>buy</em> plugins and maybe some more hardware when they start to figure out what musical direction they're going. Eventually you'll know why you want the more premium stuff. This is when it's time to take things to the next level.
 
-<h2 >Tier 3: Capable of making hit records</h2>
+<h2 style="padding-top:60px" id="tier3">Tier 3: Capable of making hit records</h2>
 
-Here is where you go from spending a few hundred to a few thousand. Somebody who really knows what they are doing can 100% record, mix, and master hit songs with a "prosumer" setup. Just ask Skrillex.
+Here is where you go from spending a few hundred to a few thousand. Somebody who really knows what they are doing can 100% record, mix, and master hit songs with a "prosumer" setup.
 
 At this point you've spent a lot of time making music and probably have an idea of what you are looking for. A better interface, better mics, and more plugins.
 
@@ -146,7 +151,7 @@ To recap here's an idea of what your studio might be looking like and what you s
 
 While having these tools will make your studio work, a Pro takes things to the next level where more of the sonic magic lives.
 
-<h2 >Tier 4: Pro Level</h2>
+<h2 style="padding-top:60px" id="tier4" >Tier 4: Pro Level</h2>
 
 The main staple of a professional quality home studio is a properly treated room that looks like a studio. The bass traps are trapping the bass, the panels are placed right and the diffusers diffuse out bad reflections all while looking cool and matching. The space is a dedicated studio in a spare room, garage, or pool house that can host clients for recording and listening, a big upgrade from the bedroom. At this point you might have built a sound proof vocal booth to record in. It's a very functional studio.
 
@@ -160,7 +165,7 @@ Luckily in this day and age you don't have to spend tens of thousands on a full 
 
 I love 500 series stuff. Something spectacular happens when you record a bass, guitar, snare or kick through an API 512c. To improve the quality of sound, mixing engineers will send audio that has already been recorded to outboard gear including 500 stuff and record it back in because it gives you something software plugins can't. If you haven't noticed, stuff is starting to get expensive.
 
-<h2 >Tier 5: Top Pro Level</h2>
+<h2 style="padding-top:60px" id="tier5">Tier 5: Top Pro Level</h2>
 
 The top pro studio has a lot more money to build with and with money comes more options. There is still a limit to what a top pro can spend money wise, but it is a pretty freaking high limit. What are we looking at here?
 
@@ -205,7 +210,7 @@ The amount of compressors, preamps, eqs, synths, instruments and everything else
 
 <iframe src="https://www.youtube.com/embed/rSWBuZws30g?start=109" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-<h2 >Tier 6: I’m rich bitch!</h2>
+<h2 style="padding-top:60px" id="tier6">Tier 6: I’m rich bitch!</h2>
 
 Some people get stupid rich making music and can build whatever they imagine. A lot of the times these people are film scorers because they get big commissions and then their PRO checks can get well into 6 figures or more per quarter. Let's look at some of them, starting with my favorite setup I've ever seen, composer John Powell. He shows his wife's art studio at the start so the video jumps straight to the kitchen.
 
@@ -217,11 +222,11 @@ Tom Holkenborg, AKA Junkie XL, comes from the world of electronic music. This gu
 
 <iframe src="https://www.youtube.com/embed/aGgVd0ckkUw" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-<p >Lastly, check out Deadmau5 studio. He knows his stuff and has things exactly how he wants it. What I like about this tour is he specifically talks about how you don't need all this stuff, it's just awesome to have.</p>
+<!-- <p >Lastly, check out Deadmau5 studio. He knows his stuff and has things exactly how he wants it. What I like about this tour is he specifically talks about how you don't need all this stuff, it's just awesome to have.</p>
 
-<iframe src="https://www.youtube.com/embed/9MnQ0PPLcC4" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/9MnQ0PPLcC4" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
 
-<h2 >Tier 7: Hans Zimmer</h2>
+<h2 style="padding-top:60px" id="tier7">Tier 7: Hans Zimmer</h2>
 
 Zimmer means room in German and Hans has a dope Zimmer, he has a lot of Zimmers, more like a village.
 
