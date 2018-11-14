@@ -1,7 +1,6 @@
 # Redirect domain aliases to primary domain
 https://midisequencing.com/* https://www.musicsequencing.com/:splat 301!
 https://www.midisequencing.com/* https://www.musicsequencing.com/:splat 301!
-https://musicsequencing.com/* https://www.musicsequencing.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://pensive-chandrasekhar-676e58.netlify.com/* https://www.musicsequencing.com/:splat 301!
