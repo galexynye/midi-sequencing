@@ -269,8 +269,8 @@ class Lessons extends React.Component {
               <h2>Contact for Lessons</h2>
               <p>
                 Booking lessons can be done by{' '}
-                <a href="mailto:galexynye@gmail.com">emailing here</a> or by
-                filling out the contact form below. In your message please
+                <a href="mailto:alex@musicsequencing.com">emailing here</a> or
+                by filling out the contact form below. In your message please
                 indicate if you have any preferences for dates or times. You
                 will be contacted shortly with additional information for
                 schedule, setup and payment information.
