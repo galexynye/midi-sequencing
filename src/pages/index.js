@@ -9,6 +9,7 @@ import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import HomeWrapper from '../styled/HomeWrapper'
 import HomeCardsWrapper from '../styled/HomeCardsWrapper'
 import LandingCard from '../components/LandingCards/LandingCard'
+import favicon from '../assets/midi-sequencing-icon-circle.png'
 
 const HomeLinkWrapper = styled.div`
   max-width: 1200px;
@@ -56,7 +57,7 @@ class BlogIndex extends React.Component {
               {
                 rel: 'shortcut icon',
                 type: 'image/png',
-                href: '../assets/midi-sequencing-icon.png',
+                href: `${favicon}`,
               },
             ]}
           />
