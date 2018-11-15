@@ -235,12 +235,12 @@ class Lessons extends React.Component {
               <h2>About the Instructor</h2>
               <p>
                 Alex Nye works as a music producer and
-                <a href="https://www.imdb.com/name/nm5637976/">
+                <a href="https://www.imdb.com/name/nm5637976/" target="blank">
                   {' '}
                   film composer
                 </a>
                 . In 2011, Alex graduated from
-                <a href="https://www.berklee.edu/">
+                <a href="https://www.berklee.edu/" target="blank">
                   {' '}
                   Berklee College of Music
                 </a>{' '}
@@ -268,9 +268,11 @@ class Lessons extends React.Component {
             <LessonInfoSubject>
               <h2>Contact for Lessons</h2>
               <p>
-                Booking lessons can be done by{' '}
-                <a href="mailto:alex@musicsequencing.com">emailing here</a> or
-                by filling out the contact form below. In your message please
+                Booking lessons can be done by emailing{' '}
+                <a href="mailto:alex@musicsequencing.com">
+                  alex@musicsequencing.com
+                </a>{' '}
+                or by filling out the contact form below. In your message please
                 indicate if you have any preferences for dates or times. You
                 will be contacted shortly with additional information for
                 schedule, setup and payment information.

@@ -217,10 +217,10 @@ class Menu extends React.Component {
           <Link to={`/contact`}>
             <HeaderButton inputColor="#1f8cd1">Contact</HeaderButton>
           </Link>
-          <Link to="/privacy-policy">
+          {/* <Link to="/privacy-policy">
             {' '}
             <HeaderButton inputColor="#af0069">Privacy Policy</HeaderButton>
-          </Link>
+          </Link> */}
           <MailSignUp />
           {/* <Social size="1x" margin="0px 0px 0px 1px" /> */}
         </MenuLinksWrapper>

@@ -25,8 +25,10 @@ const Contact = () => {
         <p>
           If you have any questions or requests we look forward to hearing you!
           Feel free to{' '}
-          <a href="mailto:alex@musicsequencing.com">email us here</a> or use the
-          contact form below.
+          <a href="mailto:contact@musicsequencing.com">
+            email us at contact@musicsequencing.com
+          </a>{' '}
+          or use the contact form below.
         </p>
         {/* </p>
         <p>
