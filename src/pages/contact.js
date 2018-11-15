@@ -14,8 +14,9 @@ const Contact = () => {
     <Wrapper>
       <Helmet
         htmlAttributes={{ lang: 'en' }}
-        // meta={[{ name: 'description', content: siteDescription }]}
-        title={`Contact | Music Sequencing`}
+        title={
+          `Contact | Music Sequencing` // meta={[{ name: 'description', content: siteDescription }]}
+        }
       />
       <Menu sideNav={true} />
 
@@ -24,9 +25,9 @@ const Contact = () => {
         <h1>Write Us</h1>
         <p>
           If you have any questions or requests we look forward to hearing you!
-          Feel free to{' '}
+          Feel free to email us at{' '}
           <a href="mailto:contact@musicsequencing.com">
-            email us at contact@musicsequencing.com
+            contact@musicsequencing.com
           </a>{' '}
           or use the contact form below.
         </p>

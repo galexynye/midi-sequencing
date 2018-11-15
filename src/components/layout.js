@@ -45,6 +45,32 @@ injectGlobal`
     color: #2c3e50;
   }
 
+  .spacedList {
+    ul{
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    ol{
+      li{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .subList {
+    margin: 10px 20px;
+    font-size: .85rem;
+    a{
+      color: #2c62a2;
+    }
+  }
+
+  .aClearNav{
+    padding-top: 60px;
+    margin-top: -40px;
+  }
+
 `
 
 const SmallHeading = styled.h3`

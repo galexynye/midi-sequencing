@@ -5,7 +5,7 @@ import get from 'lodash/get'
 // import Bio from '../components/Bio'
 import Wrapper from '../components/Wrapper'
 import Menu from '../components/Menu/Menu'
-import Layout from '../components/layout'
+// import Layout from '../components/layout'
 import Footer from '../components/Footer'
 import ScrollToTop from '../components/ScrollToTop'
 
