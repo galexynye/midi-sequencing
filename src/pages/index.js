@@ -79,7 +79,7 @@ class BlogIndex extends React.Component {
             the top gear used by the worlds best pros."
             />
             <LandingCard
-              image={require('../assets/LandingCards/Bunch-Of-EQs-picture-1.png')}
+              image={require('../assets/LandingCards/Bunch-Of-EQs-picture-1.jpg')}
               title="EQ Essentials"
               link="/article/eq-essential-techniques"
               caption="In this guide you will learn the different types of EQs, why they are important, and how to use them."
@@ -103,7 +103,7 @@ class BlogIndex extends React.Component {
               caption="Sessions can get out of hand if you don't have a plan in place. This Mix Routing Guide will keep you organized even if you have thousands of tracks."
             />
             <LandingCard
-              image={require('../assets/LandingCards/phil-plugins-1.png')}
+              image={require('../assets/LandingCards/phil-plugins-1.jpg')}
               title="Mixing Drums to Sound like Phil Collins"
               link="/article/mix-drums-like-phil-collins"
               caption="This now classic technique for mixing drums with a gated reverb is still ubiquitous in music today. Here we explore how the original sound came to be and reproduce it."
