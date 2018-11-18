@@ -170,7 +170,7 @@ class Lessons extends React.Component {
               <h2>Example Subjects</h2>
               <ul>
                 <li>1-on-1 Analysis of Your Tracks and Mixes</li>
-                <li>Music Theory: Notes, Intervals, Scales and Chords</li>
+
                 <li>
                   Fundamentals of Production: What the Tools Are and How To Use
                   Them
@@ -188,6 +188,7 @@ class Lessons extends React.Component {
                 <li>
                   Songwriting and Lyrics: How to Create the World of a Song
                 </li>
+                <li>Music Theory: Notes, Intervals, Scales and Chords</li>
                 <li>Micing and Recording Techniques</li>
                 <li>
                   Multitrack Recording: How to run a recording session with
@@ -228,7 +229,9 @@ class Lessons extends React.Component {
             </LessonInfoSubject>
             <LessonInfoSubject>
               <h2>Pricing</h2>
-              <p>Free - 30min Meet & Greet</p>
+              <p>
+                Free - .5hr Meet & Greet / Lesson Setup (Purchase not required)
+              </p>
               <p>$60 - 1hr Lesson</p>
               <p>$100 - 2hr Lesson</p>
             </LessonInfoSubject>
@@ -258,13 +261,8 @@ class Lessons extends React.Component {
                   {' '}
                   film composer
                 </a>
-                . In 2011, Alex graduated from
-                <a href="https://www.berklee.edu/" target="blank">
-                  {' '}
-                  Berklee College of Music
-                </a>{' '}
-                Majoring in Contemporary Writing and Production. He has composed
-                and engineered extensively for films and shows such as Amazon's
+                . He has composed and engineered extensively for films and shows
+                such as Amazon's
                 <a href="https://www.imdb.com/title/tt3973768/" target="blank">
                   {' '}
                   Hand of God
@@ -275,9 +273,18 @@ class Lessons extends React.Component {
                   target="blank"
                 >
                   {' '}
-                  Poltergeist{' '}
+                  Poltergeist
                 </a>
-                . You can watch one of his music videos{' '}
+                . In 2011, he graduated from
+                <a href="https://www.berklee.edu/" target="blank">
+                  {' '}
+                  Berklee College of Music
+                </a>{' '}
+                Majoring in Contemporary Writing and Production. Alex is a
+                multi-instrumentalist, singer/songwriter and classically trained
+                double bassist.
+                {/* You can watch
+                one of his music videos{' '}
                 <a
                   href="https://www.youtube.com/watch?v=H0Wj1DL-lyg"
                   target="blank"
@@ -294,7 +301,7 @@ class Lessons extends React.Component {
                     allow="autoplay"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436034745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                   />
-                </div>
+                </div> */}
                 {/* Before Berklee,
               he studied classical bass with Scott Haigh of the Cleveland
               Orchestra. */}
