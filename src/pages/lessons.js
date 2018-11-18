@@ -228,8 +228,8 @@ class Lessons extends React.Component {
             </LessonInfoSubject>
             <LessonInfoSubject>
               <h2>Pricing</h2>
-              <p>1hr Lesson - $65</p>
-              <p>2hr Lesson - $120</p>
+              <p>1hr Lesson - $60</p>
+              <p>2hr Lesson - $100</p>
             </LessonInfoSubject>
             <LessonInfoSubject>
               <h2>About the Instructor</h2>

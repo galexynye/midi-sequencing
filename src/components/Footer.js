@@ -9,7 +9,7 @@ const Info = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-flow: wrap;
+  /* flex-flow: wrap; */
   margin-bottom: 30px;
   p {
     padding: 0px 5px;
@@ -17,7 +17,7 @@ const Info = styled.div`
   @media (max-width: 600px) {
     justify-content: center;
     > * {
-      width: 100%;
+      /* width: 100%; */
       margin-top: 10px;
     }
   }

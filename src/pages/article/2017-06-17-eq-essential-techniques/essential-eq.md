@@ -10,7 +10,7 @@ tags: ['mixing', 'basics', 'eq']
 
 <img src="./media/essential-eq/Bunch-Of-EQs-picture-1.png" alt="" />
 
-<strong>EQ is THE most important tool in mixing and mastering.</strong> The ability to mix great sounding tracks comes down whether or not the frequencies shaking people's eardrums feels good. Most of the time the best tool to make sounds better is EQ. In this article we will talk about the different types of EQs, how to use them, and some of the best EQs ever invented (including a freebie you should download today).
+Behind the volume faders,<strong> EQ is THE most important tool in mixing.</strong> The ability to mix great sounding tracks comes down whether or not the frequencies shaking people's eardrums feels good. Most of the time the best tool to make sounds better is EQ. In this article we will talk about the different types of EQs, how to use them, and some of the best EQs ever invented (including a freebie you should download today).
 
 <!-- A quick word of advice. Once you understand the power of EQ you might be tempted to "fix" things in the mix rather than doing it right from the start. As I mention in the <a href="article/music-vs-sound/">Music VS Sound</a> article, this is recipe for pain. When you are setting up your mics, designing a synth patch or choosing samples, try to get it sounding as good as possible without telling yourself you can fix it later. Sometimes this means abandoning ideas entirely. Just know the sooner you find great sound in the process, the better off you'll be. -->
 
