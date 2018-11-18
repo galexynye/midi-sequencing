@@ -228,13 +228,32 @@ class Lessons extends React.Component {
             </LessonInfoSubject>
             <LessonInfoSubject>
               <h2>Pricing</h2>
-              <p>1hr Lesson - $60</p>
-              <p>2hr Lesson - $100</p>
+              <p>Free - 30min Meet & Greet</p>
+              <p>$60 - 1hr Lesson</p>
+              <p>$100 - 2hr Lesson</p>
+            </LessonInfoSubject>
+
+            <LessonInfoSubject>
+              <h2>Contact for Lessons</h2>
+              <p>
+                Booking lessons can be done by emailing{' '}
+                <a href="mailto:lessons@musicsequencing.com">
+                  lessons@musicsequencing.com
+                </a>{' '}
+                or by filling out the contact form below. In your message please
+                indicate if you have any preferences for dates or times. You
+                will be contacted shortly.
+              </p>
+              <ContactForm
+                margin="0px 0px 0px 0px"
+                textAlign="left"
+                lesson={true}
+              />
             </LessonInfoSubject>
             <LessonInfoSubject>
-              <h2>About the Instructor</h2>
+              <h2 style={{ marginTop: '25px' }}>About the Instructor</h2>
               <p>
-                Alex Nye works as a music producer and
+                Alex Nye works as an independent music producer and
                 <a href="https://www.imdb.com/name/nm5637976/" target="blank">
                   {' '}
                   film composer
@@ -258,30 +277,28 @@ class Lessons extends React.Component {
                   {' '}
                   Poltergeist{' '}
                 </a>
-                .
+                . You can watch one of his music videos{' '}
+                <a
+                  href="https://www.youtube.com/watch?v=H0Wj1DL-lyg"
+                  target="blank"
+                >
+                  here
+                </a>{' '}
+                or listen to his cover of St. Vincent's 'Los Ageless' below.
+                <div style={{ marginTop: '20px' }}>
+                  <iframe
+                    width="100%"
+                    height="300"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436034745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                  />
+                </div>
                 {/* Before Berklee,
               he studied classical bass with Scott Haigh of the Cleveland
               Orchestra. */}
               </p>
-            </LessonInfoSubject>
-
-            <LessonInfoSubject>
-              <h2>Contact for Lessons</h2>
-              <p>
-                Booking lessons can be done by emailing{' '}
-                <a href="mailto:alex@musicsequencing.com">
-                  alex@musicsequencing.com
-                </a>{' '}
-                or by filling out the contact form below. In your message please
-                indicate if you have any preferences for dates or times. You
-                will be contacted shortly with additional information for
-                schedule, setup and payment information.
-              </p>
-              <ContactForm
-                margin="0px 0px 0px 0px"
-                textAlign="left"
-                lesson={true}
-              />
             </LessonInfoSubject>
           </LessonInfoWrapper>
 
