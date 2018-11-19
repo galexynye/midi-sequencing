@@ -1,6 +1,7 @@
 ---
 path: '/article/humanize-midi'
 title: 'Automatically Humanize Midi'
+author: 'Alex Nye'
 date: '2017-05-05'
 category: 'Tutorials'
 subcategory: 'Midi'

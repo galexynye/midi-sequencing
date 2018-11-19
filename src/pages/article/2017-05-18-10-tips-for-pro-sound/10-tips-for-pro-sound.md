@@ -1,6 +1,7 @@
 ---
 path: '/article/10-tips-for-pro-sound'
 title: '10 Aspects for Achieving Pro Sound'
+author: 'Alex Nye'
 date: '2017-05-18'
 category: 'Tutorials'
 subcategory: 'Producing'

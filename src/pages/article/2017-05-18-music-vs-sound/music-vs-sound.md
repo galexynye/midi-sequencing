@@ -1,6 +1,7 @@
 ---
 path: '/article/music-vs-sound'
 title: Music VS Sound
+author: 'Alex Nye'
 category: 'Tutorials'
 subcategory: 'Producing'
 subject: 'Sound'

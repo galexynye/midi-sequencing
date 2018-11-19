@@ -2,14 +2,10 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
-// import Bio from '../components/Bio'
 import Wrapper from '../components/Wrapper'
 import Menu from '../components/Menu/Menu'
-// import Layout from '../components/layout'
 import Footer from '../components/Footer'
 import ScrollToTop from '../components/ScrollToTop'
-
-// import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,6 +13,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
+    const author = post.frontmatter.author
     let tags
     if (post.frontmatter.tags) {
       tags = post.frontmatter.tags.map(tag => (
@@ -46,7 +43,6 @@ class BlogPostTemplate extends React.Component {
         />
         <Menu sideNav={true} />
         <h1>{post.frontmatter.title}</h1>
-
         <ul
           style={
             {
@@ -60,21 +56,8 @@ class BlogPostTemplate extends React.Component {
         >
           {tags}
         </ul>
-
-        {!post.frontmatter.hideDate && (
-          <p
-            style={
-              {
-                // ...scale(-1 / 5),
-                display: 'block',
-              }
-              // marginBottom: rhythm(1),
-              // marginTop: rhythm(-1),
-            }
-          >
-            {post.frontmatter.date}
-          </p>
-        )}
+        <p>by {author}</p>
+        <p>{!post.frontmatter.hideDate && post.frontmatter.date}</p>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         {/* <hr
@@ -139,6 +122,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         hideDate
         tags
+        author
       }
     }
   }

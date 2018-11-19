@@ -1,6 +1,7 @@
 ---
 path: '/article/how-to-edit-midi-sustain-pedal'
 title: How to Edit Midi Sustain Pedal
+author: 'Alex Nye'
 date: '2017-05-12'
 category: 'Tutorials'
 subcategory: 'Midi'

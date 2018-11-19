@@ -1,6 +1,7 @@
 ---
 path: '/article/hear-compression'
 title: How to Hear Compression
+author: 'Alex Nye'
 date: '2017-09-22'
 category: 'Tutorials'
 subcategory: 'Mixing'

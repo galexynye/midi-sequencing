@@ -1,6 +1,7 @@
 ---
 path: '/article/vocal-synth-2'
 title: Vocal Synth 2 by iZotope
+author: 'Alex Nye'
 date: '2018-06-09'
 category: 'Gear Reviews'
 subcategory: 'Soft Synths'

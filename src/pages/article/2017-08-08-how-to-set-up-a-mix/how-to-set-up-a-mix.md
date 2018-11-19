@@ -1,6 +1,7 @@
 ---
 path: '/article/how-to-set-up-a-mix'
 title: Mix Routing Guide
+author: 'Alex Nye'
 date: '2017-08-08'
 category: 'Tutorials'
 subcategory: 'Mixing'

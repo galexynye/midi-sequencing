@@ -1,6 +1,7 @@
 ---
 path: '/article/exhale'
 title: Exhale by Output
+author: 'Alex Nye'
 date: '2017-09-19'
 category: 'Gear'
 subcategory: 'Soft Synths'

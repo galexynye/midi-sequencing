@@ -1,6 +1,7 @@
 ---
 path: '/article/how-to-build-a-studio'
 title: 'Build A Home Studio From Nothing to Everything'
+author: 'Alex Nye'
 date: '2017-06-01'
 hideDate: true
 category: 'Tutorials'

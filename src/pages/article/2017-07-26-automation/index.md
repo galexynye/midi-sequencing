@@ -1,6 +1,7 @@
 ---
 path: '/article/automation'
 title: 'Automation: Everything You Need to Know'
+author: 'Alex Nye'
 date: '2017-07-26'
 category: 'Tutorials'
 subcategory: 'Basics'

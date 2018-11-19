@@ -1,6 +1,7 @@
 ---
 path: '/article/eq-essential-techniques'
 title: 'EQ Essentials'
+author: 'Alex Nye'
 date: '2017-06-17'
 category: 'Tutorials'
 subcategory: 'Basics'

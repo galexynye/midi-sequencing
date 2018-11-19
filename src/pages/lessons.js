@@ -6,6 +6,7 @@ import BGVideo from '../assets/MidiSequencing Title_1_Sound.mp4'
 import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
 import LessonsPosterOrange from '../assets/Lessons/LessonsPosterOrange.jpg'
+import ResponsiveIframe from '../styled/ResponsiveIframe'
 // import Alex from '../assets/AlexPics/singingcut.jpg'
 
 const VideoWrapper = styled.div`
@@ -182,8 +183,8 @@ class Lessons extends React.Component {
                   Properly
                 </li>
                 <li>
-                  Advice On Building Your Studio: What tools should you get and
-                  what's a waste of money
+                  Advice On Building Your Studio: What tools you need and when
+                  you should upgrade your studio
                 </li>
                 <li>
                   Songwriting and Lyrics: How to Create the World of a Song
@@ -273,16 +274,32 @@ class Lessons extends React.Component {
                   target="blank"
                 >
                   {' '}
-                  Poltergeist
-                </a>
-                . In 2011, he graduated from
+                  Poltergeist.
+                </a>{' '}
+                Working for{' '}
+                <a href="https://output.com/" target="blank">
+                  Output
+                </a>{' '}
+                as a producer, Alex helped develop{' '}
+                <a
+                  href="https://output.com/products/rev?gclid=EAIaIQobChMI4KvQ5KHg3gIVVYjVCh3q_Qu3EAAYASAAEgJZn_D_BwE"
+                  target="blank"
+                >
+                  Rev
+                </a>{' '}
+                and he has contributed kits to Output's{' '}
+                <a href="https://output.com/arcade" target="blank">
+                  Arcade
+                </a>{' '}
+                plugin as well. In 2011, he graduated from
                 <a href="https://www.berklee.edu/" target="blank">
                   {' '}
                   Berklee College of Music
                 </a>{' '}
-                Majoring in Contemporary Writing and Production. Alex is a
+                majoring in Contemporary Writing and Production.
+                {/* Alex is a
                 multi-instrumentalist, singer/songwriter and classically trained
-                double bassist.
+                double bassist. */}
                 {/* You can watch
                 one of his music videos{' '}
                 <a
@@ -305,6 +322,23 @@ class Lessons extends React.Component {
                 {/* Before Berklee,
               he studied classical bass with Scott Haigh of the Cleveland
               Orchestra. */}
+              </p>
+              <p>
+                Below is a tutorial by Alex on using a gated reverb to create
+                bigger drum sounds emulating those found by Phil Collins and
+                producer Hugh Padgham, a production technique prevelant in music
+                since its chance discovery.
+              </p>
+              <p>
+                <ResponsiveIframe>
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  />{' '}
+                  // width="560"
+                </ResponsiveIframe>
               </p>
             </LessonInfoSubject>
           </LessonInfoWrapper>

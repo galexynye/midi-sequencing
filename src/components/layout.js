@@ -71,6 +71,10 @@ injectGlobal`
     margin-top: -40px;
   }
 
+  .left {
+    text-align: left;
+  }
+
 `
 
 const SmallHeading = styled.h3`

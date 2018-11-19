@@ -1,6 +1,7 @@
 ---
 path: '/article/giant-trailer-drums-with-a-little-plate'
 title: Make GIANT Trailer Drums with Sound Toys Little Plate Reverb
+author: 'Alex Nye'
 date: '2018-11-14'
 category: 'Tutorials'
 subcategory: 'Producing'

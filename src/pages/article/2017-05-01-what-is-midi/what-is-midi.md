@@ -2,6 +2,7 @@
 path: '/article/what-is-midi'
 date: '2017-05-01'
 title: 'What Midi Really Is'
+author: 'Alex Nye'
 category: 'Tutorials'
 subcategory: 'Basics'
 subject: 'Midi'

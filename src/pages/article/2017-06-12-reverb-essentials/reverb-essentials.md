@@ -1,6 +1,7 @@
 ---
 path: '/article/reverb-essentials'
 title: 'Reverb: The Definitive Guide'
+author: 'Alex Nye'
 date: '2017-06-12'
 category: 'Tutorials'
 subcategory: 'Basics'

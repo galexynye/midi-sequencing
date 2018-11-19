@@ -1,6 +1,7 @@
 ---
 path: '/article/which-daw-should-i-use'
 title: 'Which DAW Should You Use?'
+author: 'Alex Nye'
 date: '2017-05-04'
 category: 'Tutorials'
 subcategory: 'Build A Studio'

@@ -1,6 +1,7 @@
 ---
 path: '/article/program-realistic-drum-parts'
 title: Program Realistic Drum Parts
+author: 'Alex Nye'
 date: '2017-07-06'
 category: 'Tutorials'
 subcategory: 'Producing'

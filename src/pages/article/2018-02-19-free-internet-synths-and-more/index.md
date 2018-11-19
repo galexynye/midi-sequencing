@@ -1,6 +1,7 @@
 ---
 path: '/article/free-internet-synths-and-more'
 title: Free Internet Synths and More
+author: 'Alex Nye'
 date: '2018-02-19'
 category: 'Gear Reviews'
 subcategory: 'Free Gear'
