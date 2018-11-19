@@ -9,17 +9,22 @@ subject: 'Logic'
 tags: ['midi-controller', 'logic', 'm-audio']
 ---
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Above is a video detailing the way I use my midi controller to control Logic. Below I will explain how I set it up.
 
-Note: There are ways to automap but this is for a custom setup. The initial setup is more involved but in the end the setup fits my workflow like a glove.
+Note: There are ways to automap but this is for a custom setup. The initial setup is more involved but in the end the setup fits my workflow better.
 
 ## Setting Up the Midi Controller
 
-Before connecting my midi controller to Logic at all, I programmed all the knobs, faders and buttons to undefined Midi Control Changes corrisponding to similiar numbers printed on my midi controller.
+Before connecting my midi controller to Logic at all, I programmed all the knobs, faders and buttons to undefined Midi Control Changes corresponding to similar numbers printed on my midi controller.
 
-The main reasons I did this is 1. So I know what messages are on my keyboard and 2. There wouldn't be any potential conflicts with software instruments.
+The main reasons I did this is
 
-If you are familiar with Midi Control Change Messages skip this paragraph. Midi Control Changes corrispond to similiar actions across diffirent instrument manufacturuers. In other words, Midi Control Change 64 is designated for sustain pedal. Any company who creates a Midi Controlled piano, will have the sustain of that piano be controlled by Midi CC 64. A list of all the midi control change messages can be found on <a href="https://www.midi.org/specifications-old/item/table-3-control-change-messages-data-bytes-2" target="blank"> Midi.org here</a>.
+1. So I know what messages are on my keyboard and
+2. There wouldn't be any potential conflicts with software instruments.
+
+If you are familiar with Midi Control Change Messages skip this paragraph. Midi Control Changes correspond to similar actions across different instrument manufacturers.. In other words, Midi Control Change 64 is designated for sustain pedal. Any company who creates a Midi Controlled piano, will have the sustain of that piano be controlled by Midi CC 64. A list of all the midi control change messages can be found on <a href="https://www.midi.org/specifications-old/item/table-3-control-change-messages-data-bytes-2" target="blank"> Midi.org here</a>.
 
 Here is a picture of my Midi Controller, the M-Audio Oxygen 49, labeled how the Midi Control changes are mapped to the buttons, knobs and faders.
 
@@ -27,7 +32,7 @@ Here is a picture of my Midi Controller, the M-Audio Oxygen 49, labeled how the 
 
 There are 9 faders. The first one is Midi CC 11, which is used for expression and I do not use it to control Logic. The second fader, labeled C2, is control change 102, this is repeated for the other knobs and faders. Midi Control changes 102 - 119 are undefined. So I used them for the faders and knobs labeled C2-C17 on the keyboard and circled in red.
 
-Similiarly the buttons below, labeled in purple, are set to control changes 18-30, which are, for the most part, also undefined.
+Similarly the buttons below, labeled in purple, are set to control changes 18-30, which are, for the most part, also undefined.
 
 After I programmed Preset 1, I copied it to Preset 2 and then changed the global channel on Preset 2 to Midi Channel 2. I repeated that for all 10 presets.
 
@@ -69,7 +74,7 @@ There are 2 methods you'll need to use to connect your Logic controls to your Mi
 1. Via the Key Commands - for Key Commands
 2. Via Control Surfaces - for Playhead Scrub / Zoom / Pan / Track Volume / Sends on Knobs
 
-### Let's start with Keycommands
+### Let's start with Key Commands
 
 Step 1. Open your Key Commands
 
@@ -122,3 +127,9 @@ Step 3. Press Learn Mode (As detailed in Step 2 Above) and nothing else
 Step 4. While Learn Mode is pressed, move the fader or knob on your midi controller
 
 Step 5. Close the menu or Start from Step 2 and move something else like a pan or a send to set it up.
+
+## Additional Info
+
+You might have quite a bit of fiddling around until you find what fits your workflow or if using a controller works for you at all.
+
+If you would like additional help or have any suggestions feel free to contact me. Anyone interested in 1-On-1 lessons in music production, theory and technology please checkout out <a href="/lessons">the lessons page</a> for more details.
