@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
 import LessonsPosterOrange from '../assets/Lessons/LessonsPosterOrange.jpg'
 import ResponsiveIframe from '../styled/ResponsiveIframe'
+import Checkout from '../components/Checkout'
 // import Alex from '../assets/AlexPics/singingcut.jpg'
 
 const VideoWrapper = styled.div`
@@ -257,6 +258,20 @@ class Lessons extends React.Component {
             <LessonInfoSubject>
               <h2 style={{ marginTop: '25px' }}>About the Instructor</h2>
               <p>
+                <ResponsiveIframe>
+                  <iframe
+                    // src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34" Phil Collins
+                    // src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I" Midi Controller
+                    // src="https://www.youtube-nocookie.com/embed/EErrKkgy8Ck" Reverb
+                    src="https://www.youtube-nocookie.com/embed/gN_om4q67V8"
+
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  />{' '}
+                </ResponsiveIframe>
+              </p>
+              <p>
                 Alex Nye works as an independent music producer and
                 <a href="https://www.imdb.com/name/nm5637976/" target="blank">
                   {' '}
@@ -329,18 +344,9 @@ class Lessons extends React.Component {
                 producer Hugh Padgham, a production technique prevelant in music
                 since its chance discovery.
               </p>
-              <p>
-                <ResponsiveIframe>
-                  <iframe
-                    src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  />{' '}
-                  // width="560"
-                </ResponsiveIframe>
-              </p>
+
             </LessonInfoSubject>
+            <Checkout />
           </LessonInfoWrapper>
 
           <Footer />
