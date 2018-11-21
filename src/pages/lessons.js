@@ -138,22 +138,27 @@ class Lessons extends React.Component {
         <LessonContentContainer>
           <LessonInfoWrapper>
             <LessonInfoSubject>
-              <h2>Music Production Lessons</h2>
-              <p>
+              <h2>About Music Production Lessons</h2>
+              {/* <p>
                 The world of Music Production is both vast and complicated.
                 There are human factors such as capturing great perfomances,
                 technical tools to learn like compressors, EQs and reverbs (and
                 what the good ones are) and of course, there is music theory.
+              </p> */}
+              <p>Learn how to take your musical ideas and turn them into professional recordings.
+
               </p>
-              <p>
+              <p>Students benefit more from direct feedback on their original projects than wandering from tutorial to tutorial. Learn what you're doing right and how to get better.</p>
+              {/* <p>Speed track your development and reach your full musical potential.</p> */}
+              {/* <p>
                 Music Production lessons aim to help students discover their
                 true potential as music makers. 1-on-1 lessons give the
                 advantage of direct feedback on a student's work and methods for
                 improvement in an abstract artform.
-              </p>
+              </p> */}
             </LessonInfoSubject>
 
-            <LessonInfoSubject>
+            {/* <LessonInfoSubject>
               <h2>Are lessons right for you?</h2>
               <p>
                 Whether you are completely new to Music Production or want to
@@ -166,104 +171,27 @@ class Lessons extends React.Component {
                 benefit from knowledgable direction is a great canidate for
                 lessons.
               </p>
-            </LessonInfoSubject>
+            </LessonInfoSubject> */}
 
             <LessonInfoSubject>
-              <h2>Example Subjects</h2>
-              <ul>
-                <li>1-on-1 Analysis of Your Tracks and Mixes</li>
-
-                <li>
-                  Fundamentals of Production: What the Tools Are and How To Use
-                  Them
-                </li>
-                <li>Taking an idea to a fully produced track</li>
-                <li>Sound Design and Synthesis</li>
-                <li>
-                  Producing Vocals: Getting Great Perfomances and Recording Them
-                  Properly
-                </li>
-                <li>
-                  Advice On Building Your Studio: What tools you need and when
-                  you should upgrade your studio
-                </li>
-                <li>
-                  Songwriting and Lyrics: How to Create the World of a Song
-                </li>
-                <li>Music Theory: Notes, Intervals, Scales and Chords</li>
-                <li>Micing and Recording Techniques</li>
-                <li>
-                  Multitrack Recording: How to run a recording session with
-                  multiple players
-                </li>
-
-                <li>
-                  Advanced Midi Sequencing: Creating Humanistic and Unbelievably
-                  Realistic Parts and Mockups
-                </li>
-                <li>Film Scoring Techniques</li>
-
-                <li>Creating Templates and Finding Your Workflow</li>
-                <li>Whatever you are interested in!</li>
-              </ul>
-            </LessonInfoSubject>
-            <LessonInfoSubject>
-              <h2>How Lessons Work</h2>
-              <p>
-                Lessons are conducted online and require internet speeds capable
-                of audio and video streaming.
-              </p>
-              <p>
-                <b>
-                  {' '}
-                  To ensure a great experience there is a free meet and greet
-                  offered for first time students to discuss goals, musical
-                  influences and to ensure online lessons work for you.
-                </b>
-              </p>
-              <p>
-                Note: Music Production concepts are universal, however, some
-                specifics, like your Digital Audio Workstation (or DAW) of
-                choice, play a part in the production process. DAW specific
-                instructions and lessons can be given on Abelton Live, Pro Tools
-                and Logic X.
-              </p>
-            </LessonInfoSubject>
-            <LessonInfoSubject>
-              <h2>Pricing</h2>
-              <p>
-                Free - .5hr Meet & Greet / Lesson Setup (Purchase not required)
-              </p>
-              <p>$60 - 1hr Lesson</p>
-              <p>$100 - 2hr Lesson</p>
-            </LessonInfoSubject>
-
-            <LessonInfoSubject>
-              <h2>Contact for Lessons</h2>
-              <p>
-                Booking lessons can be done by emailing{' '}
-                <a href="mailto:lessons@musicsequencing.com">
-                  lessons@musicsequencing.com
-                </a>{' '}
-                or by filling out the contact form below. In your message please
-                indicate if you have any preferences for dates or times. You
-                will be contacted shortly.
-              </p>
-              <ContactForm
-                margin="0px 0px 0px 0px"
-                textAlign="left"
-                lesson={true}
-              />
+              <h2>What You Learn</h2>
+              <p>Master Logic Pro X, Pro Tools or Ableton Live.</p>
+              <p>Mixing and Mastering: Properly using tools like Compression, EQ, and Reverb</p>
+              <p>Music Theory: Chords, Scales and Voice Movement</p>
+              <p>Sound Design and Synthesis: Working with Software Instruments, Samples and Synthesizers</p>
+              <p>Arranging, Song Structure and Lyric Writing</p>
             </LessonInfoSubject>
             <LessonInfoSubject>
               <h2 style={{ marginTop: '25px' }}>About the Instructor</h2>
               <p>
+
                 <ResponsiveIframe>
                   <iframe
-                    // src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34" Phil Collins
-                    // src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I" Midi Controller
-                    // src="https://www.youtube-nocookie.com/embed/EErrKkgy8Ck" Reverb
-                    src="https://www.youtube-nocookie.com/embed/gN_om4q67V8"
+                    // src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34"  //Phil Collins
+                    // src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I"  //Midi Controller
+                    // src="https://www.youtube-nocookie.com/embed/EErrKkgy8Ck"  //Reverb
+                    // src="https://www.youtube-nocookie.com/embed/gN_om4q67V8" // Giant Trailer Drums
+                    src="https://www.youtube-nocookie.com/embed/H0Wj1DL-lyg" // 
 
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -271,13 +199,16 @@ class Lessons extends React.Component {
                   />{' '}
                 </ResponsiveIframe>
               </p>
-              <p>
-                Alex Nye works as an independent music producer and
-                <a href="https://www.imdb.com/name/nm5637976/" target="blank">
-                  {' '}
-                  film composer
-                </a>
-                . He has composed and engineered extensively for films and shows
+              {/* <p>
+              // Los ageless
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436034745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </p> */}
+              <h3>Alex Nye</h3>
+              <p>After graduating from <a href="https://www.berklee.edu/" target="blank">
+                {' '}
+                Berklee College of Music
+                </a>{' '} in 2011, Alex moved to Los Angeles and started working in music.
+                He has composed and engineered extensively for films and shows
                 such as Amazon's
                 <a href="https://www.imdb.com/title/tt3973768/" target="blank">
                   {' '}
@@ -289,64 +220,60 @@ class Lessons extends React.Component {
                   target="blank"
                 >
                   {' '}
-                  Poltergeist.
-                </a>{' '}
-                Working for{' '}
+                  Poltergeist.</a>{' '} Working as a producer for{' '}
                 <a href="https://output.com/" target="blank">
                   Output
-                </a>{' '}
-                as a producer, Alex helped develop{' '}
+                </a>,
+                Alex helped in the development of{' '}
                 <a
                   href="https://output.com/products/rev?gclid=EAIaIQobChMI4KvQ5KHg3gIVVYjVCh3q_Qu3EAAYASAAEgJZn_D_BwE"
                   target="blank"
                 >
                   Rev
                 </a>{' '}
-                and he has contributed kits to Output's{' '}
+                and is contributing kits to Output's{' '}
                 <a href="https://output.com/arcade" target="blank">
                   Arcade
                 </a>{' '}
-                plugin as well. In 2011, he graduated from
-                <a href="https://www.berklee.edu/" target="blank">
-                  {' '}
-                  Berklee College of Music
-                </a>{' '}
-                majoring in Contemporary Writing and Production.
-                {/* Alex is a
-                multi-instrumentalist, singer/songwriter and classically trained
-                double bassist. */}
-                {/* You can watch
-                one of his music videos{' '}
-                <a
-                  href="https://www.youtube.com/watch?v=H0Wj1DL-lyg"
-                  target="blank"
-                >
-                  here
-                </a>{' '}
-                or listen to his cover of St. Vincent's 'Los Ageless' below.
-                <div style={{ marginTop: '20px' }}>
-                  <iframe
-                    width="100%"
-                    height="300"
-                    scrolling="no"
-                    frameborder="no"
-                    allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436034745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-                  />
-                </div> */}
-                {/* Before Berklee,
-              he studied classical bass with Scott Haigh of the Cleveland
-              Orchestra. */}
-              </p>
-              <p>
-                Below is a tutorial by Alex on using a gated reverb to create
-                bigger drum sounds emulating those found by Phil Collins and
-                producer Hugh Padgham, a production technique prevelant in music
-                since its chance discovery.
+                plugin.
               </p>
 
             </LessonInfoSubject>
-            <Checkout />
+
+            <LessonInfoSubject>
+              <h2>How Lessons Work</h2>
+              <p>
+                Lessons are done online and are available worldwide :)
+              </p>
+              <p>
+                <h3>
+                  {' '}
+                  To ensure a great learning experience there is a free meet and greet
+                  offered for first time students to talk about your goals, musical
+                  influences and answer any additional questions.
+                </h3>
+              </p>
+            </LessonInfoSubject>
+
+
+
+            <LessonInfoSubject>
+              <h2>Sign Up</h2>
+              <p>To get started fill out the form below or email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a></p>
+              <ContactForm
+                margin="0px 0px 0px 0px"
+                textAlign="center"
+                lesson={true}
+              />
+            </LessonInfoSubject>
+
+
+
+            <LessonInfoSubject>
+              {/* <h2>Sign Up</h2> */}
+
+              {/* <Checkout /> */}
+            </LessonInfoSubject>
           </LessonInfoWrapper>
 
           <Footer />

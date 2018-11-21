@@ -6,6 +6,9 @@ const GeneralContact = styled.div`
   form {
     margin: ${props => props.margin || '0px'};
     text-align: ${props => props.textAlign || 'center'};
+    label{
+      color: #777777;
+    }
     input {
       box-sizing: border-box;
       font-size: 1rem;
@@ -14,6 +17,11 @@ const GeneralContact = styled.div`
       text-align: ${props => props.textAlign || 'center'};
       border: none;
       border-bottom: 1px solid #737373;
+      /* ::placeholder{
+        white-space:pre-line;  
+        position:relative;
+      /* } */ 
+      
     }
     p {
       margin-top: 50px;
@@ -22,7 +30,7 @@ const GeneralContact = styled.div`
       box-sizing: border-box;
       width: 100%;
       min-height: 100px;
-      margin-top: 30px;
+      /* margin-top: 30px; */
       padding: 8px;
       ::placeholder {
         text-align: ${props => props.textAlign || 'center'};
@@ -49,6 +57,9 @@ const GeneralContact = styled.div`
     @media (max-width: 900px) {
       p {
         margin-top: 20px;
+        input{
+          /* min-height: 50px; */
+        }
       }
     }
   }
@@ -110,24 +121,25 @@ class ContactForm extends React.Component {
             </label>
           </p>
           <p>
-            {/* <label> */}
-            {/* Your Name:  */}
-            <input
-              type="text"
-              name="name"
-              placeholder="Name (Required)"
-              onChange={this._handleChange}
-              required
-            />
-            {/* </label> */}
+            <label>
+              Name*
+              <input
+                type="text"
+                name="name"
+                // placeholder="Required"
+                onChange={this._handleChange}
+                required
+              />
+            </label>
           </p>
           <p>
             <label>
-              <input
+              Email*
+            <input
                 type="email"
                 name="email"
                 onChange={this._handleChange}
-                placeholder="Email (Required)"
+                // placeholder="Email (Required)"
                 required
               />
             </label>
@@ -135,49 +147,67 @@ class ContactForm extends React.Component {
           {this.props.subject && (
             <p>
               <label>
+                Subject
                 <input
                   type="text"
                   name="subject"
-                  placeholder="Subject"
+                  // placeholder="Subject"
                   onChange={this._handleChange}
                 />
               </label>
             </p>
           )}
+
+
           {this.props.lesson && (
             <div>
               <p>
-                {/* <label>
-              Subject:{' '} */}
-                <select
-                  name="lessonSubject[]"
-                  onChange={this._handleChange}
-                  multiple
-                >
-                  <option value="schedule">Schedule Lesson(s)</option>
-                  {/* <option value="schedule">Schedule Free Meet and Greet</option> */}
-                  <option value="lessonDetails">
-                    Ask further details about Lessons
-                  </option>
-                  <option value="other">Other</option>
-                </select>
-                {/* </label> */}
+                <label>
+                  How long have you been creating music?
+                {/* Your Name:  */}
+                  <input
+                    type="text"
+                    name="experience"
+                    // placeholder="How long have you been creating music?"
+                    onChange={this._handleChange}
+                  />
+                </label>
               </p>
+              <p>
+                <label>
+                  What genre(s) do you like to work in?
+                <input
+                    type="text"
+                    name="genre"
+                    // placeholder="What genre(s) do you like to work in?"
+                    onChange={this._handleChange}
+                  />
+                </label>
+              </p>
+              {/* <p>
+                <input
+                  type="text"
+                  name="interests"
+                  placeholder="Is there any area of Music Production you would like to focus on?"
+                  onChange={this._handleChange}
+                />
+              </p> */}
             </div>
           )}
 
           <p>
-            {/* <label>
-              Message */}
+            <label >
+              Message
             <textarea
-              name="message"
-              placeholder="Message"
-              onChange={this._handleChange}
-            />
-            {/* </label> */}
+                name="message"
+                // placeholder="Message"
+                style={{ marginTop: "30px" }}
+                onChange={this._handleChange}
+              />
+            </label>
           </p>
           <p>
-            <button type="submit">Submit</button>
+            <button style={{ backgroundColor: "#700bea", color: 'white' }} type="submit">Submit</button>
           </p>
         </form>
       </GeneralContact>

@@ -22,7 +22,7 @@ const buttonStyles = {
     outline: "none",
     padding: "12px 60px",
     boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
-    backgroundColor: "rgb(255, 178, 56)",
+    backgroundColor: "#700bea",
     borderRadius: "6px",
     letterSpacing: "1.5px",
 }
@@ -36,13 +36,13 @@ class Checkout extends React.Component {
         super(props)
         this.state = {
             disabled: false,
-            buttonText: "BUY NOW",
+            buttonText: "PURCHASE",
             paymentMessage: "",
         }
     }
 
     resetButton() {
-        this.setState({ disabled: false, buttonText: "BUY NOW" })
+        this.setState({ disabled: false, buttonText: "PURCHASE" })
     }
 
     componentDidMount() {
@@ -92,12 +92,8 @@ class Checkout extends React.Component {
 
     render() {
         return (
-            <div style={cardStyles}>
-                <h4>Spend your Money!</h4>
-                <p>
-                    Use any email, 4242 4242 4242 4242 as the credit card number, any 3
-                    digit number, and any future date of expiration.
-        </p>
+            // <div style={cardStyles}>
+            <div>
                 <button
                     style={buttonStyles}
                     onClick={event => this.openStripeCheckout(event)}
