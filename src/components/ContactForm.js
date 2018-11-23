@@ -47,8 +47,9 @@ const GeneralContact = styled.div`
     button {
       margin-left: auto;
       padding: 5px 10px;
-      font-size: 1rem;
+      font-size: .9rem;
       color: #777777;
+      border-radius: 5px;
       background-color: white;
       &:hover {
         cursor: pointer;
@@ -179,6 +180,17 @@ class ContactForm extends React.Component {
                 <input
                     type="text"
                     name="genre"
+                    // placeholder="What genre(s) do you like to work in?"
+                    onChange={this._handleChange}
+                  />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Do you have any date/time prefrences?
+                <input
+                    type="text"
+                    name="dates"
                     // placeholder="What genre(s) do you like to work in?"
                     onChange={this._handleChange}
                   />

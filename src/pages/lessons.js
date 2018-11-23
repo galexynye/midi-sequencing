@@ -7,8 +7,13 @@ import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
 import LessonsPosterOrange from '../assets/Lessons/LessonsPosterOrange.jpg'
 import ResponsiveIframe from '../styled/ResponsiveIframe'
-import Checkout from '../components/Checkout'
+import Checkout from '../components/Purchase/Checkout'
 // import Alex from '../assets/AlexPics/singingcut.jpg'
+
+// Lesson Prices
+const oneHourLesson = 6000
+const fourHourLesson = 19500
+const twelveHourLesson = 49500
 
 const VideoWrapper = styled.div`
   position: fixed;
@@ -75,17 +80,28 @@ const LessonContentContainer = styled.div`
   }
 `
 const LessonInfoWrapper = styled.div`
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
   padding: 0px 15px;
   p {
-    max-width: 800px;
+    max-width: 900px;
   }
 `
 
 const LessonInfoSubject = styled.div`
-  /* padding-bottom: 10px; */
+   margin: ${props => props.margin || '40px 0px 0px 0px'};
+   /* margin-top: 40px; */
 `
+const LessonCards = styled.div`
+margin: 0px 0px 20px 0px; 
+display: flex; 
+flex-flow: wrap; 
+justify-content: center;
+@media (max-width: 900px){
+  justify-content: center;
+}
+`
+
 
 class Lessons extends React.Component {
   constructor(props) {
@@ -137,7 +153,7 @@ class Lessons extends React.Component {
         </LessonsHeader>
         <LessonContentContainer>
           <LessonInfoWrapper>
-            <LessonInfoSubject>
+            <LessonInfoSubject margin="10px 0px 0px 0px">
               <h2>About Music Production Lessons</h2>
               {/* <p>
                 The world of Music Production is both vast and complicated.
@@ -145,10 +161,10 @@ class Lessons extends React.Component {
                 technical tools to learn like compressors, EQs and reverbs (and
                 what the good ones are) and of course, there is music theory.
               </p> */}
-              <p>Learn how to take your musical ideas and turn them into professional recordings.
+              <p>Learn how to take your musical ideas and turn them into professional quality tracks.
 
               </p>
-              <p>Students benefit more from direct feedback on their original projects than wandering from tutorial to tutorial. Learn what you're doing right and how to get better.</p>
+              <p>Students benefit more from direct feedback on their original projects than wandering from tutorial to tutorial, sifting through irrelevent information. Learn what YOU are doing right and how to get better.</p>
               {/* <p>Speed track your development and reach your full musical potential.</p> */}
               {/* <p>
                 Music Production lessons aim to help students discover their
@@ -175,30 +191,29 @@ class Lessons extends React.Component {
 
             <LessonInfoSubject>
               <h2>What You Learn</h2>
-              <p>Master Logic Pro X, Pro Tools or Ableton Live.</p>
+              <p>Logic Pro X, Pro Tools or Ableton Live.</p>
               <p>Mixing and Mastering: Properly using tools like Compression, EQ, and Reverb</p>
-              <p>Music Theory: Chords, Scales and Voice Movement</p>
+              <p>Music Theory: Chords, Scales, Melody and Voice Movement</p>
               <p>Sound Design and Synthesis: Working with Software Instruments, Samples and Synthesizers</p>
               <p>Arranging, Song Structure and Lyric Writing</p>
             </LessonInfoSubject>
             <LessonInfoSubject>
               <h2 style={{ marginTop: '25px' }}>About the Instructor</h2>
-              <p>
 
-                <ResponsiveIframe>
-                  <iframe
-                    // src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34"  //Phil Collins
-                    // src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I"  //Midi Controller
-                    // src="https://www.youtube-nocookie.com/embed/EErrKkgy8Ck"  //Reverb
-                    // src="https://www.youtube-nocookie.com/embed/gN_om4q67V8" // Giant Trailer Drums
-                    src="https://www.youtube-nocookie.com/embed/H0Wj1DL-lyg" // 
+              <ResponsiveIframe>
+                <iframe
+                  // src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34"  //Phil Collins
+                  // src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I"  //Midi Controller
+                  // src="https://www.youtube-nocookie.com/embed/EErrKkgy8Ck"  //Reverb
+                  // src="https://www.youtube-nocookie.com/embed/gN_om4q67V8" // Giant Trailer Drums
+                  src="https://www.youtube-nocookie.com/embed/H0Wj1DL-lyg" // 
 
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  />{' '}
-                </ResponsiveIframe>
-              </p>
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />{' '}
+              </ResponsiveIframe>
+
               {/* <p>
               // Los ageless
                 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436034745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -208,8 +223,8 @@ class Lessons extends React.Component {
                 {' '}
                 Berklee College of Music
                 </a>{' '} in 2011, Alex moved to Los Angeles and started working in music.
-                He has composed and engineered extensively for films and shows
-                such as Amazon's
+              He has composed and engineered extensively for films and shows
+              such as Amazon's
                 <a href="https://www.imdb.com/title/tt3973768/" target="blank">
                   {' '}
                   Hand of God
@@ -246,20 +261,22 @@ class Lessons extends React.Component {
                 Lessons are done online and are available worldwide :)
               </p>
               <p>
-                <h3>
+                <b>
                   {' '}
                   To ensure a great learning experience there is a free meet and greet
                   offered for first time students to talk about your goals, musical
-                  influences and answer any additional questions.
-                </h3>
+                  influences and answer any additional questions. Fill out the form below to book yours today!
+                </b>
               </p>
+              <h3>Got Questions?</h3>
+              <p>Email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a> and we'll get back to you ASAP.</p>
             </LessonInfoSubject>
 
 
 
             <LessonInfoSubject>
-              <h2>Sign Up</h2>
-              <p>To get started fill out the form below or email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a></p>
+              <h2>Sign Up for a Free Meet and Greet</h2>
+              {/* <p>Get started by filling out the form below or emailing <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a></p> */}
               <ContactForm
                 margin="0px 0px 0px 0px"
                 textAlign="center"
@@ -270,15 +287,30 @@ class Lessons extends React.Component {
 
 
             <LessonInfoSubject>
-              {/* <h2>Sign Up</h2> */}
+              <h2>Purchase Lessons</h2>
+              <p>Secure handling of card payments is encrypted by <a href="https://stripe.com/" target="blank">Stripe</a>. Music Sequencing does not collect, retain or ever see your card information.
+              Upon succeessful purchase follow instructions to begin scheduling lessons. Email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a> with any questions or concerns.
+              </p>
 
-              {/* <Checkout /> */}
+
             </LessonInfoSubject>
+            <LessonCards>
+              <Checkout amount={oneHourLesson} title="1hr of Lessons" price="$60" description="Book as needed. Perfect for filling in knowledge gaps and creating a development plan." />
+              <Checkout amount={fourHourLesson} title="4 hrs of Lessons" price="$195" description="Accelerate your development with multiple lessons and direct feedback on your progress." />
+              <Checkout amount={twelveHourLesson} title="12 hrs of Lessons" price="$495" description="A highly personalized curriculum of excercises and project evaluations to get you to the next level." />
+            </LessonCards>
+
+            <LessonInfoSubject>
+              <h2>Satisfaction</h2>
+              <p>Any students not satisfied with the quality of their lessons are entitled to a full refund.</p>
+            </LessonInfoSubject>
+
+            {/* End of Lesson Content */}
           </LessonInfoWrapper>
 
           <Footer />
         </LessonContentContainer>
-      </div>
+      </div >
     )
   }
 }
