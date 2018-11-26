@@ -92,6 +92,7 @@ export default class MailSignUP extends React.Component {
               />
               <input style={{ width: '60px' }} type="submit" value="Subcribe" />
             </form>
+            <p><small>Some ad blockers do not permit this signup form. You can also visit <a href="https://midisequencing.us15.list-manage.com/subscribe/post?u=959ef0b4d1c6a701f90f85f9e&amp;id=59168d9d12" target="blank">this link</a> to sign up. </small></p>
           </div>
         )}
       </MailChimp>
