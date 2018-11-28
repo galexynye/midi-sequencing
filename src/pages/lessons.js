@@ -9,6 +9,12 @@ import LessonsPosterOrange from '../assets/Lessons/LessonsPosterOrange.jpg'
 import ResponsiveIframe from '../styled/ResponsiveIframe'
 import Checkout from '../components/Purchase/Checkout'
 // import Alex from '../assets/AlexPics/singingcut.jpg'
+import DeskPic from '../assets/Lessons/DeskPhoto.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faSoundcloud,
+  faImdb,
+} from '@fortawesome/free-brands-svg-icons'
 
 // Lesson Prices
 const oneHourLesson = 4000
@@ -92,6 +98,15 @@ const LessonInfoSubject = styled.div`
    margin: ${props => props.margin || '40px 0px 0px 0px'};
    /* margin-top: 40px; */
 `
+
+const LessonsBio = styled.div`
+  display: flex;
+ justify-content: center;
+  @media (max-width: 700px){
+  flex-flow: wrap;
+}
+`
+
 const LessonCards = styled.div`
 margin: 0px 0px 20px 0px; 
 display: flex; 
@@ -100,6 +115,18 @@ justify-content: center;
 @media (max-width: 900px){
   justify-content: center;
 }
+`
+
+const SocialWrapper = styled.div`
+  margin: ${props => props.margin || '0px'};
+  max-height: 20px;
+  @media (max-width: 900px) {
+    display: ${props => props.displayMobile || 'default'};
+  }
+`
+
+const SocialLink = styled.a`
+  margin-right: 25px;
 `
 
 
@@ -148,23 +175,24 @@ class Lessons extends React.Component {
           {!this.state.isBig && <img src={LessonsPosterOrange} />}
         </VideoWrapper>
         <LessonsHeader>
-          <h1>Learn Music Production and Theory</h1>
+          <h1>Learn Music Production</h1>
           <h2>1-on-1 Lessons Online</h2>
         </LessonsHeader>
         <LessonContentContainer>
           <LessonInfoWrapper>
             <LessonInfoSubject margin="10px 0px 0px 0px">
-              <h2>About Music Production Lessons</h2>
+              <h2>About Lessons</h2>
               {/* <p>
                 The world of Music Production is both vast and complicated.
                 There are human factors such as capturing great perfomances,
                 technical tools to learn like compressors, EQs and reverbs (and
                 what the good ones are) and of course, there is music theory.
-              </p> */}
-              <p>Learn how to take your musical ideas and turn them into professional quality tracks.
+              </p> 
+              {/* <p>Learn how to take your musical ideas and turn them into professional quality tracks. */}
 
-              </p>
-              <p>Students benefit more from direct feedback on their original projects than wandering from tutorial to tutorial, sifting through irrelevent information. Learn what YOU are doing right and how to get better.</p>
+              {/* </p> */}
+              <p>Get a custom curriculum tailored to what you want to learn. Beginner to advanced techniques of recording, mixing, mastering, music theory and sound design.</p>
+              {/* <p>Learning music productions, you will benefit so much more from direct feedback on your original music than wandering from tutorial to tutorial, trying to figure out if the techniques will work for your music. Learn what YOU are doing right and how to get better.</p> */}
               {/* <p>Speed track your development and reach your full musical potential.</p> */}
               {/* <p>
                 Music Production lessons aim to help students discover their
@@ -190,71 +218,17 @@ class Lessons extends React.Component {
             </LessonInfoSubject> */}
 
             <LessonInfoSubject>
-              <h2>What You Learn</h2>
+              <h2>What You Can Learn</h2>
               <p>Logic Pro X, Pro Tools or Ableton Live.</p>
               <p>Template Design, Sample Organization and Other Workflow Enhancements</p>
               <p>Mixing and Mastering</p>
               <p>Music Theory: Chords, Scales, Melody and Voice Movement</p>
               <p>Sound Design and Synthesis</p>
               <p>Arranging, Song Structure and Lyric Writing</p>
+              <p>Playing Piano or Drum Pads as a Producer</p>
+              <p>+ Custom Topics Specific For You</p>
             </LessonInfoSubject>
-            <LessonInfoSubject>
-              <h2 style={{ marginTop: '25px' }}>About the Instructor</h2>
 
-              <ResponsiveIframe>
-                <iframe
-                  // src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34"  //Phil Collins
-                  // src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I"  //Midi Controller
-                  // src="https://www.youtube-nocookie.com/embed/EErrKkgy8Ck"  //Reverb
-                  // src="https://www.youtube-nocookie.com/embed/gN_om4q67V8" // Giant Trailer Drums
-                  src="https://www.youtube-nocookie.com/embed/H0Wj1DL-lyg" // 
-
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />{' '}
-              </ResponsiveIframe>
-
-              {/* <p>
-              // Los ageless
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436034745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-              </p> */}
-              <h3>Alex Nye</h3>
-              <p>After graduating from <a href="https://www.berklee.edu/" target="blank">
-                {' '}
-                Berklee College of Music
-                </a>{' '} in 2011, Alex moved to Los Angeles and started working in music.
-              He has composed and engineered extensively for films and shows
-              such as Amazon's
-                <a href="https://www.imdb.com/title/tt3973768/" target="blank">
-                  {' '}
-                  Hand of God
-                </a>{' '}
-                and 20th Century Fox's{' '}
-                <a
-                  href="https://www.imdb.com/title/tt1029360/?ref_=nv_sr_2"
-                  target="blank"
-                >
-                  {' '}
-                  Poltergeist.</a>{' '} Working as a producer for{' '}
-                <a href="https://output.com/" target="blank">
-                  Output
-                </a>,
-                Alex helped in the development of{' '}
-                <a
-                  href="https://output.com/products/rev?gclid=EAIaIQobChMI4KvQ5KHg3gIVVYjVCh3q_Qu3EAAYASAAEgJZn_D_BwE"
-                  target="blank"
-                >
-                  Rev
-                </a>{' '}
-                and is contributing kits to Output's{' '}
-                <a href="https://output.com/arcade" target="blank">
-                  Arcade
-                </a>{' '}
-                plugin.
-              </p>
-
-            </LessonInfoSubject>
 
             <LessonInfoSubject>
               <h2>How Lessons Work</h2>
@@ -308,7 +282,83 @@ class Lessons extends React.Component {
               <h2>Satisfaction</h2>
               <p>Any students not satisfied with the quality of their lessons are entitled to a full refund.</p>
             </LessonInfoSubject>
+            <LessonInfoSubject>
+              <h2 style={{ marginTop: '25px' }}>About the Instructor</h2>
 
+              <ResponsiveIframe>
+                <iframe
+                  // src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34"  //Phil Collins
+                  // src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I"  //Midi Controller
+                  // src="https://www.youtube-nocookie.com/embed/EErrKkgy8Ck"  //Reverb
+                  // src="https://www.youtube-nocookie.com/embed/gN_om4q67V8" // Giant Trailer Drums
+                  src="https://www.youtube-nocookie.com/embed/H0Wj1DL-lyg" // 
+
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />{' '}
+              </ResponsiveIframe>
+
+              {/* <p>
+              // Los ageless
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436034745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </p> */}
+
+              <h3>Alex Nye </h3>
+              <LessonsBio>
+                <img src={DeskPic} style={{ maxWidth: "100%" }} />
+                <div style={{ boxSizing: "border-box", display: "flex", flexFlow: "column", justifyContent: "center", textAlign: "center", maxWidth: "100%", padding: "10px" }}>
+                  <h4>Bio</h4>
+                  <p >After graduating from <a href="https://www.berklee.edu/" target="blank">
+                    {' '}
+                    Berklee College of Music
+                </a>{' '} in 2011, Alex moved to Los Angeles. {' '} Working as a producer for{' '}
+                    <a href="https://output.com/" target="blank">
+                      Output
+                </a>,
+                Alex helped in the development of{' '}
+                    <a
+                      href="https://output.com/products/rev?gclid=EAIaIQobChMI4KvQ5KHg3gIVVYjVCh3q_Qu3EAAYASAAEgJZn_D_BwE"
+                      target="blank"
+                    >
+                      Rev
+                </a>{' '}
+                    and is contributing kits to Output's{' '}
+                    <a href="https://output.com/arcade" target="blank">
+                      Arcade
+                </a>{' '}
+                    plugin.
+                  He has composed and engineered extensively for films and shows
+                  such as Amazon's
+                <a href="https://www.imdb.com/title/tt3973768/" target="blank">
+                      {' '}
+                      Hand of God
+                </a>{' '}
+                    and 20th Century Fox's{' '}
+                    <a
+                      href="https://www.imdb.com/title/tt1029360/?ref_=nv_sr_2"
+                      target="blank"
+                    >
+                      {' '}
+                      Poltergeist.</a>
+                  </p>
+                  <SocialWrapper>
+                    <SocialLink href="https://soundcloud.com/alex_nye_alex_nye" target="blank">
+                      <FontAwesomeIcon
+                        icon={faSoundcloud}
+                      />
+                    </SocialLink>
+                    <SocialLink href="https://www.imdb.com/name/nm5637976/" target="blank">
+                      <FontAwesomeIcon
+                        icon={faImdb}
+
+                      />
+                    </SocialLink>
+                  </SocialWrapper>
+                </div>
+              </LessonsBio>
+
+            </LessonInfoSubject>
             {/* End of Lesson Content */}
           </LessonInfoWrapper>
 

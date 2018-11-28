@@ -15,6 +15,7 @@ const SocialLink = styled.a`
 
 const SocialWrapper = styled.div`
   margin: ${props => props.margin || '0px'};
+  max-height: 20px;
   @media (max-width: 900px) {
     display: ${props => props.displayMobile || 'default'};
   }
