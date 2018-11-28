@@ -12,7 +12,7 @@ import LandingCard from '../components/LandingCards/LandingCard'
 import favicon from '../assets/midi-sequencing-icon-circle.png'
 
 const HomeLinkWrapper = styled.div`
-  max-width: 1200px;
+  max-width: 500px;
   margin: auto;
 `
 
