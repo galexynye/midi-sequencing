@@ -11,9 +11,9 @@ import Checkout from '../components/Purchase/Checkout'
 // import Alex from '../assets/AlexPics/singingcut.jpg'
 
 // Lesson Prices
-const oneHourLesson = 6000
-const fourHourLesson = 19500
-const twelveHourLesson = 49500
+const oneHourLesson = 4000
+const fourHourLesson = 15000
+const twelveHourLesson = 40000
 
 const VideoWrapper = styled.div`
   position: fixed;
@@ -192,9 +192,10 @@ class Lessons extends React.Component {
             <LessonInfoSubject>
               <h2>What You Learn</h2>
               <p>Logic Pro X, Pro Tools or Ableton Live.</p>
-              <p>Mixing and Mastering: Properly using tools like Compression, EQ, and Reverb</p>
+              <p>Template Design, Sample Organization and Other Workflow Enhancements</p>
+              <p>Mixing and Mastering</p>
               <p>Music Theory: Chords, Scales, Melody and Voice Movement</p>
-              <p>Sound Design and Synthesis: Working with Software Instruments, Samples and Synthesizers</p>
+              <p>Sound Design and Synthesis</p>
               <p>Arranging, Song Structure and Lyric Writing</p>
             </LessonInfoSubject>
             <LessonInfoSubject>
@@ -288,17 +289,20 @@ class Lessons extends React.Component {
 
             <LessonInfoSubject>
               <h2>Purchase Lessons</h2>
-              <p>Secure handling of card payments is encrypted by <a href="https://stripe.com/" target="blank">Stripe</a>. Music Sequencing does not collect, retain or ever see your card information.
-              Upon succeessful purchase follow instructions to begin scheduling lessons. Email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a> with any questions or concerns.
+              <p>We recommend to email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a> to schedule lessons before purchase. Lessons can be purchased via credit card or PayPal. Payment via PayPal can only be made after scheduling lessons. Secure handling of card payments is encrypted by <a href="https://stripe.com/" target="blank">Stripe</a>. Music Sequencing does not collect, retain or ever see your card information.
+                If you have not yet scheduled your lessons, follow the instructions after purchase. Email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a> with any questions.
               </p>
 
 
             </LessonInfoSubject>
             <LessonCards>
-              <Checkout amount={oneHourLesson} title="1hr of Lessons" price="$60" description="Book as needed. Perfect for filling in knowledge gaps and creating a development plan." />
-              <Checkout amount={fourHourLesson} title="4 hrs of Lessons" price="$195" description="Accelerate your development with multiple lessons and direct feedback on your progress." />
-              <Checkout amount={twelveHourLesson} title="12 hrs of Lessons" price="$495" description="A highly personalized curriculum of excercises and project evaluations to get you to the next level." />
+              <Checkout amount={oneHourLesson} title="1hr of Lessons" price="$40" description="Book as needed. Perfect for filling in knowledge gaps and creating a development plan." />
+              <Checkout amount={fourHourLesson} title="4 hrs of Lessons" price="$150" description="Accelerate your development with multiple lessons and direct feedback on your progress." />
+              <Checkout amount={twelveHourLesson} title="12 hrs of Lessons" price="$400" description="A highly personalized curriculum of excercises and project evaluations to get you to the next level." />
             </LessonCards>
+            <LessonInfoSubject>
+              <p></p>
+            </LessonInfoSubject>
 
             <LessonInfoSubject>
               <h2>Satisfaction</h2>
