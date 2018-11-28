@@ -17,9 +17,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 // Lesson Prices
-const oneHourLesson = 4000
-const fourHourLesson = 15000
-const twelveHourLesson = 40000
+const oneHourLesson = 6000
+const fourHourLesson = 19500
+const twelveHourLesson = 44500
 
 const VideoWrapper = styled.div`
   position: fixed;
@@ -282,9 +282,9 @@ class Lessons extends React.Component {
 
             </LessonInfoSubject>
             <LessonCards>
-              <Checkout amount={oneHourLesson} title="1hr of Lessons" price="$40" description="Book as needed. Perfect for filling in knowledge gaps and creating a development plan." />
-              <Checkout amount={fourHourLesson} title="4 hrs of Lessons" price="$150" description="Accelerate your development with multiple lessons and direct feedback on your progress." />
-              <Checkout amount={twelveHourLesson} title="12 hrs of Lessons" price="$400" description="A highly personalized curriculum of excercises and project evaluations to get you to the next level." />
+              <Checkout amount={oneHourLesson} title="1hr of Lessons" price="$60" description="Book as needed. Perfect for filling in knowledge gaps and creating a development plan." />
+              <Checkout amount={fourHourLesson} title="4 hrs of Lessons" price="$195" description="Accelerate your development with multiple lessons and direct feedback on your progress." />
+              <Checkout amount={twelveHourLesson} title="12 hrs of Lessons" price="$445" description="A highly personalized curriculum of excercises and project evaluations to get you to the next level." />
             </LessonCards>
             <LessonInfoSubject>
               <p></p>
