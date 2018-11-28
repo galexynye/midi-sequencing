@@ -104,6 +104,7 @@ const LessonsBio = styled.div`
   justify-content: center;
   img{
     max-height: 400px;
+    max-width: 400px;
 
   }
   @media (max-width: 700px){
@@ -112,6 +113,7 @@ const LessonsBio = styled.div`
     /* max-height: 200px; */
     display: block;
     max-height: 300px;
+    max-width: 300px;
     /* max-width: 100%; */
   }
 }
