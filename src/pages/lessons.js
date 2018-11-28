@@ -101,9 +101,15 @@ const LessonInfoSubject = styled.div`
 
 const LessonsBio = styled.div`
   display: flex;
- justify-content: center;
+  justify-content: center;
   @media (max-width: 700px){
   flex-flow: wrap;
+  img{
+    /* max-height: 200px; */
+    display: block;
+    max-height: 300px;
+    max-width: 100%;
+  }
 }
 `
 
@@ -306,7 +312,7 @@ class Lessons extends React.Component {
 
               <h3>Alex Nye </h3>
               <LessonsBio>
-                <img src={DeskPic} style={{ maxWidth: "100%" }} />
+                <img src={DeskPic} />
                 <div style={{ boxSizing: "border-box", display: "flex", flexFlow: "column", justifyContent: "center", textAlign: "center", maxWidth: "100%", padding: "10px" }}>
                   <h4>Bio</h4>
                   <p >After graduating from <a href="https://www.berklee.edu/" target="blank">
