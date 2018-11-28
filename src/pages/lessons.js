@@ -102,13 +102,17 @@ const LessonInfoSubject = styled.div`
 const LessonsBio = styled.div`
   display: flex;
   justify-content: center;
+  img{
+    max-height: 400px;
+
+  }
   @media (max-width: 700px){
   flex-flow: wrap;
   img{
     /* max-height: 200px; */
     display: block;
     max-height: 300px;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 }
 `
