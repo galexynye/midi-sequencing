@@ -176,7 +176,9 @@ class Lessons extends React.Component {
           title={
             `Lessons | Music Sequencing` // meta={[{ name: 'description', content: siteDescription }]}
           }
-        />
+        >
+
+        </Helmet>
         <Menu />
         <VideoWrapper>
           {this.state.isBig && (
@@ -297,7 +299,7 @@ class Lessons extends React.Component {
             <LessonInfoSubject>
               <h2 style={{ marginTop: '25px' }}>About the Instructor</h2>
 
-              <ResponsiveIframe>
+              {/* <ResponsiveIframe>
                 <iframe
                   // src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34"  //Phil Collins
                   // src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I"  //Midi Controller
@@ -309,7 +311,7 @@ class Lessons extends React.Component {
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />{' '}
-              </ResponsiveIframe>
+              </ResponsiveIframe> */}
 
               {/* <p>
               // Los ageless

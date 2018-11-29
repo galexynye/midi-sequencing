@@ -1,6 +1,7 @@
 import React from "react"
 import MSLogo from '../../assets/MusicSeq-Logo_200px.png'
 import styled from 'styled-components'
+// import PayPal from './PayPal'
 
 
 /* TODO:
