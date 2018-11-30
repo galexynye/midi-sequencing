@@ -20,7 +20,7 @@ const Contact = () => {
       />
       <Menu sideNav={true} />
 
-      <HomeLink margin="0px 0px 10px 0px" />
+      {/* <HomeLink margin="0px 0px 10px 0px" /> */}
       <Blurb>
         <h1>Write Us</h1>
         <p>

@@ -61,10 +61,10 @@ class BlogIndex extends React.Component {
               },
             ]}
           />
-          <HomeLinkWrapper>
+          {/* <HomeLinkWrapper>
             <HomeLink />
           </HomeLinkWrapper>
-          <Bio />
+          <Bio /> */}
 
           {/* <h1>Featured Content</h1> */}
           {/* <HomeCardsWrapper> */}
