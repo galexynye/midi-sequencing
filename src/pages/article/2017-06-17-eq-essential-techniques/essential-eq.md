@@ -16,6 +16,21 @@ Behind the volume faders,<strong> EQ is THE most important tool in mixing.</stro
 
 <!-- A quick word of advice. Once you understand the power of EQ you might be tempted to "fix" things in the mix rather than doing it right from the start. As I mention in the <a href="article/music-vs-sound/">Music VS Sound</a> article, this is recipe for pain. When you are setting up your mics, designing a synth patch or choosing samples, try to get it sounding as good as possible without telling yourself you can fix it later. Sometimes this means abandoning ideas entirely. Just know the sooner you find great sound in the process, the better off you'll be. -->
 
+<h2 >Vital EQ Info</h2>
+
+<h3 >EQ Parameters</h3>
+
+<ul>
+ 	<li><strong>Frequency</strong>: High, low, mid? The literal definition is measured in Herz and it is how frequent the peaks and valley of the sound wave is.</li>
+ 
+ 	<li><strong>Boost/Gain:</strong> Make louder</li>
+ 	<li><strong>Cut/Attenuation:</strong> Make softer.</li>
+	 	
+ 	<li><strong>Band/Bandwidth/Q/Bell/Trough/Notch:</strong> This is the range of frequencies you are EQing.
+	 <li><strong>Shelf:</strong> When all the frequencies above (if a high shelf) or below (low shelf) will be boosted or cut.</li>
+ 	<li><strong>Filter:</strong> When all of the frequencies in a range are taken out</li>
+</ul>
+
 <h2 >Types of EQ</h2>
 
 Despite some EQ's abililty to give really precise control, sometimes you can get better results using simpler tools like Shelving EQs and Graphic EQs.
@@ -28,7 +43,7 @@ Shelving refers to turning up or down every frequency above or below a certain p
 
 Simple shelving is a very common technique to create space in your mixes or help certain instruments stand out by making them brighter or darker.
 
-Some EQs, like the Pultec EQP-1A pictured below, LIMIT your choices of frequencies for shelving. **Limited choices can be a great thing**. In the bottom left corner the knob that is labled "LOW FREQUENCY" gives you 4 choices, 20hz, 30hz, 60hz, 100hz, to boost or attenuate. These old EQs are famous and still used today because they consistently get great results.
+Some EQs, like the Pultec EQP-1A pictured below, LIMIT your choices of frequencies for shelving. **Limited choices can be a great thing**. In the bottom left corner the knob that is labled "LOW FREQUENCY" gives you 4 choices, 20hz, 30hz, 60hz, 100hz, to boost(turn up) or attenuate(turn down). These old EQs are famous and still used today because they consistently get great results.
 
 **TIP for Logic X Users**: Logic has these simpler EQs built in. In your plugins go to EQs -> Vintage EQs and give them a try.
 
@@ -38,17 +53,20 @@ Some EQs, like the Pultec EQP-1A pictured below, LIMIT your choices of frequenci
 
 <img  src="./media/essential-eq/API-560-Graphic-EQ-3.png" alt="API 560 Graphic EQ"/>
 
-Graphic EQs are simple and limited as well but can turn out some really nice results. On the API 560 pictured above there are 10 frequency "<strong>bands</strong>" to choose from. 
+Graphic EQs are simple and limited as well but can turn out some really nice results. You are not able to select any frequency with a graphic EQ, the choices are made by the manufacturer. On the API 560 pictured above there are 10 frequency "<strong>bands</strong>" to choose from. 
 
-In practical mixing usage, graphic EQs are best used as a sweetener, possibly in conjunction with a parametric EQ. 
+In practical mixing usage, graphic EQs are best used as a sweetener.
 
 <h3 >Parametric EQ</h3>
 
 <img  src="./media/essential-eq/Massenburg-EQ-Picture-4.png" alt="Massenburg EQ plugin picture"  />
 
-The vast majority of time you will use some version of parametric EQ when mixing. George Massenburg coined the term "parametric eq" in 1972 and later designed the awesome plugin pictured above. What makes a parametric EQ so special is the ability to select essentially any frequency or range of frequencies with surgical precision and boost or cut them.
+The vast majority of time you will use some version of parametric EQ when mixing. 
+George Massenburg coined the term "parametric eq" in 1972 and later designed the awesome plugin pictured above.
 
-In today's world, Parametric EQ is the most common used EQ. But as mentioned above, consider reaching for simpler tools before 
+What makes a parametric EQ so special is the ability to select essentially any frequency or range of frequencies with surgical precision and boost or cut them.
+
+Parametric EQs are great for finding trouble frequencies. As we'll demonstrate later. 
 
 <!-- Human hearing ranges from 20 hz on the low end all the way up to 20,000 hz. If you check back to the API 560, there are 10 frequencies options to choose from, so if you wanted to cut only around 400 herz for example, you couldn't do it. Hallelujah, we have parametric EQ! -->
 
@@ -58,37 +76,60 @@ Technically band compression is a form of compression but functionally it is a f
 
 <iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=785" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
+
+
+
 <h2 >How To Use EQ</h2>
 
-<h3 >High-Pass Filter and Low-Pass Filter</h3>
+<h3 >High-Pass Filter</h3>
 
 <img src="./media/essential-eq/High-Pass-Filter-5.png" alt="High-Pass Filter EQ " width="760" height="280" />
 
-<strong>A High-Pass filter is placed on the low end of the frequency spectrum</strong> and allows high frequencies to pass through while eliminating the frequencies below entirely. The higher up the frequency spectrum you move a high-pass filter, the thinner the sound will become. High-pass filters are vital for removing unwanted low frequencies that will muddy up a mix, <strong>most times you will want to put a high-pass frequency up to about 80 hz on everything besides bass instruments and low drums</strong>, like kicks, to carve out room for the low frequencies you actually want to hear. Watch this example below.
+<strong>A High-Pass filter is placed on the low end of the frequency spectrum</strong> and allows high frequencies to pass through while eliminating the frequencies below entirely. The higher up the frequency spectrum you move a high-pass filter, the thinner the sound will become.
 
+ High-pass filters are vital for removing unwanted low frequencies that will muddy up a mix. See the demo below. 
 <iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=161" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<!-- 
+Not only is a high-pass filter great to put on many instruments, you most likely will want to put one on your entire mix as well, going up to around 30-40 hz. The reason you do this is because, especially with today's soft synths, there might be low frequencies you can't hear that will muddy things up and mess with any compressors or effects you put on your master bus. -->
 
-Not only is a high-pass filter great to put on many instruments, you most likely will want to put one on your entire mix as well, going up to around 30-40 hz. The reason you do this is because, especially with today's soft synths, there might be low frequencies you can't hear that will muddy things up and mess with any compressors or effects you put on your master bus. When you do this use a <strong>LINEAR PHASE EQ. </strong>A linear phase EQ removes the phasing found in normal eqs but can be more processing intensive. If you're not sure if you have one, the <a href="http://www.tokyodawn.net/tdr-vos-slickeq/" target="_blank" rel="noopener">TDR VOS SlickEQ</a> by Tokyo Dawn Labs is a free linear EQ and it is amazing!!!!!! Seriously, download that $h!\*.
+ <!-- When you do this consider using a <strong>LINEAR PHASE EQ. </strong>A linear phase EQ removes the phasing found in normal eqs but can be more processing intensive. If you're not sure if you have one, the <a href="http://www.tokyodawn.net/tdr-vos-slickeq/" target="_blank" rel="noopener">TDR VOS SlickEQ</a> by Tokyo Dawn Labs is a free linear EQ and it is amazing!!!!!! Seriously, download it. -->
+
+
+### Low-Pass Filter
 
 <img src="./media/essential-eq/Low-Pass-Filter-6.png" alt="Low-Pass Filter EQ" width="761" height="276" />
 
-When a bomb explodes next to someone in a movie and the character's hearing is muffled, that is a low pass filter. It might be a little confusing that a low-pass filter filters out high frequencies while a high-pass filter filters out low frequencies....the important word to remember is <strong>PASS. The name of the filter indicates which frequencies you will be able to hear</strong>. If you get confused try to come up with your own naming trick to remember the proper name for what the different filters do.
+When a bomb explodes next to someone in a movie and the character's hearing is muffled, that is a low pass filter.
+
+ It might be a little confusing that a low-pass filter deals with high frequencies while a high-pass filter deals with low frequencies. 
+ 
+ The important word to remember is <strong>PASS. The name of the filter indicates which frequencies you will be able to hear</strong>.
+ 
+ To deal with this some people started calling a "High-Pass" a "Low Cut" and vice versa. Which might makes things easier to understand.
+ 
+  If you get confused try to come up with your own naming trick.
 
 <iframe src="https://www.youtube.com/embed/E5P5c1InZNk?start=24" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 <h3 >Subtractive EQ</h3>
-Subtractive EQ is the process of finding crappy frequencies and cutting them out. This works by boosting a narrow band to find the bad stuff then simply turning it down. Looks like this.
+Subtractive EQ is the process of finding crappy frequencies and cutting them out. This works by boosting a narrow band to find the bad stuff then simply turning it down. As demonstrated below.
 
 <iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=414" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-Your ability to determine when there are crappy frequencies that need zapping comes with experience. Many engineers will develop an emotional attachment to frequencies. Personally, I hate 2500-3000 hz, they're rotten, harsh, stinkin' frequencies that are like rubbing gravel against my ear drums, I gut em like a fish for fun...On the other hand 4500 hz -5000 hz are my buddies :)
+Your ability to determine when there are crappy frequencies that need zapping comes with experience.
 
-To help guide you in the right direction there are a ton of EQ charts that tell you what frequencies are associated with common adjectives we use to describe sound. This great chart made by <a href="http://www.independentrecording.net/irn/resources/freqchart/main_display.htm" target="_blank" rel="noopener">IndependentRecording.net</a> tells you where different instruments are heard, names of the frequency ranges (ie high mids, sub bass ect.), and the adjectives that describe the frequencies.
+To help guide you in the right direction there are a ton of EQ charts that tell you what frequencies are associated with common adjectives we use to describe sound. 
+
+The great chart below is made by <a href="http://www.independentrecording.net/irn/resources/freqchart/main_display.htm" target="_blank" rel="noopener">IndependentRecording.net</a> and tells you where different instruments are heard, names of the frequency ranges (ie high mids, sub bass ect.), and the adjectives that describe the frequencies.
+
 
 <a href="http://www.independentrecording.net/irn/resources/freqchart/main_display.htm" target="_blank" rel="noopener"><img src="./media/essential-eq/Independent-Recording-EQ-chart-7.jpeg" alt="EQ frequency chart with adjectives " width="610" height="677" /></a>
+  
 
 <h3 >Additive EQ</h3>
-Subtractive EQ cuts frequencies and as you've probably guessed, Additive EQ boosts frequencies. Boosting frequencies can sweeten the sound of an element, make it cut through the mix, or simply change the sound. Normally when you are doing additive EQ you'll get better results by boosting with a wider band-width as oppose to the narrow notch that you might use when doing subtractive EQ. Looks like this.
+Additive EQ boosts frequencies. Boosting frequencies can sweeten the sound of an element, make it cut through the mix, or simply change the sound. 
+
+Normally when you are doing additive EQ you'll get better results by boosting with a wider band-width as oppose to the narrow notch that you might use when doing subtractive EQ. Looks like this.
 
 <iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=589" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
@@ -111,26 +152,17 @@ In the videos above we only listened to solo'd instruments while EQing. Generall
 
 A solo'd instrument might sound completely weird alone while it sounds really good when surrounded by the mix. Different instruments in the mix might fill in strange frequency gaps from something that sounds bad solo'd but good in the mix. The times you would want to solo an instrument to EQ is when you suspect there is a crappy frequency and you want to do some subtractive EQing.
 
-<h2 >More Vital EQ Info</h2>
 
-<h3 >EQ Parameters</h3>
-
-<ul>
- 	<li><strong>Frequency</strong> - High, low, mid? You know frequency by now. The literal definition is measured in Herz and it is how frequent the peaks and valley of the sound wave is.</li>
- 	<li><strong>Shelf</strong> - Looks like a shelf, as pictured in the High-pass/Low-pass section, it's when all the frequencies above or below will be boosted or cut but not entirely as in a High-pass or low-pass</li>
- 	<li><strong>Filter</strong> - When all of the frequencies in a range are taken out</li>
- 	<li><strong>Band/Bandwidth/Q/Bell/Trough/Notch</strong> - This is the range of frequencies you are EQing. A wide/broad Q could be from 1000 to 5000 hz or more, and in general, you want to boost using a wide Q. A narrow Q might only be a couple frequencies wide. A narrow Q is generally used for subtractive EQing</li>
- 	<li><strong>Boost/Gain - </strong>Making louder</li>
- 	<li><strong>Cut/Attenuation</strong> - Making softer.</li>
-</ul>
 
 <h3 >Mastering</h3>
 
 <img src="./media/essential-eq/Manley-Passive-EQ-9.png" alt="Manley Massive Passive EQ" width="946" height="262" />
 
-<strong>Most of mastering is EQing</strong>. As mentioned in the High-Pass section, you will want to use a Linear Phase EQ on your master bus to cut out frequencies below 20-40 hz. These frequencies will not benefit you in anyway but can hurt your mix.
+Besides making things louder, <strong>most of mastering is EQing</strong>. 
 
-When you are using an EQ on the mastering bus you will usually only want to cut or boost 1-2 db, maybe 3. Adding EQ on the master bus is like adding an EQ to every single instrument in your mix. If you find yourself having to do extreme cuts or boosst in mastering, you probably want to go back and fix your mix.
+When you are mastering you will usually only want to cut or boost 1-2 db, maybe 3 of a given frequency band. Adding EQ on the master bus is like adding an EQ to every single instrument in your mix. If you find yourself having to do extreme cuts or boosst in mastering, you probably want to go back and fix your mix.
+
+Lastly, you might find your mix will get better by adding high pass filter around 10-20hz to clean out any extremely low frequencies not actually adding anything to your mix.
 
 <h3 >Loose Ends</h3>
 
