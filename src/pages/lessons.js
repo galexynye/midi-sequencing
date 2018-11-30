@@ -21,6 +21,7 @@ const oneHourLesson = 6000
 const fourHourLesson = 19500
 const twelveHourLesson = 44500
 
+// Header Video Wrapper
 const VideoWrapper = styled.div`
   position: fixed;
   top: 50%;
@@ -40,6 +41,7 @@ const VideoWrapper = styled.div`
   }
 `
 
+// Lesson Page Header
 const LessonsHeader = styled.header`
   margin-top: 150px;
   margin-bottom: 150px;
@@ -71,7 +73,6 @@ const LessonsHeader = styled.header`
 `
 
 const LessonContentContainer = styled.div`
-  min-height: 100vh;
   padding-top: 20px;
   background-color: white;
   h2 {
@@ -101,19 +102,27 @@ const LessonInfoSubject = styled.div`
 
 const LessonsBio = styled.div`
   display: flex;
-  justify-content: center;
+  /* flex-flow: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
   img{
-    max-height: 400px;
+    /* max-height: 700px; */
     max-width: 400px;
+    padding-left: 20px;
+    /* border-radius: 50%; */
 
   }
   @media (max-width: 700px){
-  flex-flow: wrap;
+    flex-flow: wrap;
+      justify-content: center;
+    text-align: center;
   img{
+    padding: 20px 0px;
     /* max-height: 200px; */
-    display: block;
+    /* display: block; */
     max-height: 300px;
-    max-width: 300px;
+
+    /* max-width: 100%; */
     /* max-width: 100%; */
   }
 }
@@ -318,11 +327,13 @@ class Lessons extends React.Component {
                 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436034745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
               </p> */}
 
-              <h3>Alex Nye </h3>
+
               <LessonsBio>
-                <img src={DeskPic} />
-                <div style={{ boxSizing: "border-box", display: "flex", flexFlow: "column", justifyContent: "center", textAlign: "center", maxWidth: "100%", padding: "10px" }}>
-                  <h4>Bio</h4>
+                {/* <div> */}
+
+                {/* </div> */}
+                <div style={{ display: "flex", flexFlow: "column", maxWidth: "100%", padding: "0px, 20px, 20px, 0px" }}>
+                  <h3>Alex Nye </h3>
                   <p >After graduating from <a href="https://www.berklee.edu/" target="blank">
                     {' '}
                     Berklee College of Music
@@ -356,7 +367,7 @@ class Lessons extends React.Component {
                       {' '}
                       Poltergeist.</a>
                   </p>
-                  <SocialWrapper>
+                  <SocialWrapper margin="0px, 0px, 40px, 0px">
                     <SocialLink href="https://soundcloud.com/alex_nye_alex_nye" target="blank">
                       <FontAwesomeIcon
                         icon={faSoundcloud}
@@ -369,7 +380,9 @@ class Lessons extends React.Component {
                       />
                     </SocialLink>
                   </SocialWrapper>
+
                 </div>
+                <img src={DeskPic} />
               </LessonsBio>
 
             </LessonInfoSubject>
