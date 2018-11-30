@@ -337,24 +337,23 @@ class Lessons extends React.Component {
                   <p >After graduating from <a href="https://www.berklee.edu/" target="blank">
                     {' '}
                     Berklee College of Music
-                </a>{' '} in 2011, Alex moved to Los Angeles. {' '} Working as a producer for{' '}
+                </a>{' '} in 2011, Alex moved to Los Angeles to work in music. {' '} As an early producer for{' '}
                     <a href="https://output.com/" target="blank">
                       Output
                 </a>,
-                Alex helped in the development of{' '}
+                Alex helped develop {' '}
                     <a
                       href="https://output.com/products/rev?gclid=EAIaIQobChMI4KvQ5KHg3gIVVYjVCh3q_Qu3EAAYASAAEgJZn_D_BwE"
                       target="blank"
                     >
                       Rev
                 </a>{' '}
-                    and is contributing kits to Output's{' '}
+                    and works with Output contributing kits to {' '}
                     <a href="https://output.com/arcade" target="blank">
                       Arcade
-                </a>{' '}
-                    plugin.
-                  He has composed and engineered extensively for films and shows
-                  such as Amazon's
+                </a>.
+                                                                                  He has composed and engineered extensively for films and shows
+                                                                                  such as Amazon's
                 <a href="https://www.imdb.com/title/tt3973768/" target="blank">
                       {' '}
                       Hand of God
@@ -367,6 +366,7 @@ class Lessons extends React.Component {
                       {' '}
                       Poltergeist.</a>
                   </p>
+                  <p>A multi-genre composer, producer and songwriter, Alex is the founder of Music Sequencing.com. He's also super nice.</p>
                   <SocialWrapper margin="0px, 0px, 40px, 0px">
                     <SocialLink href="https://soundcloud.com/alex_nye_alex_nye" target="blank">
                       <FontAwesomeIcon
