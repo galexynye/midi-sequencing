@@ -3,6 +3,7 @@ path: '/article/eq-essential-techniques'
 title: 'EQ Essentials'
 author: 'Alex Nye'
 date: '2017-06-17'
+hideDate: true
 category: 'Tutorials'
 subcategory: 'Basics'
 subject: 'EQ'
@@ -11,35 +12,43 @@ tags: ['mixing', 'basics', 'eq']
 
 <img src="./media/essential-eq/Bunch-Of-EQs-picture-1.png" alt="" />
 
-Behind the volume faders,<strong> EQ is THE most important tool in mixing.</strong> The ability to mix great sounding tracks comes down whether or not the frequencies shaking people's eardrums feels good. Most of the time the best tool to make sounds better is EQ. In this article we will talk about the different types of EQs, how to use them, and some of the best EQs ever invented (including a freebie you should download today).
+Behind the volume faders,<strong> EQ is THE most important tool in mixing.</strong> In this article we will talk about the different types of EQs, how to use them, and some of the best EQs ever invented (including a freebie you should download today).
 
 <!-- A quick word of advice. Once you understand the power of EQ you might be tempted to "fix" things in the mix rather than doing it right from the start. As I mention in the <a href="article/music-vs-sound/">Music VS Sound</a> article, this is recipe for pain. When you are setting up your mics, designing a synth patch or choosing samples, try to get it sounding as good as possible without telling yourself you can fix it later. Sometimes this means abandoning ideas entirely. Just know the sooner you find great sound in the process, the better off you'll be. -->
 
 <h2 >Types of EQ</h2>
 
-In this day and age you can sculpt out frequencies with lazer precision. Despite having that ability, sometimes simpler tools with only a few knobs will ultimately sound better.
+Despite some EQ's abililty to give really precise control, sometimes you can get better results using simpler tools like Shelving EQs and Graphic EQs.
+<!-- In this day and age you can sculpt out frequencies with lazer precision. Despite having that ability, sometimes simpler tools with only a few knobs will ultimately sound better. -->
 
 <h3 >Shelving EQ</h3>
+<img src="./media/ShelvingInAParametricEQ.jpg" alt="Shelving EQ in a parametric eq">
 
-<img class="wp-image-1547 size-full" src="./media/essential-eq/Pultec-EQP-1A-2.png" alt="Classic Pultec EQP-1A EQ"  />
+Shelving refers to turning up or down every frequency above or below a certain point. The picture above shows what shelving looks like on the frequency spectrum.
 
-A shelf in EQ is when every frequency above or below a certain point is turned up or turned down. For the most part, you won't see or use EQs that only do shelving when mixing, you'll see them more in something like a car stereo where there is one knob for the treble and one for the bass. You will use more capable EQs to create EQ shelves all the time along with the shelf's more extreme cousin, which we'll get to in the high-pass and low-pass filter section.
+Simple shelving is a very common technique to create space in your mixes or help certain instruments stand out by making them brighter or darker.
 
-The EQ pictured above, the Pultec EQP-1A is one of those simple EQs that has some sort of magic sound to it despite not being able to choose exactly what you want. Another thing that's nice about EQs with no visual interface is they force you to use your ears instead of getting duped by your eyes.
+Some EQs, like the Pultec EQP-1A pictured below, LIMIT your choices of frequencies for shelving. **Limited choices can be a great thing**. In the bottom left corner the knob that is labled "LOW FREQUENCY" gives you 4 choices, 20hz, 30hz, 60hz, 100hz, to boost or attenuate. These old EQs are famous and still used today because they consistently get great results.
+
+**TIP for Logic X Users**: Logic has these simpler EQs built in. In your plugins go to EQs -> Vintage EQs and give them a try.
+
+<img  src="./media/essential-eq/Pultec-EQP-1A-2.png" alt="Classic Pultec EQP-1A EQ"  />
 
 <h3 >Graphic EQ</h3>
 
-<img class="wp-image-1525 size-full" src="./media/essential-eq/API-560-Graphic-EQ-3.png" alt="API 560 Graphic EQ"/>
+<img  src="./media/essential-eq/API-560-Graphic-EQ-3.png" alt="API 560 Graphic EQ"/>
 
-Graphic EQs are simple and limited in use as well but simplicity can turn out some really nice results. On the API 560 pictured above there are 10 frequency "<strong>bands</strong>" to choose from. You can <strong>boost these frequencies </strong>(make louder) or <strong>cut them</strong> (make softer).
+Graphic EQs are simple and limited as well but can turn out some really nice results. On the API 560 pictured above there are 10 frequency "<strong>bands</strong>" to choose from. 
 
-In practical mixing usage, graphic EQs are best used as a sweetener, possibly in conjunction with a parametric EQ. Graphic EQs are good for live music where you would want to grab a certain frequency fast and not have to muck around.
+In practical mixing usage, graphic EQs are best used as a sweetener, possibly in conjunction with a parametric EQ. 
 
 <h3 >Parametric EQ</h3>
 
-<img class="wp-image-1527 size-full" src="./media/essential-eq/Massenburg-EQ-Picture-4.png" alt="Massenburg EQ plugin picture"  />
+<img  src="./media/essential-eq/Massenburg-EQ-Picture-4.png" alt="Massenburg EQ plugin picture"  />
 
-The vast majority of time you will use some version of parametric EQ when mixing. George Massenburg coined the term "parametric eq" in the 1972 AES preprint and later designed the awesome plugin pictured above. What makes a parametric EQ so special is the ability to select essentially any frequency or range of frequencies with surgical precision and boost or cut them.
+The vast majority of time you will use some version of parametric EQ when mixing. George Massenburg coined the term "parametric eq" in 1972 and later designed the awesome plugin pictured above. What makes a parametric EQ so special is the ability to select essentially any frequency or range of frequencies with surgical precision and boost or cut them.
+
+In today's world, Parametric EQ is the most common used EQ. But as mentioned above, consider reaching for simpler tools before 
 
 <!-- Human hearing ranges from 20 hz on the low end all the way up to 20,000 hz. If you check back to the API 560, there are 10 frequencies options to choose from, so if you wanted to cut only around 400 herz for example, you couldn't do it. Hallelujah, we have parametric EQ! -->
 
@@ -53,7 +62,7 @@ Technically band compression is a form of compression but functionally it is a f
 
 <h3 >High-Pass Filter and Low-Pass Filter</h3>
 
-<img class="wp-image-1537 size-full" src="./media/essential-eq/High-Pass-Filter-5.png" alt="High-Pass Filter EQ " width="760" height="280" />
+<img src="./media/essential-eq/High-Pass-Filter-5.png" alt="High-Pass Filter EQ " width="760" height="280" />
 
 <strong>A High-Pass filter is placed on the low end of the frequency spectrum</strong> and allows high frequencies to pass through while eliminating the frequencies below entirely. The higher up the frequency spectrum you move a high-pass filter, the thinner the sound will become. High-pass filters are vital for removing unwanted low frequencies that will muddy up a mix, <strong>most times you will want to put a high-pass frequency up to about 80 hz on everything besides bass instruments and low drums</strong>, like kicks, to carve out room for the low frequencies you actually want to hear. Watch this example below.
 
@@ -61,7 +70,7 @@ Technically band compression is a form of compression but functionally it is a f
 
 Not only is a high-pass filter great to put on many instruments, you most likely will want to put one on your entire mix as well, going up to around 30-40 hz. The reason you do this is because, especially with today's soft synths, there might be low frequencies you can't hear that will muddy things up and mess with any compressors or effects you put on your master bus. When you do this use a <strong>LINEAR PHASE EQ. </strong>A linear phase EQ removes the phasing found in normal eqs but can be more processing intensive. If you're not sure if you have one, the <a href="http://www.tokyodawn.net/tdr-vos-slickeq/" target="_blank" rel="noopener">TDR VOS SlickEQ</a> by Tokyo Dawn Labs is a free linear EQ and it is amazing!!!!!! Seriously, download that $h!\*.
 
-<img class="wp-image-1536 size-full" src="./media/essential-eq/Low-Pass-Filter-6.png" alt="Low-Pass Filter EQ" width="761" height="276" />
+<img src="./media/essential-eq/Low-Pass-Filter-6.png" alt="Low-Pass Filter EQ" width="761" height="276" />
 
 When a bomb explodes next to someone in a movie and the character's hearing is muffled, that is a low pass filter. It might be a little confusing that a low-pass filter filters out high frequencies while a high-pass filter filters out low frequencies....the important word to remember is <strong>PASS. The name of the filter indicates which frequencies you will be able to hear</strong>. If you get confused try to come up with your own naming trick to remember the proper name for what the different filters do.
 
@@ -117,7 +126,7 @@ A solo'd instrument might sound completely weird alone while it sounds really go
 
 <h3 >Mastering</h3>
 
-<img class="wp-image-1564 size-full" src="./media/essential-eq/Manley-Passive-EQ-9.png" alt="Manley Massive Passive EQ" width="946" height="262" />
+<img src="./media/essential-eq/Manley-Passive-EQ-9.png" alt="Manley Massive Passive EQ" width="946" height="262" />
 
 <strong>Most of mastering is EQing</strong>. As mentioned in the High-Pass section, you will want to use a Linear Phase EQ on your master bus to cut out frequencies below 20-40 hz. These frequencies will not benefit you in anyway but can hurt your mix.
 

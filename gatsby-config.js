@@ -21,6 +21,13 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 40px; z-index: 1; overflow: visible`,
+              // wrapperStyle: `margin-bottom: 1.2rem;`,
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1170,
@@ -30,25 +37,20 @@ module.exports = {
               // wrapperStyle: `margin-bottom: 1.2rem;`,
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.2rem; z-index: 1`,
-              // wrapperStyle: `margin-bottom: 1.2rem;`,
-            },
-          },
+
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
+
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
           {
-            resolve: `gatsby-plugin-prefetch-google-fonts`,
-            options: {
-              fonts: [
-                {
-                  family: `Raleway`,
-                },
-              ],
-            },
+            family: `Raleway`,
           },
         ],
       },
