@@ -105,10 +105,14 @@ const LessonsBio = styled.div`
   /* flex-flow: column; */
   /* align-items: center; */
   /* justify-content: center; */
+  div{
+    
+  }
   img{
     /* max-height: 700px; */
     max-width: 400px;
     padding-left: 20px;
+    align-self: center
     /* border-radius: 50%; */
 
   }
@@ -352,8 +356,8 @@ class Lessons extends React.Component {
                     <a href="https://output.com/arcade" target="blank">
                       Arcade
                 </a>.
-                                                                                  He has composed and engineered extensively for films and shows
-                                                                                  such as Amazon's
+                                                                                                  He has composed and engineered extensively for films and shows
+                                                                                                  such as Amazon's
                 <a href="https://www.imdb.com/title/tt3973768/" target="blank">
                       {' '}
                       Hand of God
