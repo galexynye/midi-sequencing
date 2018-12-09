@@ -12,8 +12,10 @@ const Wrapper = styled.div`
 
   ol,
   ul {
-    list-style-position: inside;
-    padding: 0px;
+    /* list-style-position: inside; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
   }
 
   img {

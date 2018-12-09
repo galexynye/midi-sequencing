@@ -15,7 +15,7 @@ const MenuContainer = styled.nav`
   ul {
     list-style-type: none;
     font-size: 1em;
-    list-style-position: outside;
+    padding: 0px;
     margin-top: 10px;
     /* margin-left: 10px; */
     margin-bottom: 0px;
@@ -48,6 +48,7 @@ const MenuSmallWrapper = styled.div`
   top: 41px;
   bottom: 0;
   left: 0;
+  min-width: 100vw;
   overflow-y: scroll;
   @media (min-width: 900px) {
     display: none;
@@ -190,11 +191,11 @@ class Menu extends React.Component {
 
     // Returns and Array of SubMenu Components to be rendered in menu
     // Order the array alphabetically by title?
-    tutorials = Object.keys(subTutorials).map(function(key) {
+    tutorials = Object.keys(subTutorials).map(function (key) {
       return <SubMenu title={key} links={subTutorials[key]} key={key} />
     })
 
-    gearReviews = Object.keys(subGearReviews).map(function(key) {
+    gearReviews = Object.keys(subGearReviews).map(function (key) {
       return <SubMenu title={key} links={subGearReviews[key]} key={key} />
     })
 

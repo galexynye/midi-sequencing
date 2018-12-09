@@ -11,7 +11,10 @@ tags: ['mixing', 'basics', 'reverb']
 
 <img src="./media/reverb-essentials/Reverb-Diagram-1.png" alt="Stick Figure Drawing of How Reverb Sends used to be set up analog"  />
 
-Reverb is usually the first effect someone new to producing music plays with. Instantly you'll hear how a vocal sounds soooooo much better after throwing on some reverb but it is deceptively hard to actually get it right. Some pro mixers will spend ages fidgeting with reverb to find the magic spot where it works best. <strong>Reverb is THE vital effect</strong> for putting elements in the right dimension and giving a sonic space to your mix.
+Reverb is usually the first effect someone new to producing music plays with. Instantly you'll hear how a vocal sounds soooooo much better after throwing on some reverb but it can be deceptively hard to get right. 
+Some pro mixers will spend ages fidgeting with reverb to find the magic spot where it works best.
+
+ <strong>Reverb is THE vital effect</strong> for putting elements in the right dimension and giving a sonic space to your mix.
 
 When you add reverb to something in your mix, you should be asking yourself some questions.
 

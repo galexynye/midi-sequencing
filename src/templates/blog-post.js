@@ -48,6 +48,7 @@ class BlogPostTemplate extends React.Component {
             {
               listStyle: 'none',
               display: 'flex',
+              padding: "0px",
               flexFlow: 'wrap',
               marginLeft: '0px',
               marginBottom: '20px',
@@ -56,7 +57,7 @@ class BlogPostTemplate extends React.Component {
         >
           {tags}
         </ul>
-        <p>by {author}</p>
+        {/* <p>by {author}</p> */}
         <p>{!post.frontmatter.hideDate && post.frontmatter.date}</p>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -69,7 +70,7 @@ class BlogPostTemplate extends React.Component {
           }
         /> */}
         {/* <Bio /> */}
-
+        <p>written by {author}</p>
         <ul
           style={{
             display: 'flex',
