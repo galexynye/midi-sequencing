@@ -160,12 +160,12 @@ class ContactForm extends React.Component {
           )}
 
 
-          {this.props.lesson && (
+          {/* {this.props.lesson && (
             <div>
               <p>
                 <label>
                   How long have you been creating music?
-                {/* Your Name:  */}
+                
                   <input
                     type="text"
                     name="experience"
@@ -196,16 +196,8 @@ class ContactForm extends React.Component {
                   />
                 </label>
               </p>
-              {/* <p>
-                <input
-                  type="text"
-                  name="interests"
-                  placeholder="Is there any area of Music Production you would like to focus on?"
-                  onChange={this._handleChange}
-                />
-              </p> */}
             </div>
-          )}
+          )} */}
 
           <p>
             <label >

@@ -17,7 +17,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 // Lesson Prices
-const oneHourLesson = 6000
+const oneHourLesson = 5500
 const fourHourLesson = 19500
 const twelveHourLesson = 44500
 
@@ -202,7 +202,7 @@ class Lessons extends React.Component {
           {!this.state.isBig && <img src={LessonsPosterOrange} />}
         </VideoWrapper>
         <LessonsHeader>
-          <h1>Learn Music Production</h1>
+          <h1>Learn Music and Production</h1>
           <h2>1-on-1 Lessons Online</h2>
         </LessonsHeader>
         <LessonContentContainer>
@@ -247,27 +247,30 @@ class Lessons extends React.Component {
             <LessonInfoSubject>
               <h2>What You Can Learn</h2>
               <p>Logic Pro X, Pro Tools or Ableton Live.</p>
-              <p>Template Design, Sample Organization and Other Workflow Enhancements</p>
               <p>Mixing and Mastering</p>
               <p>Music Theory: Chords, Scales, Melody and Voice Movement</p>
-              <p>Sound Design and Synthesis</p>
+              {/* <p>Sound Design and Synthesis</p> */}
+              <p>Working with Samples, Synthesizers and Creating Your Own Sounds</p>
+              <p>Song and Lyrics Writing</p>
+              <p>Recording Yourself and Multitrack Recording</p>
+              <p>Vocal Production</p>
               <p>Arranging, Song Structure and Lyric Writing</p>
-              <p>Playing Piano or Drum Pads as a Producer</p>
+              {/* <p>Music Business - Publishing, Promotion and Getting Music Online</p> */}
+              {/* <p>Playing Piano or Drum Pads as a Producer</p> */}
               <p>+ Custom Topics Specific For You</p>
+              {/* <p>Template Design, Sample Organization and Other Workflow Enhancements</p> */}
             </LessonInfoSubject>
 
 
             <LessonInfoSubject>
               <h2>How Lessons Work</h2>
               <p>
-                Lessons are done online and are available worldwide :)
+                Lessons are done online using <a href="https://zoom.us/" target="blank">Zoom.us</a> and are available worldwide :)
               </p>
               <p>
                 <b>
                   {' '}
-                  To ensure a great learning experience there is a free meet and greet
-                  offered for first time students to talk about your goals, musical
-                  influences and answer any additional questions. Fill out the form below to book yours today!
+                  To ensure a great learning experience there is a FREE first lesson offered for a limited time only. Fill out the form below to book yours today!
                 </b>
               </p>
               <h3>Got Questions?</h3>
@@ -277,7 +280,7 @@ class Lessons extends React.Component {
 
 
             <LessonInfoSubject>
-              <h2>Sign Up for a Free Meet and Greet</h2>
+              <h2>Sign Up for a FREE First Lesson</h2>
               {/* <p>Get started by filling out the form below or emailing <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a></p> */}
               <ContactForm
                 margin="0px 0px 0px 0px"
@@ -290,16 +293,21 @@ class Lessons extends React.Component {
 
             <LessonInfoSubject>
               <h2>Purchase Lessons</h2>
-              <p>We recommend to email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a> to schedule lessons before purchase. Lessons can be purchased via credit card or PayPal. Payment via PayPal can only be made after scheduling lessons. Secure handling of card payments is encrypted by <a href="https://stripe.com/" target="blank">Stripe</a>. Music Sequencing does not collect, retain or ever see your card information.
-                If you have not yet scheduled your lessons, follow the instructions after purchase. Email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a> with any questions.
+              <p>We recommend to email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a>
+                to schedule lessons before purchase. Lessons can be purchased with PayPal
+                or with a card using the purchase buttons below.
+                Payment via PayPal can be made after emailing to schedule lessons.
+              Secure handling of card payments is encrypted by <a href="https://stripe.com/" target="blank">Stripe</a>. Music Sequencing does not collect, retain or ever see your card information.
+              </p>
+              <p>Email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a> with any questions.
               </p>
 
 
             </LessonInfoSubject>
             <LessonCards>
-              <Checkout amount={oneHourLesson} title="1hr of Lessons" price="$60" description="Book as needed. Perfect for filling in knowledge gaps and creating a development plan." />
-              <Checkout amount={fourHourLesson} title="4 hrs of Lessons" price="$195" description="Accelerate your development with multiple lessons and direct feedback on your progress." />
-              <Checkout amount={twelveHourLesson} title="12 hrs of Lessons" price="$445" description="A highly personalized curriculum of excercises and project evaluations to get you to the next level." />
+              <Checkout amount={oneHourLesson} title="1hr of Lessons" price={`$${oneHourLesson / 100}`} description="Book as needed. Perfect for filling in knowledge gaps and creating a development plan." />
+              <Checkout amount={fourHourLesson} title="4 hrs of Lessons" price={`$${fourHourLesson / 100}`} description="Accelerate your development with multiple lessons and direct feedback on your progress." />
+              <Checkout amount={twelveHourLesson} title="12 hrs of Lessons" price={`$${twelveHourLesson / 100}`} description="A highly personalized curriculum of excercises and project evaluations to get you to the next level." />
             </LessonCards>
             <LessonInfoSubject>
               <p></p>
@@ -341,7 +349,7 @@ class Lessons extends React.Component {
                   <p >After graduating from <a href="https://www.berklee.edu/" target="blank">
                     {' '}
                     Berklee College of Music
-                </a>{' '} in 2011, Alex moved to Los Angeles to work in music. {' '} As an early producer for{' '}
+                </a>{' '} in 2011, Alex moved to Los Angeles to work in music. {' '} As a producer for{' '}
                     <a href="https://output.com/" target="blank">
                       Output
                 </a>,
@@ -356,8 +364,8 @@ class Lessons extends React.Component {
                     <a href="https://output.com/arcade" target="blank">
                       Arcade
                 </a>.
-                                                                                                  He has composed and engineered extensively for films and shows
-                                                                                                  such as Amazon's
+                                                                                                                                                                                                                                                                                                                                                                                  He has composed and engineered extensively for films and shows
+                                                                                                                                                                                                                                                                                                                                                                                  such as Amazon's
                 <a href="https://www.imdb.com/title/tt3973768/" target="blank">
                       {' '}
                       Hand of God
@@ -370,7 +378,11 @@ class Lessons extends React.Component {
                       {' '}
                       Poltergeist.</a>
                   </p>
-                  <p>A multi-genre composer, producer and songwriter, Alex is the founder of Music Sequencing.com. He's also super nice.</p>
+                  <p>A multi-genre composer, producer and songwriter, Alex is the founder of Music Sequencing.com</p>
+                  {/* <p>"I love that in today's world anybody with a computer can start making music. My goal in music education is to help students break through their barriers so they are actually able to create the music they imagine." - Alex</p> */}
+                  <p>"My goal in music education is to help students
+                    break through their barriers and enable them
+                    to create the music they always imagined making." - Alex</p>
                   <SocialWrapper margin="0px, 0px, 40px, 0px">
                     <SocialLink href="https://soundcloud.com/alex_nye_alex_nye" target="blank">
                       <FontAwesomeIcon
