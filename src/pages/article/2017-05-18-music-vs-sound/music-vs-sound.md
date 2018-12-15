@@ -39,9 +39,9 @@ Luckily, this high pitched thing can be filtered out with an EQ. Using today's t
 
 Now listen to this.
 
-<iframe src="https://www.youtube.com/embed/YPiXsyIG3h3" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E86d61lQiR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-There is also some room noise in the recording too. Ignore that, ignore the lady, ignore the background music and movies for a moment and just listen to the sound of his voice as he is being interviewed. Compared to the first video, James Earl Jones is older, he kind of sounds like he has a little cold, and he is being recorded with different equipment. As far as the sound goes in pure abstractions, one difference I hear is the high-mid frequencies aren't as present as they were in the first video, it sounds a little bit flatter. I also hear the low frequencies in his voice aren't quite as warm or controlled as they were in the first video but they are more present in the sub range.<strong>
+Ignore the lady and just listen to the sound of his voice as he is being interviewed. Compared to the first video, James Earl Jones is older, he kind of sounds like he has a little cold, and he is being recorded with different equipment. As far as the sound goes in pure abstractions, the big difference is the low warm frequencies are largely absent. It's much more mid-rangey and missing what really makes James Earl Jones voice such a powerful tool in movies.<strong>
 </strong>
 
 When you are listening to the sound, purely the sound, the fact that it is a voice saying words at all eventually could be lost on you. To the layman, both James Earl Jones' just sound like James Earl Jones, but the sound is completely different to a discerning ear. If you are able to hear the different qualities and understand what's happening you are capable of sculpting more pleasant sound.
