@@ -64,7 +64,7 @@ const LandingCard = props => {
           <h2>{props.title}</h2>
         </TitleContainer>
       </Link>
-      <p>{props.caption}</p>
+      {/* <p>{props.caption}</p> */}
 
       {/* title / link */}
       {/* description */}
