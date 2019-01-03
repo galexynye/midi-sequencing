@@ -13,7 +13,7 @@ tags: ['tips', 'gear', 'mixing', 'basics']
 <!-- TODO: Add More Affiliate Links (Or Link To Store) -->
 <img src="./media/how-to-build-a-home-studio/studio-1.jpg" alt="A very nice Home Studio " />
 
-Building and upgrading a studio is a skill of music production.
+<!-- Building and upgrading a studio is a skill of music production. -->
 
 <!-- Knowing what equipment to buy and when to buy it will improve your sound without wasting time and money. -->
 
@@ -21,13 +21,13 @@ This guide is fully comprehensive, including all essential gear, great plugins a
 
 We are going to take a look at how a studio build evolves from humble beginnings all the way to touring some of the best home studio's ever built and every step in between.
 
-Below is a clickable index so you can jump to whatever information is most relevant to your situation.
+<!-- Below is a clickable index so you can jump to whatever information is most relevant to your situation. -->
 
 <!-- Note: Tier 3 includes a large checklist of different tools and quality gear essential to a studio. Here is the overview -->
 
-<h2  id="buildIndex">Build a Studio Index</h2>
+<!-- <h2  id="buildIndex">Build a Studio Index</h2> -->
 
-<div class="spacedList">
+<!-- <div class="spacedList">
 <ul style="list-style-type:none; margin-top: 20px;">
  	<li ><a href="#tier1">Tier 1: A computer, DAW and headphones</a></li>
  	<li ><a href="#tier2">Tier 2: Interface, Mic, Midi controller and Monitors</a>
@@ -53,7 +53,7 @@ Below is a clickable index so you can jump to whatever information is most relev
  	<li ><a href="#tier6">Tier 6: I'm rich bitch!</a></li>
  	<li ><a href="#tier7">Tier 7: Hans Zimmer</a></li>
 </ul>
-</div>
+</div> -->
 
 <h2 class="aClearNav" id="tier1">Tier 1 : A Computer, DAW, and Headphones</h2>
 

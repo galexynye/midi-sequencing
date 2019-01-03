@@ -9,6 +9,12 @@ import ContactForm from '../components/ContactForm'
 import { Link } from 'gatsby'
 import Blurb from '../styled/Blurb'
 
+
+const HomeLinkWrapper = styled.div`
+  max-width: 500px;
+  margin: auto;
+`
+
 const Contact = () => {
   return (
     <Wrapper>
@@ -19,8 +25,9 @@ const Contact = () => {
         }
       />
       <Menu sideNav={true} />
-
-      {/* <HomeLink margin="0px 0px 10px 0px" /> */}
+      <HomeLinkWrapper>
+        <HomeLink margin="0px 0px 10px 0px" />
+      </HomeLinkWrapper>
       <Blurb>
         <h1>Write Us</h1>
         <p>
@@ -35,9 +42,8 @@ const Contact = () => {
         <p>
         */}
         <p>
-          Those interested in booking private lessons please indicate the
-          time(s) and date(s) you would prefer. See the{' '}
-          <Link to="/lessons">lessons page</Link> for more information.
+          Interested in booking private lessons? Let me know here or checkout the
+          <Link to="/lessons"> lessons page</Link> for more information.
         </p>
       </Blurb>
       <ContactForm subject={true} />

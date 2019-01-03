@@ -174,7 +174,10 @@ My hope here was to use these extreme examples to demonstrate what a compressor 
 
 I'll be writing more articles and making more videos on compression in the future. There's so much more stuff that needs squashing and explaining. 
 
-Oh yeah, I teach private lessons in mixing, producing and music theory over the interwebs where we can go over your mixes or whatever...I've only recently started doing lessons, and got a couple students so far, at the moment I'm offering a free first lesson as schedule allows to entice those who might be interested :) You can contact me at <a href="mailto:lessons@musicsequencing.com">alex@musicsequencing.com</a>.
+
+##Private Lessons
+
+I teach private lessons in mixing, producing and music theory online where we can go over your mixes or discuss whatever you are having problems with..At the moment I'm offering a free first lesson as schedule allows :) You can contact me at <a href="mailto:lessons@musicsequencing.com">alex@musicsequencing.com</a>.
 
 Have a great day, 
 Peace.

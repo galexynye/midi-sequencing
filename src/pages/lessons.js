@@ -286,6 +286,7 @@ class Lessons extends React.Component {
                 margin="0px 0px 0px 0px"
                 textAlign="center"
                 lesson={true}
+                submit="Book a Free Lesson!"
               />
             </LessonInfoSubject>
 
@@ -364,8 +365,8 @@ class Lessons extends React.Component {
                     <a href="https://output.com/arcade" target="blank">
                       Arcade
                 </a>.
-                                                                                                                                                                                                                                                                                                                                                                                  He has composed and engineered extensively for films and shows
-                                                                                                                                                                                                                                                                                                                                                                                  such as Amazon's
+                                                                                                                                                                                                                                                                                                                                                                                          He has composed and engineered extensively for films and shows
+                                                                                                                                                                                                                                                                                                                                                                                          such as Amazon's
                 <a href="https://www.imdb.com/title/tt3973768/" target="blank">
                       {' '}
                       Hand of God
@@ -380,9 +381,9 @@ class Lessons extends React.Component {
                   </p>
                   <p>A multi-genre composer, producer and songwriter, Alex is the founder of Music Sequencing.com</p>
                   {/* <p>"I love that in today's world anybody with a computer can start making music. My goal in music education is to help students break through their barriers so they are actually able to create the music they imagine." - Alex</p> */}
-                  <p>"My goal in music education is to help students
+                  {/* <p>"My goal in music education is to help students
                     break through their barriers and enable them
-                    to create the music they always imagined making." - Alex</p>
+                    to create the music they always imagined making." - Alex</p> */}
                   <SocialWrapper margin="0px, 0px, 40px, 0px">
                     <SocialLink href="https://soundcloud.com/alex_nye_alex_nye" target="blank">
                       <FontAwesomeIcon

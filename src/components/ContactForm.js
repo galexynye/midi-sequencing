@@ -211,7 +211,7 @@ class ContactForm extends React.Component {
             </label>
           </p>
           <p>
-            <button style={{ backgroundColor: "#700bea", color: 'white' }} type="submit">Submit</button>
+            <button style={{ backgroundColor: "#700bea", color: 'white' }} type="submit">{this.props.submit ? this.props.submit : "Contact"}</button>
           </p>
         </form>
       </GeneralContact>
