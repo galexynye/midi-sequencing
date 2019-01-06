@@ -2,27 +2,29 @@
 path: '/article/which-daw-should-i-use'
 title: 'Which DAW Should You Use?'
 author: 'Alex Nye'
-date: '2017-05-04'
+date: '2019-01-04'
 category: 'Tutorials'
 subcategory: 'Build A Studio'
 subject: 'DAW'
 tags: ['basics', 'software', 'daw']
 ---
 
-![Logos of Digital Audio Workstations](./Daws-20.jpg 'Famous DAWS')
+<!-- ![Logos of Digital Audio Workstations](./Daws-20.jpg 'Famous DAWS') -->
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Owx4CE3STUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Each <strong>D</strong>igital <strong>A</strong>udio <strong>W</strong>orkstation has different advantages and pitfalls for music creation. If you want to work professionally in audio you might want get to know Pro Tools, if you're making tracks in your bedroom on a PC, FL Studio might be your best choice, here's why.
 
-<h2 >NOT Audio Quality</h2>
+<!-- <h2 >NOT Audio Quality</h2>
 
-Whether you use Pro Tools First(the free version of Pro Tools) or Pro Tools HD(super expensive version), Garage Band, Logic Pro, Ableton, Reaper, ect., when you play the same digital audio file in any DAW, it will sound the same. All factors being equal (mic, interface, bit depth, sample rate, settings), when you record audio<em> into</em> a DAW the quality will also be the same. Now, some people who know their stuff will swear they hear a difference between audio engines, but it's not a reason to choose one DAW over another. The real advantage of expensive versions of DAWs is more features, plugins, virtual instruments, higher track counts, better routing capabilities ect. but <strong>not</strong> the quality of the digital audio. Cool.
+Whether you use Pro Tools First(the free version of Pro Tools) or Pro Tools HD(super expensive version), Garage Band, Logic Pro, Ableton, Reaper, ect., when you play the same digital audio file in any DAW, it will sound the same. All factors being equal (mic, interface, bit depth, sample rate, settings), when you record audio<em> into</em> a DAW the quality will also be the same. Now, some people who know their stuff will swear they hear a difference between audio engines, but it's not a reason to choose one DAW over another. The real advantage of expensive versions of DAWs is more features, plugins, virtual instruments, higher track counts, better routing capabilities ect. but <strong>not</strong> the quality of the digital audio. Cool. -->
 
-<h2 >What DAWs are Used for</h2>
+<h2 >How DAWs are used to make music.</h2>
 
 Some DAWs shine for specific uses but suck at others. The list of what we'll focus on is defined below specifically for this article and not necessarily each term's general definition. Here's some of the main things we use DAWs for.
 
 <ul>
- 	<li ><strong>Tracking: </strong>Not just recording audio but recording groups of musicians like bands or full orchestras in recording sessions. This also refers to the ability to record multiple takes and edit between them(comping).</li>
+ 	<li ><strong>Tracking: </strong>Not only recording audio but recording groups of musicians like bands or full orchestras in recording sessions. This also refers to the ability to record multiple takes and edit between them(comping).</li>
  	<li ><strong>Producing:</strong> Making tracks and beats inside your DAW. A DAW that is good for producing ideally comes with built in Virtual Instruments and effects along with solid midi/audio sequencing and editing capabilities.</li>
  	<li ><strong>Mixing:  </strong>Refers to editing audio, automation, post-production and other audio mixing needs.</li>
  	<li ><strong>Composing:</strong> Composing music for film/games/production tracks. DAW features that benefit composers include advanced midi capabilities, built in notation software as well as a good supply of  Virtual Instruments and effects.</li>
@@ -35,9 +37,9 @@ Some DAWs shine for specific uses but suck at others. The list of what we'll foc
 
 Before we do a run down of what different DAWs do best you might want to know how much bread they are and if they'll work on your computer. A lot of these DAWs have some form of free trial that you can test out before you buy. Here are the prices in no particular order.
 
-<p ><strong><a href="https://www.ableton.com/en/shop/live/" target="_blank" rel="noopener noreferrer">Ableton Live 9</a></strong>   - (Mac and PC) $79 Intro, $349 Standard, $599 Suite</p>
+<p ><strong><a href="https://www.ableton.com/en/shop/live/" target="_blank" rel="noopener noreferrer">Ableton Live 10</a></strong>   - (Mac and PC) $79 Intro, $349 Standard, $599 Suite</p>
 
-<p ><strong><a href="https://shop.propellerheads.se" target="_blank" rel="noopener noreferrer">Reason 9</a> </strong>by Propellerhead - (Mac and PC) $399.</p>
+<p ><strong><a href="https://shop.propellerheads.se" target="_blank" rel="noopener noreferrer">Reason 10</a> </strong>by Propellerhead - (Mac and PC) $399.</p>
 
 <p ><strong><a href="http://shop.avid.com/ccrz__Products?viewState=ListView&amp;cartID=&amp;categoryId=a3yi00000000127AAA&amp;&amp;store=shop" target="_blank" rel="noopener noreferrer">Pro Tools 12</a></strong> by Avid - (Mac and PC) Bare bones Pro Tools First is free. "Normal" Pro Tools is a $25 monthly "Subscription" or $599 to buy a "Perpetual License". A Pro Tools HD license is $1000 a year or $2500 for a perpetual license. It's another $100 dollars a year if you need to ask someone at Avid a question.  Regular Pro Tools has a bunch of limitations vs the full HD version(which requires you buy hardware). <a href="http://www.avid.de/pro-tools-first/compare" target="_blank" rel="noopener noreferrer">Here's where you can compare the versions.</a></p>
 
@@ -45,9 +47,9 @@ Before we do a run down of what different DAWs do best you might want to know ho
 
 <p ><a href="https://www.apple.com/lae/logic-pro/" target="_blank" rel="noopener noreferrer"><strong>Logic Pro X </strong></a>by Apple - (Only Mac) $199, everything included. GarageBand comes free with Macs and is worth using before you know if you'll want Logic.</p>
 <p ><strong><a href="http://www.reaper.fm/purchase.php" target="_blank" rel="noopener noreferrer">Reaper</a></strong> by Cockos. (Mac or PC or Linux (unofficially)) - $60 for Discounted License or $225 Commercial License. Both licenses include the full program, the commercial license should be bought by people making more than $20,000 a year doing music who are not using Reaper for educational purposes or a non-profit.</p>
-<p ><a href="https://www.steinberg.net/en/products/cubase/cubase_pro.html" target="_blank" rel="noopener noreferrer"><strong>Cubase 9</strong></a> by Steinberg  (Mac and PC) $579.99 Cubase Pro, $329.99 Cubase Artist, $99.99 Cubase Elements. <a href="https://www.steinberg.net/en/products/cubase/comparison.html" target="_blank" rel="noopener noreferrer">Compare the versions</a>. Similar to Pro Tools, comes with software limitations to create different price points.</p>
+<p ><a href="https://www.steinberg.net/en/products/cubase/cubase_pro.html" target="_blank" rel="noopener noreferrer"><strong>Cubase 10</strong></a> by Steinberg  (Mac and PC) $579.99 Cubase Pro, $329.99 Cubase Artist, $99.99 Cubase Elements. <a href="https://www.steinberg.net/en/products/cubase/comparison.html" target="_blank" rel="noopener noreferrer">Compare the versions</a>. Similar to Pro Tools, comes with software limitations to create different price points.</p>
 <p ><a href="https://www.bitwig.com/en/bitwig-studio.html" target="_blank" rel="noopener noreferrer"><strong>Bitwig Studio</strong><strong> 2 </strong></a>by Bitwig (Mac, PC and Linux) $399 Normal, $269 Educational. Includes 12 months free upgrades.</p>
-<p ><strong><a href="https://shop.presonus.com/products/software/studio-one-prods/Studio-One-3-Digital-Downloads" target="_blank" rel="noopener noreferrer">Studio One 3</a></strong> by PreSonus (Mac and PC) $399 Professional, $99 Artist, Prime is free.</p>
+<p ><strong><a href="https://shop.presonus.com/products/software/studio-one-prods/Studio-One-3-Digital-Downloads" target="_blank" rel="noopener noreferrer">Studio One 4</a></strong> by PreSonus (Mac and PC) $399 Professional, $99 Artist, Prime is free.</p>
 <p ><strong><a href="https://www.cakewalk.com/Products/SONAR/Versions#start" target="_blank" rel="noopener noreferrer">Sonar</a></strong> by Cakewalk (Only PC) $499 Platinum, $199 Professional, $99 Artist, $49 Home Studio. It doesn't limit track counts once you buy the artist level, which is nice. The price difference there is about the plugins, loops, samples, and virtual instruments</p>
 <p ><strong>There are more DAWs</strong> out there but these are the main ones. As for best bang for the buck, in my humble opinion, it is either Reaper or Logic depending on how many built in features you want and if you already have a Mac or not. Logic is able to have so many features at such a low price because Apple makes their money selling the computers, not Logic.</p>
 <p ><strong>A Special Note About Pro Tools: </strong>Pro Tools was the first DAW to do digital music well and thus spread like wild fire into professional studios in the 90s and early 2000s. If you intend to work in audio professionally you will most likely have know a bit about Pro Tools. You will benefit greatly by understanding the basic audio editing, recording, file handling and key commands.</p>
@@ -92,10 +94,14 @@ That being said, if you find yourself composing in the Hollywood system you're m
 <h3 >Live Performance</h3>
 <ul>
  	<li>Use: Ableton Live</li>
- 	<li>Don't Use: Something besides Ableton Live</li>
+ 	<li>Don't Use: Something besides Ableton Live (Unless you really know what you're doing)</li>
 </ul>
 
-I might seem a bit stoked on Ableton Live but I Don't think I'm out of wack here. If somebody out there, who has used Ableton/has access to it, and chooses to use something else for live performances, I'd be interested to hear about why (And I Don't mean DJ software, they are different, but you can totally DJ with Live). Ableton Live is extremely stable and it is really, really easy to assign basically anything to a midi controller. There is a bunch of hardware out there both by Ableton and third parties design to specifically work with Live.
+I might seem a bit stoked on Ableton Live but I don't think I'm out of wack here. 
+
+Whether you are an EDM producer performing live or a rock band useing some backing tracks, Ableton can do the job.
+
+ Ableton Live is extremely stable and it is really, really easy to assign basically anything to a midi controller. There is a bunch of hardware out there both by Ableton and third parties design to specifically work with Live.
 <br>
 
 <h3 >Songwriting</h3>
