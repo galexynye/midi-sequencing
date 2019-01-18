@@ -13,6 +13,7 @@ const paymentSuccess = "success"
 const paymentFailure = "failure"
 const processingPayment = "processing"
 
+// Dev or Prod API
 const myFetch = process.env.STRIPE_LAMBDA_API
 
 const PurchaseCard = styled.div`
@@ -90,8 +91,7 @@ class Checkout extends React.Component {
             amount: this.props.amount,
             description: this.props.title,
             token: token => {
-                /// TODO: THIS NEEDS LAMBDA URL of PRODUCTION
-                // fetch(`https://sfjzk8cuv9.execute-api.us-east-1.amazonaws.com/dev/billing`, { // Fetch only works as a variable?
+                // Fetch only works as a variable?
                 this.setState({ paymentMessage: processingPayment })
                 fetch(myFetch, {
                     method: "POST",

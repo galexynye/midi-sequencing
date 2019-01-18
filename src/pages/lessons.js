@@ -8,7 +8,6 @@ import ContactForm from '../components/ContactForm'
 import LessonsPosterOrange from '../assets/Lessons/LessonsPosterOrange.jpg'
 import ResponsiveIframe from '../styled/ResponsiveIframe'
 import Checkout from '../components/Purchase/Checkout'
-// import Alex from '../assets/AlexPics/singingcut.jpg'
 import DeskPic from '../assets/Lessons/DeskPhoto.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -95,9 +94,9 @@ const LessonInfoWrapper = styled.div`
   }
 `
 
+
 const LessonInfoSubject = styled.div`
    margin: ${props => props.margin || '40px 0px 0px 0px'};
-   /* margin-top: 40px; */
 `
 
 const LessonsBio = styled.div`
@@ -118,16 +117,11 @@ const LessonsBio = styled.div`
   }
   @media (max-width: 700px){
     flex-flow: wrap;
-      justify-content: center;
+    justify-content: center;
     text-align: center;
   img{
     padding: 20px 0px;
-    /* max-height: 200px; */
-    /* display: block; */
     max-height: 300px;
-
-    /* max-width: 100%; */
-    /* max-width: 100%; */
   }
 }
 `
@@ -321,26 +315,6 @@ class Lessons extends React.Component {
             <LessonInfoSubject>
               <h2 style={{ marginTop: '25px' }}>About the Instructor</h2>
 
-              {/* <ResponsiveIframe>
-                <iframe
-                  // src="https://www.youtube-nocookie.com/embed/X1S9RqgFHy0?start=34"  //Phil Collins
-                  // src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I"  //Midi Controller
-                  // src="https://www.youtube-nocookie.com/embed/EErrKkgy8Ck"  //Reverb
-                  // src="https://www.youtube-nocookie.com/embed/gN_om4q67V8" // Giant Trailer Drums
-                  src="https://www.youtube-nocookie.com/embed/H0Wj1DL-lyg" // 
-
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />{' '}
-              </ResponsiveIframe> */}
-
-              {/* <p>
-              // Los ageless
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436034745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-              </p> */}
-
-
               <LessonsBio>
                 {/* <div> */}
 
@@ -365,8 +339,8 @@ class Lessons extends React.Component {
                     <a href="https://output.com/arcade" target="blank">
                       Arcade
                 </a>.
-                                                                                                                                                                                                                                                                                                                                                                                          He has composed and engineered extensively for films and shows
-                                                                                                                                                                                                                                                                                                                                                                                          such as Amazon's
+                                                                                                                                                                                                                                                                                                                                                                                                          He has composed and engineered extensively for films and shows
+                                                                                                                                                                                                                                                                                                                                                                                                          such as Amazon's
                 <a href="https://www.imdb.com/title/tt3973768/" target="blank">
                       {' '}
                       Hand of God
