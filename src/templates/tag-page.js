@@ -1,10 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-import Wrapper from '../components/Wrapper'
+import Wrapper from '../styles/oldCrap/Wrapper'
 import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Footer from '../components/Footer'
-import Menu from '../components/Menu/Menu'
+import Menu from '../components/MainNavigation/Menu'
 // Components
 import { Link, graphql } from 'gatsby'
 import Styled from 'styled-components'
@@ -21,7 +21,7 @@ const Tags = ({ pageContext, data }) => {
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
-  } tagged with "${tag}"`
+    } tagged with "${tag}"`
 
   return (
     <Wrapper>

@@ -1,12 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Wrapper from '../components/Wrapper'
+import Wrapper from '../styles/oldCrap/Wrapper'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 // import Helmet from "react-helmet"
 import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Footer from '../components/Footer'
-import Menu from '../components/Menu/Menu'
+import Menu from '../components/MainNavigation/Menu'
 // Utilities
 import kebabCase from 'lodash/kebabCase'
 import styled from 'styled-components'
@@ -26,31 +26,31 @@ const TagsPage = ({
     },
   },
 }) => (
-  <Wrapper>
-    <Helmet
-      htmlAttributes={{ lang: 'en' }} // meta={[{ name: 'description', content: siteDescription }]}
-      title={`All Tags | Music Sequencing`}
-    />
-    <Menu sideNav={true} />
-    <HomeLink />
-    <h1 style={{ marginTop: '10px' }}>All Tags</h1>
-    <TagsList>
-      {group.map(tag => (
-        <li
-          key={tag.fieldValue}
-          style={{
-            paddingRight: '15px',
-          }}
-        >
-          <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-            {tag.fieldValue} ({tag.totalCount})
+    <Wrapper>
+      <Helmet
+        htmlAttributes={{ lang: 'en' }} // meta={[{ name: 'description', content: siteDescription }]}
+        title={`All Tags | Music Sequencing`}
+      />
+      <Menu sideNav={true} />
+      <HomeLink />
+      <h1 style={{ marginTop: '10px' }}>All Tags</h1>
+      <TagsList>
+        {group.map(tag => (
+          <li
+            key={tag.fieldValue}
+            style={{
+              paddingRight: '15px',
+            }}
+          >
+            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+              {tag.fieldValue} ({tag.totalCount})
           </Link>
-        </li>
-      ))}
-    </TagsList>
-    <Footer />
-  </Wrapper>
-)
+          </li>
+        ))}
+      </TagsList>
+      <Footer />
+    </Wrapper>
+  )
 
 TagsPage.propTypes = {
   data: PropTypes.shape({

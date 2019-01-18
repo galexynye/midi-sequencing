@@ -5,19 +5,19 @@ import styled from 'styled-components'
 import Footer from './Footer'
 import MusicSequencingWords from '../assets/MusicSequencingWordsLogo.png'
 import ScrollToTop from '../components/ScrollToTop'
-import Menu from './Menu/Menu'
+import Menu from './MainNavigation/Menu'
 import { injectGlobal } from 'styled-components'
 
 // Global Styling
 injectGlobal`
   * {
-    font-family: 'Avenir';
-    margin: 0px;
-    padding: 0px;
+      font-family: 'Avenir';
   }
 
   body {
     line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
   }
 
   a {
@@ -48,7 +48,7 @@ injectGlobal`
   .spacedList {
     ul{
       li {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
     }
     ol{

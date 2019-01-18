@@ -1,6 +1,6 @@
 import React from 'react'
-import Wrapper from '../components/Wrapper'
-import Menu from '../components/Menu/Menu'
+import Wrapper from '../styles/oldCrap/Wrapper'
+import Menu from '../components/MainNavigation/Menu'
 import { Link } from 'gatsby'
 
 const NotFoundPage = () => (

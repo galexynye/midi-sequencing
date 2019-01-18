@@ -2,12 +2,12 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import HomeLink from '../components/HomeLinks/HomeLinkLogo'
-import Menu from '../components/Menu/Menu'
+import Menu from '../components/MainNavigation/Menu'
 import Footer from '../components/Footer'
-import Wrapper from '../components/Wrapper'
+import Wrapper from '../styles/oldCrap/Wrapper'
 import ContactForm from '../components/ContactForm'
 import { Link } from 'gatsby'
-import Blurb from '../styled/Blurb'
+import Blurb from '../styles/oldCrap/Blurb'
 
 
 const HomeLinkWrapper = styled.div`

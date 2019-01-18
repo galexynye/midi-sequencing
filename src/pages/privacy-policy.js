@@ -2,8 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Footer from '../components/Footer'
-import Wrapper from '../components/Wrapper'
-import Menu from '../components/Menu/Menu'
+import Wrapper from '../styles/oldCrap/Wrapper'
+import Menu from '../components/MainNavigation/Menu'
 
 class Privacy extends React.Component {
   render() {

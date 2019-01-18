@@ -2,9 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Footer from '../components/Footer'
-import Wrapper from '../components/Wrapper'
-import Menu from '../components/Menu/Menu'
-import Blurb from '../styled/Blurb'
+import Wrapper from '../styles/oldCrap/Wrapper'
+import Menu from '../components/MainNavigation/Menu'
+import Blurb from '../styles/oldCrap/Blurb'
 
 class Thanks extends React.Component {
   render() {

@@ -27,7 +27,7 @@ We are going to take a look at how a studio build evolves from humble beginnings
 
 <!-- <h2  id="buildIndex">Build a Studio Index</h2> -->
 
-<!-- <div class="spacedList">
+<div class="spacedList">
 <ul style="list-style-type:none; margin-top: 20px;">
  	<li ><a href="#tier1">Tier 1: A computer, DAW and headphones</a></li>
  	<li ><a href="#tier2">Tier 2: Interface, Mic, Midi controller and Monitors</a>
@@ -53,7 +53,7 @@ We are going to take a look at how a studio build evolves from humble beginnings
  	<li ><a href="#tier6">Tier 6: I'm rich bitch!</a></li>
  	<li ><a href="#tier7">Tier 7: Hans Zimmer</a></li>
 </ul>
-</div> -->
+</div>
 
 <h2 class="aClearNav" id="tier1">Tier 1 : A Computer, DAW, and Headphones</h2>
 

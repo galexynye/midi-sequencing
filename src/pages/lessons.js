@@ -1,12 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import Menu from '../components/Menu/Menu'
+import Menu from '../components/MainNavigation/Menu'
 import BGVideo from '../assets/MidiSequencing Title_1_Sound.mp4'
 import Footer from '../components/Footer'
 import ContactForm from '../components/ContactForm'
 import LessonsPosterOrange from '../assets/Lessons/LessonsPosterOrange.jpg'
-import ResponsiveIframe from '../styled/ResponsiveIframe'
+import ResponsiveIframe from '../styles/oldCrap/ResponsiveIframe'
 import Checkout from '../components/Purchase/Checkout'
 import DeskPic from '../assets/Lessons/DeskPhoto.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -339,8 +339,8 @@ class Lessons extends React.Component {
                     <a href="https://output.com/arcade" target="blank">
                       Arcade
                 </a>.
-                                                                                                                                                                                                                                                                                                                                                                                                          He has composed and engineered extensively for films and shows
-                                                                                                                                                                                                                                                                                                                                                                                                          such as Amazon's
+                                                                                                                                                                                                                                                                                                                                                                                                                      He has composed and engineered extensively for films and shows
+                                                                                                                                                                                                                                                                                                                                                                                                                      such as Amazon's
                 <a href="https://www.imdb.com/title/tt3973768/" target="blank">
                       {' '}
                       Hand of God
