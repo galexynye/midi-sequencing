@@ -1,0 +1,1 @@
+// This will be one giant interpolated String that is injected Globally
