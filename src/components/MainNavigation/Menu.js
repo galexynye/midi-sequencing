@@ -10,7 +10,7 @@ import HeaderButton from '../HeaderButton'
 import TopNav from './TopNav'
 import MusicSequencing from '../../assets/MusicSeq-Words.png'
 
-const MenuContainer = styled.nav`
+const MenuContainer = styled.nav` 
   z-index: 10;
   ul {
     list-style-type: none;

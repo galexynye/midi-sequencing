@@ -10,6 +10,7 @@ import HomeWrapper from '../styles/oldCrap/HomeWrapper'
 import HomeCardsWrapper from '../styles/oldCrap/HomeCardsWrapper'
 import LandingCard from '../components/LandingCards/LandingCard'
 import favicon from '../assets/midi-sequencing-icon-circle.png'
+import SiteContainer from '../components/05_page/Layout/SiteContainer'
 
 const HomeLinkWrapper = styled.div`
   max-width: 500px;
@@ -42,7 +43,8 @@ class BlogIndex extends React.Component {
     )
     return (
       <HomeWrapper>
-        <Layout location={this.props.location}>
+        {/* <Layout location={this.props.location}> */}
+        <SiteContainer>
           <Helmet
             htmlAttributes={{ lang: 'en' }}
             meta={[
@@ -191,7 +193,8 @@ class BlogIndex extends React.Component {
               {/* <p>Please consider signing up for my mailing list below. </p> */}
             </div>
           )}
-        </Layout>
+        {/* </Layout> */}
+        </SiteContainer>
       </HomeWrapper>
     )
   }

@@ -9,6 +9,7 @@ const NotFoundPage = () => (
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     {/* <Link to="/">Click here to go home</Link> */}
+    <a href="https://www.musicsequencing.com">Go back home</a>
   </Wrapper>
 )
 
