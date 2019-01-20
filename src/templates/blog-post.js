@@ -5,7 +5,7 @@ import get from 'lodash/get'
 import Wrapper from '../styles/oldCrap/Wrapper'
 import Menu from '../components/MainNavigation/Menu'
 import Footer from '../components/Footer'
-import ScrollToTop from '../components/ScrollToTop'
+// import ScrollToTop from '../components/ScrollToTop'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -72,14 +72,14 @@ class BlogPostTemplate extends React.Component {
         {/* <Bio /> */}
         <p>written by {author}</p>
         <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            marginTop: '15px',
-            padding: 0,
-          }}
+        // style={{
+        //   display: 'flex',
+        //   flexWrap: 'wrap',
+        //   justifyContent: 'space-between',
+        //   listStyle: 'none',
+        //   marginTop: '15px',
+        //   padding: 0,
+        // }}
         >
           <li>
             {previous && (
@@ -97,7 +97,7 @@ class BlogPostTemplate extends React.Component {
           </li>
         </ul>
         {/* </Layout> */}
-        <ScrollToTop scrollStepInPx="60" delayInMs="20" />
+        {/* <ScrollToTop scrollStepInPx="60" delayInMs="20" /> */}
         <Footer />
       </Wrapper>
     )

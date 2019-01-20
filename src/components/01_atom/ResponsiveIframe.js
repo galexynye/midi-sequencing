@@ -1,6 +1,4 @@
-// WAS ADDED to 01_atom folder
 import styled from 'styled-components'
-
 
 const ResponsiveIframe = styled.div`
   position: relative;

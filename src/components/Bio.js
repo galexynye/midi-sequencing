@@ -17,14 +17,6 @@ class Bio extends React.Component {
     return (
       <BioWrapper>
         <p>Gear Reviews, Tutorials, and 1-on-1 Lessons</p>
-        {/* <div
-          className="marTSmall"
-          style={{
-            textAlign: 'center',
-          }}
-        >
-          <Social size="1x" />
-        </div> */}
       </BioWrapper>
     )
   }

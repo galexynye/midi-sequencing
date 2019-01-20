@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-// An Actual Useful Component potentially 
-
 const H2Button = styled.button`
   margin: 5px 0px;
   padding: 0px;

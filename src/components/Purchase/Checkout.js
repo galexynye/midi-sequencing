@@ -3,6 +3,7 @@ import MSLogo from '../../assets/MusicSeq-Logo_200px.png'
 import styled from 'styled-components'
 // import PayPal from './PayPal'
 
+// Will be a molecule
 
 /* TODO:
  
@@ -121,22 +122,31 @@ class Checkout extends React.Component {
     // TODO: Create a Success/Error component to replace the card content. Refactor the Purchase card component's insides into 
     // it's own component. Success component contains an X button in the top right corner to reset to the purchase component. 
 
-
-
     render() {
 
         // Actual Purchasing JSX 
         const purchase = (<div>
-            <div style={{ height: "80%" }}>
-                <h2 style={{ height: "30px" }}>{this.props.title}</h2>
-                <p style={{ marginBottom: '0px', height: "30px" }}>{this.props.price}</p>
+            <div
+            // style={{ height: "80%" }}
+            >
+                <h2
+                // style={{ height: "30px" }}
+                >{this.props.title}
+                </h2>
+                <p
+                // style={{ marginBottom: '0px', height: "30px" }}
+                >{this.props.price}</p>
                 <p>{this.props.description}</p>
             </div>
 
-            <div style={{ height: "20%" }}>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div
+            // style={{ height: "20%" }}
+            >
+                <div
+                // style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+                >
                     <button
-                        style={buttonStyles}
+                        // style={buttonStyles}
                         onClick={event => this.openStripeCheckout(event)}
                         disabled={this.state.disabled}
                     >
@@ -150,11 +160,17 @@ class Checkout extends React.Component {
         const purchaseSucceed = (<div>
             {/* <div style={{ height: "80%" }}> */}
             <div>
-                <h2 style={{ height: "30px" }}>Purchase Successful!</h2>
-                <div style={{ fontSize: "14px" }}>
+                <h2
+                // style={{ height: "30px" }}
+                >Purchase Successful!</h2>
+                <div
+                // style={{ fontSize: "14px" }}                
+                >
                     <p>Thank you for your purchase of {this.props.title}.</p>
                     <p>Please email <a href="mailto:lessons@musicsequencing.com">lessons@musicsequencing.com</a> with the subject "Schedule Lessons", include your name and prefered starting date(s)/time(s) to get started!</p>
-                    <button onClick={this.resetButton} style={{ color: "red", border: "none", backgroundColor: "white" }}>Close</button>
+                    <button onClick={this.resetButton}
+                    // style={{ color: "red", border: "none", backgroundColor: "white" }}
+                    >Close</button>
                 </div>
             </div>
         </div >)

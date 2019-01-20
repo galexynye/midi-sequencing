@@ -31,7 +31,7 @@ const Social = props => {
         <FontAwesomeIcon
           icon={faYoutube}
           size={props.size}
-          style={{ maxHeight: '20px' }}
+        // style={{ maxHeight: '20px' }}
         />
         {/* <FontAwesomeIcon icon={faYoutube} size="1x" /> */}
       </SocialLink>
@@ -42,7 +42,7 @@ const Social = props => {
         <FontAwesomeIcon
           icon={faReddit}
           size={props.size}
-          style={{ maxHeight: '20px' }}
+        // style={{ maxHeight: '20px' }}
         />
       </SocialLink>
       <SocialLink
@@ -52,7 +52,7 @@ const Social = props => {
         <FontAwesomeIcon
           icon={faFacebook}
           size={props.size}
-          style={{ maxHeight: '20px' }}
+        // style={{ maxHeight: '20px' }}
         />
       </SocialLink>
       {/* <SocialLink href="https://twitter.com/midisequencing" target="blank">

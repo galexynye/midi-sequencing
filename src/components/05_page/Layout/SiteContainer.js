@@ -5,22 +5,22 @@ import Footer from '../../04_template/Footer/Footer'
 import { injectGlobal } from 'styled-components'
 import msTheme from '../../../styles/Theme'
 
-// Global Styling
+// Global Styling & Utility Classes
 injectGlobal`
 *{
-    /* color: ${msTheme.colors.orange}; */
+    
 }
 body{
     margin: 0;
     padding: 0;
-    /* background-color: blue; */
+    background-color: #ffffff;
     box-sizing: border-box;
-    font-family: 'Crimson Text';
+    font-family: ${msTheme.typography.bodyFont};
 }
 
 h1 {
-    color: #231900;
-	font-family: 'Open Sans';
+    color: ${msTheme.colors.text};
+	font-family: ${msTheme.typography.headerFont};
 	font-size: 94px;
 	font-weight: 800;
 	letter-spacing: -2px;
@@ -30,8 +30,8 @@ h1 {
 }
 
 h2 {
-    color: #231900;
-	font-family: 'Open Sans';
+    color: ${msTheme.colors.text};
+	font-family: ${msTheme.typography.headerFont};
 	font-size: 40px;
 	font-weight: 800;
 	letter-spacing: -2px;
@@ -46,7 +46,8 @@ h3, h4, h5 {
 }
 
 p {
-    color: #231900;
+    /* color: #231900; */
+    color: ${msTheme.colors.text};
 	font-family: 'Crimson Text';
 	font-size: 24px;
 	font-weight: 500;

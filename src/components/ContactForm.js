@@ -205,13 +205,15 @@ class ContactForm extends React.Component {
             <textarea
                 name="message"
                 // placeholder="Message"
-                style={{ marginTop: "30px" }}
+                // style={{ marginTop: "30px" }}
                 onChange={this._handleChange}
               />
             </label>
           </p>
           <p>
-            <button style={{ backgroundColor: "#700bea", color: 'white' }} type="submit">{this.props.submit ? this.props.submit : "Contact"}</button>
+            <button
+              // style={{ backgroundColor: "#700bea", color: 'white' }} 
+              type="submit">{this.props.submit ? this.props.submit : "Contact"}</button>
           </p>
         </form>
       </GeneralContact>

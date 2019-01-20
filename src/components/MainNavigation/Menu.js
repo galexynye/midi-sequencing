@@ -211,7 +211,7 @@ class Menu extends React.Component {
             Gear Reviews
           </HeaderButton>
           {this.state.displayGearReviews && <SubMenus>{gearReviews}</SubMenus>}
-          {/* <ul style={{ marginTop: '-10px' }}>{gearReviews}</ul> */}
+
           <Link to={`/lessons`}>
             <HeaderButton inputColor="#00ce78">Lessons</HeaderButton>
           </Link>
@@ -231,7 +231,9 @@ class Menu extends React.Component {
     const MobileMenu = (
       <MenuMobile>
         <Link to={'/'} onClick={this._handleClick}>
-          <img style={{ marginTop: '0px' }} src={MusicSequencing} />
+          <img
+            // style={{ marginTop: '0px' }} 
+            src={MusicSequencing} />
         </Link>
         {/* <HomeLink onClick={this._handleClick} /> */}
         <MenuLinks />

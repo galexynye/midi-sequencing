@@ -31,12 +31,17 @@ const Tags = ({ pageContext, data }) => {
       />
       <Menu sideNav={true} />
       <HomeLink />
-      <h1 style={{ marginTop: '10px' }}>{tagHeader}</h1>
+      <h1
+      // style={{ marginTop: '10px' }}
+      >{tagHeader}
+      </h1>
       <TagsList>
         {edges.map(({ node }) => {
           const { path, title } = node.frontmatter
           return (
-            <li key={path} style={{ marginBottom: '10px' }}>
+            <li key={path}
+            // style={{ marginBottom: '10px' }}
+            >
               <Link to={path}>{title}</Link>
             </li>
           )
@@ -46,7 +51,9 @@ const Tags = ({ pageContext, data }) => {
               This links to a page that does not yet exist.
               We'll come back to it!
             */}
-      <Link to="/tags" style={{ marginTop: '10px' }}>
+      <Link to="/tags"
+      // style={{ marginTop: '10px' }}
+      >
         All tags
       </Link>
       <Footer />

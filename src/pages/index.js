@@ -4,7 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Bio from '../components/Bio'
-import Layout from '../components/layout'
+// import Layout from '../components/layout'
 import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import HomeWrapper from '../styles/oldCrap/HomeWrapper'
 import HomeCardsWrapper from '../styles/oldCrap/HomeCardsWrapper'
@@ -115,7 +115,9 @@ class BlogIndex extends React.Component {
           {/* </HomeCardsWrapper> */}
           {/* Below is the Posts list Render */}
           {/* */}
-          <h2 style={{ margin: '50px 0px 20px 0px', fontSize: '40px' }}>
+          <h2 
+            // style={{ margin: '50px 0px 20px 0px', fontSize: '40px' }}
+          >
             Latest
           </h2>
           {showPosts.map(({ node }) => {
@@ -129,14 +131,14 @@ class BlogIndex extends React.Component {
                   <Link
                     to={`/tags/${tag}`}
                     className="hoverPointer"
-                    style={{
-                      display: 'flex',
-                      textDecoration: 'none',
-                      flexFlow: 'wrap',
-                      boxShadow: 'none',
-                      marginRight: '10px',
-                      color: '#2c62a4',
-                    }}
+                    // style={{
+                    //   display: 'flex',
+                    //   textDecoration: 'none',
+                    //   flexFlow: 'wrap',
+                    //   boxShadow: 'none',
+                    //   marginRight: '10px',
+                    //   color: '#2c62a4',
+                    // }}
                   >
                     {`${tag}`}
                   </Link>
@@ -146,9 +148,11 @@ class BlogIndex extends React.Component {
 
             return (
               <div key={node.fields.slug}>
-                <h3 style={{ marginBotton: '0px' }}>
+                <h3 
+                  // style={{ marginBotton: '0px' }}
+                >
                   <Link
-                    style={{ boxShadow: 'none', marginBottom: '0px' }}
+                    // style={{ boxShadow: 'none', marginBottom: '0px' }}
                     to={node.fields.slug}
                   >
                     {title}
@@ -156,23 +160,23 @@ class BlogIndex extends React.Component {
                 </h3>
 
                 <ul
-                  style={
-                    {
-                      listStyle: 'none',
-                      display: 'flex',
-                      flexFlow: 'wrap',
-                      marginTop: '-10px',
-                      marginBottom: '5px',
-                      marginLeft: '0px',
-                    } // marginTop: rhythm(-0.5),
-                  }
+                  // style={
+                  //   {
+                  //     listStyle: 'none',
+                  //     display: 'flex',
+                  //     flexFlow: 'wrap',
+                  //     marginTop: '-10px',
+                  //     marginBottom: '5px',
+                  //     marginLeft: '0px',
+                  //   } 
+                  // }
                 >
                   {tags}
                 </ul>
                 <small>{node.frontmatter.date}</small>
                 <p
                   dangerouslySetInnerHTML={{ __html: node.excerpt }}
-                  style={{ margin: '5px 0px 40px 0px' }}
+                  // style={{ margin: '5px 0px 40px 0px' }}
                 />
               </div>
             )

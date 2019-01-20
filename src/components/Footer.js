@@ -27,13 +27,13 @@ class Footer extends React.Component {
   render() {
     return (
       <div
-        style={{
-          // width: '600px',
-          // marginTop: '50px',
-          display: 'flex',
-          flexFlow: 'column',
-          alignItems: 'center',
-        }}
+      // style={{
+      //   // width: '600px',
+      //   // marginTop: '50px',
+      //   display: 'flex',
+      //   flexFlow: 'column',
+      //   alignItems: 'center',
+      // }}
       >
         {/* <Info>
           <Social size="1x" />
@@ -44,7 +44,7 @@ class Footer extends React.Component {
           <MailSignUp />
         </div> */}
         <div
-          style={{ marginTop: '30px', maxWidth: '200px', marginBottom: '0px' }}
+        // style={{ marginTop: '30px', maxWidth: '200px', marginBottom: '0px' }}
         >
           <HomeLink />
         </div>

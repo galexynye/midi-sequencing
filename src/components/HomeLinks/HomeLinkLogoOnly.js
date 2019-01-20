@@ -20,10 +20,10 @@ const HomeLink = props => {
     <HomeLinkLogoStyle displayBreak={props.displayBreak}>
       <Link to="/">
         <img
-          style={{
-            maxWidth: props.width ? props.width : '100%',
-            margin: props.margin ? props.margin : '0px',
-          }}
+          // style={{
+          //   maxWidth: props.width ? props.width : '100%',
+          //   margin: props.margin ? props.margin : '0px',
+          // }}
           src={MusicSequencing}
           alt="Home Link"
         />

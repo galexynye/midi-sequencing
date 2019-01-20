@@ -2,11 +2,13 @@ import React from 'react'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import Footer from './Footer'
+import Footer from '../Footer'
 import MusicSequencingWords from '../assets/MusicSequencingWordsLogo.png'
-import ScrollToTop from '../components/ScrollToTop'
-import Menu from './MainNavigation/Menu'
+// import ScrollToTop from '../components/ScrollToTop'
+import Menu from '../MainNavigation/Menu'
 import { injectGlobal } from 'styled-components'
+
+// Only for reference. not currently used on any page
 
 // Global Styling
 // injectGlobal`
@@ -119,7 +121,7 @@ class Template extends React.Component {
         {header}
         {children}
         <Footer />
-        <ScrollToTop scrollStepInPx="60" delayInMs="20" />
+        {/* <ScrollToTop scrollStepInPx="60" delayInMs="20" /> */}
       </div>
     )
   }

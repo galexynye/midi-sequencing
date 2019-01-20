@@ -80,7 +80,9 @@ export default class MailSignUP extends React.Component {
         </HeaderButton>
         {this.state.showSubmit && (
           <div>
-            <p style={{ marginTop: '0px' }}>
+            <p
+            // style={{ marginTop: '0px' }}
+            >
               Enter your email below for sweet emails every once in awhile.
             </p>
             <form onSubmit={this._handleSubmit}>
@@ -90,7 +92,9 @@ export default class MailSignUP extends React.Component {
                 placeholder="email"
                 name="email"
               />
-              <input style={{ width: '60px' }} type="submit" value="Subcribe" />
+              <input
+                // style={{ width: '60px' }} 
+                type="submit" value="Subcribe" />
             </form>
             {/* <p><small>Some ad blockers do not permit this signup form. You can also visit <a href="https://midisequencing.us15.list-manage.com/subscribe/post?u=959ef0b4d1c6a701f90f85f9e&amp;id=59168d9d12" target="blank">this link</a> to sign up. </small></p> */}
           </div>
