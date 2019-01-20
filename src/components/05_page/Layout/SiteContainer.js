@@ -15,7 +15,47 @@ body{
     padding: 0;
     /* background-color: blue; */
     box-sizing: border-box;
+    font-family: 'Crimson Text';
 }
+
+h1 {
+    color: #231900;
+	font-family: 'Open Sans';
+	font-size: 94px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	line-height: 84px;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+h2 {
+    color: #231900;
+	font-family: 'Open Sans';
+	font-size: 40px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	line-height: 45px;
+	/* margin-bottom: 72px; */
+	/* text-transform: uppercase; */
+    max-width: 650px;
+} 
+
+h3, h4, h5 {
+    font-size: 30px;
+}
+
+p {
+    color: #231900;
+	font-family: 'Crimson Text';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 34px;
+    /* margin: auto; */
+	margin-bottom: 34px;
+	max-width: 650px;
+}
+
 `
 
 class SiteContainer extends React.Component {

@@ -10,15 +10,9 @@ tags: ['gear', 'drums', 'samples']
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqEMxhItMi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
-In this review of Addictive Drums 2 I take a look at what makes it different from using regular drum samples and do an overview of the plugin. 
-
 ##What's Good About Addictive Drums 2 
 
 ###Addictive Drum's Realism
-
-For example, when you play a snare in Addictive Drums 2 you don't hear 1 sample, you might hear that snare through the overhead drum mics and room mics along with a blend of top and bottom close snare mics. 
 
 You can get incredibly realistic sounding drums with Addictive Drums because it is setup up how a recorded drum set would be setup. They've done a great job of mimicking things like mic bleed from different drums to go the extra mile into getting a realistic sound.
 

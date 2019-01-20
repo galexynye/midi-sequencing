@@ -50,7 +50,10 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Raleway`,
+            family: `Open Sans`,
+          },
+          {
+            family: `Crimson Text`,
           },
         ],
       },
