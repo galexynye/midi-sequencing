@@ -23,7 +23,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 40px; z-index: 1; overflow: visible`,
+              wrapperStyle: `margin-bottom: 27px; z-index: 1; overflow: visible`,
               // wrapperStyle: `margin-bottom: 1.2rem;`,
             },
           },
@@ -33,7 +33,8 @@ module.exports = {
               maxWidth: 1170,
               // TODO: Change 1170 to a variable
               // wrapperStyle: `margin-bottom: 1.0725rem`
-              wrapperStyle: `margin-bottom: 1.2rem; z-index: -1`,
+              // wrapperStyle: `margin-bottom: 1.2rem; z-index: -1`,
+              wrapperStyle: `margin-bottom: 27px; z-index: -1`,
               // wrapperStyle: `margin-bottom: 1.2rem;`,
             },
           },

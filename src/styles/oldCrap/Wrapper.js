@@ -19,20 +19,20 @@ const Wrapper = styled.div`
     margin-bottom: 1rem;
     padding-left: 1rem; */
   }
-
+/* 
   img {
     margin-top: 15px;
     margin-bottom: 15px;
     max-width: 100%;
-  }
+  } */
 
   /* .hoverPointer:hover {
     cursor: pointer;
   } */
 
-  iframe {
+  /* iframe {
     margin: 15px 0px;
-  }
+  } */
 
   @media (max-width: 1500px) {
     padding-left: 290px;

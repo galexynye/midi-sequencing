@@ -21,7 +21,7 @@ h1 {
     color: ${msTheme.colors.text};
 	font-family: ${msTheme.typography.headerFont};
 	font-size: 94px;
-	font-weight: 800;
+	font-weight: 300;
 	letter-spacing: -3px;
 	line-height: 87px;
 	margin-bottom: 30px;
@@ -31,18 +31,21 @@ h1 {
 h2 {
     color: ${msTheme.colors.text};
 	font-family: ${msTheme.typography.headerFont};
-	font-size: 32px;
+	font-size: 34px;
 	font-weight: 600;
 	letter-spacing: -1px;
-	line-height: 36px;
+	line-height: 39px;
 	margin-bottom: 20px;
+    padding-top: 20px;
 	/* text-transform: uppercase; */
     max-width: 650px;
+    
 } 
 
 h3, h4, h5 {
     font-size: 27px;
-    margin-bottom: 17px;
+    margin-bottom: 14px;
+    padding-top: 5px;
 }
 
 p {
@@ -76,7 +79,7 @@ ol {
 li {
     font-size: 19px;
     line-height: 27px;
-    margin-bottom: 5px;
+    margin: 0px 0px 5px 5px;
 }
 
 a {
