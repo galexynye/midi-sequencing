@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
+// Split out into Article Wrapper and Other Wrappers
+
 const Wrapper = styled.div`
   position: relative;
-  max-width: 800px;
+  max-width: 650px;
   margin-top: 60px;
   margin-right: auto;
   margin-left: auto;
@@ -13,9 +15,9 @@ const Wrapper = styled.div`
   ol,
   ul {
     /* list-style-position: inside; */
-    margin-top: 1rem;
+    /* margin-top: 1rem;
     margin-bottom: 1rem;
-    padding-left: 1rem;
+    padding-left: 1rem; */
   }
 
   img {

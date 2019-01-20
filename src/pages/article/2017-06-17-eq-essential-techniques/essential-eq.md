@@ -1,6 +1,6 @@
 ---
 path: '/article/eq-essential-techniques'
-title: 'EQ Essentials'
+title: 'EQ Essential Techniques'
 author: 'Alex Nye'
 date: '2017-06-17'
 hideDate: true
@@ -72,6 +72,7 @@ Parametric EQs are great for finding trouble frequencies. As we'll demonstrate l
 
 <h3 >Band Compression</h3>
      
+
 Technically band compression is a form of compression but functionally it is a form of EQ. If you are just learning the fundamentals of mixing, band compression isn't something you need to try and wrap your head around right now. The basic idea is to turn down a certain frequency range, under certain conditions, in a certain way. One of the most common uses for this is when D'essing.
 
 <iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=785" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
@@ -112,7 +113,8 @@ When a bomb explodes next to someone in a movie and the character's hearing is m
 <iframe src="https://www.youtube.com/embed/E5P5c1InZNk?start=24" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 <h3 >Subtractive EQ</h3>
-Subtractive EQ is the process of finding crappy frequencies and cutting them out. This works by boosting a narrow band to find the bad stuff then simply turning it down. As demonstrated below.
+
+fSubtractive EQ is the process of finding crappy frequencies and cutting them out. This works by boosting a narrow band to find the bad stuff then simply turning it down. As demonstrated below.
 
 <iframe src="https://www.youtube.com/embed/k-MBRGvmIWU?start=414" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
@@ -127,6 +129,7 @@ The great chart below is made by <a href="http://www.independentrecording.net/ir
   
 
 <h3 >Additive EQ</h3>
+
 Additive EQ boosts frequencies. Boosting frequencies can sweeten the sound of an element, make it cut through the mix, or simply change the sound. 
 
 Normally when you are doing additive EQ you'll get better results by boosting with a wider band-width as oppose to the narrow notch that you might use when doing subtractive EQ. Looks like this.
