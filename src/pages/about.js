@@ -20,9 +20,7 @@ class About extends React.Component {
     render() {
         return (
             <SiteContainer>
-                <MainContainer>
-                    <p>About</p>
-                </MainContainer>
+                <p>About</p>
             </SiteContainer>
         )
     }

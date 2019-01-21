@@ -5,9 +5,13 @@ import styled from 'styled-components'
 // This will need to have state as well to move shit around depending on state given 
 // to it by the SiteContainer
 
-// const MainContainer = styled.div`
-//     /* color: red; */
-// `
+const MainContainerStyle = styled.div`
+    /* color: red; */
+    /* margin-left: 150px; */
+    /* translate(100; */
+
+    /* transform: translateX(150px); */
+`
 
 class MainContainer extends React.Component {
     constructor(props) {
@@ -20,7 +24,7 @@ class MainContainer extends React.Component {
     render() {
         const { children } = this.props
         return (
-            <div>{children} </div>
+            <MainContainerStyle>{children} </MainContainerStyle>
         )
     }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import NavMain from '../03_organism/NavMain'
 import HomeLinkLogo from '../01_atom/HomeLinkLogo'
-import MobilToggle from '../01_atom/MobileToggle'
+import MobileToggle from '../01_atom/MobileToggle'
 import msTheme from '../../styles/Theme'
 
 const HeaderContainer = styled.header`
@@ -27,7 +27,7 @@ const HeaderStyle = styled.div`
 `
 
 const HomeLinkLogoWrapper = styled.div`
-    max-width: 300px;
+   width: 300px;
     /* ${msTheme.utilities().hideMedium} */
      ${msTheme.mediaquery().medium}{
         max-width: 250px;        
@@ -46,7 +46,7 @@ class Header extends React.Component {
         return (
             <HeaderContainer>
                 <HeaderStyle>
-                    <MobilToggle />
+                    <MobileToggle toggleMobileMenu={this.props.toggleMobileMenu} />
                     <HomeLinkLogoWrapper>
                         <HomeLinkLogo />
                     </HomeLinkLogoWrapper>

@@ -22,8 +22,6 @@ class Page extends React.Component {
     render() {
         return (
             <SiteContainer>
-                <MainContainer>
-                </MainContainer>
             </SiteContainer>
         )
     }

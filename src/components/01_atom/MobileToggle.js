@@ -6,7 +6,7 @@ import msTheme from '../../styles/Theme'
 
 const MobileToggleButton = styled.button`
   border: none;  
-  margin: -8px 0px 0px 5px;
+  margin: -8px 0px 0px 10px;
   background: none;
   color: #757575;
   &:hover {
@@ -20,7 +20,7 @@ const MobileToggleButton = styled.button`
 
 const MobileToggle = props => {
   return (
-    <MobileToggleButton onClick={props.toggleMobile}>
+    <MobileToggleButton onClick={props.toggleMobileMenu}>
       {props.displayMobile && <FontAwesomeIcon icon={faTimes} size="2x" />}
       {!props.displayMobile && <FontAwesomeIcon icon={faBars} size="2x" />}
     </MobileToggleButton>

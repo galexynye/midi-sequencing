@@ -5,7 +5,7 @@ import { reset } from '../../../styles/CSSReset'
 import MainContainer from './MainContainer'
 import Header from '../../04_template/Header'
 import Footer from '../../04_template/Footer'
-import MobileNavSidebar from '../../04_template/SideBarMobilNav'
+import SidebarMobileNav from '../../04_template/SideBarMobileNav'
 
 
 
@@ -101,10 +101,9 @@ a {
     }
 }
 
-.marL20 {
-    margin-left: 20px;
+.hide{
+    display: none;
 }
-
 
 `
 
@@ -114,14 +113,20 @@ class SiteContainer extends React.Component {
         this.state = {
             mobileMenuOpen: false
         }
+        this._toggleMobileMenu = this._toggleMobileMenu.bind(this)
+    }
+    _toggleMobileMenu() {
+        this.setState({
+            mobileMenuOpen: !this.state.mobileMenuOpen,
+        })
     }
     render() {
         const { children } = this.props
         return (
             <div>
-                <MobileNavSidebar />
-                <MainContainer>
-                    <Header></Header>
+                <SidebarMobileNav mobileMenuOpen={this.state.mobileMenuOpen} />
+                <MainContainer mobileMenuOpen={this.state.mobileMenuOpen}>
+                    <Header toggleMobileMenu={this._toggleMobileMenu}></Header>
                     {children}
                     <Footer></Footer>
                 </MainContainer>
