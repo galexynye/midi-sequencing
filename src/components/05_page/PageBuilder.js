@@ -2,9 +2,9 @@
 import React from 'react'
 // import styled from 'styled-components'
 import SiteContainer from './Layout/SiteContainer'
-import ContentContainer from './Layout/ContentContainer'
+import MainContainer from './Layout/MainContainer'
 // import SiteContainer from '../components/05_page/Layout/SiteContainer'
-// import ContentContainer from '../components/05_page/Layout/ContentContainer'
+// import MainContainer from '../components/05_page/Layout/MainContainer'
 
 class Page extends React.Component {
     constructor(props) {
@@ -22,8 +22,8 @@ class Page extends React.Component {
     render() {
         return (
             <SiteContainer>
-                <ContentContainer>
-                </ContentContainer>
+                <MainContainer>
+                </MainContainer>
             </SiteContainer>
         )
     }
@@ -43,5 +43,5 @@ Optional
 
 About this page builder
     <SiteContainer> - wrapper for every page. base styles. global classes, nav and footer
-    <ContentContainer> - wrapper for content of every page
+    <MainContainer> - wrapper for content of every page
 */

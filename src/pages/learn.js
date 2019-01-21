@@ -2,7 +2,7 @@
 import React from 'react'
 // import styled from 'styled-components'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import ContentContainer from '../components/05_page/Layout/ContentContainer'
+import MainContainer from '../components/05_page/Layout/MainContainer'
 
 class Learn extends React.Component {
     constructor(props) {
@@ -20,9 +20,9 @@ class Learn extends React.Component {
     render() {
         return (
             <SiteContainer>
-                <ContentContainer>
+                <MainContainer>
                     <p>Learn</p>
-                </ContentContainer>
+                </MainContainer>
             </SiteContainer>
         )
     }
@@ -42,5 +42,5 @@ Optional
 
 About this page builder
     <SiteContainer> - wrapper for every page. base styles. global classes, nav and footer
-    <ContentContainer> - wrapper for content of every page
+    <MainContainer> - wrapper for content of every page
 */

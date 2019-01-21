@@ -8,22 +8,16 @@ import styled from 'styled-components'
 
 //Shows link only on mobile
 const HomeLinkLogoStyle = styled.div`
-  position: absolute;
-  left: 50%;
-  @media (min-width: 900px) {
-    display: ${props => props.displayBreak || 'default'};
+  img {
+   height: 33px;
   }
 `
 
 const HomeLink = props => {
   return (
-    <HomeLinkLogoStyle displayBreak={props.displayBreak}>
+    <HomeLinkLogoStyle>
       <Link to="/">
         <img
-          // style={{
-          //   maxWidth: props.width ? props.width : '100%',
-          //   margin: props.margin ? props.margin : '0px',
-          // }}
           src={MusicSequencing}
           alt="Home Link"
         />

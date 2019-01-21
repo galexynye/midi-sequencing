@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-const H2Button = styled.button`
+//This will be a functional component
+
+const CTAButtonStyle = styled.button`
   margin: 5px 0px;
   padding: 0px;
   color: ${props => props.inputColor || '#2c3e50'};

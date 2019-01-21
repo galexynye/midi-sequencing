@@ -7,7 +7,7 @@ The site tries to follow Atomic Design Principals.
 ## This site Architecture
 ```                      
      <SiteContainer> // Renders children, injects base css and reset, holds state use
-        <ContentContainer> // Content Container throughout site
+        <MainContainer> // Moving entire site for sidebars, pop downs, ect
             <PageStyledComponents> // Specific page state and styles(via styled component)
                 <Template>          // Page section (Article)
                         <Organism>      // Group of Cards
@@ -23,7 +23,7 @@ The site tries to follow Atomic Design Principals.
                 </Template>
             <PageStyledComponent>
         
-        <ContentContainer>
+        <MainContainer>
     <SiteContainer> 
 </Page>
 ```
@@ -74,7 +74,7 @@ If a certain page needs it's own state, then it is added when a Page from the Pa
 
 State that is consistent on every single page (but reset on new page load, such as the menu toggle), is held in the `<SiteContainer>` component.
 
-
+Redux is not currently implemented. 
 
 # Styling this site
 ## Theme
@@ -87,15 +87,15 @@ This component is the container of every page and includes base CSS, CSS resets,
 
 [About Gatsby Global Style Injection problems](https://github.com/gatsbyjs/gatsby/issues/7413)
 
-## `<ContentContainer>`
-`<ContentContainer>` is a styled componenent which styles the content containers across the site for consistency. i.e. All the content of the site is only 900px wide.
+## `<MainContainer>`
+`<MainContainer>` is a styled componenent that moves the entire side for the mobile nav (for example), or somesort of pop down request for email or whatever.
 
 ## Page Specific Styling
 
 Further styling of a page can be done with a styled component that goes inside of the content container. ie. 
 ```
 <SiteContainer>                 // Holds state, injects base css and reset
-    <ContentContainer>          // Content Container throughout site
+    <MainContainer>          // Content Container throughout site
         <PageStyledContainer>   // Styles for the page
             <Template>          // Page section (Article)
                 <Organism>      // Group of Cards
@@ -110,13 +110,18 @@ Further styling of a page can be done with a styled component that goes inside o
                 </Organism>
             </Template>
         <PageStyledContainer>
-    <ContentContainer>
+    <MainContainer>
 <SiteContainer> 
 ```
 
 ## Styling Components 
 Styling components is done inside the components via styled components (similar to Vue architecture) with the aid of global utility classes defined in the `<SiteContainer>` - See above
 
+### Props in styled components example 
+
+```
+color: ${props => props.inputColor || '#2c3e50'};
+```
 
 
 # Gatsby Stuff 
@@ -134,5 +139,5 @@ In the gatsby-node.js file.
 ## Static Query 
 Static Query is used to do GraphQL queries within components. There are additional limitations with static Queries.
 
-
-
+## Link 
+[gatsby Link](https://www.gatsbyjs.org/docs/gatsby-link/)
