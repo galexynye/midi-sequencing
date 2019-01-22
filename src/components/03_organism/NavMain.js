@@ -10,11 +10,13 @@ const NavStyle = styled.nav`
     ul {
         display:flex;
         flex-flow: ${props => props.flow ? props.flow : 'row'};
+        justify-content: flex-end;
         margin: 0px;
         padding: 0px;
         list-style-type: none;
         li {
-            margin: ${props => props.margin ? props.margin : '0px 45px 0px 0px'};
+            margin: ${props => props.margin ? props.margin : '0px 0px 0px 45px'};
+           
             /* a{
                 font-family: ${msTheme.font.headerFont};     
                 &:hover{
@@ -23,12 +25,13 @@ const NavStyle = styled.nav`
                 }   
             } */
             ${msTheme.mediaquery().large}{
-                    margin: ${props => props.marginSmall ? props.marginSmall : '0px 30px 0px 0px'};
+                    margin: ${props => props.marginSmall ? props.marginSmall : '0px 0px 0px 35px'};
                 }
         }
+  
     }
     ${msTheme.mediaquery().medium}{
-        display: ${props => props.showSmall ? 'block' : 'none'}
+        display: ${props => props.showSmall ? 'block' : 'none'};
     }
     
 `

@@ -6,7 +6,7 @@ import MobileToggle from '../01_atom/MobileToggle'
 import msTheme from '../../styles/Theme'
 
 const HeaderContainer = styled.header`
-    margin-left: 20px; 
+    /* margin-left: 20px;  */
     ${msTheme.mediaquery().medium}{
         margin: 0px;
     }
@@ -19,9 +19,9 @@ const HeaderStyle = styled.div`
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 10px auto;
     ${msTheme.mediaquery().medium}{
-        margin: 10px auto;
+        margin: 5px auto;
     }
 
 `
