@@ -42,7 +42,7 @@ class BlogIndex extends React.Component {
       <button onClick={this.showMorePosts}>Show More</button>
     )
     return (
-      <HomeWrapper>
+      <HomeWrapper> 
         {/* <Layout location={this.props.location}> */}
         <SiteContainer>
           <Helmet
@@ -199,7 +199,7 @@ class BlogIndex extends React.Component {
           )}
         {/* </Layout> */}
         </SiteContainer>
-      </HomeWrapper>
+       </HomeWrapper>
     )
   }
 }

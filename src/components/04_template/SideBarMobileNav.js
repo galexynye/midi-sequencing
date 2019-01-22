@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import msTheme from '../../styles/Theme'
-import HomeLinkIcon from '../01_atom/HomeLinkIcon'
-import NavMain from '../03_organism/NavMain'
-import NavLinks from '../02_molecule/NavLinks'
-import { MainNavLinksData } from '../../sitedata/navdata'
+import { msTheme } from '../../styles/Theme'
+import { HomeLinkIcon } from '../01_atom/HomeLinkIcon'
+import { NavMain } from '../03_organism/NavMain'
 // Include the 
 
 const MobileNavContainer = styled.div`
@@ -28,7 +26,7 @@ const MobileNavStyle = styled.nav`
     /* padding: 20px;  */
 `
 
-const MobileNav = (props) => {
+export const SidebarMobileNav = (props) => {
     return (
         <MobileNavContainer mobileMenuOpen={props.mobileMenuOpen}>
             <MobileNavStyle>
@@ -45,4 +43,4 @@ const MobileNav = (props) => {
     )
 }
 
-export default MobileNav
+// export default MobileNav

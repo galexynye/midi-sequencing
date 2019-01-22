@@ -2,7 +2,7 @@
 import React from 'react'
 // import styled from 'styled-components'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import MainContainer from '../components/05_page/Layout/MainContainer'
+
 
 class About extends React.Component {
     constructor(props) {

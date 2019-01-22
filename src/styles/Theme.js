@@ -1,7 +1,8 @@
-const msTheme = {
+export const msTheme = {
     colors: {
         text: '#24292e', // '#373737'
         primary: '#700bea', // Purple
+        primarylightest: '#AF7AF0',
         primarylight: '#9753E9',
         primarylighter: '#8027EA',
         primarydarker: '#5704BA',
@@ -51,4 +52,3 @@ const msTheme = {
 
 }
 
-export default msTheme

@@ -12,7 +12,7 @@ const HomeLinkLogoStyle = styled.div`
   }
 `
 
-const HomeLink = props => {
+export const HomeLinkIcon = props => {
 
   return (
     <HomeLinkLogoStyle height={props.height}>
@@ -27,5 +27,5 @@ const HomeLink = props => {
 }
 
 
-export default HomeLink
+
 

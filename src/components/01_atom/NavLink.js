@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, navigate } from 'gatsby'
 import styled from 'styled-components'
-import msTheme from '../../styles/Theme'
+import { msTheme } from '../../styles/Theme'
 // props are link and external or internal
 
 const LinkStyle = styled.div`
@@ -22,7 +22,7 @@ const AltLinkStyle = styled.div`
         font-family: ${msTheme.font.headerFont};    
         padding: 3px 20px;
         color: ${msTheme.colors.text};        
-        background-color: ${msTheme.colors.green};        
+        background-color: ${msTheme.colors.primarylightest};        
         &:hover{
                 text-decoration: none; 
                 
@@ -30,13 +30,13 @@ const AltLinkStyle = styled.div`
     }
 `
 
-export default class NavLink extends React.Component {
+export class NavLink extends React.Component {
     constructor(props) {
         super(props)
     }
 
     render() {
-        const { to, name, external, mobileMenuToggle } = this.props
+        const { to, name, external } = this.props
         if (external) {
             return (
                 <AltLinkStyle>

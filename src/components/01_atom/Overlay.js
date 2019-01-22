@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import msTheme from '../../styles/Theme'
+import { msTheme } from '../../styles/Theme'
 
 const Overlay = styled.div`
     position: absolute;

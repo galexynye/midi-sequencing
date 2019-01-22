@@ -61,6 +61,14 @@ style.scss
 ```
 [Code Source](https://www.lullabot.com/articles/bem-atomic-design-a-css-architecture-worth-loving)
 
+# Coding Guildlines
+-Named Exports for organisms, molecules and atoms.
+
+background is shortened to bg when passing props
+```
+bgColor
+```
+
 # Building new Pages 
 
 src > components > 05_page > PageBuilder.js 

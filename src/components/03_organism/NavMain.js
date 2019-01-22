@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavLinks from '../02_molecule/NavLinks'
+import { NavLinks } from '../02_molecule/NavLinks'
 import { MainNavLinksData } from '../../sitedata/navdata'
-import msTheme from '../../styles/Theme'
+import { msTheme } from '../../styles/Theme'
 
 // Passes down Main Nav Data 
 // Style for grouping the main nav links
@@ -15,15 +15,7 @@ const NavStyle = styled.nav`
         padding: 0px;
         list-style-type: none;
         li {
-            margin: ${props => props.margin ? props.margin : '0px 0px 0px 45px'};
-           
-            /* a{
-                font-family: ${msTheme.font.headerFont};     
-                &:hover{
-                    text-decoration: none;
-                    color: ${msTheme.colors.primarydark};
-                }   
-            } */
+            margin: ${props => props.margin ? props.margin : '0px 0px 0px 45px'};        
             ${msTheme.mediaquery().large}{
                     margin: ${props => props.marginSmall ? props.marginSmall : '0px 0px 0px 35px'};
                 }
@@ -37,7 +29,7 @@ const NavStyle = styled.nav`
 `
 
 
-const MainNavLinks = (props) => {
+export const NavMain = (props) => {
     return (
         <NavStyle flow={props.flow} margin={props.margin} marginSmall={props.marginSmall} showSmall={props.showSmall}>
             <NavLinks links={MainNavLinksData} toggleMobileMenu={props.toggleMobileMenu} />
@@ -45,4 +37,4 @@ const MainNavLinks = (props) => {
     )
 }
 
-export default MainNavLinks
+// export default MainNavLinks

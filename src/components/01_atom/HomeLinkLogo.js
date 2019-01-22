@@ -13,7 +13,7 @@ const HomeLinkStyle = styled.div`
   img {max-width: 100%;}
 `
 
-const HomeLink = props => {
+export const HomeLinkLogo = props => {
   return (
     // <HomeLinkStyle displayMobile={props.displayMobile}>
     <HomeLinkStyle >
@@ -27,4 +27,4 @@ const HomeLink = props => {
   )
 }
 
-export default HomeLink
+

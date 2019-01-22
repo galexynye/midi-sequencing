@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Wrapper from '../styles/oldCrap/Wrapper'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import ArticleContainer from '../components/04_template/ArticleContainer'
+import { ArticleContainer } from '../components/04_template/ArticleContainer'
 import Menu from '../components/MainNavigation/Menu'
 import Footer from '../components/Footer'
 

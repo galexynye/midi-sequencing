@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavMain from '../03_organism/NavMain'
-import HomeLinkLogo from '../01_atom/HomeLinkLogo'
-import MobileToggle from '../01_atom/MobileToggle'
-import msTheme from '../../styles/Theme'
+import { NavMain } from '../03_organism/NavMain'
+import { HomeLinkLogo } from '../01_atom/HomeLinkLogo'
+import { MobileToggle } from '../01_atom/MobileToggle'
+import { msTheme } from '../../styles/Theme'
 
 const HeaderContainer = styled.header`
     /* margin-left: 20px;  */
@@ -18,7 +18,7 @@ const HeaderStyle = styled.div`
     height: 40px;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 10px auto;
     ${msTheme.mediaquery().medium}{
         margin: 5px auto;
@@ -38,7 +38,7 @@ const HomeLinkLogoWrapper = styled.div`
 `
 
 
-class Header extends React.Component {
+export class Header extends React.Component {
     constructor(props) {
         super(props)
     }

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import msTheme from '../../../styles/Theme'
+import { msTheme } from '../../../styles/Theme'
 import Overlay from '../../01_atom/Overlay'
 //Moves the entire site around for drop downs, sidebars ect
 // This will need to have state as well to move shit around depending on state given 
@@ -24,7 +24,7 @@ const MainContainerStyle = styled.div`
     }
 `
 
-class MainContainer extends React.Component {
+export class MainContainer extends React.Component {
     constructor(props) {
         super(props)
     }

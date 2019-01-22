@@ -1,11 +1,11 @@
 import React from 'react'
 import { injectGlobal } from 'styled-components'
-import msTheme from '../../../styles/Theme'
+import { msTheme } from '../../../styles/Theme'
 import { reset } from '../../../styles/CSSReset'
-import MainContainer from './MainContainer'
-import Header from '../../04_template/Header'
-import Footer from '../../04_template/Footer'
-import SidebarMobileNav from '../../04_template/SideBarMobileNav'
+import { MainContainer } from './MainContainer'
+import { Header } from '../../04_template/Header'
+import { Footer } from '../../04_template/Footer'
+import { SidebarMobileNav } from '../../04_template/SideBarMobileNav'
 
 
 

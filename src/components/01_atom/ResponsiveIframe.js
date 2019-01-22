@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ResponsiveIframe = styled.div`
+export const ResponsiveIframe = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
@@ -14,4 +14,3 @@ const ResponsiveIframe = styled.div`
   }
 `
 
-export default ResponsiveIframe

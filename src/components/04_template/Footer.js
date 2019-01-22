@@ -1,9 +1,8 @@
 import React from 'react'
 
-const Footer = props => {
+export const Footer = props => {
     return (
         <p>Footer</p>
     )
 }
 
-export default Footer

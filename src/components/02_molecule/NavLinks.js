@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavLink from '../01_atom/NavLink'
+import { NavLink } from '../01_atom/NavLink'
 
 
-export default class NavLinks extends React.Component {
+export class NavLinks extends React.Component {
     constructor(props) {
         super(props)
     }

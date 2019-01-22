@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import msTheme from '../../styles/Theme'
+import { msTheme } from '../../styles/Theme'
 
 
-const ArticleContainer = styled.article`
+export const ArticleContainer = styled.article`
     /*TODO: Change to variable */
     position: relative;
     max-width: ${msTheme.widths.article};
@@ -17,4 +17,4 @@ const ArticleContainer = styled.article`
 
 
 
-export default ArticleContainer
+// export default ArticleContainer

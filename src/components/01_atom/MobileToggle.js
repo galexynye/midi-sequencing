@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
-import msTheme from '../../styles/Theme'
+import { msTheme } from '../../styles/Theme'
 
 const MobileToggleButton = styled.button`
   border: none;  
@@ -19,7 +19,7 @@ const MobileToggleButton = styled.button`
   }
 `
 
-const MobileToggle = props => {
+export const MobileToggle = props => {
   return (
     <MobileToggleButton onClick={props.toggleMobileMenu}>
       {props.displayMobile && <FontAwesomeIcon icon={faTimes} size="2x" />}
@@ -28,4 +28,4 @@ const MobileToggle = props => {
   )
 }
 
-export default MobileToggle
+// export default MobileToggle
