@@ -1,34 +1,48 @@
 import React from 'react'
 import styled from 'styled-components'
 import msTheme from '../../styles/Theme'
+import HomeLinkIcon from '../01_atom/HomeLinkIcon'
+import NavMain from '../03_organism/NavMain'
+import NavLinks from '../02_molecule/NavLinks'
+import { MainNavLinksData } from '../../sitedata/navdata'
 // Include the 
 
-const MobileNavStyle = styled.div`
-    background-color: blue;
-    width: 150px;
-    height: 100vh;
-    display: none;
-    ${msTheme.mediaquery().medium}{
-        position: fixed;
-        top: 0;
-        display: block;
+const MobileNavContainer = styled.div`
+    top: 0;
+    display: ${props => props.mobileMenuOpen ? 'block' : 'none'};
+    position: relative;
+    width: ${msTheme.widths.sidebarMobileMenu};        
+    ${msTheme.mediaquery().mediumMin}{
+        display: none;
     }
 `
 
+const MobileNavStyle = styled.nav`
+    /* display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; */
+    
+    text-align: center;
+    margin: 20px auto;
+    /* padding: 20px;  */
+`
 
 const MobileNav = (props) => {
-    if (props.mobileMenuOpen) {
-        return (
+    return (
+        <MobileNavContainer mobileMenuOpen={props.mobileMenuOpen}>
             <MobileNavStyle>
-                <p>hello</p>
+                <HomeLinkIcon height="40px"
+                    toggleMobileMenu={props.toggleMobileMenu} //TODO: Doesn't Work need to go programmatically with link
+                />
+                <NavMain
+                    toggleMobileMenu={props.toggleMobileMenu}
+                    showSmall={true} flow="column"
+                    marginSmall="10px auto"
+                />
             </MobileNavStyle>
-        )
-    } else
-        return (
-            <div className="hide">
-                <p>hello</p>
-            </div>
-        )
+        </MobileNavContainer>
+    )
 }
 
 export default MobileNav

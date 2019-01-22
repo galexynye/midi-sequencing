@@ -6,7 +6,8 @@ import msTheme from '../../styles/Theme'
 
 const MobileToggleButton = styled.button`
   border: none;  
-  margin: -8px 0px 0px 10px;
+  margin: -10px 0px 0px 0px;
+  padding: 0px;
   background: none;
   color: #757575;
   &:hover {

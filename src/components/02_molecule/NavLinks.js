@@ -8,9 +8,10 @@ export default class NavLinks extends React.Component {
         super(props)
     }
     render() {
+        const { toggleMobileMenu } = this.props
         const navList = this.props.links.map(link => <li key={link.name}><NavLink to={link.to} name={link.name} external={link.external} /></li>)
         return (
-            <ul>
+            <ul onClick={toggleMobileMenu}>
                 {navList}
             </ul>
         )

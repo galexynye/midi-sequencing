@@ -83,7 +83,7 @@ li {
 
 a {
     text-decoration: none;
-    color: ${msTheme.colors.purple};
+    color: ${msTheme.colors.primary};
     &:hover{
         text-decoration: underline
     }
@@ -111,21 +111,40 @@ class SiteContainer extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            mobileMenuOpen: false
+            mobileMenuOpen: false,
+            windowWidth: 0, // initially set to 0 because 
         }
         this._toggleMobileMenu = this._toggleMobileMenu.bind(this)
+        this._handleWindowSizeChange = this._handleWindowSizeChange.bind(this)
+    }
+    componentDidMount() {
+        this._handleWindowSizeChange()
+        window.addEventListener('resize', this._handleWindowSizeChange)
+    }
+    componentWillUnmount() {
+        window.removeEventListener('resize', this._handleWindowSizeChange)
     }
     _toggleMobileMenu() {
         this.setState({
             mobileMenuOpen: !this.state.mobileMenuOpen,
         })
     }
+    _handleWindowSizeChange() {
+        this.setState({
+            windowWidth: window.innerWidth
+        })
+        if (this.state.windowWidth > msTheme.breakpoints.medium) {
+            this.setState({
+                mobileMenuOpen: false
+            })
+        }
+    }
     render() {
         const { children } = this.props
         return (
             <div>
-                <SidebarMobileNav mobileMenuOpen={this.state.mobileMenuOpen} />
-                <MainContainer mobileMenuOpen={this.state.mobileMenuOpen}>
+                <SidebarMobileNav mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu} />
+                <MainContainer mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu}>
                     <Header toggleMobileMenu={this._toggleMobileMenu}></Header>
                     {children}
                     <Footer></Footer>
@@ -135,5 +154,5 @@ class SiteContainer extends React.Component {
     }
 }
 
-// export default Template
 export default SiteContainer
+

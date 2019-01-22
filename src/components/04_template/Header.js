@@ -27,13 +27,13 @@ const HeaderStyle = styled.div`
 `
 
 const HomeLinkLogoWrapper = styled.div`
-   width: 300px;
+   max-width: 300px;
     /* ${msTheme.utilities().hideMedium} */
      ${msTheme.mediaquery().medium}{
         max-width: 250px;        
         position: absolute;
         left: 50%;
-        margin-left: -120px;
+        margin-left: -125px;
     }
 `
 

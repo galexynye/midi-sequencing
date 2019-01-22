@@ -9,32 +9,35 @@ import msTheme from '../../styles/Theme'
 const NavStyle = styled.nav`
     ul {
         display:flex;
+        flex-flow: ${props => props.flow ? props.flow : 'row'};
         margin: 0px;
         padding: 0px;
         list-style-type: none;
         li {
-            margin: 0px 45px 0px 0px;
-            a{
+            margin: ${props => props.margin ? props.margin : '0px 45px 0px 0px'};
+            /* a{
                 font-family: ${msTheme.font.headerFont};     
                 &:hover{
                     text-decoration: none;
-                    color: ${msTheme.colors.purpledark};
+                    color: ${msTheme.colors.primarydark};
                 }   
-            }
-        ${msTheme.mediaquery().large}{
-                margin: 0px 30px 0px 0px;
-            }
+            } */
+            ${msTheme.mediaquery().large}{
+                    margin: ${props => props.marginSmall ? props.marginSmall : '0px 30px 0px 0px'};
+                }
         }
     }
-    ${msTheme.utilities().hideMedium}
+    ${msTheme.mediaquery().medium}{
+        display: ${props => props.showSmall ? 'block' : 'none'}
+    }
     
 `
 
 
 const MainNavLinks = (props) => {
     return (
-        <NavStyle>
-            <NavLinks links={MainNavLinksData} />
+        <NavStyle flow={props.flow} margin={props.margin} marginSmall={props.marginSmall} showSmall={props.showSmall}>
+            <NavLinks links={MainNavLinksData} toggleMobileMenu={props.toggleMobileMenu} />
         </NavStyle>
     )
 }

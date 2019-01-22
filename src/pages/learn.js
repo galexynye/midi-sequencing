@@ -2,7 +2,7 @@
 import React from 'react'
 // import styled from 'styled-components'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import MainContainer from '../components/05_page/Layout/MainContainer'
+
 
 class Learn extends React.Component {
     constructor(props) {
@@ -20,9 +20,9 @@ class Learn extends React.Component {
     render() {
         return (
             <SiteContainer>
-                <MainContainer>
-                    <p>Learn</p>
-                </MainContainer>
+
+                <p>Learn</p>
+
             </SiteContainer>
         )
     }

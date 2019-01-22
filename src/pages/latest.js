@@ -2,7 +2,7 @@
 import React from 'react'
 // import styled from 'styled-components'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import MainContainer from '../components/05_page/Layout/MainContainer'
+
 
 class Latest extends React.Component {
     constructor(props) {
@@ -20,9 +20,7 @@ class Latest extends React.Component {
     render() {
         return (
             <SiteContainer>
-                <MainContainer>
-                    <p>Latest</p>
-                </MainContainer>
+                <p>Latest</p>
             </SiteContainer>
         )
     }
