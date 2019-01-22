@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { msTheme } from '../../../styles/Theme'
-import Overlay from '../../01_atom/Overlay'
+import { Overlay } from '../../01_atom/Overlay'
 //Moves the entire site around for drop downs, sidebars ect
 // This will need to have state as well to move shit around depending on state given 
 // to it by the SiteContainer
