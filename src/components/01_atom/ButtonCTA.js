@@ -4,11 +4,11 @@ import { msTheme } from '../../styles/Theme'
 
 //This will be a functional component
 
-export const CTAButtonStyle = styled.button`
+export const ButtonCTAStyle = styled.button`
   margin: 5px 0px;
   border: none;
   border-radius: 15px;
-  padding: 20px 25px;
+  padding: 10px 25px;
   font-family: ${msTheme.font.headerFont};
   font-size: 17px;
   width: ${props => props.width || ''};
@@ -21,25 +21,25 @@ export const CTAButtonStyle = styled.button`
     text-decoration: underline
   }
   ${msTheme.mediaquery().small}{
-    padding: 15px 20px;
+    padding: 10px 20px;
   }
 `
 
-export class CTAButton extends React.Component {
+export class ButtonCTA extends React.Component {
   constructor(props) {
     super(props)
   }
   render() {
     const { color, bgColor, _handleClick, text, width } = this.props
     return (
-      <CTAButtonStyle
+      <ButtonCTAStyle
         onClick={_handleClick}
         color={color}
         bgColor={bgColor}
         width={width}
       >
         {text}
-      </ CTAButtonStyle>
+      </ ButtonCTAStyle>
     )
   }
 }

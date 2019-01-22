@@ -41,7 +41,6 @@ h2 {
 	margin-bottom: 20px;
     padding-top: 20px;
 	/* text-transform: uppercase; */
-    max-width: 650px;
     
 } 
 

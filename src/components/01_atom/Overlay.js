@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 
-const Overlay = styled.div`
+export const Overlay = styled.div`
     position: absolute;
     top: 0;
     left: 0;
@@ -15,4 +15,4 @@ const Overlay = styled.div`
     }
 `
 
-export default Overlay
+// export default Overlay

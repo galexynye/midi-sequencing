@@ -1,6 +1,7 @@
 import React from 'react'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import { CTAButton } from '../components/01_atom/ButtonCTA'
+
+import { HeroHome } from "../components/04_template/HeroHome";
 
 class Home extends React.Component {
     constructor(props) {
@@ -18,7 +19,8 @@ class Home extends React.Component {
     render() {
         return (
             <SiteContainer>
-                <CTAButton text={'Email Me the Ultimate Producer\'s Workflow'} />
+                <HeroHome />
+
             </SiteContainer>
         )
     }

@@ -20,8 +20,10 @@ const HeaderStyle = styled.div`
     align-items: center;
     /* max-width: 1200px; */
     margin: 10px auto;
+    padding: 0px 10px;
     ${msTheme.mediaquery().medium}{
         margin: 5px auto;
+        padding: 0px;
     }
 
 `

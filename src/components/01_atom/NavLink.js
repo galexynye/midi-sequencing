@@ -4,7 +4,10 @@ import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 // props are link and external or internal
 
-const LinkStyle = styled.div`
+// TODO: Add component notes 
+
+//TODO: Add Alt style based on Props
+const StandardLinkStyle = styled.div`
        a{
             color: ${msTheme.colors.text};
              /* color: #998C00; */
@@ -16,16 +19,20 @@ const LinkStyle = styled.div`
         }
 `
 
-const AltLinkStyle = styled.div`
+//TODO: ADD Alt styles based on props
+const AltLinkStyle = styled.div` 
     a{
         border-radius: 50px;
         font-family: ${msTheme.font.headerFont};    
         padding: 3px 20px;
         color: ${msTheme.colors.text};        
-        background-color: ${msTheme.colors.primarylightest};        
+        /* background-color: ${msTheme.colors.primarylightest};         */
+              background-color: ${msTheme.colors.primayhighlighter};
         &:hover{
                 text-decoration: none; 
+                /* background-color: ${msTheme.colors.primayhighlighter} */
                 
+                background-color: ${msTheme.colors.primarylightest};  
             } 
     }
 `
@@ -34,56 +41,22 @@ export class NavLink extends React.Component {
     constructor(props) {
         super(props)
     }
-
+    // TODO: if statements return based on alt style or not and colors
     render() {
         const { to, name, external } = this.props
-        if (external) {
+        if (external) { // change to (if alt style)
             return (
                 <AltLinkStyle>
                     <a href={to}>{name}</a>
                 </AltLinkStyle>
             )
-        } else {
+        } else { // Returns the standard link style
             return (
-                <LinkStyle>
+                <StandardLinkStyle>
                     <Link to={to}>{name}</Link>
-                </LinkStyle>
-                // <a onClick={() => navigate(to)}>{name}</a>
-                // <a onClick={() => this._handleClick(to, this.props.toggleMobileMenu)}>{name}</a>
+                </StandardLinkStyle>
             )
         }
     }
 }
 
-// import React from 'react'
-// import { navigate } from 'gatsby'
-
-// // props are link and external or internal
-
-// export default class NavLink extends React.Component {
-//     constructor(props) {
-//         super(props)
-//         this._handleClick = this._handleClick.bind(this)
-//     }
-//     _handleClick(propsFunc, to) {
-//         // if (propsFunc) {
-//         //     propsFunc()
-//         // }
-
-//         navigate(to)
-
-//     }
-//     render() {
-//         const { to, name, external, toggleMobileMenu } = this.props
-//         if (external) {
-//             return (
-//                 <a href={to}>{name}</a>
-//             )
-//         } else {
-//             return (
-//                 // <a onClick={this._handleClick(toggleMobileMenu, to)}>{name}</a>
-//                 <button onClick={this._handleClick(toggleMobileMenu, to)}></button>
-//             )
-//         }
-//     }
-// }
