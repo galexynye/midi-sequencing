@@ -1,8 +1,9 @@
 import React from 'react'
-import { ButtonCTA } from "../01_atom/ButtonCTA";
 import { FormHeader } from "../02_molecule/FormHeader";
 import { WidthWrapper } from "../02_molecule/WidthWrapper";
-import { InputEmail } from "../01_atom/InputEmail";
+import { InputString } from "../01_atom/InputString";
+import { InputSubmit } from "../01_atom/InputSubmit";
+import { msTheme } from "../../styles/Theme";
 /*
 
 Atoms
@@ -31,15 +32,24 @@ export class FormEbook extends React.Component {
         }
     }
     // Update Email Function 
-    // Async ebook send on button push
+    _handleChangeEmail = (event) => {
+        this.setState({ email: event.target.value })
+    }
+    /* Submit to lamda api, be sure to include origin along with email address */
+    _handleSubmit = (event) => {
+        event.preventDefault()
+    }
+
     render() {
         return (
             <div>
                 <FormHeader title="The Ultimate Producer's Workflow" subtitle="How to FINISH Pro Quality Music : Doing EVERYTHING Yourself" />
-                <WidthWrapper width="350px">
-                    <InputEmail />
-                    <ButtonCTA text={'Send a Copy'} width='100%' />
-                </WidthWrapper>
+                <form onSubmit={this._handleSubmit}>
+                    <WidthWrapper width="350px">
+                        <InputString type="email" value={this.state.email} _handleChange={this._handleChangeEmail} placeholder="Enter your Email..." />
+                        <InputSubmit value="SEND A COPY" _handleSubmit={this._handleSubmit} bgColor={msTheme.colors.green} />
+                    </WidthWrapper>
+                </form>
                 {/* <ButtonCTA text={'Send the Ultimate Producer\'s Workflow'} /> */}
             </div>
         )

@@ -15,6 +15,7 @@ export const msTheme = {
         greendark: '#008A5D',
         yellow: '#FFEB00',
         yellowlight: '#FFF14C',
+        greylight: '#CFCFCF'
     },
     breakpoints: { // Numbers in Pixels
         small: 575,

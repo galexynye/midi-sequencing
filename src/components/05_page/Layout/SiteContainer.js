@@ -113,8 +113,6 @@ class SiteContainer extends React.Component {
             mobileMenuOpen: false,
             windowWidth: 0, // initially set to 0 because 
         }
-        this._toggleMobileMenu = this._toggleMobileMenu.bind(this)
-        this._handleWindowSizeChange = this._handleWindowSizeChange.bind(this)
     }
     componentDidMount() {
         this._handleWindowSizeChange()
@@ -123,12 +121,12 @@ class SiteContainer extends React.Component {
     componentWillUnmount() {
         window.removeEventListener('resize', this._handleWindowSizeChange)
     }
-    _toggleMobileMenu() {
+    _toggleMobileMenu = () => {
         this.setState({
             mobileMenuOpen: !this.state.mobileMenuOpen,
         })
     }
-    _handleWindowSizeChange() {
+    _handleWindowSizeChange = () => {
         this.setState({
             windowWidth: window.innerWidth
         })

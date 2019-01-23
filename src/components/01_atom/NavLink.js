@@ -26,13 +26,13 @@ const AltLinkStyle = styled.div`
         font-family: ${msTheme.font.headerFont};    
         padding: 3px 20px;
         color: ${msTheme.colors.text};        
-        /* background-color: ${msTheme.colors.primarylightest};         */
-              background-color: ${msTheme.colors.primayhighlighter};
+        background-color: ${msTheme.colors.primarylightest};        
+              /* background-color: ${msTheme.colors.primayhighlighter}; */
         &:hover{
                 text-decoration: none; 
-                /* background-color: ${msTheme.colors.primayhighlighter} */
+                background-color: ${msTheme.colors.primayhighlighter}
                 
-                background-color: ${msTheme.colors.primarylightest};  
+                /* background-color: ${msTheme.colors.primarylightest};   */
             } 
     }
 `

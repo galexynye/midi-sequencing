@@ -6,18 +6,6 @@ import SiteContainer from './Layout/SiteContainer'
 
 
 class Page extends React.Component {
-    constructor(props) {
-        super(props)
-        // this.state = {
-        // showSomethingt: false // Page State
-        // }
-        // this._handleClick = this._handleClick.bind(this)
-    }
-    // _handleClick() {
-    //     this.setState({
-    //         showSomething: !this.state.showSomething
-    //     })
-    // }
     render() {
         return (
             <SiteContainer>
