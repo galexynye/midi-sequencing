@@ -25,7 +25,7 @@
     "gatsby-plugin-prefetch-google-fonts": "^1.0.11",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
-    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-plugin-stripe-checkout": "^1.0.9",
     "gatsby-plugin-styled-components": "^3.0.1",
     "gatsby-plugin-typography": "^2.2.0",

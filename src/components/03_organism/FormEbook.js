@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import { FormHeader } from "../02_molecule/FormHeader";
 import { WidthWrapper } from "../02_molecule/WidthWrapper";
 import { InputString } from "../01_atom/InputString";
@@ -8,10 +9,6 @@ import { msTheme } from "../../styles/Theme";
 
 Atoms
 // Generic Caption Paragraph or something, block quote
-// Header for the Form - FormHeader - Styled component
-// A Sub Header for the Form - SubHeader - Styled Component
-// Button To Submit
-// Email Input 
 // Catpcha - Eventually
 // Loading Component
 // Success Message Component
@@ -24,20 +21,36 @@ Molecules
 
 */
 
+const subscribeApi = process.env.MS_API_SUBSCRIBE
+
 export class FormEbook extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            email: ''
+            email: '',
+            success: false,
+            error: false,
+            loading: false,
         }
     }
-    // Update Email Function 
     _handleChangeEmail = (event) => {
         this.setState({ email: event.target.value })
     }
     /* Submit to lamda api, be sure to include origin along with email address */
     _handleSubmit = (event) => {
         event.preventDefault()
+        axios.post(subscribeApi, {
+            email: this.state.email,
+            origin: 'UPWebook' // This origin string MUST REFLECT an origin on the backend in the email object in the emails.js file
+        })
+            .then((response) => {
+                this.setState({ email: '' })
+                console.log(response);
+            })
+            .catch((error) => {
+                this.setState({ email: '' })
+                console.log(error);
+            });
     }
 
     render() {
