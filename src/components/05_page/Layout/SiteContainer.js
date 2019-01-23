@@ -144,7 +144,7 @@ class SiteContainer extends React.Component {
                 <MainContainer mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu}>
                     <Header toggleMobileMenu={this._toggleMobileMenu}></Header>
                     {children}
-                    <Footer></Footer>
+                    {/* <Footer></Footer> */}
                 </MainContainer>
             </div>
         )

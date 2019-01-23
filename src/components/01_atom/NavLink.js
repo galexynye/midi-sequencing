@@ -30,7 +30,7 @@ const AltLinkStyle = styled.div`
               /* background-color: ${msTheme.colors.primayhighlighter}; */
         &:hover{
                 text-decoration: none; 
-                background-color: ${msTheme.colors.primayhighlighter}
+                background-color: ${msTheme.colors.primary}
                 
                 /* background-color: ${msTheme.colors.primarylightest};   */
             } 

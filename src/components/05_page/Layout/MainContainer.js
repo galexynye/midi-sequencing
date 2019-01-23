@@ -14,11 +14,12 @@ const MainContainerStyle = styled.div`
         transition: transform 0.2s ease-in-out;
         transform: ${props => props.mobileMenuOpen ? 'translateX(0)' : `translateX(calc(-1 * ${msTheme.widths.sidebarMobileMenu}))`};
     }
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
     position: ${props => props.mobileMenuOpen ? 'fixed' : 'relative'};
     overflow: ${props => props.mobileMenuOpen ? 'hidden' : 'hidden'};
     box-shadow: ${props => props.mobileMenuOpen ? `5px 10px 6px 5px #700bea` : 'none'};   
     width: ${props => props.mobileMenuOpen ? '100%' : ''};
+    height: 100vh;
     ${msTheme.mediaquery().mediumMin}{
         box-shadow: none;
     }

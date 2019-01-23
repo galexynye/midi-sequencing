@@ -9,12 +9,14 @@ export const msTheme = {
         primarydarker: '#5704BA',
         primarydark: '#42048C',
         secondary: '#FF5600', // Orange
+        secondarylighter: '#FF6618',
         secondarydark: '#CF4600',
         green: '#00E99D',
         greenlight: '#45E8B3',
         greendark: '#008A5D',
         yellow: '#FFEB00',
         yellowlight: '#FFF14C',
+        yellowlightest: '#FFF47A',
         greylight: '#CFCFCF'
     },
     breakpoints: { // Numbers in Pixels
@@ -42,11 +44,19 @@ export const msTheme = {
         article: '650px',
         sidebarMobileMenu: '200px'
     },
+    heights: {
+        header: '40px'
+    },
     utilities: function () {
         return {
             hideSmall: `@media screen and (max-width: ${this.breakpoints.small + 'px'}) {display: none;}`,
             hideMedium: `@media screen and (max-width: ${this.breakpoints.medium + 'px'}) {display: none;}`,
-
+            inputAndButtonShare: {
+                padding: `10px 25px;`,
+                paddingSmall: `10px 20px;`,
+                border: `1px solid #CFCFCF;`,
+                borderRadius: `15px;`
+            }
         }
     }
 

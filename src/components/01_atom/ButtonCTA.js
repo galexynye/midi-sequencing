@@ -1,29 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
+import { Input } from "../01_atom/Input";
 
-//This will be a functional component
-
-export const ButtonCTAStyle = styled.button`
-  margin: 5px 0px;
+const ButtonCTAStyle = styled(Input)`
+  padding: 0px;
   border: none;
-  border-radius: 15px;
-  padding: 10px 25px;
-  font-family: ${msTheme.font.headerFont};
-  font-size: 17px;
-  width: ${props => props.width || ''};
-  max-width: 100%;
-  color: ${props => props.color || msTheme.colors.text};
-  background-color: ${props => props.bgColor || msTheme.colors.greenlight};
-  &:hover{
-    cursor: pointer;
-    background-color: ${msTheme.colors.greenlight};
-    text-decoration: underline
-  }
-  ${msTheme.mediaquery().small}{
-    padding: 10px 20px;
+  button {
+    width: 100%;    
+    padding: ${props => props.padding || msTheme.utilities().inputAndButtonShare.padding};
+    /* ${msTheme.utilities().inputAndButtonShare.padding} See Input.js for why padding is done this way */
+    color: ${props => props.color || msTheme.colors.text};
+    font-size: 19px;
+    border: ${props => props.border || msTheme.utilities().inputAndButtonShare.border};
+    border-radius: ${props => props.borderRadius || msTheme.utilities().inputAndButtonShare.borderRadius};
+    background-color: ${props => props.bgColor || 'white'};
+    &:hover{
+      cursor: pointer;
+      /* background-color: ${msTheme.colors.greenlight}; */
+      /* text-decoration: underline */
+    } 
+    ${msTheme.mediaquery().medium}{
+      padding: ${props => props.paddingSmall || msTheme.utilities().inputAndButtonShare.paddingSmall}
+    }
   }
 `
+
 
 export class ButtonCTA extends React.Component {
   constructor(props) {
@@ -32,14 +34,11 @@ export class ButtonCTA extends React.Component {
   render() {
     const { color, bgColor, _handleClick, text, width } = this.props
     return (
-      <ButtonCTAStyle
-        onClick={_handleClick}
-        color={color}
-        bgColor={bgColor}
-        width={width}
-      >
-        {text}
-      </ ButtonCTAStyle>
+      <ButtonCTAStyle color={color} bgColor={bgColor} width={width} >
+        <button onClick={_handleClick}>
+          {text}
+        </ button>
+      </ButtonCTAStyle>
     )
   }
 }

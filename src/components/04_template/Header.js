@@ -7,6 +7,7 @@ import { msTheme } from '../../styles/Theme'
 
 const HeaderContainer = styled.header`
     /* margin-left: 20px;  */
+    /* position: absolute; */
     ${msTheme.mediaquery().medium}{
         margin: 0px;
     }

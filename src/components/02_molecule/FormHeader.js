@@ -11,7 +11,7 @@ export const FormHeaderStyle = styled.div`
 
 export const FormTitleStyle = styled.h2`
     font-size: 45px;
-    margin: 0px 0px 10px 0px;
+    margin: 0px auto 10px auto;
     ${msTheme.mediaquery().medium}{
         width: 500px;
         max-width: 100%;
@@ -24,6 +24,7 @@ export const FormTitleStyle = styled.h2`
 export const FormSubTitleStyle = styled.h3`
     font-family: ${msTheme.font.headerFont};
     font-size: 20px;
+     margin: 0px auto 20px auto;
     /* max-width: 350px; */
     line-height: 25px;
     ${msTheme.mediaquery().medium}{

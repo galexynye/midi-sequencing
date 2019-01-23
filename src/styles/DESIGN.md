@@ -62,7 +62,7 @@ style.scss
 [Code Source](https://www.lullabot.com/articles/bem-atomic-design-a-css-architecture-worth-loving)
 
 # Coding Guildlines
--Named Exports for organisms, molecules and atoms.
+Named Exports 
 
 background is shortened to bg when passing props
 ```
@@ -73,7 +73,7 @@ bgColor
 
 src > components > 05_page > PageBuilder.js 
 
-Follow instructions.
+Follow instructions. 
 
 To render pages via code, see the Gatsby Stuff section below.
 
@@ -88,10 +88,29 @@ Redux is not currently implemented.
 ## Theme
 The styles directory contains the Theme.js file, which includes an object containing the color themes, media breakpoints and any other global styling variables.
 
+Most shared utilites, such as between Inputs and Buttons, can be changed in the msTheme.utilities function that will return an object of the shared values. 
+
+## Styling Components 
+Styling components is done inside the components via styled components (similar to Vue architecture) with the aid of global utility classes defined in the `<SiteContainer>` - See above
+
+### Styling Via Props 
+
+Many reusable components can be customized by their props. 
+
+```
+color: ${props => props.color || msTheme.colors.primary};
+```
+At the component call 
+```
+<ButtonCTA color="blue" bgColor="red">
+```
+
+
+
 ## `<SiteContainer> ` For Base Styling and Utility
 The `<SiteContainer>` can be found in src > components > 05_page > Layout > SiteContainer.js.
 
-This component is the container of every page and includes base CSS, CSS resets, typography, and utility classes. Utility classes are injected globablly via styled component's `{injectGlobal}`.
+This component is the container of every page and includes base CSS, CSS resets, typography, and utility classes(rarely used, utilites are mostly on the msTheme and injected into styled components via interpolated strings). Utility classes are injected globablly via styled component's `{injectGlobal}`.
 
 [About Gatsby Global Style Injection problems](https://github.com/gatsbyjs/gatsby/issues/7413)
 
@@ -120,15 +139,6 @@ Further styling of a page can be done with a styled component that goes inside o
         <PageStyledContainer>
     <MainContainer>
 <SiteContainer> 
-```
-
-## Styling Components 
-Styling components is done inside the components via styled components (similar to Vue architecture) with the aid of global utility classes defined in the `<SiteContainer>` - See above
-
-### Props in styled components example 
-
-```
-color: ${props => props.inputColor || '#2c3e50'};
 ```
 
 
