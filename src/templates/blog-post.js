@@ -4,7 +4,9 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Wrapper from '../styles/oldCrap/Wrapper'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import { ArticleContainer } from '../components/04_template/ArticleContainer'
+import { ArticleContainer } from '../components/05_page/ArticleContainer'
+import { ContentContainer } from "../components/00_utilities/ContentContainer";
+import { msTheme } from '../styles/Theme'
 import Menu from '../components/MainNavigation/Menu'
 import Footer from '../components/Footer'
 
@@ -38,6 +40,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <SiteContainer>
+        {/* <ContentContainer width={msTheme.widths.article}> */}
         <ArticleContainer>
           {/* <Layout location={this.props.location}> */}
           <Helmet
@@ -45,7 +48,6 @@ class BlogPostTemplate extends React.Component {
             meta={[{ name: 'description', content: siteDescription }]}
             title={`${post.frontmatter.title} | ${siteTitle}`}
           />
-          <Menu sideNav={true} />
           <h1>{post.frontmatter.title}</h1>
           <ul
             style={

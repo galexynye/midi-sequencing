@@ -1,4 +1,4 @@
-// WAS ADDED to 01_atom folder
+// WAS ADDED to 00_Utility folder
 import styled from 'styled-components'
 
 

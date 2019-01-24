@@ -1,10 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
+import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import Wrapper from '../styles/oldCrap/Wrapper'
-import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 import Footer from '../components/Footer'
-import Menu from '../components/MainNavigation/Menu'
 // Components
 import { Link, graphql } from 'gatsby'
 import Styled from 'styled-components'
@@ -24,13 +23,11 @@ const Tags = ({ pageContext, data }) => {
     } tagged with "${tag}"`
 
   return (
-    <Wrapper>
+    <SiteContainer>
       <Helmet
         htmlAttributes={{ lang: 'en' }} // meta={[{ name: 'description', content: siteDescription }]}
         title={`${tag} | Music Sequencing`}
       />
-      <Menu sideNav={true} />
-      <HomeLink />
       <h1
       // style={{ marginTop: '10px' }}
       >{tagHeader}
@@ -57,7 +54,7 @@ const Tags = ({ pageContext, data }) => {
         All tags
       </Link>
       <Footer />
-    </Wrapper>
+    </SiteContainer>
   )
 }
 

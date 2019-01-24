@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 import { FormHeader } from "../02_molecule/FormHeader";
-import { WidthWrapper } from "../02_molecule/WidthWrapper";
+import { WidthWrapper } from "../00_utilities/WidthWrapper";
 import { InputString } from "../01_atom/InputString";
 import { InputSubmit } from "../01_atom/InputSubmit";
 import { msTheme } from "../../styles/Theme";
@@ -83,6 +83,8 @@ export class FormEbook extends React.Component {
         })
     }
 
+    // Note These messages and stuff should be set as props for the most part
+
     render() {
         // Ebook Interactive
         const EbookFormInteraction = <form onSubmit={this._handleSubmit}>
@@ -104,7 +106,6 @@ export class FormEbook extends React.Component {
                 {this.state.loading && <Loading text="Sending..." />}
                 {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.greenlight} colorMessage="white" message="Your Ebook download link is on the way :)" />}
                 {this.state.error && Oops}
-
             </FormEbookStyle>
         )
     }

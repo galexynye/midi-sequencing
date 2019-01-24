@@ -8,12 +8,7 @@ import bgImage2 from '../../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
 const HeroHomeStyle = styled.div`
     background-position: center;
     min-height: 100vh;
-    /* background-image:linear-gradient(rgba(255, 255, 255, 0.9), rgba(111, 11, 233, 0.4)), url(${bgImage}); */
-    /* background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(111, 11, 233, 0.5)), url(${bgImage2}); */
-    background-image:linear-gradient(rgba(100, 100, 100, 0.8), rgba(0, 0, 0, 0.9)), url(${bgImage2});
-    /* background-image:linear-gradient(rgba(225, 155, 255, 0.7), rgba(111, 11, 233, 0.4)), url(${bgImage2}); */
-    /* background-image:linear-gradient(rgba(255, 230, 255, 1), rgba(111, 11, 100, 0.4)), url(${bgImage}); */
-    /* background-image:linear-gradient(rgba(255, 230, 255, 1), rgba(111, 11, 100, 0.4)), url(${bgImage2}); */
+    background-image:linear-gradient(rgba(100, 100, 100, 0.8), rgba(0, 0, 0, 0.6)), url(${bgImage2});
     background-size: cover;
     position: relative;
     

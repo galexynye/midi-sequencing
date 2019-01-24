@@ -12,7 +12,7 @@ export const FormHeaderStyle = styled.div`
 export const FormTitleStyle = styled.h2`
     font-size: 80px;
     margin: 0px auto 10px auto;
-    line-height: 70px;
+    line-height: 75px;
     color: white;
     ${msTheme.mediaquery().medium}{
         /* width: 500px; */

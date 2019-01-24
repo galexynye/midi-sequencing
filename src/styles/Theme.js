@@ -43,17 +43,27 @@ export const msTheme = {
     },
     widths: {
         article: '650px',
-        sidebarMobileMenu: '200px'
+        sidebarMobileMenu: '200px',
+        wide: '1200px'
     },
     heights: {
         header: '40px'
+    },
+    padding: {
+        globalSide: '15px',
+        globalVertical: '15px',
+        globalSideSmall: '10px',
+        globalVerticalSmall: '5px',
+    },
+    margin: {
+        globalMarginTop: '20px' // Global Spacer
     },
     utilities: function () {
         return {
             hideSmall: `@media screen and (max-width: ${this.breakpoints.small + 'px'}) {display: none;}`,
             hideMedium: `@media screen and (max-width: ${this.breakpoints.medium + 'px'}) {display: none;}`,
             inputAndButtonShare: {
-                padding: `10px 25px;`,
+                padding: `10px 25px;`, // NOTE - the InputString.js component padding is NOT controlled by the padding here as of now, because the text input has it's own padding adn to be the same size it needs to be customized after changine the padding here.
                 paddingSmall: `10px 20px;`,
                 // border: `1px solid #CFCFCF;`,
                 border: `none;`,
