@@ -20,6 +20,7 @@ export const msTheme = {
         greylight: '#CFCFCF'
     },
     breakpoints: { // Numbers in Pixels
+        tiny: 400,
         small: 575,
         medium: 768,
         large: 991,
@@ -32,7 +33,7 @@ export const msTheme = {
             mediumMin: `@media screen and (min-width: ${this.breakpoints.medium + 'px'})`,
             large: `@media screen and (max-width: ${this.breakpoints.large + 'px'})`,
             xl: `@media screen and (max-width: ${this.breakpoints.xl + 'px'})`,
-
+            smallHeight: `@media screen and (max-height: ${this.breakpoints.tiny + 'px'})`,
         }
 
     },
@@ -54,7 +55,8 @@ export const msTheme = {
             inputAndButtonShare: {
                 padding: `10px 25px;`,
                 paddingSmall: `10px 20px;`,
-                border: `1px solid #CFCFCF;`,
+                // border: `1px solid #CFCFCF;`,
+                border: `none;`,
                 borderRadius: `15px;`
             }
         }

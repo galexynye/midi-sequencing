@@ -10,6 +10,7 @@ const InputSubmitStyle = styled(Input)`
             &:hover{
                 cursor:pointer;
             }
+            background-color: #ffffff00;
         }
 `
 

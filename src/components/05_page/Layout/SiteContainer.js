@@ -137,14 +137,14 @@ class SiteContainer extends React.Component {
         }
     }
     render() {
-        const { children } = this.props
+        const { children, headerPosition } = this.props
         return (
             <div>
                 <SidebarMobileNav mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu} />
                 <MainContainer mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu}>
-                    <Header toggleMobileMenu={this._toggleMobileMenu}></Header>
+                    <Header toggleMobileMenu={this._toggleMobileMenu} headerPosition={headerPosition}></Header>
                     {children}
-                    {/* <Footer></Footer> */}
+                    <Footer></Footer>
                 </MainContainer>
             </div>
         )

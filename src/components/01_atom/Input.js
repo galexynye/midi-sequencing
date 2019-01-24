@@ -10,7 +10,7 @@ export const Input = styled.div`
   border: ${props => props.border || msTheme.utilities().inputAndButtonShare.border};
   border-radius: ${props => props.border || msTheme.utilities().inputAndButtonShare.borderRadius};
   font-family: ${msTheme.font.headerFont};
-  font-size: 17px;
+  font-size: 19px;
   width: ${props => props.width || ''};
   max-width: 100%;
   color: ${props => props.color || msTheme.colors.text};

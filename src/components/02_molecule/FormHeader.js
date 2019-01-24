@@ -10,14 +10,22 @@ export const FormHeaderStyle = styled.div`
 `
 
 export const FormTitleStyle = styled.h2`
-    font-size: 45px;
+    font-size: 80px;
     margin: 0px auto 10px auto;
+    line-height: 70px;
+    color: white;
     ${msTheme.mediaquery().medium}{
-        width: 500px;
+        /* width: 500px; */
         max-width: 100%;
     }
     ${msTheme.mediaquery().small}{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    ${msTheme.mediaquery().smallHeight}{
+        width: 100vw;
         font-size: 30px;
+        line-height: 30px;
     }
 `
 
@@ -31,6 +39,11 @@ export const FormSubTitleStyle = styled.h3`
         width: 350px;
         max-width: 100%;
     }
+      ${msTheme.mediaquery().smallHeight}{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
 `
 
 export const FormHeader = (props) => {

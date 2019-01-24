@@ -6,7 +6,7 @@ import { HeroHome } from "../components/04_template/HeroHome";
 class Home extends React.Component {
     render() {
         return (
-            <SiteContainer>
+            <SiteContainer headerPosition="absolute">
                 <HeroHome />
 
             </SiteContainer>

@@ -7,9 +7,16 @@ import { msTheme } from '../../styles/Theme'
 
 const HeaderContainer = styled.header`
     /* margin-left: 20px;  */
-    /* position: absolute; */
+    position: ${props => props.headerPosition || 'static'};
+    /* padding: 0px 15px; */
+    background-color: #ffffffce;
+    border-bottom: 1px solid ${msTheme.colors.greylight};
+    /* border-bottom: 2px solid ${msTheme.colors.text}; */
+    width: 100%;
+    z-index: 10;
     ${msTheme.mediaquery().medium}{
         margin: 0px;
+        /* padding: 0px 15px; */
     }
 `
 
@@ -30,13 +37,13 @@ const HeaderStyle = styled.div`
 `
 
 const HomeLinkLogoWrapper = styled.div`
-   max-width: 300px;
+   max-width: 250px;
     /* ${msTheme.utilities().hideMedium} */
      ${msTheme.mediaquery().medium}{
         max-width: 250px;        
         position: absolute;
         left: 50%;
-        margin-left: -125px;
+        margin-left: -118px;
     }
 `
 
@@ -47,7 +54,7 @@ export class Header extends React.Component {
     }
     render() {
         return (
-            <HeaderContainer>
+            <HeaderContainer headerPosition={this.props.headerPosition}>
                 <HeaderStyle>
                     <MobileToggle toggleMobileMenu={this.props.toggleMobileMenu} />
                     <HomeLinkLogoWrapper>
