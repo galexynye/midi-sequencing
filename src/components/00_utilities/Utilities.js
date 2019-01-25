@@ -71,14 +71,15 @@ export class ContentContainer extends React.PureComponent {
 const ImageWrapper = styled(WidthWrapper)`
     img{
         max-width: 100%;
+        border-radius: ${props => props.borderRadius || '0px'};
     }
 `
 
 export class ResponsivePhoto extends React.PureComponent {
     render() {
-        const { width, widthSmall, margin, marginSmall, img } = this.props
+        const { width, widthSmall, margin, marginSmall, img, borderRadius } = this.props
         return (
-            <ImageWrapper width={width} widthSmall={widthSmall} margin={margin} marginSmall={marginSmall}>
+            <ImageWrapper width={width} widthSmall={widthSmall} margin={margin} marginSmall={marginSmall} borderRadius={borderRadius}>
                 <img src={img} />
             </ImageWrapper>
         )

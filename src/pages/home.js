@@ -2,18 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { msTheme } from '../styles/Theme'
-
-import { HeroHome } from "../components/04_template/HeroHome";
 import { ResponsivePhoto, FlexboxOrganism, WidthWrapper, ContentContainer } from "../components/00_utilities/Utilities";
 
-
-
-// Organisms
+// Components with Content
+import { HeroHome } from "../components/04_template/HeroHome";
 import { FreeForums } from "../components/03_organism/Home/FreeForums";
 
 // Asset Imports
-import MsForumsPic from '../assets/Temporary/MsForumWhite.png'
 import Alex from '../assets/Lessons/DeskPhoto.jpg'
+
+
 // TO KEEP THE SPACING EVEN throughout a page, add a const at the page level that is fed into the Content container components or paddingWrapper components left side padding, on the right or middle (if 3), or the even numbers if more then 3
 // ie. const gridSpace = "10px" - then there will be even separation of components
 
@@ -24,10 +22,10 @@ export const HomeSection = styled.section`
  background-color:  ${props => props.bgColor || 'white'};
 
     h2{
-        text-align: right;
-        margin-bottom: 40px;
-        
-        /* padding-right: 200px; */
+        text-align: center;
+        margin-bottom: 40px;        
+        padding-right: 100px;
+        color: ${props => props.color || msTheme.colors.text}
     }
    
     h3 {
@@ -43,13 +41,7 @@ export const HomeSection = styled.section`
     padding-bottom: 50px;
 `
 
-const Image = styled.div`
-    max-width: 100%;
-    height: auto;
-    img{
-        max-width: 100%;
-    }
-`
+
 
 
 export default class Home extends React.Component {
@@ -58,7 +50,7 @@ export default class Home extends React.Component {
             // <SiteContainer headerPosition="absolute">
 
             <SiteContainer >
-                <HeroHome />
+                {/* <HeroHome /> */}
                 {/* <HomeSection>
                         <h2>Recent Posts</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus voluptatibus sequi quibusdam saepe perspiciatis vitae dolores sit impedit, totam nihil asperiores unde ut deserunt consequatur facilis quo blanditiis molestias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, laborum! Est pariatur quod laboriosam autem explicabo fugiat impedit voluptatibus! Repellat rem laboriosam architecto eveniet tenetur? Aliquam, fuga asperiores? Sit, odio.</p>
@@ -67,10 +59,8 @@ export default class Home extends React.Component {
                 {/* <ResponsivePhoto img={Alex} width="200px" widthSmall="100px" marginSmall="0px"></ResponsivePhoto> */}
 
 
-                <HomeSection>
-                    <ContentContainer width={containerSize}>
-                        <FreeForums />
-                    </ContentContainer>
+                <HomeSection color={msTheme.colors.primary}>
+                    <FreeForums width={containerSize} />
                 </HomeSection>
 
 
@@ -97,7 +87,7 @@ export default class Home extends React.Component {
                             <WidthWrapper width="52%" margin="0px">
                                 <FlexboxOrganism>
 
-                                    <ResponsivePhoto img={Alex} />
+                                    <ResponsivePhoto img={Alex} borderRadius="20px" widthSmall="500px" />
                                 </FlexboxOrganism>
                             </WidthWrapper>
                         </FlexboxOrganism>

@@ -90,6 +90,13 @@ The `<SiteContainer>` can be found in src > components > 05_page > Layout > Site
 
 This component is the container of every page and includes base CSS, CSS resets, typography, and utility classes(rarely used, utilites are mostly on the msTheme and injected into styled components via interpolated strings). Utility classes are injected globablly via styled component's `{injectGlobal}`.
 
+[Inject Global is Depracated in v4](https://www.styled-components.com/docs/api#deprecated-extend)
+
+[Deprecated] injectGlobal
+Note
+
+The injectGlobal API was removed and replaced by createGlobalStyle in styled-components v4.
+
 NOTE: Upgrade eventually to using React's context API with the `<SiteContainer>`. See [This artice](https://medium.freecodecamp.org/how-to-develop-your-react-superpowers-with-the-context-api-61e0ab952c02)
 
 ### HeaderPosition

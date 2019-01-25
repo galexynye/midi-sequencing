@@ -9,10 +9,11 @@ const ButtonCTAStyle = styled(Input)`
 `
 
 
-export const ButtonCTA = ({ _handleClick, color, bgColor, text, width, margin, padding }) => {
+export const ButtonCTA = ({ _handleClick, color, bgColor, text, width, margin, padding, type }) => {
   return (
     <ButtonCTAStyle
       onClick={_handleClick}
+      // as={type ? type : "button"}
       as="button"
       color={color}
       bgColor={bgColor}
