@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 import { FormHeader } from "../02_molecule/FormHeader";
-import { WidthWrapper } from "../00_utilities/WidthWrapper";
+import { WidthWrapper } from "../00_utilities/Utilities";
 import { InputString } from "../01_atom/InputString";
 import { InputSubmit } from "../01_atom/InputSubmit";
 import { msTheme } from "../../styles/Theme";

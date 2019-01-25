@@ -2,10 +2,7 @@ import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 
 export const Input = styled.div`
-  margin: 0px 0px 15px 0px;
- 
-  /* For Consistency padding is Shared between inputs and Buttons. To Change padding for all inputs and buttons, change on the msTheme object. Otherwise create a new inherited class. via styled components */
-  /* ${msTheme.utilities().inputAndButtonShare.padding} */
+  margin: ${props => props.margin || "0px 0px 15px 0px"};
   padding: ${props => props.padding || msTheme.utilities().inputAndButtonShare.padding};
   border: ${props => props.border || msTheme.utilities().inputAndButtonShare.border};
   border-radius: ${props => props.border || msTheme.utilities().inputAndButtonShare.borderRadius};

@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { msTheme } from '../styles/Theme'
-import { ContentContainer } from "../components/00_utilities/ContentContainer";
-import { WidthWrapper } from '../components/00_utilities/WidthWrapper'
+
 import { HeroHome } from "../components/04_template/HeroHome";
-import { ResponsivePhoto } from "../components/00_utilities/ResponsivePhoto";
-import { FlexboxOrganism } from '../components/00_utilities/FlexboxOrganism'
-import { ButtonCTA } from "../components/01_atom/ButtonCTA";
+import { ResponsivePhoto, FlexboxOrganism, WidthWrapper, ContentContainer } from "../components/00_utilities/Utilities";
+
+
 
 // Organisms
 import { FreeForums } from "../components/03_organism/Home/FreeForums";
@@ -44,27 +43,29 @@ export const HomeSection = styled.section`
     padding-bottom: 50px;
 `
 
-// export const FlexboxOrganism = styled.div`
-//     display: flex;
-//     flex-flow: ${props => props.flexFlow || 'row wrap'};
-//     justify-content: ${props => props.justifyContent || 'center'};
-//     align-items: ${props => props.alignItems || 'center'};
-//     padding: ${props => props.padding || '0px'};
-//     margin: ${props => props.margin || '0px'};
+const Image = styled.div`
+    max-width: 100%;
+    height: auto;
+    img{
+        max-width: 100%;
+    }
+`
 
-// `
 
 export default class Home extends React.Component {
     render() {
         return (
-            <SiteContainer headerPosition="absolute">
-                {/* <SiteContainer > */}
-                <HeroHome />
+            // <SiteContainer headerPosition="absolute">
+
+            <SiteContainer >
+                {/* <HeroHome /> */}
                 {/* <HomeSection>
                         <h2>Recent Posts</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus voluptatibus sequi quibusdam saepe perspiciatis vitae dolores sit impedit, totam nihil asperiores unde ut deserunt consequatur facilis quo blanditiis molestias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, laborum! Est pariatur quod laboriosam autem explicabo fugiat impedit voluptatibus! Repellat rem laboriosam architecto eveniet tenetur? Aliquam, fuga asperiores? Sit, odio.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus voluptatibus sequi quibusdam saepe perspiciatis vitae dolores sit impedit, totam nihil asperiores unde ut deserunt consequatur facilis quo blanditiis molestias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, laborum! Est pariatur quod laboriosam autem explicabo fugiat impedit voluptatibus! Repellat rem laboriosam architecto eveniet tenetur? Aliquam, fuga asperiores? Sit, odio.</p>
                     </HomeSection> */}
+                {/* <ResponsivePhoto img={Alex} width="200px" widthSmall="100px" marginSmall="0px"></ResponsivePhoto> */}
+
 
                 <HomeSection>
                     <ContentContainer width={containerSize}>
@@ -102,6 +103,7 @@ export default class Home extends React.Component {
                         </FlexboxOrganism>
                     </ContentContainer>
                 </HomeSection>
+
             </SiteContainer >
         )
     }

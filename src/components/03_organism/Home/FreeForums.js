@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { msTheme } from '../../../styles/Theme'
 import { ButtonCTA } from "../../01_atom/ButtonCTA"
-import { FlexboxOrganism } from "../../00_utilities/FlexboxOrganism"
-import { WidthWrapper } from "../../00_utilities/WidthWrapper"
-import { ResponsivePhoto } from "../../00_utilities/ResponsivePhoto"
+import { FlexboxOrganism, WidthWrapper, ResponsivePhoto } from "../../00_utilities/Utilities"
+// import { WidthWrapper } from "../../00_utilities/WidthWrapper"
+// import { ResponsivePhoto } from "../../00_utilities/ResponsivePhoto"
 
 import MsForumsPic from '../../../assets/Temporary/MsForumWhite.png'
 
@@ -22,7 +22,6 @@ export class FreeForums extends Component {
                 <WidthWrapper width="40%" marginSmall="20px 0px">
                     <WidthWrapper>
                         <FlexboxOrganism height="400px" margin="0px 0px 0px 0px" flexFlow="column" alignItems="flex-start" justifyContent="flex-end">
-                            {/* <FlexboxOrganism> */}
                             {/* <WidthWrapper width="450px" margin="0px" marginSmall="25px 0px 0px 0px" > */}
                             <h3>Wanna talk?</h3>
                             <WidthWrapper width="300px" widthSmall="600px" margin="0px" marginSmall="0px">
@@ -33,7 +32,7 @@ export class FreeForums extends Component {
                             </WidthWrapper>
                             {/* </WidthWrapper> */}
                             <WidthWrapper width="250px" widthSmall="250px" margin="0px" marginSmall="0px" >
-                                <ButtonCTA text="Check Out the Forums" bgColor={msTheme.colors.greendark} color="white"></ButtonCTA>
+                                <ButtonCTA text="Check Out the Forums" bgColor={msTheme.colors.greendark} color="white" margin="0px"></ButtonCTA>
                             </WidthWrapper>
                         </FlexboxOrganism>
                     </WidthWrapper>

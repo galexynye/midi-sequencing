@@ -5,7 +5,7 @@ import get from 'lodash/get'
 import Wrapper from '../styles/oldCrap/Wrapper'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { ArticleContainer } from '../components/05_page/ArticleContainer'
-import { ContentContainer } from "../components/00_utilities/ContentContainer";
+import { ContentContainer } from "../components/00_utilities/Utilities";
 import { msTheme } from '../styles/Theme'
 import Menu from '../components/MainNavigation/Menu'
 import Footer from '../components/Footer'

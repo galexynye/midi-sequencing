@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import { injectGlobal } from 'styled-components'
 import { msTheme } from '../../../styles/Theme'
 import { reset } from '../../../styles/CSSReset'
@@ -7,7 +8,7 @@ import { Header } from '../../04_template/Header'
 import { Footer } from '../../04_template/Footer'
 import { SidebarMobileNav } from '../../04_template/SideBarMobileNav'
 
-
+import favicon from '../../../assets/midi-sequencing-icon-circle.png'
 
 // Global Styling & Utility Classes
 injectGlobal`
@@ -140,6 +141,25 @@ class SiteContainer extends React.Component {
         const { children, headerPosition } = this.props
         return (
             <div>
+                <Helmet
+                    htmlAttributes={{ lang: 'en' }}
+                    meta={[
+                        { name: 'description', content: 'Learn Music Production' },
+                        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                        {
+                            name: 'google-site-verification',
+                            content: 'ApEgiydr2XV738hMqiDL6JyWjg0Cq5ybbWmQrnDHq9c',
+                        },
+                    ]}
+                    title='Music Sequencing'
+                    link={[
+                        {
+                            rel: 'shortcut icon',
+                            type: 'image/png',
+                            href: `${favicon}`,
+                        },
+                    ]}
+                />
                 <SidebarMobileNav mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu} />
                 <MainContainer mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu}>
                     <Header toggleMobileMenu={this._toggleMobileMenu} headerPosition={headerPosition}></Header>
