@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import { msTheme } from '../../../styles/Theme'
 import { reset } from '../../../styles/CSSReset'
 import { MainContainer } from './MainContainer'
@@ -11,7 +11,7 @@ import { SidebarMobileNav } from '../../04_template/SideBarMobileNav'
 import favicon from '../../../assets/midi-sequencing-icon-circle.png'
 
 // Global Styling & Utility Classes
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
 
 ${reset}
 
@@ -160,6 +160,7 @@ class SiteContainer extends React.Component {
                         },
                     ]}
                 />
+                <GlobalStyle />
                 <SidebarMobileNav mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu} />
                 <MainContainer mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu}>
                     <Header toggleMobileMenu={this._toggleMobileMenu} headerPosition={headerPosition}></Header>
