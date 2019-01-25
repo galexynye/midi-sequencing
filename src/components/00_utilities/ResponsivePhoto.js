@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { WidthWrapper } from "./WidthWrapper";
 import { FlexboxOrganism } from "./FlexboxOrganism";
+import styled from 'styled-components'
 
 export class ResponsivePhoto extends Component {
     render() {

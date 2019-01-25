@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { msTheme } from '../../styles/Theme'
 
 export const FlexboxOrganism = styled.div`
     display: flex;
@@ -7,5 +8,9 @@ export const FlexboxOrganism = styled.div`
     align-items: ${props => props.alignItems || 'center'};
     padding: ${props => props.padding || '0px'};
     margin: ${props => props.margin || '0px'};
+    height: ${props => props.height || '100%'};
+    ${msTheme.mediaquery().medium}{
+        height: ${props => props.heightSmall || '100%'}
+    }
     
 `

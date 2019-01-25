@@ -67,7 +67,7 @@ export const msTheme = {
                 paddingSmall: `10px 20px;`,
                 // border: `1px solid #CFCFCF;`,
                 border: `none;`,
-                borderRadius: `15px;`
+                borderRadius: `7px;`
             }
         }
     }
