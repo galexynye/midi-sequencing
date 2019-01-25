@@ -11,6 +11,7 @@ import { Message } from "../01_atom/Message";
 import { ButtonCTA } from '../01_atom/ButtonCTA';
 /*
 
+Ebook Sender
 
 */
 
@@ -103,7 +104,7 @@ export class FormEbook extends React.Component {
             <FormEbookStyle>
                 <FormHeader title="The Ultimate Producer's Workflow" subtitle="How to CREATE Pro Quality Music : Doing EVERYTHING Yourself" />
                 {this.state.showForm && EbookFormInteraction}
-                {this.state.loading && <Loading text="Sending..." />}
+                {this.state.loading && <Loading text="Sending..." textColor="white" />}
                 {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.greenlight} colorMessage="white" message="Your Ebook download link is on the way :)" />}
                 {this.state.error && Oops}
             </FormEbookStyle>

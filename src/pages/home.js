@@ -58,7 +58,7 @@ export default class Home extends React.Component {
             // <SiteContainer headerPosition="absolute">
 
             <SiteContainer >
-                {/* <HeroHome /> */}
+                <HeroHome />
                 {/* <HomeSection>
                         <h2>Recent Posts</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus voluptatibus sequi quibusdam saepe perspiciatis vitae dolores sit impedit, totam nihil asperiores unde ut deserunt consequatur facilis quo blanditiis molestias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, laborum! Est pariatur quod laboriosam autem explicabo fugiat impedit voluptatibus! Repellat rem laboriosam architecto eveniet tenetur? Aliquam, fuga asperiores? Sit, odio.</p>

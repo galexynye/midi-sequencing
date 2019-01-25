@@ -13,23 +13,13 @@ const InputStringStyle = styled(Input)`
 `
 
 
-export class InputString extends Component {
-    constructor(props) {
-        super(props)
+export const InputString = ({ type, value, _handleChange, placeholder, bgColor }) => {
+    return (
+        <InputStringStyle bgColor={bgColor}>
+            <input type={type} value={value} onChange={_handleChange} placeholder={placeholder}  >
 
-        this.state = {
+            </input>
+        </InputStringStyle>
+    )
 
-        }
-    }
-
-    render() {
-        const { type, value, _handleChange, placeholder, bgColor } = this.props;
-        return (
-            <InputStringStyle bgColor={bgColor}>
-                <input type={type} value={value} onChange={_handleChange} placeholder={placeholder}  >
-
-                </input>
-            </InputStringStyle>
-        )
-    }
 }

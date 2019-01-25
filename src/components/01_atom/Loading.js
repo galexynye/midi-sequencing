@@ -11,31 +11,24 @@ export const LoadingStyle = styled.div`
     flex-flow: column;
     align-items: center;
     p{
-        color: ${props => props.color || "white"};
+        color: ${props => props.color || msTheme.colors.text};
         font-family: ${msTheme.font.headerFont};
         margin: 0px 0px 10px 0px;
     }
 `
 
-export class Loading extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-
-        }
-    }
-    render() {
-        const { text, type, color } = this.props
-        return (
-            <LoadingStyle>
-
-                <ReactLoading type={type ? type : "bars"} color={color ? color : msTheme.colors.primary} height={50} width={50} />
-                {/* <ReactLoading type="bars" color="blue" height={75} width={75} /> */}
-                <p>{text}</p>
-            </LoadingStyle>
-        )
-    }
+export const Loading = ({ text, type, color, textColor }) => {
+    return (
+        <LoadingStyle color={textColor}>
+            <ReactLoading
+                type={type ? type : "bars"}
+                color={color ? color : msTheme.colors.secondary}
+                height={50}
+                width={50}
+            />
+            <p>{text}</p>
+        </LoadingStyle>
+    )
 }
 
 

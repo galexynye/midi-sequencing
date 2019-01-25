@@ -3,8 +3,26 @@ import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 
 
+// These are common utilities all in one file for ease of import. 
 
 
+
+
+// Width Wrapper - Defaults to width to 100% or whatever it's in, with optional width prop or small width prop
+
+export const WidthWrapper = styled.div`
+    /* position: relative; */
+    width: ${props => props.width || "100%"};
+    padding: ${props => props.padding || "0px"};
+    max-width: 100%;
+    margin: ${props => props.margin || 'auto'}; 
+    ${msTheme.mediaquery().medium}{
+           width: ${props => props.widthSmall || '100%'};
+           margin: ${props => props.marginSmall || 'auto'}
+    }   
+`
+
+// Flexbox Organism - Default flex box with everything centered
 
 export const FlexboxOrganism = styled.div`
     display: flex;
@@ -19,24 +37,8 @@ export const FlexboxOrganism = styled.div`
     }
 `
 
-export const WidthWrapper = styled.div`
-    /* position: relative; */
-    width: ${props => props.width || "100%"};
-    padding: ${props => props.padding || "0px"};
-    max-width: 100%;
-    margin: ${props => props.margin || 'auto'}; 
-    ${msTheme.mediaquery().medium}{
-           width: ${props => props.widthSmall || '100%'};
-           margin: ${props => props.marginSmall || 'auto'}
-    }   
-`
 
-
-/*
-Default is From the Global THEME
-Used to add padding usually side padding in conjunction with the WidthWrapper.
-Outer wrapper in the CONTENT CONTAINER
-*/
+// Padding Wrapper - Default Padding is From the Global THEME. Outer wrapper in the CONTENT CONTAINER (below)
 
 export const PaddingWrapper = styled.div`
     padding: ${props => props.padding || `${msTheme.padding.globalVertical} ${msTheme.padding.globalSide}`};
@@ -48,9 +50,8 @@ export const PaddingWrapper = styled.div`
 `
 
 
+// Content Container - Used to set the padding for the page
 
-
-// Used to set the padding for the page
 export class ContentContainer extends React.PureComponent {
     render() {
         const { children, width, widthSmall, outerMargin, margin, marginSmall, padding, paddingSmall } = this.props
@@ -64,6 +65,8 @@ export class ContentContainer extends React.PureComponent {
     }
 }
 
+
+// ResponsivePhoto - takes src as prop and outputs a responsive photo. extended from the WidthWrapper
 
 const ImageWrapper = styled(WidthWrapper)`
     img{
@@ -81,6 +84,9 @@ export class ResponsivePhoto extends React.PureComponent {
         )
     }
 }
+
+
+// Responsive Iframe - Exactly what it says little man. Wrap an Iframe In it
 
 export const ResponsiveIframe = styled.div`
   position: relative;
