@@ -16,7 +16,8 @@ const InputSubmitStyle = styled(Input)`
 
 export const InputSubmit = ({ value, _handleSubmit, bgColor }) => {
     return (
-        <InputSubmitStyle bgColor={bgColor}>
+        <InputSubmitStyle
+            bgColor={bgColor}>
             <input type="submit" value={value} onSubmit={_handleSubmit}>
             </input>
         </InputSubmitStyle>

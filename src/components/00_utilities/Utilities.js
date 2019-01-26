@@ -11,18 +11,22 @@ import { msTheme } from '../../styles/Theme'
 // Width Wrapper - Defaults to width to 100% or whatever it's in, with optional width prop or small width prop
 
 export const WidthWrapper = styled.div`
-    /* position: relative; */
     width: ${props => props.width || "100%"};
     padding: ${props => props.padding || "0px"};
     max-width: 100%;
-    margin: ${props => props.margin || 'auto'}; 
-    ${msTheme.mediaquery().medium}{
-           width: ${props => props.widthSmall || '100%'};
-           margin: ${props => props.marginSmall || 'auto'}
-    }   
+    margin: ${props => props.margin || 'auto'};     
+     @media screen and (max-width: ${props => props.breakPoint ? props.breakPoint + 'px' : msTheme.breakPoints.medium + 'px'}) {
+            width: ${props => props.widthSmall || '100%'};        
+            margin: ${ props => props.marginSmall ? props.marginSmall : props.margin ? props.margin : 'auto'};
+            padding: ${props => props.paddingSmall || '0px'};
+     }
+    /* ${msTheme.mediaquery().medium}{
+           width: ${props => props.widthSmall || '100%'};        
+           margin: ${ props => props.marginSmall ? props.marginSmall : props.margin ? props.margin : 'auto'}
+    }    */
 `
 
-// Flexbox Organism - Default flex box with everything centered
+// Flexbox Organism - A Flexbox with everything centered
 
 export const FlexboxOrganism = styled.div`
     display: flex;
@@ -32,7 +36,7 @@ export const FlexboxOrganism = styled.div`
     padding: ${props => props.padding || '0px'};
     margin: ${props => props.margin || '0px'};
     height: ${props => props.height || '100%'};
-    ${msTheme.mediaquery().medium}{
+    @media screen and (max-width: ${props => props.breakPoint ? props.breakPoint + 'px' : msTheme.breakPoints.medium + 'px'}) {
         height: ${props => props.heightSmall || '100%'}
     }
 `
@@ -54,7 +58,7 @@ export const PaddingWrapper = styled.div`
 
 export class ContentContainer extends React.PureComponent {
     render() {
-        const { children, width, widthSmall, outerMargin, margin, marginSmall, padding, paddingSmall } = this.props
+        const { children, width, widthSmall, outerMargin, margin, marginSmall, padding, paddingSmall, } = this.props
         return (
             <PaddingWrapper margin={outerMargin} marginSmall={marginSmall} padding={padding} paddingSmall={paddingSmall} >
                 <WidthWrapper width={width} widthSmall={widthSmall} margin={margin}>
@@ -77,10 +81,10 @@ const ImageWrapper = styled(WidthWrapper)`
 
 export class ResponsivePhoto extends React.PureComponent {
     render() {
-        const { width, widthSmall, margin, marginSmall, img, borderRadius } = this.props
+        const { width, widthSmall, margin, marginSmall, src, borderRadius } = this.props
         return (
             <ImageWrapper width={width} widthSmall={widthSmall} margin={margin} marginSmall={marginSmall} borderRadius={borderRadius}>
-                <img src={img} />
+                <img src={src} />
             </ImageWrapper>
         )
     }

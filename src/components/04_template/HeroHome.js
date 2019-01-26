@@ -51,7 +51,6 @@ export class HeroHome extends Component {
                 <HeroHomeElementCenter>
                     <FormEbook />
                 </HeroHomeElementCenter>
-
             </HeroHomeStyle>
         )
     }

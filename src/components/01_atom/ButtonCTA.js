@@ -1,26 +1,56 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Input } from "../01_atom/Input";
+import { WidthWrapper } from "../00_utilities/Utilities";
+import { msTheme } from '../../styles/Theme'
+import { Link } from 'gatsby'
 
-const ButtonCTAStyle = styled(Input)`
-    &:hover{
-      cursor: pointer;
-    } 
+// If 'href' props is passed button is an anchor link, if 'to' props is passed, it's a is Gatsby Link, otherwise it's a button that will handle a function
+
+const ButtonCTAStyle = styled.button`
+  margin: ${props => props.margin || "0px 0px 15px 0px"};
+  padding: ${props => props.padding || msTheme.utilities().inputAndButtonShare.padding};
+  border: ${props => props.border || msTheme.utilities().inputAndButtonShare.border};
+  border-radius: ${props => props.border || msTheme.utilities().inputAndButtonShare.borderRadius};
+  font-family: ${msTheme.font.headerFont};
+  font-size: 19px;
+  width: 100%; 
+  max-width: 100%;
+  color: ${props => props.color || msTheme.colors.text};
+  background-color: ${props => props.bgColor || 'white'};
+
+  ${msTheme.mediaquery().medium}{
+    padding: ${props => props.paddingSmall || msTheme.utilities().inputAndButtonShare.paddingSmall}
+  }
+  &:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 `
 
 
-export const ButtonCTA = ({ _handleClick, color, bgColor, text, width, margin, padding, type }) => {
+export const ButtonCTA = ({ _handleClick, color, bgColor, text, width, margin, padding, href, to }) => {
+  if (href) {
+    return (
+      <a href={href}>
+        <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} >
+          {text}
+        </ButtonCTAStyle>
+      </a>
+    )
+  }
+  if (to) {
+    return (
+      <Link to={to}>
+        <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} >
+          {text}
+        </ButtonCTAStyle>
+      </Link>
+    )
+  }
   return (
-    <ButtonCTAStyle
-      onClick={_handleClick}
-      // as={type ? type : "button"}
-      as="button"
-      color={color}
-      bgColor={bgColor}
-      width={width}
-      margin={margin}
-      padding={padding}
-    >
+    <ButtonCTAStyle onClick={_handleClick} bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} >
       {text}
     </ButtonCTAStyle>
   )

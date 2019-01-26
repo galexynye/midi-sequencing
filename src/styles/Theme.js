@@ -1,6 +1,7 @@
 export const msTheme = {
     colors: {
         text: '#24292e', // '#373737'
+        textlight: '#6d6d6d',
         primary: '#700bea', // Purple
         primayhighlighter: '#C6A6F2',
         primarylightest: '#AF7AF0',
@@ -19,7 +20,7 @@ export const msTheme = {
         yellowlightest: '#FFF47A',
         greylight: '#CFCFCF'
     },
-    breakpoints: { // Numbers in Pixels
+    breakPoints: { // Numbers in Pixels
         tiny: 400,
         small: 575,
         medium: 768,
@@ -28,12 +29,12 @@ export const msTheme = {
     },
     mediaquery: function () {
         return {
-            small: `@media screen and (max-width: ${this.breakpoints.small + 'px'})`,
-            medium: `@media screen and (max-width: ${this.breakpoints.medium + 'px'})`,
-            mediumMin: `@media screen and (min-width: ${this.breakpoints.medium + 'px'})`,
-            large: `@media screen and (max-width: ${this.breakpoints.large + 'px'})`,
-            xl: `@media screen and (max-width: ${this.breakpoints.xl + 'px'})`,
-            smallHeight: `@media screen and (max-height: ${this.breakpoints.tiny + 'px'})`,
+            small: `@media screen and (max-width: ${this.breakPoints.small + 'px'})`,
+            medium: `@media screen and (max-width: ${this.breakPoints.medium + 'px'})`,
+            mediumMin: `@media screen and (min-width: ${this.breakPoints.medium + 'px'})`,
+            large: `@media screen and (max-width: ${this.breakPoints.large + 'px'})`,
+            xl: `@media screen and (max-width: ${this.breakPoints.xl + 'px'})`,
+            smallHeight: `@media screen and (max-height: ${this.breakPoints.tiny + 'px'})`,
         }
 
     },
@@ -60,12 +61,11 @@ export const msTheme = {
     },
     utilities: function () {
         return {
-            hideSmall: `@media screen and (max-width: ${this.breakpoints.small + 'px'}) {display: none;}`,
-            hideMedium: `@media screen and (max-width: ${this.breakpoints.medium + 'px'}) {display: none;}`,
+            hideSmall: `@media screen and (max-width: ${this.breakPoints.small + 'px'}) {display: none;}`,
+            hideMedium: `@media screen and (max-width: ${this.breakPoints.medium + 'px'}) {display: none;}`,
             inputAndButtonShare: {
                 padding: `10px 25px;`, // NOTE - the InputString.js component padding is NOT controlled by the padding here as of now, because the text input has it's own padding adn to be the same size it needs to be customized after changine the padding here.
                 paddingSmall: `10px 20px;`,
-                // border: `1px solid #CFCFCF;`,
                 border: `none;`,
                 borderRadius: `7px;`
             }

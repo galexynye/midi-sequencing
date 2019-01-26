@@ -89,14 +89,22 @@ a {
     }
 }
 
+.center {
+    text-align: center;
+}
+
+.marB40 {
+    margin-bottom: 40px;
+}
+
 .hideMobile {
-    @media screen and (max-width: ${msTheme.breakpoints.small}) {
+    @media screen and (max-width: ${msTheme.breakPoints.small}) {
         display: none;
     }
 }
 
 .hideMedium {
-    @media screen and (min-width: ${msTheme.breakpoints.medium}) {
+    @media screen and (min-width: ${msTheme.breakPoints.medium}) {
         display: none;
     }
 }
@@ -131,7 +139,7 @@ class SiteContainer extends React.Component {
         this.setState({
             windowWidth: window.innerWidth
         })
-        if (this.state.windowWidth > msTheme.breakpoints.medium) {
+        if (this.state.windowWidth > msTheme.breakPoints.medium) {
             this.setState({
                 mobileMenuOpen: false
             })
