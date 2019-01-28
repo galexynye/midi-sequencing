@@ -5,11 +5,11 @@ import { msTheme } from '../../styles/Theme'
 import { PostCard } from '../02_molecule/PostCard'
 import { FlexboxOrganism, WidthWrapper, ContentContainer } from '../00_utilities/Utilities'
 
+// Static Query Component - Queries Recent Posts and Displays them
+
 import DawPic from '../../assets/LandingCards/Daws-20.jpg'
 import EQPic from '../../assets/LandingCards/Bunch-Of-EQs-picture-1.jpg'
-/* Static Query component 
-Will query the post recent posts and render them as cards by injecting the data into the PostCard Component
-*/
+
 const RecentPostsStyled = styled.div`
 padding-bottom: 40px;
 border-bottom: 2px solid lightgray;
@@ -21,28 +21,6 @@ h2{
         font-weight: 50;  
 }
 `
-const PostData = {
-    title: "Build a Studio",
-    snippet: 'Lorem ipsum dolor siri molestiae natus fuga, facilis architecto adipisci ullam impedit quibusdam officiis quisq? Earum, esse? Eligendi.',
-    learnOrBlog: 'Blog',
-    date: 'January 1st 2019',
-    category: 'Studio'
-}
-const PostData2 = {
-    title: "Which DAW is Best for YOU!",
-    snippet: 'Lorem ipsum dolor siri molestiae natus fuga, facilis architecto adipisci ullam impedit quibusdam officiis quisq? Earum, esse? Eligendi.',
-    learnOrBlog: 'Learn',
-    date: 'January 1st 2019',
-    src: EQPic
-}
-const PostData3 = {
-    title: "Build a Studio",
-    snippet: 'Lorem ipsum dolor siri molestiae natus fuga, facilis architecto adipisci ullam impedit quibusdam officiis quisq? Earum, esse? Eligendi.',
-    learnOrBlog: 'Learn',
-    date: 'January 1st 2019',
-    src: DawPic
-}
-
 
 export class RecentPostsView extends Component {
     render() {
@@ -64,6 +42,7 @@ export class RecentPostsView extends Component {
             }
             return (
                 <PostCard
+                    key={post.node.fields.slug}
                     learnOrBlog={post.node.frontmatter.category}
                     snippet={post.node.excerpt}
                     date={post.node.frontmatter.date}

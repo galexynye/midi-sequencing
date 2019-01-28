@@ -80,6 +80,9 @@ link in cards is adding a little bit of white space at smaller widths. corrected
 The background hero if fucked when going from portrait to landscape. Detect orientation change to fix.
 https://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
 
+
+Footer Cards Are stupidly designed the height is set by looking at the "ultimate ebook height" and then setting the "need a mentor" height to that
+
 # Building new Pages 
 
 See the `<SiteContainer>` notes below. All pages are wrapped in the `<SiteContainer>`.

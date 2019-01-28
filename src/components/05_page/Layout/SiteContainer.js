@@ -93,6 +93,14 @@ a {
     text-align: center;
 }
 
+.noMargin{
+    margin:0px;
+}
+
+.mT20{
+    margin-top: 20px;
+}
+
 .mB40 {
     margin-bottom: 40px;
 }

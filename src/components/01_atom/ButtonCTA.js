@@ -30,30 +30,39 @@ const ButtonCTAStyle = styled.button`
 `
 
 
-export const ButtonCTA = ({ _handleClick, color, bgColor, text, width, margin, padding, href, to }) => {
-  if (href) {
+export class ButtonCTA extends React.PureComponent {
+  constructor(props) {
+    super(props)
+
+  }
+
+  render() {
+    const { _handleClick, color, bgColor, text, width, margin, padding, href, to } = this.props
+
+    if (href) {
+      return (
+        <a href={href}>
+          <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} >
+            {text}
+          </ButtonCTAStyle>
+        </a>
+      )
+    }
+    if (to) {
+      return (
+        <Link to={to}>
+          <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} >
+            {text}
+          </ButtonCTAStyle>
+        </Link>
+      )
+    }
     return (
-      <a href={href}>
-        <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} >
-          {text}
-        </ButtonCTAStyle>
-      </a>
+      <ButtonCTAStyle onClick={_handleClick} bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} >
+        {text}
+      </ButtonCTAStyle>
     )
   }
-  if (to) {
-    return (
-      <Link to={to}>
-        <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} >
-          {text}
-        </ButtonCTAStyle>
-      </Link>
-    )
-  }
-  return (
-    <ButtonCTAStyle onClick={_handleClick} bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} >
-      {text}
-    </ButtonCTAStyle>
-  )
 }
 
 

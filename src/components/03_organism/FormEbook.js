@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 import { FormHeader } from "../02_molecule/FormHeader";
-import { WidthWrapper } from "../00_utilities/Utilities";
+import { WidthWrapper, FlexboxOrganism } from "../00_utilities/Utilities";
 import { InputString } from "../01_atom/InputString";
 import { InputSubmit } from "../01_atom/InputSubmit";
 import { msTheme } from "../../styles/Theme";
@@ -17,17 +17,22 @@ Ebook Sender
 
 const subscribeApi = process.env.MS_API_SUBSCRIBE
 
-export const FormEbookStyle = styled.div`
+export const FormEbookContainer = styled.div`
     max-width: 100%;    
+    
     form {
         display: flex;
         flex-flow: column;        
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 `
 
-export class FormEbook extends React.Component {
+
+
+
+
+export class FormEbook extends React.PureComponent {
     constructor(props) {
         super(props)
         this.state = {
@@ -86,6 +91,7 @@ export class FormEbook extends React.Component {
     // Note These messages and stuff should be set as props for the most part
 
     render() {
+        const { subtitle, color, marginTitle, headerHeight, formHeight, fontSize, fontSizeSmall, lineHeight, lineHeightSmall } = this.props
         // Ebook Interactive
         const EbookFormInteraction = <form onSubmit={this._handleSubmit}>
             <WidthWrapper width="350px">
@@ -100,13 +106,17 @@ export class FormEbook extends React.Component {
         </WidthWrapper>
 
         return (
-            <FormEbookStyle>
-                <FormHeader title="The Ultimate Producer's Workflow" subtitle="How to CREATE Pro Quality Music : Doing EVERYTHING Yourself" />
+            <FormEbookContainer headerHeight={headerHeight} >
+
+                <FormHeader title="The Ultimate Producer's Workflow" subtitle={subtitle} marginTitle={marginTitle} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall} />
+
+
                 {this.state.showForm && EbookFormInteraction}
                 {this.state.loading && <Loading text="Sending..." textColor="white" />}
                 {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.greenlight} colorMessage="white" message="Your Ebook download link is on the way :)" />}
                 {this.state.error && Oops}
-            </FormEbookStyle>
+
+            </FormEbookContainer>
         )
     }
 }

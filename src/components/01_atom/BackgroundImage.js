@@ -28,14 +28,20 @@ const CardLabel = styled.div`
    
 `
 
-export const BackgroundImage = ({ children, src, height, width, widthSmall, heightSmall, color1, color2, breakPoint }) => {
-    return (
+export class BackgroundImage extends React.PureComponent {
+    constructor(props) {
+        super(props)
+    }
+    render() {
+        const { children, src, height, width, widthSmall, heightSmall, color1, color2, breakPoint } = this.props
+        return (
 
-        <BackgroundImageStyle src={src} height={height} width={width} heightSmall={heightSmall} breakPoint={breakPoint} widthSmall={widthSmall} color1={color1} color2={color2} >
-            {children}
-        </BackgroundImageStyle>
+            <BackgroundImageStyle src={src} height={height} width={width} heightSmall={heightSmall} breakPoint={breakPoint} widthSmall={widthSmall} color1={color1} color2={color2} >
+                {children}
+            </BackgroundImageStyle>
 
-    )
+        )
+    }
 }
 
 

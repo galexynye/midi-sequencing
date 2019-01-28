@@ -4,23 +4,26 @@ import { msTheme } from '../../styles/Theme'
 
 export const FormHeaderStyle = styled.div`
     text-align: center;
+    height: ${props => props.height || 'auto'};
     /* h3 {
         text-align: left;
     } */
 `
 
 export const FormTitleStyle = styled.h2`
-    font-size: 80px;
-    margin: 0px auto 10px auto;
-    line-height: 75px;
-    color: white;
+  
+    font-size: ${props => props.fontSize || '80px'};
+    margin: ${props => props.margin || '0px auto 10px auto'};
+    padding: ${props => props.padding || '0px'};
+    line-height: ${props => props.lineHeight || '75px'};
+    color: ${props => props.color || 'white'};
     ${msTheme.mediaquery().medium}{
         /* width: 500px; */
         max-width: 100%;
     }
     ${msTheme.mediaquery().small}{
-        font-size: 35px;
-        line-height: 35px;
+        font-size: ${props => props.fontSizeSmall || '35px'};
+        line-height: ${props => props.lineHeightSmall || '35px'};
     }
     ${msTheme.mediaquery().smallHeight}{
         width: 100vw;
@@ -46,13 +49,20 @@ export const FormSubTitleStyle = styled.h3`
     
 `
 
-export const FormHeader = (props) => {
-    return (
-        <FormHeaderStyle>
-            <FormTitleStyle>
-                {props.title}
-            </FormTitleStyle>
-            {props.subtitle && <FormSubTitleStyle>{props.subtitle}</FormSubTitleStyle>}
-        </FormHeaderStyle>
-    )
+export class FormHeader extends React.PureComponent {
+    constructor(props) {
+        super(props)
+    }
+    render() {
+        const { title, headerHeight, subtitle, color, marginTitle, titlePadding, fontSize, fontSizeSmall, lineHeight, lineHeightSmall, } = this.props
+
+        return (
+            <FormHeaderStyle height={headerHeight}>
+                <FormTitleStyle color={color} margin={marginTitle} padding={titlePadding} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall}>
+                    {title}
+                </FormTitleStyle>
+                {subtitle && <FormSubTitleStyle>{subtitle}</FormSubTitleStyle>}
+            </FormHeaderStyle>
+        )
+    }
 }

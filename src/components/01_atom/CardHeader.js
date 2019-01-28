@@ -9,7 +9,7 @@ export const CardHeaderStyle = styled.div`
     /* width: 300px; */
     overflow: hidden;
     text-overflow: ellipsis ;
-    color: ${msTheme.colors.text};
+    color: ${msTheme.colors.primary};
     display: block;
     font-family: ${msTheme.font.headerFont};
     font-size: 22px;
@@ -18,7 +18,7 @@ export const CardHeaderStyle = styled.div`
 	letter-spacing: -1px;
 	line-height: 39px;
     a{
-       color: ${msTheme.colors.text}; 
+       color: ${msTheme.colors.primary}; 
        text-decoration: none;
        padding: 0px;
     }
@@ -26,7 +26,7 @@ export const CardHeaderStyle = styled.div`
         cursor: pointer; 
         
         a{
-            color: ${msTheme.colors.primary};
+            color: ${msTheme.colors.primarydark};
             text-decoration: none;
         }
             

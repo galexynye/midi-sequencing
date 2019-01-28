@@ -20,9 +20,11 @@ export const Input = styled.div`
 input{
         width: 100%;
         margin: auto;
+        /* padding: 2px 0px 1px 0px; */
         color: ${props => props.color || msTheme.colors.text};
         border: none;
         font-size: 19px;
+        line-height: 27px;        
         background-color: ${props => props.bgColor || 'white'};
     }
 

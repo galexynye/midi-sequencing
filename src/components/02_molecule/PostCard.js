@@ -74,21 +74,12 @@ export class PostCard extends React.PureComponent {
                     <small>{date}</small>
 
                     {category && <CategoryStyled>
-                        <Link>{category}</Link>
+                        <Link to={slug}>{category}</Link>
                     </CategoryStyled>}
 
                     {!category && <CategoryStyled>Not-categorized</CategoryStyled>}
 
-
-
-
-
-
                     <p>{snippet}</p>
-
-
-
-
 
                     <WidthWrapper width="250px" margin="0px">
                         <ButtonCTA to={slug} text="Read more" bgColor={msTheme.colors.yellow}></ButtonCTA>

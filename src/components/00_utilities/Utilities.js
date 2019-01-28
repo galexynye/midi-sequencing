@@ -35,7 +35,7 @@ export const FlexboxOrganism = styled.div`
     align-items: ${props => props.alignItems || 'center'};
     padding: ${props => props.padding || '0px'};
     margin: ${props => props.margin || '0px'};
-    height: ${props => props.height || '100%'};
+    height: ${props => props.height || 'auto'};
     @media screen and (max-width: ${props => props.breakPoint ? props.breakPoint + 'px' : msTheme.breakPoints.medium + 'px'}) {
         height: ${props => props.heightSmall || '100%'}
     }
