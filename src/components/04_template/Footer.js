@@ -7,7 +7,10 @@ import { HomeLinkLogo } from "../01_atom/HomeLinkLogo"
 import { FormEbook } from '../03_organism/FormEbook'
 import { FormHeader } from '../02_molecule/FormHeader'
 import { BgImageTextButton } from '../02_molecule/BgImageTextButton'
+import { BackgroundImage } from "../01_atom/BackgroundImage";
 import { ButtonCTA } from '../01_atom/ButtonCTA';
+
+import ForumPic from '../../assets/Temporary/MsForumWhite.png'
 
 export const FooterStyle = styled.footer`
     /* background-color: ${msTheme.colors.text}; */
@@ -22,11 +25,13 @@ export const FooterStyle = styled.footer`
 
 export const Copyright = styled.div``
 
+// The CARDS absolute spaghetti, fucking shit
+
 export const Footer = props => {
     return (
         <FooterStyle>
-            <WidthWrapper width="750px">
-                <FlexboxOrganism height="200px" justifyContent="space-around" padding="30px 0px 0px 0px">
+            <WidthWrapper >
+                <FlexboxOrganism justifyContent="space-around" padding="30px 0px 0px 0px">
 
                     <PaddingWrapper padding="0px 15px">
                         <FlexboxOrganism >
@@ -52,14 +57,27 @@ export const Footer = props => {
                         </FlexboxOrganism>
                     </PaddingWrapper>
 
+                    <PaddingWrapper padding="0px 15px">
+                        <FlexboxOrganism>
+                            <FlexboxOrganism height="191px" flexFlow="column" justifyContent="space-between">
+                                <FormHeader title="Say hi" fontSize="20px" fontSizeSmall="20px" lineHeight="25px" marginTitle="0px 0px 15px 0px" padding="0px" />
+                                <a href="https://forum.musicsequencing.com">
+                                    <BackgroundImage src={ForumPic} width="300px" bgColor="white" widthSmall="300px" height="156px" >
+                                    </BackgroundImage>
+                                </a>
+                            </FlexboxOrganism>
+                        </FlexboxOrganism>
+                    </PaddingWrapper>
+
+
                 </FlexboxOrganism>
             </WidthWrapper>
 
             <NavFooter></NavFooter>
 
 
-            <WidthWrapper width="600px" widthSmall="200px">
-                <HomeLinkLogo padding="10px 10px 6px 10px" bgColor='rgb(255,255,255)' borderRadius="7px"></HomeLinkLogo>
+            <WidthWrapper width="600px" widthSmall="300px">
+                <HomeLinkLogo padding="5px 5px 4px 5px" bgColor='rgb(255,255,255)' borderRadius="5px"></HomeLinkLogo>
             </WidthWrapper>
 
 
