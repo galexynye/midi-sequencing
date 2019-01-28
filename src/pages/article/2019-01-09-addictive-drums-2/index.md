@@ -1,14 +1,18 @@
 ---
-path: '/article/addictive-drums-2'
-title: Addictive Drums 2 Review and Overview
+title: Addictive Drums 2 Review
 author: 'Alex Nye'
 date: '2019-01-09'
-category: 'Gear'
-subcategory: 'Samples'
+category: 'blog'
+subcategory: 'gear review'
 company: 'XLN-Audio'
 tags: ['gear', 'drums', 'samples']
+featuredImage: './addictiveDrums2.png'
 ---
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqEMxhItMi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+<img src='./addictiveDrums2.png' />
 
 ##What's Good About Addictive Drums 2 
 
@@ -46,5 +50,5 @@ You can choose to buy a "Custom" version also for €170 where you choose the ki
 
 To get Addictive Drums 2 checkout their site, <a href="https://www.xlnaudio.com/products/addictive_drums_2" target="blank">XLN Audio</a>
 
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqEMxhItMi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

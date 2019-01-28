@@ -18,8 +18,7 @@ Ebook Sender
 const subscribeApi = process.env.MS_API_SUBSCRIBE
 
 export const FormEbookStyle = styled.div`
-    max-width: 100%;
-    
+    max-width: 100%;    
     form {
         display: flex;
         flex-flow: column;        

@@ -1,5 +1,4 @@
 ---
-path: '/article/which-daw-should-i-use'
 title: 'Which DAW Should You Use?'
 author: 'Alex Nye'
 date: '2019-01-04'

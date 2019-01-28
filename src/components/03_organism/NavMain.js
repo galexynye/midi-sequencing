@@ -32,7 +32,7 @@ const NavStyle = styled.nav`
 export const NavMain = (props) => {
     return (
         <NavStyle flow={props.flow} margin={props.margin} marginSmall={props.marginSmall} showSmall={props.showSmall}>
-            <NavLinks links={MainNavLinksData} toggleMobileMenu={props.toggleMobileMenu} />
+            <NavLinks altStyleAllowed={true} links={MainNavLinksData} toggleMobileMenu={props.toggleMobileMenu} />
         </NavStyle>
     )
 }

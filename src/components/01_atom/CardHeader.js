@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
+import { Link } from 'gatsby'
 
 export const CardHeaderStyle = styled.div`
     white-space: nowrap; 
@@ -11,21 +12,36 @@ export const CardHeaderStyle = styled.div`
     color: ${msTheme.colors.text};
     display: block;
     font-family: ${msTheme.font.headerFont};
-    font-size: 28px;
+    font-size: 22px;
     margin: 10px 0px;    
 	font-weight: 600;
 	letter-spacing: -1px;
 	line-height: 39px;
+    a{
+       color: ${msTheme.colors.text}; 
+       text-decoration: none;
+       padding: 0px;
+    }
+    &:hover{
+        cursor: pointer; 
+        
+        a{
+            color: ${msTheme.colors.primary};
+            text-decoration: none;
+        }
+            
+    }
     ${msTheme.mediaquery().large}{   
-        white-space: pre-wrap;   
+        white-space: pre-wrap;       
         width: 100%;
+       margin-left:-5px;
     }
 `
 
-export const CardHeader = ({ text, width }) => {
+export const CardHeader = ({ text, width, slug }) => {
     return (
         <CardHeaderStyle width={width}>
-            {text}
+            <Link to={slug}> {text}</Link>
         </CardHeaderStyle>
     )
 }

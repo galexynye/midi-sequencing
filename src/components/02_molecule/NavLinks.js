@@ -2,22 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from '../01_atom/NavLink'
 
-
-export class NavLinks extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-    render() {
-        const { toggleMobileMenu } = this.props
-        const navList = this.props.links.map(link => <li key={link.name}><NavLink to={link.to} name={link.name} external={link.external} /></li>)
-        return (
-            <ul onClick={toggleMobileMenu}>
-                {navList}
-            </ul>
-        )
-    }
-}
-
 /*
 Component Notes
 
@@ -27,3 +11,19 @@ Component Notes
 -Styles for different types of NavLinks (when necessary)
 
 */
+
+export class NavLinks extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+    render() {
+        const { toggleMobileMenu, altStyleAllowed } = this.props
+        const navList = this.props.links.map(link => <li key={link.name}><NavLink to={link.to} name={link.name} external={link.external} altStyle={link.altStyle} altStyleAllowed={altStyleAllowed} /></li>)
+        return (
+            <ul onClick={toggleMobileMenu}>
+                {navList}
+            </ul>
+        )
+    }
+}
+

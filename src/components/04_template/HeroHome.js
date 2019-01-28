@@ -7,10 +7,11 @@ import bgImage2 from '../../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
 
 const HeroHomeStyle = styled.div`
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
     background-image:linear-gradient(rgba(100, 100, 100, 0.8), rgba(0, 0, 0, 0.6)), url(${bgImage2});
     background-size: cover;
     position: relative;
+    transition: height 1000000s ease;
     
 `
 

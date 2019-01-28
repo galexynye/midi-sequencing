@@ -2,13 +2,12 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import Wrapper from '../styles/oldCrap/Wrapper'
-import Footer from '../components/Footer'
+
 // Components
 import { Link, graphql } from 'gatsby'
-import Styled from 'styled-components'
+import styled from 'styled-components'
 
-const TagsList = Styled.ul`
+const TagsList = styled.ul`
   list-style-type: '';
   display: 'flex';
   flex-flow: 'wrap';
@@ -34,12 +33,13 @@ const Tags = ({ pageContext, data }) => {
       </h1>
       <TagsList>
         {edges.map(({ node }) => {
-          const { path, title } = node.frontmatter
+          const { title } = node.frontmatter
+          const { slug } = node.fields
           return (
-            <li key={path}
+            <li key={slug}
             // style={{ marginBottom: '10px' }}
             >
-              <Link to={path}>{title}</Link>
+              <Link to={slug}>{title}</Link>
             </li>
           )
         })}
@@ -53,31 +53,30 @@ const Tags = ({ pageContext, data }) => {
       >
         All tags
       </Link>
-      <Footer />
     </SiteContainer>
   )
 }
 
-Tags.propTypes = {
-  pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
-  }),
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      totalCount: PropTypes.number.isRequired,
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              path: PropTypes.string.isRequired,
-              title: PropTypes.string.isRequired,
-            }),
-          }),
-        }).isRequired
-      ),
-    }),
-  }),
-}
+// Tags.propTypes = {
+//   pageContext: PropTypes.shape({
+//     tag: PropTypes.string.isRequired,
+//   }),
+//   data: PropTypes.shape({
+//     allMarkdownRemark: PropTypes.shape({
+//       totalCount: PropTypes.number.isRequired,
+//       edges: PropTypes.arrayOf(
+//         PropTypes.shape({
+//           node: PropTypes.shape({
+//             frontmatter: PropTypes.shape({
+//               path: PropTypes.string.isRequired,
+//               title: PropTypes.string.isRequired,
+//             }),
+//           }),
+//         }).isRequired
+//       ),
+//     }),
+//   }),
+// }
 
 export default Tags
 
@@ -91,9 +90,11 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
-            path
           }
         }
       }

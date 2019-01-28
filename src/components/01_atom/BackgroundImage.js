@@ -9,8 +9,9 @@ const BackgroundImageStyle = styled.div`
     width: ${props => props.width || '100%'};
     background-position: center;
     /* padding: 700px 1000px;     */
-    /* background-image:linear-gradient(rgba(100, 100, 100, 0.8), rgba(0, 0, 0, 0.6)), url(${props => props.src || BGImage}); */
-    background-image:linear-gradient(${props => props.color1 || 'rgba(0, 0, 0, 0)'}, ${props => props.color2 || 'rgba(0, 0, 0, 0)'}), url(${props => props.src || BGImage});
+    
+    /* background-image:linear-gradient(${props => props.color1 || 'rgba(0, 0, 0, 0)'}, ${props => props.color2 || 'rgba(0, 0, 0, 0)'}), url(${props => props.src || BGImage}); */
+    background-image:url(${props => props.src || BGImage});;
     background-size: cover;
     position: relative;
     max-width:100%;
@@ -23,27 +24,17 @@ const BackgroundImageStyle = styled.div`
 `
 
 const CardLabel = styled.div`
-    top: 0px;
-    right: 0px;
-    position: absolute; 
-    background-color: lightgray;
-    h1{
-        font-size: 35px;
-        line-height: 35px;
-    }
+    
+   
 `
 
 export const BackgroundImage = ({ children, src, height, width, widthSmall, heightSmall, color1, color2, breakPoint }) => {
     return (
-        // <FlexboxOrganism height={height} breakPoint={breakPoint}>
+
         <BackgroundImageStyle src={src} height={height} width={width} heightSmall={heightSmall} breakPoint={breakPoint} widthSmall={widthSmall} color1={color1} color2={color2} >
-            {/* <FlexboxOrganism flexFlow="column" > */}
-            <CardLabel>
-                {children}
-            </CardLabel>
-            {/* </FlexboxOrganism> */}
+            {children}
         </BackgroundImageStyle>
-        // </FlexboxOrganism>
+
     )
 }
 

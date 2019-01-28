@@ -46,7 +46,7 @@ export class FreeForums extends PureComponent {
                                     <p>Let's help each other get better.</p>
                                 </WidthWrapper>
 
-                                <WidthWrapper width="250px" widthSmall="300px" margin="20px 0px 0px 0px">
+                                <WidthWrapper width="250px" margin="20px 0px 0px 0px">
                                     <ButtonCTA text="Check Out the Forums" buttonType="a" href="https://forum.musicsequencing.com/" bgColor={msTheme.colors.primary} color="white" ></ButtonCTA>
                                 </WidthWrapper>
 

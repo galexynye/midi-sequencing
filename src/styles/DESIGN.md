@@ -75,6 +75,11 @@ bgColor
  
 Paragraphs text overflow doesn't work. it jsut gets cut off without ellipsis. If I write the paragraph straight into a div with no html it works...fucking shit cunts
 
+link in cards is adding a little bit of white space at smaller widths. corrected with a -px margin-left..but weird
+
+The background hero if fucked when going from portrait to landscape. Detect orientation change to fix.
+https://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
+
 # Building new Pages 
 
 See the `<SiteContainer>` notes below. All pages are wrapped in the `<SiteContainer>`.

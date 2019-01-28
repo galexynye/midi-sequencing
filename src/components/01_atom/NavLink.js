@@ -2,9 +2,9 @@ import React from 'react'
 import { Link, navigate } from 'gatsby'
 import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
-// props are link and external or internal
 
-// TODO: Add component notes 
+
+
 
 //TODO: Add Alt style based on Props
 const StandardLinkStyle = styled.div`
@@ -19,7 +19,7 @@ const StandardLinkStyle = styled.div`
         }
 `
 
-//TODO: ADD Alt styles based on props
+
 const AltLinkStyle = styled.div` 
     a{
         border-radius: 50px;
@@ -41,19 +41,30 @@ export class NavLink extends React.Component {
     constructor(props) {
         super(props)
     }
-    // TODO: if statements return based on alt style or not and colors
+
     render() {
-        const { to, name, external } = this.props
-        if (external) { // change to (if alt style)
+        const { to, name, external, altStyleAllowed, altStyle } = this.props
+
+        const externalTest = (isExternal, to, name) => {
+            if (isExternal) {
+                return <a href={to}>{name}</a>
+            } else {
+                return <Link to={to}>{name}</Link>
+            }
+        }
+
+        const TheNavLink = externalTest(external, to, name);
+
+        if (altStyle && altStyleAllowed) {
             return (
                 <AltLinkStyle>
-                    <a href={to}>{name}</a>
+                    {TheNavLink}
                 </AltLinkStyle>
             )
-        } else { // Returns the standard link style
+        } else {
             return (
                 <StandardLinkStyle>
-                    <Link to={to}>{name}</Link>
+                    {TheNavLink}
                 </StandardLinkStyle>
             )
         }

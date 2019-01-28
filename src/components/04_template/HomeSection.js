@@ -23,11 +23,10 @@ export const HomeSection = styled.section`
     p{
         font-family: ${msTheme.font.headerFont};
         margin-bottom: 20px;
+        width: 100%;
         /* text-align: center; */
     }
     
     
-    ${msTheme.mediaquery().medium}{
-        margin-bottom: 20px;
-    }
+  
 `

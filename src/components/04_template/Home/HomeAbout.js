@@ -19,20 +19,20 @@ export const HomeAbout = (props) => {
                 <FlexboxOrganism flexFlow="wrap-reverse">
 
                     {/* Bottom Half Left */}
-                    <WidthWrapper width="44%">
-                        <WidthWrapper width="450px" margin="0px" marginSmall="25px 0px 0px 0px" >
+                    <WidthWrapper width="50%">
+                        <WidthWrapper width="520px" margin="0px" marginSmall="25px 0px 0px 0px" >
                             <h3>Welcome</h3>
-                            <p>Hi. My name is Alex. That's me; right arm awkwardly placed on the desk; hand looking like it's holding an invisible dildo.</p>
+                            <p>Hi. My name is Alex. That's me there; right arm on the desk; hand looking like it's holding an invisible dildo.</p>
                             {/* <p>You might be confused...the site seemed professional. Well buddy, I programmed it myself. Took that picture too.</p> */}
-                            <p>Half this site is free articles/videos teaching music production. I try to keep that half as factual and professional as possible.
-                                     The other half is a blog where I say what I want.</p>
-                            <p>The third half is the forums, where anybody can say whatever they want.</p>
+                            <p>Half this site is free articles/videos teaching music production. I try to keep that half factual and professional.
+                                     The other half is my blog; more opinions, less teaching.</p>
+                            <p>The third half is the <a href="https://forum.musicsequencing.com">forums</a>. Discussions happen there.</p>
                             <p>Also there's the <Link to="/services">Services</Link> section, where you can hire me for music stuff.</p>
                         </WidthWrapper>
 
 
                         {/* <FlexboxOrganism> */}
-                        <WidthWrapper width="250px" widthSmall="300px" margin="40px 0px 0px 0px" >
+                        <WidthWrapper width="250px" margin="40px 0px 0px 0px" >
                             <ButtonCTA color="white" bgColor={msTheme.colors.secondary} text="Tell me more..." to="/about"></ButtonCTA>
                         </WidthWrapper>
                         {/* </FlexboxOrganism> */}
@@ -42,10 +42,10 @@ export const HomeAbout = (props) => {
 
 
                     {/* Separater */}
-                    <WidthWrapper width="4%"></WidthWrapper>
+                    {/* <WidthWrapper width="2%"></WidthWrapper> */}
 
                     {/* Bottom Half Right */}
-                    <WidthWrapper width="52%" margin="0px">
+                    <WidthWrapper width="50%" margin="0px">
                         <ResponsivePhoto src={Alex} borderRadius="0px" />
                     </WidthWrapper>
                 </FlexboxOrganism>

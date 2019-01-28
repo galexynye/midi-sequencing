@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { StaticQuery, graphql, Img } from 'gatsby'
 import { msTheme } from '../../styles/Theme'
 import { PostCard } from '../02_molecule/PostCard'
 import { FlexboxOrganism, WidthWrapper, ContentContainer } from '../00_utilities/Utilities'
+
+import DawPic from '../../assets/LandingCards/Daws-20.jpg'
+import EQPic from '../../assets/LandingCards/Bunch-Of-EQs-picture-1.jpg'
 /* Static Query component 
 Will query the post recent posts and render them as cards by injecting the data into the PostCard Component
 */
@@ -21,60 +25,110 @@ const PostData = {
     title: "Build a Studio",
     snippet: 'Lorem ipsum dolor siri molestiae natus fuga, facilis architecto adipisci ullam impedit quibusdam officiis quisq? Earum, esse? Eligendi.',
     learnOrBlog: 'Blog',
-    date: 'January 1st 2019'
+    date: 'January 1st 2019',
+    category: 'Studio'
 }
 const PostData2 = {
-    title: "Build a Studio From Nothing to Everything",
+    title: "Which DAW is Best for YOU!",
     snippet: 'Lorem ipsum dolor siri molestiae natus fuga, facilis architecto adipisci ullam impedit quibusdam officiis quisq? Earum, esse? Eligendi.',
     learnOrBlog: 'Learn',
-    date: 'January 1st 2019'
+    date: 'January 1st 2019',
+    src: EQPic
 }
 const PostData3 = {
     title: "Build a Studio",
     snippet: 'Lorem ipsum dolor siri molestiae natus fuga, facilis architecto adipisci ullam impedit quibusdam officiis quisq? Earum, esse? Eligendi.',
     learnOrBlog: 'Learn',
-    date: 'January 1st 2019'
+    date: 'January 1st 2019',
+    src: DawPic
 }
 
 
-export class RecentPosts extends Component {
+export class RecentPostsView extends Component {
     render() {
+        const posts = this.props.data.allMarkdownRemark.edges
+
+        const featuredImage = (x) => {
+            if (x) {
+                return x
+            } else
+                return DawPic
+        }
+        let src // Set the source of the featured image
+        const RecentPostCards = posts.map(post => {
+            // Checks if no featured image
+            if (!post.node.frontmatter.featuredImage) {
+                src = DawPic
+            } else {
+                src = post.node.frontmatter.featuredImage.childImageSharp.fluid.src
+            }
+            return (
+                <PostCard
+                    learnOrBlog={post.node.frontmatter.category}
+                    snippet={post.node.excerpt}
+                    date={post.node.frontmatter.date}
+                    title={post.node.frontmatter.title}
+                    category={post.node.frontmatter.subcategory}
+                    slug={post.node.fields.slug}
+
+                    src={src}
+
+                />)
+        })
+
 
         return (
             <RecentPostsStyled>
                 <ContentContainer>
                     <WidthWrapper width="1100px">
-
-
-                        <h2 class="center marB40">Latest</h2>
-
-
-
+                        <h2 className="center marB40">Latest</h2>
 
                         <FlexboxOrganism justifyContent="space-between" >
-                            <PostCard
-                                learnOrBlog={PostData.learnOrBlog}
-                                snippet={PostData.snippet}
-                                date={PostData.date}
-                                title={PostData.title}
-                            />
-                            <PostCard
-                                learnOrBlog={PostData2.learnOrBlog}
-                                snippet={PostData2.snippet}
-                                date={PostData2.date}
-                                title={PostData2.title}
-                            />
-                            <PostCard
-                                learnOrBlog={PostData3.learnOrBlog}
-                                snippet={PostData3.snippet}
-                                date={PostData3.date}
-                                title={PostData3.title}
-                            />
+                            {RecentPostCards}
                         </FlexboxOrganism>
-                    </WidthWrapper>
 
+                    </WidthWrapper>
                 </ContentContainer>
-            </RecentPostsStyled>
+            </RecentPostsStyled >
         )
     }
 }
+
+export const RecentPosts = props => (
+    <StaticQuery
+        query={graphql`
+       query {
+        allMarkdownRemark(
+            limit: 3
+          sort: {
+            fields: [frontmatter___date]
+            order: DESC
+          }
+        ) {
+          edges {
+            node {
+              excerpt
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                category
+                subcategory                                
+                date(formatString: "MMMM DD, YYYY")
+                featuredImage {
+                 childImageSharp {
+                   fluid {                    
+                     src                   
+                   }
+                 }
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+        render={data => <RecentPostsView data={data} {...props} />}
+    />
+)

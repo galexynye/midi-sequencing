@@ -93,7 +93,7 @@ a {
     text-align: center;
 }
 
-.marB40 {
+.mB40 {
     margin-bottom: 40px;
 }
 
@@ -112,6 +112,7 @@ a {
 .hide{
     display: none;
 }
+
 
 `
 
