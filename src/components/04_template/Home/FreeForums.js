@@ -11,12 +11,12 @@ import MsForumsPic from '../../../assets/Temporary/MsForumWhite.png'
 export class FreeForums extends PureComponent {
     render() {
         return (
-            <HomeSection color={this.props.color}>
+            <HomeSection padding="50px 0px 50px 0px" color={this.props.color}>
                 <ContentContainer width={this.props.width}>
                     {/* Title Area */}
                     {/* <FlexboxOrganism>
                         <WidthWrapper width="50%" margin="0px"> */}
-                    <h2>Free Forums</h2>
+                    {/* <h2>Free Forums</h2> */}
                     {/* </WidthWrapper> */}
                     {/* <WidthWrapper width="50%"></WidthWrapper>
                     </FlexboxOrganism> */}

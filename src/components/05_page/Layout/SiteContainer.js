@@ -121,6 +121,9 @@ a {
     display: none;
 }
 
+.headerFont{
+    font-family: ${msTheme.font.headerFont};
+}
 
 `
 

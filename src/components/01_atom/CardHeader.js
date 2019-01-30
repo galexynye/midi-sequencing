@@ -18,7 +18,8 @@ export const CardHeaderStyle = styled.div`
 	letter-spacing: -1px;
 	line-height: 39px;
     a{
-       color: ${msTheme.colors.primary}; 
+       /* color: ${msTheme.colors.primary};  */
+       color: ${msTheme.colors.text};
        text-decoration: none;
        padding: 0px;
     }
@@ -26,7 +27,7 @@ export const CardHeaderStyle = styled.div`
         cursor: pointer; 
         
         a{
-            color: ${msTheme.colors.primarydark};
+            color: ${msTheme.colors.primary};
             text-decoration: none;
         }
             

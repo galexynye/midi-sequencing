@@ -2,8 +2,9 @@ import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 
 export const HomeSection = styled.section`
- background-color:  ${props => props.bgColor || 'white'};
-    padding-bottom: 50px;
+    background-color:  ${props => props.bgColor || 'white'};
+    /* padding-bottom: 50px; */
+    padding: ${props => props.padding || "50px 0px 50px 0px"};
     /* border-bottom: 1px solid ${msTheme.colors.textlight}; */
     border-bottom: 2px solid lightgray;
     h2{

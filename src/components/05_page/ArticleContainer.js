@@ -10,9 +10,15 @@ export const ArticleContainer = styled.article`
     max-width: ${msTheme.widths.article};
     margin-top: 30px;
     margin-right: auto;
-    margin-left: auto;       
+    margin-left: auto; 
+    padding: ${msTheme.padding.globalSide};   
+    ${msTheme.mediaquery().medium}{
+        h1{
+            font-size: 45px;
+            line-height: 45px;
+            margin-bottom: 15px;
+             word-wrap: break-word;
+        }
+    }   
 `
 
-
-
-// export default ArticleContainer

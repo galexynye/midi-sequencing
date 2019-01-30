@@ -11,7 +11,7 @@ import DawPic from '../../assets/LandingCards/Daws-20.jpg'
 import EQPic from '../../assets/LandingCards/Bunch-Of-EQs-picture-1.jpg'
 
 const RecentPostsStyled = styled.div`
-padding-bottom: 40px;
+padding: 50px 0px 30px 0px;
 border-bottom: 2px solid lightgray;
 h2{
     text-align: center;
@@ -26,12 +26,6 @@ export class RecentPostsView extends Component {
     render() {
         const posts = this.props.data.allMarkdownRemark.edges
 
-        const featuredImage = (x) => {
-            if (x) {
-                return x
-            } else
-                return DawPic
-        }
         let src // Set the source of the featured image
         const RecentPostCards = posts.map(post => {
             // Checks if no featured image
@@ -60,7 +54,7 @@ export class RecentPostsView extends Component {
             <RecentPostsStyled>
                 <ContentContainer>
                     <WidthWrapper width="1100px">
-                        <h2 className="center marB40">Latest</h2>
+                        {/* <h2 className="center marB40">Latest</h2> */}
 
                         <FlexboxOrganism justifyContent="space-between" >
                             {RecentPostCards}

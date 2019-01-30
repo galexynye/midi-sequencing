@@ -22,7 +22,7 @@ const StandardLinkStyle = styled.div`
 
 const AltLinkStyle = styled.div` 
     a{
-        border-radius: 50px;
+        /* border-radius: 50px; */
         font-family: ${msTheme.font.headerFont};    
         padding: 3px 20px;
         color: ${msTheme.colors.text};        
@@ -30,8 +30,8 @@ const AltLinkStyle = styled.div`
               /* background-color: ${msTheme.colors.primayhighlighter}; */
         &:hover{
                 text-decoration: none; 
-                background-color: ${msTheme.colors.primary}
-                
+                /* background-color: ${msTheme.colors.primary} */
+                color:black;
                 /* background-color: ${msTheme.colors.primarylightest};   */
             } 
     }

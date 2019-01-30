@@ -67,7 +67,7 @@ export const msTheme = {
                 padding: `10px 25px;`, // NOTE - the InputString.js component padding is NOT controlled by the padding here as of now, because the text input has it's own padding adn to be the same size it needs to be customized after changine the padding here.
                 paddingSmall: `10px 20px;`,
                 border: `none;`,
-                borderRadius: `7px;`
+                borderRadius: `0px;`
             }
         }
     }

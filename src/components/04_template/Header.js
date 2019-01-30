@@ -38,6 +38,7 @@ const HeaderStyle = styled.div`
 
 const HomeLinkLogoWrapper = styled.div`
    max-width: 250px;
+   margin-left: 10px;
     /* ${msTheme.utilities().hideMedium} */
      ${msTheme.mediaquery().medium}{
         max-width: 250px;        
@@ -61,7 +62,7 @@ export class Header extends React.Component {
                         <HomeLinkLogo />
                     </HomeLinkLogoWrapper>
 
-                    <NavMain />
+                    <NavMain margin="0px 10px" />
                 </HeaderStyle>
             </HeaderContainer>
         )

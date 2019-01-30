@@ -96,7 +96,7 @@ export class FormEbook extends React.PureComponent {
         const EbookFormInteraction = <form onSubmit={this._handleSubmit}>
             <WidthWrapper width="350px">
                 <InputString type="email" value={this.state.email} _handleChange={this._handleChangeEmail} placeholder="Enter your Email..." />
-                <InputSubmit value="Send a FREE Ebook" _handleSubmit={this._handleSubmit} bgColor={msTheme.colors.greenlight} />
+                <InputSubmit value="Get a FREE eBook" _handleSubmit={this._handleSubmit} bgColor={msTheme.colors.greenlight} />
             </WidthWrapper>
         </form>
 

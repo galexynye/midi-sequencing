@@ -17,6 +17,8 @@ Include
 -Button with link to "Read this Post"
 */
 
+const BGColor = msTheme.colors.primary
+
 export const PostCardStyled = styled.div`
     /* background-color: white;
     border-radius: 10px; */
@@ -34,14 +36,15 @@ export const PictureLabelStyle = styled.div`
     bottom: 0px;
     left: 0px;
     position: absolute;
-    color: ${msTheme.colors.text};
+    /* color: ${msTheme.colors.text}; */
+    color: white;
 	font-family: ${msTheme.font.headerFont};
     font-size: 25px;
 	font-weight: 300;
 	padding: 5px;
 	text-transform: uppercase;
     /* background-color: ${props => props.labelBgColor ? props.labelBgColor : props.learn ? props.learn : props.blog ? props.blog : msTheme.colors.yellow}; */
-    background-color: ${msTheme.colors.yellow};
+    background-color: ${BGColor};    
     
 `
 
@@ -71,7 +74,7 @@ export class PostCard extends React.PureComponent {
 
                     <CardHeader width="300px" text={title} slug={slug} />
 
-                    <small>{date}</small>
+                    <small class="headerFont">{date}</small>
 
                     {category && <CategoryStyled>
                         <Link to={slug}>{category}</Link>
@@ -82,7 +85,7 @@ export class PostCard extends React.PureComponent {
                     <p>{snippet}</p>
 
                     <WidthWrapper width="250px" margin="0px">
-                        <ButtonCTA to={slug} text="Read more" bgColor={msTheme.colors.yellow}></ButtonCTA>
+                        <ButtonCTA to={slug} text="Read more" color="white" bgColor={BGColor}></ButtonCTA>
                     </WidthWrapper>
 
 

@@ -12,7 +12,7 @@ export const HomeAbout = (props) => {
         <HomeSection color={props.color}>
             <ContentContainer width={props.width}>
                 {/* Top Half */}
-                <h2>About</h2>
+                {/* <h2>About</h2> */}
 
 
                 {/* Bottom Half */}
@@ -27,13 +27,13 @@ export const HomeAbout = (props) => {
                             <p>Half this site is free articles/videos teaching music production. I try to keep that half factual and professional.
                                      The other half is my blog; more opinions, less teaching.</p>
                             <p>The third half is the <a href="https://forum.musicsequencing.com">forums</a>. Discussions happen there.</p>
-                            <p>Also there's the <Link to="/services">Services</Link> section, where you can hire me for music stuff.</p>
+                            <p>Also there's the <Link to="/services">Services</Link> page, where you can hire me for music stuff.</p>
                         </WidthWrapper>
 
 
                         {/* <FlexboxOrganism> */}
                         <WidthWrapper width="250px" margin="40px 0px 0px 0px" >
-                            <ButtonCTA color="white" bgColor={msTheme.colors.secondary} text="Tell me more..." to="/about"></ButtonCTA>
+                            <ButtonCTA color="white" bgColor={msTheme.colors.primary} text="Tell me more..." to="/about"></ButtonCTA>
                         </WidthWrapper>
                         {/* </FlexboxOrganism> */}
 
