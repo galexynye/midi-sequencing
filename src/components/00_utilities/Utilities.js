@@ -12,6 +12,7 @@ import { msTheme } from '../../styles/Theme'
 
 export const WidthWrapper = styled.div`
     width: ${props => props.width || "100%"};
+    min-width: 0;
     padding: ${props => props.padding || "0px"};
     max-width: 100%;
     margin: ${props => props.margin || 'auto'};     
@@ -30,6 +31,7 @@ export const WidthWrapper = styled.div`
 
 export const FlexboxOrganism = styled.div`
     display: flex;
+    min-width: 0;
     flex-flow: ${props => props.flexFlow || 'row wrap'};
     justify-content: ${props => props.justifyContent || 'center'};
     align-items: ${props => props.alignItems || 'center'};
@@ -41,10 +43,32 @@ export const FlexboxOrganism = styled.div`
     }
 `
 
+export const GridContainer = styled.div`
+  width: ${props => props.width || '97%'};
+  max-width: ${props => props.maxWidth || msTheme.widths.wide};
+  margin: ${props => props.margin || '0 auto'} ;  
+  display: grid;
+  grid-template-columns: ${props => props.gTC || '1fr 1fr 1fr'};
+  grid-template-rows: ${props => props.gridTemplateRows || 'auto'};
+  grid-gap: ${props => props.gridGap || '20px'};
+  ${msTheme.mediaquery().medium}{
+    grid-template-columns: ${props => props.gTCM || '1fr 1fr'};
+    margin: ${props => props.marginM ? props.marginM : props.margin ? props.margin : '0 auto'} ;  
+    width: ${props => props.width || '95%'};
+  }
+  ${msTheme.mediaquery().small}{
+    grid-template-columns: ${props => props.gTCS || '1fr'};
+    margin: ${props => props.marginS ? props.marginS : props.marginM ? props.marginM : props.margin ? props.margin : '0 auto'} ;  
+    width: ${props => props.width || '94%'};
+  }
+`
+
 
 // Padding Wrapper - Default Padding is From the Global THEME. Outer wrapper in the CONTENT CONTAINER (below)
 
 export const PaddingWrapper = styled.div`
+    min-width: 0;
+    width: ${props => props.width || '100%'};
     padding: ${props => props.padding || `${msTheme.padding.globalVertical} ${msTheme.padding.globalSide}`};
     margin: ${props => props.margin || '0px'};
     ${msTheme.mediaquery().medium}{

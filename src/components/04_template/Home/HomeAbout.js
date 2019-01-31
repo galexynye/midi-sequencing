@@ -22,9 +22,10 @@ export const HomeAbout = (props) => {
                     <WidthWrapper width="50%">
                         <WidthWrapper width="520px" margin="0px" marginSmall="25px 0px 0px 0px" >
                             <h3>Welcome</h3>
-                            <p>Hi. My name is Alex. That's me there; right arm on the desk; hand looking like it's holding an invisible dildo.</p>
+                            {/* <p>Hi. My name is Alex. That's me there; right arm on the desk; hand looking like it's holding an invisible dildo.</p> */}
+                            <p>Hi. My name is Alex. I make music; writing, producing, mixing and mastering.</p>
                             {/* <p>You might be confused...the site seemed professional. Well buddy, I programmed it myself. Took that picture too.</p> */}
-                            <p>Half this site is free articles/videos teaching music production. I try to keep that half factual and professional.
+                            <p>Half this site is free articles/videos teaching music production.
                                      The other half is my blog; more opinions, less teaching.</p>
                             <p>The third half is the <a href="https://forum.musicsequencing.com">forums</a>. Discussions happen there.</p>
                             <p>Also there's the <Link to="/services">Services</Link> page, where you can hire me for music stuff.</p>

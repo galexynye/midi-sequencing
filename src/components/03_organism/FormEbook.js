@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
-import { FormHeader } from "../02_molecule/FormHeader";
+import { Title } from "../02_molecule/Title";
 import { WidthWrapper, FlexboxOrganism } from "../00_utilities/Utilities";
 import { InputString } from "../01_atom/InputString";
 import { InputSubmit } from "../01_atom/InputSubmit";
@@ -91,7 +91,7 @@ export class FormEbook extends React.PureComponent {
     // Note These messages and stuff should be set as props for the most part
 
     render() {
-        const { subtitle, color, marginTitle, headerHeight, formHeight, fontSize, fontSizeSmall, lineHeight, lineHeightSmall } = this.props
+        const { subtitle, color, marginTitle, titleHeight, formHeight, fontSize, fontSizeSmall, lineHeight, lineHeightSmall } = this.props
         // Ebook Interactive
         const EbookFormInteraction = <form onSubmit={this._handleSubmit}>
             <WidthWrapper width="350px">
@@ -106,9 +106,9 @@ export class FormEbook extends React.PureComponent {
         </WidthWrapper>
 
         return (
-            <FormEbookContainer headerHeight={headerHeight} >
+            <FormEbookContainer titleHeight={titleHeight} >
 
-                <FormHeader title="The Ultimate Producer's Workflow" subtitle={subtitle} marginTitle={marginTitle} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall} />
+                <Title title="The Ultimate Producer's Workflow" subtitle={subtitle} marginTitle={marginTitle} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall} />
 
 
                 {this.state.showForm && EbookFormInteraction}

@@ -28,7 +28,7 @@ h1 {
 	font-weight: 300;
 	letter-spacing: -3px;
 	line-height: 87px;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 	text-transform: uppercase;
 }
 
@@ -40,7 +40,7 @@ h2 {
 	letter-spacing: -1px;
 	line-height: 39px;
 	margin-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
 	/* text-transform: uppercase; */
     
 } 

@@ -45,7 +45,8 @@ export const msTheme = {
     widths: {
         article: '650px',
         sidebarMobileMenu: '200px',
-        wide: '1200px'
+        wide: '1200px',
+        ultraWide: '1500px'
     },
     heights: {
         header: '40px'

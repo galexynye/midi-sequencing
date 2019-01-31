@@ -70,6 +70,10 @@ background is shortened to bg when passing props
 ```
 bgColor
 ```
+grid-template-columns is gTC
+or for media queries gTCM - medium
+or gTCS - small
+
 
 # Bugs 
  

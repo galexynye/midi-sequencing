@@ -21,17 +21,19 @@ const StandardLinkStyle = styled.div`
 
 
 const AltLinkStyle = styled.div` 
+
     a{
         /* border-radius: 50px; */
         font-family: ${msTheme.font.headerFont};    
         padding: 3px 20px;
-        color: ${msTheme.colors.text};        
-        background-color: ${msTheme.colors.primarylightest};        
+        /* color: ${msTheme.colors.text};         */
+        color: white;        
+        background-color: ${msTheme.colors.primary};        
               /* background-color: ${msTheme.colors.primayhighlighter}; */
         &:hover{
                 text-decoration: none; 
-                /* background-color: ${msTheme.colors.primary} */
-                color:black;
+                /* border-radius: 20px; */
+                /* color:black; */
                 /* background-color: ${msTheme.colors.primarylightest};   */
             } 
     }

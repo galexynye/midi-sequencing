@@ -5,7 +5,7 @@ import { NavFooter } from '../03_organism/NavFooter'
 import { FlexboxOrganism, WidthWrapper, PaddingWrapper } from '../00_utilities/Utilities'
 import { HomeLinkLogo } from "../01_atom/HomeLinkLogo"
 import { FormEbook } from '../03_organism/FormEbook'
-import { FormHeader } from '../02_molecule/FormHeader'
+import { Title } from '../02_molecule/Title'
 import { BgImageTextButton } from '../02_molecule/BgImageTextButton'
 import { BackgroundImage } from "../01_atom/BackgroundImage";
 import { ButtonCTA } from '../01_atom/ButtonCTA';
@@ -37,7 +37,7 @@ export const Footer = props => {
                 <PaddingWrapper padding="0px 15px">
                     <FlexboxOrganism >
                         <WidthWrapper width="300px" >
-                            <FormEbook fontSize="20px" fontSizeSmall="20px" headerHeight="100px" lineHeight="25px" marginTitle="0px 0px 15px 0px" />
+                            <FormEbook fontSize="20px" fontSizeSmall="20px" titleHeight="100px" lineHeight="25px" marginTitle="0px 0px 15px 0px" />
                         </WidthWrapper>
                     </FlexboxOrganism>
                 </PaddingWrapper>
@@ -45,7 +45,7 @@ export const Footer = props => {
                 <PaddingWrapper padding="0px 15px">
                     <FlexboxOrganism>
                         <FlexboxOrganism height="191px" flexFlow="column" justifyContent="space-between">
-                            <FormHeader title="Need a music mentor?" fontSize="20px" fontSizeSmall="20px" lineHeight="25px" marginTitle="0px 0px 15px 0px" padding="0px" />
+                            <Title title="Need a music mentor?" fontSize="20px" fontSizeSmall="20px" lineHeight="25px" marginTitle="0px 0px 15px 0px" padding="0px" />
                             <WidthWrapper width="300px" widthSmall="300px" margin="0px" marginSmall="0px 0px 15px 0px">
                                 <p className="noMargin">Learning alone is hard. I offer music lessons over the internet.</p>
                             </WidthWrapper>
@@ -61,7 +61,7 @@ export const Footer = props => {
                 <PaddingWrapper padding="0px 15px">
                     <FlexboxOrganism>
                         <FlexboxOrganism height="191px" flexFlow="column" justifyContent="space-between">
-                            <FormHeader title="Join the Forums" fontSize="20px" fontSizeSmall="20px" lineHeight="25px" marginTitle="0px 0px 15px 0px" padding="0px" />
+                            <Title title="Join the Forums" fontSize="20px" fontSizeSmall="20px" lineHeight="25px" marginTitle="0px 0px 15px 0px" padding="0px" />
                             <a href="https://forum.musicsequencing.com">
                                 <BackgroundImage src={ForumPic} width="300px" bgColor="white" widthSmall="300px" height="136px" >
                                 </BackgroundImage>

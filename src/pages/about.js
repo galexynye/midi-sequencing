@@ -14,25 +14,6 @@ class About extends React.Component {
                 <ArticleContainer>
                     <h1>About</h1>
 
-                    <h2>What is Music Sequencing?</h2>
-                    <p>This is really two questions.</p>
-                    <ol>
-                        <li>What is the site?</li>
-                        <li>What do the words mean?</li>
-                    </ol>
-
-                    <h3>The Site</h3>
-                    <p>Music Sequencing is a site teaching music production and a blog.
-                        My goal is to create a fully comprehensive place where music makers can get quality information,
-                        have discussions and ultimately get better. </p>
-
-                    <h3>The Term ‘Music Sequencing'</h3>
-                    <p> A lot of producers might think of drum sequencing or midi sequencing
-                        when they hear the name. On this site, Music Sequencing is about a
-                        philosophy on music creation; a sequence of actions you
-                         take from writing, producing, mixing, mastering and beyond.
-                         My free ebook goes into more detail...<Link to="/ultimate-producers-workflow">get it here.</Link></p>
-
 
 
                     <h2>How to Use this Site</h2>
@@ -65,6 +46,26 @@ class About extends React.Component {
                     <h2>Song of the Month</h2>
                     <h3>January - Imagine (cover)</h3>
                     <iframe className="mB40" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/552767244&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+                    <h2>What is Music Sequencing?</h2>
+                    <p>This is really two questions.</p>
+                    <ol>
+                        <li>What is the site?</li>
+                        <li>What do the words mean?</li>
+                    </ol>
+
+                    <h3>The Site</h3>
+                    <p>Music Sequencing is a site teaching music production and a blog.
+                        My goal is to create a fully comprehensive place where music makers can get quality information,
+                        have discussions and ultimately get better. </p>
+
+                    <h3>The Term ‘Music Sequencing'</h3>
+                    <p> A lot of producers might think of drum sequencing or midi sequencing
+                        when they hear the name. On this site, Music Sequencing is about a
+                        philosophy on music creation; a sequence of actions you
+                         take from writing, producing, mixing, mastering and beyond.
+                         My free ebook goes into more detail...<Link to="/ultimate-producers-workflow">get it here.</Link></p>
+
 
                 </ArticleContainer>
             </SiteContainer>

@@ -2,16 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 import BGImage from '../../assets/LandingCards/BuildAStudio.jpg'
-import { FlexboxOrganism, WidthWrapper } from '../00_utilities/Utilities'
+
 
 const BackgroundImageStyle = styled.div`
     height: ${props => props.height || '100%'};
     width: ${props => props.width || '100%'};
-    background-position: center;
+    background-position: center ;
     /* padding: 700px 1000px;     */
     
     /* background-image:linear-gradient(${props => props.color1 || 'rgba(0, 0, 0, 0)'}, ${props => props.color2 || 'rgba(0, 0, 0, 0)'}), url(${props => props.src || BGImage}); */
-    background-image:url(${props => props.src || BGImage});;
+    background-image:url(${props => props.src || BGImage});
     background-size: cover;
     position: relative;
     max-width:100%;
@@ -23,10 +23,6 @@ const BackgroundImageStyle = styled.div`
     }    
 `
 
-const CardLabel = styled.div`
-    
-   
-`
 
 export class BackgroundImage extends React.PureComponent {
     constructor(props) {

@@ -8,12 +8,14 @@ const InputStringStyle = styled(Input)`
 `
 
 
-export const InputString = ({ type, value, _handleChange, placeholder, bgColor }) => {
+export const InputString = ({ type, value, _handleChange, placeholder, bgColor, label, labelText }) => {
     return (
         <InputStringStyle bgColor={bgColor}>
-            <input type={type} value={value} onChange={_handleChange} placeholder={placeholder}  >
+            <label for={label}>{labelText}</label>
+            <input type={type} value={value} onChange={_handleChange} placeholder={placeholder} id={label}  >
 
             </input>
+
         </InputStringStyle>
     )
 

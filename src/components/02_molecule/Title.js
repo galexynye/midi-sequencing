@@ -2,15 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 
-export const FormHeaderStyle = styled.div`
-    text-align: center;
+export const TitleStyle = styled.div`
+    text-align: ${props => props.textAlign || 'center'};
     height: ${props => props.height || 'auto'};
     /* h3 {
         text-align: left;
     } */
 `
 
-export const FormTitleStyle = styled.h2`
+export const FormMainTitleStyle = styled.h2`
   
     font-size: ${props => props.fontSize || '80px'};
     margin: ${props => props.margin || '0px auto 10px auto'};
@@ -49,20 +49,20 @@ export const FormSubTitleStyle = styled.h3`
     
 `
 
-export class FormHeader extends React.PureComponent {
+export class Title extends React.PureComponent {
     constructor(props) {
         super(props)
     }
     render() {
-        const { title, headerHeight, subtitle, color, marginTitle, titlePadding, fontSize, fontSizeSmall, lineHeight, lineHeightSmall, } = this.props
+        const { title, titleHeight, subtitle, color, marginTitle, titlePadding, fontSize, fontSizeSmall, lineHeight, lineHeightSmall, } = this.props
 
         return (
-            <FormHeaderStyle height={headerHeight}>
-                <FormTitleStyle color={color} margin={marginTitle} padding={titlePadding} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall}>
+            <TitleStyle height={titleHeight}>
+                <FormMainTitleStyle color={color} margin={marginTitle} padding={titlePadding} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall}>
                     {title}
-                </FormTitleStyle>
+                </FormMainTitleStyle>
                 {subtitle && <FormSubTitleStyle>{subtitle}</FormSubTitleStyle>}
-            </FormHeaderStyle>
+            </TitleStyle>
         )
     }
 }
