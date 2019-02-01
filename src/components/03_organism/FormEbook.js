@@ -91,10 +91,10 @@ export class FormEbook extends React.PureComponent {
     // Note These messages and stuff should be set as props for the most part
 
     render() {
-        const { subtitle, color, marginTitle, titleHeight, formHeight, fontSize, fontSizeSmall, lineHeight, lineHeightSmall } = this.props
+        const { title, subtitle, formWidth, color, marginTitle, titleHeight, formHeight, fontSize, fontSizeSmall, lineHeight, lineHeightSmall } = this.props
         // Ebook Interactive
         const EbookFormInteraction = <form onSubmit={this._handleSubmit}>
-            <WidthWrapper width="350px">
+            <WidthWrapper width={formWidth}>
                 <InputString type="email" value={this.state.email} _handleChange={this._handleChangeEmail} placeholder="Enter your Email..." />
                 <InputSubmit value="Get a FREE eBook" _handleSubmit={this._handleSubmit} bgColor={msTheme.colors.greenlight} />
             </WidthWrapper>
@@ -108,7 +108,7 @@ export class FormEbook extends React.PureComponent {
         return (
             <FormEbookContainer titleHeight={titleHeight} >
 
-                <Title title="The Ultimate Producer's Workflow" subtitle={subtitle} marginTitle={marginTitle} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall} />
+                {title && <Title title={title} subtitle={subtitle} marginTitle={marginTitle} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall} />}
 
 
                 {this.state.showForm && EbookFormInteraction}

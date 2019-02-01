@@ -1,9 +1,7 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
-import { WidthWrapper, PaddingWrapper } from '../00_utilities/Utilities'
-import { BackgroundImage } from "../01_atom/BackgroundImage";
-// import BGImage from '../../assets/Backgrounds/blackAndWhiteFaders.jpg'
 
 // Simple Card Basically Does 2 things
 
@@ -17,10 +15,9 @@ const SimpleCardStyle = styled.div`
 
     article{
         padding: 15px 0px 0px 0px;
-        display: flex;
-        
+        display: flex;        
         flex: 1;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         flex-direction: column;
     }
 
@@ -33,7 +30,9 @@ const SimpleCardStyle = styled.div`
 `
 
 const TopTitle = styled.h2`
-    ${msTheme.mediaquery().mediumMin}{
+    margin-top: 20px;
+    color: ${props => props.color || msTheme.colors.text};
+     @media screen and (min-width: ${props => props.breakPoint ? props.breakPoint + 'px' : msTheme.breakPoints.medium + 'px'}){
         display: none;
     }
 `
@@ -41,22 +40,64 @@ const TopTitle = styled.h2`
 
 
 const CardThumbnail = styled.div`
+  position: relative;
   padding-bottom: ${props => props.imgHeight || "60%"};
   background-size: cover;
   background-position: center center;
   background-image:url(${props => props.img || 'black'});
 `
 
-export const SimpleCard = ({ title, topTitle, img, text, imgHeight }) => {
+export const CardThumbnailLabel = styled.div`
+    /* top: 0px; */
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    /* color: ${msTheme.colors.text}; */
+    color: white;
+	font-family: ${msTheme.font.headerFont};
+    font-size: 25px;
+	font-weight: 300;
+	padding: 5px;
+	text-transform: uppercase;
+    /* background-color: ${props => props.labelBgColor ? props.labelBgColor : props.learn ? props.learn : props.blog ? props.blog : msTheme.colors.yellow}; */
+    background-color: ${msTheme.colors.primary};    
+    
+`
+
+
+export const SimpleCard = ({ children, title, label, imgLink, topTitle, topTitleBreakPoint, topTitleColor, img, text, imgHeight }) => {
     return (
 
 
         <SimpleCardStyle>
-            {topTitle && <TopTitle>{topTitle}</TopTitle>}
-            <CardThumbnail img={img} imgHeight={imgHeight} />
+            {topTitle &&
+                <TopTitle
+                    breakPoint={topTitleBreakPoint}
+                    color={topTitleColor}
+                >{topTitle}
+                </TopTitle>}
+
+            {imgLink ?
+                <Link to={imgLink}>
+                    <CardThumbnail img={img} imgHeight={imgHeight} >
+                        {label && <CardThumbnailLabel>{label}</CardThumbnailLabel>}
+                    </CardThumbnail>
+                </Link>
+                :
+                <CardThumbnail img={img} imgHeight={imgHeight}>
+                    {label && <CardThumbnailLabel>{label}</CardThumbnailLabel>}
+                </CardThumbnail>
+            }
+
+
+            {/* {(title || text) &&
+                <article>
+                    {title && <h2>{title}</h2>}
+                    <p>{text}</p>
+                </article>
+            } */}
             <article>
-                {title && <h2>{title}</h2>}
-                <p>{text}</p>
+                {children}
             </article>
         </SimpleCardStyle>
     )

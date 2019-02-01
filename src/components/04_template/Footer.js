@@ -2,20 +2,21 @@ import React from 'react'
 import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 import { NavFooter } from '../03_organism/NavFooter'
-import { FlexboxOrganism, WidthWrapper, PaddingWrapper } from '../00_utilities/Utilities'
+import { FlexboxOrganism, WidthWrapper, GridContainer, GridItem, PaddingWrapper } from '../00_utilities/Utilities'
+import { SimpleCard } from '../02_molecule/SimpleCard'
 import { HomeLinkLogo } from "../01_atom/HomeLinkLogo"
 import { FormEbook } from '../03_organism/FormEbook'
-import { Title } from '../02_molecule/Title'
-import { BgImageTextButton } from '../02_molecule/BgImageTextButton'
-import { BackgroundImage } from "../01_atom/BackgroundImage";
 import { ButtonCTA } from '../01_atom/ButtonCTA';
+import { CardTopTitle } from '../01_atom/CardTopTitle'
 
 import ForumPic from '../../assets/Temporary/MsForumWhite.png'
 
 export const FooterStyle = styled.footer`
     /* background-color: ${msTheme.colors.text}; */
+    padding: 20px 0px;
     background-color: rgb(30,30,30);
     p{        
+        margin:0px 0px 15px 0px;
         color: ${msTheme.colors.textlight};
         font-size: 14px;
         font-family: ${msTheme.font.headerFont}
@@ -25,65 +26,52 @@ export const FooterStyle = styled.footer`
 
 export const Copyright = styled.div``
 
-// The CARDS absolute spaghetti, fucking shit
+
 
 export const Footer = props => {
     return (
         <FooterStyle>
+            <PaddingWrapper padding="0px 0px 20px 0px">
+                <GridContainer gTCM="1fr" gridGap="10px 60px">
+                    <CardTopTitle title="Ultimate Producer's Workflow" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
+                    <CardTopTitle title="Need a music mentor?" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
+                    <CardTopTitle title="Join the Forums" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
 
+                    <GridItem gCSL="1" gCEL="3" alignSelf="end">
+                        <SimpleCard topTitle="Ultimate Producer's Workflow" imgHeight="0px" topTitleColor="white" topTitleBreakPoint={msTheme.breakPoints.large} >
+                            <FormEbook />
+                        </SimpleCard>
+                    </GridItem>
 
-            <FlexboxOrganism justifyContent="space-around" padding="60px 0px 30px 0px">
+                    <GridItem alignSelf="end">
+                        <SimpleCard imgHeight="0px" topTitle="Need a music mentor?" topTitleColor="white" topTitleBreakPoint={msTheme.breakPoints.large}>
+                            <p>Learning alone is hard. I offer music lessons over the internet.</p>
+                            <ButtonCTA text="Read About Mentoring" bgColor={msTheme.colors.primary} color="white" />
+                        </SimpleCard>
+                    </GridItem>
 
-                <PaddingWrapper padding="0px 15px">
-                    <FlexboxOrganism >
-                        <WidthWrapper width="300px" >
-                            <FormEbook fontSize="20px" fontSizeSmall="20px" titleHeight="100px" lineHeight="25px" marginTitle="0px 0px 15px 0px" />
-                        </WidthWrapper>
-                    </FlexboxOrganism>
-                </PaddingWrapper>
+                    <GridItem alignSelf="end">
+                        <SimpleCard imgHeight="0px" topTitle="Join the Forums" topTitleColor="white" topTitleBreakPoint={msTheme.breakPoints.large}>
 
-                <PaddingWrapper padding="0px 15px">
-                    <FlexboxOrganism>
-                        <FlexboxOrganism height="191px" flexFlow="column" justifyContent="space-between">
-                            <Title title="Need a music mentor?" fontSize="20px" fontSizeSmall="20px" lineHeight="25px" marginTitle="0px 0px 15px 0px" padding="0px" />
-                            <WidthWrapper width="300px" widthSmall="300px" margin="0px" marginSmall="0px 0px 15px 0px">
-                                <p className="noMargin">Learning alone is hard. I offer music lessons over the internet.</p>
-                            </WidthWrapper>
-                            <FlexboxOrganism>
-                                <WidthWrapper width="300px" widthSmall="300px">
-                                    <ButtonCTA text="Read About Mentoring" bgColor={msTheme.colors.primary} color="white" />
-                                </WidthWrapper>
-                            </FlexboxOrganism>
-                        </FlexboxOrganism>
-                    </FlexboxOrganism>
-                </PaddingWrapper>
+                            <p>Jump in, talk about music, make friends, and everyone learns.</p>
+                            <ButtonCTA href="https://forum.musicsequencing.com" text="Go to Forums" bgColor={msTheme.colors.primary} color="white" />
 
-                <PaddingWrapper padding="0px 15px">
-                    <FlexboxOrganism>
-                        <FlexboxOrganism height="191px" flexFlow="column" justifyContent="space-between">
-                            <Title title="Join the Forums" fontSize="20px" fontSizeSmall="20px" lineHeight="25px" marginTitle="0px 0px 15px 0px" padding="0px" />
-                            <a href="https://forum.musicsequencing.com">
-                                <BackgroundImage src={ForumPic} width="300px" bgColor="white" widthSmall="300px" height="136px" >
-                                </BackgroundImage>
-                            </a>
-                        </FlexboxOrganism>
-                    </FlexboxOrganism>
-                </PaddingWrapper>
-
-
-            </FlexboxOrganism>
-
+                        </SimpleCard>
+                    </GridItem>
+                </GridContainer>
+            </PaddingWrapper>
 
 
             <NavFooter></NavFooter>
 
 
-            <WidthWrapper width="400px" widthSmall="300px">
-                <HomeLinkLogo padding="5px 5px 4px 5px" bgColor='rgb(255,255,255)' borderRadius="0px"></HomeLinkLogo>
+            <WidthWrapper width="600px" widthSmall="300px">
+                <HomeLinkLogo padding="10px 10px 4px 10px" bgColor='rgb(255,255,255)' borderRadius="10px"></HomeLinkLogo>
             </WidthWrapper>
 
-
-            <FlexboxOrganism><p class="mT20">©2019 Alex Nye</p></FlexboxOrganism>
+            <PaddingWrapper padding="30px 0px 0px 0px">
+                <FlexboxOrganism><p >©2019 Alex Nye</p></FlexboxOrganism>
+            </PaddingWrapper>
 
         </FooterStyle >
     )

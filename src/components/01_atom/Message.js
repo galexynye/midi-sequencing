@@ -6,7 +6,7 @@ export const MessageStyle = styled.div`
     text-align: center;
     
     h2{
-        margin:-5px 0px 5px 0px;
+        margin:-5px 0px 0px 0px;
         padding: 0px;
         color: ${props => props.colorHeader || msTheme.colors.text};
     }

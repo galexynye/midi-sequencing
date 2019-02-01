@@ -44,6 +44,8 @@ class About extends React.Component {
                     <p>Yes, fill out the form on my <Link to="/services">Services</Link> page and I’ll get back to you. </p>
 
                     <h2>Song of the Month</h2>
+                    <h3>February - Hang Out (Radera and Yony)</h3>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/568390659&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                     <h3>January - Imagine (cover)</h3>
                     <iframe className="mB40" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/552767244&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
@@ -67,6 +69,8 @@ class About extends React.Component {
                          My free ebook goes into more detail...<Link to="/ultimate-producers-workflow">get it here.</Link></p>
 
 
+                    <h2>Need to Know something else?</h2>
+                    <p>Let me know, <Link to='/contact'>contact me here.</Link></p>
                 </ArticleContainer>
             </SiteContainer>
         )

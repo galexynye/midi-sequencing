@@ -12,7 +12,7 @@ import { RecentPosts } from '../components/03_organism/RecentPosts';
 
 
 // Sets A Main Container Size
-const containerSize = "1100px"
+const containerSize = msTheme.widths.wide
 
 
 const Blackback = styled.div`
@@ -48,11 +48,11 @@ export default class Home extends React.Component {
 
         <HeroHome />
 
-        <FreeForums width={containerSize} color={msTheme.colors.primary} />
+        <FreeForums maxWidth={containerSize} color={msTheme.colors.primary} />
 
         <RecentPosts></RecentPosts>
 
-        <HomeAbout width={containerSize} color={msTheme.colors.secondary} />
+        <HomeAbout maxWidth={containerSize} color={msTheme.colors.secondary} />
 
       </SiteContainer >
     )

@@ -7,7 +7,7 @@ import { HeroService } from '../components/04_template/HeroServices'
 import { SimpleCard } from '../components/02_molecule/SimpleCard'
 import BgImage from '../assets/Backgrounds/blackAndWhiteFaders.jpg'
 import AltBG from '../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
-import { FlexboxOrganism, WidthWrapper, GridContainer, PaddingWrapper, ContentContainer } from '../components/00_utilities/Utilities'
+import { GridContainer } from '../components/00_utilities/Utilities'
 
 // Need a top title formula for cards (or just don't use top title for more than a row or two)
 // It spits out an array of components, that is a combination of cards and card titles. 
@@ -18,7 +18,7 @@ const servicesCardData = [
     {
         title: "Producing",
         img: BgImage,
-        text: "Want to make a recording? We'll go from your vision, concept, song to a completed master recording."
+        text: "Want to make a recording? We'll go from your vision, concept or song to a completed master recording."
     },
     {
         title: "Mixing & Mastering",

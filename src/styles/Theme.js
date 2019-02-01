@@ -42,10 +42,13 @@ export const msTheme = {
         bodyFont: 'Crimson Text',
         headerFont: 'Open Sans'
     },
+    fontSize: {
+        h2: "34px"
+    },
     widths: {
         article: '650px',
         sidebarMobileMenu: '200px',
-        wide: '1200px',
+        wide: '1100px',
         ultraWide: '1500px'
     },
     heights: {

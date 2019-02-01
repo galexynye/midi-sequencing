@@ -40,7 +40,7 @@ h2 {
 	letter-spacing: -1px;
 	line-height: 39px;
 	margin-bottom: 20px;
-    padding-top: 25px;
+    padding-top: 50px;
 	/* text-transform: uppercase; */
     
 } 
@@ -103,6 +103,14 @@ a {
 
 .mB40 {
     margin-bottom: 40px;
+}
+
+.pB40{
+    padding-bottom: 40px;
+}
+
+.pT40{
+    padding-top: 40px
 }
 
 .hideMobile {

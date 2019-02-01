@@ -127,18 +127,7 @@ NOTE: If building a pop down request, it needs to be added to the `<SiteContaine
 
 The `<MainContainer>` renders children and props passed down from the `<SiteContainer>`. The `<MainContainer>` is rendered automatically by the `<SiteContainer>` on EVERYPAGE. 
 
-# `<ContentContainer>`
-`<ContentContainer>` is located in the 00_Utilities directory. It's great for wrapping a page's content. It is a wrapper within a wrapper, that renders children inside of it. 
 
-Set the width via props 
-```
-<ContentContainer width={msTheme.widths.article}>
-```
-and you are good. 
-
-The default paddings is set in the Theme.js on the padding attribute using the globalPadding, ie globalSide, globalSideSmall. ect.
-
-Padding and margins can also be set via props. 
 
 # State
 

@@ -62,7 +62,7 @@ export class Header extends React.Component {
                         <HomeLinkLogo />
                     </HomeLinkLogoWrapper>
 
-                    <NavMain margin="0px 10px" />
+                    <NavMain margin="0px 20px" linkMargin="0px 0px 0px 30px" />
                 </HeaderStyle>
             </HeaderContainer>
         )

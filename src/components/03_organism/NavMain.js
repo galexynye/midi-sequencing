@@ -31,7 +31,7 @@ const NavStyle = styled.nav`
 
 export const NavMain = (props) => {
     return (
-        <NavStyle flow={props.flow} margin={props.margin} marginSmall={props.marginSmall} showSmall={props.showSmall}>
+        <NavStyle flow={props.flow} margin={props.linksMargin} marginSmall={props.marginSmall} showSmall={props.showSmall}>
             <NavLinks altStyleAllowed={true} links={MainNavLinksData} toggleMobileMenu={props.toggleMobileMenu} />
         </NavStyle>
     )

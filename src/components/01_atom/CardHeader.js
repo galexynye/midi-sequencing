@@ -4,11 +4,10 @@ import { msTheme } from '../../styles/Theme'
 import { Link } from 'gatsby'
 
 export const CardHeaderStyle = styled.div`
-    white-space: nowrap; 
-    width: ${props => props.width || '100%'}; 
-    /* width: 300px; */
-    overflow: hidden;
-    text-overflow: ellipsis ;
+    /* white-space: nowrap;  */
+    /* width: ${props => props.width || '100%'};  */
+    /* overflow: hidden;
+    text-overflow: ellipsis ; */
     color: ${msTheme.colors.primary};
     display: block;
     font-family: ${msTheme.font.headerFont};

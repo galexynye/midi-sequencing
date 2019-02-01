@@ -50,7 +50,7 @@ export class HeroHome extends Component {
         return (
             <HeroHomeStyle>
                 <HeroHomeElementCenter>
-                    <FormEbook subtitle="How to CREATE Pro Quality Music : Doing EVERYTHING Yourself" />
+                    <FormEbook formWidth="350px" title="The Ultimate Producer's Workflow" subtitle="How to CREATE Pro Quality Music : Doing EVERYTHING Yourself" />
                 </HeroHomeElementCenter>
             </HeroHomeStyle>
         )

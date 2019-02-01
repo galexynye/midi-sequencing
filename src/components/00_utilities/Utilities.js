@@ -51,48 +51,62 @@ export const GridContainer = styled.div`
   grid-template-columns: ${props => props.gTC || '1fr 1fr 1fr'};
   grid-template-rows: ${props => props.gridTemplateRows || 'auto'};
   grid-gap: ${props => props.gridGap || '20px'};
+  ${msTheme.mediaquery().large}{
+      grid-template-columns: ${props => props.gTCL || '1fr 1fr'};
+      grid-gap: ${props => props.gridGapL ? props.gridGapL : props.gridGap ? props.gridGap : '20px'};
+  }
   ${msTheme.mediaquery().medium}{
     grid-template-columns: ${props => props.gTCM || '1fr 1fr'};
     margin: ${props => props.marginM ? props.marginM : props.margin ? props.margin : '0 auto'} ;  
     width: ${props => props.width || '95%'};
+     grid-gap: ${props => props.gridGapM ? props.gridGapM : props.gridGapL ? props.gridGapL : props.gridGap ? props.gridGap : '20px'};
   }
   ${msTheme.mediaquery().small}{
     grid-template-columns: ${props => props.gTCS || '1fr'};
     margin: ${props => props.marginS ? props.marginS : props.marginM ? props.marginM : props.margin ? props.margin : '0 auto'} ;  
     width: ${props => props.width || '94%'};
+    grid-gap: ${props => props.gridGapS ? props.gridGapS : props.gridGapM ? props.gridGapM : props.gridGapL ? props.gridGapL : props.gridGap ? props.gridGap : '20px'};
   }
 `
 
 
-// Padding Wrapper - Default Padding is From the Global THEME. Outer wrapper in the CONTENT CONTAINER (below)
+export const GridItem = styled.div`
+    align-self: ${props => props.alignSelf || 'auto'};
+    grid-column-start: ${props => props.gCS || 'auto'};
+    grid-column-end: ${props => props.gCE || 'auto'};
+    grid-row-start: ${props => props.gRS || 'auto'};
+    grid-row-end: ${props => props.gRE || 'auto'}; 
+    ${msTheme.mediaquery().large}{
+        grid-column-start: ${props => props.gCSL || 'auto'};
+        grid-column-end: ${props => props.gCEL || 'auto'};
+        grid-row-start: ${props => props.gRSL || 'auto'};
+        grid-row-end: ${props => props.gREL || 'auto'}; 
 
-export const PaddingWrapper = styled.div`
-    min-width: 0;
-    width: ${props => props.width || '100%'};
-    padding: ${props => props.padding || `${msTheme.padding.globalVertical} ${msTheme.padding.globalSide}`};
-    margin: ${props => props.margin || '0px'};
+    }
     ${msTheme.mediaquery().medium}{
-        padding: ${props => props.paddingSmall || `${msTheme.padding.globalVerticalSmall} ${msTheme.padding.globalSideSmall}`};
-        margin: ${props => props.marginSmall || '0px'};
+        grid-column-start: ${props => props.gCSM || 'auto'};
+        grid-column-end: ${props => props.gCEM || 'auto'};
+        grid-row-start: ${props => props.gRSM || 'auto'};
+        grid-row-end: ${props => props.gREM || 'auto'}; 
+
+    }
+    ${msTheme.mediaquery().small}{
+        grid-column-start: ${props => props.gCSS || 'auto'};
+        grid-column-end: ${props => props.gCES || 'auto'};
+        grid-row-start: ${props => props.gRSS || 'auto'};
+        grid-row-end: ${props => props.gRES || 'auto'}; 
+
     }
 `
 
+// Padding Wrapper - Default Padding is From the Global THEME.
 
-// Content Container - Used to set the padding for the page
-
-export class ContentContainer extends React.PureComponent {
-    render() {
-        const { children, width, widthSmall, outerMargin, margin, marginSmall, padding, paddingSmall, } = this.props
-        return (
-            <PaddingWrapper margin={outerMargin} marginSmall={marginSmall} padding={padding} paddingSmall={paddingSmall} >
-                <WidthWrapper width={width} widthSmall={widthSmall} margin={margin}>
-                    {children}
-                </WidthWrapper>
-            </PaddingWrapper>
-        )
+export const PaddingWrapper = styled.div`        
+    padding: ${props => props.padding || `${msTheme.padding.globalVertical} ${msTheme.padding.globalSide}`};    
+    ${msTheme.mediaquery().medium}{
+        padding: ${props => props.paddingSmall || `${msTheme.padding.globalVerticalSmall} ${msTheme.padding.globalSideSmall}`};        
     }
-}
-
+`
 
 // ResponsivePhoto - takes src as prop and outputs a responsive photo. extended from the WidthWrapper
 
@@ -105,9 +119,9 @@ const ImageWrapper = styled(WidthWrapper)`
 
 export class ResponsivePhoto extends React.PureComponent {
     render() {
-        const { width, widthSmall, margin, marginSmall, src, borderRadius } = this.props
+        const { src, borderRadius } = this.props
         return (
-            <ImageWrapper width={width} widthSmall={widthSmall} margin={margin} marginSmall={marginSmall} borderRadius={borderRadius}>
+            <ImageWrapper borderRadius={borderRadius}>
                 <img src={src} />
             </ImageWrapper>
         )
