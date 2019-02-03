@@ -30,6 +30,7 @@ h1 {
 	line-height: 87px;
 	margin-bottom: 27px;
 	text-transform: uppercase;
+     word-wrap: break-word;
 }
 
 h2 {
@@ -40,10 +41,24 @@ h2 {
 	letter-spacing: -1px;
 	line-height: 39px;
 	margin-bottom: 20px;
-    padding-top: 50px;
+    margin-top: 80px;
 	/* text-transform: uppercase; */
+    :first-child{
+        margin-top: 10px;
+    }
     
 } 
+
+h2{
+
+}
+
+ @media screen and (max-width: ${msTheme.breakPoints.medium + "px"} ) {
+     h2{
+         padding-top: 5px;
+     }
+ }
+
 
 h3, h4, h5 {
     font-size: 27px;
@@ -132,6 +147,8 @@ a {
 .headerFont{
     font-family: ${msTheme.font.headerFont};
 }
+
+
 
 `
 

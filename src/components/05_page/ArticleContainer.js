@@ -12,11 +12,19 @@ export const ArticleContainer = styled.article`
     margin-right: auto;
     margin-left: auto; 
     padding: ${msTheme.padding.globalSide};   
+    h2{
+        margin-top: 40px;
+         :first-child{
+        margin-top: 10px;
+    }
+    }
+     
     ${msTheme.mediaquery().medium}{
+        margin-top: 10px;
         h1{
             font-size: 45px;
             line-height: 45px;
-            margin-bottom: 15px;
+             margin-bottom: 15px;
              word-wrap: break-word;
         }
     }   

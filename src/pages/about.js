@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 // import Img from 'gatsby-image'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { ArticleContainer } from "../components/05_page/ArticleContainer";
+import { msTheme } from '../styles/Theme'
+import { PageTitle } from '../components/01_atom/PageTitle'
 import RiftRain from '../assets/AlexPics/RiftRain.png'
 import { ResponsivePhoto } from '../components/00_utilities/Utilities'
 
@@ -11,8 +13,9 @@ class About extends React.Component {
     render() {
         return (
             <SiteContainer>
+                <PageTitle text="About" bgColor={msTheme.colors.yellowlight} ></PageTitle>
                 <ArticleContainer>
-                    <h1>About</h1>
+                    {/* <h1>About</h1> */}
 
 
 
@@ -20,7 +23,7 @@ class About extends React.Component {
                     <p>Under <Link to="/learn">Learn</Link> in the top menu you’ll find articles from beginning to advanced topics on making music. If there is anything missing or confusing, let me know! Under each article is a forum discussion where you can ask questions or make suggestions, I’ll listen, and the quality will improve.</p>
                     <p>In the <Link to="/latest">Blog</Link> I offer my opinions and perspective on mostly music stuff.
                     I’ve been doing this a long time but don’t claim to be a single source of truth on anything. If you agree or disagree that’s great, everyone can benefit from an open dialogue, I can’t see from every angle and love having my perspective altered. </p>
-
+                    <p>If you are interested in hiring me to do something music related, go to the <Link to="/services">Services</Link> page.</p>
 
 
                     <h2>Who are you?</h2>

@@ -1,6 +1,8 @@
 import React from 'react'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { ArticleContainer } from "../components/05_page/ArticleContainer";
+import { PageTitle } from '../components/01_atom/PageTitle'
+import { msTheme } from '../styles/Theme'
 // import Helmet from 'react-helmet'
 // import HomeLink from '../components/HomeLinks/HomeLinkLogo'
 // import Footer from '../components/Footer'
@@ -12,8 +14,10 @@ class Privacy extends React.PureComponent {
     render() {
         return (
             <SiteContainer>
+
+                <PageTitle text="Privacy Policy" bgColor={msTheme.colors.primarylight}></PageTitle>
                 <ArticleContainer>
-                    <h1 style={{ marginTop: '10px' }}>Privacy Policy</h1>
+
                     <p> This privacy policy governs the manner in which Music Sequencing
                       collects, uses, maintains, and discloses the information we collect from
                     users of our website.</p>
