@@ -3,7 +3,7 @@ import axios from 'axios'
 import styled from 'styled-components'
 import { Title } from "../02_molecule/Title";
 import { WidthWrapper, FlexboxOrganism } from "../00_utilities/Utilities";
-import { InputString } from "../01_atom/InputString";
+import { InputStringNoLabel } from "../01_atom/InputStringNoLabel";
 import { InputSubmit } from "../01_atom/InputSubmit";
 import { msTheme } from "../../styles/Theme";
 import { Loading } from '../01_atom/Loading';
@@ -95,7 +95,7 @@ export class FormEbook extends React.PureComponent {
         // Ebook Interactive
         const EbookFormInteraction = <form onSubmit={this._handleSubmit}>
             <WidthWrapper width={formWidth}>
-                <InputString type="email" value={this.state.email} _handleChange={this._handleChangeEmail} placeholder="Enter your Email..." />
+                <InputStringNoLabel type="email" value={this.state.email} _handleChange={this._handleChangeEmail} placeholder="Enter your Email..." paddingInput="0px" marginInput="0px" border="none" />
                 <InputSubmit value="Get a FREE eBook" _handleSubmit={this._handleSubmit} bgColor={msTheme.colors.greenlight} />
             </WidthWrapper>
         </form>

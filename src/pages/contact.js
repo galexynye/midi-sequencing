@@ -1,3 +1,98 @@
+import React, { PureComponent } from 'react'
+import SiteContainer from '../components/05_page/Layout/SiteContainer'
+import { msTheme } from '../styles/Theme'
+import { ArticleContainer } from "../components/05_page/ArticleContainer";
+import { GridContainer, WidthWrapper } from "../components/00_utilities/Utilities";
+import { PageTitle } from "../components/01_atom/PageTitle";
+import { InputString } from "../components/01_atom/InputString";
+import { InputSubmit } from '../components/01_atom/InputSubmit'
+
+export default class contact extends PureComponent {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            email: '',
+            name: '',
+            purpose: '',
+            message: ''
+        }
+    }
+    render() {
+        return (
+            <SiteContainer>
+                <PageTitle text="Contact" bgColor={msTheme.colors.yellowlight} />
+
+                {/* <GridContainer gTC="1fr"> */}
+                <ArticleContainer>
+                    <WidthWrapper width="400px" margin="0px" breakPoint={msTheme.breakPoints.small}>
+                        <form>
+                            <InputString type="email" label="email" labelText="Email*" required={true}></InputString>
+
+                            <InputString type="text" label="name" labelText="Name*" required={true}></InputString>
+                            <label for="message">Message</label>
+                            <textarea id="message"  ></textarea>
+                            <select>
+                                <option value="bob">Bob</option>
+                                <option value="bob1">Bob1</option>
+                                <option value="bob2">Bob2</option>
+                                <option value="bob3">Bob3</option>
+                            </select>
+                            <InputSubmit value="Contact Me" bgColor={msTheme.colors.primary} color="white" />
+                        </form>
+                    </WidthWrapper>
+                </ArticleContainer>
+                {/* </GridContainer> */}
+            </SiteContainer>
+        )
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import React from 'react'
 // import Helmet from 'react-helmet'
 // import styled from 'styled-components'

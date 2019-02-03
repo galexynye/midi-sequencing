@@ -66,7 +66,7 @@ export const Footer = props => {
 
 
             <WidthWrapper width="600px" widthSmall="300px">
-                <HomeLinkLogo padding="10px 10px 4px 10px" bgColor='rgb(255,255,255)' borderRadius="10px"></HomeLinkLogo>
+                <HomeLinkLogo padding="10px 10px 4px 10px" bgColor="gray" borderRadius="0px"></HomeLinkLogo>
             </WidthWrapper>
 
             <PaddingWrapper padding="30px 0px 0px 0px">

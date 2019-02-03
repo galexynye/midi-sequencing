@@ -7,7 +7,7 @@ import { msTheme } from '../../styles/Theme'
 export const ArticleContainer = styled.article`
     /*TODO: Change to variable */
     position: relative;
-    max-width: ${msTheme.widths.article};
+    max-width: ${props => props.width || msTheme.widths.article};
     margin-top: 30px;
     margin-right: auto;
     margin-left: auto; 

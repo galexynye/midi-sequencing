@@ -17,7 +17,7 @@ const SimpleCardStyle = styled.div`
         padding: 15px 0px 0px 0px;
         display: flex;        
         flex: 1;
-        justify-content: space-between;
+        justify-content: ${props => props.justifyContent || 'space-between'} ;
         flex-direction: column;
     }
 
@@ -65,11 +65,10 @@ export const CardThumbnailLabel = styled.div`
 `
 
 
-export const SimpleCard = ({ children, title, label, imgLink, topTitle, topTitleBreakPoint, topTitleColor, img, text, imgHeight }) => {
+export const SimpleCard = ({ children, justifyContent, title, label, imgLink, topTitle, topTitleBreakPoint, topTitleColor, img, text, imgHeight }) => {
+
     return (
-
-
-        <SimpleCardStyle>
+        <SimpleCardStyle justifyContent={justifyContent}>
             {topTitle &&
                 <TopTitle
                     breakPoint={topTitleBreakPoint}
@@ -89,13 +88,6 @@ export const SimpleCard = ({ children, title, label, imgLink, topTitle, topTitle
                 </CardThumbnail>
             }
 
-
-            {/* {(title || text) &&
-                <article>
-                    {title && <h2>{title}</h2>}
-                    <p>{text}</p>
-                </article>
-            } */}
             <article>
                 {children}
             </article>

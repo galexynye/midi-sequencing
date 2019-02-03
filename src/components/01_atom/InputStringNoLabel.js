@@ -4,14 +4,18 @@ import { Input } from '../01_atom/Input'
 import { msTheme } from '../../styles/Theme'
 
 const InputStringStyle = styled(Input)`  
-    padding: 0px;
-    display: flex;
-    flex-flow: column;
+    padding: ${props => props.padding || msTheme.utilities().inputAndButtonShare.padding};
+    input{
+        width: 100%;
+        padding: 0px;
+        margin:0px;
+        border: ${props => props.border || msTheme.utilities().inputAndButtonShare.border}
+    }
 `
 
 // Input strings WITHOUT a label and border, such as the on the ebook form 
 
-export const InputString = ({ type, border, value, _handleChange, placeholder, bgColor, label, labelText, paddingInput, marginInput, required }) => {
+export const InputStringNoLabel = ({ type, border, value, _handleChange, placeholder, bgColor, label, labelText, paddingInput, marginInput, required }) => {
     return (
         <InputStringStyle bgColor={bgColor} border={border} paddingInput={paddingInput} marginInput={marginInput}>
             <label for={label}>{labelText}</label>

@@ -26,7 +26,7 @@ const PageTitleStyle = styled.div`
             line-height: 45px;
              margin-bottom: 15px;
              word-wrap: break-word;
-             padding: 50px;
+             padding: 50px 15px;
         }
     } 
 `

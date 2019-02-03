@@ -68,10 +68,12 @@ export const msTheme = {
             hideSmall: `@media screen and (max-width: ${this.breakPoints.small + 'px'}) {display: none;}`,
             hideMedium: `@media screen and (max-width: ${this.breakPoints.medium + 'px'}) {display: none;}`,
             inputAndButtonShare: {
-                padding: `10px 25px;`, // NOTE - the InputString.js component padding is NOT controlled by the padding here as of now, because the text input has it's own padding adn to be the same size it needs to be customized after changine the padding here.
+                padding: `10px 10px;`,
                 paddingSmall: `10px 20px;`,
-                border: `none;`,
-                borderRadius: `0px;`
+                // border: `1px solid ${this.colors.text}`,
+                border: `none`,
+                borderRadius: `0px;`,
+                paddingInput: "10px 10px"
             }
         }
     }
