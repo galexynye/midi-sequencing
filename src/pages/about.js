@@ -28,7 +28,7 @@ class About extends React.Component {
 
                     <ul>
                         <li>Name is Alex Nye </li>
-                        <li>Artistically known as Radera </li>
+                        <li>Artistically known as Saywell</li>
                         <li>From Cleveland, Ohio</li>
                         <li>Went to Berklee College of Music</li>
                         <li>Did movie/tv music in Los Angeles</li>
