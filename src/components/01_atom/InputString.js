@@ -12,7 +12,7 @@ const InputStringStyle = styled(Input)`
 export const InputString = ({ type, border, value, _handleChange, placeholder, bgColor, label, labelText, paddingInput, marginInput, required }) => {
     return (
         <InputStringStyle bgColor={bgColor} border={border} paddingInput={paddingInput} marginInput={marginInput}>
-            <label for={label}>{labelText}</label>
+            <label htmlFor={label}>{labelText}</label>
             <input type={type} value={value} name={label} onChange={_handleChange} placeholder={placeholder} id={label} required={required} >
             </input>
         </InputStringStyle>

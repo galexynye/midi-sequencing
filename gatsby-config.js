@@ -88,7 +88,7 @@ module.exports = {
     //     pathToConfigModule: 'src/utils/typography',
     //   },
     // },
-    `gatsby-plugin-stripe-checkout`,
+    // `gatsby-plugin-stripe-checkout`,
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {

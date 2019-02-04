@@ -4,10 +4,20 @@ import { Input } from './Input'
 import { msTheme } from '../../styles/Theme'
 
 const InputTextAreaStyle = styled(Input)`  
-    padding: 0px;
+    padding: 0px;  
     textarea{
         font-size: 16px;
-        font-family: ${msTheme.font.headerFont};        
+        font-family: ${msTheme.font.headerFont};  
+         :required{
+            box-shadow:none;
+           
+        } 
+     
+        /* :focus:invalid{
+            box-shadow:0 0 3px red;
+        } */
+        
+     
     }
 `
 
@@ -16,7 +26,7 @@ const InputTextAreaStyle = styled(Input)`
 export const InputTextarea = ({ rows, border, value, _handleChange, placeholder, bgColor, label, labelText, paddingInput, marginInput, required }) => {
     return (
         <InputTextAreaStyle bgColor={bgColor} border={border} paddingInput={paddingInput} marginInput={marginInput}>
-            <label for={label}>{labelText}</label>
+            <label htmlFor={label}>{labelText}</label>
             <textarea rows={rows ? rows : '4'} value={value} onChange={_handleChange} placeholder={placeholder} name={label} id={label} required={required}></textarea>
         </InputTextAreaStyle>
     )

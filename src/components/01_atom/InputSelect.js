@@ -21,7 +21,7 @@ export class InputSelect extends React.PureComponent {
 
         return (
             <InputSelectStyle bgColor={bgColor} border={border} paddingInput={paddingInput} marginInput={marginInput}>
-                <label for={label}>{labelText}</label>
+                <label htmlFor={label}>{labelText}</label>
                 <select value={value} onChange={_handleChange} placeholder={placeholder} name={label} id={label} required={required}>
                     {selectOptions}
                 </select>

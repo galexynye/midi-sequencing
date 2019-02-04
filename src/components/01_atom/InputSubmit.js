@@ -6,7 +6,7 @@ import { ButtonCTAStyle } from '../01_atom/ButtonCTA'
 
 // Mostly will want to use the ButtonCTAStyle for this submit
 const InputSubmitStyle = styled(ButtonCTAStyle)`
-text-align: center;
+        text-align: center;
         &:hover{
             cursor:pointer;
         }

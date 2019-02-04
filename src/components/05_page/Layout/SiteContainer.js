@@ -190,7 +190,6 @@ class SiteContainer extends React.Component {
                     htmlAttributes={{ lang: 'en' }}
                     meta={[
                         { name: 'description', content: 'Learn Music Production' },
-                        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                         {
                             name: 'google-site-verification',
                             content: 'ApEgiydr2XV738hMqiDL6JyWjg0Cq5ybbWmQrnDHq9c',
