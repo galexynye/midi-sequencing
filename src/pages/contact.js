@@ -5,7 +5,12 @@ import { ArticleContainer } from "../components/05_page/ArticleContainer";
 import { GridContainer, WidthWrapper } from "../components/00_utilities/Utilities";
 import { PageTitle } from "../components/01_atom/PageTitle";
 import { InputString } from "../components/01_atom/InputString";
-import { InputSubmit } from '../components/01_atom/InputSubmit'
+import { InputSubmit } from '../components/01_atom/InputSubmit';
+import { InputTextarea } from '../components/01_atom/InputTextarea';
+import { InputSelect } from '../components/01_atom/InputSelect';
+
+
+const contactOptions = ['General Questions', 'Saying hi!', 'Want to work together?', 'Music Mentoring', 'Will you review our product?', 'Website Suggestions', 'Other']
 
 export default class contact extends PureComponent {
     constructor(props) {
@@ -14,35 +19,34 @@ export default class contact extends PureComponent {
         this.state = {
             email: '',
             name: '',
-            purpose: '',
-            message: ''
+            subject: 'General Questions',
+            message: '',
+            recaptcha: false
         }
     }
+
+    _handleInputChange = (event) => {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+        this.setState({
+            [name]: value
+        });
+    }
+
     render() {
         return (
             <SiteContainer>
                 <PageTitle text="Contact" bgColor={msTheme.colors.yellowlight} />
-
-                {/* <GridContainer gTC="1fr"> */}
-                <ArticleContainer>
-                    <WidthWrapper width="400px" margin="0px" breakPoint={msTheme.breakPoints.small}>
-                        <form>
-                            <InputString type="email" label="email" labelText="Email*" required={true}></InputString>
-
-                            <InputString type="text" label="name" labelText="Name*" required={true}></InputString>
-                            <label for="message">Message</label>
-                            <textarea id="message"  ></textarea>
-                            <select>
-                                <option value="bob">Bob</option>
-                                <option value="bob1">Bob1</option>
-                                <option value="bob2">Bob2</option>
-                                <option value="bob3">Bob3</option>
-                            </select>
-                            <InputSubmit value="Contact Me" bgColor={msTheme.colors.primary} color="white" />
-                        </form>
-                    </WidthWrapper>
+                <ArticleContainer marginBottom="30px">
+                    <form>
+                        <InputString _handleChange={this._handleInputChange} value={this.state.email} type="email" label="email" labelText="Email*" required={true}></InputString>
+                        <InputString _handleChange={this._handleInputChange} value={this.state.name} type="text" label="name" labelText="Name*" required={true}></InputString>
+                        <InputSelect _handleChange={this._handleInputChange} value={this.state.subject} options={contactOptions} label="subject" labelText="Subject" />
+                        <InputTextarea _handleChange={this._handleInputChange} value={this.state.message} label="message" labelText="Message*" />
+                        <InputSubmit value="Contact Me" bgColor={msTheme.colors.primary} color="white" />
+                    </form>
                 </ArticleContainer>
-                {/* </GridContainer> */}
             </SiteContainer>
         )
     }

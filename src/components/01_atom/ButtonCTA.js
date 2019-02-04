@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 
 // If 'href' props is passed button is an anchor link, if 'to' props is passed, it's a is Gatsby Link, otherwise it's a button that will handle a function
 
-const ButtonCTAStyle = styled.button`
+export const ButtonCTAStyle = styled.button`
   margin: ${props => props.margin || "0px 0px 15px 0px"};
   padding: ${props => props.padding || msTheme.utilities().inputAndButtonShare.padding};
   border: ${props => props.border || msTheme.utilities().inputAndButtonShare.border};

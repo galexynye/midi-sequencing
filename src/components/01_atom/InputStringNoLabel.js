@@ -5,11 +5,11 @@ import { msTheme } from '../../styles/Theme'
 
 const InputStringStyle = styled(Input)`  
     padding: ${props => props.padding || msTheme.utilities().inputAndButtonShare.padding};
+    border: ${props => props.border || msTheme.utilities().inputAndButtonShare.border};
     input{
         width: 100%;
         padding: 0px;
-        margin:0px;
-        border: ${props => props.border || msTheme.utilities().inputAndButtonShare.border}
+        margin:0px;        
     }
 `
 
@@ -19,7 +19,7 @@ export const InputStringNoLabel = ({ type, border, value, _handleChange, placeho
     return (
         <InputStringStyle bgColor={bgColor} border={border} paddingInput={paddingInput} marginInput={marginInput}>
             <label for={label}>{labelText}</label>
-            <input type={type} value={value} onChange={_handleChange} placeholder={placeholder} id={label} required={required} >
+            <input type={type} value={value} onChange={_handleChange} placeholder={placeholder} name={label} id={label} required={required} >
             </input>
         </InputStringStyle>
     )

@@ -9,6 +9,7 @@ export const ArticleContainer = styled.article`
     position: relative;
     max-width: ${props => props.width || msTheme.widths.article};
     margin-top: 30px;
+    margin-bottom: ${props => props.marginBottom || '0px'};
     margin-right: auto;
     margin-left: auto; 
     padding: ${msTheme.padding.globalSide};   

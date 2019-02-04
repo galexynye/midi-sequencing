@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 
 export const Input = styled.div`
+  display: flex;
+  flex-flow: column;
   margin: ${props => props.margin || "0px 0px 15px 0px"};
   padding: ${props => props.padding || msTheme.utilities().inputAndButtonShare.padding};
   border-radius: ${props => props.border || msTheme.utilities().inputAndButtonShare.borderRadius};
@@ -16,7 +18,7 @@ export const Input = styled.div`
     /* padding: ${props => props.paddingSmall || msTheme.utilities().inputAndButtonShare.paddingSmall} */
   }
 
-input{
+input, textarea, select{
         max-width: 100%;
         margin: ${props => props.marginInput || '5px 0px'};
         padding: ${props => props.paddingInput || msTheme.utilities().inputAndButtonShare.paddingInput};

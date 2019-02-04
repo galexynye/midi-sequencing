@@ -20,7 +20,7 @@ class About extends React.Component {
 
 
                     <h2>How to Use this Site</h2>
-                    <p>Under <Link to="/learn">Learn</Link> in the top menu you’ll find articles from beginning to advanced topics on making music. If there is anything missing or confusing, let me know! Under each article is a forum discussion where you can ask questions or make suggestions, I’ll listen, and the quality will improve.</p>
+                    <p>Under <Link to="/learn">Learn</Link> in the top menu you’ll find articles and resources from beginning to advanced topics on making music. If there is anything missing or confusing, let me know! Under each article is a forum discussion where you can ask questions or make suggestions, I’ll listen, and the quality will improve.</p>
                     <p>In the <Link to="/latest">Blog</Link> I offer my opinions and perspective on mostly music stuff.
                     I’ve been doing this a long time but don’t claim to be a single source of truth on anything. If you agree or disagree that’s great, everyone can benefit from an open dialogue, I can’t see from every angle and love having my perspective altered. </p>
                     <p>If you are interested in hiring me to do something music related, go to the <Link to="/services">Services</Link> page.</p>
@@ -31,8 +31,8 @@ class About extends React.Component {
 
                     <ul>
                         <li>Name is Alex Nye </li>
-                        <li>Artistically known as Saywell</li>
-                        <li>From Cleveland, Ohio</li>
+                        <li>Artist name is Saywell</li>
+                        <li>From Ohio</li>
                         <li>Went to Berklee College of Music</li>
                         <li>Did movie/tv music in Los Angeles</li>
                         <li>Went independent as a producer, mixing and mastering engineer</li>
@@ -46,8 +46,8 @@ class About extends React.Component {
                     <h2>Can I hire you?</h2>
                     <p>Yes, fill out the form on my <Link to="/services">Services</Link> page and I’ll get back to you. </p>
 
-                    <h2>Song of the Month</h2>
-                    <h3>February - Hang Out (Radera and Yony)</h3>
+                    <h2>Song of the Month 2019</h2>
+                    <h3>February - Hang Out (Saywell and Yony)</h3>
                     <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/568390659&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                     <h3>January - Imagine (cover)</h3>
                     <iframe className="mB40" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/552767244&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>

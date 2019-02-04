@@ -41,7 +41,7 @@ export class ServicesCards extends PureComponent {
 
             if (i == 2) {
                 return (
-                    <GridItem gCSL="1" gCEL="3">
+                    <GridItem gCSL="1" gCEL="3" key={service.title + 'gi'}>
                         {serviceCard}
                     </GridItem>
 

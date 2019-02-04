@@ -2,16 +2,18 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 import { Input } from '../01_atom/Input'
+import { ButtonCTAStyle } from '../01_atom/ButtonCTA'
 
 // Mostly will want to use the ButtonCTAStyle for this submit
-const InputSubmitStyle = styled(Input)`
+const InputSubmitStyle = styled(ButtonCTAStyle)`
 text-align: center;
         &:hover{
             cursor:pointer;
         }
         
-        input{
-            padding: 0px;
+        input{            
+            /* padding:0px 25%; */
+            font-size: 19px;
             background-color: #ffffff00;
             border: none;
             margin: auto;

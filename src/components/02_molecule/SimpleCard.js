@@ -65,34 +65,36 @@ export const CardThumbnailLabel = styled.div`
 `
 
 
-export const SimpleCard = ({ children, justifyContent, title, label, imgLink, topTitle, topTitleBreakPoint, topTitleColor, img, text, imgHeight }) => {
+export class SimpleCard extends React.PureComponent {
 
-    return (
-        <SimpleCardStyle justifyContent={justifyContent}>
-            {topTitle &&
-                <TopTitle
-                    breakPoint={topTitleBreakPoint}
-                    color={topTitleColor}
-                >{topTitle}
-                </TopTitle>}
+    render() {
+        const { children, justifyContent, title, label, imgLink, topTitle, topTitleBreakPoint, topTitleColor, img, text, imgHeight } = this.props
+        return (
+            <SimpleCardStyle justifyContent={justifyContent}>
+                {topTitle &&
+                    <TopTitle
+                        breakPoint={topTitleBreakPoint}
+                        color={topTitleColor}
+                    >{topTitle}
+                    </TopTitle>}
 
-            {imgLink ?
-                <Link to={imgLink}>
-                    <CardThumbnail img={img} imgHeight={imgHeight} >
+                {imgLink ?
+                    <Link to={imgLink}>
+                        <CardThumbnail img={img} imgHeight={imgHeight} >
+                            {label && <CardThumbnailLabel>{label}</CardThumbnailLabel>}
+                        </CardThumbnail>
+                    </Link>
+                    :
+                    <CardThumbnail img={img} imgHeight={imgHeight}>
                         {label && <CardThumbnailLabel>{label}</CardThumbnailLabel>}
                     </CardThumbnail>
-                </Link>
-                :
-                <CardThumbnail img={img} imgHeight={imgHeight}>
-                    {label && <CardThumbnailLabel>{label}</CardThumbnailLabel>}
-                </CardThumbnail>
-            }
-
-            <article>
-                {children}
-            </article>
-        </SimpleCardStyle>
-    )
+                }
+                <article>
+                    {children}
+                </article>
+            </SimpleCardStyle>
+        )
+    }
 }
 
 

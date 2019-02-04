@@ -5,8 +5,6 @@ import { msTheme } from '../../styles/Theme'
 
 const InputStringStyle = styled(Input)`  
     padding: 0px;
-    display: flex;
-    flex-flow: column;
 `
 
 // Input strings WITHOUT a label and border, such as the on the ebook form 
@@ -15,7 +13,7 @@ export const InputString = ({ type, border, value, _handleChange, placeholder, b
     return (
         <InputStringStyle bgColor={bgColor} border={border} paddingInput={paddingInput} marginInput={marginInput}>
             <label for={label}>{labelText}</label>
-            <input type={type} value={value} onChange={_handleChange} placeholder={placeholder} id={label} required={required} >
+            <input type={type} value={value} name={label} onChange={_handleChange} placeholder={placeholder} id={label} required={required} >
             </input>
         </InputStringStyle>
     )
