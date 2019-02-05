@@ -14,24 +14,19 @@ import { FormServices } from '../components/03_organism/FormServices'
 import { Loading } from '../components/01_atom/Loading'
 import { Message } from '../components/01_atom/Message'
 import { ButtonCTA } from '../components/01_atom/ButtonCTA'
+import HangOut from '../assets/Music/ServicesPortfolio/HangOut_Mastering_v1.mp3'
+import { AudioPlayer } from '../components/01_atom/AudioPlayer'
 
 const recaptchaKey = process.env.RECAPTCHA_KEY
 const contactApi = process.env.MS_API_CONTACT
 
-const CardTopTitle = styled.h2`
-    margin: 10px 0px;
-    ${msTheme.mediaquery().medium}{
-        display: none;
-    }
-`
+
 
 class Services extends React.PureComponent {
     constructor(props) {
         super(props)
-
         // let now = new Date()
         // now = now.toISOString().substr(0, 10)
-
         this.state = {
             email: '',
             name: '',
@@ -45,7 +40,14 @@ class Services extends React.PureComponent {
             loading: false,
             error: false,
             success: false,
+            topForm: false,
         }
+    }
+
+    _toggleTopForm = () => {
+        this.setState({
+            topForm: !topForm
+        })
     }
 
     _handleInputChange = (event) => {
@@ -93,7 +95,6 @@ class Services extends React.PureComponent {
                     console.log(error);
                 });
         }
-
     }
 
     _recaptchaLoaded = () => {
@@ -127,9 +128,9 @@ class Services extends React.PureComponent {
 
     render() {
 
-        const servicesOptions = ['--Select--', 'Custom Music', 'Mixing', 'Mastering', 'Producing', 'Licensing', 'So many things', 'Other']
+        const servicesOptions = ['--Select--', 'Custom Music', 'Mixing', 'Mastering', 'Producing', 'Licensing', 'I want help learning music', 'So many things', 'Other']
 
-        const Oops = <WidthWrapper width="350px">
+        const Oops = <WidthWrapper width="350px" margin="0px">
             <Message title="Oops..." message="Something went wrong." />
             <ButtonCTA _handleClick={this._resetState} text="Click to reload Music Services Form" bgColor={msTheme.colors.secondarylighter} />
         </WidthWrapper>
@@ -155,6 +156,14 @@ class Services extends React.PureComponent {
                 verifyCallback={this._verifyHuman}
             />
         </div>
+        // Service form With render logic
+        const CompleteFormProcess = <ArticleContainer id="requestBooking">
+            <h2 >Request a booking</h2>
+            {this.state.loading && <Loading text="Sending..." />}
+            {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.primary} message="Thanks for reaching out, a confirmation email should arrive shortly!" />}
+            {this.state.error && Oops}
+            {this.state.form && ServicesForm}
+        </ArticleContainer>
 
         return (
             <SiteContainer headerPosition="absolute">
@@ -163,15 +172,8 @@ class Services extends React.PureComponent {
                 </Helmet>
                 <HeroService />
                 <ServicesCards />
-
-                <ArticleContainer>
-                    <h2>Request a booking</h2>
-                    {this.state.loading && <Loading text="Sending..." />}
-
-                    {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.primary} message="Thanks for reaching out, a confirmation email should arrive shortly!" />}
-                    {this.state.error && Oops}
-                    {this.state.form && ServicesForm}
-                </ArticleContainer>
+                <AudioPlayer></AudioPlayer>
+                {CompleteFormProcess}
             </SiteContainer>
         )
     }

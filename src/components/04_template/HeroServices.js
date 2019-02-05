@@ -62,7 +62,7 @@ export class HeroService extends Component {
 
                         <p className="hideMedium">Producing | Mixing & Mastering | Original Music</p>
                         <WidthWrapper width="350px" margin="0px">
-                            <ButtonCTA text="Request a booking" bgColor={msTheme.colors.greenlight} />
+                            <ButtonCTA text="Request a booking" href="#requestBooking" bgColor={msTheme.colors.greenlight} />
                         </WidthWrapper>
                     </WidthWrapper>
                 </HeroHomeElementCenter>
