@@ -16,6 +16,7 @@ import { Message } from '../components/01_atom/Message'
 import { ButtonCTA } from '../components/01_atom/ButtonCTA'
 import HangOut from '../assets/Music/ServicesPortfolio/HangOut_Mastering_v1.mp3'
 import { AudioPlayer } from '../components/01_atom/AudioPlayer'
+import { PortfolioServices } from '../components/04_template/PortfolioServices'
 
 const recaptchaKey = process.env.RECAPTCHA_KEY
 const contactApi = process.env.MS_API_CONTACT
@@ -172,7 +173,8 @@ class Services extends React.PureComponent {
                 </Helmet>
                 <HeroService />
                 <ServicesCards />
-                <AudioPlayer></AudioPlayer>
+                <PortfolioServices />
+                {/* <AudioPlayer></AudioPlayer> */}
                 {CompleteFormProcess}
             </SiteContainer>
         )

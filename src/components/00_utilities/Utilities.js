@@ -134,7 +134,7 @@ export class ResponsivePhoto extends React.PureComponent {
 export const ResponsiveIframe = styled.div`
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: ${props => props.paddingTop || '56.25%'};
   iframe {
     position: absolute;
     top: 0;
