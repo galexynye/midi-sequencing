@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { msTheme } from '../../styles/Theme'
 import MusicSequencing from '../../assets/MusicSequencingWordsLogo.png'
 import styled from 'styled-components'
 
@@ -10,7 +11,14 @@ import styled from 'styled-components'
 // `
 
 const HomeLinkStyle = styled.div`
-  img {max-width: 100%;}
+
+  img {
+    max-width: 100%;
+    margin-top: 3px;
+    ${msTheme.mediaquery().medium}{
+        margin-top: 4px;
+    }
+    }
   background-color: ${props => props.bgColor || 'none'};
   padding: ${props => props.padding || '0px'};
   border-radius: ${props => props.borderRadius || '0px'};

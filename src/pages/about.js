@@ -35,7 +35,7 @@ class About extends React.Component {
                         <li>From Ohio</li>
                         <li>Went to Berklee College of Music</li>
                         <li>Did movie/tv music in Los Angeles</li>
-                        <li>Went independent as a producer, mixing and mastering engineer</li>
+                        <li>Went independent as an artist, producer, mixing and mastering engineer</li>
                         <li>Married a German lady, moved my studio to Germany</li>
                         <li>Started MusicSequencing.com </li>
                         <li>Had a kid </li>

@@ -6,7 +6,7 @@ import { msTheme } from '../../styles/Theme'
 
 const MobileToggleButton = styled.button`
   border: none;  
-  margin: -8px 0px 0px 18px;
+  margin: 0px 0px 0px 18px;
   padding: 0px;
   background: none;
   color: #757575;

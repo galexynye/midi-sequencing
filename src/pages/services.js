@@ -4,7 +4,7 @@ import axios from 'axios'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import Recaptcha from 'react-recaptcha'
-import { WidthWrapper } from '../components/00_utilities/Utilities'
+import { WidthWrapper, GridContainer } from '../components/00_utilities/Utilities'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { msTheme } from '../styles/Theme'
 import { ArticleContainer } from '../components/05_page/ArticleContainer'
@@ -14,9 +14,8 @@ import { FormServices } from '../components/03_organism/FormServices'
 import { Loading } from '../components/01_atom/Loading'
 import { Message } from '../components/01_atom/Message'
 import { ButtonCTA } from '../components/01_atom/ButtonCTA'
-import HangOut from '../assets/Music/ServicesPortfolio/HangOut_Mastering_v1.mp3'
-import { AudioPlayer } from '../components/01_atom/AudioPlayer'
 import { PortfolioServices } from '../components/04_template/PortfolioServices'
+
 
 const recaptchaKey = process.env.RECAPTCHA_KEY
 const contactApi = process.env.MS_API_CONTACT
@@ -137,34 +136,38 @@ class Services extends React.PureComponent {
         </WidthWrapper>
 
         // Actual Services form 
-        const ServicesForm = <div>
-            <FormServices
-                _handleInputChange={this._handleInputChange}
-                _handleSubmit={this._handleSubmit}
-                email={this.state.email}
-                name={this.state.name}
-                service={this.state.service}
-                servicesOptions={servicesOptions}
-                message={this.state.message}
-                deadline={this.state.deadline}
-                budget={this.state.budget}
-            />
-            {this.state.noRoboConfirm && <p className="headerFont">Please confirm you are not a robot below.</p>}
-            <Recaptcha
-                sitekey={recaptchaKey}
-                render="explicit"
-                onloadCallback={this._recaptchaLoaded}
-                verifyCallback={this._verifyHuman}
-            />
-        </div>
+        const ServicesForm =
+            <div class="mB40">
+                <FormServices
+                    _handleInputChange={this._handleInputChange}
+                    _handleSubmit={this._handleSubmit}
+                    email={this.state.email}
+                    name={this.state.name}
+                    service={this.state.service}
+                    servicesOptions={servicesOptions}
+                    message={this.state.message}
+                    deadline={this.state.deadline}
+                    budget={this.state.budget}
+                />
+                {this.state.noRoboConfirm && <p className="headerFont">Please confirm you are not a robot below.</p>}
+                <Recaptcha
+                    sitekey={recaptchaKey}
+                    render="explicit"
+                    onloadCallback={this._recaptchaLoaded}
+                    verifyCallback={this._verifyHuman}
+                />
+            </div>
         // Service form With render logic
-        const CompleteFormProcess = <ArticleContainer id="requestBooking">
-            <h2 >Request a booking</h2>
-            {this.state.loading && <Loading text="Sending..." />}
-            {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.primary} message="Thanks for reaching out, a confirmation email should arrive shortly!" />}
-            {this.state.error && Oops}
-            {this.state.form && ServicesForm}
-        </ArticleContainer>
+        const CompleteFormProcess =
+            // <ArticleContainer >
+            <GridContainer className="mT60" gTC="1fr" gTCL="1fr" gTCM="1fr" id="requestBooking">
+                <h2 >Request a booking</h2>
+                {this.state.loading && <Loading text="Sending..." />}
+                {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.primary} message="Thanks for reaching out, a confirmation email should arrive shortly!" />}
+                {this.state.error && Oops}
+                {this.state.form && ServicesForm}
+            </GridContainer>
+        // </ArticleContainer>
 
         return (
             <SiteContainer headerPosition="absolute">

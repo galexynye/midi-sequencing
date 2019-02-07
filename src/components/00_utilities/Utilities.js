@@ -71,6 +71,7 @@ export const GridContainer = styled.div`
 
 
 export const GridItem = styled.div`
+   
     align-self: ${props => props.alignSelf || 'auto'};
     grid-column-start: ${props => props.gCS || 'auto'};
     grid-column-end: ${props => props.gCE || 'auto'};
@@ -135,12 +136,18 @@ export const ResponsiveIframe = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: ${props => props.paddingTop || '56.25%'};
+/* audio height is so we see the react player controls on chrome */
+  audio{
+      height: 42px !important;   
+      border-radius: 0px !important;  
+  }
   iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: ${props => props.height || '100%'};
     border: 0;
+
   }
 `

@@ -15,14 +15,14 @@ import BigEvilPic from '../assets/ServicesPortfolio/CinematicSpyGraphics.jpg'
 import RiftPic from '../assets/ServicesPortfolio/RiftSquare.jpg'
 
 export const servicesPortfolio = [
-    { title: "Hang Out", src: HangOut, iframe: false, img: HangOutPic },
-    { title: "Karma", src: Karma, iframe: false, img: KarmaPic },
-    { title: "Rift", src: "https://www.youtube.com/watch?v=H0Wj1DL-lyg", iframe: true, img: RiftPic },
-    { title: "Imagine", src: Imagine, iframe: false, img: ImaginePic },
-    { title: "Big Evil", src: BigEvil, iframe: false, img: BigEvilPic },
-    { title: "Bed of Thorns", src: BedOfThorns, iframe: false, img: BedOfThornsPic },
-    { title: "Fart Finale", src: FartFinale, iframe: false, img: FartFinalePic },
-    { title: "Happy Latin", src: HappyLatin, iframe: false, img: HappyLatinPic },
+    { title: "Hang Out", src: HangOut, iframe: false, img: HangOutPic, watchOrListen: "Listen", credits: "Co-writer, Producer, Mixing, Mastering" },
+    { title: "Karma", src: Karma, iframe: false, img: KarmaPic, watchOrListen: "Listen", credits: "Writer, Producer, Mixing" },
+    { title: "Rift", src: "https://www.youtube.com/watch?v=H0Wj1DL-lyg", iframe: true, img: RiftPic, watchOrListen: "Watch", credits: "Writer, Producer, Mixing" },
+    { title: "Imagine", src: Imagine, iframe: false, img: ImaginePic, watchOrListen: "Listen", credits: "Producer, Mixing, Mastering" },
+    { title: "Big Evil", src: BigEvil, iframe: false, img: BigEvilPic, watchOrListen: "Listen", credits: "Writer, Sound Design, Mixing" },
+    { title: "Bed of Thorns", src: BedOfThorns, iframe: false, img: BedOfThornsPic, watchOrListen: "Listen", credits: "Writer, Sound Design, Mixing, Mastering" },
+    { title: "The Finale", src: FartFinale, iframe: false, img: FartFinalePic, watchOrListen: "Listen", credits: "Co-Writer, Music Programming" },
+    { title: "Happy Latin", src: HappyLatin, iframe: false, img: HappyLatinPic, watchOrListen: "Listen", credits: "Writer, Producer, Mixing, Mastering" },
 ]
 
 

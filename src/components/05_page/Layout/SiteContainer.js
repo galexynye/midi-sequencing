@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 import { msTheme } from '../../../styles/Theme'
 import { reset } from '../../../styles/CSSReset'
 import { MainContainer } from './MainContainer'
@@ -11,6 +12,11 @@ import { SidebarMobileNav } from '../../04_template/SideBarMobileNav'
 import favicon from '../../../assets/midi-sequencing-icon-circle.png'
 
 // Global Styling & Utility Classes
+
+const SiteContainerStyle = styled.div`
+    position: relative;
+`
+
 const GlobalStyle = createGlobalStyle`
 
 ${reset}
@@ -113,8 +119,21 @@ a {
 }
 
 .mT20{
-    margin-top: 20px;
+    margin-top: 20px; 
 }
+
+.mT40{
+    margin-top: 40px
+}
+.mT60{
+    margin-top: 60px
+}
+
+.mB20{
+    margin-bottom: 20px;
+}
+
+
 
 .mB40 {
     margin-bottom: 40px;
@@ -148,6 +167,17 @@ a {
     font-family: ${msTheme.font.headerFont};
 }
 
+.altHeader{
+    font-weight: 600;
+    font-family: ${msTheme.font.headerFont};
+    font-size: 20px;
+}
+
+.altP{
+    font-family: ${msTheme.font.headerFont};
+    font-size: 16px;
+    line-height: 20px;
+}
 
 
 `
