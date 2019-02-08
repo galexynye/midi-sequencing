@@ -4,7 +4,7 @@ title: Free Internet Synths and More
 author: 'Alex Nye'
 date: '2018-02-19'
 blog: true
-category: 'Gear Reviews'
+category: 'Gear Review'
 subcategory: ['Creative']
 company: 'Misc'
 tags: ['free', 'synths', 'internet', 'drum-machine']

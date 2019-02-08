@@ -285,7 +285,7 @@ export default props => (
                 category
                 subcategory
                 company
-                subject
+          
               }
             }
           }

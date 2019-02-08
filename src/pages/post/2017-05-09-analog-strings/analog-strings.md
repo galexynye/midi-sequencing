@@ -3,7 +3,7 @@ title: Analog Strings by Output
 author: 'Alex Nye'
 date: '2017-05-09'
 blog: true
-category: 'Gear Reviews'
+category: 'Gear Review'
 subcategory: ['Soft Synths']
 company: 'Output'
 tags: ['output', 'gear', 'plugins']
