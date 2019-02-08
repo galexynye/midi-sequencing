@@ -3,6 +3,7 @@ path: '/article/eq-essential-techniques'
 title: 'EQ Essential Techniques'
 author: 'Alex Nye'
 date: '2017-06-17'
+learn: true
 hideDate: true
 category: 'Mixing'
 subcategory: ['Mixing Basics']

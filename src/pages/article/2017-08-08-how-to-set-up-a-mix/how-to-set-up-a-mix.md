@@ -3,6 +3,7 @@ path: '/article/how-to-set-up-a-mix'
 title: Mix Routing Guide
 author: 'Alex Nye'
 date: '2017-08-08'
+learn: true
 category: 'Mixing'
 subcategory: ['Mixing Basics']
 tags: ['organize', 'mixing', 'workflow']

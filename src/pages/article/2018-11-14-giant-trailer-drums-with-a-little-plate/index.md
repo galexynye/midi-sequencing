@@ -2,6 +2,7 @@
 title: Make GIANT Trailer Drums with Sound Toys Little Plate Reverb
 author: 'Alex Nye'
 date: '2018-11-14'
+learn: true
 category: 'Producing'
 subcategory: ['Sound Design']
 tags: ['trailer-music', 'epic', 'sound-toys', 'native-instruments', 'drums']

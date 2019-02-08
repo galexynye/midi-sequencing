@@ -2,6 +2,7 @@
 title: 'Mixing Drums to Sound Like Phil Collins'
 author: 'Alex Nye'
 date: '2017-06-09'
+learn: true
 category: 'Mixing'
 subcategory: ['Creative Mixing']
 tags: ['mixing', 'gear', 'drum mixing']

@@ -2,6 +2,7 @@
 title: Audio Effects Explained for Beginners
 author: 'Alex Nye'
 date: '2018-12-09'
+learn: true
 category: 'Mixing'
 subcategory: ['Mixing Basics']
 tags: ['effects', 'mixing', 'compression', 'eq', 'tremelo', 'basics', 'flanger','phaser', 'gates']

@@ -3,6 +3,7 @@ title: 'Automation: Everything You Need to Know'
 author: 'Alex Nye'
 date: '2017-07-26'
 category: 'Mixing'
+learn: true
 subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'automation', 'fadeout']
 featuredImage: './media/automation-basics/Ableton-Record-Automation-4.png'

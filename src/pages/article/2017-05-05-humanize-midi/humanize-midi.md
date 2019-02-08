@@ -2,6 +2,7 @@
 title: 'Automatically Humanize Midi'
 author: 'Alex Nye'
 date: '2017-05-05'
+learn: true
 category: 'Producing'
 subcategory: ['Producing Techniques']
 tags: ['midi']

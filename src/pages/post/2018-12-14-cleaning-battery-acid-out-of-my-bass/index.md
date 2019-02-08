@@ -3,6 +3,7 @@ path: '/blog/cleaning-battery-acid-out-of-my-bass'
 title: Battery Acid In my Bass
 author: 'Alex Nye'
 date: '2018-12-14'
+blog: true
 category: 'Story' 
 subcategory: ['Gear']
 company: 'Music-Man'

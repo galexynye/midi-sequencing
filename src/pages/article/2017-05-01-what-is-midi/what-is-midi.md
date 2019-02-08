@@ -3,6 +3,7 @@ title: 'What Midi Really Is'
 date: '2017-05-01'
 updated: null
 author: 'Alex Nye'
+learn: true
 category: 'Music Tech'
 subcategory: ['Tech Basics']
 tags: ['basics', 'midi']

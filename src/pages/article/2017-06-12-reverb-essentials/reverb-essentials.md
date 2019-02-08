@@ -2,6 +2,7 @@
 title: 'Reverb: The Definitive Guide'
 author: 'Alex Nye'
 date: '2017-06-12'
+learn: true
 category: 'Mixing'
 subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'reverb']

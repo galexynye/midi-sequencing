@@ -2,6 +2,7 @@
 title: Boscomac!
 author: 'Alex Nye'
 date: '2017-08-01'
+blog: true
 category: 'Gear Reviews'
 subcategory: ['Creative']
 company: 'Native Instruments'

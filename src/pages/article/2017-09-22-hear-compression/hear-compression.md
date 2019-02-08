@@ -3,6 +3,7 @@ title: How to Hear Compression
 author: 'Alex Nye'
 date: '2017-09-22'
 category: 'Mixing'
+learn: true
 subcategory: ['Compression']
 tags: ['mixing', 'compression', 'ears']
 ---

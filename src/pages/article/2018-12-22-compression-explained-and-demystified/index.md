@@ -3,6 +3,7 @@ path: '/article/compression-explained-and-demystified'
 title: Compression Explained and Demystified
 author: 'Alex Nye'
 date: '2018-12-22'
+learn: true
 category: 'Mixing'
 subcategory: ['Compression']
 tags: ['compression', 'mixing', 'basics']

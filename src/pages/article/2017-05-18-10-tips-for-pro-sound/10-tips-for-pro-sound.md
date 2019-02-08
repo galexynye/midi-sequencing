@@ -2,6 +2,7 @@
 title: '10 Tips for Achieving Pro Sound'
 author: 'Alex Nye'
 date: '2017-05-18'
+learn: true
 category: 'Producing'
 subcategory: ['Producing Techniques']
 tags: ['gear', 'mixing', 'recording', 'sound better', 'tech', 'studio']
