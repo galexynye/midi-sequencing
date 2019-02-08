@@ -3,8 +3,8 @@ path: '/blog/keyboard-surgery'
 title: Keyboard Surgery on A Korg SV-1
 author: 'Alex Nye'
 date: '2018-11-30'
-category: 'Gear'
-subcategory: 'Instruments'
+category: 'Story'
+subcategory: ['Gear']
 company: 'Korg'
 tags: ['korg', 'instrument-repair', 'blog']
 ---

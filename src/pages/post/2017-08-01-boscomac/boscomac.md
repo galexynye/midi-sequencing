@@ -1,10 +1,9 @@
 ---
-path: '/article/boscomac'
 title: Boscomac!
 author: 'Alex Nye'
 date: '2017-08-01'
-category: 'Gear'
-subcategory: 'Free Gear'
+category: 'Gear Reviews'
+subcategory: ['Creative']
 company: 'Native Instruments'
 tags: ['gear', 'native-instruments', 'free']
 ---

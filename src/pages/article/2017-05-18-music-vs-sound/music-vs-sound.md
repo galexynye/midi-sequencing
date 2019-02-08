@@ -1,12 +1,11 @@
 ---
-path: '/article/music-vs-sound'
 title: Music VS Sound
 author: 'Alex Nye'
-category: 'Tutorials'
-subcategory: 'Producing'
-subject: 'Sound'
 date: '2017-05-18'
-tags: ['basics', 'mixing', 'philosophy']
+updated: null
+category: 'Producing'
+subcategory: ['Producing Basics', 'Mixing Basics']
+tags: ['basics', 'mixing', 'philosophy', 'sound better']
 ---
 
 What will make or break you as a music creator is your understanding of both music and sound. Yes music is a form of sound, but it is crucial to understand that <strong>sound itself</strong> has its own ugly and beautiful qualities.

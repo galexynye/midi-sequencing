@@ -1,12 +1,11 @@
 ---
-path: '/article/reverb-essentials'
 title: 'Reverb: The Definitive Guide'
 author: 'Alex Nye'
 date: '2017-06-12'
-category: 'Tutorials'
-subcategory: 'Basics'
-subject: 'Reverb'
+category: 'Mixing'
+subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'reverb']
+featuredImage: './media/reverb-essentials/Reverb-Diagram-1.png'
 ---
 
 <img src="./media/reverb-essentials/Reverb-Diagram-1.png" alt="Stick Figure Drawing of How Reverb Sends used to be set up analog"  />

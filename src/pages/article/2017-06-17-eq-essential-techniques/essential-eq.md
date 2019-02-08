@@ -4,9 +4,8 @@ title: 'EQ Essential Techniques'
 author: 'Alex Nye'
 date: '2017-06-17'
 hideDate: true
-category: 'Tutorials'
-subcategory: 'Basics'
-subject: 'EQ'
+category: 'Mixing'
+subcategory: 'Mixing Basics'
 tags: ['mixing', 'basics', 'eq']
 ---
 

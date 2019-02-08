@@ -1,12 +1,10 @@
 ---
-path: '/article/mix-drums-like-phil-collins'
 title: 'Mixing Drums to Sound Like Phil Collins'
 author: 'Alex Nye'
 date: '2017-06-09'
-category: 'Tutorials'
-subcategory: 'Mixing'
-subject: 'Creative Mixing'
-tags: ['mixing', 'gear']
+category: 'Mixing'
+subcategory: ['Creative Mixing']
+tags: ['mixing', 'gear', 'drum mixing']
 ---
 
 <iframe src="https://www.youtube.com/embed/X1S9RqgFHy0?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

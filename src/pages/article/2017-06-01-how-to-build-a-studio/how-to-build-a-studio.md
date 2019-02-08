@@ -1,13 +1,12 @@
 ---
-path: '/article/how-to-build-a-studio'
 title: 'Build A Home Studio From Nothing to Everything'
 author: 'Alex Nye'
 date: '2017-06-01'
 hideDate: true
-category: 'Tutorials'
-subcategory: 'Build A Studio'
-subject: 'Studio'
-tags: ['tips', 'gear', 'mixing', 'basics']
+category: 'Music Tech'
+subcategory: ['Build A Studio']
+tags: ['gear', 'basics']
+featuredImage: './media/how-to-build-a-home-studio/studio-1.jpg'
 ---
 
 <!-- TODO: Add More Affiliate Links (Or Link To Store) -->

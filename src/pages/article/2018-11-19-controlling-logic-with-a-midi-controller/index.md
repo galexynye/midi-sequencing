@@ -3,10 +3,10 @@ path: '/article/controlling-logic-with-a-midi-controller'
 title: Controlling Logic X with A Midi Controller
 author: 'Alex Nye'
 date: '2018-11-19'
-category: 'Tutorials'
-subcategory: 'Midi'
-subject: 'Logic'
-tags: ['midi-controller', 'logic', 'm-audio']
+category: 'Music Tech'
+subcategory: ['DAW']
+tags: ['midi-controller', 'midi', 'logic', 'm-audio', 'advanced']
+featuredImage: './MidiKeyboardMaster1Oxygen8.jpg'
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

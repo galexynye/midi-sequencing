@@ -1,12 +1,11 @@
 ---
-path: '/article/audio-effects-explained-for-beginners'
 title: Audio Effects Explained for Beginners
 author: 'Alex Nye'
 date: '2018-12-09'
-category: 'Tutorials'
-subcategory: 'Basics'
-subject: 'Effects'
+category: 'Mixing'
+subcategory: ['Mixing Basics']
 tags: ['effects', 'mixing', 'compression', 'eq', 'tremelo', 'basics', 'flanger','phaser', 'gates']
+featuredImage: '../2017-06-17-eq-essential-techniques/media/essential-eq/Bunch-Of-EQs-picture-1.png'
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LrzPMKg4dyU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

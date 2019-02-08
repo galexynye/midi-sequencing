@@ -3,9 +3,8 @@ path: '/article/compression-explained-and-demystified'
 title: Compression Explained and Demystified
 author: 'Alex Nye'
 date: '2018-12-22'
-category: 'Tutorials'
-subcategory: 'Basics'
-subject: 'Compression'
+category: 'Mixing'
+subcategory: ['Compression']
 tags: ['compression', 'mixing', 'basics']
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TsMipbWosLU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

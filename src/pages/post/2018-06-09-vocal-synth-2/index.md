@@ -4,7 +4,7 @@ title: Vocal Synth 2 by iZotope
 author: 'Alex Nye'
 date: '2018-06-09'
 category: 'Gear Reviews'
-subcategory: 'Soft Synths'
+subcategory: ['Creative']
 company: 'iZotope'
 tags: ['synths', 'izotope', 'plugins', 'vocals']
 ---

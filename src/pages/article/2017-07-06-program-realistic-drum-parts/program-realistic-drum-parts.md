@@ -3,10 +3,9 @@ path: '/article/program-realistic-drum-parts'
 title: Program Realistic Drum Parts
 author: 'Alex Nye'
 date: '2017-07-06'
-category: 'Tutorials'
-subcategory: 'Producing'
-subject: 'Drum Programming'
-tags: ['tips', 'midi', 'drum-programming', 'midi-sequencing']
+category: 'Producing'
+subcategory: ['Producing Techniques']
+tags: ['midi', 'drum-programming', 'drums', 'midi-sequencing']
 ---
 
 <iframe src="https://www.youtube.com/embed/5wRu8phxn10" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

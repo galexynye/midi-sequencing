@@ -1,5 +1,4 @@
 ---
-path: '/article/analog-strings'
 title: Analog Strings by Output
 author: 'Alex Nye'
 date: '2017-05-09'

@@ -3,10 +3,9 @@ path: '/article/how-to-set-up-a-mix'
 title: Mix Routing Guide
 author: 'Alex Nye'
 date: '2017-08-08'
-category: 'Tutorials'
-subcategory: 'Mixing'
-subject: 'Signal Flow'
-tags: ['organize', 'mixing']
+category: 'Mixing'
+subcategory: 'Mixing Basics'
+tags: ['organize', 'mixing', 'workflow']
 ---
 
 <img src="./media/how-to-set-up-a-mix/Routing-Audio-1-1024x626.png" alt="Image Guide">

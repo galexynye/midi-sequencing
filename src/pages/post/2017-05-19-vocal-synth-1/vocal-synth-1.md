@@ -1,5 +1,4 @@
 ---
-path: '/article/vocal-synth-1'
 title: Vocal Synth by iZotope
 author: 'Alex Nye'
 date: '2017-05-19'

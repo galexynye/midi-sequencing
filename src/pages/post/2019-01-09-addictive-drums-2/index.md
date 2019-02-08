@@ -2,15 +2,12 @@
 title: Addictive Drums 2 Review
 author: 'Alex Nye'
 date: '2019-01-09'
-category: 'blog'
-subcategory: 'gear review'
+category: 'Gear Reviews'
+subcategory: ['Samples']
 company: 'XLN-Audio'
 tags: ['gear', 'drums', 'samples']
 featuredImage: './addictiveDrums2.png'
 ---
-
-
-
 
 <img src='./addictiveDrums2.png' />
 

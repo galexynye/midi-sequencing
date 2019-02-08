@@ -1,11 +1,12 @@
 ---
 title: 'Which DAW Should You Use?'
 author: 'Alex Nye'
-date: '2019-01-04'
-category: 'Tutorials'
-subcategory: 'Build A Studio'
-subject: 'DAW'
+date: '2017-05-04'
+updated: '2019-01-04'
+category: 'Music Tech'
+subcategory: ['Building a Studio']
 tags: ['basics', 'software', 'daw']
+featuredImage: './Daws-20.jpg'
 ---
 
 <!-- ![Logos of Digital Audio Workstations](./Daws-20.jpg 'Famous DAWS') -->

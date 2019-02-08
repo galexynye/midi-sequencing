@@ -1,12 +1,10 @@
 ---
-path: '/article/humanize-midi'
 title: 'Automatically Humanize Midi'
 author: 'Alex Nye'
 date: '2017-05-05'
-category: 'Tutorials'
-subcategory: 'Midi'
-subject: 'Midi'
-tags: ['midi', 'tips']
+category: 'Producing'
+subcategory: ['Producing Techniques']
+tags: ['midi']
 ---
 
 <iframe src="https://www.youtube.com/embed/KIQ3yvUSK00?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

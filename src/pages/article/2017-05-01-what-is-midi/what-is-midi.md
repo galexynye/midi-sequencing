@@ -1,11 +1,10 @@
 ---
-path: '/article/what-is-midi'
-date: '2017-05-01'
 title: 'What Midi Really Is'
+date: '2017-05-01'
+updated: null
 author: 'Alex Nye'
-category: 'Tutorials'
-subcategory: 'Basics'
-subject: 'Midi'
+category: 'Music Tech'
+subcategory: ['Tech Basics']
 tags: ['basics', 'midi']
 ---
 

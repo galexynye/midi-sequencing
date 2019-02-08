@@ -1,12 +1,11 @@
 ---
-path: '/article/automation'
 title: 'Automation: Everything You Need to Know'
 author: 'Alex Nye'
 date: '2017-07-26'
-category: 'Tutorials'
-subcategory: 'Basics'
-subject: 'Automation'
+category: 'Mixing'
+subcategory: 'Mixing Basics'
 tags: ['mixing', 'basics', 'automation', 'fadeout']
+featuredImage: './media/automation-basics/Ableton-Record-Automation-4.png'
 ---
 
 <img src="./media/automation-basics/automation-1.png" alt="Ableton Automation Example" width="1024" height="665" />

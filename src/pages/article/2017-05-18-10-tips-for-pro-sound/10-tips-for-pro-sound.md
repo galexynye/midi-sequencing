@@ -1,12 +1,10 @@
 ---
-path: '/article/10-tips-for-pro-sound'
-title: '10 Aspects for Achieving Pro Sound'
+title: '10 Tips for Achieving Pro Sound'
 author: 'Alex Nye'
 date: '2017-05-18'
-category: 'Tutorials'
-subcategory: 'Producing'
-subject: 'Sound'
-tags: ['gear', 'mixing']
+category: 'Producing'
+subcategory: ['Producing Techniques']
+tags: ['gear', 'mixing', 'recording', 'sound better', 'tech', 'studio']
 ---
 
 <!-- TODO: Fixe HEADERS IN ALL -->

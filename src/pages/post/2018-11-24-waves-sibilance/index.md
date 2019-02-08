@@ -3,10 +3,10 @@ path: '/article/waves-sibilance'
 title: Waves Sibilance Review and Demo
 author: 'Alex Nye'
 date: '2018-11-24'
-category: 'Gear'
-subcategory: 'Dynamics'
+category: 'Gear Reviews'
+subcategory: ['Dynamics']
 company: 'Waves'
-tags: ['deesser', 'waves', 'eq', 'vocal-mixing']
+tags: ['deesser', 'waves', 'eq', 'vocal-mixing', 'compression']
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4QmnBAmRTBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

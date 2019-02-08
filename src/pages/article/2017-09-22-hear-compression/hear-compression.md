@@ -1,12 +1,10 @@
 ---
-path: '/article/hear-compression'
 title: How to Hear Compression
 author: 'Alex Nye'
 date: '2017-09-22'
-category: 'Tutorials'
-subcategory: 'Mixing'
-subject: 'Compression'
-tags: ['mixing', 'compression']
+category: 'Mixing'
+subcategory: ['Compression']
+tags: ['mixing', 'compression', 'ears']
 ---
 
 <iframe src="https://www.youtube.com/embed/KBYHGCzqGGA?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

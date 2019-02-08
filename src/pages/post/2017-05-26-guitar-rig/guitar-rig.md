@@ -4,7 +4,7 @@ title: Guitar Rig by Native Instruments
 author: 'Alex Nye'
 date: '2017-05-26'
 category: 'Gear Reviews'
-subcategory: 'Creative'
+subcategory: ['Creative']
 company: 'Native Instruments'
 tags: ['native-instruments', 'gear', 'guitar']
 ---
