@@ -4,7 +4,7 @@ title: Exhale by Output
 author: 'Alex Nye'
 date: '2017-09-19'
 category: 'Gear Reviews'
-subcategory: 'Soft Synths'
+subcategory: ['Soft Synths']
 company: 'Output'
 tags: ['output', 'gear']
 ---

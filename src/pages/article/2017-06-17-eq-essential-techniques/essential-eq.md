@@ -5,7 +5,7 @@ author: 'Alex Nye'
 date: '2017-06-17'
 hideDate: true
 category: 'Mixing'
-subcategory: 'Mixing Basics'
+subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'eq']
 ---
 

@@ -4,7 +4,7 @@ title: Mix Routing Guide
 author: 'Alex Nye'
 date: '2017-08-08'
 category: 'Mixing'
-subcategory: 'Mixing Basics'
+subcategory: ['Mixing Basics']
 tags: ['organize', 'mixing', 'workflow']
 ---
 
