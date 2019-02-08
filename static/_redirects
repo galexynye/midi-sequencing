@@ -4,3 +4,16 @@ https://www.midisequencing.com/* https://www.musicsequencing.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://musicsequencing.netlify.com/* https://www.musicsequencing.com/:splat 301!
+
+# Redirect gear review to blogs
+https://www.musicsequencing.com/article/exhale https://www.musicsequencing.com/post/exhale 301!
+https://www.musicsequencing.com/article/boscomac https://www.musicsequencing.com/post/boscomac 301!
+https://www.musicsequencing.com/article/guitar-rig https://www.musicsequencing.com/post/guitar-rig 301!
+https://www.musicsequencing.com/article/vocal-synth-1 https://www.musicsequencing.com/post/vocal-synth-1 301!
+https://www.musicsequencing.com/article/analog-strings https://www.musicsequencing.com/post/analog-strings 301!
+https://www.musicsequencing.com/article/addictive-drums-2 https://www.musicsequencing.com/post/addictive-drums-2 301!
+https://www.musicsequencing.com/article/waves-sibilance https://www.musicsequencing.com/post/waves-sibilance 301!
+https://www.musicsequencing.com/article/vocal-synth-2 https://www.musicsequencing.com/post/vocal-synth-2 301!
+https://www.musicsequencing.com/article/free-internet-synths-and-more https://www.musicsequencing.com/post/free-internet-synths-and-more 301!
+https://www.musicsequencing.com/blog/cleaning-battery-acid-out-of-my-bass https://www.musicsequencing.com/post/cleaning-battery-acid-out-of-my-bass 301!
+https://www.musicsequencing.com/blog/keyboard-surgery https://www.musicsequencing.com/post/keyboard-surgery 301!
