@@ -24,12 +24,13 @@ class BlogPostTemplate extends React.Component {
       tags = post.frontmatter.tags.map(tag => (
         <li key={tag}>
           <Link
+            className="headerFont"
             to={`/tags/${tag}`}
             style={{
               textDecoration: 'none',
               boxShadow: 'none',
-              marginRight: '10px',
-              color: '#2c62a9',
+              margin: '0px 5px',
+              color: msTheme.colors.primary,
             }}
           >
             {`${tag}`}
@@ -58,13 +59,14 @@ class BlogPostTemplate extends React.Component {
                 flexFlow: 'wrap',
                 marginLeft: '0px',
                 marginBottom: '20px',
-              } // marginTop: rhythm(-1),
+              }
             }
           >
+            <li className="headerFont">Tags: </li>
             {tags}
           </ul>
           {/* <p>by {author}</p> */}
-          <p>{!post.frontmatter.hideDate && post.frontmatter.date}</p>
+          <p>Updated : {!post.frontmatter.hideDate && post.frontmatter.date}</p>
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           {/* <hr

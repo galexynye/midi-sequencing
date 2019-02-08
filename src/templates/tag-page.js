@@ -1,25 +1,23 @@
 import React from 'react'
+import { Link, graphql } from 'gatsby'
+import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
-
-// Components
-import { Link, graphql } from 'gatsby'
-import styled from 'styled-components'
+import { ArticleContainer } from '../components/05_page/ArticleContainer';
 
 const TagsList = styled.ul`
-  list-style-type: '';
-  display: 'flex';
-  flex-flow: 'wrap';
-  margin: '0px 0px 50px 0px';
+  list-style-type: none;
+  padding: 0px;
 `
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
+  const tagHeader = `Post${
     totalCount === 1 ? '' : 's'
     } tagged with "${tag}"`
+  // const tagHeader = `"${tag}" `
 
   return (
     <SiteContainer>
@@ -27,32 +25,35 @@ const Tags = ({ pageContext, data }) => {
         htmlAttributes={{ lang: 'en' }} // meta={[{ name: 'description', content: siteDescription }]}
         title={`${tag} | Music Sequencing`}
       />
-      <h1
-      // style={{ marginTop: '10px' }}
-      >{tagHeader}
-      </h1>
-      <TagsList>
-        {edges.map(({ node }) => {
-          const { title } = node.frontmatter
-          const { slug } = node.fields
-          return (
-            <li key={slug}
-            // style={{ marginBottom: '10px' }}
-            >
-              <Link to={slug}>{title}</Link>
-            </li>
-          )
-        })}
-      </TagsList>
-      {/*
+      <ArticleContainer>
+        <h1
+        >{tagHeader}
+        </h1>
+        <TagsList>
+          {edges.map(({ node }) => {
+            const { title } = node.frontmatter
+            const { slug } = node.fields
+            return (
+              <li key={slug} className="headerFont"
+              // style={{ marginBottom: '10px' }}
+              >
+                <Link to={slug}>{title}</Link>
+              </li>
+            )
+          })}
+        </TagsList>
+        {/*
               This links to a page that does not yet exist.
               We'll come back to it!
             */}
-      <Link to="/tags"
-      // style={{ marginTop: '10px' }}
-      >
-        All tags
+        <Link className="headerFont" to="/tags"
+        // style={{ marginTop: '10px' }}
+        >
+          All tags
       </Link>
+
+      </ArticleContainer>
+
     </SiteContainer>
   )
 }
@@ -84,7 +85,7 @@ export const pageQuery = graphql`
   query($tag: String) {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___title], order: ASC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount

@@ -79,22 +79,28 @@ or gTCS - small
  
 Paragraphs text overflow doesn't work. it jsut gets cut off without ellipsis. If I write the paragraph straight into a div with no html it works...fucking shit cunts
 
-link in cards is adding a little bit of white space at smaller widths. corrected with a -px margin-left..but weird
-
 The background hero if fucked when going from portrait to landscape. Detect orientation change to fix.
 https://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
 
 
-Footer Cards Are stupidly designed the height is set by looking at the "ultimate ebook height" and then setting the "need a mentor" height to that
+Footer Cards could be designed better
+
+For ease of design and to WEED out any tech lacking potential customers, I've fully commited to CSS grid and said FUCK anybody who can't use it...maybe a feature.
+
+**Youtube doesn't load on safari mobile with react player**
+
+Because the `<MainContainer>` is transformed (or?) fixed on mobile, you cannot position elements fixed to the Viewport
+
 
 # Building new Pages 
 
 See the `<SiteContainer>` notes below. All pages are wrapped in the `<SiteContainer>`.
 
 ## To create an individual page.
-Create a js file in the pages directory. Import a page component from the 05_page directory or create a new page component in the 05_page directory. 
 
-To create a new page component, import the `<SiteContainer>` and start putting stuff in it or create a Class or styled componenent inside the `<SiteContainer>` (or both) for more page options. (look at what's there if confused).
+To create a new page component, import the `<SiteContainer>` from the 05_page directory and start putting stuff in it or create a Class or styled componenent inside the `<SiteContainer>` (or both) for more page options. (look at what's there if confused).
+
+**As stated above, Page.js files in the Page directory MUST USE DEFAULT EXPORTS for the page component!!!!!!**
 
 ## Programmatically Build Pages 
 This is done in the gatsby-node.js file. Follow the directions above, except create or use a page component from the src -> components -> 05_page -> Blueprints directory. Import that into the gatsby-node.js file and do some programming.
@@ -115,7 +121,7 @@ The injectGlobal API was removed and replaced by createGlobalStyle in styled-com
 NOTE: Upgrade eventually to using React's context API with the `<SiteContainer>`. See [This artice](https://medium.freecodecamp.org/how-to-develop-your-react-superpowers-with-the-context-api-61e0ab952c02)
 
 ### HeaderPosition
-The default header position is static but on hero pages, such as the main page, it needs absolute positioning. This is a prop that is added to the `<SiteContainer>` when creating a new page. 
+The default header position is static but on hero pages, such as the main page, it needs absolute positioning. This is a prop that is added to the `<SiteContainer>` when creating a new page. See the index.js or services.js for examples.
 
 ### Global Injection of Styles
 [About Gatsby Global Style Injection problems](https://github.com/gatsbyjs/gatsby/issues/7413)
@@ -213,6 +219,7 @@ In the gatsby-node.js file.
 
 ## Static Query 
 Static Query is used to do GraphQL queries within components. There are additional limitations with static Queries.
+[static query](https://www.gatsbyjs.org/docs/static-query/)
 
 ## Link 
 [gatsby Link](https://www.gatsbyjs.org/docs/gatsby-link/)

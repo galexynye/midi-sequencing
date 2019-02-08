@@ -11,28 +11,36 @@ import { ButtonNoStyle } from '../01_atom/BottonNoStyle';
 import { msTheme } from '../../styles/Theme';
 import { PortfolioCard } from '../02_molecule/PortfolioCard';
 
+
+
+/*
+This renders the Portfolio Section and has the playback state and player methods.
+
+Player Dependency
+react player https://cookpete.com/react-player/
+ https://github.com/CookPete/react-player/blob/master/src/demo/App.js
+ https://github.com/CookPete/react-player/tree/master/src/demo
+
+*/
+
+
+
+// Fixes the audio / video playback to bottom of screen except on mobile
 const Fixer = styled.div`
     position: fixed ; 
     bottom: 0;
     right: 0;
     width: ${props => props.width || '99vw'};
-    z-index: 500000000000000;
+    z-index: 100000;
     ${msTheme.mediaquery().medium}{
         position: static;
         width: 100%;
     }
 `
 
-// TODO: Style Headers with class and credits with class, 
-// Get rid of X button on mobile
-// Make Audio 100vw but video only 50vw.
-
-
-
 export class PortfolioServices extends Component {
     constructor(props) {
         super(props)
-
         this.state = {
             showReactPlayer: false,
             url: null,
@@ -54,7 +62,7 @@ export class PortfolioServices extends Component {
         this.setState({
             showReactPlayer: true,
             iframe, // hide my Custom Controls if iframe, 
-            controls: true, // shows iFrame controls if iframe, hides the normal audio controls if audio element
+            controls: true,
             url,
             playing: true,
             played: 0,
@@ -111,15 +119,6 @@ export class PortfolioServices extends Component {
     onClickFullscreen = () => {
         screenfull.request(findDOMNode(this.player))
     }
-    // PASS A L
-    renderLoadButton = (url, iframe, label) => {
-        return (
-            <ButtonCTA _handleClick={() => this.load(url, iframe)} text={label} bgColor="red" />
-            // <button onClick={() => this.load(url)}>
-            //     {label}
-            // </button>
-        )
-    }
 
     ref = player => {
         this.player = player
@@ -139,6 +138,7 @@ export class PortfolioServices extends Component {
                         <h3 className="mT20 altHeader">{x.title}</h3>
                     </WidthWrapper>
                     <p className="altP">Credits: {x.credits}</p>
+                    {/* Different buttons depending on whether the work is playing state */}
                     {(url != x.src) && <ButtonCTA
                         text={x.watchOrListen}
                         bgColor={msTheme.colors.primary}
@@ -173,13 +173,11 @@ export class PortfolioServices extends Component {
                 </GridContainer>
 
                 {this.state.showReactPlayer &&
+                    // Article Container restricts the width on mobile playback
                     <ArticleContainer margin="0px auto" padding="0px">
-
                         <Fixer width={iframe ? '50vw' : '99.5vw'}>
-
                             <WidthWrapper width="50px" margin="0px 0px 0px auto" className="hideMedium">
-                                {/* TODO: hide this button at medium width */}
-
+                                {/* Closes out the player, not shown on mobile */}
                                 <ButtonCTA
                                     displayM='none'
                                     _handleClick={this.stop}
@@ -188,11 +186,8 @@ export class PortfolioServices extends Component {
                                     color="white"
                                     margin=" 0px"
                                     borderRadius="50%"
-
                                 />
-
                             </WidthWrapper>
-
 
                             <ResponsiveIframe paddingTop={!iframe ? '0px' : false} >
                                 <ReactPlayer
@@ -219,11 +214,7 @@ export class PortfolioServices extends Component {
                                     onDuration={this.onDuration}
                                 />
                             </ResponsiveIframe>
-
-
                         </Fixer>
-
-
                     </ArticleContainer>
                 }
 

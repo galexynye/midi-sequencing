@@ -20,7 +20,7 @@ import { PortfolioServices } from '../components/04_template/PortfolioServices'
 const recaptchaKey = process.env.RECAPTCHA_KEY
 const contactApi = process.env.MS_API_CONTACT
 
-
+// Services Page, contains the State and methods for the Services form. Including options for services (in the render method)
 
 class Services extends React.PureComponent {
     constructor(props) {
@@ -40,14 +40,8 @@ class Services extends React.PureComponent {
             loading: false,
             error: false,
             success: false,
-            topForm: false,
-        }
-    }
 
-    _toggleTopForm = () => {
-        this.setState({
-            topForm: !topForm
-        })
+        }
     }
 
     _handleInputChange = (event) => {
@@ -127,15 +121,17 @@ class Services extends React.PureComponent {
     }
 
     render() {
-
+        // Options for Services
         const servicesOptions = ['--Select--', 'Custom Music', 'Mixing', 'Mastering', 'Producing', 'Licensing', 'I want help learning music', 'So many things', 'Other']
 
-        const Oops = <WidthWrapper width="350px" margin="0px">
-            <Message title="Oops..." message="Something went wrong." />
-            <ButtonCTA _handleClick={this._resetState} text="Click to reload Music Services Form" bgColor={msTheme.colors.secondarylighter} />
-        </WidthWrapper>
+        // Error Message Component
+        const Oops =
+            <WidthWrapper width="350px" margin="0px">
+                <Message title="Oops..." message="Something went wrong." />
+                <ButtonCTA _handleClick={this._resetState} text="Click to reload Music Services Form" bgColor={msTheme.colors.secondarylighter} />
+            </WidthWrapper>
 
-        // Actual Services form 
+        // Services form 
         const ServicesForm =
             <div class="mB40">
                 <FormServices
@@ -157,9 +153,9 @@ class Services extends React.PureComponent {
                     verifyCallback={this._verifyHuman}
                 />
             </div>
-        // Service form With render logic
+
+        // Service form Section With render logic / loading / success or error
         const CompleteFormProcess =
-            // <ArticleContainer >
             <GridContainer className="mT60" gTC="1fr" gTCL="1fr" gTCM="1fr" id="requestBooking">
                 <h2 >Request a booking</h2>
                 {this.state.loading && <Loading text="Sending..." />}
@@ -167,7 +163,6 @@ class Services extends React.PureComponent {
                 {this.state.error && Oops}
                 {this.state.form && ServicesForm}
             </GridContainer>
-        // </ArticleContainer>
 
         return (
             <SiteContainer headerPosition="absolute">
@@ -177,7 +172,6 @@ class Services extends React.PureComponent {
                 <HeroService />
                 <ServicesCards />
                 <PortfolioServices />
-                {/* <AudioPlayer></AudioPlayer> */}
                 {CompleteFormProcess}
             </SiteContainer>
         )
