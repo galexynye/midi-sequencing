@@ -15,10 +15,11 @@ export const CardHeaderStyle = styled.div`
     margin: 10px 0px;    
 	font-weight: 600;
 	letter-spacing: -1px;
-	line-height: 39px;
+	line-height: 28px;
+    min-height: ${props => props.minHeight || 'auto'};
     a{
        /* color: ${msTheme.colors.primary};  */
-       color: ${msTheme.colors.text};
+       color: ${ props => props.linkColor || msTheme.colors.text};
        text-decoration: none;
        padding: 0px;
     }
@@ -26,7 +27,7 @@ export const CardHeaderStyle = styled.div`
         cursor: pointer; 
         
         a{
-            color: ${msTheme.colors.primary};
+            color: ${ props => props.linkColorHover || msTheme.colors.primary};
             text-decoration: none;
         }
             
@@ -38,9 +39,14 @@ export const CardHeaderStyle = styled.div`
     }
 `
 
-export const CardHeader = ({ text, width, slug }) => {
+export const CardHeader = ({ text, width, minHeight, slug, linkColor, linkColorHover }) => {
     return (
-        <CardHeaderStyle width={width}>
+        <CardHeaderStyle
+            width={width}
+            linkColor={linkColor}
+            linkColorHover={linkColorHover}
+            minHeight={minHeight}
+        >
             <Link to={slug}> {text}</Link>
         </CardHeaderStyle>
     )

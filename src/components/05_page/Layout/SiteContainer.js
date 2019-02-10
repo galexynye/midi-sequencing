@@ -30,13 +30,20 @@ body{
 h1 {
     color: ${msTheme.colors.text};
 	font-family: ${msTheme.font.headerFont};
-	font-size: 94px;
+	/* font-size: 94px; */
+	font-size: 60px;
 	font-weight: 300;
 	letter-spacing: -3px;
-	line-height: 87px;
+	/* line-height: 87px; */
+	line-height: 53px;
 	margin-bottom: 27px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
      word-wrap: break-word;
+}
+
+.h1Big{
+    font-size: 94px;
+    line-height: 87px;
 }
 
 h2 {
@@ -55,9 +62,6 @@ h2 {
     
 } 
 
-h2{
-
-}
 
  @media screen and (max-width: ${msTheme.breakPoints.medium + "px"} ) {
      h2{
@@ -110,6 +114,10 @@ a {
     }
 }
 
+.colorPrimary {
+    color: ${msTheme.colors.primary}
+}
+
 .center {
     text-align: center;
 }
@@ -124,6 +132,9 @@ a {
 
 .mT40{
     margin-top: 40px
+    ${msTheme.mediaquery().medium}{
+        margin-top: 20px;
+    }
 }
 .mT60{
     margin-top: 60px
@@ -133,6 +144,9 @@ a {
     margin-bottom: 20px;
 }
 
+.mB0{
+    margin-bottom: 0px;
+}
 
 
 .mB40 {

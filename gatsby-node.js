@@ -7,8 +7,8 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
-    const tagTemplate = path.resolve('./src/templates/tag-page.js')
+    const blogPost = path.resolve('./src/components/05_page/Blueprints/blog-post.js')
+    const tagTemplate = path.resolve('./src/components/05_page/Blueprints/tag-page.js')
     resolve(
       graphql(
         `
@@ -40,10 +40,12 @@ exports.createPages = ({ graphql, actions }) => {
         // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges
 
+        // Creates bottom blinks 
         _.each(posts, (post, index) => {
           const previous =
             index === posts.length - 1 ? null : posts[index + 1].node
-          const next = index === 0 ? null : posts[index - 1].node
+          const next =
+            index === 0 ? null : posts[index - 1].node
 
           createPage({
             path: post.node.fields.slug,
@@ -55,6 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
             },
           })
         })
+
         // Tag pages:
         let tags = []
         // Iterate through each post, putting all found tags into `tags`

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import kebabCase from 'lodash/kebabCase'
 import { Link } from 'gatsby'
 import { msTheme } from '../../styles/Theme'
 import { WidthWrapper, FlexboxOrganism } from "../00_utilities/Utilities";
@@ -18,11 +19,23 @@ Include
 -Button with link to "Read this Post"
 */
 
-const BGColor = msTheme.colors.primary
+
+const TaglistStyle = styled.ul`
+    list-style-type: none;
+    display: flex;
+    flex-flow: wrap;
+    padding: 0px;
+    margin:0px 0px 5px 0px;
+    font-family: ${msTheme.font.headerFont};
+    li{
+        font-size: 15px;
+        margin: 0px 5px 0px 0px;
+    }
+`
 
 export const PostCardStyled = styled.div`
-    /* background-color: white;
-    border-radius: 10px; */
+    background-color: rgb(252,252,252);
+    /* padding: 15px;     */
     a{
         &:hover{
             text-decoration: none;
@@ -47,34 +60,62 @@ export const CategoryStyled = styled.div`
 
 const cardWidth = '300px'
 
-export class PostCard extends React.PureComponent {
+export class PostCardBlog extends React.PureComponent {
     render() {
-        const { learnOrBlog, snippet, date, title, src, category, slug } = this.props
+        const { learnOrBlog, tags, snippet, date, title, src, category, subcategory, slug } = this.props
+        let tagLinks
+        if (tags) {
+            tagLinks = tags.map((tag, i) => {
+                return (
+                    <li>
+                        <Link to={`/tags/${kebabCase(tag)}`}>{tag}</Link>{tags.length - 1 == i ? '' : ','}
+                    </li>
+                )
+            })
+        }
+
         return (
+            <PostCardStyled>
+                <SimpleCard
+                    img={src}
+                    title={title}
+                    imgLink={slug}
+                >
+                    <CardHeader
+                        text={title} slug={slug}
+                        linkColor={msTheme.colors.primary}
+                    />
+                    <DateStyled>{date}</DateStyled>
+                    {category && <TaglistStyle>
+                        <li>Category:</li>
+                        <li> <Link className="headerFont" to={slug}>{category}</Link></li>
+                    </TaglistStyle>}
+                    {/* Bring Back subcategory when there is way more shit */}
+                    {/* 
+                    
+                    {subcategory &&
+                        <TaglistStyle>
+                            <li>Subcategory:</li>
+                            <li><Link className="headerFont" to={slug}>{subcategory}</Link></li>
+                        </TaglistStyle>
 
-            <SimpleCard
-                img={src}
-                title={title}
-                // imgLink={slug} 
-                label={learnOrBlog}
-            >
+                    } */}
 
-                <CardHeader text={title} slug={slug} />
+                    <TaglistStyle>
+                        <li>Tags:</li>
+                        {tagLinks}
+                    </TaglistStyle>
+                    <Link to={slug}>
+                        <p>{snippet}</p>
+                    </Link>
+                    {/* <Link className="headerFont" to={slug}>Read More</Link> */}
+                    {/* <WidthWrapper margin="0px 0px">
+                        <ButtonCTA to={slug} text="Read more" color={msTheme.colors.primary} bgColor="white" margin="0px"></ButtonCTA>
+                    </WidthWrapper> */}
 
-                {category && <CategoryStyled>
+                </SimpleCard>
 
-                    <Link to={slug}>{category}</Link>
-                </CategoryStyled>}
-
-                <DateStyled>{date}</DateStyled>
-                <p>{snippet}</p>
-                <WidthWrapper margin="10px 0px">
-                    <ButtonCTA to={slug} text="Read more" color="white" bgColor={BGColor}></ButtonCTA>
-                </WidthWrapper>
-
-            </SimpleCard>
-
-
+            </PostCardStyled>
 
 
         )

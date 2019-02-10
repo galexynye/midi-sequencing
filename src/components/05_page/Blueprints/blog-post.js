@@ -2,11 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
-
-import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import { ArticleContainer } from '../components/05_page/ArticleContainer'
-
-import { msTheme } from '../styles/Theme'
+import SiteContainer from '../Layout/SiteContainer'
+import { ArticleContainer } from '../ArticleContainer'
+import { msTheme } from '../../../styles/Theme'
 
 
 

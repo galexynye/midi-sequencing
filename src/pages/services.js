@@ -15,6 +15,8 @@ import { Loading } from '../components/01_atom/Loading'
 import { Message } from '../components/01_atom/Message'
 import { ButtonCTA } from '../components/01_atom/ButtonCTA'
 import { PortfolioServices } from '../components/04_template/PortfolioServices'
+import { ServicesMovies } from '../components/03_organism/ServicesMovies';
+
 
 
 const recaptchaKey = process.env.RECAPTCHA_KEY
@@ -133,7 +135,7 @@ class Services extends React.PureComponent {
 
         // Services form 
         const ServicesForm =
-            <div class="mB40">
+            <div className="mB40">
                 <FormServices
                     _handleInputChange={this._handleInputChange}
                     _handleSubmit={this._handleSubmit}
@@ -156,12 +158,14 @@ class Services extends React.PureComponent {
 
         // Service form Section With render logic / loading / success or error
         const CompleteFormProcess =
-            <GridContainer className="mT60" gTC="1fr" gTCL="1fr" gTCM="1fr" id="requestBooking">
-                <h2 >Request a booking</h2>
-                {this.state.loading && <Loading text="Sending..." />}
-                {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.primary} message="Thanks for reaching out, a confirmation email should arrive shortly!" />}
-                {this.state.error && Oops}
-                {this.state.form && ServicesForm}
+            <GridContainer className="mT60" gTC=" 1fr" gTCL="1fr" gTCM="1fr" id="requestBooking">
+                <div>
+                    <h2 className="colorPrimary mB40">Request a booking</h2>
+                    {this.state.loading && <Loading text="Sending..." />}
+                    {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.primary} message="Thanks for reaching out, a confirmation email should arrive shortly!" />}
+                    {this.state.error && Oops}
+                    {this.state.form && ServicesForm}
+                </div>
             </GridContainer>
 
         return (
@@ -171,6 +175,7 @@ class Services extends React.PureComponent {
                 </Helmet>
                 <HeroService />
                 <ServicesCards />
+                <ServicesMovies />
                 <PortfolioServices />
                 {CompleteFormProcess}
             </SiteContainer>

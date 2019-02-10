@@ -15,8 +15,8 @@ class Privacy extends React.PureComponent {
         return (
             <SiteContainer>
 
-                <PageTitle text="Privacy Policy" bgColor={msTheme.colors.primarylight}></PageTitle>
-                <ArticleContainer>
+                <PageTitle text="Privacy Policy"></PageTitle>
+                <ArticleContainer margin="0px auto">
 
                     <p> This privacy policy governs the manner in which Music Sequencing
                       collects, uses, maintains, and discloses the information we collect from

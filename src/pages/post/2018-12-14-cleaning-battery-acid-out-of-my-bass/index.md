@@ -1,6 +1,6 @@
 ---
 path: '/blog/cleaning-battery-acid-out-of-my-bass'
-title: Battery Acid In my Bass
+title: Battery Acid
 author: 'Alex Nye'
 date: '2018-12-14'
 blog: true

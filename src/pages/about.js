@@ -13,15 +13,15 @@ class About extends React.Component {
     render() {
         return (
             <SiteContainer>
-                <PageTitle text="About" bgColor={msTheme.colors.yellowlight} ></PageTitle>
+                <PageTitle text="About"  ></PageTitle>
                 <ArticleContainer>
-                    {/* <h1>About</h1> */}
+                    {/* <h1 className="colorPrimary h1Big">About</h1> */}
 
 
 
                     <h2>How to Use this Site</h2>
                     <p>Under <Link to="/learn">Learn</Link> in the top menu you’ll find articles and resources from beginning to advanced topics on making music. If there is anything missing or confusing, let me know! Under each article is a forum discussion where you can ask questions or make suggestions, I’ll listen, and the quality will improve.</p>
-                    <p>In the <Link to="/latest">Blog</Link> I offer my opinions and perspective on mostly music stuff.
+                    <p>In the <Link to="/blog">Blog</Link> I offer my opinions and perspective on mostly music stuff.
                     I’ve been doing this a long time but don’t claim to be a single source of truth on anything. If you agree or disagree that’s great, everyone can benefit from an open dialogue, I can’t see from every angle and love having my perspective altered. </p>
                     <p>If you are interested in hiring me to do something music related, go to the <Link to="/services">Services</Link> page.</p>
 

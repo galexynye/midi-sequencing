@@ -3,8 +3,8 @@ import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-import SiteContainer from '../components/05_page/Layout/SiteContainer'
-import { ArticleContainer } from '../components/05_page/ArticleContainer';
+import SiteContainer from '../Layout/SiteContainer'
+import { ArticleContainer } from '../ArticleContainer';
 
 const TagsList = styled.ul`
   list-style-type: none;
@@ -14,10 +14,10 @@ const TagsList = styled.ul`
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `Post${
-    totalCount === 1 ? '' : 's'
-    } tagged with "${tag}"`
-  // const tagHeader = `"${tag}" `
+  // const tagHeader = `Post${
+  //   totalCount === 1 ? '' : 's'
+  //   } tagged with "${tag}"`
+  const tagHeader = `"${tag}" Tags `
 
   return (
     <SiteContainer>

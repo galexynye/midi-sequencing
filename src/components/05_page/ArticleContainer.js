@@ -18,11 +18,12 @@ export const ArticleContainer = styled.article`
      
     ${msTheme.mediaquery().medium}{
         margin-top: 10px;
+        padding-bottom: 10px;
         h1{
             font-size: 45px;
             line-height: 45px;
-             margin-bottom: 15px;
-             word-wrap: break-word;
+       
+            word-wrap: break-word;
         }
     }   
 `

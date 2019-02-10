@@ -35,7 +35,7 @@ export class ServicesCards extends PureComponent {
                     margin="0px"
                     justifyContent="flex-start"
                 >
-                    <h3 class="altHeader">{service.title}</h3>
+                    <h3 className="altHeader">{service.title}</h3>
                     <p>{service.text}</p>
                 </SimpleCard>
 
@@ -53,7 +53,7 @@ export class ServicesCards extends PureComponent {
         return (
             <div className="mT20 mB40">
                 <GridContainer gridGap="0px">
-                    <h2 className="mB40">What I do</h2>
+                    <h2 className="mB40 colorPrimary">What I do</h2>
                 </GridContainer>
                 <GridContainer gTCM="1fr" margin="0px auto" >
                     {servicesCards}

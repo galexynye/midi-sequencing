@@ -13,6 +13,10 @@ import KarmaPic from '../assets/ServicesPortfolio/TSR_Final_WEBpng.jpg'
 import BigEvil from '../assets/ServicesPortfolio/TheBigEvil.mp3'
 import BigEvilPic from '../assets/ServicesPortfolio/CinematicSpyGraphics.jpg'
 import RiftPic from '../assets/ServicesPortfolio/RiftSquare.jpg'
+import AfterTheFall from '../assets/ServicesPortfolio/AftertheFallIPic.jpg'
+import AllISee from '../assets/ServicesPortfolio/allISee.jpg'
+import HandOfGod from '../assets/ServicesPortfolio/HandOfGodfromIMDB.jpeg'
+import Poltergeist from '../assets/ServicesPortfolio/PoltergeistIMDB.jpeg'
 
 export const servicesPortfolio = [
     { title: "Hang Out", src: HangOut, iframe: false, img: HangOutPic, watchOrListen: "Listen", credits: "Co-writer, Producer, Mixing, Mastering" },
@@ -26,6 +30,12 @@ export const servicesPortfolio = [
 ]
 
 
+export const moviePics = [
+    { src: HandOfGod },
+    { src: Poltergeist },
+    { src: AllISee },
+    { src: AfterTheFall }
+]
 
 
 

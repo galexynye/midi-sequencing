@@ -137,22 +137,25 @@ export class PortfolioServices extends Component {
                     <WidthWrapper margin="0px">
                         <h3 className="mT20 altHeader">{x.title}</h3>
                     </WidthWrapper>
-                    <p className="altP">Credits: {x.credits}</p>
+                    <p className="altP">{x.credits}</p>
                     {/* Different buttons depending on whether the work is playing state */}
                     {(url != x.src) && <ButtonCTA
                         text={x.watchOrListen}
+                        key={x.src}
                         bgColor={msTheme.colors.primary}
                         color="white"
                         _handleClick={() => this.load(x.src, x.iframe)}
                     />}
                     {(url == x.src && playing) && <ButtonCTA
                         text={loaded ? 'Pause' : 'Loading...'}
+                        key={x.src}
                         bgColor={msTheme.colors.primarylight}
                         color="white"
                         _handleClick={this.playPause}
                     />}
                     {(url == x.src && !playing) && <ButtonCTA
                         text='Play'
+                        key={x.src}
                         bgColor={msTheme.colors.primarylight}
                         color="white"
                         _handleClick={this.playPause}
@@ -161,10 +164,10 @@ export class PortfolioServices extends Component {
             </PortfolioCard>)
 
         return (
-            <div>
+            <div className="mB40">
                 <WidthWrapper width="100%">
                     <GridContainer>
-                        <h2 className="mB40">Select Works</h2>
+                        <h2 className="mB40 colorPrimary">Music</h2>
                     </GridContainer>
                 </WidthWrapper>
 
