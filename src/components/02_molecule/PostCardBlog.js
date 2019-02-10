@@ -27,6 +27,7 @@ const TaglistStyle = styled.ul`
     padding: 0px;
     margin:0px 0px 5px 0px;
     font-family: ${msTheme.font.headerFont};
+    min-height: ${props => props.minHeight || 'auto'};
     li{
         font-size: 15px;
         margin: 0px 5px 0px 0px;
@@ -48,9 +49,10 @@ export const PostCardStyled = styled.div`
 `
 
 export const DateStyled = styled.p`
-    font-size: 14px;
+    font-size: 15px;
+    min-height: ${props => props.minHeight || 'auto'};
     font-family: ${msTheme.font.headerFont};
-    margin-bottom: 10px;
+    margin-bottom:5px;
 `
 
 export const CategoryStyled = styled.div`
@@ -62,7 +64,7 @@ const cardWidth = '300px'
 
 export class PostCardBlog extends React.PureComponent {
     render() {
-        const { learnOrBlog, tags, snippet, date, title, src, category, subcategory, slug } = this.props
+        const { learnOrBlog, titleHeight, tagsHeight, tags, snippet, date, title, src, category, subcategory, slug } = this.props
         let tagLinks
         if (tags) {
             tagLinks = tags.map((tag, i) => {
@@ -83,6 +85,7 @@ export class PostCardBlog extends React.PureComponent {
                 >
                     <CardHeader
                         text={title} slug={slug}
+                        minHeight={titleHeight}
                         linkColor={msTheme.colors.primary}
                     />
                     <DateStyled>{date}</DateStyled>
@@ -101,7 +104,7 @@ export class PostCardBlog extends React.PureComponent {
 
                     } */}
 
-                    <TaglistStyle>
+                    <TaglistStyle minHeight={tagsHeight}>
                         <li>Tags:</li>
                         {tagLinks}
                     </TaglistStyle>

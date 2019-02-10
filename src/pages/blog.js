@@ -29,9 +29,9 @@ class Latest extends React.Component {
 
 
             return (
-                // <GridItem gCS={i == 0 ? "1" : 'auto'} gCE={i == 0 ? "3" : 'auto'} >
-                // <GridItem gCS="1" gCE="3" >
-                <GridItem >
+                <GridItem gCS={i == 0 ? "1" : 'auto'} gCE={i == 0 ? "3" : 'auto'} >
+                    {/* // <GridItem gCS="1" gCE="3" > */}
+                    {/* <GridItem > */}
                     <PostCardBlog
                         key={post.node.fields.slug}
                         learnOrBlog={post.node.frontmatter.category}
@@ -44,6 +44,8 @@ class Latest extends React.Component {
                         slug={post.node.fields.slug}
                         src={src}
                         tags={post.node.frontmatter.tags}
+                        titleHeight={i > 0 ? "59px" : 'auto'}
+                        tagsHeight={i > 0 ? "59px" : 'auto'}
                     />
                 </GridItem>
             )
@@ -57,7 +59,7 @@ class Latest extends React.Component {
         return (
             <SiteContainer>
                 <PageTitle text="Blog" description="Gear Reviews and Other Thoughts"></PageTitle>
-                <GridContainer maxWidth={msTheme.widths.article} gTC="repeat(1, 1fr)" gTCL="repeat(1, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 40px" className="mT40 mB40">
+                <GridContainer maxWidth={msTheme.widths.article} gTC="repeat(2, 1fr)" gTCL="repeat(2, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 40px" className="mT40 mB40">
                     {RecentPostCards}
                 </GridContainer>
             </SiteContainer>
@@ -69,34 +71,34 @@ export default Latest
 
 export const pageQuery = graphql`
     query {
-      allMarkdownRemark(
-            limit:2000
-            filter: {frontmatter:{blog: {eq :true}}}
-            sort:{ fields:frontmatter___date, order: DESC }
+                        allMarkdownRemark(
+                            limit: 2000
+            filter: {frontmatter: {blog: {eq : true}}}
+            sort:{fields: frontmatter___date, order: DESC }
         ) {
-            edges {
-                node {
-                    excerpt
+                        edges {
+                    node {
+                        excerpt
                     fields{
                         slug
                     }
                     frontmatter{
                         date(formatString: "MMMM DD, YYYY")
-                        title
-                        category
-                        subcategory
-                        blog
-                        tags
-                        featuredImage {                        
-                            childImageSharp {
-                                fluid {                    
-                                    src                   
-                                }
-                            }
+                    title
+                    category
+                    subcategory
+                    blog
+                    tags
+                        featuredImage {
+                        childImageSharp {
+                    fluid {
+                        src
                     }
-                }
+                    }
             }
         }
     }
+}
+}
 }
 `

@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import SiteContainer from '../Layout/SiteContainer'
 import { ArticleContainer } from '../ArticleContainer';
+import { PageTitle } from '../../01_atom/PageTitle';
 
 const TagsList = styled.ul`
   list-style-type: none;
@@ -17,7 +18,7 @@ const Tags = ({ pageContext, data }) => {
   // const tagHeader = `Post${
   //   totalCount === 1 ? '' : 's'
   //   } tagged with "${tag}"`
-  const tagHeader = `"${tag}" Tags `
+  const tagHeader = `Posts with "${tag}"`
 
   return (
     <SiteContainer>
@@ -25,10 +26,11 @@ const Tags = ({ pageContext, data }) => {
         htmlAttributes={{ lang: 'en' }} // meta={[{ name: 'description', content: siteDescription }]}
         title={`${tag} | Music Sequencing`}
       />
+      <PageTitle text={tagHeader}></PageTitle>
       <ArticleContainer>
-        <h1
+        {/* <h1
         >{tagHeader}
-        </h1>
+        </h1> */}
         <TagsList>
           {edges.map(({ node }) => {
             const { title } = node.frontmatter
