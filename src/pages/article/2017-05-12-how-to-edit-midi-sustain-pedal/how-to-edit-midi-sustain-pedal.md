@@ -6,6 +6,7 @@ learn: true
 category: 'Producing'
 subcategory: ['Producing Techniques']
 tags: ['midi']
+featuredImage: './MidiSustainFIFinal.png' 
 ---
 
 <iframe src="https://www.youtube.com/embed/pa_8N7Hp_JA?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

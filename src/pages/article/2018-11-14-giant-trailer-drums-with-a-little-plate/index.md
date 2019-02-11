@@ -7,6 +7,7 @@ category: 'Producing'
 categoryDescription: 'All About Laying Down the Music'
 subcategory: ['Sound Design']
 tags: ['trailer-music', 'epic', 'sound-toys', 'native-instruments', 'drums']
+featuredImage: './TrailerDrumsFI.jpg'
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gN_om4q67V8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

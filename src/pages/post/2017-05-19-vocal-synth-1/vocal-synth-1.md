@@ -7,6 +7,7 @@ category: 'Gear Review'
 subcategory: ['Soft Synths']
 company: 'iZotope'
 tags: ['izotope', 'gear', 'plugins', 'vocals']
+featuredImage: './VocalSynth1.jpg' 
 ---
 
 <iframe src="https://www.youtube.com/embed/_D-HhAn8OeI" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

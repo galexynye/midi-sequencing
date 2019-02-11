@@ -6,6 +6,7 @@ learn: true
 category: 'Producing'
 subcategory: ['Producing Techniques']
 tags: ['gear', 'mixing', 'recording', 'sound better', 'tech', 'studio']
+featuredImage: './ProSound.png'
 ---
 
 <!-- TODO: Fixe HEADERS IN ALL -->

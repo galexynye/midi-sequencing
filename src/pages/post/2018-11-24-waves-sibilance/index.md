@@ -8,6 +8,7 @@ category: 'Gear Review'
 subcategory: ['Dynamics']
 company: 'Waves'
 tags: ['deesser', 'waves', 'eq', 'vocal-mixing', 'compression']
+featuredImage: './WavesSibilance.jpg'
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4QmnBAmRTBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

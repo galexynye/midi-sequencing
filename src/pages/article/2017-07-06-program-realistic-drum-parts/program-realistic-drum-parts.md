@@ -7,6 +7,7 @@ learn: true
 category: 'Producing'
 subcategory: ['Producing Techniques']
 tags: ['midi', 'drum-programming', 'drums', 'midi-sequencing']
+featuredImage: './ProgramRealDrumsPic.jpg'
 ---
 
 <iframe src="https://www.youtube.com/embed/5wRu8phxn10" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

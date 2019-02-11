@@ -8,6 +8,7 @@ category: 'Gear Review'
 subcategory: ['Creative']
 company: 'Misc'
 tags: ['free', 'synths', 'internet', 'drum-machine']
+featuredImage: './BrowserSynthsFI.jpg'
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ju-X4Amhm78?html5=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

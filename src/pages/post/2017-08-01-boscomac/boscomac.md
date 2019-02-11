@@ -7,6 +7,7 @@ category: 'Gear Review'
 subcategory: ['Creative']
 company: 'Native Instruments'
 tags: ['gear', 'native-instruments', 'free']
+featuredImage: './boscomacFI.jpg'
 ---
 
 <iframe  src="https://www.youtube.com/embed/Ay4M8fi5zRM" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

@@ -8,6 +8,7 @@ category: 'Gear Review'
 subcategory: ['Soft Synths']
 company: 'Output'
 tags: ['output', 'gear']
+featuredImage: './ExhaleFI.jpg'
 ---
 
 <iframe src="https://www.youtube.com/embed/gu18sGiSR7Y" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

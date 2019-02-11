@@ -7,6 +7,7 @@ learn: true
 category: 'Mixing'
 subcategory: ['Mixing Basics']
 tags: ['organize', 'mixing', 'workflow']
+featuredImage: './media/how-to-set-up-a-mix/Routing-Audio-1-1024x626.png'
 ---
 
 <img src="./media/how-to-set-up-a-mix/Routing-Audio-1-1024x626.png" alt="Image Guide">

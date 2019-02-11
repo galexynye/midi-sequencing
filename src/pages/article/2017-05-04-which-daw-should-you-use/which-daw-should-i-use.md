@@ -64,17 +64,19 @@ Before we do a run down of what different DAWs do best you might want to know ho
  	<li>Use: Pro Tools, Logic, Reaper, Sonar</li>
  	<li>Don't Use: Ableton Live, FL Studio, Bitwig, Reason</li>
 </ul>
+
 Pro Tools is the most common DAW for tracking. If your main deal is recording bands then you probably want to use it as your main DAW. A lot of recording studios will buy one Pro Tools system, get it working and then not update it. If you invest in a massive Pro Tools HD system just be aware that to update it could easily cost you well over $10,000 down the road. That being said, Logic, Reaper and Studio One are adequate at tracking. All of the "Don't Use" DAWs are not designed for tracking full bands right now. They are more for producing in the box. If you try tracking a multi mic'd drum set, take after take, you will quickly find out how difficult and painful the recording and editing process can be.
 
-<p></p>
+
 
 <h3 >Producing</h3>
 <ul>
  	<li>Use: Ableton Live, FL Studio, Bitwig, Logic...whatever.</li>
  	<li>Don't Use: Nothing you can't use.</li>
 </ul>
+
 As far as producing in the box goes, you use what you are comfortable with. Albeton Live, FL Studio, Sonar and Logic all come with a ton of built in features that really get you going. If you want to produce more EDM type stuff, most guys seem to use Ableton or FL Studio. Each DAW has a different workflow, so give a few a free trial if you are completely new.
-<p></p>
+
 
 <h3 >Mixing</h3>
 <ul>

@@ -7,6 +7,7 @@ category: 'Gear Review'
 subcategory: ['Soft Synths']
 company: 'Output'
 tags: ['output', 'gear', 'plugins']
+featuredImage: './AnalogStringsFI.jpg'
 ---
 
 <iframe src="https://www.youtube.com/embed/ILChxpZ76TQ?ecver=1&html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

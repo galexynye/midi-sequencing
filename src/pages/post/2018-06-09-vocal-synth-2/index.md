@@ -8,6 +8,7 @@ category: 'Gear Review'
 subcategory: ['Creative']
 company: 'iZotope'
 tags: ['synths', 'izotope', 'plugins', 'vocals']
+featuredImage: './VocalSynth2FI.jpg' 
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sN-ftVq9owU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

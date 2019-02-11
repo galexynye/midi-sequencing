@@ -6,6 +6,7 @@ category: 'Mixing'
 learn: true
 subcategory: ['Compression']
 tags: ['mixing', 'compression', 'ears']
+featuredImage: './GoodVsBadCom.jpg'
 ---
 
 <iframe src="https://www.youtube.com/embed/KBYHGCzqGGA?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
@@ -90,4 +91,5 @@ If you are compressing a snare for example, there is the initial loud hit(contro
 For a snare you will be turning down the initial hit and turning up the the body. Zero in on how your compressor is changing that relationship rather than the tonal quality of the snare. If you turn the initial hit down too much, you might have a full bodied snare but it won't have any impact.
 
 <h2 >It's Abstract</h2>
+
 Mixing is an abstract art form and compression is the most abstract tool in the bag. It takes time and practice to be able to get good at. Just remember to ask yourself, "Does it feel better or worse?".

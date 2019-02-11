@@ -7,6 +7,7 @@ category: 'Mixing'
 categoryDescription: 'Think in Terms of Sonic Fidelity'
 subcategory: ['Creative Mixing']
 tags: ['mixing', 'gear', 'drum mixing']
+featuredImage: './media/how-to-phil-collins/phil-plugins-1.png'
 ---
 
 <iframe src="https://www.youtube.com/embed/X1S9RqgFHy0?ecver=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

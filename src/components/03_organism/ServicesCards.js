@@ -4,7 +4,7 @@ import { GridContainer, GridItem } from "../00_utilities/Utilities";
 import { SimpleCard } from '../02_molecule/SimpleCard'
 import BgImage from '../../assets/Backgrounds/blackAndWhiteFaders.jpg'
 import AltBG from '../../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
-
+import ForAllIknow from '../../assets/ServicesPortfolio/ForAllIknowOriginalMusic.png'
 
 const servicesCardData = [
     {
@@ -19,7 +19,7 @@ const servicesCardData = [
     },
     {
         title: "Original Music",
-        img: BgImage,
+        img: ForAllIknow,
         text: "Need film or video game music? A song or lyrics? Let me know how you want to collaborate."
     }
 ]

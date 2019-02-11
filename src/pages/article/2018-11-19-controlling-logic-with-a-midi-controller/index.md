@@ -8,7 +8,7 @@ category: 'Music Tech'
 categoryDescription: 'Music Making Things and How to Use Them'
 subcategory: ['DAW']
 tags: ['midi-controller', 'midi', 'logic', 'm-audio', 'advanced']
-featuredImage: './MidiKeyboardMaster1Oxygen8.jpg'
+featuredImage: './MidiControllerCCProgrammingFI.jpg'
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

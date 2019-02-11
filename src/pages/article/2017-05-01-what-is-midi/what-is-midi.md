@@ -9,6 +9,7 @@ seriesNumber: {basics: 4}
 category: 'Music Tech'
 subcategory: ['Tech Basics']
 tags: ['basics', 'midi']
+featuredImage: './WhatIsMidiFI.png'
 ---
 
 Sometime in my first couple weeks at Berklee I saw a poster that said, “Midi is for people with no friends. Come to Jam Club!”, and I thought, "Midi must be for me."

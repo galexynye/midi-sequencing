@@ -7,6 +7,7 @@ learn: true
 category: 'Mixing'
 subcategory: ['Compression']
 tags: ['compression', 'mixing', 'basics']
+featuredImage: './CompressionSmackFI.png'
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TsMipbWosLU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

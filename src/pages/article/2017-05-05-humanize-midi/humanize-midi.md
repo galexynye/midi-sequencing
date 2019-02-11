@@ -6,6 +6,7 @@ learn: true
 category: 'Producing'
 subcategory: ['Producing Techniques']
 tags: ['midi']
+featuredImage: './HumanizeMidiFIFinal.png'
 ---
 
 <iframe src="https://www.youtube.com/embed/KIQ3yvUSK00?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

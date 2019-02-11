@@ -8,6 +8,7 @@ category: 'Gear Review'
 subcategory: ['Creative']
 company: 'Native Instruments'
 tags: ['native-instruments', 'gear', 'guitar']
+featuredImage: './GuitarRig.jpg'
 ---
 
 <iframe src="https://www.youtube.com/embed/akDrNX4Jdzg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

@@ -77,7 +77,7 @@ class BlogPostTemplate extends React.Component {
           }
         /> */}
           {/* <Bio /> */}
-          <p>written by {author}</p>
+          {/* <p>written by {author}</p> */}
           <ul
           // style={{
           //   display: 'flex',

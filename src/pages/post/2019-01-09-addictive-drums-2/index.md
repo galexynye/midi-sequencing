@@ -7,7 +7,7 @@ category: 'Gear Review'
 subcategory: ['Samples']
 company: 'XLN-Audio'
 tags: ['gear', 'drums', 'samples']
-featuredImage: './addictiveDrums2.png'
+featuredImage: './AddictiveDrums2FI.jpg'
 ---
 
 <img src='./addictiveDrums2.png' />
