@@ -207,6 +207,13 @@ a {
     font-weight: bold;
 }
 
+.tDNone{
+    text-decoration:none;
+    &:hover{
+        text-decoration:none;
+    }
+}
+
 
 `
 

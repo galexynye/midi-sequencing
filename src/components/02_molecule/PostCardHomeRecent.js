@@ -27,6 +27,9 @@ export const PostCardStyled = styled.div`
         &:hover{
             text-decoration: none;
         }
+        p{
+               text-decoration: none;
+        }
     }
     span{
         font-size: 14px;
@@ -49,28 +52,29 @@ const cardWidth = '300px'
 
 export class PostCardHomeRecent extends React.PureComponent {
     render() {
-        const { learnOrBlog, snippet, date, title, src, category, slug } = this.props
+        const { learnOrBlog, snippet, date, title, src, category, slug, minHeight } = this.props
         return (
 
             <SimpleCard
                 img={src}
                 title={title}
-                // imgLink={slug} 
+                imgLink={slug}
                 label={learnOrBlog}
             >
 
-                <CardHeader text={title} slug={slug} />
+                <CardHeader text={title} slug={slug} minHeight={minHeight} />
 
-                {category && <CategoryStyled>
-
+                {/* {category && <CategoryStyled>
                     <Link to={slug}>{category}</Link>
-                </CategoryStyled>}
+                </CategoryStyled>} */}
 
                 <DateStyled>{date}</DateStyled>
-                <p>{snippet}</p>
-                <WidthWrapper margin="10px 0px">
+                <Link to={slug} className="tDNone">
+                    <p>{snippet}</p>
+                </Link>
+                {/* <WidthWrapper margin="10px 0px">
                     <ButtonCTA to={slug} text="Read more" color="white" bgColor={BGColor}></ButtonCTA>
-                </WidthWrapper>
+                </WidthWrapper> */}
 
             </SimpleCard>
 

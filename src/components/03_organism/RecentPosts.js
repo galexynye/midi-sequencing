@@ -42,6 +42,7 @@ export class RecentPostsView extends Component {
               category={post.node.frontmatter.subcategory}
               slug={post.node.fields.slug}
               src={src}
+              minHeight="60px"
             />
           </GridItem>
         )
@@ -59,6 +60,7 @@ export class RecentPostsView extends Component {
           category={post.node.frontmatter.subcategory}
           slug={post.node.fields.slug}
           src={src}
+          minHeight="60px"
         />)
     })
 
