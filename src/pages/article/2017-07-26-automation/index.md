@@ -6,7 +6,7 @@ category: 'Mixing'
 learn: true
 subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'automation', 'fadeout']
-featuredImage: './media/automation-basics/Ableton-Record-Automation-4.png'
+featuredImage: './media/automation-basics/automation-1.png'
 ---
 
 <img src="./media/automation-basics/automation-1.png" alt="Ableton Automation Example" width="1024" height="665" />

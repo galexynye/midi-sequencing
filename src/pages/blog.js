@@ -39,7 +39,7 @@ class Latest extends React.Component {
                         snippet={post.node.excerpt}
                         date={post.node.frontmatter.date}
                         title={post.node.frontmatter.title}
-                        category={post.node.frontmatter.category}
+                        // category={post.node.frontmatter.category}
                         subcategory={post.node.frontmatter.subcategory}
                         slug={post.node.fields.slug}
                         src={src}

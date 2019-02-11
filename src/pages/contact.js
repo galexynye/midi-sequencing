@@ -134,7 +134,7 @@ export default class contact extends PureComponent {
                 <Helmet>
                     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
                 </Helmet>
-                <PageTitle text="Contact" bgColor={msTheme.colors.yellowlight} />
+                <PageTitle text="Contact" description="Say hi" />
                 <ArticleContainer margin="30px auto 30px auto">
                     {this.state.loading && <Loading text="Sending..." />}
                     {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.primary} message="Thanks for reaching out, a confirmation email should arrive shortly!" />}

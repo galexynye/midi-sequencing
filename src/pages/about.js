@@ -13,7 +13,7 @@ class About extends React.Component {
     render() {
         return (
             <SiteContainer>
-                <PageTitle text="About"  ></PageTitle>
+                <PageTitle text="About" description="The Site and Me" ></PageTitle>
                 <ArticleContainer>
                     {/* <h1 className="colorPrimary h1Big">About</h1> */}
 

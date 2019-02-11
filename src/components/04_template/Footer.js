@@ -46,7 +46,7 @@ export const Footer = props => {
                     <GridItem alignSelf="end">
                         <SimpleCard imgHeight="0px" topTitle="Need a music mentor?" topTitleColor="white" topTitleBreakPoint={msTheme.breakPoints.large}>
                             <p>Learning alone is hard. I offer music lessons over the internet.</p>
-                            <ButtonCTA text="Read About Mentoring" bgColor={msTheme.colors.primary} color="white" />
+                            <ButtonCTA text="Read About Mentoring" to="/learn#mentoring" bgColor={msTheme.colors.primary} color="white" />
                         </SimpleCard>
                     </GridItem>
 

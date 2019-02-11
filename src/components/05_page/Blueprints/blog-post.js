@@ -64,7 +64,8 @@ class BlogPostTemplate extends React.Component {
             {tags}
           </ul>
           {/* <p>by {author}</p> */}
-          {!post.frontmatter.hideDate && <p>Written : {post.frontmatter.date} {post.frontmatter.updated ? `|| Updated : ${post.frontmatter.updated}` : ''} </p>}
+          {post.frontmatter.updated && <p>{`Updated : ${post.frontmatter.updated}`} </p>}
+          {(!post.frontmatter.hideDate && !post.frontmatter.updated) && <p>{post.frontmatter.date}</p>}
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           {/* <hr

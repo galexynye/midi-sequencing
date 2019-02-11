@@ -21,9 +21,19 @@ class Learn extends React.Component {
         })
         return (
             <SiteContainer>
-                <PageTitle title="Learn" description="Tutorials and Articles "></PageTitle>
-                <GridContainer className="mB40 mT40">
+                <PageTitle title="Learn" description="Tutorials, Articles, & Mentorship"></PageTitle>
+                <GridContainer gTC="repeat(2, 1fr)" className="mB40 mT40">
                     {learnCategoryCards}
+                </GridContainer>
+                <GridContainer id="mentoring">
+                    <h2>Mentorship</h2>
+
+                </GridContainer>
+                <GridContainer>
+                    <div>
+                        <p className="headerFont">Having trouble getting your music to sound as good as your favorite artists?</p>
+                        <p className="headerFont"> It’s difficult to know what you are doing right or wrong in isolation. The times I’ve grown the most as producer were under the guidance of more experienced professional who knows the tools of music production and how to use them.</p>
+                    </div>
                 </GridContainer>
             </SiteContainer>
         )

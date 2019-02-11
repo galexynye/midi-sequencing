@@ -4,6 +4,7 @@ author: 'Alex Nye'
 date: '2017-06-09'
 learn: true
 category: 'Mixing'
+categoryDescription: 'Think in Terms of Sonic Fidelity'
 subcategory: ['Creative Mixing']
 tags: ['mixing', 'gear', 'drum mixing']
 ---

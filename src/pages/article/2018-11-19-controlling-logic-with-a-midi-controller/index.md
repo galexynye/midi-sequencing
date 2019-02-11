@@ -5,6 +5,7 @@ author: 'Alex Nye'
 date: '2018-11-19'
 learn: true
 category: 'Music Tech'
+categoryDescription: 'Music Making Things and How to Use Them'
 subcategory: ['DAW']
 tags: ['midi-controller', 'midi', 'logic', 'm-audio', 'advanced']
 featuredImage: './MidiKeyboardMaster1Oxygen8.jpg'

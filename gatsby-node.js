@@ -9,6 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/components/05_page/Blueprints/blog-post.js')
     const tagTemplate = path.resolve('./src/components/05_page/Blueprints/tag-page.js')
+    const categoryTemplate = path.resolve('./src/components/05_page/Blueprints/category-page.js')
     resolve(
       graphql(
         `
@@ -24,6 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                   frontmatter {
                     title
+                    category
                     tags
                   }
                 }
@@ -58,19 +60,19 @@ exports.createPages = ({ graphql, actions }) => {
           })
         })
 
-        // Tag pages:
-        let tags = []
-        // Iterate through each post, putting all found tags into `tags`
-        _.each(posts, edge => {
+
+        let tags = []  // Tag pages creation
+
+        _.each(posts, edge => { // Iterate through each post, putting all found tags into `tags`
           if (_.get(edge, 'node.frontmatter.tags')) {
             tags = tags.concat(edge.node.frontmatter.tags)
           }
         })
-        // Eliminate duplicate tags
-        tags = _.uniq(tags)
 
-        // Make tag pages
-        tags.forEach(tag => {
+        tags = _.uniq(tags) // Eliminate duplicate tags
+
+
+        tags.forEach(tag => { // Make tag pages
           createPage({
             path: `/tags/${_.kebabCase(tag)}/`,
             component: tagTemplate,
@@ -78,13 +80,43 @@ exports.createPages = ({ graphql, actions }) => {
               tag,
             },
           })
-        })
-      })
-    )
-  })
-}
+        }) // End of tag page creation 
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+
+        let categories = []  // Tag pages creation
+
+        _.each(posts, edge => { // Iterate through each post, putting all found category into `category`
+          if (_.get(edge, 'node.frontmatter.category')) {
+            categories = categories.concat(edge.node.frontmatter.category)
+          }
+        })
+
+        categories = _.uniq(categories) // Eliminate duplicate tags
+
+
+        categories.forEach(category => { // Make category pages
+          createPage({
+            path: `/learn/${_.kebabCase(category)}/`,
+            component: categoryTemplate,
+            context: {
+              category,
+            },
+          })
+        }) // End of tag page creation 
+
+
+
+      }) // End of Then Function 
+
+    ) // End Resolve Function 
+
+  }) // End Of Promise
+
+} // End Create Pages
+
+
+
+exports.onCreateNode = ({ node, actions, getNode }) => {  //What happens to every programmatically created page
   const { createNodeField } = actions
 
   if (
@@ -104,7 +136,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     if (fileNode.sourceInstanceName === 'pages') {
       let slug
       if (fileNode.relativeDirectory) {
-        // Remove date stamp in front, it's only useful for arranging our files/folders
+        // Removes date stamp in front, it's only useful for arranging our files/folders
         const paths = fileNode.relativeDirectory.split('/')
         const directParent = paths.pop()
         const dateString = directParent.substring(0, 10)
@@ -130,7 +162,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
           value: slug,
         })
       }
-      if (node.frontmatter.tags) {
+      if (node.frontmatter.tags) { // if there are tags in the frontmatter, create links to their tag page
         const tagSlugs = node.frontmatter.tags.map(
           tag => `/tags/${_.kebabCase(tag)}/`
         )
