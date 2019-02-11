@@ -8,22 +8,32 @@ import { msTheme } from '../../styles/Theme'
 
 const CategoryCardStyled = styled.div`
     border: 2px solid ${msTheme.colors.text};
-    padding: 15px;
-    h2{color: ${msTheme.colors.primary};}
+    /* padding: 15px; */
+    h2{
+        color: ${msTheme.colors.primary};
+        padding: 15px 15px 0px 15px;
+        }
+     p {
+        padding: 0px 15px 15px 15px;
+        font-family: ${msTheme.font.headerFont};
+        font-size: 16px;
+    }
     /* p{
         font-family: ${msTheme.font.headerFont};
         font-size: 17px;
     } */
    
-    /* height: 100%; */
+    height: 100%;
     text-align: center;
     &:hover{
         background-color: ${msTheme.colors.primary};
         cursor: pointer;
         h2{
+            
             color: white;
         }
         p{
+           
             color: white;
         }
     }
@@ -32,14 +42,18 @@ const CategoryCardStyled = styled.div`
 
 export const CategoryCard = ({ title, description, to }) => {
     return (
-        // <Link to={to}>
-        <CategoryCardStyled onClick={() => navigate(`${to}`)} role="link" tabIndex="0">
+        <div>
+            <Link to={to}>
+                {/* <CategoryCardStyled onClick={() => navigate(`${to}`)} role="link" tabIndex="0"> */}
+                <CategoryCardStyled>
 
-            <h2>{title}</h2>
-            <p>{description}</p>
+                    <h2>{title}</h2>
+                    <p>{description}</p>
 
-        </CategoryCardStyled>
-        // </Link>
+                </CategoryCardStyled>
+            </Link>
+        </div>
+
 
     )
 }

@@ -70,8 +70,14 @@ h2 {
  }
 
 
-h3, h4, h5 {
+h3 {
     font-size: 27px;
+    margin-bottom: 14px;
+    padding-top: 5px;
+}
+
+ h4, h5 {
+    font-size: 22px;
     margin-bottom: 14px;
     padding-top: 5px;
 }
@@ -191,6 +197,14 @@ a {
     font-family: ${msTheme.font.headerFont};
     font-size: 16px;
     line-height: 20px;
+}
+
+.lSTN{
+    list-style-type:none;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 

@@ -1,5 +1,10 @@
 export const learnCategoryCardsData = [
     {
+        title: 'Mentorship',
+        description: "The most effective way to get better at music. Tap here or scroll down to read more.",
+        link: '/learn#mentorship'
+    },
+    {
         title: 'Basics',
         description: "Essential knowledge for beginners giving a bird's eye view of music production.",
         link: '/basics'
@@ -18,6 +23,11 @@ export const learnCategoryCardsData = [
         title: 'Producing',
         description: "Recording, sampling, sound design, and whatever else it takes to go from inspiration to music.",
         link: '/learn/producing'
+    },
+    {
+        title: 'Coming Soon...',
+        description: "Articles on mastering, music theory, and lyric writing.",
+        link: '/learn'
     },
     // {
     //     title: 'Music & Lyrics',
