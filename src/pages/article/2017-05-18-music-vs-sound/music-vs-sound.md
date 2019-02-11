@@ -4,6 +4,8 @@ author: 'Alex Nye'
 date: '2017-05-18'
 updated: null
 learn: true
+series: ['basics']
+seriesNumber: {basics: 3}
 category: 'Producing'
 subcategory: ['Producing Basics', 'Mixing Basics']
 tags: ['basics', 'mixing', 'philosophy', 'sound better']

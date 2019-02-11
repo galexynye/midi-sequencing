@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import { msTheme } from '../../styles/Theme'
 // Title (50%)
 // Description (50%)
@@ -14,8 +14,8 @@ const CategoryCardStyled = styled.div`
         font-family: ${msTheme.font.headerFont};
         font-size: 17px;
     } */
-    /* display: flex;
-    flex-flow: column; */
+   
+    /* height: 100%; */
     text-align: center;
     &:hover{
         background-color: ${msTheme.colors.primary};
@@ -30,12 +30,17 @@ const CategoryCardStyled = styled.div`
     
 `
 
-export const CategoryCard = ({ title, description }) => {
+export const CategoryCard = ({ title, description, to }) => {
     return (
-        <CategoryCardStyled>
+        // <Link to={to}>
+        <CategoryCardStyled onClick={() => navigate(`${to}`)} role="link" tabIndex="0">
+
             <h2>{title}</h2>
             <p>{description}</p>
+
         </CategoryCardStyled>
+        // </Link>
+
     )
 }
 

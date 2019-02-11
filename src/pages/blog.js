@@ -29,9 +29,9 @@ class Latest extends React.Component {
 
 
             return (
-                <GridItem gCS={i == 0 ? "1" : 'auto'} gCE={i == 0 ? "3" : 'auto'} >
-                    {/* // <GridItem gCS="1" gCE="3" > */}
-                    {/* <GridItem > */}
+                // <GridItem gCS={i == 0 ? "1" : 'auto'} gCE={i == 0 ? "3" : 'auto'} >
+                //  <GridItem gCS="1" gCE="3" >
+                <GridItem >
                     <PostCardBlog
                         key={post.node.fields.slug}
                         learnOrBlog={post.node.frontmatter.category}
@@ -44,8 +44,10 @@ class Latest extends React.Component {
                         slug={post.node.fields.slug}
                         src={src}
                         tags={post.node.frontmatter.tags}
-                        titleHeight={i > 0 ? "59px" : 'auto'}
-                        tagsHeight={i > 0 ? "59px" : 'auto'}
+                        // titleHeight={i > 0 ? "59px" : 'auto'}
+                        titleHeight="59px"
+                        // tagsHeight={i > 0 ? "59px" : 'auto'}
+                        tagsHeight="59px"
                     />
                 </GridItem>
             )
@@ -59,7 +61,7 @@ class Latest extends React.Component {
         return (
             <SiteContainer>
                 <PageTitle text="Blog" description="Gear Reviews and Other Thoughts"></PageTitle>
-                <GridContainer maxWidth={msTheme.widths.article} gTC="repeat(2, 1fr)" gTCL="repeat(2, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 40px" className="mT40 mB40">
+                <GridContainer gTC="repeat(3, 1fr)" gTCL="repeat(2, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 20px" className="mT40 mB40">
                     {RecentPostCards}
                 </GridContainer>
             </SiteContainer>

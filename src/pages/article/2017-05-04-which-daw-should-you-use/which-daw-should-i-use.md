@@ -4,6 +4,8 @@ author: 'Alex Nye'
 date: '2017-05-04'
 updated: '2019-01-04'
 learn: true
+series: ['basics']
+seriesNumber: {basics: 2}
 category: 'Music Tech'
 subcategory: ['Building a Studio']
 tags: ['basics', 'software', 'daw']

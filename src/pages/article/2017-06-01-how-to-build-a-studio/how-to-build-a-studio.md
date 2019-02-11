@@ -4,6 +4,8 @@ author: 'Alex Nye'
 date: '2017-06-01'
 hideDate: true
 learn: true
+series: ['basics']
+seriesNumber: {basics: 2.5}
 category: 'Music Tech'
 subcategory: ['Build A Studio']
 tags: ['gear', 'basics']

@@ -28,15 +28,21 @@ const TaglistStyle = styled.ul`
     margin:0px 0px 5px 0px;
     font-family: ${msTheme.font.headerFont};
     min-height: ${props => props.minHeight || 'auto'};
+   
     li{
         font-size: 15px;
         margin: 0px 5px 0px 0px;
     }
+    ${msTheme.mediaquery().medium}{
+        min-height: auto;
+    }
 `
 
 export const PostCardStyled = styled.div`
-    background-color: rgb(252,252,252);
-    /* padding: 15px;     */
+    /* background-color: rgb(249,249,249); */
+    /* background-color: blue; */
+    /* box-shadow: 0px 0px 2px ${msTheme.colors.primary}; */
+    padding: 15px;    
     a{
         &:hover{
             text-decoration: none;
@@ -45,6 +51,7 @@ export const PostCardStyled = styled.div`
     span{
         font-size: 14px;
     }
+        
 
 `
 
@@ -64,7 +71,7 @@ const cardWidth = '300px'
 
 export class PostCardBlog extends React.PureComponent {
     render() {
-        const { learnOrBlog, titleHeight, tagsHeight, tags, snippet, date, title, src, category, subcategory, slug } = this.props
+        const { learnOrBlog, titleHeight, titleHeightM, tagsHeight, tags, snippet, date, title, src, category, subcategory, slug } = this.props
         let tagLinks
         if (tags) {
             tagLinks = tags.map((tag, i) => {
@@ -86,6 +93,7 @@ export class PostCardBlog extends React.PureComponent {
                     <CardHeader
                         text={title} slug={slug}
                         minHeight={titleHeight}
+                        minHeightM={titleHeightM}
                         linkColor={msTheme.colors.primary}
                     />
                     <DateStyled>{date}</DateStyled>

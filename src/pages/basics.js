@@ -8,41 +8,8 @@ import TestImg from '../assets/LandingCards/Bunch-Of-EQs-picture-1.jpg'
 // import TestImg from '../assets/ServicesPortfolio/CinematicSpyGraphics.jpg'
 import { PageTitle } from '../components/01_atom/PageTitle';
 import { msTheme } from '../styles/Theme';
+import { PostCardSeries } from '../components/02_molecule/PostCardSeries'
 
-
-const PostCardSeriesStyled = styled.div`
-    a {        
-            text-decoration: none;        
-    }
-    h2{
-        margin-top: 0px;
-    }
-    &:hover{                
-        h2 {            
-            
-            color: ${msTheme.colors.primary};
-            
-        }
-    }
-`
-
-const PostCardSeries = ({ title, description, img, to, number }) => {
-    return (
-
-        <PostCardSeriesStyled>
-            <Link to={to}>
-                <GridContainer maxWidth="1000px" gTC="1fr 2fr" gTCL="1fr 1fr" gTCM="1fr" gridGap="20px 40px" gridGapL="20px 20px">
-                    <ResponsivePhoto src={img ? img : TestImg} />
-                    <FlexboxOrganism flexFlow="column" alignItems="flex-start" >
-                        <h2>{number ? `${number}. ` : ''}{title}</h2>
-                        <p>{description}</p>
-                    </FlexboxOrganism>
-                </GridContainer>
-            </Link>
-        </PostCardSeriesStyled>
-
-    )
-}
 
 
 export default class category extends React.Component {
@@ -50,6 +17,7 @@ export default class category extends React.Component {
         const { data: { allMarkdownRemark } } = this.props
         let posts = allMarkdownRemark.edges
         let src
+
         let PostCardSeriesCollection = posts.map((post, i) => {
             if (post.node.frontmatter.featuredImage) {
                 src = post.node.frontmatter.featuredImage.childImageSharp.fluid.src;
@@ -66,6 +34,7 @@ export default class category extends React.Component {
                 />
             )
         })
+
         return (
             <SiteContainer>
                 <PageTitle text="Basics" description="Essential Knowledge for Learning Music Production" />

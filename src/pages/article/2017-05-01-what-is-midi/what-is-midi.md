@@ -4,6 +4,8 @@ date: '2017-05-01'
 updated: null
 author: 'Alex Nye'
 learn: true
+series: ['basics']
+seriesNumber: {basics: 4}
 category: 'Music Tech'
 subcategory: ['Tech Basics']
 tags: ['basics', 'midi']

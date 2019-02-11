@@ -37,6 +37,9 @@ export const CardHeaderStyle = styled.div`
         width: 100%;
        margin-left:-5px;
     }
+    ${msTheme.mediaquery().medium}{
+        min-height: ${props => props.minHeightM || 'auto'}
+    }
 `
 
 export const CardHeader = ({ text, width, minHeight, slug, linkColor, linkColorHover }) => {

@@ -64,7 +64,7 @@ class BlogPostTemplate extends React.Component {
             {tags}
           </ul>
           {/* <p>by {author}</p> */}
-          <p>Updated : {!post.frontmatter.hideDate && post.frontmatter.date}</p>
+          {!post.frontmatter.hideDate && <p>Written : {post.frontmatter.date} {post.frontmatter.updated ? `|| Updated : ${post.frontmatter.updated}` : ''} </p>}
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           {/* <hr
@@ -102,9 +102,6 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </ul>
-          {/* </Layout> */}
-          {/* <ScrollToTop scrollStepInPx="60" delayInMs="20" /> */}
-
         </ArticleContainer>
       </SiteContainer>
     )
@@ -128,6 +125,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        updated(formatString: "MMMM DD, YYYY")
         hideDate
         tags
         author
