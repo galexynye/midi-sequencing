@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import axios from 'axios'
+import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import Recaptcha from 'react-recaptcha'
