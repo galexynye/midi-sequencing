@@ -25,8 +25,9 @@ const TagsPage = ({
 }) => (
         <SiteContainer>
             <Helmet
-                htmlAttributes={{ lang: 'en' }} // meta={[{ name: 'description', content: siteDescription }]}
-                title={`All Tags | Music Sequencing`}
+                htmlAttributes={{ lang: 'en' }}
+                meta={[{ name: 'description', content: 'All the tags on Music Sequencing' }]}
+                title={`All Tags | ${title}`}
             />
             <ArticleContainer>
                 <h1>All Tags</h1>

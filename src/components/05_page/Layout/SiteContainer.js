@@ -158,6 +158,9 @@ a {
 .mB40 {
     margin-bottom: 40px;
 }
+.mB60 {
+    margin-bottom: 60px;
+}
 
 .pB40{
     padding-bottom: 40px;
@@ -252,15 +255,12 @@ class SiteContainer extends React.Component {
         return (
             <div>
                 <Helmet
-                    htmlAttributes={{ lang: 'en' }}
                     meta={[
-                        { name: 'description', content: 'Learn Music Production' },
                         {
                             name: 'google-site-verification',
                             content: 'ApEgiydr2XV738hMqiDL6JyWjg0Cq5ybbWmQrnDHq9c',
                         },
                     ]}
-                    title='Music Sequencing'
                     link={[
                         {
                             rel: 'shortcut icon',

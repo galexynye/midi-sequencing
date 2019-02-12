@@ -16,9 +16,24 @@ export const msTheme = {
         greenlight: '#45E8B3',
         greendark: '#008A5D',
         yellow: '#FFEB00',
+        yellowdark: '#7A7006',
         yellowlight: '#FFF14C',
         yellowlightest: '#FFF47A',
-        greylight: '#CFCFCF'
+        greylight: '#CFCFCF',
+        red: '#F8004B',
+        reddarker: '#E80046',
+        reddarkest: '#B90038',
+        redlight: `F84A7F`,
+        blue: '#079EE7',
+        bluedarker: '#0277B0',
+        bluedarkest: '#025983',
+        bluelightest: '#4CB4E6',
+        bluelighter: '20A6E7',
+        violet: '#A006E9',
+        violetdarker: '#7D02B7',
+        violetdarketst: '#5E028A',
+        violetlight: '#B64DE8'
+
     },
     breakPoints: { // Numbers in Pixels
         tiny: 400,

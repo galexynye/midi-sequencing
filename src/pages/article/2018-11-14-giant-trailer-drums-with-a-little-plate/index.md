@@ -4,7 +4,7 @@ author: 'Alex Nye'
 date: '2018-11-14'
 learn: true
 category: 'Producing'
-categoryDescription: 'All About Laying Down the Music'
+categoryDescription: 'Learn Music Making Techniques'
 subcategory: ['Sound Design']
 tags: ['trailer-music', 'epic', 'sound-toys', 'native-instruments', 'drums']
 featuredImage: './TrailerDrumsFI.jpg'

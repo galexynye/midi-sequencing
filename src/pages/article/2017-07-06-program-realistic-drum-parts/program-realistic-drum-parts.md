@@ -1,6 +1,6 @@
 ---
 path: '/article/program-realistic-drum-parts'
-title: Program Realistic Drum Parts
+title: How to Program Realistic Drum Parts
 author: 'Alex Nye'
 date: '2017-07-06'
 learn: true

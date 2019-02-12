@@ -4,7 +4,7 @@ author: 'Alex Nye'
 date: '2017-06-09'
 learn: true
 category: 'Mixing'
-categoryDescription: 'Think in Terms of Sonic Fidelity'
+categoryDescription: 'Learn How to Mix from Beginner to Pro'
 subcategory: ['Creative Mixing']
 tags: ['mixing', 'gear', 'drum mixing']
 featuredImage: './media/how-to-phil-collins/phil-plugins-1.png'

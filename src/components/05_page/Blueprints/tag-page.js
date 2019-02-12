@@ -23,8 +23,9 @@ const Tags = ({ pageContext, data }) => {
   return (
     <SiteContainer>
       <Helmet
-        htmlAttributes={{ lang: 'en' }} // meta={[{ name: 'description', content: siteDescription }]}
-        title={`${tag} | Music Sequencing`}
+        htmlAttributes={{ lang: 'en' }}
+        meta={[{ name: 'description', content: `Posts tagged with ${tag} on Music Sequencing` }]}
+        title={`${tag} Posts on Music Sequencing`}
       />
       <PageTitle text={tagHeader}></PageTitle>
       <ArticleContainer>

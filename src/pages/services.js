@@ -2,6 +2,7 @@
 import React from 'react'
 import axios from 'axios'
 import { Helmet } from 'react-helmet'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Recaptcha from 'react-recaptcha'
 import { WidthWrapper, GridContainer } from '../components/00_utilities/Utilities'
@@ -123,6 +124,8 @@ class Services extends React.PureComponent {
     }
 
     render() {
+        const { data } = this.props
+        const siteTitle = data.site.siteMetadata.title
         // Options for Services
         const servicesOptions = ['--Select--', 'Custom Music', 'Mixing', 'Mastering', 'Producing', 'Licensing', 'I want help learning music', 'So many things', 'Other']
 
@@ -170,7 +173,10 @@ class Services extends React.PureComponent {
 
         return (
             <SiteContainer headerPosition="absolute">
-                <Helmet>
+                <Helmet
+                    meta={[{ name: 'description', content: 'Professional producing, mixing, mastering and original music for hire.' }]}
+                    title={`Professional Music Services - Mixing, Mastering, Producing and Original Music | ${siteTitle}`}
+                >
                     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
                 </Helmet>
                 <HeroService />
@@ -185,3 +191,14 @@ class Services extends React.PureComponent {
 
 export default Services
 
+export const pageQuery = graphql`
+  query {
+   site {
+    siteMetadata {
+      title    
+    }
+  }
+  
+
+}
+`

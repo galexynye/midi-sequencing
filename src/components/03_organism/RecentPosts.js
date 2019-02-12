@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { StaticQuery, graphql, Img } from 'gatsby'
 import { msTheme } from '../../styles/Theme'
@@ -10,6 +11,7 @@ import { GridContainer, GridItem } from '../00_utilities/Utilities'
 
 import DawPic from '../../assets/LandingCards/Daws-20.jpg'
 import EQPic from '../../assets/LandingCards/Bunch-Of-EQs-picture-1.jpg'
+import { ButtonCTA } from '../01_atom/ButtonCTA';
 
 const RecentPostsStyled = styled.div`
 padding: 110px 0px 90px 0px;
@@ -67,11 +69,16 @@ export class RecentPostsView extends Component {
 
     return (
       <RecentPostsStyled>
-
-        <GridContainer gTCL="repeat(3, 1fr)" gridGap="65px" gridGapL="45px">
+        {/* <GridContainer gTC="1fr 1fr" className="mT40" >
+          <ButtonCTA to="/learn" bgColor={msTheme.colors.primary} color="white" text="Learn Music"></ButtonCTA>
+          <ButtonCTA to="/blog" bgColor={msTheme.colors.primary} color="white" text="Read Blog"></ButtonCTA>
+        </GridContainer> */}
+        <GridContainer gTCL="repeat(3, 1fr)" gridGap="40px 65px" gridGapL="45px">
           {RecentPostCards}
+          <GridItem gCS="1" gCE="4">
+            <p className="headerFont">Check out more articles on the <Link to="/learn">learn page </Link> or blog posts <Link to="/blog">here</Link>.</p>
+          </GridItem>
         </GridContainer>
-
       </RecentPostsStyled >
     )
   }

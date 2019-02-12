@@ -65,6 +65,7 @@ I demonstrate how to do this "manually" (by creating an aux track, instead of a 
 <iframe src="https://www.youtube.com/embed/gFptOJ4fKO4?start=245&amp;end=347" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 <h3 >Be Careful With Sends</h3>
+
 If you are<strong> not</strong> familiar with sends, then read this paragraph. Otherwise, skip to the next paragraph so you understand how sends work inside of this routing structure and you don't screw up your entire life. Sends give you the ability to send the audio of a track to another track in order to add some effect.
 
 The important thing to note when you are setting up your send effects is where you output your "aux returns" (the tracks that have the effects on them. aka where you are sending audio to). Sometimes you might want to set the output of a send to the group the affected sound is routed to, like if you are blending in distortion to a certain synth within a layer of synths all routed to one group. Other times you might want to set the output of a send to a sub-master sum, like if it is a reverb you are using on a bunch of different track elements routed to different groups.
@@ -74,6 +75,7 @@ If that is confusing, watching this video hopefully will clarify it for you.
 <iframe src="https://www.youtube.com/embed/gFptOJ4fKO4?start=351&amp;end=459" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 <h3 >You Be You</h3>
+
 This guide is just a guide. After working on numerous projects you will develop your own preferences for how you will want to route your audio to keep control over your mixes.
 
 Eventually, or immediately, <strong>create a template</strong> to reflect your preferences. You set up what you like, or think you'll like, and make adjustments as you go. Having a system of routing in place and built into a template session frees you up creatively and saves so much time.

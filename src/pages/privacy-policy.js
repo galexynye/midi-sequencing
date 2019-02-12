@@ -1,4 +1,6 @@
 import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { ArticleContainer } from "../components/05_page/ArticleContainer";
 import { PageTitle } from '../components/01_atom/PageTitle'
@@ -12,9 +14,14 @@ import { msTheme } from '../styles/Theme'
 
 class Privacy extends React.PureComponent {
     render() {
+        const { data } = this.props
+        const siteTitle = data.site.siteMetadata.title
         return (
             <SiteContainer>
-
+                <Helmet
+                    meta={[{ name: 'description', content: 'How Music Sequencing collects and uses data' }]}
+                    title={`Privacy Policy | ${siteTitle}`}
+                />
                 <PageTitle text="Privacy Policy"></PageTitle>
                 <ArticleContainer margin="0px auto">
 
@@ -90,3 +97,15 @@ class Privacy extends React.PureComponent {
 
 
 export default Privacy
+
+export const pageQuery = graphql`
+  query {
+   site {
+    siteMetadata {
+      title    
+    }
+  }
+  
+
+}
+`

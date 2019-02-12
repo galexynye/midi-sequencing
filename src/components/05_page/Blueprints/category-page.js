@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import get from 'lodash/get'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
@@ -19,7 +20,9 @@ const TagsList = styled.ul`
 
 class Category extends React.Component {
   render() {
+
     const { pageContext, data } = this.props
+    const siteTitle = data.site.siteMetadata.title
     const { category } = pageContext
     const { edges, totalCount } = data.allMarkdownRemark
     const posts = edges;
@@ -74,6 +77,11 @@ class Category extends React.Component {
 
     return (
       <SiteContainer>
+        <Helmet
+          htmlAttributes={{ lang: 'en' }}
+          meta={[{ name: 'description', content: `${categoryDescription}` }]}
+          title={`${category} - Learn ${category} | ${siteTitle}`}
+        />
         <PageTitle text={categoryHeader} description={categoryDescription} />
         <GridContainer gTC="repeat(3, 1fr)" gTCL="repeat(2, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 20px" className="mT40 mB40">
           {RecentPostCards}
@@ -90,6 +98,12 @@ export default Category
 
 export const pageQuery = graphql`
   query($category: String) {
+      site {
+      siteMetadata {
+        title
+        author
+      }
+    }
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }

@@ -3,8 +3,8 @@ title: How to Edit Midi Sustain Pedal
 author: 'Alex Nye'
 date: '2017-05-12'
 learn: true
-category: 'Producing'
-subcategory: ['Producing Techniques']
+category: 'Music Tech'
+subcategory: ['Midi']
 tags: ['midi']
 featuredImage: './MidiSustainFIFinal.png' 
 ---

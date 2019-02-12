@@ -106,6 +106,8 @@ export default class contact extends PureComponent {
     }
 
     render() {
+        const { data } = this.props
+        const siteTitle = data.site.siteMetadata.title
         const Oops = <WidthWrapper width="350px">
             <Message title="Oops..." message="Something went wrong." />
             <ButtonCTA _handleClick={this._resetState} text="Click to reload Music Services Form" bgColor={msTheme.colors.secondarylighter} />
@@ -131,7 +133,10 @@ export default class contact extends PureComponent {
 
         return (
             <SiteContainer>
-                <Helmet>
+                <Helmet
+                    meta={[{ name: 'description', content: 'Contact Music Sequencing, make suggestions or hire me' }]}
+                    title={`Contact | ${siteTitle}`}
+                >
                     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
                 </Helmet>
                 <PageTitle text="Contact" description="Say hi" />
@@ -148,7 +153,17 @@ export default class contact extends PureComponent {
 
 
 
+export const pageQuery = graphql`
+  query {
+   site {
+    siteMetadata {
+      title    
+    }
+  }
+  
 
+}
+`
 
 
 

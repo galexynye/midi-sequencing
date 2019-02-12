@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Music Sequencing',
-    author: 'Alex Nye',
-    description: 'Music Production Educationome',
-    siteUrl: 'https://musicsequencing.com',
+    description: 'Learn Music Production and Get a Mentor to Help',
+    siteUrl: 'https://www.musicsequencing.com',
   },
   pathPrefix: '/',
   plugins: [

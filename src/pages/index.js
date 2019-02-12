@@ -1,4 +1,6 @@
 import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { msTheme } from '../styles/Theme'
@@ -25,26 +27,14 @@ const Blackback = styled.div`
 
 export default class Home extends React.Component {
   render() {
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
     return (
       <SiteContainer headerPosition="absolute">
-        {/* <Helmet 
-          htmlAttributes={{ lang: 'en' }}
-          meta={[
-            { name: 'description', content: siteDescription },
-            {
-              name: 'google-site-verification',
-              content: 'ApEgiydr2XV738hMqiDL6JyWjg0Cq5ybbWmQrnDHq9c',
-            },
-          ]}
-          title={siteTitle}
-          link={[
-            {
-              rel: 'shortcut icon',
-              type: 'image/png',
-              href: `${favicon}`,
-            },
-          ]}
-        /> */}
+        <Helmet
+          meta={[{ name: 'description', content: 'Articles, Tutorials, Professional Music Services and a Blog on Music Production' }]}
+          title={`${siteTitle} - Learn Music Production`}
+        />
 
         <HeroHome />
 
@@ -58,3 +48,16 @@ export default class Home extends React.Component {
     )
   }
 }
+
+
+export const pageQuery = graphql`
+  query {
+   site {
+    siteMetadata {
+      title    
+    }
+  }
+  
+
+}
+`

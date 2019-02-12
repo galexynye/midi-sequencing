@@ -3,7 +3,7 @@ import React from 'react'
 // import styled from 'styled-components'
 import axios from 'axios'
 import { Helmet } from 'react-helmet'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import Recaptcha from 'react-recaptcha'
 import { msTheme } from '../styles/Theme'
@@ -109,12 +109,17 @@ class Learn extends React.Component {
     }
 
     render() {
+        const { data } = this.props
+        const siteTitle = data.site.siteMetadata.title
+
         const learnCategoryCards = learnCategoryCardsData.map(x => {
             return (
                 <CategoryCard
                     title={x.title}
                     description={x.description}
                     to={x.link}
+                    hideButton={x.hideButton}
+                    color={x.color}
                 />
             )
         })
@@ -144,11 +149,14 @@ class Learn extends React.Component {
 
         return (
             <SiteContainer>
-                <Helmet>
+                <Helmet
+                    meta={[{ name: 'description', content: 'Learn music production with free tutorials and articles or hire me as a mentor to help you get your music to the next level.' }]}
+                    title={`Learn Music Production - Tutorials, Articls and Mentorship from ${siteTitle}`}
+                >
                     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
                 </Helmet>
                 <PageTitle title="Learn Music" description="Tutorials, Articles, & Mentorship"></PageTitle>
-                <GridContainer gTC="repeat(3, 1fr)" className="mB40 mT40">
+                <GridContainer gTC="repeat(3, 1fr)" className="mB60 mT40">
                     {learnCategoryCards}
                 </GridContainer>
                 {/* <GridContainer id="mentoring">
@@ -164,13 +172,13 @@ class Learn extends React.Component {
                         {/* <p className="headerFont"> 1. Working Professionally<br /> 2. Under the guidance of an experienced professional</p> */}
                         <p className="headerFont"> <span className="bold">1. Working professionally</span></p>
                         <p className="headerFont"> <span className="bold">2. Under the guidance of an experienced professional</span></p>
-                        <p className="headerFont">If you want to get your music to the next level, I'm happy to help with 1-on-1 lessons and project reviews over the internet.</p>
+                        <p className="headerFont mB40">If you want to get your music to the next level, I'm happy to help with 1-on-1 lessons and project reviews over the internet.</p>
                         <h3 className="mB20 colorPrimary">How it Works</h3>
                         {/* <ul className="lSTN"> */}
                         <p className="headerFont"><span className="bold">Step 1</span> - Fill out the form below with your name and email.</p >
                         <p className="headerFont"><span className="bold">Step 2</span> - I'll get back to you with some possible times for a trial lesson.</p >
                         <p className="headerFont"><span className="bold">Step 3</span> - The first trial lesson is free. We'll talk about your goals, influences and setup the remote tech.</p >
-                        <p className="headerFont"><span className="bold">Step 4</span> - If we continue with more lessons, I'll develop a custom lesson plan for you, and we'll start scheduling. </p >
+                        <p className="headerFont mB40"><span className="bold">Step 4</span> - If we continue with more lessons, I'll develop a custom lesson plan for you, and we'll start scheduling. </p >
 
                     </div>
                 </GridContainer>
@@ -181,7 +189,7 @@ class Learn extends React.Component {
                     {this.state.error && Oops}
                     {this.state.form && ContactForm}
                 </GridContainer>
-                <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr" className="headerFont" >
+                <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr" className="headerFont mB40" >
                     <div>
                         <h3 className="mB20 colorPrimary">FAQs</h3>
                         <p className="headerFont"><span className="bold">How long is a lesson?</span> - Lessons are an hour long. In-between lessons you can shoot me questions that pop up or ask for thoughts on what you're working on.</p>
@@ -200,3 +208,15 @@ class Learn extends React.Component {
 }
 
 export default Learn
+
+export const pageQuery = graphql`
+  query {
+   site {
+    siteMetadata {
+      title    
+    }
+  }
+  
+
+}
+`

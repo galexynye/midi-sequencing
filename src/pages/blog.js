@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Helmet from 'react-helmet'
 import { Link, graphql, Img } from 'gatsby'
 import styled from 'styled-components'
 import { msTheme } from '../styles/Theme'
@@ -13,10 +14,9 @@ import DawPic from '../assets/LandingCards/Daws-20.jpg'
 class Latest extends React.Component {
 
     render() {
-        const {
-            data: { allMarkdownRemark }
-        } = this.props
-        let posts = allMarkdownRemark.edges
+        const { data } = this.props
+        const siteTitle = data.site.siteMetadata.title
+        let posts = data.allMarkdownRemark.edges
         let src
         const RecentPostCards = posts.map((post, i) => {
             // Checks if no featured image
@@ -60,6 +60,10 @@ class Latest extends React.Component {
 
         return (
             <SiteContainer>
+                <Helmet
+                    meta={[{ name: 'description', content: 'Opinions on music gear and other thoughts in the world of music production' }]}
+                    title={`Music Production Blog - Music Gear Reviews and Other Thoughts | ${siteTitle}`}
+                />
                 <PageTitle text="Blog" description="Gear Reviews and Other Thoughts"></PageTitle>
                 <GridContainer gTC="repeat(3, 1fr)" gTCL="repeat(2, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 20px" className="mT40 mB40">
                     {RecentPostCards}
@@ -71,8 +75,16 @@ class Latest extends React.Component {
 
 export default Latest
 
+// Sorry for the jumble just paste into the graphql editor if confused
+
 export const pageQuery = graphql`
     query {
+  site {
+    siteMetadata {
+      title    
+    }
+  }
+
                         allMarkdownRemark(
                             limit: 2000
             filter: {frontmatter: {blog: {eq : true}}}

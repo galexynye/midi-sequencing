@@ -6,3 +6,5 @@ public
 .cache/
 yarn.lock
 package.json
+.env.development
+.env.production

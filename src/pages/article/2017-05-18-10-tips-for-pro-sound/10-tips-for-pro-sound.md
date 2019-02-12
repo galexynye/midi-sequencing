@@ -1,5 +1,5 @@
 ---
-title: '10 Tips for Achieving Pro Sound'
+title: '10 Factors for Achieving Pro Sound'
 author: 'Alex Nye'
 date: '2017-05-18'
 learn: true
@@ -59,6 +59,7 @@ The singer sings, let's say it's Adele and therefore we know the singing is awes
 After the sound has been changed into an analog signal by the mic it is not very strong. It travels down your mic cable, riding electricity, <strong>into your preamp</strong>. If you don't have an outboard preamp then there is probably one built into your interface. The preamp takes the signal from the mic and amplifies it. <strong>By amplifying the signal the preamp changes the shape of the waves, thus changing the sound again</strong>. In my experience, preamps are where some of the real magic is in getting a great sound when recording. The Sure SM57 is a $100 microphone used in every studio. Part of the reason this mic can sound so awesome <em>one place</em> and crappy <em>in another</em> is the quality of the preamp. Ok... after the signal leaves the preamp, in this scenario, we are going straight into your interface's converters.
 
 <h2 >A/D Convertion</h2>
+
 The part of the interface this analog signal is going to hit now is called the <strong>Audio to Digital</strong> <strong>converter or A/D converter</strong>. The A/D converter takes the analog signal from the preamp and coverts it to code (digital audio). Your A/D converter says, "Ok I see at this moment in time the electrical signal is up here, so I'm going to make a note of that, and then the next moment it says, Ok I see the electrical signal is down here so I'm going to make a note of that. Like points on a graph when you zoom out look like a waveform. It can do this 41,000 times a second, or 48,000 times a second, all the way up to 192,000 times a second, this is called your <strong>Sample Rate</strong>. Not all A/D converters are created equal. <strong>Some are not as accurate at noting the electrical signal they receive and this affects the quality of the sound</strong>. You have to have pretty solid ears to notice the affect an A/D converter has on sound quality but it is there. This isn't something someone brand new to making music will generally hear, especially if they have crappy headphones or monitors. As a rule though,
 **<better converters = better sound.**
 If you never record anything and work exclusively with samples or patches, then you've read all that stuff for no reason, this is where you start from. Your A/D doesn't really matter. But let's recap it all so far anyway because most of us want to record some audio at some point. We are following Adele's voice...remember? She sings, air moves, mic changes air vibrations into analog signal (waves riding electricity), the preamp amplifies the analog signal, the A/D converter changes the analog signal into code(digital audio). Now we are in the computer, the code is interpret your software called a <a href="/article/which-daw-should-i-use" target="_blank" rel="noopener noreferrer">DAW, the digital audio workstation</a>. Here's where you can really scramble the sound around.
@@ -74,6 +75,7 @@ When you are working with digital audio what is actually happening when you mani
 **Good plugins (algorithms) = Good Sound**
 
 <h2 >Monitoring Your Work</h2>
+
 You've effected the digital audio with your DAW and now you want to hear Adele through the monitors, you want to<strong> get her out of the computer and back into the air</strong>. We kind of do the whole process now in reverse. Take a special note though, from here on out this is only for listening back to what you are making. What you are doing when you make recordings is you are creating a new code(digital audio) from a bunch of other codes. Hearing back that code will sound different on your phone, earbuds, car, stereo, whatever because of the steps we are about to look at. What we want now is to ensure the sound that you are creating in the computer can <strong>accurately translate well</strong> to other systems. Ok, so where does Adele go?
 
 She came into the interface through the Audio to Digital converter (A/D), remember? So <strong>now we go out of the interface through the Digital to Audio converter (D/A)</strong>. The digital audio is changed back into an analog signal. It is basically in the same form as when it was changed from riding air waves to riding electric waves by the mic, right before we hit the preamp and did all the computer stuff.
@@ -85,6 +87,7 @@ So after the digital audio is changed back into analog signal, the signal is boo
 There's one more thing to take care for...
 
 <h2 >Room</h2>
+
 You have Adele, she's great, you have a great mic, a dope preamp, quality A/D conversion on your interface, sweet plugins in your DAW to manipulate the sound that you've used with great skill, the digital audio is accurately changed back to analog signal with your D/A conversion, that signal is amplified cleanly and you know your monitors are good because they were expensive. You mix the song, listen to the mix in your car and it sounds like crap. What?
 
 The room! The sound is bouncing around your room and that is misrepresenting what the digital audio actually sounds when you play it on other systems. Oh no. The room is both the first and last link in the chain for sound quality. If you record Adele in a bathroom you are going to get all those reflections along with Adele's voice on your recording. If you mix in a bathroom you are going to hear frequencies amplified and combined that aren't actually in the digital audio. You might try to alter the digital audio to get rid of frequencies so it sounds good in your bathroom but sounds like crap everywhere else. This is why studios have so much acoustic treatment. If you can't work in a decent room, always check on headphones where the room is not a variable.

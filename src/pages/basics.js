@@ -14,8 +14,9 @@ import { PostCardSeries } from '../components/02_molecule/PostCardSeries'
 
 export default class category extends React.Component {
     render() {
-        const { data: { allMarkdownRemark } } = this.props
-        let posts = allMarkdownRemark.edges
+        const { data } = this.props
+        const siteTitle = data.site.siteMetadata.title
+        let posts = data.allMarkdownRemark.edges
         let src
 
         let PostCardSeriesCollection = posts.map((post, i) => {
@@ -37,6 +38,10 @@ export default class category extends React.Component {
 
         return (
             <SiteContainer>
+                <Helmet
+                    meta={[{ name: 'description', content: 'Learn everything you need to get started producing your own music' }]}
+                    title={`Basics - Learn All the Basics of Music Production | ${siteTitle}`}
+                />
                 <PageTitle text="Basics" description="Essential Knowledge for Learning Music Production" />
                 <GridContainer className="mT40 mB40" gridGap="40px" gTC="1fr" gTCL="1fr" gTCM="1fr">
                     {PostCardSeriesCollection}
@@ -50,6 +55,11 @@ export default class category extends React.Component {
 
 export const pageQuery = graphql`
   query {
+        site {
+    siteMetadata {
+      title    
+    }
+  }
     allMarkdownRemark(
         limit:2000
         # filter: {frontmatter:{category: {eq :"Mixing"}  }}

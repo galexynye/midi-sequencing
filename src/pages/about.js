@@ -1,6 +1,7 @@
 import React from 'react'
 // import styled from 'styled-components'
-import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
+import { Link, graphql } from 'gatsby'
 // import Img from 'gatsby-image'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { ArticleContainer } from "../components/05_page/ArticleContainer";
@@ -11,8 +12,15 @@ import { ResponsivePhoto } from '../components/00_utilities/Utilities'
 
 class About extends React.Component {
     render() {
+        const { data } = this.props
+        const siteTitle = data.site.siteMetadata.title
         return (
             <SiteContainer>
+                <Helmet
+                    meta={[{ name: 'description', content: 'About the Music Sequencing, me and what you can learn here.' }]}
+                    title={`About - General Site Info | ${siteTitle}`}
+                />
+
                 <PageTitle text="About" description="The Site and Me" ></PageTitle>
                 <ArticleContainer>
                     {/* <h1 className="colorPrimary h1Big">About</h1> */}
@@ -81,3 +89,15 @@ class About extends React.Component {
 }
 
 export default About
+
+export const pageQuery = graphql`
+  query {
+   site {
+    siteMetadata {
+      title    
+    }
+  }
+  
+
+}
+`

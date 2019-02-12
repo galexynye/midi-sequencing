@@ -17,6 +17,7 @@ class BlogPostTemplate extends React.Component {
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
     const author = post.frontmatter.author
+    const category = post.frontmatter.category
     let tags
     if (post.frontmatter.tags) {
       tags = post.frontmatter.tags.map(tag => (
@@ -44,8 +45,8 @@ class BlogPostTemplate extends React.Component {
           {/* <Layout location={this.props.location}> */}
           <Helmet
             htmlAttributes={{ lang: 'en' }}
-            meta={[{ name: 'description', content: siteDescription }]}
-            title={`${post.frontmatter.title} | ${siteTitle}`}
+            meta={[{ name: 'description', content: `${post.excerpt}` }]}
+            title={`${post.frontmatter.title} - ${post.frontmatter.subcategory} | ${siteTitle}`}
           />
           <h1>{post.frontmatter.title}</h1>
           <ul
@@ -79,14 +80,14 @@ class BlogPostTemplate extends React.Component {
           {/* <Bio /> */}
           {/* <p>written by {author}</p> */}
           <ul
-          // style={{
-          //   display: 'flex',
-          //   flexWrap: 'wrap',
-          //   justifyContent: 'space-between',
-          //   listStyle: 'none',
-          //   marginTop: '15px',
-          //   padding: 0,
-          // }}
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'space-between',
+              listStyle: 'none',
+              marginTop: '15px',
+              padding: 0,
+            }}
           >
             <li>
               {previous && (
@@ -130,6 +131,7 @@ export const pageQuery = graphql`
         hideDate
         tags
         author
+        subcategory
       }
     }
   }
