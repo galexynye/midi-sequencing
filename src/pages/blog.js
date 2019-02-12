@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql, Img } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 import { msTheme } from '../styles/Theme'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
