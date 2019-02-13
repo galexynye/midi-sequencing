@@ -96,6 +96,21 @@ module.exports = {
           'https://midisequencing.us15.list-manage.com/subscribe/post?u=959ef0b4d1c6a701f90f85f9e&amp;id=59168d9d12', // see instructions section below
       },
     },
-    `gatsby-plugin-netlify`, // Needs to stay the last in Array of plugins
+    {
+      resolve: `gatsby-plugin-netlify`, // need to stay last in plugin
+      options: {
+        headers: {
+          "/*": [
+            "X-Frame-Options: SAMEORIGIN"
+          ],
+          "/post/*": [
+            "X-Frame-Options: SAMEORIGIN"
+          ],
+          "/article/*": [
+            "X-Frame-Options: SAMEORIGIN"
+          ]
+        }, // option to add more headers. `Link` headers are transformed by the below criteria      
+      }, // Needs to stay the last in Array of plugins
+    }
   ],
 }
