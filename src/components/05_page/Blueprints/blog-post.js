@@ -28,13 +28,13 @@ class BlogPostTemplate extends React.Component {
     const postSlug = this.props.data.markdownRemark.fields.slug
 
     if (postSlug == "/article/what-is-midi") {
-      console.log(postSlug);
+      // console.log(postSlug);
       var DiscourseEmbed = {
         discourseUrl: 'https://forum.musicsequencing.com/',
         discourseEmbedUrl: `https://www.musicsequencing.com/article/what-is-midi/`
       };
 
-      console.log(DiscourseEmbed.discourseEmbedUrl);
+      // console.log(DiscourseEmbed.discourseEmbedUrl);
 
       // (function () {
       //   var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
