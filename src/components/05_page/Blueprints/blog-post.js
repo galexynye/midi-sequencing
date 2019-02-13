@@ -31,7 +31,7 @@ class BlogPostTemplate extends React.Component {
       console.log(postSlug);
       let DiscourseEmbed = {
         discourseUrl: 'https://forum.musicsequencing.com/',
-        discourseEmbedUrl: `https://www.musicsequencing.com${postSlug}`
+        discourseEmbedUrl: `https://www.musicsequencing.com${postSlug}.html`
       };
 
       console.log(DiscourseEmbed.discourseEmbedUrl);
