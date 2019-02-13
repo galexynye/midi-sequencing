@@ -31,7 +31,7 @@ class BlogPostTemplate extends React.Component {
       console.log(postSlug);
       var DiscourseEmbed = {
         discourseUrl: 'https://forum.musicsequencing.com/',
-        discourseEmbedUrl: `https://www.musicsequencing.com${postSlug}/`
+        discourseEmbedUrl: `https://www.musicsequencing.com/article/what-is-midi`
       };
 
       console.log(DiscourseEmbed.discourseEmbedUrl);
@@ -46,7 +46,8 @@ class BlogPostTemplate extends React.Component {
         d.type = 'text/javascript';
         d.async = true;
         d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+        console.log(DiscourseEmbed.discourseUrl + 'javascript/embed')
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
       };
 
       console.log(document.getElementsByTagName('body')[0])
