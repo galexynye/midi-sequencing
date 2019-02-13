@@ -27,31 +27,31 @@ class BlogPostTemplate extends React.Component {
   componentDidMount() {
     const postSlug = this.props.data.markdownRemark.fields.slug
 
-    if (postSlug == "/article/what-is-midi") {
-      // console.log(postSlug);
-      var DiscourseEmbed = {
-        discourseUrl: 'https://forum.musicsequencing.com/',
-        discourseEmbedUrl: `https://www.musicsequencing.com/article/what-is-midi/`
-      };
+    // if (postSlug == "/article/what-is-midi") {
+    // console.log(postSlug);
+    //   var DiscourseEmbed = {
+    //     discourseUrl: 'https://forum.musicsequencing.com/',
+    //     discourseEmbedUrl: 'https://www.musicsequencing.com/article/what-is-midi/'
+    //   };
 
-      // console.log(DiscourseEmbed.discourseEmbedUrl);
+    //   // console.log(DiscourseEmbed.discourseEmbedUrl);
 
-      // (function () {
-      //   var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-      //   d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-      //   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-      // })();
-      function doDiscourse() {
-        var d = document.createElement('script');
-        d.type = 'text/javascript';
-        d.async = true;
-        d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-      };
+    //   // (function () {
+    //   //   var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    //   //   d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    //   //   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+    //   // })();
+    //   function doDiscourse() {
+    //     var d = document.createElement('script');
+    //     d.type = 'text/javascript';
+    //     d.async = true;
+    //     d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    //     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+    //   };
 
-      console.log(document.getElementsByTagName('body')[0])
-      doDiscourse();
-    }
+    //   console.log(document.getElementsByTagName('body')[0])
+    //   doDiscourse();
+    // }
   }
 
 
@@ -91,7 +91,22 @@ class BlogPostTemplate extends React.Component {
             htmlAttributes={{ lang: 'en' }}
             meta={[{ name: 'description', content: `${post.excerpt}` }]}
             title={`${post.frontmatter.title} - ${post.frontmatter.subcategory} | ${siteTitle}`}
-          />
+          >
+
+
+            <script type="text/javascript">{`
+              DiscourseEmbed = {discourseUrl: 'https://forum.musicsequencing.com/',
+                                 discourseEmbedUrl: 'https://www.musicsequencing.com${post.fields.slug}/' };
+            
+              (function() {
+                var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                          d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                        })();`
+            }
+            </script>
+
+          </Helmet>
           <h1>{post.frontmatter.title}</h1>
           <ul
             style={
@@ -148,6 +163,7 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </ul>
+
           <div id='discourse-comments'></div>
 
 
