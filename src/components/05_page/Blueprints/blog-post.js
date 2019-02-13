@@ -29,7 +29,7 @@ class BlogPostTemplate extends React.Component {
 
     if (postSlug == "/article/what-is-midi") {
       console.log(postSlug)
-      DiscourseEmbed = {
+      let DiscourseEmbed = {
         discourseUrl: 'https://forum.musicsequencing.com/',
         discourseEmbedUrl: `https://www.musicsequencing.com/${postSlug}`
       };
