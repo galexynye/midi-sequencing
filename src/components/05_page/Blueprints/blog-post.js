@@ -12,49 +12,6 @@ import { msTheme } from '../../../styles/Theme'
 
 class BlogPostTemplate extends React.Component {
 
-
-  //   <script type="text/javascript">
-  //     DiscourseEmbed = {discourseUrl: 'https://forum.musicsequencing.com/',
-  //                        discourseEmbedUrl: 'REPLACE_ME' };
-
-  //   (function() {
-  //     var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-  //     d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-  //     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  //   })();
-  // </script>
-
-  componentDidMount() {
-    const postSlug = this.props.data.markdownRemark.fields.slug
-
-    // if (postSlug == "/article/what-is-midi") {
-    // console.log(postSlug);
-    //   var DiscourseEmbed = {
-    //     discourseUrl: 'https://forum.musicsequencing.com/',
-    //     discourseEmbedUrl: 'https://www.musicsequencing.com/article/what-is-midi/'
-    //   };
-
-    //   // console.log(DiscourseEmbed.discourseEmbedUrl);
-
-    //   // (function () {
-    //   //   var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    //   //   d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    //   //   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-    //   // })();
-    //   function doDiscourse() {
-    //     var d = document.createElement('script');
-    //     d.type = 'text/javascript';
-    //     d.async = true;
-    //     d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    //     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-    //   };
-
-    //   console.log(document.getElementsByTagName('body')[0])
-    //   doDiscourse();
-    // }
-  }
-
-
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
