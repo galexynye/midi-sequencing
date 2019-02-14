@@ -6,7 +6,7 @@ import { HomeSection } from '../HomeSection'
 // import { WidthWrapper } from "../../00_utilities/WidthWrapper"
 // import { ResponsivePhoto } from "../../00_utilities/ResponsivePhoto"
 
-import MsForumsPic from '../../../assets/Temporary/MsForumWhite.png'
+import MsForumsPic from '../../../assets/Backgrounds/ForumPic.jpg'
 
 export class FreeForums extends PureComponent {
     render() {
@@ -20,13 +20,12 @@ export class FreeForums extends PureComponent {
 
                     <FlexboxOrganism margin="0px 0px 0px 0px" flexFlow="column" alignItems="flex-start">
 
-                        <h3>Say hi</h3>
+                        <h3>New Forums!</h3>
 
 
                         <p>Get feedback on your music.</p>
-                        <p>Give feedback to others,
-                                    ask questions and comment on articles.</p>
-                        <p>Let's help each other get better.</p>
+                        <p>Ask questions and comment on articles.</p>
+                        <p>Talk about music. All for free :)</p>
 
 
                         <WidthWrapper width="250px" margin="20px 0px 0px 0px">

@@ -26,7 +26,7 @@ export const HomeAbout = (props) => {
                     <p>Hi. My name is Alex. I make music and I made this website.</p>
                     {/* <p>You might be confused...the site seemed professional. Well buddy, I programmed it myself. Took that picture too.</p> */}
                     <p>Half this site is free articles/videos teaching music production.
-                                     The other half is my blog; more opinions, less teaching.</p>
+                                     The other half is a blog; I review music gear and write opinions about other music things.</p>
                     <p>The third half is the <a href="https://forum.musicsequencing.com">forums</a>. Discussions happen there.</p>
                     <p>Also there's the <Link to="/services">Services</Link> page, where you can hire me for music stuff.</p>
 

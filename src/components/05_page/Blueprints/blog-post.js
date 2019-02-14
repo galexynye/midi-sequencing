@@ -43,7 +43,6 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <SiteContainer>
-
         <ArticleContainer>
           {/* <Layout location={this.props.location}> */}
           <Helmet
