@@ -13,8 +13,8 @@ export class FormServices extends PureComponent {
         const { _handleInputChange, _handleSubmit, email, name, service, budget, servicesOptions, message, deadline } = this.props
         return (
             <form onSubmit={_handleSubmit}>
-                <InputString _handleChange={_handleInputChange} value={email} type="email" label="email" labelText="Email*" required={true}></InputString>
                 <InputString _handleChange={_handleInputChange} value={name} type="text" label="name" labelText="Name*" required={true}></InputString>
+                <InputString _handleChange={_handleInputChange} value={email} type="email" label="email" labelText="Email*" required={true}></InputString>
                 <InputSelect _handleChange={_handleInputChange} value={service} options={servicesOptions} label="service" labelText="What needs done?" />
                 <InputString _handleChange={_handleInputChange} value={deadline} type="date" label="deadline" labelText="Deadline (if applicable)" ></InputString>
                 <InputString _handleChange={_handleInputChange} value={budget} type="text" label="budget" labelText="Budget" ></InputString>

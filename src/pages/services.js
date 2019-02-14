@@ -1,190 +1,252 @@
 
 import React from 'react'
-import axios from 'axios'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import Recaptcha from 'react-recaptcha'
-import { WidthWrapper, GridContainer } from '../components/00_utilities/Utilities'
+import { findDOMNode } from 'react-dom'
+import ReactPlayer from 'react-player'
+import { WidthWrapper, GridContainer, ResponsiveIframe, FlexboxOrganism, ResponsivePhoto } from '../components/00_utilities/Utilities'
 import SiteContainer from '../components/05_page/Layout/SiteContainer'
 import { msTheme } from '../styles/Theme'
 import { ArticleContainer } from '../components/05_page/ArticleContainer'
 import { HeroService } from '../components/04_template/HeroServices'
 import { ServicesCards } from "../components/03_organism/ServicesCards";
-import { FormServices } from '../components/03_organism/FormServices'
-import { Loading } from '../components/01_atom/Loading'
-import { Message } from '../components/01_atom/Message'
-import { ButtonCTA } from '../components/01_atom/ButtonCTA'
-import { PortfolioServices } from '../components/04_template/PortfolioServices'
 import { ServicesMovies } from '../components/03_organism/ServicesMovies';
+import { ServicesForm } from '../components/04_template/ServicesForm'
+import { servicesPortfolio } from "../sitedata/musicData";
+import { ButtonCTA } from '../components/01_atom/ButtonCTA';
+import { ButtonNoStyle } from '../components/01_atom/BottonNoStyle';
+import { PortfolioCard } from '../components/02_molecule/PortfolioCard';
+
+
+const Fixer = styled.div`
+    position: fixed ; 
+    bottom: 0;
+    right: 0;
+    width: ${props => props.width || '99vw'};
+    z-index: 100000;
+    ${msTheme.mediaquery().medium}{
+        width: 100vw;
+    }
+`
 
 
 
-const recaptchaKey = process.env.RECAPTCHA_KEY
-const contactApi = process.env.MS_API_CONTACT
 
-// Services Page, contains the State and methods for the Services form. Including options for services (in the render method)
+// Services Page, contains the State and methods for the React Player 
 
 class Services extends React.PureComponent {
     constructor(props) {
         super(props)
-        // let now = new Date()
-        // now = now.toISOString().substr(0, 10)
         this.state = {
-            email: '',
-            name: '',
-            service: '--Select--',
-            budget: '',
-            deadline: '',
-            message: '',
-            recaptcha: false,
-            recaptchaLoaded: false,
-            form: true,
-            loading: false,
-            error: false,
-            success: false,
-
+            showReactPlayer: false,
+            url: null,
+            pip: false,
+            playing: false,
+            controls: true,
+            light: false,
+            volume: 0.8,
+            muted: false,
+            played: 0,
+            loaded: 0,
+            duration: 0,
+            playbackRate: 1.0,
+            loop: false
         }
     }
 
-    _handleInputChange = (event) => {
-        const target = event.target;
-        const value = target.type === 'checkbox' ? target.checked : target.value;
-        const name = target.name;
+    load = (url, iframe) => {
         this.setState({
-            [name]: value
-        });
+            showReactPlayer: true,
+            iframe, // hide my Custom Controls if iframe, 
+            controls: true,
+            url,
+            playing: true,
+            played: 0,
+            loaded: 0,
+            pip: false
+        })
+    }
+    playPause = () => {
+        this.setState({ playing: !this.state.playing })
+    }
+    stop = () => {
+        this.setState({ url: null, playing: false, showReactPlayer: false })
+    }
+    setVolume = e => {
+        this.setState({ volume: parseFloat(e.target.value) })
+    }
+    onPlay = () => {
+        // console.log('onPlay')
+        this.setState({ playing: true })
+    }
+    onPause = () => {
+        // console.log('onPause')
+        this.setState({ playing: false })
+    }
+    onSeekMouseDown = e => {
+        // e.preventDefault()
+        this.setState({ seeking: true })
+    }
+    onSeekChange = e => {
+        // console.log(e.target.value)
+        this.setState({ played: parseFloat(e.target.value) })
     }
 
-    _handleSubmit = (event) => {
-        event.preventDefault()
-        if (!this.state.recaptcha) {
-            this.setState({
-                noRoboConfirm: true
-            })
-            alert("Please confirm you're not a robot.")
-        } else {
-            this.setState({
-                form: false,
-                loading: true
-            })
-            axios.post(contactApi, {
-                email: this.state.email,
-                name: this.state.name,
-                service: this.state.service,
-                budget: this.state.budget,
-                deadline: this.state.deadline,
-                message: this.state.message,
-                origin: 'serviceForm' // Very important that this matches the Backend API emails object
-            }).then((response) => {
-                this.setState({
-                    success: true,
-                    loading: false
-                })
-                console.log(response);
-            })
-                .catch((error) => {
-                    this.setState({
-                        error: true,
-                        loading: false
-                    })
-
-                    console.log(error);
-                });
+    onSeekMouseUp = e => {
+        // e.preventDefault()
+        this.setState({ seeking: false })
+        this.player.seekTo(parseFloat(e.target.value))
+    }
+    onProgress = state => {
+        // console.log('onProgress', state)
+        // We only want to update time slider if we are not currently seeking
+        if (!this.state.seeking) {
+            this.setState(state)
         }
     }
-
-    _recaptchaLoaded = () => {
-        this.setState({
-            recaptchaLoaded: true
-        })
+    onEnded = () => {
+        console.log('onEnded')
+        this.setState({ playing: this.state.loop })
+    }
+    onDuration = (duration) => {
+        // console.log('onDuration', duration)
+        this.setState({ duration })
+    }
+    onClickFullscreen = () => {
+        screenfull.request(findDOMNode(this.player))
     }
 
-    _verifyHuman = () => {
-        this.setState({
-            recaptcha: true
-        })
+    ref = player => {
+        this.player = player
     }
 
-    _resetState = () => {
-        this.setState({
-            email: '',
-            name: '',
-            service: '--Select--',
-            budget: '',
-            deadline: '',
-            message: '',
-            recaptcha: false,
-            recaptchaLoaded: false,
-            form: true,
-            loading: false,
-            error: false,
-            success: false,
-        })
-    }
+
 
     render() {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
-        // Options for Services
-        const servicesOptions = ['--Select--', 'Custom Music', 'Mixing', 'Mastering', 'Producing', 'Licensing', 'I want help learning music', 'So many things', 'Other']
 
-        // Error Message Component
-        const Oops =
-            <WidthWrapper width="350px" margin="0px">
-                <Message title="Oops..." message="Something went wrong." />
-                <ButtonCTA _handleClick={this._resetState} text="Click to reload Music Services Form" bgColor={msTheme.colors.secondarylighter} />
-            </WidthWrapper>
+        const { url, playing, controls, light, volume, muted, loop, played, loaded, duration, playbackRate, pip, iframe } = this.state
 
-        // Services form 
-        const ServicesForm =
-            <div className="mB40">
-                <FormServices
-                    _handleInputChange={this._handleInputChange}
-                    _handleSubmit={this._handleSubmit}
-                    email={this.state.email}
-                    name={this.state.name}
-                    service={this.state.service}
-                    servicesOptions={servicesOptions}
-                    message={this.state.message}
-                    deadline={this.state.deadline}
-                    budget={this.state.budget}
-                />
-                {this.state.noRoboConfirm && <p className="headerFont">Please confirm you are not a robot below.</p>}
-                <Recaptcha
-                    sitekey={recaptchaKey}
-                    render="explicit"
-                    onloadCallback={this._recaptchaLoaded}
-                    verifyCallback={this._verifyHuman}
-                />
+        // Portfolio cards
+        const portfolio = servicesPortfolio.map(x =>
+            <PortfolioCard>
+                <FlexboxOrganism justifyContent="space-between" alignItems="flex-start" height="100%" >
+                    <ButtonNoStyle onClick={() => this.load(x.src, x.iframe)}>
+                        <ResponsivePhoto src={x.img} />
+                    </ButtonNoStyle>
+                    <WidthWrapper margin="0px">
+                        <h3 className="mT20 altHeader">{x.title}</h3>
+                    </WidthWrapper>
+                    <p className="altP">{x.credits}</p>
+                    {/* Different buttons depending on whether the work is playing state */}
+                    {(url != x.src) && <ButtonCTA
+                        text={x.watchOrListen}
+                        key={x.src}
+                        bgColor={msTheme.colors.primary}
+                        color="white"
+                        _handleClick={() => this.load(x.src, x.iframe)}
+                    />}
+                    {(url == x.src && playing) && <ButtonCTA
+                        text={loaded ? 'Pause' : 'Loading...'}
+                        key={x.src}
+                        bgColor={msTheme.colors.primarylight}
+                        color="white"
+                        _handleClick={this.playPause}
+                    />}
+                    {(url == x.src && !playing) && <ButtonCTA
+                        text='Play'
+                        key={x.src}
+                        bgColor={msTheme.colors.primarylight}
+                        color="white"
+                        _handleClick={this.playPause}
+                    />}
+                </FlexboxOrganism>
+            </PortfolioCard>)
+
+
+
+        // Music Portfolio Section
+        const MusicPortfolio =
+            <div>
+                <WidthWrapper width="100%">
+                    <GridContainer>
+                        <h2 className="mB40 colorPrimary">Music</h2>
+                    </GridContainer>
+                </WidthWrapper>
+
+                <GridContainer gTC="1fr 1fr 1fr 1fr" gTCS="1fr 1fr" gTCM="1fr 1fr " gTCL="1fr 1fr 1fr 1fr" gridGap="40px 30px" gridGapL="10px 20px">
+                    {portfolio}
+                </GridContainer>
             </div>
 
-        // Service form Section With render logic / loading / success or error
-        const CompleteFormProcess =
-            <GridContainer className="mT60" gTC=" 1fr" gTCL="1fr" gTCM="1fr" id="requestBooking">
-                <div>
-                    <h2 className="colorPrimary mB40">Request a booking</h2>
-                    {this.state.loading && <Loading text="Sending..." />}
-                    {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.primary} message="Thanks for reaching out, a confirmation email should arrive shortly!" />}
-                    {this.state.error && Oops}
-                    {this.state.form && ServicesForm}
-                </div>
-            </GridContainer>
 
         return (
-            <SiteContainer headerPosition="absolute">
-                <Helmet
-                    meta={[{ name: 'description', content: 'Professional producing, mixing, mastering and original music for hire.' }]}
-                    title={`Professional Music Services - Mixing, Mastering, Producing and Original Music | ${siteTitle}`}
-                >
-                    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
-                </Helmet>
-                <HeroService />
-                <ServicesCards />
-                <ServicesMovies />
-                <PortfolioServices />
-                {CompleteFormProcess}
-            </SiteContainer>
+            <div>
+                <SiteContainer headerPosition="absolute">
+                    <Helmet
+                        meta={[{ name: 'description', content: 'Professional producing, mixing, mastering and original music for hire.' }]}
+                        title={`Professional Music Services - Mixing, Mastering, Producing and Original Music | ${siteTitle}`}
+                    >
+                        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+                    </Helmet>
+
+                    <HeroService />
+                    <ServicesCards />
+                    <ServicesMovies />
+                    {MusicPortfolio}
+                    <ServicesForm />
+
+                </SiteContainer>
+
+                <Fixer> {/* React PLayer Goes Outside the SiteContainer Because it needs to be a FIXED to the Window and NOT the <MainContainer> on mobile */}
+                    {this.state.showReactPlayer &&
+                        // Article Container restricts the width on mobile playback
+                        <ArticleContainer margin="0px auto" padding="0px">
+                            <Fixer width={iframe ? '50vw' : '99.5vw'}>
+                                <WidthWrapper width="50px" widthSmall="50px" margin="0px 0px 0px auto" className="hideMedium">
+                                    {/* Closes out the player, not shown on mobile */}
+                                    <ButtonCTA
+                                        _handleClick={this.stop}
+                                        bgColor={msTheme.colors.primary}
+                                        text="x"
+                                        color="white"
+                                        margin=" 0px"
+                                        borderRadius="50%"
+                                    />
+                                </WidthWrapper>
+
+                                <ResponsiveIframe paddingTop={!iframe ? '0px' : false} >
+                                    <ReactPlayer
+                                        ref={this.ref}
+                                        url={url}
+                                        width='100%'
+                                        height={iframe ? '100%' : '42px'}
+                                        playing={playing}
+                                        controls={controls}
+                                        light={light}
+                                        loop={loop}
+                                        playbackRate={playbackRate}
+                                        volume={volume}
+                                        muted={muted}
+                                        // onReady={() => console.log('onReady')}
+                                        // onStart={() => console.log('onStart')}
+                                        onPlay={this.onPlay}
+                                        onPause={this.onPause}
+                                        // onBuffer={() => console.log('onBuffer')}
+                                        // onSeek={e => console.log('onSeek', e)}
+                                        onEnded={this.onEnded}
+                                        // onError={e => console.log('onError', e)}
+                                        onProgress={this.onProgress}
+                                        onDuration={this.onDuration}
+                                    />
+                                </ResponsiveIframe>
+                            </Fixer>
+                        </ArticleContainer>
+                    }
+                </Fixer>
+            </div>
         )
     }
 }

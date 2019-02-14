@@ -6,7 +6,6 @@ import { ResponsiveIframe, WidthWrapper, GridContainer, FlexboxOrganism, Respons
 import { servicesPortfolio } from "../../sitedata/musicData";
 import { ArticleContainer } from '../05_page/ArticleContainer';
 import { ButtonCTA } from '../01_atom/ButtonCTA';
-import { InputRangeSlider } from '../01_atom/InputRangeSlider';
 import { ButtonNoStyle } from '../01_atom/BottonNoStyle';
 import { msTheme } from '../../styles/Theme';
 import { PortfolioCard } from '../02_molecule/PortfolioCard';
