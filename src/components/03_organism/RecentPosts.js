@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { StaticQuery, graphql, Img } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import { msTheme } from '../../styles/Theme'
 import { PostCardHomeRecent } from '../02_molecule/PostCardHomeRecent'
 import { GridContainer, GridItem } from '../00_utilities/Utilities'
