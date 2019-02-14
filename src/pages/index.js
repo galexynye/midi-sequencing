@@ -11,6 +11,9 @@ import { HeroHome } from "../components/04_template/HeroHome";
 import { FreeForums } from "../components/04_template/Home/FreeForums";
 import { HomeAbout } from '../components/04_template/Home/HomeAbout';
 import { RecentPosts } from '../components/03_organism/RecentPosts';
+import { LearnCards } from '../components/03_organism/LearnCards';
+import { HomeSection } from '../components/04_template/HomeSection';
+import { GridContainer } from '../components/00_utilities/Utilities';
 
 
 // Sets A Main Container Size
@@ -41,6 +44,13 @@ export default class Home extends React.Component {
         <FreeForums maxWidth={containerSize} color={msTheme.colors.primary} />
 
         <RecentPosts></RecentPosts>
+
+        <HomeSection>
+          {/* <GridContainer >
+            <h3>Learn</h3>
+          </GridContainer> */}
+          <LearnCards />
+        </HomeSection>
 
         <HomeAbout maxWidth={containerSize} color={msTheme.colors.secondary} />
 
