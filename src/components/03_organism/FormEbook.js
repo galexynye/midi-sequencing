@@ -65,7 +65,7 @@ export class FormEbook extends React.PureComponent {
                         loading: false,
                         success: true
                     })
-                    console.log(response);
+                    // console.log(response);
                 })
                 .catch((error) => {
                     this.setState({
@@ -73,7 +73,7 @@ export class FormEbook extends React.PureComponent {
                         loading: false,
                         error: true
                     })
-                    console.log(error);
+                    // console.log(error);
                 });
         }
     }

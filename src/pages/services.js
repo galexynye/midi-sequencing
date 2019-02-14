@@ -106,7 +106,7 @@ class Services extends React.PureComponent {
         }
     }
     onEnded = () => {
-        console.log('onEnded')
+        // console.log('onEnded')
         this.setState({ playing: this.state.loop })
     }
     onDuration = (duration) => {

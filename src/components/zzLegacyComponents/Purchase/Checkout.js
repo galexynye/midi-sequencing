@@ -107,7 +107,7 @@ class Checkout extends React.Component {
                     }),
                 })
                     .then(res => {
-                        console.log("Transaction processed successfully")
+                        // console.log("Transaction processed successfully")
                         this.setState({ paymentMessage: paymentSuccess })
                         return res
                     })

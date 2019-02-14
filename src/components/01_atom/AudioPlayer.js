@@ -30,7 +30,7 @@ export class AudioPlayer extends PureComponent {
         this.setState({
             [name]: value
         });
-        console.log(this.state)
+        // console.log(this.state)
     }
 
     _volumeChange = (event) => {

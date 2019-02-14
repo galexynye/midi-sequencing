@@ -69,14 +69,14 @@ class Learn extends React.Component {
                     success: true,
                     loading: false
                 })
-                console.log(response);
+                // console.log(response);
             })
                 .catch((error) => {
                     this.setState({
                         error: true,
                         loading: false
                     })
-                    console.log(error);
+                    // console.log(error);
                 });
         }
     }

@@ -82,7 +82,7 @@ class ContactForm extends React.Component {
 
   _handleChange(e) {
     this.setState({ [e.target.name]: e.target.value })
-    console.log(this.state)
+    // console.log(this.state)
   }
 
   _handleSubmit(e) {

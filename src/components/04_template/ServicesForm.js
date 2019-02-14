@@ -65,7 +65,7 @@ export class ServicesForm extends PureComponent {
                     success: true,
                     loading: false
                 })
-                console.log(response);
+                // console.log(response);
             })
                 .catch((error) => {
                     this.setState({
@@ -73,7 +73,7 @@ export class ServicesForm extends PureComponent {
                         loading: false
                     })
 
-                    console.log(error);
+                    // console.log(error);
                 });
         }
     }

@@ -41,6 +41,12 @@ const CategoryCardStyled = styled.div`
         } */
     }
     
+    ${msTheme.mediaquery().medium}{
+        p{
+            /* Shows the description for the coming soon / when there is no button */
+            display: ${props => props.hideButton ? 'initial' : 'none'}; 
+        }
+    }
 `
 
 export const CategoryCard = ({ title, description, to, hideButton, hoverColor, color, textColor }) => {
@@ -48,10 +54,8 @@ export const CategoryCard = ({ title, description, to, hideButton, hoverColor, c
         <div>
             <Link to={to} className="tDNone">
                 {/* <CategoryCardStyled onClick={() => navigate(`${to}`)} role="link" tabIndex="0"> */}
-                <CategoryCardStyled hoverColor={hoverColor} color={color} textColor={textColor}>
-
+                <CategoryCardStyled hoverColor={hoverColor} color={color} textColor={textColor} hideButton={hideButton}>
                     <h2>{title}</h2>
-
                     <p>{description}</p>
                     {!hideButton &&
                         <WidthWrapper width="200px" widthSmall="200px">
