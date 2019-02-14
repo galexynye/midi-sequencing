@@ -1,6 +1,6 @@
 import { msTheme } from "../styles/Theme";
 
-export const learnCategoryCardsData = [
+export const learnCardsData = [
     {
         title: 'Mentorship',
         description: "The most effective way to get better at music. Tap here or scroll down to read more.",

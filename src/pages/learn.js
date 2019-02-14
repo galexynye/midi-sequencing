@@ -9,15 +9,12 @@ import Recaptcha from 'react-recaptcha'
 import { msTheme } from '../styles/Theme'
 import { PageTitle } from '../components/01_atom/PageTitle';
 import { GridContainer, WidthWrapper, GridItem } from '../components/00_utilities/Utilities';
-import { CategoryCard } from '../components/02_molecule/CategoryCard';
-import { learnCategoryCardsData } from '../sitedata/learndata'
 import { InputString } from "../components/01_atom/InputString";
 import { InputSubmit } from '../components/01_atom/InputSubmit';
-import { InputTextarea } from '../components/01_atom/InputTextarea';
-import { InputSelect } from '../components/01_atom/InputSelect';
 import { Loading } from '../components/01_atom/Loading'
 import { Message } from '../components/01_atom/Message'
 import { ButtonCTA } from '../components/01_atom/ButtonCTA'
+import { LearnCards } from '../components/03_organism/LearnCards';
 
 const recaptchaKey = process.env.RECAPTCHA_KEY
 const contactApi = process.env.MS_API_CONTACT
@@ -112,18 +109,6 @@ class Learn extends React.Component {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
 
-        const learnCategoryCards = learnCategoryCardsData.map(x => {
-            return (
-                <CategoryCard
-                    title={x.title}
-                    description={x.description}
-                    to={x.link}
-                    hideButton={x.hideButton}
-                    color={x.color}
-                />
-            )
-        })
-
         const Oops = <WidthWrapper width="350px">
             <Message title="Oops..." message="Something went wrong." />
             <ButtonCTA _handleClick={this._resetState} text="Click to reload the lessons form" bgColor={msTheme.colors.secondarylighter} />
@@ -155,14 +140,13 @@ class Learn extends React.Component {
                 >
                     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
                 </Helmet>
+
                 <PageTitle title="Learn Music" description="Tutorials, Articles, & Mentorship"></PageTitle>
-                <GridContainer gTC="repeat(3, 1fr)" className="mB60 mT40">
-                    {learnCategoryCards}
-                </GridContainer>
-                {/* <GridContainer id="mentoring">
 
 
-                </GridContainer> */}
+                <LearnCards />
+
+
                 <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr" className="headerFont" id="mentorship">
                     <div>
                         <h2 className="colorPrimary">Mentorship</h2>
@@ -198,7 +182,6 @@ class Learn extends React.Component {
                         <p className="headerFont"><span className="bold">Any guarantees?</span> - Yes. If you are not happy with the lessons you can get a full refund.</p>
                         <p className="headerFont"><span className="bold">What if I have to cancel a scheduled lesson?</span> - Let me know as far in advance as possible and we'll reschedule. So far people have been respectful with this policy.</p>
                         <p className="headerFont"><span className="bold">More questions?</span> - Ask me on the <Link to="/contact">contact page</Link>.</p>
-
                     </div>
                 </GridContainer>
 

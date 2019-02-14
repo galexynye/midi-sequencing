@@ -8,7 +8,7 @@ import { WidthWrapper, FlexboxOrganism } from '../00_utilities/Utilities';
 // Description (50%)
 // BG pic potentially 
 
-const CategoryCardStyled = styled.div`
+const LearnCardStyled = styled.div`
     border: 2px solid ${props => props.color || msTheme.colors.text};
     display: flex;
     flex-flow: column;
@@ -49,20 +49,22 @@ const CategoryCardStyled = styled.div`
     }
 `
 
-export const CategoryCard = ({ title, description, to, hideButton, hoverColor, color, textColor }) => {
+export const LearnCard = ({ title, description, to, hideButton, hoverColor, color, textColor, hideDescription }) => {
     return (
         <div>
             <Link to={to} className="tDNone">
-                {/* <CategoryCardStyled onClick={() => navigate(`${to}`)} role="link" tabIndex="0"> */}
-                <CategoryCardStyled hoverColor={hoverColor} color={color} textColor={textColor} hideButton={hideButton}>
+                <LearnCardStyled hoverColor={hoverColor} color={color} textColor={textColor} hideButton={hideButton}>
                     <h2>{title}</h2>
-                    <p>{description}</p>
+                    {/* Shows Description when there is no button even if hideDescription is enabled for rest of cards (For the end of blog Post Pages) */}
+                    {(!hideDescription || hideButton) && <p>{description}</p>}
+
                     {!hideButton &&
                         <WidthWrapper width="200px" widthSmall="200px">
                             <ButtonCTA text={`Learn more`} bgColor={color ? color : msTheme.colors.primary} color="white" />
-                        </WidthWrapper>}
+                        </WidthWrapper>
+                    }
 
-                </CategoryCardStyled>
+                </LearnCardStyled>
             </Link>
         </div>
 

@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import SiteContainer from '../Layout/SiteContainer'
 import { ArticleContainer } from '../ArticleContainer';
 import { PageTitle } from '../../01_atom/PageTitle';
+import { LearnCards } from '../../03_organism/LearnCards';
 
 const TagsList = styled.ul`
   list-style-type: none;
@@ -55,7 +56,11 @@ const Tags = ({ pageContext, data }) => {
           All tags
       </Link>
 
+
       </ArticleContainer>
+
+      <LearnCards />
+
 
     </SiteContainer>
   )
