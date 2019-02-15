@@ -36,12 +36,12 @@ export default class Home extends React.Component {
       <SiteContainer headerPosition="absolute">
         <Helmet
           meta={[{ name: 'description', content: 'Articles, Tutorials, Professional Music Services and a Blog on Music Production' }]}
-          title={`${siteTitle} - Learn Music Production`}
+          title={`${siteTitle}`}
         />
 
         <HeroHome />
 
-        <FreeForums maxWidth={containerSize} color={msTheme.colors.primary} />
+
 
         <RecentPosts></RecentPosts>
 
@@ -51,7 +51,7 @@ export default class Home extends React.Component {
           </GridContainer> */}
           <LearnCards />
         </HomeSection>
-
+        <FreeForums maxWidth={containerSize} color={msTheme.colors.primary} />
         <HomeAbout maxWidth={containerSize} color={msTheme.colors.secondary} />
 
       </SiteContainer >
