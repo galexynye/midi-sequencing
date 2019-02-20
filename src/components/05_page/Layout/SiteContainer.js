@@ -120,6 +120,7 @@ a {
     }
 }
 
+
 .colorPrimary {
     color: ${msTheme.colors.primary}
 }
