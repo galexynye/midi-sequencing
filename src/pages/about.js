@@ -26,16 +26,9 @@ class About extends React.Component {
                     {/* <h1 className="colorPrimary h1Big">About</h1> */}
 
 
-
-                    <h2>How to Use this Site</h2>
-                    <p>Under <Link to="/learn">Learn</Link> in the top menu you’ll find articles and resources from beginning to advanced topics on making music. If there is anything missing or confusing, let me know! Under each article is a forum discussion where you can ask questions or make suggestions, I’ll listen, and the quality will improve.</p>
-                    <p>In the <Link to="/blog">Blog</Link> I offer my opinions and perspective on mostly music stuff.
-                    I’ve been doing this a long time but don’t claim to be a single source of truth on anything. If you agree or disagree that’s great, everyone can benefit from an open dialogue, I can’t see from every angle and love having my perspective altered. </p>
-                    <p>If you are interested in hiring me to do something music related, go to the <Link to="/services">Services</Link> page.</p>
-
-
                     <h2>Who are you?</h2>
                     {/* <Img fluid={RiftRain} /> */}
+                    <p>Here's the the short version</p>
 
                     <ul>
                         <li>Name is Alex Nye </li>
@@ -49,7 +42,15 @@ class About extends React.Component {
                         <li>Had a kid </li>
                         <li>Releasing a new original production at the start of every month in 2019; a playlist called “Spacetime Rio"</li>
                     </ul>
+                    {/* <p>Here's the long version.</p> */}
                     {/* <ResponsivePhoto src={RiftRain} /> */}
+
+                    <h2>How to Use this Site</h2>
+                    <p>Under <Link to="/learn">Learn</Link> in the top menu you’ll find articles and resources from beginning to advanced topics on making music. If there is anything missing or confusing, let me know! Under each article is a forum discussion where you can ask questions or make suggestions, I’ll listen, and the quality will improve.</p>
+                    <p>In the <Link to="/blog">Blog</Link> I offer my opinions and perspective on mostly music stuff.
+                    I’ve been doing this a long time but don’t claim to be a single source of truth on anything. If you agree or disagree that’s great, everyone can benefit from an open dialogue, I can’t see from every angle and love having my perspective altered. </p>
+                    <p>If you are interested in hiring me to do something music related, go to the <Link to="/services">Services</Link> page.</p>
+
 
                     <h2>Can I hire you?</h2>
                     <p>Yes, fill out the form on my <Link to="/services">Services</Link> page and I’ll get back to you. </p>
