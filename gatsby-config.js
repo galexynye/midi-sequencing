@@ -14,6 +14,7 @@ module.exports = {
         name: 'pages',
       },
     },
+    //Note: I have excluded tag pages in the gatsby sitemap plugin via inside the node modules - see here under options for how / why https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-styled-components`,
