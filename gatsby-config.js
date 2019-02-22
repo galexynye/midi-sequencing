@@ -15,7 +15,33 @@ module.exports = {
       },
     },
     //Note: I have excluded tag pages in the gatsby sitemap plugin via inside the node modules - see here under options for how / why https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/
-    `gatsby-plugin-sitemap`,
+    // `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/ms-sitemap.xml`,
+        // Exclude specific pages or groups of pages using glob parameters
+        // See: https://github.com/isaacs/minimatch
+        // The example below will exclude the single `path/to/page` and all routes beginning with `category`
+        exclude: ["/tags/*"],
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+      }`
+      }
+    },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-styled-components`,
     {
