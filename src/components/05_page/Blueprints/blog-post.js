@@ -90,7 +90,7 @@ class BlogPostTemplate extends React.Component {
             <Helmet
               htmlAttributes={{ lang: 'en' }}
               meta={[{ name: 'description', content: `${post.excerpt}` }]}
-              title={`${post.frontmatter.title} - ${post.frontmatter.subcategory} | ${siteTitle}`}
+              title={`${post.frontmatter.title} - ${post.frontmatter.category}`}
             >
               <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
 
@@ -214,6 +214,7 @@ export const pageQuery = graphql`
         hideDate
         tags
         author
+        category
         subcategory
       }
     }
