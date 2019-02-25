@@ -96,7 +96,7 @@ class BlogPostTemplate extends React.Component {
 
               <script type="text/javascript">{`
               DiscourseEmbed = {discourseUrl: 'https://forum.musicsequencing.com/',
-                                 discourseEmbedUrl: 'https://www.musicsequencing.com${post.fields.slug}/' };
+                                 discourseEmbedUrl: 'https://www.musicsequencing.com${post.fields.slug}' };
             
               (function() {
                 var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
