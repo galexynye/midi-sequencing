@@ -29,7 +29,7 @@ metaDescription: 'A drum mixing technique still used today. Ever wonder how Phil
 
 <h2 >The Reverb - AMS RMX16</h2>
 
-<img class="aligncenter wp-image-1420 size-large" src="./media/how-to-phil-collins/phil-plugins-1.png" width="1024" height="547" />
+<img class="aligncenter wp-image-1420 size-large" src="./media/how-to-phil-collins/phil-plugins-1.png" alt="Plugins used to create the Phil collins sound" width="1024" height="547" />
 
 In this picture you are seeing two different plugin emulations of the AMS RMX16 reverb. The version in the back is Altiverb and it is what you can hear in the video, the one in the front is UA's emulation of the AMS RMX16. The important thing is to grab is the Non-Lin2 decay, I believe on the original unit it was in the number 8 bank.
 

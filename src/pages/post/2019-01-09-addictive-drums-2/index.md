@@ -11,7 +11,7 @@ featuredImage: './AddictiveDrums2FI.jpg'
 metaDescription: 'The Good and the Bad of Addictive Drums 2. A review and demo of what I love and what annoys me about this plugin.'
 ---
 
-<img src='./addictiveDrums2.png' />
+<img src='./addictiveDrums2.png' alt="Addictive Drums 2 plugin" />
 
 ##What's Good About Addictive Drums 2 
 

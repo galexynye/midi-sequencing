@@ -31,7 +31,7 @@ export const HomeLinkLogo = ({ padding, bgColor, borderRadius }) => {
       <Link to="/">
         <img
           src={MusicSequencing}
-        // alt="Home Link"
+          alt="Home Link Logo pic"
         />
       </Link>
     </HomeLinkStyle>

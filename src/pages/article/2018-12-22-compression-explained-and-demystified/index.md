@@ -52,7 +52,7 @@ Technically speaking, the ratio is how much the signal is getting compressed abo
 
 Here's a before and after picture of how an 8:1 ratio might affect that highest middle peak.
 
-<img src="./ratioBeforeAndAfter.jpg">
+<img src="./ratioBeforeAndAfter.jpg" alt="Compression ratio before and after">
 
 ####How do you choose a ratio?
 
@@ -135,7 +135,7 @@ In the video at the top, I set the ratio to 8:1. It's a good amount of reduction
 
 Here's how the settings on the compressor ended up. 
 
-<img src='./GetThwackCompression.jpg'>
+<img src='./GetThwackCompression.jpg' alt="Picture of the thwack compressed waveform" >
 
 Attack and release as fast as possible. Needing a good amount of makeup gain to restore the level. 
 
@@ -161,7 +161,7 @@ So in order to get the sound closer to what we started with, we don't want to at
 
 In the video I played with this idea on the fly and these were the settings I came up with. 
 
-<img src="./GetSmackCompression.jpg">
+<img src="./GetSmackCompression.jpg" alt="A smacked compressed waveform">
 
 So you can see the attack is around 10ms. Slow enough to let the initial transients through but fast enough to start reducing the body of the snare hit again. The release doesn't necessarily need to be as long as I set it, but it needs to be long enough that the compressor is still reducing the body to some extent through the end of the hit. 
 

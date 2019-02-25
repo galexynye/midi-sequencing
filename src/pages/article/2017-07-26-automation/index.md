@@ -60,7 +60,7 @@ If you had track that was panned center but at a certain point you wanted it to 
 
 Special note: <strong>Ableton Live and FL Studio don't have automation modes</strong> t<strong>o record in automation.</strong> You can record in automation by pressing record and simply moving a parameter. In FL studio make sure you create a new pattern to record automation to. In Ableton make sure you have enabled the button at the top with two circles diagonally positioned is enabled.
 
-<img src="./media/automation-basics/Ableton-Record-Automation-4.png" alt="" />
+<img src="./media/automation-basics/Ableton-Record-Automation-4.png" alt="Automation record mode in Ableton Live" />
 
 Ableton automation recording functions like touch mode automation.
 

@@ -31,7 +31,7 @@ If you are familiar with Midi Control Change Messages skip this paragraph. Midi 
 
 Here is a picture of my Midi Controller, the M-Audio Oxygen 49, labeled how the Midi Control changes are mapped to the buttons, knobs and faders.
 
-<img src="./MidiControllerCCProgramming.jpg" />
+<img src="./MidiControllerCCProgramming.jpg" alt="Labels of the midi cc messages on the midi controller faders and buttons" />
 
 There are 9 faders. The first one is Midi CC 11, which is used for expression and I do not use it to control Logic. The second fader, labeled C2, is control change 102, this is repeated for the other knobs and faders. Midi Control changes 102 - 119 are undefined. So I used them for the faders and knobs labeled C2-C17 on the keyboard and circled in red.
 
@@ -68,7 +68,7 @@ How I suggest you go about your custom set up is by starting to create music and
 
 Here is what I ended up with.
 
-<img src="./MidiKeyboardMaster1Oxygen8.jpg" />
+<img src="./MidiKeyboardMaster1Oxygen8.jpg" alt="Further labeling of the Midi CC messages programmed to the midi controller" />
 
 Sorry if it's difficult to read, I originally only made it for myself as a reference.
 
@@ -81,15 +81,15 @@ There are 2 methods you'll need to use to connect your Logic controls to your Mi
 
 Step 1. Open your Key Commands
 
-<img src="./KCCS/KeyCommand1.png" />
+<img src="./KCCS/KeyCommand1.png" alt="Open key commands in Logic Pro X" />
 
 Step 2. Search the Key Command you want connected to your midi controller
 
-<img src="./KCCS/KeyCommand2.png" />
+<img src="./KCCS/KeyCommand2.png" alt="The search for key command window in Logic Pro X" />
 
 Step 3. Press the 'Learn New Assignment' button as shown at the bottom of the image below
 
-<img src="./KCCS/KeyCommand3.png" />
+<img src="./KCCS/KeyCommand3.png" alt="The Select key command window in Logic Pro X" />
 
 Step. 4. Press the Button on Your Midi Controller
 
@@ -101,19 +101,19 @@ Not all options for controlling Logic are in the Key Commands and for that you w
 
 Step 1. Open your Control Surfaces, click Expert View
 
-<img src="./KCCS/ControlSurface1.png" />
+<img src="./KCCS/ControlSurface1.png" alt="Open menu for the control surfaces in logic" />
 
 Step 2 & 3. Press Learn Mode (the button in the bottom right corner) and then move a knob/fader or press the button you want to program
 
-<img src="./KCCS/ControlSurface2.png" />
+<img src="./KCCS/ControlSurface2.png" alt="Logic Pro X control surfaces window" />
 
 Step 4. Change the "Class" from "Channel Strip" to "Global"
 
-<img src="./KCCS/ControlSurface3.png" />
+<img src="./KCCS/ControlSurface3.png" alt="Channel strip assignment in Logic Pro X control surfaces" />
 
 Step 5. Select the Parameter you want to be controlled by your midi controller
 
-<img src="./KCCS/ControlSurface4.png" />
+<img src="./KCCS/ControlSurface4.png" alt="Parameter selection in Logic Pro X control surfaces" />
 
 Step 6. Close the menu when you're done.
 
@@ -135,4 +135,4 @@ Step 5. Close the menu or Start from Step 2 and move something else like a pan o
 
 You might have quite a bit of fiddling around until you find what fits your workflow or if using a controller works for you at all.
 
-If you would like additional help or have any suggestions feel free to contact me. Anyone interested in 1-On-1 lessons in music production, theory and technology please checkout out <a href="/lessons">the lessons page</a> for more details.
+If you would like additional help or have any suggestions feel free to contact me. Anyone interested in 1-On-1 lessons in music production, theory and technology please checkout out <a href="/learn#lessons">lessons on the learn page</a> for more details.

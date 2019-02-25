@@ -46,7 +46,7 @@ This gives the ability to change the sample with some distortions/compression an
 
 Overall the Effects chain on top of the drum sample went like this.
 
-<img src="./effectschain.png" style="align-self:left">
+<img src="./effectschain.png" alt="The whole effects chain used to create the giant drums" style="align-self:left">
 
 <div style="text-align:center">
 <ol>

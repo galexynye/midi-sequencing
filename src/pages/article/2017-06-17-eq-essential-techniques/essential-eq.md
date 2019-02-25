@@ -11,7 +11,7 @@ tags: ['mixing', 'basics', 'eq']
 metaDescription: 'This article will teach you everything you need to know about using EQ. Mastering EQ will set you on the path to mastering mixing.'
 ---
 
-<img src="./media/essential-eq/Bunch-Of-EQs-picture-1.png" alt="" />
+<img src="./media/essential-eq/Bunch-Of-EQs-picture-1.png" alt="An assortment of EQ plugins" />
 
 Behind the volume faders,<strong> EQ is THE most important tool in mixing.</strong> In this article we will talk about the different types of EQs, how to use them, and some of the best EQs ever invented (including a freebie you should download today).
 

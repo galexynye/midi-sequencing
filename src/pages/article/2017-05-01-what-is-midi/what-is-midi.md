@@ -49,7 +49,7 @@ This is only the tip of the iceburg of midi's potential.
 
 Check the back of your synth for a midi port that looks like this.
 
-<p ><img class="circle-picture alignnone wp-image-376 size-large" src="./media/what-is-midi/Standard-Midi-Port-1.jpg" alt="" width="1024" height="629" /></p>
+<p ><img class="circle-picture alignnone wp-image-376 size-large" src="./media/what-is-midi/Standard-Midi-Port-1.jpg" alt="A standard midi port" width="1024" height="629" /></p>
 
 Back in 1983, when midi first came out, these ports along with midi cables is how devices transmitted midi. These days, most midi is transmitted over USB cables. So here's how you can use your modern computer to play that vintage synth for you.
 
@@ -59,7 +59,7 @@ Create a midi track and a midi part for your synth to play inside your DAW. You 
 
 <h3 >Midi Can Control Your DAW</h3>
 <p >Earlier I mentioned "instrument shaped midi controllers". There are also all sorts of faders, knobs, buttons, pads, and touch screen based midi controllers too. Here is a (crappy)picture of my M-Audio Oxygen 49 with a bunch of controller options.</p>
-<p ><img class="circle-picture aligncenter wp-image-381 size-large" src="./media/what-is-midi/My-Midi-Controller-2.jpg" alt="" width="1024" height="376" /></p>
+<p ><img class="circle-picture aligncenter wp-image-381 size-large" src="./media/what-is-midi/My-Midi-Controller-2.jpg" alt="My personal oxygen 49 midi controller" width="1024" height="376" /></p>
 <p >You can use those faders to, well, fade stuff. Things like pitch-bend don't really benefit from an on/off type message playing a keyboard key would send. Pitch-bend needs to be controlled gradually up and down and this is done with midi data points in a range from 0 to 127. Guess what else could benefit from these type of midi messages? Your DAW's software faders.</p>
 
 If you are user of Ableton Live then you have probably noticed a Midi button in the top right corner. Watch what happens when I click it, click a track, and then move a physical fader on my Oxygen 49.

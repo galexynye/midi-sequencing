@@ -19,7 +19,7 @@ The video above gives demonstrations of the effects and the article below gives 
 
 ##EQ
 
-<img src="../2017-06-17-eq-essential-techniques/media/essential-eq/Bunch-Of-EQs-picture-1.png">
+<img src="../2017-06-17-eq-essential-techniques/media/essential-eq/Bunch-Of-EQs-picture-1.png" alt="An assortment of EQ plugins" >
 
 EQ is the most important tool used in mixing and mastering. When you want something to sound more pleasant or take up a certain space in a mix, EQ is generally what you'll need to use. 
 
@@ -31,7 +31,7 @@ Luckily, Music Sequencing has an article that goes much deeper into using EQ. Yo
 
 ##Reverb
 
-<img src="../2017-06-12-reverb-essentials/media/reverb-essentials/Reverb-Diagram-1.png">
+<img src="../2017-06-12-reverb-essentials/media/reverb-essentials/Reverb-Diagram-1.png" alt="A stick figure diagram of reverb" >
 
 Reverb is used to set a sound in a certain space. When a sound has no reverb, we say it is dry, when a sound has a lot of reverb, we say it is wet. 
 
@@ -65,7 +65,7 @@ One practical reason to use a gate is if you have background singers singing thr
 A creative use of a gate would be on a reverb. <a href="/article/mix-drums-like-phil-collins">Check out how in this tutorial.</a>
 
 ##Distortion
-<img src="./decapitator.jpg">
+<img src="./decapitator.jpg" alt="Soundtoy's decapitator distortion plugin">
 
 Distortion can heavily vary in both flavor and use. 
 
@@ -98,7 +98,7 @@ The incorrect use of compression can make something sound dull, flat or lifeless
 When using compressors make sure to level match the uncompressed sound against the compressed sound so you aren't getting fooled into thinking the louder signal is the better one. This is demonstrated in the video [here](https://youtu.be/LrzPMKg4dyU?t=405).
 
 ##Limiters
-<img src="./proLlimiter.jpg">
+<img src="./proLlimiter.jpg" alt="Fabfilter's Pro-L limiter">
 Limiters are compressors set to extreme settings. They aggressively cut off dynamics. 
 
 A very common use of a limiter is as the very last effect on the master bus of a mix or in a mastering chain. The limiter will catch any dynamics that are too loud and chop them off to prevent the sound from distorting(in a bad way).
