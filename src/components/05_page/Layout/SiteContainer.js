@@ -29,7 +29,7 @@ body{
 
 h1 {
     color: ${msTheme.colors.text};
-	font-family: ${msTheme.font.headerFont};
+	font-family: ${msTheme.font.headerFont}, Arial, Helvetica, sans-serif;
 	/* font-size: 94px; */
 	font-size: 60px;
 	font-weight: 300;
@@ -48,7 +48,7 @@ h1 {
 
 h2 {
     color: ${msTheme.colors.text};
-	font-family: ${msTheme.font.headerFont};
+	font-family: ${msTheme.font.headerFont}, Arial, Helvetica, sans-serif;
 	font-size: 34px;
 	font-weight: 600;
 	letter-spacing: -1px;
@@ -84,7 +84,7 @@ h3 {
 
 p {
     color: ${msTheme.colors.text};
-	font-family: ${msTheme.font.bodyFont};
+	font-family: ${msTheme.font.bodyFont}, Arial, Helvetica, sans-serif;
 	font-size: 19px;
 	font-weight: 500;
 	line-height: 27px;
