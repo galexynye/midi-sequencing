@@ -34,7 +34,7 @@ export const Footer = props => {
             <PaddingWrapper padding="0px 0px 20px 0px">
                 <GridContainer gTCM="1fr" gridGap="10px 60px">
                     <CardTopTitle title="Ultimate Producer's Workflow" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
-                    <CardTopTitle title="Need a music mentor?" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
+                    <CardTopTitle title="Want to try lessons?" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
                     <CardTopTitle title="Join the Forums" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
 
                     <GridItem gCSL="1" gCEL="3" alignSelf="end">
@@ -44,9 +44,9 @@ export const Footer = props => {
                     </GridItem>
 
                     <GridItem alignSelf="end">
-                        <SimpleCard imgHeight="0px" topTitle="Need a music mentor?" topTitleColor="white" topTitleBreakPoint={msTheme.breakPoints.large}>
+                        <SimpleCard imgHeight="0px" topTitle="Want to try lessons?" topTitleColor="white" topTitleBreakPoint={msTheme.breakPoints.large}>
                             <p>Learning alone is hard. I offer music lessons over the internet.</p>
-                            <ButtonCTA text="Read About Mentoring" to="/learn#mentorship" bgColor={msTheme.colors.primary} color="white" />
+                            <ButtonCTA text="Read About Lessons" to="/learn#lessons" bgColor={msTheme.colors.primary} color="white" />
                         </SimpleCard>
                     </GridItem>
 

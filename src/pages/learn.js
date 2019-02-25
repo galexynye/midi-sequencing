@@ -135,21 +135,21 @@ class Learn extends React.Component {
         return (
             <SiteContainer>
                 <Helmet
-                    meta={[{ name: 'description', content: 'Learn music production with free tutorials and articles or hire me as a mentor to help you get your music to the next level.' }]}
-                    title={`Learn Music Production - Tutorials, Articls and Mentorship from ${siteTitle}`}
+                    meta={[{ name: 'description', content: 'Learn music production with free tutorials and articles. Get lessons online to learn from a professional producer.' }]}
+                    title={`Learn Music Production - Tutorials, Articles and Lessons Online`}
                 >
                     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
                 </Helmet>
 
-                <PageTitle title="Learn Music" description="Tutorials, Articles, & Mentorship"></PageTitle>
+                <PageTitle title="Learn Music" description="Tutorials, Articles, & Lessons"></PageTitle>
 
 
                 <LearnCards />
 
 
-                <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr" className="headerFont" id="mentorship">
+                <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr" className="headerFont" id="lessons">
                     <div>
-                        <h2 className="colorPrimary">Mentorship</h2>
+                        <h2 className="colorPrimary">Lessons</h2>
                         <p className="headerFont">Having trouble getting your music to sound as good as your favorite artists?</p>
                         <p className="headerFont"> It’s difficult to know what you are doing right or wrong in isolation.</p>
                         <p className="headerFont"> The times I’ve learned the most were</p>
@@ -178,7 +178,7 @@ class Learn extends React.Component {
                         <h3 className="mB20 colorPrimary">FAQs</h3>
                         <p className="headerFont"><span className="bold">How long is a lesson?</span> - Lessons are an hour long. In-between lessons you can shoot me questions that pop up or ask for thoughts on what you're working on.</p>
                         <p className="headerFont"><span className="bold">How often are lessons?</span> - It depends on the student and their goals, it can range from once a week to once a month.</p>
-                        <p className="headerFont"><span className="bold">What do lessons cost?</span> - Some producers charge hundreds of dollars a lesson or thousands of dollars for "premium courses", mine are $60 a lesson + mentoring in-between.</p>
+                        <p className="headerFont"><span className="bold">What do lessons cost?</span> - Some producers charge hundreds of dollars a lesson or thousands of dollars for "premium courses", mine are currently priced at $45 a lesson + mentoring in-between.</p>
                         <p className="headerFont"><span className="bold">Any guarantees?</span> - Yes. If you are not happy with the lessons you can get a full refund.</p>
                         <p className="headerFont"><span className="bold">What if I have to cancel a scheduled lesson?</span> - Let me know as far in advance as possible and we'll reschedule. So far people have been respectful with this policy.</p>
                         <p className="headerFont"><span className="bold">More questions?</span> - Ask me on the <Link to="/contact">contact page</Link>.</p>

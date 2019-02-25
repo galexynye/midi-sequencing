@@ -2,9 +2,9 @@ import { msTheme } from "../styles/Theme";
 
 export const learnCardsData = [
     {
-        title: 'Mentorship',
+        title: 'Lessons',
         description: "The most effective way to get better at music. Tap here or scroll down to read more.",
-        link: '/learn#mentorship',
+        link: '/learn#lessons',
         color: msTheme.colors.primary
     },
     {
