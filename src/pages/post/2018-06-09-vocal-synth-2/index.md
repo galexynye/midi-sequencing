@@ -9,6 +9,7 @@ subcategory: ['Creative']
 company: 'iZotope'
 tags: ['synths', 'izotope', 'plugins', 'vocals']
 featuredImage: './VocalSynth2FI.jpg' 
+metaDescription: "iZotope takes sound quality to the next level with Vocal Synth 2. This demo and review shows the new sounds and features in the new version of iZotope's instant hit plugin."
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sN-ftVq9owU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

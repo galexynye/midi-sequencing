@@ -8,6 +8,7 @@ hideDate: true
 category: 'Mixing'
 subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'eq']
+metaDescription: 'This article will teach you everything you need to know about using EQ. Mastering EQ will set you on the path to mastering mixing.'
 ---
 
 <img src="./media/essential-eq/Bunch-Of-EQs-picture-1.png" alt="" />

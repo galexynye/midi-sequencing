@@ -9,6 +9,7 @@ subcategory: ['Gear']
 company: 'Korg'
 tags: ['korg', 'instrument-repair', 'blog']
 featuredImage: './KeyboardSurgery.jpg'
+metaDescription: "Korg SV-1 keyboards break all the time. If you break a key, this is how you can fix it, learn from my mistakes. Watch me replace a key and the (unnecessarily) pain staking process of putting it back together."
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/d7WWDHqrBro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

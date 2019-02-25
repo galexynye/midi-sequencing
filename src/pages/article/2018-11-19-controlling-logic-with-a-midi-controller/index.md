@@ -9,6 +9,7 @@ categoryDescription: 'Music Making Tech and How to Use It'
 subcategory: ['DAW']
 tags: ['midi-controller', 'midi', 'logic', 'm-audio', 'advanced']
 featuredImage: './MidiControllerCCProgrammingFI.jpg'
+metaDescription: "Setting up a my midi controller for Logic X was one of the best things I've done to improve my workflow. This article show you to setup your own custom midi mappings for Logic."
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LgTSsboXe1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -7,6 +7,7 @@ category: 'Producing'
 subcategory: ['Producing Techniques']
 tags: ['midi']
 featuredImage: './HumanizeMidiFIFinal.png'
+metaDescription: 'Midi will sound lifeless and robotic unless you take some steps to humanize it. Ironically, the computer can automatically make midi sound human, this article explains the process.'
 ---
 
 <iframe src="https://www.youtube.com/embed/KIQ3yvUSK00?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

@@ -7,6 +7,7 @@ learn: true
 subcategory: ['Compression']
 tags: ['mixing', 'compression', 'ears']
 featuredImage: './GoodVsBadCom.jpg'
+metaDescription: "Compression is a vital tool in creating professional sounding mixes. How can you use it if you can't hear how it's working? Learn more."
 ---
 
 <iframe src="https://www.youtube.com/embed/KBYHGCzqGGA?html5=1" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

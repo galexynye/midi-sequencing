@@ -10,6 +10,7 @@ category: 'Music Tech'
 subcategory: ['Building a Studio']
 tags: ['basics', 'software', 'daw']
 featuredImage: './Daws-20.jpg'
+metaDescription: 'Depending on the type of music you make, your DAW can really help or hurt your workflow. This article explores each of the major DAWs flaws and features so you can make an informed decision.'
 ---
 
 <!-- ![Logos of Digital Audio Workstations](./Daws-20.jpg 'Famous DAWS') -->

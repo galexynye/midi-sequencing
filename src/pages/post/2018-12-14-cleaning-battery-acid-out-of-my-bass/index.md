@@ -9,6 +9,7 @@ subcategory: ['Gear']
 company: 'Music-Man'
 tags: ['bass', 'instrument-repair', 'electronics', 'blog']
 featuredImage: './BatteryAcidFI.jpg'
+metaDescription: 'If you find battery acid has leaked into something important, here is how to safely and quickly fix the problem.'
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WmgMVN2gTtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

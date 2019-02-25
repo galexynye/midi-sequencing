@@ -8,6 +8,7 @@ subcategory: ['Creative']
 company: 'Native Instruments'
 tags: ['gear', 'native-instruments', 'free']
 featuredImage: './boscomacFI.jpg'
+metaDescription: "Hands down the best donationware music software I've ever seen. Effects, synths and sampled instruments that run in Native Instruments created by the mysterious Boscomac."
 ---
 
 <iframe  src="https://www.youtube.com/embed/Ay4M8fi5zRM" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

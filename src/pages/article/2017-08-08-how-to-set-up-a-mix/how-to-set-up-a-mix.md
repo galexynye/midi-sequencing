@@ -8,6 +8,7 @@ category: 'Mixing'
 subcategory: ['Mixing Basics']
 tags: ['organize', 'mixing', 'workflow']
 featuredImage: './media/how-to-set-up-a-mix/Routing-Audio-1-1024x626.png'
+metaDescription: 'Simply setting up a mix well can be the difference from creating a professional sounding mix and getting lost in a sonic meier. This article is shows how to set up a mix to ensure you are always in control of the sound.'
 ---
 
 <img src="./media/how-to-set-up-a-mix/Routing-Audio-1-1024x626.png" alt="Image Guide">

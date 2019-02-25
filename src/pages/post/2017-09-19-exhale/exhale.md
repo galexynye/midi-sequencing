@@ -9,6 +9,7 @@ subcategory: ['Soft Synths']
 company: 'Output'
 tags: ['output', 'gear']
 featuredImage: './ExhaleFI.jpg'
+metaDescription: 'Exhale by Output is a beast. This review gives an overview of the plugin, shows the sounds, presets, loops and more.'
 ---
 
 <iframe src="https://www.youtube.com/embed/gu18sGiSR7Y" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

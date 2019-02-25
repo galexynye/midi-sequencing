@@ -7,6 +7,7 @@ learn: true
 subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'automation', 'fadeout']
 featuredImage: './media/automation-basics/automation-1.png'
+metaDescription: 'Automation is one of the key differences between a professional sounding mix and an amateur one. Automation brings a mix to life, creates depth, and musicality in a mix.'
 ---
 
 <img src="./media/automation-basics/automation-1.png" alt="Ableton Automation Example" width="1024" height="665" />

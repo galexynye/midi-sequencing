@@ -9,6 +9,7 @@ subcategory: ['Creative']
 company: 'Native Instruments'
 tags: ['native-instruments', 'gear', 'guitar']
 featuredImage: './GuitarRig.jpg'
+metaDescription: 'Guitar Rig has been a gold standard of amp emulation for over a decade. This review goes through it presets, tones and other effects offered by this behemoth plugin.'
 ---
 
 <iframe src="https://www.youtube.com/embed/akDrNX4Jdzg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
