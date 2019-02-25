@@ -89,7 +89,7 @@ class BlogPostTemplate extends React.Component {
             {/* <Layout location={this.props.location}> */}
             <Helmet
               htmlAttributes={{ lang: 'en' }}
-              meta={[{ name: 'description', content: `${post.metaDescription ? post.metaDescription : post.excerpt}` }]}
+              meta={[{ name: 'description', content: `${post.frontmatter.metaDescription ? post.frontmatter.metaDescription : post.excerpt}` }]}
               title={`${post.frontmatter.title} - ${post.frontmatter.category}`}
             >
               <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
