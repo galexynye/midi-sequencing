@@ -89,11 +89,11 @@ class BlogPostTemplate extends React.Component {
             {/* <Layout location={this.props.location}> */}
             <Helmet
               htmlAttributes={{ lang: 'en' }}
-              meta={[{ name: 'description', content: `${post.excerpt}` }]}
+              meta={[{ name: 'description', content: `${post.metaDescription ? post.metaDescription : post.excerpt}` }]}
               title={`${post.frontmatter.title} - ${post.frontmatter.category}`}
             >
               <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-
+              {/* Embed for the forum posts */}
               <script type="text/javascript">{`
               DiscourseEmbed = {discourseUrl: 'https://forum.musicsequencing.com/',
                                  discourseEmbedUrl: 'https://www.musicsequencing.com${post.fields.slug}' };
@@ -216,6 +216,7 @@ export const pageQuery = graphql`
         author
         category
         subcategory
+        metaDescription
       }
     }
   }

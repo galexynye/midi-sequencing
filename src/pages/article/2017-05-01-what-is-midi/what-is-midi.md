@@ -11,6 +11,7 @@ subcategory: ['Tech Basics']
 tags: ['basics', 'midi']
 featuredImage: './WhatIsMidiFI.png'
 bgImages: {blackAndWhite: './media/bgImages/blackAndWhiteFaders.jpg', homeFaders: './media/bgImages/dylan-mcleod-faders-black.jpg'}
+metaDescription: 'If you are learning music production, this article is everything you need to know about midi right now.'
 ---
 
 Sometime in my first couple weeks at Berklee I saw a poster that said, “Midi is for people with no friends. Come to Jam Club!”, and I thought, "Midi must be for me."
