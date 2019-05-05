@@ -121,6 +121,13 @@ a {
 }
 
 
+.discourse-embed{
+    color: ${msTheme.colors.primary};
+    button{
+        background-color: ${msTheme.colors.primary}
+    }
+}
+
 .colorPrimary {
     color: ${msTheme.colors.primary}
 }
