@@ -122,10 +122,14 @@ a {
 
 
 .discourse-embed{
-    color: ${msTheme.colors.primary};
-    button{
-        background-color: ${msTheme.colors.primary}
-    }
+    body{
+        a{
+            color: ${msTheme.colors.primary} !important;
+        }
+         button{
+            background-color: ${msTheme.colors.primary} !important;
+        }
+    }       
 }
 
 .colorPrimary {
