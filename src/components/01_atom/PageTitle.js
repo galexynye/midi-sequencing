@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 
 const PageTitleStyle = styled.div`
-    margin: ${props => props.margin || "30px 0px 0px 0px"};
+    margin: ${props => props.margin || "40px 0px 0px 0px"};
     background-color: ${props => props.bgColor || 'white'};
     display: flex;
     flex-flow: column;
@@ -26,7 +26,7 @@ const PageTitleStyle = styled.div`
     }
     
     ${msTheme.mediaquery().medium}{
-   
+       margin: ${props => props.marginSmall || "10px 0px 0px 0px"};
         h1{
             font-size: 45px;
             line-height: 45px;
@@ -45,7 +45,7 @@ export const PageTitle = ({ text, title, description, bgColor, color }) => {
                 {text ? text : ''}
                 {title ? title : ''}
             </h1>
-            {description && <p className="headerFont">{description}</p>}
+            {description && <p className="headerFont mT40">{description}</p>}
         </PageTitleStyle>
     )
 }

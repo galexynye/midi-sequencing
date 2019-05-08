@@ -30,7 +30,7 @@ body{
 h1 {
     color: ${msTheme.colors.text};
 	font-family: ${msTheme.font.headerFont}, Arial, Helvetica, sans-serif;
-	/* font-size: 94px; */
+	font-size: 94px;
 	font-size: 60px;
 	font-weight: 300;
 	letter-spacing: -2px;
