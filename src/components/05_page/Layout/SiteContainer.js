@@ -71,6 +71,7 @@ h2 {
 
 
 h3 {
+    color: ${msTheme.colors.text};
     font-size: 27px;
     margin-bottom: 14px;
     padding-top: 5px;
@@ -143,6 +144,10 @@ a {
     margin:0px;
 }
 
+.mT0{
+    margin-top: 0px;
+}
+
 .mT20{
     margin-top: 20px; 
 }
@@ -155,6 +160,9 @@ a {
 }
 .mT60{
     margin-top: 60px
+    ${msTheme.mediaquery().medium}{
+        margin-top: 30px;
+    }
 }
 
 .mB20{
@@ -168,9 +176,15 @@ a {
 
 .mB40 {
     margin-bottom: 40px;
+    ${msTheme.mediaquery().medium}{
+        margin-bottom: 20px;
+    }
 }
 .mB60 {
     margin-bottom: 60px;
+     ${msTheme.mediaquery().medium}{
+        margin-bottom: 30px;
+    }
 }
 
 .mB80{
@@ -179,6 +193,14 @@ a {
 
 .pB40{
     padding-bottom: 40px;
+}
+
+.pT15{
+    padding-top: 15px;
+}
+
+.pT20 {
+    padding-top: 20px;
 }
 
 .pT40{

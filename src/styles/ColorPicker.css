@@ -6,5 +6,8 @@ p {
     color: #6f0bea28;
     color: #6f0bea00;
     color: #ffffff00;
+    /* Old darker font */
+    color: #24292e; 
+    color: #2e343a;
     color: rgba(255, 234, 0, 0.89);
 }

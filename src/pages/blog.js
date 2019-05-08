@@ -37,7 +37,7 @@ class Latest extends React.Component {
                         learnOrBlog={post.node.frontmatter.category}
                         // snippet={i < 2 ? post.node.excerpt : ''}
                         snippet={post.node.excerpt}
-                        date={post.node.frontmatter.date}
+                        date={post.node.frontmatter.updated ? post.node.frontmatter.updated : post.node.frontmatter.date}
                         title={post.node.frontmatter.title}
                         // category={post.node.frontmatter.category}
                         subcategory={post.node.frontmatter.subcategory}
@@ -85,9 +85,9 @@ export const pageQuery = graphql`
     }
   }
 
-                        allMarkdownRemark(
+            allMarkdownRemark(
                             limit: 2000
-            filter: {frontmatter: {blog: {eq : true}}}
+          
             sort:{fields: frontmatter___date, order: DESC }
         ) {
                         edges {
@@ -97,8 +97,9 @@ export const pageQuery = graphql`
                         slug
                     }
                     frontmatter{
-                        date(formatString: "MMMM DD, YYYY")
+                    date(formatString: "MMMM DD, YYYY")
                     title
+                    updated(formatString: "MMMM DD, YYYY")
                     category
                     subcategory
                     blog

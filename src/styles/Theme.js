@@ -1,6 +1,6 @@
 export const msTheme = {
     colors: {
-        text: '#24292e', // '#373737'
+        text: '#2e343a', // '#373737'
         textlight: '#6d6d6d',
         primary: '#700bea', // Purple
         primayhighlighter: '#C6A6F2',

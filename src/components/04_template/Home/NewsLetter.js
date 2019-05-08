@@ -9,7 +9,7 @@ import { FormEbook } from '../../03_organism/FormEbook';
 
 export const NewsLetter = () => {
     return (
-        <HomeSection>
+        <HomeSection padding="80px 0px 80px 0px">
             <h2 className="center">News Letter + Ebook 📒</h2>
             <p className="center headerFont mB40">(or Just Get the Ebook)</p>
             <InfoGrid>

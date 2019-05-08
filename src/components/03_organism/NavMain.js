@@ -11,6 +11,7 @@ const NavStyle = styled.nav`
         display:flex;
         flex-flow: ${props => props.flow ? props.flow : 'row'};
         justify-content: flex-end;
+        align-items: center;
         margin: ${props => props.margin || '0px'};
         padding: 0px;
         list-style-type: none;
