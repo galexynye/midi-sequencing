@@ -37,6 +37,7 @@ export class FormEbook extends React.PureComponent {
         super(props)
         this.state = {
             email: '',
+            name: '',
             showForm: true,
             success: false,
             error: false,
@@ -46,6 +47,9 @@ export class FormEbook extends React.PureComponent {
     // Updates Email State
     _handleChangeEmail = (event) => {
         this.setState({ email: event.target.value })
+    }
+    _handleChangeName = (event) => {
+        this.setState({ name: event.target.value })
     }
     /* Submit to lamda api, be sure to include origin along with email address */
     _handleSubmit = (event) => {
@@ -57,11 +61,13 @@ export class FormEbook extends React.PureComponent {
             })
             axios.post(subscribeApi, {
                 email: this.state.email,
+                name: this.state.name,
                 origin: 'UPWebook' // This origin string MUST REFLECT an origin on the backend in the email object in the emails.js file
             })
                 .then((response) => {
                     this.setState({
                         email: '',
+                        name: '',
                         loading: false,
                         success: true
                     })
@@ -70,6 +76,7 @@ export class FormEbook extends React.PureComponent {
                 .catch((error) => {
                     this.setState({
                         email: '',
+                        name: '',
                         loading: false,
                         error: true
                     })
@@ -95,7 +102,8 @@ export class FormEbook extends React.PureComponent {
         // Ebook Interactive
         const EbookFormInteraction = <form onSubmit={this._handleSubmit}>
             <WidthWrapper width={formWidth}>
-                <InputStringNoLabel type="email" value={this.state.email} _handleChange={this._handleChangeEmail} placeholder="Enter your Email..." paddingInput="0px" marginInput="0px" border="none" />
+                <InputStringNoLabel type="text" value={this.state.name} _handleChange={this._handleChangeName} placeholder="Name..." paddingInput="0px" marginInput="0px" borderOutside="1px solid black" border="none" />
+                <InputStringNoLabel type="email" value={this.state.email} _handleChange={this._handleChangeEmail} placeholder="Email*..." paddingInput="0px" marginInput="0px" borderOutside="1px solid black" border="none" />
                 <InputSubmit value="Get a FREE eBook" _handleSubmit={this._handleSubmit} bgColor={msTheme.colors.greenlight} />
             </WidthWrapper>
         </form>

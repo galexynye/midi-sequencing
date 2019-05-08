@@ -17,7 +17,8 @@ export const WidthWrapper = styled.div`
     max-width: 100%;
     margin: ${props => props.margin || 'auto'};     
      @media screen and (max-width: ${props => props.breakPoint ? props.breakPoint + 'px' : msTheme.breakPoints.medium + 'px'}) {
-            width: ${props => props.widthSmall || '100%'};        
+            width: ${props => props.widthSmall || '100%'};  
+            max-width: 100%;      
             margin: ${ props => props.marginSmall ? props.marginSmall : props.margin ? props.margin : 'auto'};
             padding: ${props => props.paddingSmall || '0px'};
      }
@@ -43,8 +44,10 @@ export const FlexboxOrganism = styled.div`
     }
 `
 
+
+
 export const GridContainer = styled.div`
-  width: ${props => props.width || '97%'};
+  width: ${props => props.width || '93%'};
   max-width: ${props => props.maxWidth || msTheme.widths.wide};
   margin: ${props => props.margin || '0 auto'} ;  
   display: grid;

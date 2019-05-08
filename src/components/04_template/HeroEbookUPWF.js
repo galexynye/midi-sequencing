@@ -5,7 +5,7 @@ import { FormEbook } from "../03_organism/FormEbook";
 import { msTheme } from '../../styles/Theme'
 // import bgImage2 from '../../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
 
-const HeroHomeStyle = styled.div`
+const HeroEBookUPWFStyle = styled.div`
     background-position: center;
     height: 100vh;
     background-image:linear-gradient(rgba(100, 100, 100, 0.8), rgba(0, 0, 0, 0.6)), url(${props => props.src || bgImage2});
@@ -15,7 +15,7 @@ const HeroHomeStyle = styled.div`
     
 `
 
-const HeroHomeElementCenter = styled.div`
+const HeroEBookUPWFElementCenter = styled.div`
     position: absolute;
     left: 50%;
     top: 27%;
@@ -32,36 +32,26 @@ const HeroHomeElementCenter = styled.div`
     }
 `
 
-const HeroImg = styled.div`
-    position: absolute;
-    min-height: 100vh;
-    top: 0px;
-    left: 0px;
-    img: {
-       display: none;
-    }
-    /* background-image: url(${bgImage});
-    background-size: cover; */
 
-`
 
-export class HeroHomeView extends Component {
+export class HeroEBookUPWFView extends Component {
     render() {
         // const pic = this.props.data.markdownRemark.frontmatter.bgImages.blackAndWhite.childImageSharp.fluid.src
         const pic = this.props.data.markdownRemark.frontmatter.bgImages.homeFaders.childImageSharp.fluid.src
         return (
-            <HeroHomeStyle src={pic}>
-                {/* <HeroHomeStyle> */}
-                <HeroHomeElementCenter>
+            <HeroEBookUPWFStyle src={pic}>
+                {/* <HeroEBookUPWFStyle> */}
+                <HeroEBookUPWFElementCenter>
                     <FormEbook formWidth="350px" title="The Ultimate Producer's Workflow" subtitle="How to CREATE Pro Quality Music : Doing EVERYTHING Yourself" />
-                </HeroHomeElementCenter>
-            </HeroHomeStyle>
+                </HeroEBookUPWFElementCenter>
+            </HeroEBookUPWFStyle>
         )
     }
 }
 
 
-export const HeroHome = props => (
+// The picture for the background is in the "what is midi article" so it is processed through sharp image.
+export const HeroEBookUPWF = props => (
     <StaticQuery
         query={graphql`
      query{
@@ -80,6 +70,6 @@ export const HeroHome = props => (
     }
 }
     `}
-        render={data => <HeroHomeView data={data} {...props} />}
+        render={data => <HeroEBookUPWFView data={data} {...props} />}
     />
 )

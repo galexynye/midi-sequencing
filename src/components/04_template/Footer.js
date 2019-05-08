@@ -31,7 +31,27 @@ export const Copyright = styled.div``
 export const Footer = props => {
     return (
         <FooterStyle>
-            <PaddingWrapper padding="0px 0px 20px 0px">
+            <NavFooter></NavFooter>
+
+
+            <WidthWrapper width="600px" widthSmall="300px">
+                <HomeLinkLogo padding="10px 10px 4px 10px" bgColor="gray" borderRadius="0px"></HomeLinkLogo>
+            </WidthWrapper>
+
+            <PaddingWrapper padding="30px 0px 0px 0px">
+                <FlexboxOrganism><p >©2019 Alex Nye</p></FlexboxOrganism>
+            </PaddingWrapper>
+
+        </FooterStyle >
+    )
+}
+
+
+
+
+
+// Old Footer Stuff
+{/* <PaddingWrapper padding="0px 0px 20px 0px">
                 <GridContainer gTCM="1fr" gridGap="10px 60px">
                     <CardTopTitle title="Ultimate Producer's Workflow" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
                     <CardTopTitle title="Want to try lessons?" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
@@ -59,21 +79,4 @@ export const Footer = props => {
                         </SimpleCard>
                     </GridItem>
                 </GridContainer>
-            </PaddingWrapper>
-
-
-            <NavFooter></NavFooter>
-
-
-            <WidthWrapper width="600px" widthSmall="300px">
-                <HomeLinkLogo padding="10px 10px 4px 10px" bgColor="gray" borderRadius="0px"></HomeLinkLogo>
-            </WidthWrapper>
-
-            <PaddingWrapper padding="30px 0px 0px 0px">
-                <FlexboxOrganism><p >©2019 Alex Nye</p></FlexboxOrganism>
-            </PaddingWrapper>
-
-        </FooterStyle >
-    )
-}
-
+            </PaddingWrapper> */}

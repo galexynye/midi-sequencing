@@ -6,7 +6,7 @@ export const Input = styled.div`
   flex-flow: column;
   margin: ${props => props.margin || "0px 0px 15px 0px"};
   padding: ${props => props.padding || msTheme.utilities().inputAndButtonShare.padding};
-  border-radius: ${props => props.border || msTheme.utilities().inputAndButtonShare.borderRadius};
+  border-radius: ${props => props.borderRadius || msTheme.utilities().inputAndButtonShare.borderRadius};
   font-family: ${msTheme.font.headerFont};
   font-size: 19px;
   width: ${props => props.width || ''}; 

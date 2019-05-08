@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { msTheme } from '../../../styles/Theme'
 import { ButtonCTA } from "../../01_atom/ButtonCTA"
 import { FlexboxOrganism, WidthWrapper, ResponsivePhoto, GridContainer, GridItem } from "../../00_utilities/Utilities"
-import { HomeSection } from '../HomeSection'
+import { HomeSection } from './HomeSection'
 import Alex from '../../../assets/Lessons/DeskPhoto.jpg'
 
 export const HomeAbout = (props) => {

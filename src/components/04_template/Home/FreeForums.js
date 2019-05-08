@@ -1,40 +1,31 @@
-import React, { Component, PureComponent } from 'react'
+import React from 'react'
+import { WidthWrapper } from '../../00_utilities/Utilities'
+import { ButtonCTA } from '../../01_atom/ButtonCTA'
 import { msTheme } from '../../../styles/Theme'
-import { ButtonCTA } from "../../01_atom/ButtonCTA"
-import { FlexboxOrganism, WidthWrapper, ResponsivePhoto, GridContainer } from "../../00_utilities/Utilities"
-import { HomeSection } from '../HomeSection'
-// import { WidthWrapper } from "../../00_utilities/WidthWrapper"
-// import { ResponsivePhoto } from "../../00_utilities/ResponsivePhoto"
-
-import MsForumsPic from '../../../assets/Backgrounds/ForumPic.jpg'
-
-export class FreeForums extends PureComponent {
-    render() {
-        return (
-            <HomeSection color={this.props.color}>
-
-                <GridContainer gTC="1fr 1fr" gridGap="20px 70px" maxWidth={this.props.maxWidth}>
+import { HomeSection } from './HomeSection';
+import { InfoGrid } from '../../03_organism/InfoGrid';
 
 
-                    <ResponsivePhoto src={MsForumsPic} />
-
-                    <FlexboxOrganism margin="0px 0px 0px 0px" flexFlow="column" alignItems="flex-start">
-
-                        <h3>New Forums!</h3>
-
-
-                        <p>Get feedback on your music.</p>
-                        <p>Ask questions and comment on articles.</p>
-                        <p>Talk about music. All for free :)</p>
-
-
-                        <WidthWrapper width="250px" margin="20px 0px 0px 0px">
-                            <ButtonCTA text="Check Out the Forums" buttonType="a" href="https://forum.musicsequencing.com/" bgColor={msTheme.colors.primary} color="white" ></ButtonCTA>
-                        </WidthWrapper>
-                    </FlexboxOrganism>
-
-                </GridContainer>
-            </HomeSection>
-        )
-    }
+export const FreeForums = () => {
+    return (
+        <HomeSection>
+            <h2 className="center mB40">The Forums 🎚</h2>
+            <InfoGrid>
+                <div>
+                    <h3>Interact</h3>
+                    <p>-A New Community of Music Makers. A chance to build a place where improvement is encouraged and happens.</p>
+                    <p>-Talk music, gear, and production. </p>
+                    <p>-Give and get feedback on your projects.</p>
+                </div>
+                <div>
+                    <h3>Integrated with the Site</h3>
+                    <p>The forums are where producers can interact with the site and other producers. Talk about the music you like, post your own music for feedback, find out peoples opinions on gear and techniques.</p>
+                </div>
+            </InfoGrid>
+            <WidthWrapper width="300px" widthSmall="300px" margin="40px auto 0px auto">
+                <ButtonCTA href="https://forum.musicsequencing.com/" text="Visit the Forums" bgColor={msTheme.colors.primary} color="white" />
+            </WidthWrapper>
+        </HomeSection>
+    )
 }
+

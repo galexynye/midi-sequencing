@@ -9,6 +9,7 @@ company: 'Native Instruments'
 tags: ['gear', 'native-instruments', 'free']
 featuredImage: './boscomacFI.jpg'
 metaDescription: "Hands down the best donationware music software I've ever seen. Effects, synths and sampled instruments that run in Native Instruments created by the mysterious Boscomac."
+popular: true
 ---
 
 <iframe  src="https://www.youtube.com/embed/Ay4M8fi5zRM" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
@@ -18,7 +19,8 @@ It is unbelievable to me that Boscomac let's you download these instruments with
 Note: Although each video embed looks the same, each one is timed stamped to the spot where we look at that specific instrument.
 
 <h2>What Is Reaktor?</h2>
-If you are not familiar with Reaktor, it is a "Modular DSP Lab", in other words it is a VST/AU plugin that allows users to build their own synths, effects, and sample based instruments piece by piece. Boscomac has taken advantage of Reaktor system to create the best donationware I, personally, have ever seen. You need to own the full version of NI's Reaktor 5 or 6, which costs $199 as a standalone or is included in <a href="https://www.native-instruments.com/en/products/komplete/bundles/komplete-11/included-products/" target="_blank" rel="noopener">Native Instuments Komplete</a> and Komplete Ultimate bundles. Besides Boscomac there are a bunch of other free user designed synths for Reaktor that are worth checking out.
+
+If you are not familiar with Reaktor, it is a "Modular DSP Lab", in other words it is a VST/AU plugin that allows users to build their own synths, effects, and sample based instruments piece by piece. Boscomac has taken advantage of Reaktor system to create the best donationware I have ever seen. You need to own the full version of NI's Reaktor 5 or 6, which costs $199 as a standalone or is included in <a href="https://www.native-instruments.com/en/products/komplete/bundles/komplete-11/included-products/" target="_blank" rel="noopener">Native Instuments Komplete</a> and Komplete Ultimate bundles. Besides Boscomac there are a bunch of other free user designed synths for Reaktor that are worth checking out.
 
 I'm not sure if Boscomac's instruments work in Reaktor 6, the latest version of Reaktor. I assume they do but I haven't tested it, so if anyone gets a chance to test them out, please leave a comment here or on youtube to let us know.
 
@@ -84,4 +86,4 @@ Snowflake is aptly named and really unique sounding. You can play in some snowfl
 
 <iframe  src="https://www.youtube.com/embed/Ay4M8fi5zRM?start=509" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-If you want to download and try out any of these instruments yourself you can check out Boscomo's site <a href="http://boscomac.free.fr/?p=retrobeat" target="_blank" rel="noopener">here</a> http://boscomac.free.fr/?p=retrobeat. They've gone a lot more instruments to offer as well as some really well-made effects.
+If you want to download and try out any of these instruments yourself you can check out Boscomo's site <a href="http://boscomac.free.fr/?p=retrobeat" target="_blank" rel="noopener">here</a>. They've gone a lot more instruments to offer as well as some really well-made effects.

@@ -59,7 +59,7 @@ const Tags = ({ pageContext, data }) => {
 
       </ArticleContainer>
 
-      <LearnCards />
+
 
 
     </SiteContainer>

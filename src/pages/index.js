@@ -7,26 +7,26 @@ import { msTheme } from '../styles/Theme'
 
 
 // Components with Content
-import { HeroHome } from "../components/04_template/HeroHome";
+import { HeroEBookUPWF } from "../components/04_template/HeroEbookUPWF";
 import { FreeForums } from "../components/04_template/Home/FreeForums";
 import { HomeAbout } from '../components/04_template/Home/HomeAbout';
 import { RecentPosts } from '../components/03_organism/RecentPosts';
-import { LearnCards } from '../components/03_organism/LearnCards';
-import { HomeSection } from '../components/04_template/HomeSection';
-import { GridContainer } from '../components/00_utilities/Utilities';
 
+import { HomeSection } from '../components/04_template/Home/HomeSection';
+import { GridContainer, WidthWrapper } from '../components/00_utilities/Utilities';
+import { HeroContainer } from '../components/01_atom/HeroContainer'
 
 // Sets A Main Container Size
 const containerSize = msTheme.widths.wide
-
-
-const Blackback = styled.div`
-  width: 200px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-`
-
+import bgImage2 from '../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
+import { HeroCenteredElement } from '../components/01_atom/HeroCenteredElement';
+import { PageTitle } from '../components/01_atom/PageTitle';
+import { ButtonCTA } from '../components/01_atom/ButtonCTA';
+import HeroMakeBetterMusic from '../components/04_template/Home/HeroMakeBetterMusic';
+import { Philosophy } from '../components/04_template/Home/Philosophy';
+import { ResourceLibraryHome } from '../components/04_template/Home/ResourceLibraryHome';
+import { NewsLetter } from '../components/04_template/Home/NewsLetter';
+import { PopularPosts } from '../components/03_organism/PopularPosts';
 
 export default class Home extends React.Component {
   render() {
@@ -39,20 +39,17 @@ export default class Home extends React.Component {
           title={`${siteTitle}`}
         />
 
-        <HeroHome />
-
-
-
-        <RecentPosts></RecentPosts>
-
+        <HeroMakeBetterMusic />
+        <Philosophy />
+        <ResourceLibraryHome />
+        <FreeForums />
         <HomeSection>
-          {/* <GridContainer >
-            <h3>Learn</h3>
-          </GridContainer> */}
-          <LearnCards />
+          <h2 className="center mB40">Popular Posts 🔥</h2>
+          <PopularPosts></PopularPosts>
+          <h2 className="center mB40">Latest from Music Sequencing 📰</h2>
+          <RecentPosts></RecentPosts>
         </HomeSection>
-        <FreeForums maxWidth={containerSize} color={msTheme.colors.primary} />
-        <HomeAbout maxWidth={containerSize} color={msTheme.colors.secondary} />
+        <NewsLetter />
 
       </SiteContainer >
     )

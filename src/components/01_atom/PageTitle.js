@@ -38,14 +38,14 @@ const PageTitleStyle = styled.div`
 `
 
 
-export const PageTitle = ({ text, title, description, bgColor, color }) => {
+export const PageTitle = ({ text, title, description, bgColor, color, margin }) => {
     return (
-        <PageTitleStyle bgColor={bgColor} color={color}>
+        <PageTitleStyle bgColor={bgColor} color={color} margin={margin}>
             <h1>
                 {text ? text : ''}
                 {title ? title : ''}
             </h1>
-            {description && <p className="headerFont mT40">{description}</p>}
+            {description && <p className="headerFont mT20">{description}</p>}
         </PageTitleStyle>
     )
 }

@@ -117,8 +117,8 @@ export default class contact extends PureComponent {
 
         const ContactForm = <div>
             <form onSubmit={this._handleSubmit}>
-                <InputString _handleChange={this._handleInputChange} value={this.state.email} type="email" label="email" labelText="Email*" required={true}></InputString>
                 <InputString _handleChange={this._handleInputChange} value={this.state.name} type="text" label="name" labelText="Name*" required={true}></InputString>
+                <InputString _handleChange={this._handleInputChange} value={this.state.email} type="email" label="email" labelText="Email*" required={true}></InputString>
                 <InputSelect _handleChange={this._handleInputChange} value={this.state.subject} options={contactOptions} label="subject" labelText="Subject" />
                 <InputTextarea _handleChange={this._handleInputChange} value={this.state.message} label="message" labelText="Message*" required={true} />
                 <InputSubmit onSubmit={this._handleSubmit} value="Contact Me" bgColor={msTheme.colors.primary} color="white" />

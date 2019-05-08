@@ -40,12 +40,12 @@ export class ButtonCTA extends React.PureComponent {
   }
 
   render() {
-    const { _handleClick, color, bgColor, text, width, margin, padding, href, to, borderRadius, displayM } = this.props
+    const { _handleClick, color, bgColor, text, width, margin, padding, href, to, borderRadius, border, displayM } = this.props
 
     if (href) {
       return (
         <a href={href}>
-          <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} borderRadius={borderRadius} displayM={displayM}>
+          <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} borderRadius={borderRadius} border={border} displayM={displayM}>
             {text}
           </ButtonCTAStyle>
         </a>
@@ -54,14 +54,14 @@ export class ButtonCTA extends React.PureComponent {
     if (to) {
       return (
         <Link to={to}>
-          <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} borderRadius={borderRadius} displayM={displayM}>
+          <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} borderRadius={borderRadius} border={border} displayM={displayM}>
             {text}
           </ButtonCTAStyle>
         </Link>
       )
     }
     return (
-      <ButtonCTAStyle onClick={_handleClick} bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} borderRadius={borderRadius} displayM={displayM}>
+      <ButtonCTAStyle onClick={_handleClick} bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} borderRadius={borderRadius} border={border} displayM={displayM}>
         {text}
       </ButtonCTAStyle>
     )
