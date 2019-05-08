@@ -173,13 +173,14 @@ class BlogPostTemplate extends React.Component {
               </li>
             </ul>
 
+            <div id='discourse-comments'></div>
 
-            <GridContainer>
+            {/* <GridContainer>
               <h2 className="mB0">Learn More</h2>
             </GridContainer>
-            <LearnCards hideDescription={true} gTC="1fr 1fr" />
+            <LearnCards hideDescription={true} gTC="1fr 1fr" /> */}
 
-            <div id='discourse-comments'></div>
+
 
 
 

@@ -121,17 +121,6 @@ a {
 }
 
 
-.discourse-embed{
-    body{
-        a{
-            color: ${msTheme.colors.primary} !important;
-        }
-         button{
-            background-color: ${msTheme.colors.primary} !important;
-        }
-    }       
-}
-
 .colorPrimary {
     color: ${msTheme.colors.primary}
 }
