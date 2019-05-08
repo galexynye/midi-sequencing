@@ -61,7 +61,7 @@ export const msTheme = {
         h2: "34px"
     },
     widths: {
-        article: '650px',
+        article: '600px',
         sidebarMobileMenu: '200px',
         wide: '1100px',
         ultraWide: '1500px'

@@ -10,7 +10,7 @@ const PageTitleStyle = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-  
+    padding: 0px 20px;
     h1{ 
         color: ${props => props.color || msTheme.colors.primary};
         /* max-width: ${msTheme.widths.article}; */

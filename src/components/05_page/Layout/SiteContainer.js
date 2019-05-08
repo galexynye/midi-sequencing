@@ -33,7 +33,7 @@ h1 {
 	/* font-size: 94px; */
 	font-size: 60px;
 	font-weight: 300;
-	letter-spacing: -3px;
+	letter-spacing: -2px;
 	/* line-height: 87px; */
 	line-height: 53px;
 	margin-bottom: 27px;
@@ -50,8 +50,8 @@ h2 {
     color: ${msTheme.colors.text};
 	font-family: ${msTheme.font.headerFont}, Arial, Helvetica, sans-serif;
 	font-size: 34px;
-	font-weight: 600;
-	letter-spacing: -1px;
+	font-weight: 300;
+	/* letter-spacing: -1px; */
 	line-height: 39px;
 	margin-bottom: 20px;
     margin-top: 80px;
@@ -85,10 +85,20 @@ h3 {
 p {
     color: ${msTheme.colors.text};
 	font-family: ${msTheme.font.bodyFont}, Arial, Helvetica, sans-serif;
-	font-size: 19px;
+	font-size: 18px;
 	font-weight: 500;
-	line-height: 27px;
-	margin-bottom: 27px;
+	line-height: 26px;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: ${msTheme.breakPoints.medium + "px"}) {
+    p {
+        margin-bottom: 27px;
+    }
+}
+
+strong{
+    font-weight: bold;
 }
 
 ol, ul {
@@ -163,6 +173,10 @@ a {
     margin-bottom: 60px;
 }
 
+.mB80{
+    margin-bottom: 80px;
+}
+
 .pB40{
     padding-bottom: 40px;
 }
@@ -201,6 +215,13 @@ a {
     font-family: ${msTheme.font.headerFont};
     font-size: 16px;
     line-height: 20px;
+}
+
+.quote {
+    font-size: 16px;
+    p{
+        color: ${msTheme.colors.textlight}
+    }
 }
 
 .lSTN{
