@@ -17,7 +17,7 @@ export const ProjectLink = ({ to, project, num, description }) => {
         <ProjectLinkStyle>
             <h3 className="headerFont mB20">Project {num}</h3>
             <Link to={to}>{project}</Link>
-            <p className="headerFont pT20">{description}</p>
+            <p className="headerFont pT20 mB20">{description}</p>
         </ProjectLinkStyle>
     )
 }

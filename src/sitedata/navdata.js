@@ -3,6 +3,7 @@ export const MainNavLinksData = [
     { name: 'The 10', to: '/projects', external: false },
     { name: 'Blog', to: '/blog', external: false },
     { name: 'About', to: '/about', external: false },
+    { name: 'Store', to: '/store', external: false },
     // { name: 'Services', to: '/services', external: false },
     { name: 'Forums', to: 'https://forum.musicsequencing.com/', external: true, altStyle: true, }
 ]

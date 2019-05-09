@@ -33,7 +33,7 @@ export default class Projects extends Component {
                         <p className="headerFont">Keep the thread going. Once you’ve completed your project post a link in the project thread to your own music for some helpful feedback. Carefully consider any feedback you get and use it to improve.</p>
                     </div>
                 </InfoGrid>
-                <h2 className="center mB60">The Projects</h2>
+                <h2 className="center mB60" id="theprojects">The Projects</h2>
                 <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr">
                     {projectLinks}
                 </GridContainer>

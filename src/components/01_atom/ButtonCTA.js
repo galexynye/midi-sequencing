@@ -40,12 +40,12 @@ export class ButtonCTA extends React.PureComponent {
   }
 
   render() {
-    const { _handleClick, color, bgColor, text, width, margin, padding, href, to, borderRadius, border, displayM } = this.props
+    const { _handleClick, color, bgColor, text, width, margin, padding, href, to, borderRadius, border, displayM, target } = this.props
 
     if (href) {
       return (
-        <a href={href}>
-          <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} borderRadius={borderRadius} border={border} displayM={displayM}>
+        <a href={href} target={target}>
+          <ButtonCTAStyle bgColor={bgColor} color={color} width={width} margin={margin} padding={padding} borderRadius={borderRadius} border={border} displayM={displayM} >
             {text}
           </ButtonCTAStyle>
         </a>

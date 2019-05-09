@@ -13,8 +13,8 @@ class About extends React.Component {
         return (
             <SiteContainer>
                 <Helmet
-                    meta={[{ name: 'description', content: 'About the Music Sequencing, me and what you can learn here.' }]}
-                    title={`About - General Site Info | ${siteTitle}`}
+                    meta={[{ name: 'description', content: 'About the Music Sequencing. How to learn music production by making music.' }]}
+                    title={`About | ${siteTitle}`}
                 />
                 <PageTitle text="About Music Sequencing" description="A simple philosophy: the more music you make, the better music you can create." ></PageTitle>
                 <ArticleContainer margin="0px auto">
