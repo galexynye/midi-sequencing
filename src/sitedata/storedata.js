@@ -61,7 +61,7 @@ export const storeData = [
         item: "Monitor Isolators Pads",
         link: "https://amzn.to/2DTN61r",
         image: isopadpic,
-        description: "Monitors placed directly on a desk will vibrate the desk, especially lower frequencies, skewing the sound and you won’t be able to mix accurately. Isolation pads are a good solution to the problem, these ones have a layers of rubber, steel, and acoustic foam for better isolation.",
+        description: "Monitors placed directly on a desk will vibrate the desk, especially lower frequencies, skewing the sound and you won’t be able to mix accurately. Isolation pads are a good solution to the problem. These pads have layers of rubber, steel, and foam for better isolation.",
         buttonText: "Get Isopads"
     },
 ]

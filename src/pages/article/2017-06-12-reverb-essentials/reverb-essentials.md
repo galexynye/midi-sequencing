@@ -1,5 +1,5 @@
 ---
-title: 'Reverb: The Definitive Guide'
+title: 'Getting Started with Reverb'
 author: 'Alex Nye'
 date: '2017-06-12'
 learn: true
@@ -7,7 +7,7 @@ category: 'Mixing'
 subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'reverb']
 featuredImage: './media/reverb-essentials/Reverb-Diagram-1.png'
-metaDescription: 'Reverb is one of the most essential effects used in mixing and sound design. This fully comprehensive article is everything you need to know from all the types of reverbs to setting them up in a mix.'
+metaDescription: 'How to use reverb. Reverb is one of the most essential effects used in mixing and sound design. This fully comprehensive article is everything you need to know from all the types of reverbs to setting them up in a mix.'
 ---
 
 <img src="./media/reverb-essentials/Reverb-Diagram-1.png" alt="Stick Figure Drawing of How Reverb Sends used to be set up analog"  />
@@ -59,6 +59,7 @@ Spring reverbs are like the trashy cousin of plate reverbs. The principal is bas
 As you can hear, spring reverbs sound like springs. You might use a spring reverb if you are trying to emulate a classic 60s sound or you have some other specific effect in mind. That being said, spring reverbs generally aren't the most graceful sound, so for the most part, you can skip over them when you're trying to find a good reverb.
 
 <h4 >4. Digital Reverbs</h4>
+
 The first digital reverb, the EMT 250, came out in 1976. You might be asking yourself, "Hey, isn't that the same company that invented the plate reverb, the EMT140?" Why yes, yes it is. EMT just has a thing for inventing ground breaking reverbs I guess.
 
 A digital reverb, at it's core, is a bunch of delays at different times. Technically, this is what all reverb is. Reverb is just sound bouncing off of things back into our ears at different points in time. Digital reverbs create this effect with digital circuitry. Digital reverb is where we first started seeing mimicry of other types of reverbs.
@@ -70,6 +71,7 @@ The designers of digital reverbs would adjust the delays in the circuits to try 
 Two of the most famous digital reverbs of all time are the Lexicon L224 and the Lexicon L480. To this day, many studios all over the world still use these 80s relics on recordings. Again, luckily for us, these classic 80s reverbs and many more can be found in plugins that either have algorithms to recreate the digital circuitry or have sampled the machines directly for use in convolution reverbs.
 
 <h4 >5. Convolution Reverb</h4>
+
 Convolution reverb is the sampler of the reverb world and impulse responses are the samples. Someone who wants to use a famous concert hall on their own recordings can go there once, set up some mics and take an audio sample of the room. Then they load up the impulse response inside of a convolution reverb where it will use algorithms to add the sampled reverb from the room onto whatever sound choose. You can pretend to put whatever sound you want in that concert hall.
 
 Convolution reverbs are used to recreate the sound of real physical places, plates, springs and digital reverbs. With enough different impulse responses convolutions are basically all the different types of reverbs rolled into one package.
@@ -79,7 +81,9 @@ The quality of a convolution reverb is only as good as the quality of the impuls
 My personal favorite reverb is <a href="https://www.sweetwater.com/store/detail/Altiverb7" target="_blank" rel="noopener">Altiverb by Audioease</a>. It is a convolution reverb with impulse responses from all of the most famous digital reverbs, plate reverbs, spring reverbs, concert houses, churches, cathedrals and a bunch of other weird stuff too for the hell of it, like water tanks, mausoleums and old toys. Yeah, it's super expensive for one effect, but unlike other effects like compression or eq, where I use a bunch of different things all the time, I don't need to use anything else besides Altiverb for my reverbs, seriously.
 
 <h2 >Reverb Parameters</h2>
+
 In addition to choosing a type of reverb, most plugin reverbs have a variety of different ways to further manipulate the sound of your reverb. I'll list and explain the parameters here and below there is another embed video to demonstrated the how the parameters affect the sound.
+
 <ul>
  	<li><strong>Time (Decay Time, Reverb Time)</strong> <strong>-</strong> This is how long the "<strong>reverb tail</strong>" will last. Really short reverb tails can be under a second while longer reverb tails can be in the 6-8 second range and there are some super long reverb tails you might find, like some cathedral IRs for example, that will go past 10 seconds. Time is one of the most important parameters of reverb.</li>
  	<li><strong>Size</strong> <strong>-</strong> Size is similar to time in that, if you make it bigger, then the reverb tail will be longer. With the size the quality of the reverb will change as well. The "room" will actually sound like it's in a different space.</li>
@@ -90,11 +94,13 @@ In addition to choosing a type of reverb, most plugin reverbs have a variety of 
  	<li><strong>EQ</strong> - Also known as color, low cut, high cut, dampening, brightness ect. are anything to deal with controlling the frequency responses of your reverb. If you don't have a built in EQ on your reverb, or you want to do some surgical EQ, feel free to throw an EQ on your reverb channel and EQ away.</li>
  	<li><strong>Mix - Wet</strong> <strong>is signal with reverb, dry is signal without reverb</strong>, and your mix will blend the two of them. If you set your reverb up on an aux track, you'll want to keep your mix at 100% wet, and you control the amount of reverb with your send, if that doesn't make sense, we'll get into it in the next section (it's also in the video).</li>
 </ul>
+
 Some reverbs might have a couple other parameters that you can adjust, or the ones above just called by different names but that list will cover the lion's share of the adjustments you can make to reverbs. Here is the demonstrations of some of these effects in Altiverb.
 
 <iframe src="https://www.youtube.com/embed/EErrKkgy8Ck?start=466" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 <h2 >How to Set Up Your Reverb(s)</h2>
+
 Generally you will use several different reverbs in your mixes. For example, you might have one reverb that you use only on your lead vocal, one you use only for your snare drum, then a couple different general purpose reverbs that you send different instruments to to add space, and lastly, a reverb that you add to your entire mix to put everything into one space.
 
 For the most part, you will want to insert your reverb plugin on an aux tracks and use <strong>buses</strong> and <strong>sends</strong> to send your sounds <strong>to the reverb</strong>. The process for this is quite simple and once you do it a couple times, it'll be second nature. It goes like this.
@@ -139,6 +145,7 @@ On the other hand, there are times that you have a super dry sound that you want
 <iframe src="https://www.youtube.com/embed/X1S9RqgFHy0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 <h3 >Conclusion</h3>
+
 That about covers it. As always, EXPERIMENT! Try new things, add delays to your reverb, go looking for wacky impulse responses, compress the crap out of your reverbs. Reverb is deceptively hard to get right but it is much easier to use if you start with a good reverb sound. Take some time and find some go-to reverbs that you can depend on to sound beautiful.
 
 If you want to review most everything we talked about press play and watch the full video below. Want to learn about all the best quality gear in audio? Check out <a href="/article/how-to-build-a-studio">How To Build A Studio From Nothing to Everything</a>. Not sure what DAW is right for you? <a href="/article/which-daw-should-i-use">Check out Which DAW Should I Use?</a> More articles on Mixing Basics are coming soon :)

@@ -1,5 +1,5 @@
 ---
-title: '10 Factors for Achieving Pro Sound'
+title: '10 Factors for Achieving Great Sound'
 author: 'Alex Nye'
 date: '2017-05-18'
 learn: true
