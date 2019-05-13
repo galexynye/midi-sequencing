@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Helmet from 'react-helmet'
 import SiteContainer from '../components/05_page/Layout/SiteContainer';
 import { PageTitle } from '../components/01_atom/PageTitle';
 import { InfoGrid } from '../components/03_organism/InfoGrid';
@@ -12,6 +13,10 @@ export default class Projects extends Component {
         const projectLinks = the10.map((x, i) => <ProjectLink key={x.link} num={i + 1} to={x.link} project={`${x.name} ${x.icon}`} description={x.description}></ProjectLink>)
         return (
             <SiteContainer>
+                <Helmet
+                    meta={[{ name: 'description', content: '10 Projects that will make you a better music producer. Get and give feedback on your music and grow.' }]}
+                    title={`10 Projects | Music Sequencing`}
+                />
                 <PageTitle title="10 Projects" description="Do these and you will be a better producer."></PageTitle>
                 <h2 className="center mT0 mB60">Getting Started</h2>
                 <InfoGrid>

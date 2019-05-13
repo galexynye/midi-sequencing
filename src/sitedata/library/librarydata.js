@@ -8,6 +8,8 @@ import { producing } from './producingdata'
 import { studioGear } from './studiogeardata'
 import { recording } from './recordingdata'
 import { musicBusiness } from './musicbusiness'
+import { promotion } from './promotiondata'
+import { audio } from './audiodata'
 
 // Potential subjects 
 // Audio, Acoustic, 
@@ -15,6 +17,7 @@ import { musicBusiness } from './musicbusiness'
 export const library = [
     basics,
     freePlugins,
+    audio,
     producing,
     recording,
     mixing,
@@ -23,6 +26,7 @@ export const library = [
     earTraining,
     musicTheory,
     musicBusiness,
+    promotion
 
 ]
 

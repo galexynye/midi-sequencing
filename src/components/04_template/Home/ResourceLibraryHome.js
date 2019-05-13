@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { WidthWrapper } from '../../00_utilities/Utilities'
 import { ButtonCTA } from '../../01_atom/ButtonCTA'
 import { msTheme } from '../../../styles/Theme'
@@ -13,8 +14,13 @@ export const ResourceLibraryHome = () => {
             <InfoGrid>
                 <div>
                     <h3>Information is Power </h3>
-                    <p>The resource library is a living and growing collection of links to great free plugins, useful tutorials, and other musical information from around the internet.</p>
-                    <p>It’s curated to help you find accurate information and new tools when you need them. For example, consider watching a tutorial on mastering right before you master a project, rather than to kill time. Information + Experience = Growth.</p>
+                    <p>The <Link to="/library">resource library</Link> is a living and growing collection of links to great free plugins, useful tutorials, and other musical information from around the internet.</p>
+                    <p>It’s curated to help you find accurate information and new tools when you need them. For example, consider watching a tutorial on mastering right before you master a project rather than at random. Information + Experience = Growth.</p>
+                </div>
+                <div>
+                    <h3>Help it Grow</h3>
+                    <p>The internet is filled with amazing free resources waiting to be discovered. If you know of something that everyone can benefit from, please tell us about it <a href="https://forum.musicsequencing.com/c/suggestions/library" target="_blank">here on the forums.</a> </p>
+                    <p>By making the resource library a community effort we can create a central hub of the best free resources for learning music.</p>
                 </div>
             </InfoGrid>
             <WidthWrapper width="300px" widthSmall="300px" margin="40px auto 0px auto">

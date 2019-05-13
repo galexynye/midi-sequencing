@@ -7,7 +7,7 @@ blog: true
 category: 'Gear Review'
 subcategory: ['Creative']
 company: 'Misc'
-tags: ['free', 'synths', 'internet', 'drum-machine']
+tags: ['gear','free', 'synths', 'internet', 'drum-machine']
 featuredImage: './BrowserSynthsFI.jpg'
 metaDescription: "There's a wonderful world of suprisingly great sounding synths and samples that work with MIDI inside your internet browser. Here's a list of ones to checkout and listen to."
 ---

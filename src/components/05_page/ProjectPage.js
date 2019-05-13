@@ -44,7 +44,11 @@ export class ProjectPage extends React.Component {
                     {theRules}
                     <h2>The Other Projects 🎹</h2>
                     <p className="headerFont"><Link to="/projects#theprojects">Click here</Link> to check out the other projects.</p>
+
                     {children}
+
+                    <h2>Helpful Links 🔗</h2>
+                    <p className="headerFont"><Link to="/library" target="_blank">Resource Library</Link> - Check it out. More links coming.</p>
 
                     <h2>Give and Get Feedback Here</h2>
                     <div id='discourse-comments'></div>

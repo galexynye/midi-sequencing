@@ -16,7 +16,7 @@ import { Loading } from '../components/01_atom/Loading'
 import { Message } from '../components/01_atom/Message'
 import { ButtonCTA } from '../components/01_atom/ButtonCTA'
 
-const contactOptions = ['General Questions', 'Saying hi!', 'Want to work together?', 'Online Lessons', 'Will you review our product?', 'Website Suggestions', 'Other']
+const contactOptions = ['General Questions', 'Suggestion for Library', 'Saying hi!', 'Want to work together?', 'Online Lessons', 'Will you review our product?', 'Website Suggestions', 'Other']
 const recaptchaKey = process.env.RECAPTCHA_KEY
 const contactApi = process.env.MS_API_CONTACT
 

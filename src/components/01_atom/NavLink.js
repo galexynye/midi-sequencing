@@ -49,7 +49,7 @@ export class NavLink extends React.Component {
 
         const externalTest = (isExternal, to, name) => {
             if (isExternal) {
-                return <a href={to}>{name}</a>
+                return <a href={to} target="_blank">{name}</a>
             } else {
                 return <Link to={to}>{name}</Link>
             }

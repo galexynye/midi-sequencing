@@ -62,7 +62,7 @@ class Latest extends React.Component {
             <SiteContainer>
                 <Helmet
                     meta={[{ name: 'description', content: 'Opinions on music gear and other thoughts in the world of music production' }]}
-                    title={`Music Production Blog - Music Gear Reviews and Other Thoughts | ${siteTitle}`}
+                    title={`Music Production Blog | ${siteTitle}`}
                 />
                 <PageTitle text="Blog" description="Gear Reviews and Other Thoughts"></PageTitle>
                 <GridContainer gTC="repeat(3, 1fr)" gTCL="repeat(2, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 20px" className="mT40 mB40">

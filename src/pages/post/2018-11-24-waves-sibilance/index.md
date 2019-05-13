@@ -7,7 +7,7 @@ blog: true
 category: 'Gear Review'
 subcategory: ['Dynamics']
 company: 'Waves'
-tags: ['deesser', 'waves', 'eq', 'vocal-mixing', 'compression']
+tags: ['gear','deesser', 'waves', 'eq', 'vocal-mixing', 'compression']
 featuredImage: './WavesSibilance.jpg'
 metaDescription: "Wave's sibilance is a new dimension in dessing tech. Not just a band compressor: Sibilance is a plugin specifically crafted to control bad ess sounds in the human voice."
 ---

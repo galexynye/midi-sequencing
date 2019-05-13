@@ -31,33 +31,45 @@ export const producing = {
             topic: topics.sound,
             internal: true,
             type: lDT.videoAndArticle,
-            link: "/article/10-tips-for-pro-sound/",
-            title: "10 Factors for Achieving Great Sound",
-            description: "The biggest steps in the chain for acheiving great sound. (Music Sequencing Original)"
-        },
-        {
-            topic: topics.midi,
-            internal: true,
-            type: lDT.videoAndArticle,
-            link: "/article/humanize-midi/",
-            title: "How to Automatically Humanize Midi",
-            description: "Most DAWs are equipt with algorithms to add imperfections to midi that will make it feel more human. This is a demonstration in Logic Pro X. (Music Sequencing Original)"
-        },
-        {
-            topic: topics.midi,
-            internal: true,
-            type: lDT.videoAndArticle,
-            link: "/article/how-to-edit-midi-sustain-pedal/",
-            title: "How to Edit Midi Sustain Pedal",
-            description: "Editing midi piano can be a pain without knowing how to do this. (Music Sequencing Original)"
-        },
-        {
-            topic: topics.drums,
-            internal: true,
-            type: lDT.videoAndArticle,
-            link: "/article/program-realistic-drum-parts",
-            title: "How to Program Realistic Drum Parts",
-            description: "Program drums that sound like they were played by someone. (Music Sequencing Original)"
+            link: "/tags/producing",
+            title: "Producing by Music Sequencing",
+            description: 'Originals from Music Sequencing that will expand your producing knowledge. (Music Sequencing)'
         },
     ]
 }
+
+
+
+
+        // {
+        //     topic: topics.sound,
+        //     internal: true,
+        //     type: lDT.videoAndArticle,
+        //     link: "/article/10-tips-for-pro-sound/",
+        //     title: "10 Factors for Achieving Great Sound",
+        //     description: "The biggest steps in the chain for acheiving great sound. (Music Sequencing Original)"
+        // },
+        // {
+        //     topic: topics.midi,
+        //     internal: true,
+        //     type: lDT.videoAndArticle,
+        //     link: "/article/humanize-midi/",
+        //     title: "How to Automatically Humanize Midi",
+        //     description: "Most DAWs are equipt with algorithms to add imperfections to midi that will make it feel more human. This is a demonstration in Logic Pro X. (Music Sequencing Original)"
+        // },
+        // {
+        //     topic: topics.midi,
+        //     internal: true,
+        //     type: lDT.videoAndArticle,
+        //     link: "/article/how-to-edit-midi-sustain-pedal/",
+        //     title: "How to Edit Midi Sustain Pedal",
+        //     description: "Editing midi piano can be a pain without knowing how to do this. (Music Sequencing Original)"
+        // },
+        // {
+        //     topic: topics.drums,
+        //     internal: true,
+        //     type: lDT.videoAndArticle,
+        //     link: "/article/program-realistic-drum-parts",
+        //     title: "How to Program Realistic Drum Parts",
+        //     description: "Program drums that sound like they were played by someone. (Music Sequencing Original)"
+        // },

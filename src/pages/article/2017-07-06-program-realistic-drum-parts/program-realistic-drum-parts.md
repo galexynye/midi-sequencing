@@ -6,7 +6,7 @@ date: '2017-07-06'
 learn: true
 category: 'Producing'
 subcategory: ['Producing Techniques']
-tags: ['midi', 'drum-programming', 'drums', 'midi-sequencing']
+tags: ['producing','midi', 'drum-programming', 'drums']
 featuredImage: './ProgramRealDrumsPic.jpg'
 metaDescription: 'Programming great drum parts is an essential skill for producers today. This technique is for those who want to learn to program drums indistinguishable from those played by a real drummer.'
 ---

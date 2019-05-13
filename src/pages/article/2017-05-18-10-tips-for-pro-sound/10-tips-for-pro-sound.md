@@ -5,7 +5,7 @@ date: '2017-05-18'
 learn: true
 category: 'Producing'
 subcategory: ['Producing Techniques']
-tags: ['gear', 'mixing', 'recording', 'sound better', 'tech', 'studio']
+tags: ['producing', 'recording', 'tech', 'studio']
 featuredImage: './ProSound.png'
 metaDescription: 'Take care for these 10 factors when making music and you will be on your way to creating professional quality tracks that will set you apart from the herd.'
 ---

@@ -33,13 +33,6 @@ export const mastering = {
             description: "A good, clear teacher, who will give you the skinny on mastering your own music without baloney. (Into the Mix)"
         },
         {
-            topic: topics.overview,
-            type: lDT.pdf,
-            link: "https://www.izotope.com/en/support/support-resources/guides/mastering-with-ozone.html",
-            title: "Free Guide: Mastering with Ozone",
-            description: "Great guide for mastering whether you have Ozone or not. (iZotope)"
-        },
-        {
             topic: topics.loudness,
             type: lDT.videoAndArticle,
             link: "http://productionadvice.co.uk/loudness-penalty-faq/",

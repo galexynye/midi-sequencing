@@ -4,7 +4,7 @@ import { msTheme } from '../../styles/Theme'
 
 const PageTitleStyle = styled.div`
     margin: ${props => props.margin || "40px 0px 0px 0px"};
-    background-color: ${props => props.bgColor || 'white'};
+    background-color: ${props => props.bgColor || 'none'};
     display: flex;
     flex-flow: column;
     justify-content: center;

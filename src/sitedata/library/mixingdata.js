@@ -45,27 +45,37 @@ export const mixing = {
         //     description: "A vast collection of articles on audio, mixing, and music from a seasoned professional for those who want to dive deep. (BAM Audio)"
         // },
         {
-            topic: topics.compression,
+            topic: topics.multiple,
             internal: true,
             type: lDT.videoAndArticle,
-            link: "/article/hear-compression",
-            title: "How to Hear Compression",
-            description: "As easy as compression can make sounds better, it can make sounds worse. This article/video demostrates what to you should listen for when adding compression. (Music Sequencing Original)"
-        },
-        {
-            topic: topics.vocals,
-            type: lDT.article,
-            link: "https://www.soundonsound.com/techniques/techniques-vocal-de-essing",
-            title: "Techniques For Vocal De-essing",
-            description: "A great article about cutting out nasty sibilance you can get when recording vocals. (Sound On Sound)"
-        },
-        {
-            topic: topics.compression,
-            internal: true,
-            type: lDT.videoAndArticle,
-            link: "/article/mix-drums-like-phil-collins/",
-            title: "Gated Reverb: Mixing Drums to Sound Like Phil Collins",
-            description: "A classic mixing technique to make huge sounding drum hits. (Music Sequencing Original)"
+            link: "/tags/mixing",
+            title: "Mixing by Music Sequencing",
+            description: "Originals on mixing explaining mixing techniques, how to use different effects and more. (Music Sequencing)"
         },
     ]
 }
+
+
+    // {
+    //         topic: topics.compression,
+    //         internal: true,
+    //         type: lDT.videoAndArticle,
+    //         link: "/article/hear-compression",
+    //         title: "How to Hear Compression",
+    //         description: "As easy as compression can make sounds better, it can make sounds worse. This article/video demostrates what to you should listen for when adding compression. (Music Sequencing Original)"
+    //     },
+    //     {
+    //         topic: topics.vocals,
+    //         type: lDT.article,
+    //         link: "https://www.soundonsound.com/techniques/techniques-vocal-de-essing",
+    //         title: "Techniques For Vocal De-essing",
+    //         description: "A great article about cutting out nasty sibilance you can get when recording vocals. (Sound On Sound)"
+    //     },
+    //     {
+    //         topic: topics.compression,
+    //         internal: true,
+    //         type: lDT.videoAndArticle,
+    //         link: "/article/mix-drums-like-phil-collins/",
+    //         title: "Gated Reverb: Mixing Drums to Sound Like Phil Collins",
+    //         description: "A classic mixing technique to make huge sounding drum hits. (Music Sequencing Original)"
+    //     },

@@ -5,7 +5,7 @@ date: '2017-05-12'
 learn: true
 category: 'Music Tech'
 subcategory: ['Midi']
-tags: ['midi']
+tags: ['producing', 'tech','midi']
 featuredImage: './MidiSustainFIFinal.png' 
 metaDescription: 'Simply how to edit, fix or add sustain pedal to your midi pianos.'
 ---

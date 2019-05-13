@@ -4,12 +4,14 @@ import { msTheme } from '../../styles/Theme'
 
 const HeroCenteredElementStyle = styled.div`
     position: absolute;
+    background-color: ${props => props.bgColor || 'rgba(255, 255, 255)'};
+    padding: 10px;
     left: ${props => props.left || '50%'};
     top: ${props => props.top || '50%'};    
     transform: translateX(-50%); 
     ${msTheme.mediaquery().medium}{
         top: ${props => props.topMedium || '20%'};
-        h1{
+        h1{            
             font-size: 45px;
             line-height: 45px;
             font-weight: 600;
@@ -22,9 +24,9 @@ const HeroCenteredElementStyle = styled.div`
 `
 
 
-export const HeroCenteredElement = ({ children, top, left, topMedium, topSmall }) => {
+export const HeroCenteredElement = ({ children, top, left, topMedium, topSmall, bgColor }) => {
     return (
-        <HeroCenteredElementStyle top={top} left={left} topMedium={topMedium} topSmall={topSmall}>
+        <HeroCenteredElementStyle top={top} left={left} topMedium={topMedium} topSmall={topSmall} bgColor={bgColor}>
             {children}
         </HeroCenteredElementStyle>
     )

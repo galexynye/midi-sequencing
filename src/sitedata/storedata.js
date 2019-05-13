@@ -10,7 +10,7 @@ import isopadpic from '../assets/StorePics/isolationpad.jpg'
 export const storeData = [
     {
         item: "Donate",
-        link: "https://www.paypal.com/",
+        link: "https://paypal.me/grimmforestmusic?locale.x=en_US",
         image: donatepic,
         description: "Thanks for considering donating, it helps with the hosting and opportunities to grow the community and content from Music Sequencing.",
         buttonText: "Donate"

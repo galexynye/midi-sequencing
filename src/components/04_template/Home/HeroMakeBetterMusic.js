@@ -5,10 +5,12 @@ import { WidthWrapper } from '../../00_utilities/Utilities'
 import { ButtonCTA } from '../../01_atom/ButtonCTA'
 import { PageTitle } from '../../01_atom/PageTitle'
 import { msTheme } from '../../../styles/Theme'
+import HeroInstruments from '../../../assets/Backgrounds/heroInstruments_1080.png'
+// import Faders from '../../../assets/Backgrounds/blackAndWhiteFaders.jpg'
 
 const HeroMakeBetterMusic = () => {
     return (
-        <HeroContainer>
+        <HeroContainer bgImage={HeroInstruments} >
             <HeroCenteredElement top="30%">
                 <PageTitle title="Make Better Music" margin="0px"></PageTitle>
                 <p className="headerFont quote center">“We cannot teach people anything; we can only help them discover it within themselves.”</p>

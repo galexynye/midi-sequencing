@@ -5,7 +5,8 @@ const lDT = {
     liveStream: "Live Stream",
     interactive: "Interactive",
     pdf: "PDF",
-    masterclass: "Master Class"
+    masterclass: "Master Class",
+    website: "Website"
 }
 
 export default lDT

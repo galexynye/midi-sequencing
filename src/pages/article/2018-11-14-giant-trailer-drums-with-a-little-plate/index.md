@@ -6,7 +6,7 @@ learn: true
 category: 'Producing'
 categoryDescription: 'Learn Music Making Techniques'
 subcategory: ['Sound Design']
-tags: ['trailer-music', 'epic', 'sound-toys', 'native-instruments', 'drums']
+tags: ['producing', 'sound-toys', 'native-instruments', 'drums']
 featuredImage: './TrailerDrumsFI.jpg'
 metaDescription: 'This article explores the sound design process for creating gigantic, reverb drench drums often heard in trailer music.'
 ---

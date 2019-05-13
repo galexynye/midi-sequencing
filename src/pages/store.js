@@ -15,9 +15,12 @@ export default class store extends Component {
         const storeItems = storeData.map(x => <StoreItem item={x} />)
         return (
             <SiteContainer>
+                <Helmet
+                    meta={[{ name: 'description', content: 'Get the greatest music stuff and support Music Sequencing.' }]}
+                    title={`Store | Music Sequencing`}
+                />
                 <PageTitle title="Support Music Sequencing" description='Everything listed in the “store” are links to gear, services or books that I use and love. Purchasing through a link here may entitle you to a discount.' />
                 <GridContainer gTC="1fr 3fr" gTCL="1fr 3fr" gTCM="1fr 2fr" gridGap="40px" margin="40px auto">
-                    {/* <StoreItem item={storeData[0]} /> */}
                     {storeItems}
                 </GridContainer>
             </SiteContainer>

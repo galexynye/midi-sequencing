@@ -15,7 +15,7 @@ const topics = {
 
 
 export const freePlugins = {
-    subject: "Free Plugins ect.",
+    subject: "Free Plugins +",
     id: "free",
     links: [
         {
@@ -86,7 +86,7 @@ export const freePlugins = {
             type: topics.samples,
             link: "https://freesound.org/browse/",
             title: "Free Sound",
-            description: 'They promise "free sound effects and sample libraries of commercial quality, at no charge" and they deliver. (99Sounds.org)'
+            description: 'A ton of free sounds of various quality and license requirements. Still worth knowing about. (FreeSound.org)'
         },
         {
             topic: topics.stereo,

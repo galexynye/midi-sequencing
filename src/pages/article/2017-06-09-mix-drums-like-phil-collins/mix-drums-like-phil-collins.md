@@ -6,7 +6,7 @@ learn: true
 category: 'Mixing'
 categoryDescription: 'Learn How to Mix from Beginner to Pro'
 subcategory: ['Creative Mixing']
-tags: ['mixing', 'gear', 'drum mixing']
+tags: ['mixing', 'producing', 'drum mixing']
 featuredImage: './media/how-to-phil-collins/phil-plugins-1.png'
 metaDescription: 'A drum mixing technique still used today. Ever wonder how Phil Collins got that drum sound for "In the Air Tonight"? Starting with a regular sounding drums, we digitally recreate this sound using emulations of the same gear he used.'
 ---

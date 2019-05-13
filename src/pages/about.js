@@ -14,7 +14,7 @@ class About extends React.Component {
             <SiteContainer>
                 <Helmet
                     meta={[{ name: 'description', content: 'About the Music Sequencing. How to learn music production by making music.' }]}
-                    title={`About | ${siteTitle}`}
+                    title={`About | Music Sequencing`}
                 />
                 <PageTitle text="About Music Sequencing" description="A simple philosophy: the more music you make, the better music you can create." ></PageTitle>
                 <ArticleContainer margin="0px auto">
@@ -25,7 +25,7 @@ class About extends React.Component {
                         <h3 className="headerFont">Avoid Information Overload ☠️</h3>
                         <p className="headerFont mB40">If you wanted to be a better basketball player you could read books on basketball, watch videos or listen to lectures on the theories of shooting. At the end of the day, the only way you’ll get better is by getting on the court and actually playing. It’s the same with music. </p>
                         <h3 className="headerFont">The 10 Project Challenge 🎹</h3>
-                        <p className="headerFont mB40">“Make more music” is great advice, but a bit vague. These 10 projects will help strengthen specific skills needed by any producer. They’ll focus your efforts and challenge you to think differently. When you finish, there is a forum thread at the bottom of each project where you can give feedback to a community member and then post your own music requesting feedback.</p>
+                        <p className="headerFont mB40">“Make more music” is great advice, but a bit vague. <Link to="/projects">These 10 projects</Link> will help strengthen specific skills needed by any producer. They’ll focus your efforts and challenge you to think differently. When you finish, there is a <a href="https://forum.musicsequencing.com/c/project-feedback/the-10" target="_blank">forum thread</a> at the bottom of each project where you can give feedback to a community member and then post your own music requesting feedback (you can be anonymous if you want).</p>
                     </div>
                     <div className="mB60">
                         <h2>Improve 🧘‍♂️</h2>
@@ -51,12 +51,12 @@ class About extends React.Component {
                         <h2>Quality Info When You Need It 🎼</h2>
                         <p className="headerFont mB40">There’s a lot that goes into making music. I do think tutorials and articles can help you improve.  The key to internalizing the information is to use it yourself.</p>
                         <p className="headerFont mB40">Always have a project you’re working on and look for info that will make your project better. Applying the info you get from a tutorial or article will cement it in.</p>
-                        <p className="headerFont mB40">To help out the community I’m putting out new tutorials when I can and have created a library of helpful resources. </p>
+                        <p className="headerFont mB40">To help out the community I’m putting out new tutorials when I can and have created a <Link to="/library">library of helpful resources</Link> .</p>
                     </div>
 
                     <div className="mB60">
                         <h2>Just Talking 🙂</h2>
-                        <p className="headerFont mB40">It’s good to talk to other producers. My hope is the community on the forums will enable opportunities for collaboration and friendship along with meaningful feedback and encouragement.</p>
+                        <p className="headerFont mB40">It’s good to talk to other producers. My hope is the <a href="https://forum.musicsequencing.com" target="_blank">community on the forums</a> will enable opportunities for collaboration and friendship along with meaningful feedback and encouragement.</p>
                     </div>
                     <div className="mB60">
                         <h2>About Me</h2>

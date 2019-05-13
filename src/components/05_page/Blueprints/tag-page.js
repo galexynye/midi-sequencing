@@ -13,13 +13,15 @@ const TagsList = styled.ul`
   padding: 0px;
 `
 
+
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   // const tagHeader = `Post${
   //   totalCount === 1 ? '' : 's'
   //   } tagged with "${tag}"`
-  const tagHeader = `Posts with "${tag}"`
+  // const tagHeader = `Posts with "${tag}"`
+  const tagHeader = `${tag}`
 
   return (
     <SiteContainer>

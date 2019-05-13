@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 import SiteContainer from '../components/05_page/Layout/SiteContainer';
 import { PageTitle } from '../components/01_atom/PageTitle'
 import { GridContainer, GridItem } from '../components/00_utilities/Utilities';
@@ -13,6 +14,10 @@ export default class Library extends Component {
 
         return (
             <SiteContainer>
+                <Helmet
+                    meta={[{ name: 'description', content: 'A curated collection of some of the best free plugins, samples and music tutorials from around the internet.' }]}
+                    title={`Music Resource Library | Music Sequencing`}
+                />
                 <PageTitle title="Music Resource Library" description="A growing document of curated music resources from here and around the web" />
                 <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr">
                     <h2>The Index</h2>
@@ -21,7 +26,7 @@ export default class Library extends Component {
                     </GridContainer>
 
                     <h2>Suggestions</h2>
-                    <p className="headerFont">If you have a suggestion for the library please help us out and write about it in the forums here. Alternatively, you can reach out to me on social media or the contact page. I’ll check it out and if it’s a good fit, I’ll put it in ASAP.</p>
+                    <p className="headerFont">If you have a suggestion for the library please help us out and write about it in the forums here. Alternatively, you can reach out to me on social media or the <Link to="/contact">contact page</Link>. I’ll check it out and if it’s a good fit, I’ll put it in ASAP.</p>
 
                     {libraryRender}
 
