@@ -50,7 +50,7 @@ There's 2 things you need to get better at making music.
 
 With this in mind I tried to build the site around these concepts. The projects listed [here](/projects) are designed to push people to seek out quality information and apply it to their own music. Whatever someone's skill level, doing these projects will make them get better simply because they will be creating music.
 
-My hope is that a symbiotic community will thrive in the forums with producers helping other producers. Everyone get's better.
+My hope is that a symbiotic community will thrive on <a href="http://forum.musicsequencing.com" target="_blank">the forums</a> with producers helping other producers. Everyone get's better.
 
 
 
