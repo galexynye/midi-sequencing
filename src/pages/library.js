@@ -26,7 +26,7 @@ export default class Library extends Component {
                     </GridContainer>
 
                     <h2>Suggestions</h2>
-                    <p className="headerFont">If you have a suggestion for the library please help us out and write about it in the forums here. Alternatively, you can reach out to me on social media or the <Link to="/contact">contact page</Link>. I’ll check it out and if it’s a good fit, I’ll put it in ASAP.</p>
+                    <p className="headerFont">If you have a suggestion for the library please help us out and write about it in the <a href="https://forum.musicsequencing.com/c/suggestions/library" target="_blank">forums here.</a> Alternatively, you can reach out to me on the <Link to="/contact">contact page</Link>. I’ll check it out and if it’s a good fit, I’ll put it in ASAP.</p>
 
                     {libraryRender}
 
