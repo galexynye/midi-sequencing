@@ -48,12 +48,7 @@ const Tags = ({ pageContext, data }) => {
             )
           })}
         </TagsList>
-        {/*
-              This links to a page that does not yet exist.
-              We'll come back to it!
-            */}
         <Link className="headerFont" to="/tags"
-        // style={{ marginTop: '10px' }}
         >
           All tags
       </Link>
