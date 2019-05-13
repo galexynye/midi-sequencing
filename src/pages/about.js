@@ -59,7 +59,7 @@ class About extends React.Component {
                         <p className="headerFont mB40">It’s good to talk to other producers. My hope is the <a href="https://forum.musicsequencing.com" target="_blank">community on the forums</a> will enable opportunities for collaboration and friendship along with meaningful feedback and encouragement.</p>
                     </div>
                     <div className="mB60">
-                        <h2>About Me</h2>
+                        <h2 id="me">About Me</h2>
                         <p className="headerFont mB40">My name is Alex Nye, or Saywell as an artist. I’m an independent artist, producer, songwriter and engineer with a <a href="https://www.grimmforestmusic.com" target="_blank">studio in Freiburg, Germany.</a> </p>
                         <p className="headerFont mB40">I grew up in Hudson, Ohio, Graduated from Berklee College of Music,  worked doing tv and film music in Los Angeles before relocating to Germany. </p>
                         <p className="headerFont mB40">I started Music Sequencing in 2017 as a blog about music production after grumbling to myself a million times over the years about all the things they didn’t teach us in music school. It wasn’t until recently I realized, “they couldn’t have taught me that stuff”, I had to actually do it to figure it out.</p>

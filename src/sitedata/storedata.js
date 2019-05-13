@@ -6,6 +6,7 @@ import sm7bpic from '../assets/StorePics/sm7b.jpg'
 import uadapollopic from '../assets/StorePics/uadapollo.jpg'
 import adama7xpic from '../assets/StorePics/adama7x.jpg'
 import isopadpic from '../assets/StorePics/isolationpad.jpg'
+import lessonspic from '../assets/StorePics/Store_LessonsPic.png'
 
 export const storeData = [
     {
@@ -14,6 +15,13 @@ export const storeData = [
         image: donatepic,
         description: "Thanks for considering donating, it helps with the hosting and opportunities to grow the community and content from Music Sequencing.",
         buttonText: "Donate"
+    },
+    {
+        item: "1-on-1 Lessons",
+        link: "/contact",
+        image: lessonspic,
+        description: "Online lessons with a Berklee graduate and professional producer where we can look over your projects for detailed explanations on where they might improve. Get lessons in music theory, recording, mixing, producing and more.",
+        buttonText: "Contact for Lessons"
     },
     {
         item: "Distrokid Digital Distrobution",
