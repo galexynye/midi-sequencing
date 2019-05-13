@@ -52,7 +52,7 @@ const cardWidth = '300px'
 
 export class PostCardHomeRecent extends React.PureComponent {
     render() {
-        const { learnOrBlog, snippet, date, title, src, category, slug, minHeight } = this.props
+        const { learnOrBlog, snippet, date, title, src, category, slug, minHeight, hideDate } = this.props
         return (
 
             <SimpleCard
@@ -68,7 +68,7 @@ export class PostCardHomeRecent extends React.PureComponent {
                     <Link to={slug}>{category}</Link>
                 </CategoryStyled>} */}
 
-                <DateStyled>{date}</DateStyled>
+                {!hideDate && <DateStyled>{date}</DateStyled>}
                 <Link to={slug} className="tDNone">
                     <p>{snippet}</p>
                 </Link>

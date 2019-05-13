@@ -18,66 +18,68 @@ const PopularPostsStyled = styled.div`
 `
 
 export class PopularPostsView extends Component {
-    render() {
-        const posts = this.props.data.allMarkdownRemark.edges
+  render() {
+    const posts = this.props.data.allMarkdownRemark.edges
 
-        let src // Set the source of the featured image
-        const RecentPostCards = posts.map((post, i) => {
-            // Checks if no featured image
-            if (!post.node.frontmatter.featuredImage) {
-                src = DawPic
-            } else {
-                src = post.node.frontmatter.featuredImage.childImageSharp.fluid.src
-            }
+    let src // Set the source of the featured image
+    const RecentPostCards = posts.map((post, i) => {
+      // Checks if no featured image
+      if (!post.node.frontmatter.featuredImage) {
+        src = DawPic
+      } else {
+        src = post.node.frontmatter.featuredImage.childImageSharp.fluid.src
+      }
 
-            if (i == 0) {
-                return (
-                    <GridItem gCSM="1" gCEM="3">
-                        <PostCardHomeRecent
-                            key={post.node.fields.slug}
-                            learnOrBlog={post.node.frontmatter.category}
-                            snippet={post.node.excerpt}
-                            date={post.node.frontmatter.date}
-                            title={post.node.frontmatter.title}
-                            category={post.node.frontmatter.subcategory}
-                            slug={post.node.fields.slug}
-                            src={src}
-                            minHeight="60px"
-                        />
-                    </GridItem>
-                )
-            }
-
-
-
-            return (
-                <PostCardHomeRecent
-                    key={post.node.fields.slug}
-                    learnOrBlog={post.node.frontmatter.category}
-                    snippet={post.node.excerpt}
-                    date={post.node.frontmatter.date}
-                    title={post.node.frontmatter.title}
-                    category={post.node.frontmatter.subcategory}
-                    slug={post.node.fields.slug}
-                    src={src}
-                    minHeight="60px"
-                />)
-        })
-
-
+      if (i == 0) {
         return (
-            <PopularPostsStyled>
-                <GridContainer gTCL="repeat(3, 1fr)" gridGap="40px 65px" gridGapL="45px">
-                    {RecentPostCards}
-                </GridContainer>
-            </PopularPostsStyled >
+          <GridItem gCSM="1" gCEM="3">
+            <PostCardHomeRecent
+              key={post.node.fields.slug}
+              learnOrBlog={post.node.frontmatter.category}
+              snippet={post.node.excerpt}
+              hideDate={true}
+              date={post.node.frontmatter.date}
+              title={post.node.frontmatter.title}
+              category={post.node.frontmatter.subcategory}
+              slug={post.node.fields.slug}
+              src={src}
+              minHeight="60px"
+            />
+          </GridItem>
         )
-    }
+      }
+
+
+
+      return (
+        <PostCardHomeRecent
+          key={post.node.fields.slug}
+          learnOrBlog={post.node.frontmatter.category}
+          snippet={post.node.excerpt}
+          hideDate={true}
+          date={post.node.frontmatter.date}
+          title={post.node.frontmatter.title}
+          category={post.node.frontmatter.subcategory}
+          slug={post.node.fields.slug}
+          src={src}
+          minHeight="60px"
+        />)
+    })
+
+
+    return (
+      <PopularPostsStyled>
+        <GridContainer gTCL="repeat(3, 1fr)" gridGap="40px 65px" gridGapL="45px">
+          {RecentPostCards}
+        </GridContainer>
+      </PopularPostsStyled >
+    )
+  }
 }
 
 export const PopularPosts = props => (
-    <StaticQuery
-        query={graphql`
+  <StaticQuery
+    query={graphql`
     query {
         allMarkdownRemark(
           limit: 3
@@ -112,6 +114,6 @@ export const PopularPosts = props => (
         }
       }
     `}
-        render={data => <PopularPostsView data={data} {...props} />}
-    />
+    render={data => <PopularPostsView data={data} {...props} />}
+  />
 )
