@@ -7,7 +7,7 @@ category: 'Blog'
 subcategory: ['News']
 tags: ['news']
 featuredImage: './NewMS.png'
-metaDescription: 'The Good and the Bad of Addictive Drums 2. A review and demo of what I love and what annoys me about this plugin.'
+metaDescription: 'The site has been completely redesigned for interaction and project feedback.'
 ---
 <img src="./NewMS.png">
 
