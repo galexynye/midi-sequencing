@@ -15,16 +15,13 @@ Today quietly marks a huge change for this site. There was no marketing, no prom
 
 ## How to Actually Learn Music
 
-Let's say you wanted to be the best music maker you could possibly be. Should you go to music school? Probably not.
+Let's say you wanted to be the best music maker you could possibly be. 
 
-I say this as a graduate of Berklee College of Music.
+Here's a simple fact of life, if you want to get good at something you have to do it. Sometimes you have to do it a lot. 
 
-For example: Is writing jazz big band arrangements a necessary skill in the 21st century? Not at all. But it was REQUIRED in my major.
+The best possible thing you can do to get better at making any kind of music is to show up everyday and do it.
 
-Did it help me get better at music? Yes, simply because it was a project that had something to do with music.
-
-
-Here's a fact of life, if you want to get good at something you have to do it. Sometimes you have to do it a lot. 
+Some great information can help you improve. But more often than not, information that seems great never ends up doing anything but taking up time you could have better spent making music.
 
 ## How People Get Off Track
 
@@ -32,15 +29,17 @@ There was a lot of stuff I learned in music school I've never needed to know and
 
 I thought about it. I looked up whatever information I thought could help me. I tried applying that information to my problem. I kept doing that until the job was done.
 
-When the task was finally finished, I could say, with evidence, that I knew how to do that task. 
+When the task was finally finished, I could say, with evidence, that I knew how to do that task. I learned way more valuable information this way than from going to Berklee.
 
 A big problem with people who are learning to make music is they get some great help from a few tutorials and end up spending too much time in the "looking up information" part. **Information is as valuable as it is useful though.** 
 
 Watching tutorial after tutorial or Dave Pensado tell you about a "neat little plugin" (sorry, love you Dave) can seem beneficial but it's really just a drop in the bucket compared to the ocean of knowledge you get making your own music. 
 
+The idea behind the [resource library](/library) on Music Sequencing is to collect useful information that peole can easily discover and apply directly to their music.
+
 ## The Goal Here
 
-I started this site because I wanted to teach music production. There seemed to be a lot of information missing in schools and online and I wanted to help fill in the gap with articles and tutorials.
+I started this site because I wanted to teach music production. There seemed to be a lot of missing information in schools and online so I wanted to help fill in the gap with some articles and tutorials.
 
 After a couple years I realized it wasn't a lack of tutorials that stop people from making better music. It was something else.
 
