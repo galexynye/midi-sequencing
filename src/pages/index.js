@@ -43,14 +43,13 @@ export default class Home extends React.Component {
         <Philosophy />
         <ResourceLibraryHome />
         <FreeForums />
+        <NewsLetter />
         <HomeSection>
           <h2 className="center mB40">Popular Posts 🔥</h2>
           <PopularPosts></PopularPosts>
           <h2 className="center mB40">Latest from Music Sequencing 📰</h2>
           <RecentPosts></RecentPosts>
         </HomeSection>
-        <NewsLetter />
-
       </SiteContainer >
     )
   }
