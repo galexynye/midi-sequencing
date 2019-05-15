@@ -7,6 +7,7 @@ const topics = {
     eq: "EQ",
     reverb: "Reverb",
     vocals: "Mixing Vocals",
+    multitracks: "Multitracks"
 
 }
 
@@ -15,6 +16,13 @@ export const mixing = {
     id: "mixing",
     links: [
 
+        {
+            topic: topics.multitracks,
+            type: lDT.interactive,
+            link: "http://www.cambridge-mt.com/ms-intro.htm",
+            title: "Tracks to Practice Mixing",
+            description: "Free to download multi-track recordings for you to practice mixing + other resources. (Cambridge Music Technology) "
+        },
         {
             topic: topics.eq,
             type: lDT.interactive,
