@@ -15,6 +15,14 @@ export const mixing = {
     subject: "Mixing",
     id: "mixing",
     links: [
+        {
+            topic: topics.multiple,
+            internal: true,
+            type: lDT.videoAndArticle,
+            link: "/tags/mixing",
+            title: "Mixing by Music Sequencing",
+            description: "Originals on mixing explaining mixing techniques, how to use different effects and more. (Music Sequencing)"
+        },
 
         {
             topic: topics.multitracks,
@@ -29,6 +37,13 @@ export const mixing = {
             link: "http://www.independentrecording.net/irn/resources/freqchart/main_display.htm",
             title: "Interactive Frequency Chart",
             description: "A useful reference chart of where many instruments fall on the frequency spectrum. (Independent Recording) "
+        },
+        {
+            topic: topics.multiple,
+            type: lDT.video,
+            link: "https://mixwiththemasters.com/videos/all?free_video=true&#filtered-videos",
+            title: "Mix With the Masters",
+            description: "The free videos from a paid site where professional mixing engineers tell you about mixing. (Mix With The Masters) "
         },
         {
             topic: topics.compression,
@@ -52,14 +67,7 @@ export const mixing = {
         //     title: "BAM Audio School",
         //     description: "A vast collection of articles on audio, mixing, and music from a seasoned professional for those who want to dive deep. (BAM Audio)"
         // },
-        {
-            topic: topics.multiple,
-            internal: true,
-            type: lDT.videoAndArticle,
-            link: "/tags/mixing",
-            title: "Mixing by Music Sequencing",
-            description: "Originals on mixing explaining mixing techniques, how to use different effects and more. (Music Sequencing)"
-        },
+
     ]
 }
 

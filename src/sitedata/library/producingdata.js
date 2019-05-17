@@ -14,6 +14,14 @@ export const producing = {
     id: "producing",
     links: [
         {
+            topic: topics.sound,
+            internal: true,
+            type: lDT.videoAndArticle,
+            link: "/tags/producing",
+            title: "Producing by Music Sequencing",
+            description: 'Originals from Music Sequencing that will expand your producing knowledge. (Music Sequencing)'
+        },
+        {
             topic: topics.synthesis,
             type: lDT.video,
             link: "https://www.youtube.com/watch?v=atvtBE6t48M",
@@ -27,14 +35,7 @@ export const producing = {
             title: "Sound Design Playlist",
             description: "A collection of videos from around youtube about sound design. (Various)"
         },
-        {
-            topic: topics.sound,
-            internal: true,
-            type: lDT.videoAndArticle,
-            link: "/tags/producing",
-            title: "Producing by Music Sequencing",
-            description: 'Originals from Music Sequencing that will expand your producing knowledge. (Music Sequencing)'
-        },
+
     ]
 }
 
