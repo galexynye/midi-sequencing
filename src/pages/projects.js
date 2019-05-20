@@ -15,9 +15,9 @@ export default class Projects extends Component {
             <SiteContainer>
                 <Helmet
                     meta={[{ name: 'description', content: '10 Projects that will make you a better music producer. Get and give feedback on your music and grow.' }]}
-                    title={`10 Projects | Music Sequencing`}
+                    title={`The Projects | Music Sequencing`}
                 />
-                <PageTitle title="10 Projects" description="Do these and you will be a better producer."></PageTitle>
+                <PageTitle title="The Projects" description="Do these and you will be a better producer."></PageTitle>
                 <h2 className="center mT0 mB60">Getting Started</h2>
                 <InfoGrid>
                     <div>

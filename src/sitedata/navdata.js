@@ -1,6 +1,6 @@
 export const MainNavLinksData = [
     // { name: 'Learn', to: '/learn', external: false },
-    { name: 'The 10', to: '/projects', external: false },
+    { name: 'The Projects', to: '/projects', external: false },
     { name: 'Library', to: '/library', external: false },
     { name: 'Blog', to: '/blog', external: false },
     { name: 'About', to: '/about', external: false },
