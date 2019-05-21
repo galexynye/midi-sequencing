@@ -12,16 +12,16 @@ const HeroContainerStyle = styled.div`
     margin: ${props => props.margin || "0px"};
     background-position: center;
     height: 100vh;
-    /* background-image:linear-gradient(rgba(100, 100, 100, 0.8), rgba(0, 0, 0, 0.6)), url(${bgImage2});     */
-    background-image:${props => `url(${props.bgImage})` || 'none'};    
+    /* background-image:linear-gradient(rgba(100, 100, 100, 0.8), rgba(0, 0, 0, 0.6)), url(${bgImage2});     */    
+    background-image:${props => props.linearGradient ? `linear-gradient(${props.linearGradient}), url(${props.bgImage})` : `url(${props.bgImage})` ? `url(${props.bgImage})` : 'none'};    
     background-size: ${props => props.bgSize || 'cover'};
     position: relative;
     transition: height 1000000s ease;
 `
 
-export const HeroContainer = ({ children, bgImage, bgSize }) => {
+export const HeroContainer = ({ children, bgImage, bgSize, linearGradient }) => {
     return (
-        <HeroContainerStyle bgImage={bgImage} bgSize={bgSize}>
+        <HeroContainerStyle bgImage={bgImage} bgSize={bgSize} linearGradient={linearGradient}>
 
             {children}
         </HeroContainerStyle>

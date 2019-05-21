@@ -261,6 +261,9 @@ a {
     }
 }
 
+.white {
+    color: white;
+}
 
 `
 

@@ -22,7 +22,7 @@ import bgImage2 from '../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
 import { HeroCenteredElement } from '../components/01_atom/HeroCenteredElement';
 import { PageTitle } from '../components/01_atom/PageTitle';
 import { ButtonCTA } from '../components/01_atom/ButtonCTA';
-import HeroMakeBetterMusic from '../components/04_template/Home/HeroMakeBetterMusic';
+import { HeroMakeBetterMusic } from '../components/04_template/Home/HeroMakeBetterMusic';
 import { Philosophy } from '../components/04_template/Home/Philosophy';
 import { ResourceLibraryHome } from '../components/04_template/Home/ResourceLibraryHome';
 import { NewsLetter } from '../components/04_template/Home/NewsLetter';

@@ -4,7 +4,7 @@ import { msTheme } from '../../styles/Theme'
 
 const HeroCenteredElementStyle = styled.div`
     position: absolute;
-    background-color: ${props => props.bgColor || 'rgba(255, 255, 255)'};
+    background-color: ${props => props.bgColor || 'none'};
     padding: 10px;
     left: ${props => props.left || '50%'};
     top: ${props => props.top || '50%'};    
