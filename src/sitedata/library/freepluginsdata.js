@@ -47,6 +47,13 @@ export const freePlugins = {
             description: "Scroll down to the bottom of their products page for a list of amazing free synths. (U-he)"
         },
         {
+            topic: topics.multiple,
+            type: topics.multiple,
+            link: "http://boscomac.free.fr/?p=rack",
+            title: "Boscomac",
+            description: "The most incredible donationware synths and effects. Warning: You need the full version of Reaktor 5 or 6 (which is you have to buy) to use. (Boscomac)"
+        },
+        {
             topic: topics.daw,
             type: topics.daw,
             link: "https://www.ableton.com/en/products/live-lite/",
