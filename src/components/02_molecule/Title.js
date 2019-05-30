@@ -35,7 +35,8 @@ export const FormMainTitleStyle = styled.h2`
 export const FormSubTitleStyle = styled.h3`
     font-family: ${msTheme.font.headerFont};
     font-size: 20px;
-     margin: 0px auto 20px auto;
+    margin: 0px auto 20px auto;
+    color: ${props => props.color || 'default'};
     /* max-width: 350px; */
     line-height: 25px;
     ${msTheme.mediaquery().medium}{
@@ -54,14 +55,14 @@ export class Title extends React.PureComponent {
         super(props)
     }
     render() {
-        const { title, titleHeight, subtitle, color, marginTitle, titlePadding, fontSize, fontSizeSmall, lineHeight, lineHeightSmall, } = this.props
+        const { title, titleHeight, subtitle, color, subColor, marginTitle, titlePadding, fontSize, fontSizeSmall, lineHeight, lineHeightSmall, } = this.props
 
         return (
             <TitleStyle height={titleHeight}>
                 <FormMainTitleStyle color={color} margin={marginTitle} padding={titlePadding} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall}>
                     {title}
                 </FormMainTitleStyle>
-                {subtitle && <FormSubTitleStyle>{subtitle}</FormSubTitleStyle>}
+                {subtitle && <FormSubTitleStyle color={subColor}>{subtitle}</FormSubTitleStyle>}
             </TitleStyle>
         )
     }

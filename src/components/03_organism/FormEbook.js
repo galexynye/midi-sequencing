@@ -98,7 +98,7 @@ export class FormEbook extends React.PureComponent {
     // Note These messages and stuff should be set as props for the most part
 
     render() {
-        const { title, subtitle, formWidth, color, marginTitle, titleHeight, formHeight, fontSize, fontSizeSmall, lineHeight, lineHeightSmall } = this.props
+        const { title, subtitle, formWidth, color, subColor, marginTitle, titleHeight, formHeight, fontSize, fontSizeSmall, lineHeight, lineHeightSmall } = this.props
         // Ebook Interactive
         const EbookFormInteraction = <form onSubmit={this._handleSubmit}>
             <WidthWrapper width={formWidth}>
@@ -116,7 +116,7 @@ export class FormEbook extends React.PureComponent {
         return (
             <FormEbookContainer titleHeight={titleHeight} >
 
-                {title && <Title title={title} subtitle={subtitle} marginTitle={marginTitle} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall} />}
+                {title && <Title title={title} subtitle={subtitle} marginTitle={marginTitle} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall} color={color} subColor={subColor} />}
 
 
                 {this.state.showForm && EbookFormInteraction}

@@ -1,13 +1,22 @@
 import lDT from './librarydatatypes'
 
 const topics = {
-    levels: "Input"
+    levels: "Input",
+    multiple: "Multiple"
 }
 
 export const recording = {
     subject: "Recording",
     id: "recording",
     links: [
+        {
+            topic: topics.multiple,
+            internal: true,
+            type: lDT.videoAndArticle,
+            link: "/tags/recording",
+            title: "Recording Videos and Articles by Music Sequencing",
+            description: 'Originals from Music Sequencing that will expand your recording knowledge. (Music Sequencing)'
+        },
         {
             topic: topics.recording,
             type: lDT.videoAndArticle,

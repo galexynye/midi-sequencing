@@ -104,7 +104,7 @@ strong{
 
 ol, ul {
     padding-left: 19px;
-    margin-bottom: 22px;
+    margin-bottom: 40px;
 }
 
 ul {

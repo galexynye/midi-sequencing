@@ -7,6 +7,7 @@ import uadapollopic from '../assets/StorePics/uadapollo.jpg'
 import adama7xpic from '../assets/StorePics/adama7x.jpg'
 import isopadpic from '../assets/StorePics/isolationpad.jpg'
 import lessonspic from '../assets/StorePics/Store_LessonsPic.png'
+import bookpic from '../assets/StorePics/book.png'
 
 export const storeData = [
     {
@@ -15,6 +16,13 @@ export const storeData = [
         image: donatepic,
         description: "Thanks for considering donating, it helps with the hosting and opportunities to grow the community and content from Music Sequencing.",
         buttonText: "Donate"
+    },
+    {
+        item: "Ultimate Producer's Workflow Ebook",
+        link: "/ultimate-producers-workflow",
+        image: bookpic,
+        description: "Are you producing, mixing and mastering your own music? I wrote a free eBook to help improve your workflow and your music.",
+        buttonText: "Get the eBook"
     },
     {
         item: "1-on-1 Mentorship",

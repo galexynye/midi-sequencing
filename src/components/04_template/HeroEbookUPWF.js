@@ -42,7 +42,7 @@ export class HeroEBookUPWFView extends Component {
             <HeroEBookUPWFStyle src={pic}>
                 {/* <HeroEBookUPWFStyle> */}
                 <HeroEBookUPWFElementCenter>
-                    <FormEbook formWidth="350px" title="The Ultimate Producer's Workflow" subtitle="How to CREATE Pro Quality Music : Doing EVERYTHING Yourself" />
+                    <FormEbook formWidth="350px" title="The Ultimate Producer's Workflow" subtitle="How to CREATE Pro Quality Music : Doing EVERYTHING Yourself" subColor="white" />
                 </HeroEBookUPWFElementCenter>
             </HeroEBookUPWFStyle>
         )
