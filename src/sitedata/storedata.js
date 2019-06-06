@@ -18,19 +18,20 @@ export const storeData = [
         buttonText: "Donate"
     },
     {
+        item: "1-on-1 Mentorship",
+        link: "/contact",
+        image: lessonspic,
+        description: "Get a custom lesson plan and project feedback to improve your music. Learn advanced topics and how to start a career in the music industry. Contact for a FREE trial lesson.",
+        buttonText: "Contact for Mentorship"
+    },
+    {
         item: "Ultimate Producer's Workflow Ebook",
         link: "/ultimate-producers-workflow",
         image: bookpic,
         description: "Are you producing, mixing and mastering your own music? I wrote a free eBook to help improve your workflow and your music.",
         buttonText: "Get the eBook"
     },
-    {
-        item: "1-on-1 Mentorship",
-        link: "/contact",
-        image: lessonspic,
-        description: "Online mentorship with a Berklee graduate and professional producer where we can look over your projects for detailed explanations on where they might improve. Get lessons in music theory, recording, mixing, producing and more.",
-        buttonText: "Contact for Mentorship"
-    },
+
     {
         item: "Distrokid Digital Distrobution",
         link: "https://distrokid.com/vip/seven/1147477",

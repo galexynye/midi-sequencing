@@ -2,7 +2,8 @@
 path: '/article/controlling-logic-with-a-midi-controller'
 title: Controlling Logic X with A Midi Controller
 author: 'Alex Nye'
-date: '2018-11-19'
+# date: '2018-11-19'
+date: '2019-06-06'
 learn: true
 category: 'Music Tech'
 categoryDescription: 'Music Making Tech and How to Use It'
@@ -26,6 +27,10 @@ The main reasons I did this is
 
 1. So I know what messages are on my keyboard and
 2. There wouldn't be any potential conflicts with software instruments.
+
+### NEW Video on How to Set Up the Midi Controller
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rGQlTuWzBVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 If you are familiar with Midi Control Change Messages skip this paragraph. Midi Control Changes correspond to similar actions across different instrument manufacturers.. In other words, Midi Control Change 64 is designated for sustain pedal. Any company who creates a Midi Controlled piano, will have the sustain of that piano be controlled by Midi CC 64. A list of all the midi control change messages can be found on <a href="https://www.midi.org/specifications-old/item/table-3-control-change-messages-data-bytes-2" target="blank"> Midi.org here</a>.
 

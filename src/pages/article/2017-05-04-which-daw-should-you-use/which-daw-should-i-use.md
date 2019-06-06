@@ -1,7 +1,8 @@
 ---
 title: 'Which DAW Should You Use?'
 author: 'Alex Nye'
-date: '2017-05-04'
+# date: '2017-05-04'
+date: '2019-01-04'
 updated: '2019-01-04'
 learn: true
 series: ['basics']
