@@ -9,19 +9,13 @@ import { msTheme } from '../styles/Theme'
 // Components with Content
 import { HeroEBookUPWF } from "../components/04_template/HeroEbookUPWF";
 import { FreeForums } from "../components/04_template/Home/FreeForums";
-import { HomeAbout } from '../components/04_template/Home/HomeAbout';
 import { RecentPosts } from '../components/03_organism/RecentPosts';
 
 import { HomeSection } from '../components/04_template/Home/HomeSection';
-import { GridContainer, WidthWrapper } from '../components/00_utilities/Utilities';
-import { HeroContainer } from '../components/01_atom/HeroContainer'
+
 
 // Sets A Main Container Size
-const containerSize = msTheme.widths.wide
-import bgImage2 from '../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
-import { HeroCenteredElement } from '../components/01_atom/HeroCenteredElement';
-import { PageTitle } from '../components/01_atom/PageTitle';
-import { ButtonCTA } from '../components/01_atom/ButtonCTA';
+
 import { HeroMakeBetterMusic } from '../components/04_template/Home/HeroMakeBetterMusic';
 import { Philosophy } from '../components/04_template/Home/Philosophy';
 import { ResourceLibraryHome } from '../components/04_template/Home/ResourceLibraryHome';
@@ -39,7 +33,8 @@ export default class Home extends React.Component {
           title={`${siteTitle}`}
         />
 
-        <HeroMakeBetterMusic />
+        {/* <HeroMakeBetterMusic /> */}
+        <HeroEBookUPWF />
         <Philosophy />
         <ResourceLibraryHome />
         <FreeForums />

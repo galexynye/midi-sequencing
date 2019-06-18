@@ -14,9 +14,9 @@ bgImages: {blackAndWhite: './media/bgImages/blackAndWhiteFaders.jpg', homeFaders
 metaDescription: 'If you are learning music production, this article is everything you need to know about midi right now.'
 ---
 
-Sometime in my first couple weeks at Berklee I saw a poster that said, “Midi is for people with no friends. Come to Jam Club!”, and I thought, "Midi must be for me."
+<!-- Sometime in my first couple weeks at Berklee I saw a poster that said, “Midi is for people with no friends. Come to Jam Club!”, and I thought, "Midi must be for me."
 But little did the jerks at jam club know, with midi you can control a whole kaleidoscope of sound with looper pedals, drum triggers, software synths, or entire sampled orchestras.
-At some point you might have heard some fake, computer-y sounding music described as “Sounding like midi.” <strong>The phrase, "sounds like midi" is impossible. </strong> You cannot sound like midi fore <strong>MIDI HAS NO SOUND!</strong>
+At some point you might have heard some fake, computer-y sounding music described as “Sounding like midi.” <strong>The phrase, "sounds like midi" is impossible. </strong> You cannot sound like midi fore <strong>MIDI HAS NO SOUND!</strong> -->
 
 <h3 > Midi ≠ Audio.</h3>
 
@@ -49,7 +49,7 @@ This is only the tip of the iceburg of midi's potential.
 
 Check the back of your synth for a midi port that looks like this.
 
-<p ><img class="circle-picture alignnone wp-image-376 size-large" src="./media/what-is-midi/Standard-Midi-Port-1.jpg" alt="A standard midi port" width="1024" height="629" /></p>
+<p ><img  src="./media/what-is-midi/Standard-Midi-Port-1.jpg" alt="A standard midi port"/></p>
 
 Back in 1983, when midi first came out, these ports along with midi cables is how devices transmitted midi. These days, most midi is transmitted over USB cables. So here's how you can use your modern computer to play that vintage synth for you.
 
