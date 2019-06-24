@@ -19,7 +19,7 @@ export const ResourceLibraryHome = () => {
                 </div>
                 <div>
                     <h3>Help it Grow</h3>
-                    <p>The internet is filled with amazing free resources waiting to be discovered. If you know of something that everyone can benefit from, please tell us about it <a href="https://forum.musicsequencing.com/c/suggestions/library" target="_blank">here on the forums.</a> </p>
+                    <p>The internet is filled with amazing free resources waiting to be discovered. If you know of something that people can benefit from, <Link to="/contact">please tell me about it</Link></p>
                     <p>By making the resource library a community effort we can create a central hub of the best free resources for learning music.</p>
                 </div>
             </InfoGrid>

@@ -94,7 +94,7 @@ class BlogPostTemplate extends React.Component {
             >
               <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
               {/* Embed for the forum posts */}
-              <script type="text/javascript">{`
+              {/* <script type="text/javascript">{`
               DiscourseEmbed = {discourseUrl: 'https://forum.musicsequencing.com/',
                                  discourseEmbedUrl: 'https://www.musicsequencing.com${post.fields.slug}' };
             
@@ -104,7 +104,7 @@ class BlogPostTemplate extends React.Component {
                           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
                         })();`
               }
-              </script>
+              </script> */}
 
             </Helmet>
             <h1>{post.frontmatter.title}</h1>
@@ -173,7 +173,7 @@ class BlogPostTemplate extends React.Component {
               </li>
             </ul>
 
-            <div id='discourse-comments'></div>
+            {/* <div id='discourse-comments'></div> */}
 
             {/* <GridContainer>
               <h2 className="mB0">Learn More</h2>

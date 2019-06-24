@@ -3,13 +3,10 @@ import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 import { NavFooter } from '../03_organism/NavFooter'
 import { FlexboxOrganism, WidthWrapper, GridContainer, GridItem, PaddingWrapper } from '../00_utilities/Utilities'
-import { SimpleCard } from '../02_molecule/SimpleCard'
 import { HomeLinkLogo } from "../01_atom/HomeLinkLogo"
-import { FormEbook } from '../03_organism/FormEbook'
-import { ButtonCTA } from '../01_atom/ButtonCTA';
-import { CardTopTitle } from '../01_atom/CardTopTitle'
 
-import ForumPic from '../../assets/Temporary/MsForumWhite.png'
+
+
 
 export const FooterStyle = styled.footer`
     /* background-color: ${msTheme.colors.text}; */

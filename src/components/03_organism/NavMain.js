@@ -13,7 +13,7 @@ const NavStyle = styled.nav`
         justify-content: flex-end;
         align-items: center;
         margin: ${props => props.margin || '0px'};
-        padding: 0px;
+        padding: 0px 25px;
         list-style-type: none;
         li {
             margin: ${props => props.margin ? props.margin : '0px 0px 0px 45px'};        

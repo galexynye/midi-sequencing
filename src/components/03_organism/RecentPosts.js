@@ -69,9 +69,9 @@ export class RecentPostsView extends Component {
       <RecentPostsStyled>
         <GridContainer gTCL="repeat(3, 1fr)" gridGap="40px 65px" gridGapL="45px">
           {RecentPostCards}
-          <GridItem gCS="1" gCE="4">
+          {/* <GridItem gCS="1" gCE="4">
             <p className="headerFont">Check out more posts from Music Sequencing <Link to="/blog">here</Link>.</p>
-          </GridItem>
+          </GridItem> */}
         </GridContainer>
       </RecentPostsStyled >
     )

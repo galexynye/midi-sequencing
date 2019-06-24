@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from "styled-components";
 import { FormEbook } from "../03_organism/FormEbook";
 import { msTheme } from '../../styles/Theme'
-// import bgImage2 from '../../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
+import bgImage2 from '../../assets/Backgrounds/dylan-mcleod-faders-black.jpg'
+import { WidthWrapper } from '../00_utilities/Utilities';
 
 const HeroEBookUPWFStyle = styled.div`
     background-position: center;
     height: 100vh;
-    background-image:linear-gradient(rgba(100, 100, 100, 0.8), rgba(0, 0, 0, 0.6)), url(${props => props.src || bgImage2});
+    background-image:linear-gradient(rgba(120, 120, 120, 0.8), rgba(0, 0, 0, 0.6)), url(${props => props.src || bgImage2});
     background-size: cover;
     position: relative;
     transition: height 1000000s ease;
@@ -32,7 +33,12 @@ const HeroEBookUPWFElementCenter = styled.div`
     }
 `
 
-
+const YourEmail = styled.div`
+a{
+    /* margin: auto; */
+    color: white;
+    }
+`
 
 export class HeroEBookUPWFView extends Component {
     render() {
@@ -42,7 +48,8 @@ export class HeroEBookUPWFView extends Component {
             <HeroEBookUPWFStyle src={pic}>
                 {/* <HeroEBookUPWFStyle> */}
                 <HeroEBookUPWFElementCenter>
-                    <FormEbook formWidth="350px" title="The Ultimate Producer's Workflow" subtitle="How to CREATE Pro Quality Music : Doing EVERYTHING Yourself" subColor="white" />
+                    <FormEbook formWidth="350px" title="The Ultimate Producer's Workflow" subtitle="A Professional Guide to Producing, Mixing and Mastering Your Own Music" subColor="white" />
+                    <WidthWrapper width="200px"><YourEmail><Link to="your-email">What happens to your email?</Link></YourEmail></WidthWrapper>
                 </HeroEBookUPWFElementCenter>
             </HeroEBookUPWFStyle>
         )
@@ -60,7 +67,7 @@ export const HeroEBookUPWF = props => (
         bgImages{
           homeFaders{
             childImageSharp{
-              fluid{
+              fluid(quality:95){
                 src
               }
             }

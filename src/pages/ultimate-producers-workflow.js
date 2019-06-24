@@ -12,7 +12,7 @@ class Latest extends React.Component {
     return (
       <SiteContainer headerPosition="absolute">
         <Helmet
-          meta={[{ name: 'description', content: `Get a FREE copy of the Ultimate Producer's Workflow eBook while still available` }]}
+          meta={[{ name: 'description', content: `Get a FREE copy of the Ultimate Producer's Workflow eBook` }]}
           title={`Ultimate Producer's Workflow - eBook | ${siteTitle}`}
         />
         <HeroEBookUPWF />

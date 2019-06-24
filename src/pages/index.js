@@ -35,11 +35,11 @@ export default class Home extends React.Component {
 
         {/* <HeroMakeBetterMusic /> */}
         <HeroEBookUPWF />
-        <Philosophy />
+        {/* <Philosophy /> */}
         <ResourceLibraryHome />
-        <FreeForums />
-        <NewsLetter />
-        <HomeSection>
+        {/* <FreeForums /> */}
+        {/* <NewsLetter /> */}
+        <HomeSection padding="80px 0px 80px 0px">
           <h2 className="center mB40">Popular Posts 🔥</h2>
           <PopularPosts></PopularPosts>
           <h2 className="center mB40">Latest from Music Sequencing 📰</h2>

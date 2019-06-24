@@ -1,6 +1,6 @@
 export const msTheme = {
     colors: {
-        text: '#2e343a', // '#373737'
+        text: '#272a2e', // '#373737' #2e343a
         textlight: '#6d6d6d',
         primary: '#700bea', // Purple
         primayhighlighter: '#C6A6F2',
@@ -87,7 +87,7 @@ export const msTheme = {
                 paddingSmall: `10px 20px;`,
                 // border: `1px solid ${this.colors.text}`,
                 border: `none`,
-                borderRadius: `0px;`,
+                borderRadius: `4px;`,
                 paddingInput: "10px 10px"
             }
         }
