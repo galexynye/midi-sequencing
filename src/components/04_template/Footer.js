@@ -6,7 +6,7 @@ import { FlexboxOrganism, WidthWrapper, GridContainer, GridItem, PaddingWrapper 
 import { HomeLinkLogo } from "../01_atom/HomeLinkLogo"
 
 
-
+// Delete this comment
 
 export const FooterStyle = styled.footer`
     /* background-color: ${msTheme.colors.text}; */
