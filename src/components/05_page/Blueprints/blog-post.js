@@ -8,6 +8,7 @@ import { msTheme } from '../../../styles/Theme'
 import { LearnCards } from '../../03_organism/LearnCards';
 import { GridContainer } from '../../00_utilities/Utilities';
 import { ShareButtons } from '../../02_molecule/ShareButtons'
+import { PageTitle } from '../../01_atom/PageTitle';
 
 
 // import ScrollToTop from '../components/ScrollToTop'
@@ -85,16 +86,16 @@ class BlogPostTemplate extends React.Component {
         {!this.state.isTop && <ShareButtons url={`https://www.musicsequencing.com${post.fields.slug}`} />}
         <SiteContainer>
 
-          <ArticleContainer>
-            {/* <Layout location={this.props.location}> */}
-            <Helmet
-              htmlAttributes={{ lang: 'en' }}
-              meta={[{ name: 'description', content: `${post.frontmatter.metaDescription ? post.frontmatter.metaDescription : post.excerpt}` }]}
-              title={`${post.frontmatter.title} - ${post.frontmatter.category}`}
-            >
-              <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-              {/* Embed for the forum posts */}
-              {/* <script type="text/javascript">{`
+
+          {/* <Layout location={this.props.location}> */}
+          <Helmet
+            htmlAttributes={{ lang: 'en' }}
+            meta={[{ name: 'description', content: `${post.frontmatter.metaDescription ? post.frontmatter.metaDescription : post.excerpt}` }]}
+            title={`${post.frontmatter.title} - ${post.frontmatter.category}`}
+          >
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+            {/* Embed for the forum posts */}
+            {/* <script type="text/javascript">{`
               DiscourseEmbed = {discourseUrl: 'https://forum.musicsequencing.com/',
                                  discourseEmbedUrl: 'https://www.musicsequencing.com${post.fields.slug}' };
             
@@ -106,8 +107,9 @@ class BlogPostTemplate extends React.Component {
               }
               </script> */}
 
-            </Helmet>
-            <h1>{post.frontmatter.title}</h1>
+          </Helmet>
+          <PageTitle text={post.frontmatter.title} />
+          <ArticleContainer margin="10px auto 0px auto">
             <ul
               style={
                 {

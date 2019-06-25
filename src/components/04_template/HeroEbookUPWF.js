@@ -34,8 +34,10 @@ const HeroEBookUPWFElementCenter = styled.div`
 `
 
 const YourEmail = styled.div`
+text-align: center;
 a{
-    /* margin: auto; */
+    
+    margin: auto;
     color: white;
     }
 `
@@ -49,7 +51,7 @@ export class HeroEBookUPWFView extends Component {
                 {/* <HeroEBookUPWFStyle> */}
                 <HeroEBookUPWFElementCenter>
                     <FormEbook formWidth="350px" title="The Ultimate Producer's Workflow" subtitle="A Professional Guide to Producing, Mixing and Mastering Your Own Music" subColor="white" />
-                    <WidthWrapper width="200px"><YourEmail><Link to="your-email">What happens to your email?</Link></YourEmail></WidthWrapper>
+                    <WidthWrapper width="350px"><YourEmail><Link to="your-email">Your email stays private forever.</Link></YourEmail></WidthWrapper>
                 </HeroEBookUPWFElementCenter>
             </HeroEBookUPWFStyle>
         )

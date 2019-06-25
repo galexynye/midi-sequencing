@@ -20,8 +20,8 @@ const PageTitleStyle = styled.div`
         /* padding: ${msTheme.padding.globalSide};    */
         padding: 20px 0px;   
         word-wrap: break-word;
-         font-size: 94px;
-        line-height: 87px;
+         font-size: 84px;
+        line-height: 86px;
 
     }
     
@@ -29,7 +29,7 @@ const PageTitleStyle = styled.div`
        margin: ${props => props.marginSmall || "10px 0px 0px 0px"};
         h1{
             font-size: 45px;
-            line-height: 45px;
+            line-height: 47px;
              /* margin-bottom: 15px; */
              word-wrap: break-word;
              padding: 20px 0px;

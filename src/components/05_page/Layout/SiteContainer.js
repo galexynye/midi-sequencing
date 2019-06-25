@@ -30,12 +30,12 @@ body{
 h1 {
     color: ${msTheme.colors.text};
 	font-family: ${msTheme.font.headerFont}, Arial, Helvetica, sans-serif;
-	font-size: 94px;
+	/* font-size: 94px; */
 	font-size: 60px;
 	font-weight: 300;
 	letter-spacing: -2px;
 	/* line-height: 87px; */
-	line-height: 53px;
+	line-height: 63px;
 	margin-bottom: 27px;
 	/* text-transform: uppercase; */
      word-wrap: break-word;
@@ -53,7 +53,7 @@ h2 {
 	font-weight: 300;
 	/* letter-spacing: -1px; */
 	line-height: 39px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
     margin-top: 80px;
 	/* text-transform: uppercase; */
     :first-child{
@@ -66,6 +66,7 @@ h2 {
  @media screen and (max-width: ${msTheme.breakPoints.medium + "px"} ) {
      h2{
          padding-top: 5px;
+         margin-bottom: 27px;
      }
  }
 
@@ -131,6 +132,16 @@ a {
     }
 }
 
+
+figure {
+    margin-bottom: 40px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
 
 .colorPrimary {
     color: ${msTheme.colors.primary}

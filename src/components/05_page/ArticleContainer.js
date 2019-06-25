@@ -10,7 +10,7 @@ export const ArticleContainer = styled.article`
     margin: ${props => props.margin || '30px auto 0px auto'};
     padding: ${props => props.padding || msTheme.padding.globalSide};   
     h2{
-        margin-top: 40px;
+        margin-top: 70px;
          :first-child{
         margin-top: 10px;
     }

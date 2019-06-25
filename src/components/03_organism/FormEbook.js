@@ -101,7 +101,7 @@ export class FormEbook extends React.PureComponent {
         const { title, subtitle, formWidth, color, subColor, marginTitle, titleHeight, formHeight, fontSize, fontSizeSmall, lineHeight, lineHeightSmall } = this.props
         // Ebook Interactive
         const EbookFormInteraction = <form onSubmit={this._handleSubmit}>
-            <WidthWrapper width={"250px"}>
+            <WidthWrapper width={formWidth}>
                 {/* <InputStringNoLabel type="text" value={this.state.name} _handleChange={this._handleChangeName} placeholder="Name..." paddingInput="0px" marginInput="0px" borderOutside="1px solid black" border="none" /> */}
                 <InputStringNoLabel type="email" value={this.state.email} _handleChange={this._handleChangeEmail} placeholder="Email*" paddingInput="0px" marginInput="0px" borderOutside="1px solid black" border="none" />
                 <InputSubmit value="Get a FREE eBook" _handleSubmit={this._handleSubmit} bgColor={msTheme.colors.greenlight} />

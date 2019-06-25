@@ -1,6 +1,6 @@
 export const msTheme = {
     colors: {
-        text: '#272a2e', // '#373737' #2e343a
+        text: '#2c2e31', // '#373737' #2e343a '#272a2e'
         textlight: '#6d6d6d',
         primary: '#700bea', // Purple
         primayhighlighter: '#C6A6F2',
@@ -54,7 +54,8 @@ export const msTheme = {
 
     },
     font: {
-        bodyFont: 'Crimson Text',
+        // bodyFont: 'Crimson Text',
+        bodyFont: 'Open Sans',
         headerFont: 'Open Sans'
     },
     fontSize: {
