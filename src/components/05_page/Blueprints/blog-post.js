@@ -127,19 +127,10 @@ class BlogPostTemplate extends React.Component {
             </ul>
             {/* <p>by {author}</p> */}
             {post.frontmatter.updated && <p>{`Updated : ${post.frontmatter.updated}`} </p>}
-            {(!post.frontmatter.hideDate && !post.frontmatter.updated) && <p>{post.frontmatter.date}</p>}
+            {/* {(!post.frontmatter.hideDate && !post.frontmatter.updated) && <p>{post.frontmatter.date}</p>} */}
 
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            {/* <hr
-          style={
-            {
-              // marginTop: rhythm(1),
-              // marginBottom: rhythm(1),
-            }
-          }
-        /> */}
-            {/* <Bio /> */}
-            {/* <p>written by {author}</p> */}
+
 
 
             <ShareButtons
