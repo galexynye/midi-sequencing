@@ -96,7 +96,7 @@ export class PostCardBlog extends React.PureComponent {
                         minHeightM={titleHeightM}
                         linkColor={msTheme.colors.primary}
                     />
-                    <DateStyled>{date}</DateStyled>
+                    {/* <DateStyled>{date}</DateStyled> */}
                     {category && <TaglistStyle>
                         <li>Category:</li>
                         <li> <Link className="headerFont" to={slug}>{category}</Link></li>

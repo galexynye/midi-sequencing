@@ -68,7 +68,7 @@ export class PostCardHomeRecent extends React.PureComponent {
                     <Link to={slug}>{category}</Link>
                 </CategoryStyled>} */}
 
-                {!hideDate && <DateStyled>{date}</DateStyled>}
+                {/* {!hideDate && <DateStyled>{date}</DateStyled>} */}
                 <Link to={slug} className="tDNone">
                     <p>{snippet}</p>
                 </Link>
