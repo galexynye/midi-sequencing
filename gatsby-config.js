@@ -124,6 +124,7 @@ module.exports = {
           'https://midisequencing.us15.list-manage.com/subscribe/post?u=959ef0b4d1c6a701f90f85f9e&amp;id=59168d9d12', // see instructions section below
       },
     },
+    'gatsby-plugin-netlify-cache',
     {
       resolve: `gatsby-plugin-netlify`, // need to stay last in plugin
       options: {
