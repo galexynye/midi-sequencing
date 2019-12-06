@@ -21,7 +21,7 @@ export const storeData = [
         item: "1-on-1 Mentorship",
         link: "/contact",
         image: lessonspic,
-        description: "Get a custom lesson plan and project feedback to improve your music. Learn advanced topics and how to start a career in the music industry. Contact for a FREE trial lesson.",
+        description: "Get a custom lesson plan and project feedback to improve your music. Learn advanced topics and how to start a career in the music industry.",
         buttonText: "Contact for Mentorship"
     },
     {
