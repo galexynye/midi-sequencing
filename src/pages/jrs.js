@@ -24,7 +24,7 @@ export default class Library extends Component {
 
                     <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr">
                         <h2 class="mB20" style={{ marginTop: "20px" }}>Presentation Download as PDF</h2>
-                        <p>Download the PDF of the presentation with <a href="https://drive.google.com/file/d/1IOwrOEjeprt_DAdXW29nCB5xaka1noZl/view?usp=sharing" target="_blank">this link</a>.</p>
+                        <p>Download the PDF of the presentation with <a href="https://drive.google.com/file/d/1Zb6Ap_vrBTFBnZNz8THKiZ-50cskcLGx/view?usp=sharing" target="_blank">this link</a>.</p>
                         <h2 class="mB20" style={{ marginTop: "20px" }}>Resource Library</h2>
                         <p>Visit the resource library on this site <Link to="library#free">with this link</Link> to find a list of free DAWs, samples, software synths and other resources.</p>
                         <h2 class="mB20" style={{ marginTop: "20px" }}>Sample Downloads</h2>
