@@ -22,8 +22,8 @@ export default class Library extends Component {
                 />
                 <PageTitle title="Music Resource Library" description="A growing document of curated music resources from here and around the web" />
 
-                <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr" width="93%" maxWidth="850px">
-                    <h2 class="mT0 mB0">About This Library</h2>
+                <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr" width="93%" maxWidth="800px">
+                    <h2 class="pT20 mB0">About This Library</h2>
                     <p class="headerFont">Welcome! Looking for quality free plugins, presets or samples? They're below + tons of other articles, videos and free resources to help you improve at making music. The downloads are resources I've tried and probably use often. The articles, videos and tutorials are quality, NO BS, content that I've checked out (or wrote) and will help you improve.</p>
                     <h2 class="mT0 mB0">The Index</h2>
                     <GridContainer gridGap="20px 20px" gTC="1fr 1fr 1fr 1fr" gTCL="1fr 1fr 1fr 1fr" gTCM="1fr 1fr" gTCS="1fr 1fr" margin="0px 0px 20px 0px">

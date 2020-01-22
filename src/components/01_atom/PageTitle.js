@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { msTheme } from '../../styles/Theme'
 
 const PageTitleStyle = styled.div`
-    margin: ${props => props.margin || "40px 0px 0px 0px"};
+    margin: ${props => props.margin || "20px 0px 0px 0px"};
     background-color: ${props => props.bgColor || 'none'};
     display: flex;
     flex-flow: column;
@@ -20,7 +20,7 @@ const PageTitleStyle = styled.div`
         /* padding: ${msTheme.padding.globalSide};    */
         padding: 20px 0px;   
         word-wrap: break-word;
-         font-size: 84px;
+        font-size: 84px;
         line-height: 86px;
 
     }
@@ -45,7 +45,7 @@ export const PageTitle = ({ text, title, description, bgColor, color, margin }) 
                 {text ? text : ''}
                 {title ? title : ''}
             </h1>
-            {description && <p className="headerFont mT20">{description}</p>}
+            {description && <p className="headerFont mT20 mB20">{description}</p>}
         </PageTitleStyle>
     )
 }
