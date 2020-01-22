@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
+import { DiscussionEmbed } from "disqus-react"
 import { PageTitle } from '../01_atom/PageTitle'
 import { the10 } from '../../sitedata/projectsdata'
 import { ArticleContainer } from './ArticleContainer';
@@ -16,13 +17,17 @@ export class ProjectPage extends React.Component {
         const theRules = project.theRules.map((x, i) => <p key={i} className="mB20 headerFont">{x}</p>)
         const theProject = project.theProject.map((x, i) => <p key={i} className="mB20 headerFont">{x}</p>)
         const theGoal = project.theGoal.map((x, i) => <p key={i} className="mB20 headerFont">{x}</p>)
+        const disqusConfig = {
+            shortname: process.env.GATSBY_DISQUS_NAME,
+            config: { identifier: project.link },
+        }
         return (
             <React.Fragment>
                 <Helmet
                     meta={[{ name: 'description', content: `${project.metaDescription}` }]}
                     title={`${project.name} | Project`}
                 >
-                    <script type="text/javascript">{`
+                    {/* <script type="text/javascript">{`
               DiscourseEmbed = {discourseUrl: 'https://forum.musicsequencing.com/',
                                  discourseEmbedUrl: 'https://www.musicsequencing.com${project.link}' };
             
@@ -32,7 +37,7 @@ export class ProjectPage extends React.Component {
                           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
                         })();`
                     }
-                    </script>
+                    </script> */}
                 </Helmet>
                 <PageTitle title={`${project.name}`} description={project.description} />
                 <ArticleContainer margin="0px auto 20px auto">
@@ -49,7 +54,7 @@ export class ProjectPage extends React.Component {
 
                     <h2>Helpful Links 🔗</h2>
                     <p className="headerFont"><Link to="/library" target="_blank">Resource Library</Link> - Check it out for free downloads of samples, synths and more.</p>
-
+                    <DiscussionEmbed {...disqusConfig} />
                     {/* <h2>Give and Get Feedback Here 🚀</h2>
                     <div id='discourse-comments'></div>
                     <p className="headerFont mT40">You can find all the project feedback threads on the forums <a href="https://forum.musicsequencing.com/c/project-feedback/the-10" target="_blank">here</a>.</p> */}

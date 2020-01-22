@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
+import { DiscussionEmbed } from "disqus-react"
 import SiteContainer from '../Layout/SiteContainer'
 import { ArticleContainer } from '../ArticleContainer'
 import { msTheme } from '../../../styles/Theme'
@@ -9,6 +10,7 @@ import { LearnCards } from '../../03_organism/LearnCards';
 import { GridContainer } from '../../00_utilities/Utilities';
 import { ShareButtons } from '../../02_molecule/ShareButtons'
 import { PageTitle } from '../../01_atom/PageTitle';
+
 
 
 // import ScrollToTop from '../components/ScrollToTop'
@@ -22,36 +24,36 @@ class BlogPostTemplate extends React.Component {
     }
   }
 
-  componentDidMount() {
-    document.addEventListener('scroll', this._handleScroll);
-  }
+  // componentDidMount() {
+  //   document.addEventListener('scroll', this._handleScroll);
+  // }
 
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this._handleWindowSizeChange)
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener('scroll', this._handleWindowSizeChange)
+  // }
 
-  _handleScroll = () => {
-    const isTop = window.scrollY < 100;
-    if (isTop !== this.state.isTop) {
-      this.onScroll(isTop);
-    }
-    let body = document.body,
-      html = document.documentElement;
+  // _handleScroll = () => {
+  //   const isTop = window.scrollY < 100;
+  //   if (isTop !== this.state.isTop) {
+  //     this.onScroll(isTop);
+  //   }
+  //   let body = document.body,
+  //     html = document.documentElement;
 
-    let height = Math.max(body.scrollHeight, body.offsetHeight,
-      html.clientHeight, html.scrollHeight, html.offsetHeight);
-    if (window.scrollY >= height - 1200) {
-      this.setState({ isTop: true })
-    }
-    console.log(height)
-    console.log(window.scrollY)
+  //   let height = Math.max(body.scrollHeight, body.offsetHeight,
+  //     html.clientHeight, html.scrollHeight, html.offsetHeight);
+  //   if (window.scrollY >= height - 1200) {
+  //     this.setState({ isTop: true })
+  //   }
+  //   console.log(height)
+  //   console.log(window.scrollY)
 
-  }
+  // }
 
-  onScroll = (isTop) => {
-    this.setState({ isTop });
-  }
+  // onScroll = (isTop) => {
+  //   this.setState({ isTop });
+  // }
 
   render() {
     const post = this.props.data.markdownRemark
@@ -60,6 +62,10 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const author = post.frontmatter.author
     const category = post.frontmatter.category
+    const disqusConfig = { // Input disqus props
+      shortname: process.env.GATSBY_DISQUS_NAME,
+      config: { identifier: post.fields.slug },
+    }
     let tags
     if (post.frontmatter.tags) {
       tags = post.frontmatter.tags.map(tag => (
@@ -83,7 +89,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <div>
 
-        {!this.state.isTop && <ShareButtons url={`https://www.musicsequencing.com${post.fields.slug}`} />}
+        {/* {!this.state.isTop && <ShareButtons url={`https://www.musicsequencing.com${post.fields.slug}`} />} */}
         <SiteContainer>
 
 
@@ -133,12 +139,12 @@ class BlogPostTemplate extends React.Component {
 
 
 
-            <ShareButtons
+            {/* <ShareButtons
               url={`https://www.musicsequencing.com${post.fields.slug}/`}
               displaySmall="block"
               position="static"
               flexFlow="row"
-            />
+            /> */}
 
             <ul
               style={{
@@ -175,7 +181,7 @@ class BlogPostTemplate extends React.Component {
 
 
 
-
+            <DiscussionEmbed {...disqusConfig} />
 
           </ArticleContainer>
         </SiteContainer>

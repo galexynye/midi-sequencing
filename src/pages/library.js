@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
+import { DiscussionEmbed } from "disqus-react"
 import { Link } from 'gatsby'
 import SiteContainer from '../components/05_page/Layout/SiteContainer';
 import { PageTitle } from '../components/01_atom/PageTitle'
@@ -13,7 +14,10 @@ import { LibrarySubject } from '../components/04_template/LibrarySubject'
 export default class Library extends Component {
     render() {
         const libraryRender = library.map(x => <LibrarySubject subject={x} key={x.subject} />)
-
+        const disqusConfig = {
+            shortname: process.env.GATSBY_DISQUS_NAME,
+            config: { identifier: "musicsequencing.com/library" },
+        }
         return (
             <SiteContainer>
                 <Helmet
@@ -34,7 +38,7 @@ export default class Library extends Component {
                     <p className="headerFont">I love hearing about great free resources! If you have a suggestion for the library you can reach out to me on the <Link to="/contact">contact page</Link>. I’ll check it out and if it’s a good fit, I’ll put it in ASAP.</p>
 
                     {libraryRender}
-
+                    <DiscussionEmbed {...disqusConfig} />
                 </GridContainer>
             </SiteContainer>
         )

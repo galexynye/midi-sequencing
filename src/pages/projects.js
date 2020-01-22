@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
+import { DiscussionEmbed } from "disqus-react"
 import SiteContainer from '../components/05_page/Layout/SiteContainer';
 import { PageTitle } from '../components/01_atom/PageTitle';
 import { InfoGrid } from '../components/03_organism/InfoGrid';
@@ -11,6 +12,10 @@ import { the10 } from '../sitedata/projectsdata'
 export default class Projects extends Component {
     render() {
         const projectLinks = the10.map((x, i) => <ProjectLink key={x.link} num={i + 1} to={x.link} project={`${x.name} ${x.icon}`} description={x.description}></ProjectLink>)
+        const disqusConfig = {
+            shortname: process.env.GATSBY_DISQUS_NAME,
+            config: { identifier: "musicsequencing.com/projects" },
+        }
         return (
             <SiteContainer>
                 <Helmet
@@ -41,6 +46,7 @@ export default class Projects extends Component {
                 {/* <h2 className="center mB60" id="theprojects">The Projects</h2> */}
                 <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr">
                     {projectLinks}
+                    <DiscussionEmbed {...disqusConfig} />
                 </GridContainer>
             </SiteContainer>
 
