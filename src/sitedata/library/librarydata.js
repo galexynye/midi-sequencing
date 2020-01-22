@@ -15,8 +15,8 @@ import { audio } from './audiodata'
 // Audio, Acoustic, 
 
 export const library = [
-    basics,
     freePlugins,
+    basics,
     audio,
     producing,
     recording,

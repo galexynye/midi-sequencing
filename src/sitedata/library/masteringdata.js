@@ -14,9 +14,9 @@ export const mastering = {
         {
             topic: topics.overview,
             type: lDT.pdf,
-            link: "https://www.izotope.com/en/support/support-resources/guides/mastering-with-ozone.html",
+            link: "http://downloads.izotope.com/guides/iZotopeMasteringGuide_MasteringWithOzone.pdf",
             title: "Free Guide: Mastering with Ozone",
-            description: "Great guide for mastering whether you have Ozone or not. (iZotope)"
+            description: "Great guide for mastering whether you have Ozone or not. This is a direct download link. (iZotope)"
         },
         {
             topic: topics.masterclass,

@@ -159,6 +159,10 @@ figcaption {
     margin-top: 0px;
 }
 
+.mR20{
+    margin-right: 20px;
+}
+
 .mT20{
     margin-top: 20px; 
 }
@@ -176,14 +180,18 @@ figcaption {
     }
 }
 
-.mB20{
-    margin-bottom: 20px;
-}
-
 .mB0{
     margin-bottom: 0px;
 }
 
+
+.mB10 {
+    margin-bottom: 10px;
+}
+
+.mB20{
+    margin-bottom: 20px;
+}
 
 .mB40 {
     margin-bottom: 40px;

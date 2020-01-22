@@ -48,11 +48,11 @@ export class ProjectPage extends React.Component {
                     {children}
 
                     <h2>Helpful Links 🔗</h2>
-                    <p className="headerFont"><Link to="/library" target="_blank">Resource Library</Link> - Check it out. More links coming.</p>
+                    <p className="headerFont"><Link to="/library" target="_blank">Resource Library</Link> - Check it out for free downloads of samples, synths and more.</p>
 
-                    <h2>Give and Get Feedback Here 🚀</h2>
+                    {/* <h2>Give and Get Feedback Here 🚀</h2>
                     <div id='discourse-comments'></div>
-                    <p className="headerFont mT40">You can find all the project feedback threads on the forums <a href="https://forum.musicsequencing.com/c/project-feedback/the-10" target="_blank">here</a>.</p>
+                    <p className="headerFont mT40">You can find all the project feedback threads on the forums <a href="https://forum.musicsequencing.com/c/project-feedback/the-10" target="_blank">here</a>.</p> */}
                 </ArticleContainer>
             </React.Fragment>
         )

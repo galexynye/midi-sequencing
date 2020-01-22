@@ -17,8 +17,8 @@ export default class Projects extends Component {
                     meta={[{ name: 'description', content: '10 Projects that will make you a better music producer. Get and give feedback on your music and grow.' }]}
                     title={`The Projects | Music Sequencing`}
                 />
-                <PageTitle title="The Projects" description="Do these and you will be a better producer."></PageTitle>
-                <h2 className="center mT0 mB60">Getting Started</h2>
+                <PageTitle title="The Projects" description="Do (any of) these 10 Projects and you will be a better producer."></PageTitle>
+                {/* <h2 className="center mT0 mB60">Getting Started</h2>
                 <InfoGrid>
                     <div>
                         <h2>Step 1: Choose a Project 🌳</h2>
@@ -37,8 +37,8 @@ export default class Projects extends Component {
                         <h2>Step 4: Post Your Project 🔈</h2>
                         <p className="headerFont">Keep the thread going. Once you’ve completed your project post a link in the project thread to your own music for some helpful feedback. Carefully consider any feedback you get and use it to improve.</p>
                     </div>
-                </InfoGrid>
-                <h2 className="center mB60" id="theprojects">The Projects</h2>
+                </InfoGrid> */}
+                {/* <h2 className="center mB60" id="theprojects">The Projects</h2> */}
                 <GridContainer gTC="1fr" gTCL="1fr" gTCM="1fr">
                     {projectLinks}
                 </GridContainer>

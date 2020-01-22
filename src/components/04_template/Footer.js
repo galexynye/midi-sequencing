@@ -10,6 +10,7 @@ import { HomeLinkLogo } from "../01_atom/HomeLinkLogo"
 
 export const FooterStyle = styled.footer`
     /* background-color: ${msTheme.colors.text}; */
+    margin-top: 20px;
     padding: 20px 0px;
     background-color: rgb(30,30,30);
     p{        
@@ -36,7 +37,7 @@ export const Footer = props => {
             </WidthWrapper>
 
             <PaddingWrapper padding="30px 0px 0px 0px">
-                <FlexboxOrganism><p >©2019 Alex Nye</p></FlexboxOrganism>
+                <FlexboxOrganism><p >©2020 Alex Nye</p></FlexboxOrganism>
             </PaddingWrapper>
 
         </FooterStyle >

@@ -27,14 +27,14 @@ class Privacy extends React.PureComponent {
                     <h2>Private Forever</h2>
                     <p>Giving your email to get an ebook is strictly between you and me. When you send your email to me, Alex Nye, through Music Sequencing, it will hang out safely encrypted with all the other emails on the list.</p>
                     <h2>How will you use my email?</h2>
-                    <p>As of today, June 24th 2019, I have never sent an email to anyone on the list. It's only used to send a download link for my free eBook, "<Link to="/ultimate-producers-workflow">The Ultimate Producer's Workflow</Link>".
+                    <p>As of today, January 22nd 2020, I have never sent an email to anyone on the list. It's only used to send a download link for my free eBook, "<Link to="/ultimate-producers-workflow">The Ultimate Producer's Workflow</Link>".
                         I plan on making major improvements to the book and after I write a new edition I will be emailing those who got it to let them know.
                     </p>
 
                     <h2>Is that all?</h2>
-                    <p>For now, yes. I do have some products that will be coming out (a massive logic template)...so I'll probably email about it to let people know, if that bothers you, there will be an unsubscribe button.</p>
+                    <p>For now, yes. If there are massive improvements to the site or something I will probably email people to let them know about it.</p>
                     <h2>Questions / Concerns</h2>
-                    <p>If you have any questions or concerns you can email alex@musicsequencing.com, use the <Link to="/contact">contact page</Link>  or reach out on instagram @saywellmusic.</p>
+                    <p>If you have any questions or concerns you can email alex@musicsequencing.com or use the <Link to="/contact">contact page</Link>.</p>
                 </ArticleContainer>
             </SiteContainer>
         )

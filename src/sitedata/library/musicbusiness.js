@@ -13,7 +13,7 @@ export const musicBusiness = {
             type: lDT.article,
             link: "https://aristake.com/post/what-is-soundexchange-ascap-bmi-pros-hfa-mechanicals-and-how-to-get-all-your-royalties",
             title: "How to Get All Your Music Royalties: ASCAP, BMI, PRS, SoundExchange, PROs and the Rest",
-            description: "Up to date article on how to collect royalties for your music. (Ari's Take)"
+            description: "Article updated on May 9th, 2019 on how to collect royalties for your music. (Ari's Take)"
         },
     ]
 }
