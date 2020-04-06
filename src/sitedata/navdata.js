@@ -3,7 +3,7 @@ export const MainNavLinksData = [
 
     { name: 'Articles', to: '/blog', external: false },
     { name: 'Resource Library', to: '/library', external: false },
-    { name: 'Projects', to: '/projects', external: false },
+    // { name: 'Projects', to: '/projects', external: false },
     { name: 'About', to: '/about', external: false },
     // { name: 'Store', to: '/store', external: false },
     // { name: 'Services', to: '/services', external: false },
