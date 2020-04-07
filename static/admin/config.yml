@@ -1,10 +1,11 @@
+# NETLIFY CMS config file 
 backend:
   # name: test-repo
   name: git-gateway
 
 media_folder: "static/imgs/uploads"
 public_folder: "/imgs/uploads"
-
+publish_mode: editorial_workflow
 collections:
   - name: article
     label: Article
