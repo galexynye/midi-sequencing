@@ -23,7 +23,7 @@ class Latest extends React.Component {
             if (!post.node.frontmatter.featuredImage) {
                 src = DawPic
             } else {
-                src = post.node.frontmatter.featuredImage.childImageSharp.fluid.src
+                src = post.node.frontmatter.featuredImage
                 // src = DawPic
             }
 
@@ -104,13 +104,7 @@ export const pageQuery = graphql`
                     subcategory
                     blog
                     tags
-                        featuredImage {
-                        childImageSharp {
-                    fluid {
-                        src
-                    }
-                    }
-            }
+                    featuredImage
         }
     }
 }

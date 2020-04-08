@@ -1,7 +1,7 @@
 ---
 title: 'What Midi Really Is'
 date: '2017-05-01'
-updated: null
+# updated: null
 author: 'Alex Nye'
 learn: true
 series: ['basics']
@@ -9,7 +9,7 @@ seriesNumber: {basics: 4}
 category: 'Music Tech'
 subcategory: ['Tech Basics']
 tags: ['basics', 'midi']
-featuredImage: './WhatIsMidiFI.png'
+featuredImage: /imgs/WhatIsMidiFI.png
 bgImages: {blackAndWhite: './media/bgImages/blackAndWhiteFaders.jpg', homeFaders: './media/bgImages/dylan-mcleod-faders-black.jpg'}
 metaDescription: 'If you are learning music production, this article is everything you need to know about midi right now.'
 ---

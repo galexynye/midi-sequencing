@@ -21,7 +21,7 @@ export default class category extends React.Component {
 
         let PostCardSeriesCollection = posts.map((post, i) => {
             if (post.node.frontmatter.featuredImage) {
-                src = post.node.frontmatter.featuredImage.childImageSharp.fluid.src;
+                src = post.node.frontmatter.featuredImage
             } else {
                 src = TestImg
             }
@@ -89,13 +89,7 @@ export const pageQuery = graphql`
                     # subcategory
                     # blog
                     # tags
-                    featuredImage {
-                            childImageSharp {
-                                fluid {
-                                    src
-                                }
-                            }
-                    }
+                    featuredImage
                 }
             }
         }

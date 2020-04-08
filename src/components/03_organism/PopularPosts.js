@@ -27,7 +27,7 @@ export class PopularPostsView extends Component {
       if (!post.node.frontmatter.featuredImage) {
         src = DawPic
       } else {
-        src = post.node.frontmatter.featuredImage.childImageSharp.fluid.src
+        src = post.node.frontmatter.featuredImage
       }
 
       if (i == 0) {
@@ -101,13 +101,7 @@ export const PopularPosts = props => (
                 subcategory 
                 popular
                 date(formatString: "MMMM DD, YYYY")
-                featuredImage {
-                 childImageSharp {
-                   fluid {                    
-                     src                   
-                   }
-                 }
-                }
+                featuredImage 
               }
             }
           }

@@ -3,8 +3,8 @@ backend:
   # name: test-repo
   name: git-gateway
 
-media_folder: "static/imgs/uploads"
-public_folder: "/imgs/uploads"
+media_folder: "static/imgs"
+public_folder: "/imgs"
 publish_mode: editorial_workflow
 collections:
   - name: article

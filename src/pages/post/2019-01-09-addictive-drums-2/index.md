@@ -7,7 +7,7 @@ category: 'Gear Review'
 subcategory: ['Samples']
 company: 'XLN-Audio'
 tags: ['gear', 'drums', 'samples']
-featuredImage: './AddictiveDrums2FI.jpg'
+featuredImage: /imgs/AddictiveDrums2FI.jpg
 metaDescription: 'The Good and the Bad of Addictive Drums 2. A review and demo of what I love and what annoys me about this plugin.'
 ---
 

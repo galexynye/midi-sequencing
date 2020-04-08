@@ -7,7 +7,7 @@ learn: true
 category: 'Mixing'
 subcategory: ['Compression']
 tags: ['compression', 'mixing', 'basics']
-featuredImage: './CompressionSmackFI.png'
+featuredImage: /imgs/CompressionSmackFI.png
 metaDescription: 'This explanation of compression visually shows the effects of compression on an audio waveform. If compression is unclear this article can help solidify your understanding so you can use compression with confidence.'
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TsMipbWosLU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -40,7 +40,7 @@ class Category extends React.Component {
       if (!post.node.frontmatter.featuredImage) {
         src = TestImg
       } else {
-        src = post.node.frontmatter.featuredImage.childImageSharp.fluid.src
+        src = post.node.frontmatter.featuredImage
         // src = DawPic
       }
 
@@ -120,13 +120,7 @@ export const pageQuery = graphql`
              title
              tags
              categoryDescription
-             featuredImage {
-              childImageSharp {
-                  fluid {
-                      src
-                  }
-              }
-        		}
+             featuredImage
           }
         }
       }
@@ -147,7 +141,7 @@ export const pageQuery = graphql`
 
 // let PostCardSeriesCollection = posts.map((post, i) => {
 //   if (post.node.frontmatter.featuredImage) {
-//     src = post.node.frontmatter.featuredImage.childImageSharp.fluid.src;
+//     src = post.node.frontmatter.featuredImage
 //   } else {
 //     src = TestImg
 //   }

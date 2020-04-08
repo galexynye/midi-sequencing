@@ -42,10 +42,12 @@ a{
     }
 `
 
-export class HeroEBookUPWFView extends Component {
+// export class HeroEBookUPWFView extends Component {
+export class HeroEBookUPWF extends Component {
     render() {
-        // const pic = this.props.data.markdownRemark.frontmatter.bgImages.blackAndWhite.childImageSharp.fluid.src
-        const pic = this.props.data.markdownRemark.frontmatter.bgImages.homeFaders.childImageSharp.fluid.src
+
+        // const pic = this.props.data.markdownRemark.frontmatter.bgImages.homeFaders
+        const pic = bgImage2
         return (
             <HeroEBookUPWFStyle src={pic}>
                 {/* <HeroEBookUPWFStyle> */}
@@ -59,26 +61,26 @@ export class HeroEBookUPWFView extends Component {
 }
 
 
-// The picture for the background is in the "what is midi article" so it is processed through sharp image.
-export const HeroEBookUPWF = props => (
-    <StaticQuery
-        query={graphql`
-     query{
-    markdownRemark(fields: { slug: { eq: "/article/what-is-midi" } }) {
-      frontmatter {
-        bgImages{
-          homeFaders{
-            childImageSharp{
-              fluid(quality:95){
-                src
-              }
-            }
-          }
-        }
-      }
-    }
-}
-    `}
-        render={data => <HeroEBookUPWFView data={data} {...props} />}
-    />
-)
+// The picture for the background is in the "what is midi article" so it is processed through sharp image. NEEDS TO BE REPLACED
+// export const HeroEBookUPWF = props => (
+//     <StaticQuery
+//         query={graphql`
+//      query{
+//     markdownRemark(fields: { slug: { eq: "/article/what-is-midi" } }) {
+//       frontmatter {
+//         bgImages{
+//           homeFaders{
+//             childImageSharp{
+//               fluid(quality:95){
+//                 src
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+// }
+//     `}
+//         render={data => <HeroEBookUPWFView data={data} {...props} />}
+//     />
+// )

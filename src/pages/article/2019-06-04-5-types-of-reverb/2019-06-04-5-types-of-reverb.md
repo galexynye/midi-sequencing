@@ -6,7 +6,7 @@ learn: true
 category: 'Mixing'
 subcategory: ['Reverb']
 tags: ['mixing', 'studio', 'basics']
-featuredImage: './TypesOfReverb_FeaturedImage.jpg'
+featuredImage: /imgs/TypesOfReverb_FeaturedImage.jpg
 metaDescription: 'Explaination of the 5 different types of reverbs, what they sound like, and when to chooose a certain reverb.'
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pnIm6B1vOUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

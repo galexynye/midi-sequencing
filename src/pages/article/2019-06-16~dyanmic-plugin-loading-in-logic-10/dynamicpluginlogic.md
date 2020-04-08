@@ -6,7 +6,7 @@ learn: true
 category: 'Studio'
 subcategory: ['Logic']
 tags: ['template', 'logic', 'studio', 'daw']
-featuredImage: './TypesOfReverb_FeaturedImage.jpg'
+featuredImage: /imgs/delete_automation.png
 metaDescription: 'Explaination of the 5 different types of reverbs, what they sound like, and when to chooose a certain reverb.'
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_VHkfcC0eAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

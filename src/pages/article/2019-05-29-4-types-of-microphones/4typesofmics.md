@@ -6,7 +6,7 @@ learn: true
 category: 'Recording'
 subcategory: ['Microphones']
 tags: ['recording', 'studio', 'basics']
-featuredImage: './TypesofMicsGraphics_FeaturedImage_fullsize.jpg'
+featuredImage: /imgs/TypesofMicsGraphics_FeaturedImage_fullsize.jpg
 metaDescription: 'The 4 types of microphones used in recording studios explained and which mic you should choose to record with for different scenarios.'
 ---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/b-LtSElPnHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

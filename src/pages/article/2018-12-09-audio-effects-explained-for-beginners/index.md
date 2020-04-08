@@ -8,7 +8,7 @@ seriesNumber: {basics: 1}
 category: 'Mixing'
 subcategory: ['Mixing Basics']
 tags: ['effects', 'mixing', 'compression', 'eq', 'tremelo', 'basics', 'flanger','phaser', 'gates']
-featuredImage: './AudioEffectsExplainedFI.jpg'
+featuredImage: /imgs/AudioEffectsExplainedFI.jpg
 metaDescription: 'Essential knowledge for learning music production. Get an overview of all of the effects, what they do, how they sound, and when to use them.'
 popular: true
 ---
