@@ -89,6 +89,7 @@ export class PostCardBlog extends React.PureComponent {
                     img={src}
                     title={title}
                     imgLink={slug}
+                    label={learnOrBlog} // learn or blog is actually the category now
                 >
                     <CardHeader
                         text={title} slug={slug}
@@ -119,10 +120,7 @@ export class PostCardBlog extends React.PureComponent {
                     <Link to={slug}>
                         <p>{snippet}</p>
                     </Link>
-                    {/* <Link className="headerFont" to={slug}>Read More</Link> */}
-                    {/* <WidthWrapper margin="0px 0px">
-                        <ButtonCTA to={slug} text="Read more" color={msTheme.colors.primary} bgColor="white" margin="0px"></ButtonCTA>
-                    </WidthWrapper> */}
+
 
                 </SimpleCard>
 

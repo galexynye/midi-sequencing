@@ -6,7 +6,7 @@ category: 'Mixing'
 learn: true
 subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'automation', 'fadeout']
-featuredImage: /imgs/automation-basics/automation-1.png
+featuredImage: /imgs/automation-1.png
 metaDescription: 'Automation is one of the key differences between a professional sounding mix and an amateur one. Automation brings a mix to life, creates depth, and musicality in a mix.'
 ---
 

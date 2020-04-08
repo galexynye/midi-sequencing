@@ -6,7 +6,7 @@ learn: true
 category: 'Mixing'
 subcategory: ['Mixing Basics']
 tags: ['mixing', 'basics', 'reverb']
-featuredImage: /imgs/media/reverb-essentials/Reverb-Diagram-1.png
+featuredImage: /imgs/Reverb-Diagram-1.png
 metaDescription: 'How to use reverb. Reverb is one of the most essential effects used in mixing and sound design. This fully comprehensive article is everything you need to know from all the types of reverbs to setting them up in a mix.'
 ---
 
