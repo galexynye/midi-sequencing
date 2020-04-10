@@ -6,8 +6,8 @@ author: 'Alex Nye'
 learn: true
 series: ['basics']
 seriesNumber: {basics: 4}
-category: 'Music Tech'
-subcategory: ['Tech Basics']
+category: 'Knowledge'
+subcategory: 'Basics'
 tags: ['basics', 'midi']
 featuredImage: /imgs/WhatIsMidiFI.png
 bgImages: {blackAndWhite: './media/bgImages/blackAndWhiteFaders.jpg', homeFaders: './media/bgImages/dylan-mcleod-faders-black.jpg'}

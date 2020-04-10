@@ -5,8 +5,8 @@ date: '2018-12-09'
 learn: true
 series: ['basics']
 seriesNumber: {basics: 1}
-category: 'Mixing'
-subcategory: ['Mixing Basics']
+category: 'Knowledge'
+subcategory: 'Basics'
 tags: ['effects', 'mixing', 'compression', 'eq', 'tremelo', 'basics', 'flanger','phaser', 'gates']
 featuredImage: /imgs/AudioEffectsExplainedFI.jpg
 metaDescription: 'Essential knowledge for learning music production. Get an overview of all of the effects, what they do, how they sound, and when to use them.'

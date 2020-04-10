@@ -2,9 +2,9 @@
 title: How to Hear Compression
 author: 'Alex Nye'
 date: '2017-09-22'
-category: 'Mixing'
+category: 'Knowledge'
 learn: true
-subcategory: ['Compression']
+subcategory: 'Basics'
 tags: ['mixing', 'compression', 'ears']
 featuredImage: /imgs/GoodVsBadCom.jpg
 metaDescription: "Compression is a vital tool in creating professional sounding mixes. How can you use it if you can't hear how it's working? Learn more."

@@ -7,8 +7,8 @@ updated: '2017-06-01'
 learn: true
 series: ['basics']
 seriesNumber: {basics: 2.5}
-category: 'Music Tech'
-subcategory: ['Build A Studio']
+category: 'Knowledge'
+subcategory: 'Gear'
 tags: [ 'studio']
 featuredImage: /imgs/studio-1.jpg
 metaDescription: 'Every major piece of gear, software, plugins and more used to build a studio capable of making professional music.'

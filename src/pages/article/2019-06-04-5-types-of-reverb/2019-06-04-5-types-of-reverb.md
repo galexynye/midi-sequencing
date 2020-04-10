@@ -3,9 +3,9 @@ title: 5 Types of Reverb Explained
 author: 'Alex Nye'
 date: '2019-06-04'
 learn: true
-category: 'Mixing'
-subcategory: ['Reverb']
-tags: ['mixing', 'studio', 'basics']
+category: 'Knowledge'
+subcategory: 'Gear'
+tags: ['mixing', 'basics', 'reverb']
 featuredImage: /imgs/TypesOfReverb_FeaturedImage.jpg
 metaDescription: 'Explaination of the 5 different types of reverbs, what they sound like, and when to chooose a certain reverb.'
 ---

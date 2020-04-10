@@ -4,8 +4,8 @@ title: Compression Explained and Demystified
 author: 'Alex Nye'
 date: '2018-12-22'
 learn: true
-category: 'Mixing'
-subcategory: ['Compression']
+category: 'Knowledge'
+subcategory: 'Basics'
 tags: ['compression', 'mixing', 'basics']
 featuredImage: /imgs/CompressionSmackFI.png
 metaDescription: 'This explanation of compression visually shows the effects of compression on an audio waveform. If compression is unclear this article can help solidify your understanding so you can use compression with confidence.'

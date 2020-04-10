@@ -3,8 +3,8 @@ title: 'Automatically Humanize Midi'
 author: 'Alex Nye'
 date: '2017-05-05'
 learn: true
-category: 'Producing'
-subcategory: ['Producing Techniques']
+category: 'Knowledge'
+subcategory: 'Tutorial'
 tags: ['producing','midi', 'tech']
 featuredImage: /imgs/HumanizeMidiFIFinal.png
 metaDescription: 'Midi will sound lifeless and robotic unless you take some steps to humanize it. Ironically, the computer can automatically make midi sound human, this article explains the process.'

@@ -2,9 +2,9 @@
 title: 'Automation: Everything You Need to Know'
 author: 'Alex Nye'
 date: '2017-07-26'
-category: 'Mixing'
+category: 'Knowledge'
 learn: true
-subcategory: ['Mixing Basics']
+subcategory: "Basics"
 tags: ['mixing', 'basics', 'automation', 'fadeout']
 featuredImage: /imgs/automation-1.png
 metaDescription: 'Automation is one of the key differences between a professional sounding mix and an amateur one. Automation brings a mix to life, creates depth, and musicality in a mix.'

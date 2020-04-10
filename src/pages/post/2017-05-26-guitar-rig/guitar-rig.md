@@ -4,8 +4,8 @@ title: Guitar Rig by Native Instruments
 author: 'Alex Nye'
 date: '2017-05-26'
 blog: true
-category: 'Gear Review'
-subcategory: ['Creative']
+category: 'Reviews'
+subcategory: 'Amp Simulator'
 company: 'Native Instruments'
 tags: ['native-instruments', 'gear', 'guitar']
 featuredImage: /imgs/GuitarRig.jpg

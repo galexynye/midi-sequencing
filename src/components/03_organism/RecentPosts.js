@@ -35,7 +35,7 @@ export class RecentPostsView extends Component {
           <GridItem gCSM="1" gCEM="3">
             <PostCardHomeRecent
               key={post.node.fields.slug}
-              learnOrBlog={post.node.frontmatter.category}
+              learnOrBlog={post.node.frontmatter.subcategory}
               snippet={post.node.excerpt}
               date={post.node.frontmatter.date}
               title={post.node.frontmatter.title}
@@ -53,7 +53,7 @@ export class RecentPostsView extends Component {
       return (
         <PostCardHomeRecent
           key={post.node.fields.slug}
-          learnOrBlog={post.node.frontmatter.category}
+          learnOrBlog={post.node.frontmatter.subcategory}
           snippet={post.node.excerpt}
           date={post.node.frontmatter.date}
           title={post.node.frontmatter.title}

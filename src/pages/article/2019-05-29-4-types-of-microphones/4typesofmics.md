@@ -3,8 +3,8 @@ title: The 4 Types of Microphones Explained
 author: 'Alex Nye'
 date: '2019-05-29'
 learn: true
-category: 'Recording'
-subcategory: ['Microphones']
+category: 'Knowledge'
+subcategory: 'Basics'
 tags: ['recording', 'studio', 'basics']
 featuredImage: /imgs/TypesofMicsGraphics_FeaturedImage_fullsize.jpg
 metaDescription: 'The 4 types of microphones used in recording studios explained and which mic you should choose to record with for different scenarios.'

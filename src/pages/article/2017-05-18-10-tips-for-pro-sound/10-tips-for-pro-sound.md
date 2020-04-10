@@ -3,8 +3,8 @@ title: '10 Factors for Achieving Great Sound'
 author: 'Alex Nye'
 date: '2017-05-18'
 learn: true
-category: 'Producing'
-subcategory: ['Producing Techniques']
+category: 'Knowledge'
+subcategory: 'Producing'
 tags: ['producing', 'recording', 'tech', 'studio']
 featuredImage: /imgs/ProSound.png
 metaDescription: 'Take care for these 10 factors when making music and you will be on your way to creating professional quality tracks that will set you apart from the herd.'

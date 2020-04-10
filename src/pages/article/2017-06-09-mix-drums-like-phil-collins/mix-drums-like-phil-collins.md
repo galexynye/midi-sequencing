@@ -3,9 +3,9 @@ title: 'Mixing Drums to Sound Like Phil Collins'
 author: 'Alex Nye'
 date: '2017-06-09'
 learn: true
-category: 'Mixing'
+category: 'Knowledge'
 categoryDescription: 'Learn How to Mix from Beginner to Pro'
-subcategory: ['Creative Mixing']
+subcategory: 'Tutorial'
 tags: ['mixing', 'producing', 'drum mixing']
 featuredImage: /imgs/phil-plugins-1.png
 metaDescription: 'A drum mixing technique still used today. Ever wonder how Phil Collins got that drum sound for "In the Air Tonight"? Starting with a regular sounding drums, we digitally recreate this sound using emulations of the same gear he used.'

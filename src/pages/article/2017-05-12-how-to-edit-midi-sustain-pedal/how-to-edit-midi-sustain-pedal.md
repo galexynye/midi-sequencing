@@ -3,9 +3,9 @@ title: How to Edit Midi Sustain Pedal
 author: 'Alex Nye'
 date: '2017-05-12'
 learn: true
-category: 'Music Tech'
-subcategory: ['Midi']
-tags: ['producing', 'tech','midi']
+category: 'Knowledge'
+subcategory: 'Tutorial'
+tags: ['sustain-pedal', 'midi']
 featuredImage: /imgs/MidiSustainFIFinal.png
 metaDescription: 'Simply how to edit, fix or add sustain pedal to your midi pianos.'
 ---

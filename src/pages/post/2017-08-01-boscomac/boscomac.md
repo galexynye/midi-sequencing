@@ -3,8 +3,8 @@ title: Boscomac!
 author: 'Alex Nye'
 date: '2017-08-01'
 blog: true
-category: 'Gear Review'
-subcategory: ['Creative']
+category: 'Reviews'
+subcategory: 'Synth'
 company: 'Native Instruments'
 tags: ['gear', 'native-instruments', 'free']
 featuredImage: /imgs/boscomacFI.jpg

@@ -3,9 +3,9 @@ title: Make GIANT Trailer Drums with Sound Toys Little Plate Reverb
 author: 'Alex Nye'
 date: '2018-11-14'
 learn: true
-category: 'Producing'
+category: 'Knowledge'
 categoryDescription: 'Learn Music Making Techniques'
-subcategory: ['Sound Design']
+subcategory: 'Sound Design'
 tags: ['producing', 'sound-toys', 'native-instruments', 'drums']
 featuredImage: /imgs/TrailerDrumsFI.jpg
 metaDescription: 'This article explores the sound design process for creating gigantic, reverb drench drums often heard in trailer music.'

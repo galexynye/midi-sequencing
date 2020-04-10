@@ -16,7 +16,7 @@ collections:
       - { name: author, label: Author, widget: string, default: "Alex Nye"}
       - { name: date, label: Date, widget: datetime, dateFormat: "YYYY-MM-DD" }      
       # - { name: learn, label: Learn, widget: boolean, default: true}
-      - { name: category, label: Category, widget: select, options: ["Knowledge", "Review", "Music News", "Blog"]}
+      - { name: category, label: Category, widget: select, options: ["Knowledge", "Reviews", "Music News", "Blog"]}
       - { name: subcategory, label: Sub-Category, widget: select, 
           options: [
                     {label: "Knowledge - Tutorial", value: "Tutorial"},
@@ -35,6 +35,10 @@ collections:
                     {label: "Review - Free", value: "Free"},
                     {label: "Review - Educational", value: "Educational"},
                     {label: "Review - Books", value: "Books"},
+                    {label: "Review - Sample Instrument", value: "Sample Instrument"},
+                    {label: "Review - Samples", value: "Samples"},
+                    {label: "Review - Presets", value: "Presets"},
+                    {label: "Review - Amp Simulator", value: "Amp Simulator"},
                     {label: "News - New Gear", value: "New Gear"},
                     {label: "News - Music News", value: "Music News"},
                     {label: "News - Obituaries", value: "Obituaries"},

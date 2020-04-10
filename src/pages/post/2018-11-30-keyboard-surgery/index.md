@@ -4,8 +4,8 @@ title: Keyboard Surgery on A Korg SV-1
 author: 'Alex Nye'
 date: '2018-11-30'
 blog: true
-category: 'Story'
-subcategory: ['Gear']
+category: 'Blog'
+subcategory: "Artist's Life"
 company: 'Korg'
 tags: ['korg', 'instrument-repair', 'blog']
 featuredImage: /imgs/KeyboardSurgery.jpg

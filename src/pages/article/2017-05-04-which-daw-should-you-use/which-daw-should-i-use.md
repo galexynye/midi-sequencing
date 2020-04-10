@@ -7,8 +7,8 @@ date: '2019-01-04'
 learn: true
 series: ['basics']
 seriesNumber: {basics: 2}
-category: 'Music Tech'
-subcategory: ['Building a Studio']
+category: 'Knowledge'
+subcategory: 'Basics'
 tags: ['basics', 'software', 'daw']
 featuredImage: /imgs/Daws-20.jpg
 metaDescription: 'Depending on the type of music you make, your DAW can really help or hurt your workflow. This article explores each of the major DAWs flaws and features so you can make an informed decision.'

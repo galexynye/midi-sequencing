@@ -6,8 +6,8 @@ date: '2017-06-17'
 learn: true
 hideDate: true
 featuredImage: /imgs/Bunch-Of-EQs-picture-1.png
-category: 'Mixing'
-subcategory: ['Mixing Basics']
+category: 'Knowledge'
+subcategory: 'Basics'
 tags: ['mixing', 'basics', 'eq']
 metaDescription: 'This article will teach you everything you need to know about using EQ. Mastering EQ will set you on the path to mastering mixing.'
 ---

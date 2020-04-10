@@ -3,8 +3,8 @@ title: Vocal Synth by iZotope
 author: 'Alex Nye'
 date: '2017-05-19'
 blog: true
-category: 'Gear Review'
-subcategory: ['Soft Synths']
+category: 'Reviews'
+subcategory: 'Synth'
 company: 'iZotope'
 tags: ['izotope', 'gear', 'plugins', 'vocals']
 featuredImage: /imgs/VocalSynth1.jpg

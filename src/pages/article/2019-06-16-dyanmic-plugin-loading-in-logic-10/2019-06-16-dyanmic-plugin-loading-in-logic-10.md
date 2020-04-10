@@ -3,8 +3,8 @@ title: Dynamic Plug-In Loading in Logic Pro 10
 author: 'Alex Nye'
 date: '2019-06-16'
 learn: true
-category: 'Studio'
-subcategory: ['Logic']
+category: 'Knowledge'
+subcategory: 'Logic Pro X'
 tags: ['template', 'logic', 'studio', 'daw']
 featuredImage: /imgs/hiding-hidden.png
 metaDescription: 'Explaination of the 5 different types of reverbs, what they sound like, and when to chooose a certain reverb.'

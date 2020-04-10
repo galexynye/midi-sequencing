@@ -4,8 +4,8 @@ title: How to Program Realistic Drum Parts
 author: 'Alex Nye'
 date: '2017-07-06'
 learn: true
-category: 'Producing'
-subcategory: ['Producing Techniques']
+category: 'Knowledge'
+subcategory: "Tutorial"
 tags: ['producing','midi', 'drum-programming', 'drums']
 featuredImage: /imgs/ProgramRealDrumsPic.jpg
 metaDescription: 'Programming great drum parts is an essential skill for producers today. This technique is for those who want to learn to program drums indistinguishable from those played by a real drummer.'

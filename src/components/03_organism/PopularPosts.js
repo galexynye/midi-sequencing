@@ -35,7 +35,7 @@ export class PopularPostsView extends Component {
           <GridItem gCSM="1" gCEM="3">
             <PostCardHomeRecent
               key={post.node.fields.slug}
-              learnOrBlog={post.node.frontmatter.category}
+              learnOrBlog={post.node.frontmatter.subcategory}
               snippet={post.node.excerpt}
               hideDate={true}
               date={post.node.frontmatter.date}
@@ -54,7 +54,7 @@ export class PopularPostsView extends Component {
       return (
         <PostCardHomeRecent
           key={post.node.fields.slug}
-          learnOrBlog={post.node.frontmatter.category}
+          learnOrBlog={post.node.frontmatter.subcategory}
           snippet={post.node.excerpt}
           hideDate={true}
           date={post.node.frontmatter.date}

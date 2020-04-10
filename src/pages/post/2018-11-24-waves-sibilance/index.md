@@ -4,8 +4,8 @@ title: Waves Sibilance Review and Demo
 author: 'Alex Nye'
 date: '2018-11-24'
 blog: true
-category: 'Gear Review'
-subcategory: ['Dynamics']
+category: 'Reviews'
+subcategory: "Compressor"
 company: 'Waves'
 tags: ['gear','deesser', 'waves', 'eq', 'vocal-mixing', 'compression']
 featuredImage: /imgs/WavesSibilance.jpg

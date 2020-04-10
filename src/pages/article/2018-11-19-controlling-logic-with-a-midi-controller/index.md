@@ -5,9 +5,9 @@ author: 'Alex Nye'
 # date: '2018-11-19'
 date: '2019-06-06'
 learn: true
-category: 'Studio'
+category: 'Knowledge'
 categoryDescription: 'Music Making Tech and How to Use It'
-subcategory: ['Logic']
+subcategory: 'Logic Pro X'
 tags: ['studio','midi-controller', 'midi', 'logic']
 featuredImage: /imgs/MidiControllerCCProgramming.jpg
 metaDescription: "Setting up a my midi controller for Logic X was one of the best things I've done to improve my workflow. This article show you to setup your own custom midi mappings for Logic."

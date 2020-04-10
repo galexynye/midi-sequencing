@@ -4,8 +4,8 @@ title: Exhale by Output
 author: 'Alex Nye'
 date: '2017-09-19'
 blog: true
-category: 'Gear Review'
-subcategory: ['Soft Synths']
+category: 'Reviews'
+subcategory: 'Sample Instrument'
 company: 'Output'
 tags: ['output', 'gear']
 featuredImage: /imgs/ExhaleFI.jpg

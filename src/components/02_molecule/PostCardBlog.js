@@ -89,7 +89,7 @@ export class PostCardBlog extends React.PureComponent {
                     img={src}
                     title={title}
                     imgLink={slug}
-                    label={learnOrBlog} // learn or blog is actually the category now
+                    label={subcategory} // learn or blog is actually the category now
                 >
                     <CardHeader
                         text={title} slug={slug}
