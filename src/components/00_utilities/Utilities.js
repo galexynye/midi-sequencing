@@ -80,11 +80,13 @@ export const GridItem = styled.div`
     grid-column-end: ${props => props.gCE || 'auto'};
     grid-row-start: ${props => props.gRS || 'auto'};
     grid-row-end: ${props => props.gRE || 'auto'}; 
+    order: ${props => props.order || 'auto'};    
     ${msTheme.mediaquery().large}{
-        grid-column-start: ${props => props.gCSL || 'auto'};
-        grid-column-end: ${props => props.gCEL || 'auto'};
-        grid-row-start: ${props => props.gRSL || 'auto'};
-        grid-row-end: ${props => props.gREL || 'auto'}; 
+        grid-column-start: ${props => props.gCSL || props.gCS || 'auto'};
+        grid-column-end: ${props => props.gCEL || props.gCE || 'auto'};
+        grid-row-start: ${props => props.gRSL || props.gRS || 'auto'};
+        grid-row-end: ${props => props.gREL || props.gRE || 'auto'}; 
+        order: ${props => props.orderL ? props.orderL : props.order ? props.order : 'auto'};
 
     }
     ${msTheme.mediaquery().medium}{
@@ -92,6 +94,7 @@ export const GridItem = styled.div`
         grid-column-end: ${props => props.gCEM || 'auto'};
         grid-row-start: ${props => props.gRSM || 'auto'};
         grid-row-end: ${props => props.gREM || 'auto'}; 
+        order: ${props => props.orderM ? props.orderM : props.orderL ? props.orderL : props.order ? props.order : 'auto'};
 
     }
     ${msTheme.mediaquery().small}{
@@ -99,9 +102,11 @@ export const GridItem = styled.div`
         grid-column-end: ${props => props.gCES || 'auto'};
         grid-row-start: ${props => props.gRSS || 'auto'};
         grid-row-end: ${props => props.gRES || 'auto'}; 
+        order: ${props => props.orderS ? props.orderS : props.orderM ? props.orderM : props.orderL ? props.orderL : props.order ? props.order : 'auto'};
 
     }
 `
+
 
 // Padding Wrapper - Default Padding is From the Global THEME.
 

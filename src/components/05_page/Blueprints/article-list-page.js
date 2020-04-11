@@ -2,11 +2,11 @@
 // import React from 'react'
 // import Helmet from 'react-helmet'
 // import { Link, graphql } from 'gatsby'
-// import SiteContainer from '../components/05_page/Layout/SiteContainer'
-// import { PageTitle } from '../components/01_atom/PageTitle'
-// import { GridContainer, GridItem } from '../components/00_utilities/Utilities';
-// import { PostCardBlog } from '../components/02_molecule/PostCardBlog';
-// import DawPic from '../assets/LandingCards/Daws-20.jpg'
+// import SiteContainer from '../Layout/SiteContainer'
+// import { PageTitle } from '../../01_atom/PageTitle'
+// import { GridContainer, GridItem } from '../../00_utilities/Utilities';
+// import { PostCardBlog } from '../../02_molecule/PostCardBlog';
+// import DawPic from '../../../assets/LandingCards/Daws-20.jpg'
 
 // class Latest extends React.Component {
 
@@ -14,6 +14,11 @@
 //         const { data } = this.props
 //         let posts = data.allMarkdownRemark.edges
 //         let src
+//         const { currentPage, numPages, pathString } = this.props.pageContext
+//         const isFirst = currentPage === 1
+//         const isLast = currentPage === numPages
+//         const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
+//         const nextPage = (currentPage + 1).toString()
 //         const RecentPostCards = posts.map((post, i) => {
 //             // Checks if no featured image
 //             if (!post.node.frontmatter.featuredImage) {
@@ -25,6 +30,7 @@
 
 
 //             return (
+
 //                 <GridItem >
 //                     <PostCardBlog
 //                         key={post.node.fields.slug}
@@ -47,9 +53,7 @@
 //             )
 
 
-//         })
-
-
+//         }) // End Recent post Cards 
 
 
 //         return (
@@ -60,7 +64,17 @@
 //                 />
 //                 <PageTitle text="Articles" description="Tutorials, Gear Reviews and Other Thoughts"></PageTitle>
 //                 <GridContainer gTC="repeat(3, 1fr)" gTCL="repeat(2, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 20px" className="mT40 mB40">
+
 //                     {RecentPostCards}
+//                     {/* TODO: SYTLE These with GRIDITEM / FLexbox (i think)  */}
+//                     {!isFirst && (
+//                         <Link to={`/${pathString}/${prevPage}`} rel="prev">← Previous Page</Link>
+//                     )}
+//                     {!isLast && (
+//                         <Link to={`/${pathString}/${nextPage}`} rel="next"> Next Page → </Link>
+//                     )}
+//                     {`${currentPage} - current page`}
+//                     {numPages}
 //                 </GridContainer>
 //             </SiteContainer>
 //         )
@@ -72,11 +86,12 @@
 
 
 // export const articleListQuery = graphql`
-//  query articleListQuery($skip: Int!, $limit: Int!) {
+//  query articleListQuery($skip: Int!, $limit: Int!, $category:String) {
 //   allMarkdownRemark(
-//     sort: {fields: frontmatter___date, order: DESC}  
-//     limit: $limit 
-//     skip:$skip
+//       sort: {fields: frontmatter___date, order: DESC}, 
+//       limit: $limit
+//       skip: $skip
+//       filter:{frontmatter: {category: {eq: $category}}}
 //     ) {
 //     edges {
 //       node {
@@ -98,4 +113,4 @@
 //     }
 //   }
 // }
-// `
+//           `

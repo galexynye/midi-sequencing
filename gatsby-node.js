@@ -106,16 +106,37 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }) // End of tag page creation 
 
+
+  // PAGINATION of ARTICLE LISTS 
+  // THIS WORKS ALMOST - Creates Pagination for Article List - here is the the Review pages. DUPLICATE these lines and change category (everywhere it says reviews)
+  // TODO: Need to FILTER the posts by category 
+  // TODO: In the article-list-page.js need style the "Next" and "Previous" buttons
+  /*
+  const postsPerPage = 12
+  const numPages = Math.ceil(posts.length / postsPerPage) // The post here needs filtered
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/reviews` : `/reviews/${i + 1}`,
+      component: path.resolve("./src/components/05_page/Blueprints/article-list-page.js"),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+        pathString: 'reviews', // this is for building the Next and Previous links
+        category: 'Reviews'
+      },
+    })
+  }) // End Pagination of Category
+
+  */
+
 } // End Create Pages
 
 
 
 exports.onCreateNode = ({ node, actions, getNode }) => {  //What happens to every programmatically created page
   const { createNodeField } = actions // extracts createNodeField from actions and names the variable createNodeField
-
-
-
-
 
 
   // Formating pages created from Markdown
