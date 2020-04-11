@@ -69,16 +69,15 @@ class Latest extends React.Component {
 
 export default Latest
 
-// Sorry for the jumble just paste into the graphql editor if confused
 
-export const pageQuery = graphql`
- query {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-  allMarkdownRemark(limit: 2000, sort: {fields: frontmatter___date, order: DESC}) {
+
+export const articleListQuery = graphql`
+ query articleListQuery($skip: Int!, $limit: Int!) {
+  allMarkdownRemark(
+    sort: {fields: frontmatter___date, order: DESC}  
+    limit: $limit 
+    skip:$skip
+    ) {
     edges {
       node {
         excerpt
