@@ -15,7 +15,6 @@ class Latest extends React.Component {
 
     render() {
         const { data } = this.props
-        const siteTitle = data.site.siteMetadata.title
         let posts = data.allMarkdownRemark.edges
         let src
         const RecentPostCards = posts.map((post, i) => {
@@ -62,7 +61,7 @@ class Latest extends React.Component {
             <SiteContainer>
                 <Helmet
                     meta={[{ name: 'description', content: 'Opinions on music gear and other thoughts in the world of music production' }]}
-                    title={`Music Production Blog | ${siteTitle}`}
+                    title={`Music Production Blog | Posts and Opinions about Producing`}
                 />
                 <PageTitle text="Articles" description="Tutorials, Gear Reviews and Other Thoughts"></PageTitle>
                 <GridContainer gTC="repeat(3, 1fr)" gTCL="repeat(2, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 20px" className="mT40 mB40">

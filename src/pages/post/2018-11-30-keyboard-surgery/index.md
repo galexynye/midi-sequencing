@@ -5,7 +5,7 @@ author: 'Alex Nye'
 date: '2018-11-30'
 blog: true
 category: 'Blog'
-subcategory: "Artist's Life"
+subcategory: "Producer's Life"
 company: 'Korg'
 tags: ['korg', 'instrument-repair', 'blog']
 featuredImage: /imgs/KeyboardSurgery.jpg

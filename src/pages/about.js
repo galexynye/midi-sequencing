@@ -16,7 +16,7 @@ class About extends React.Component {
                     meta={[{ name: 'description', content: 'About the Music Sequencing.' }]}
                     title={`About | Music Sequencing`}
                 />
-                <PageTitle text="About Music Sequencing" description="Quality Info About Music Production." ></PageTitle>
+                <PageTitle text="About Music Sequencing" description="A Producer's Life Examined" ></PageTitle>
                 <ArticleContainer margin="0px auto">
                     {/* <h1 className="colorPrimary h1Big">About</h1> */}
                     {/* <div className="mB60">

@@ -42,13 +42,14 @@ exports.createPages = ({ graphql, actions }) => {
         // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges
 
-        // Creates bottom blinks 
+        // Creates bottom links 
         _.each(posts, (post, index) => {
           const previous =
             index === posts.length - 1 ? null : posts[index + 1].node
           const next =
             index === 0 ? null : posts[index - 1].node
 
+          // creates Actual Blog Post Page
           createPage({
             path: post.node.fields.slug,
             component: blogPost,
@@ -83,7 +84,7 @@ exports.createPages = ({ graphql, actions }) => {
         }) // End of tag page creation 
 
 
-        let categories = []  // Tag pages creation
+        let categories = []  // Category pages creation
 
         _.each(posts, edge => { // Iterate through each post, putting all found category into `category`
           if (_.get(edge, 'node.frontmatter.category')) {
@@ -119,10 +120,7 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {  //What happens to every programmatically created page
   const { createNodeField } = actions
 
-  if (
-    node.internal.type === `MarkdownRemark` &&
-    getNode(node.parent).internal.type === `File`
-  ) {
+  if (node.internal.type === `MarkdownRemark` && getNode(node.parent).internal.type === `File`) {
     if (node.frontmatter.slug) {
       createNodeField({
         name: `slug`,
