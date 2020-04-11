@@ -6,15 +6,13 @@ const { createFilePath } = require('gatsby-source-filesystem')
 
 
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
-  return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/components/05_page/Blueprints/blog-post.js')
-    const tagTemplate = path.resolve('./src/components/05_page/Blueprints/tag-page.js')
-    const categoryTemplate = path.resolve('./src/components/05_page/Blueprints/category-page.js')
-    resolve(
-      graphql(
-        `
+  const blogPost = path.resolve('./src/components/05_page/Blueprints/blog-post.js')
+  const tagTemplate = path.resolve('./src/components/05_page/Blueprints/tag-page.js')
+  const categoryTemplate = path.resolve('./src/components/05_page/Blueprints/category-page.js')
+  const result = await graphql(
+    `
           {
             allMarkdownRemark(
               sort: { fields: [frontmatter___date], order: DESC }
@@ -35,85 +33,78 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         `
-      ).then(result => {
-        if (result.errors) {
-          console.log(result.errors)
-          reject(result.errors)
-        }
+  )
 
-        // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
 
-        // Creates bottom links 
-        _.each(posts, (post, index) => {
-          const previous =
-            index === posts.length - 1 ? null : posts[index + 1].node
-          const next =
-            index === 0 ? null : posts[index - 1].node
+  // Create blog posts pages.
+  const posts = result.data.allMarkdownRemark.edges
 
-          // creates Actual Blog Post Page
-          createPage({
-            path: post.node.fields.slug,
-            component: blogPost,
-            context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
-            },
-          })
-        })
+  // Creates bottom links 
+  _.each(posts, (post, index) => {
+    const previous =
+      index === posts.length - 1 ? null : posts[index + 1].node
+    const next =
+      index === 0 ? null : posts[index - 1].node
 
-
-        let tags = []  // Tag pages creation
-
-        _.each(posts, edge => { // Iterate through each post, putting all found tags into `tags`
-          if (_.get(edge, 'node.frontmatter.tags')) {
-            tags = tags.concat(edge.node.frontmatter.tags)
-          }
-        })
-
-        tags = _.uniq(tags) // Eliminate duplicate tags
+    // creates Actual Blog Post Page
+    createPage({
+      path: post.node.fields.slug,
+      component: blogPost,
+      context: {
+        slug: post.node.fields.slug,
+        previous,
+        next,
+      },
+    })
+  })
 
 
-        tags.forEach(tag => { // Make tag pages
-          createPage({
-            path: `/tags/${_.kebabCase(tag)}/`,
-            component: tagTemplate,
-            context: {
-              tag,
-            },
-          })
-        }) // End of tag page creation 
+  let tags = []  // Tag pages creation
+
+  _.each(posts, edge => { // Iterate through each post, putting all found tags into `tags`
+    if (_.get(edge, 'node.frontmatter.tags')) {
+      tags = tags.concat(edge.node.frontmatter.tags)
+    }
+  })
+
+  tags = _.uniq(tags) // Eliminate duplicate tags
 
 
-        let categories = []  // Category pages creation
-
-        _.each(posts, edge => { // Iterate through each post, putting all found category into `category`
-          if (_.get(edge, 'node.frontmatter.category')) {
-            categories = categories.concat(edge.node.frontmatter.category)
-          }
-        })
-
-        categories = _.uniq(categories) // Eliminate duplicate tags
-
-
-        categories.forEach(category => { // Make category pages
-          createPage({
-            path: `/learn/${_.kebabCase(category)}/`,
-            component: categoryTemplate,
-            context: {
-              category,
-            },
-          })
-        }) // End of tag page creation 
+  tags.forEach(tag => { // Make tag pages
+    createPage({
+      path: `/tags/${_.kebabCase(tag)}/`,
+      component: tagTemplate,
+      context: {
+        tag,
+      },
+    })
+  }) // End of tag page creation 
 
 
+  let categories = []  // Category pages creation
 
-      }) // End of Then Function 
+  _.each(posts, edge => { // Iterate through each post, putting all found category into `category`
+    if (_.get(edge, 'node.frontmatter.category')) {
+      categories = categories.concat(edge.node.frontmatter.category)
+    }
+  })
 
-    ) // End Resolve Parameter
+  categories = _.uniq(categories) // Eliminate duplicate tags
 
-  }) // End Of Promise
+
+  categories.forEach(category => { // Make category pages
+    createPage({
+      path: `/learn/${_.kebabCase(category)}/`,
+      component: categoryTemplate,
+      context: {
+        category,
+      },
+    })
+  }) // End of tag page creation 
 
 } // End Create Pages
 
