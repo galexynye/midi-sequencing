@@ -2,6 +2,10 @@
 
 The site tries to follow Atomic Design Principals.
 
+## Flush Cache 
+
+npm run clean
+
 [Atomic Design Book](http://atomicdesign.bradfrost.com/table-of-contents/)
 
 ## This site Architecture

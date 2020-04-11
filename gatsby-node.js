@@ -3,9 +3,11 @@ const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+
+
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/components/05_page/Blueprints/blog-post.js')
     const tagTemplate = path.resolve('./src/components/05_page/Blueprints/tag-page.js')
@@ -109,7 +111,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       }) // End of Then Function 
 
-    ) // End Resolve Function 
+    ) // End Resolve Parameter
 
   }) // End Of Promise
 
@@ -118,10 +120,16 @@ exports.createPages = ({ graphql, actions }) => {
 
 
 exports.onCreateNode = ({ node, actions, getNode }) => {  //What happens to every programmatically created page
-  const { createNodeField } = actions
+  const { createNodeField } = actions // extracts createNodeField from actions and names the variable createNodeField
 
+
+
+
+
+
+  // Formating pages created from Markdown
   if (node.internal.type === `MarkdownRemark` && getNode(node.parent).internal.type === `File`) {
-    if (node.frontmatter.slug) {
+    if (node.frontmatter.slug) { // Changes the Slug Name if the slug is in the front matter (not used by me)
       createNodeField({
         name: `slug`,
         node,
@@ -130,41 +138,45 @@ exports.onCreateNode = ({ node, actions, getNode }) => {  //What happens to ever
       return
     }
 
-    const fileNode = getNode(node.parent)
+    const fileNode = getNode(node.parent) // getNode Gets single node by given ID. 
+
     if (fileNode.sourceInstanceName === 'pages') {
       let slug
+      // Naming the slug from the file names
       if (fileNode.relativeDirectory) {
-        // Removes date stamp in front, it's only useful for arranging our files/folders
-        const paths = fileNode.relativeDirectory.split('/')
-        const directParent = paths.pop()
-        const dateString = directParent.substring(0, 10)
+        const relDir = fileNode.relativeDirectory
+        let fileNameDateRemoved = fileNode.name.substring(11)
+        const dateString = fileNode.name.substring(0, 10) // Removes the dateString         
 
-        if (isNaN(new Date(dateString).valueOf())) {
-          // We'll use the path to the MD file as the slug.
-          // eg: http://localhost:8000/blog/my-first-post
-          slug = `/${fileNode.relativeDirectory}`
-        } else {
-          // Remove the trailing hypen after the dateString
-          slug = `/${paths.join('/')}/${directParent.substring(11)}`
+        if (isNaN(new Date(dateString).valueOf())) { // any markdown files without a date, do not need the date removed
+          if (relDir === 'pages') {
+            slug = `/${fileNode.name}`
+          } else {
+            slug = `/${relDir}/${fileNode.name}`
+          }
+
+        } else
+          if (relDir.split("/")[0] === 'article') { // this is to account for the old system where the slug came from the relative folder name
+            slug = `/article/${fileNameDateRemoved}`
+          } else if (relDir.split('/')[0] === 'post') { // this is to account for the old system where the slug came from the relative folder name
+            slug = `/post/${fileNameDateRemoved}`
+          } else {
+            slug = `/${relDir}/${fileNameDateRemoved}`
+          }
+
+        if (slug) {
+          createNodeField({
+            name: `slug`,
+            node,
+            value: slug,
+          })
         }
-      } else {
-        // If the MD file is at src/pages, we'll use the filename instead.
-        // eg: http://localhost:8000/about
-        slug = `/${fileNode.name}`
-      }
-
-      if (slug) {
-        createNodeField({
-          name: `slug`,
-          node,
-          value: slug,
-        })
-      }
-      if (node.frontmatter.tags) { // if there are tags in the frontmatter, create links to their tag page
-        const tagSlugs = node.frontmatter.tags.map(
-          tag => `/tags/${_.kebabCase(tag)}/`
-        )
-        createNodeField({ node, name: `tagSlugs`, value: tagSlugs })
+        if (node.frontmatter.tags) { // if there are tags in the frontmatter, create links to their tag page
+          const tagSlugs = node.frontmatter.tags.map(
+            tag => `/tags/${_.kebabCase(tag)}/`
+          )
+          createNodeField({ node, name: `tagSlugs`, value: tagSlugs })
+        }
       }
     }
   }
