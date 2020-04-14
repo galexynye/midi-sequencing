@@ -60,18 +60,13 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 27px; z-index: 1; overflow: visible`,
-              // wrapperStyle: `margin-bottom: 1.2rem;`,
             },
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1170,
-              // TODO: Change 1170 to a variable
-              // wrapperStyle: `margin-bottom: 1.0725rem`
-              // wrapperStyle: `margin-bottom: 1.2rem; z-index: -1`,
-              wrapperStyle: `margin-bottom: 27px; z-index: -1`,
-              // wrapperStyle: `margin-bottom: 1.2rem;`,
+              maxWidth: 750, // This needs to be the same as the article width in the Theme. See sytles/theme msTheme.widths.articlewidth
+              wrapperStyle: `margin-bottom: 27px; z-index: -1;`,
             },
           },
 

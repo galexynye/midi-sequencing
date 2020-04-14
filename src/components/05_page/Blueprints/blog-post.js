@@ -6,8 +6,7 @@ import { DiscussionEmbed } from "disqus-react"
 import SiteContainer from '../Layout/SiteContainer'
 import { ArticleContainer } from '../ArticleContainer'
 import { msTheme } from '../../../styles/Theme'
-import { LearnCards } from '../../03_organism/LearnCards';
-import { GridContainer } from '../../00_utilities/Utilities';
+
 import { ShareButtons } from '../../02_molecule/ShareButtons'
 import { PageTitle } from '../../01_atom/PageTitle';
 
