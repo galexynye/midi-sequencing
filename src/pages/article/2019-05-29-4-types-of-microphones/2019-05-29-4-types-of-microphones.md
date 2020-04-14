@@ -104,9 +104,4 @@ Beyond potentially being destroyed by phantom power the characteristics of a rib
 ## Try them All!!!
 
 This article is meant to be an overview of the mic types and what they are generally used for. Experimentation with microphone types and placement is often where you can find the most interesting results. 
-
-If you have any questions or comments you can write down in the forum thread embedeed below. 
-
-#### Consider supporting Music Sequencing by checking out what's in the [store](/store). 
-
-#### If you are interested in improving your producing skills, checkout out what's in the [projects page](/projects).
+s

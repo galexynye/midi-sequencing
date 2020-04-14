@@ -48,7 +48,3 @@ Some of the best sounding reverbs are digital reverbs. Classic models of digital
 Convolution reverb is like a sampler of reverb. By creating a impulse response of a room, plate, spring or digital reverb you can emulate the sound of that reverb in a convolution reverb. 
 
 Because of this you can get any type of reverb sound with a convolution reverb.
-
-#### Consider supporting Music Sequencing by checking out what's in the [store](/store). 
-
-#### If you are interested in improving your producing skills, checkout out what's in the [projects page](/projects).
