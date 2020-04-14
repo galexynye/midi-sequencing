@@ -14,7 +14,7 @@
 //         const { data } = this.props
 //         let posts = data.allMarkdownRemark.edges
 //         let src
-//         const { currentPage, numPages, pathString } = this.props.pageContext
+//         const { currentPage, numPages, pathString, title, subtitle } = this.props.pageContext
 //         const isFirst = currentPage === 1
 //         const isLast = currentPage === numPages
 //         const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
@@ -62,7 +62,7 @@
 //                     meta={[{ name: 'description', content: 'Opinions on music gear and other thoughts in the world of music production' }]}
 //                     title={`Music Production Blog | Posts and Opinions about Producing`}
 //                 />
-//                 <PageTitle text="Articles" description="Tutorials, Gear Reviews and Other Thoughts"></PageTitle>
+//                 <PageTitle text={title ? title : "Articles"} description={subtitle ? subtitle : "Tutorials, Gear Reviews and Other Thoughts"}></PageTitle>
 //                 <GridContainer gTC="repeat(3, 1fr)" gTCL="repeat(2, 1fr)" gTCM="repeat(1, 1fr)" gridGap="20px 20px" className="mT40 mB40">
 
 //                     {RecentPostCards}
@@ -73,8 +73,6 @@
 //                     {!isLast && (
 //                         <Link to={`/${pathString}/${nextPage}`} rel="next"> Next Page → </Link>
 //                     )}
-//                     {`${currentPage} - current page`}
-//                     {numPages}
 //                 </GridContainer>
 //             </SiteContainer>
 //         )

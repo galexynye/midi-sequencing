@@ -1,7 +1,7 @@
 # NETLIFY CMS config file 
 backend:
-  name: test-repo
-  # name: git-gateway
+  # name: test-repo
+  name: git-gateway
 
 media_folder: "static/imgs"
 public_folder: "/imgs"

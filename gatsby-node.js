@@ -106,29 +106,39 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }) // End of tag page creation 
 
-
-  // PAGINATION of ARTICLE LISTS 
-  // THIS WORKS ALMOST - Creates Pagination for Article List - here is the the Review pages. DUPLICATE these lines and change category (everywhere it says reviews)
-  // TODO: Need to FILTER the posts by category 
-  // TODO: In the article-list-page.js need style the "Next" and "Previous" buttons
-  /*
-  const postsPerPage = 12
-  const numPages = Math.ceil(posts.length / postsPerPage) // The post here needs filtered
-  Array.from({ length: numPages }).forEach((_, i) => {
-    createPage({
-      path: i === 0 ? `/reviews` : `/reviews/${i + 1}`,
-      component: path.resolve("./src/components/05_page/Blueprints/article-list-page.js"),
-      context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage,
-        numPages,
-        currentPage: i + 1,
-        pathString: 'reviews', // this is for building the Next and Previous links
-        category: 'Reviews'
-      },
-    })
-  }) // End Pagination of Category
-
+  /* 
+    // DO NOT DELETE - START USING WHEN MANY MORE ARTICLES
+    // PAGINATION of ARTICLE LISTS 
+    // TODO: In the article-list-page.js need style the "Next" and "Previous" buttons
+  
+    // Function to Create Pagination Pages of Article Lists by Category
+    function createArticleListPagesByCategory(postsPerPage, pathString, category, title, subtitle) {
+      const postFiltered = posts.filter(post => post.node.frontmatter.category === category)
+      const numPages = Math.ceil(postFiltered.length / postsPerPage)
+      Array.from({ length: numPages }).forEach((_, i) => {
+        createPage({
+          path: i === 0 ? `/${pathString}` : `/${pathString}/${i + 1}`,
+          component: path.resolve("./src/components/05_page/Blueprints/article-list-page.js"),
+          context: {
+            limit: postsPerPage,
+            skip: i * postsPerPage,
+            numPages,
+            currentPage: i + 1,
+            pathString, //For building the Next and Previous links
+            category, // Category from Frontmatter, Filters on the Article List Template graphql query
+            title,
+            subtitle
+          },
+        })
+      }) // End Pagination of Category
+    }
+  
+    // Creation of Article List Pages with Pagination
+    createArticleListPagesByCategory(12, 'knowledge', 'Knowledge', 'Knowledge', 'Learn Stuff About Music Production')
+    createArticleListPagesByCategory(12, 'reviews', 'Reviews', 'Humble Gear Reviews', 'The Latest and Greatest Gear IMHO')
+    // TODO: The blog page needs to be removed before adding creating these pages
+    // createArticleListPagesByCategory(12, 'blog', 'Blog', "A Producer's Life IMHO", 'Writings and Ramblings About Music Stuff')
+  
   */
 
 } // End Create Pages
@@ -158,7 +168,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {  //What happens to ever
       if (fileNode.relativeDirectory) {
         const relDir = fileNode.relativeDirectory
         let fileNameDateRemoved = fileNode.name.substring(11)
-        const dateString = fileNode.name.substring(0, 10) // Removes the dateString         
+        const dateString = fileNode.name.substring(0, 10) // For testing if date in the file or directory name     
 
         if (isNaN(new Date(dateString).valueOf())) { // any markdown files without a date, do not need the date removed
           if (relDir === 'pages') {
@@ -166,15 +176,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {  //What happens to ever
           } else {
             slug = `/${relDir}/${fileNode.name}`
           }
-
-        } else
-          if (relDir.split("/")[0] === 'article') { // this is to account for the old system where the slug came from the relative folder name
-            slug = `/article/${fileNameDateRemoved}`
-          } else if (relDir.split('/')[0] === 'post') { // this is to account for the old system where the slug came from the relative folder name
-            slug = `/post/${fileNameDateRemoved}`
-          } else {
-            slug = `/${relDir}/${fileNameDateRemoved}`
-          }
+          // DO NOT CREATE ANY MORE POSTS INSIDE OF FOLDERS UNLESS IN 'article' or 'post' FOLDERS        
+        } else if (relDir.split("/")[0] === 'article') { // this is to account for the old system where the slug came from the relative folder name
+          slug = `/article/${fileNameDateRemoved}`
+        } else if (relDir.split('/')[0] === 'post') { // this is to account for the old system where the slug came from the relative folder name
+          slug = `/post/${fileNameDateRemoved}`
+        } else {
+          slug = `/${relDir}/${fileNameDateRemoved}`
+        }
 
         if (slug) {
           createNodeField({
@@ -183,6 +192,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {  //What happens to ever
             value: slug,
           })
         }
+
         if (node.frontmatter.tags) { // if there are tags in the frontmatter, create links to their tag page
           const tagSlugs = node.frontmatter.tags.map(
             tag => `/tags/${_.kebabCase(tag)}/`
