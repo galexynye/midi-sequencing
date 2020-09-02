@@ -12,6 +12,7 @@ import { SidebarMobileNav } from '../../04_template/SideBarMobileNav'
 import favicon from '../../../assets/midi-sequencing-icon-circle.png'
 
 // Global Styling & Utility Classes
+// relocate global styles
 
 const SiteContainerStyle = styled.div`
     position: relative;
