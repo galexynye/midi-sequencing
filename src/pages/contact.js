@@ -85,7 +85,7 @@ export default class contact extends PureComponent {
         })
     }
 
-    _verifyHuman = () => {
+    _verifyHuman = () => { // this should be async function that triggers a lambda on the backend to verify the captcha. then once the response is valid, set to true.
         this.setState({
             recaptcha: true
         })

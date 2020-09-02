@@ -2,7 +2,6 @@
 path: '/article/controlling-logic-with-a-midi-controller'
 title: Controlling Logic X with A Midi Controller
 author: 'Alex Nye'
-# date: '2018-11-19'
 date: '2019-06-06'
 learn: true
 category: 'Knowledge'

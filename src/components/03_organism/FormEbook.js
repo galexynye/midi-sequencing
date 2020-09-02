@@ -115,15 +115,11 @@ export class FormEbook extends React.PureComponent {
 
         return (
             <FormEbookContainer titleHeight={titleHeight} >
-
                 {title && <Title title={title} subtitle={subtitle} marginTitle={marginTitle} fontSize={fontSize} fontSizeSmall={fontSizeSmall} lineHeight={lineHeight} lineHeightSmall={lineHeightSmall} color={color} subColor={subColor} />}
-
-
                 {this.state.showForm && EbookFormInteraction}
                 {this.state.loading && <Loading text="Sending..." textColor="white" />}
                 {this.state.success && <Message title="Success!" colorHeader={msTheme.colors.greenlight} colorMessage="white" message="Your Ebook download link is on the way :)" />}
                 {this.state.error && Oops}
-
             </FormEbookContainer>
         )
     }
