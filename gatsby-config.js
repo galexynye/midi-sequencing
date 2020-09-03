@@ -22,6 +22,13 @@ module.exports = {
         name: 'pages',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'images',
+      },
+    },
     //Note: I have excluded tag pages in the gatsby sitemap plugin via inside the node modules - see here under options for how / why https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/
     // `gatsby-plugin-sitemap`,
     {
