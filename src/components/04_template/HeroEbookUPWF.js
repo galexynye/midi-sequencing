@@ -38,7 +38,6 @@ const BackgroundSection = () => (
         childImageSharp {
         fluid(quality: 100, maxWidth: 1920){
             base64
-            tracedSVG
             aspectRatio
             sizes
             src
