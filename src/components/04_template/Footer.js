@@ -37,44 +37,10 @@ export const Footer = props => {
             </WidthWrapper>
 
             <PaddingWrapper padding="30px 0px 0px 0px">
-                <FlexboxOrganism><p >©2020 Alex Nye</p></FlexboxOrganism>
+                <FlexboxOrganism><p >©2021 Alex Nye</p></FlexboxOrganism>
             </PaddingWrapper>
 
         </FooterStyle >
     )
 }
 
-
-
-
-
-// Old Footer Stuff
-{/* <PaddingWrapper padding="0px 0px 20px 0px">
-                <GridContainer gTCM="1fr" gridGap="10px 60px">
-                    <CardTopTitle title="Ultimate Producer's Workflow" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
-                    <CardTopTitle title="Want to try lessons?" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
-                    <CardTopTitle title="Join the Forums" fontSize="20px" color="white" lineHeight="25px" breakPoint={msTheme.breakPoints.large} />
-
-                    <GridItem gCSL="1" gCEL="3" alignSelf="end">
-                        <SimpleCard topTitle="Ultimate Producer's Workflow" imgHeight="0px" topTitleColor="white" topTitleBreakPoint={msTheme.breakPoints.large} >
-                            <FormEbook />
-                        </SimpleCard>
-                    </GridItem>
-
-                    <GridItem alignSelf="end">
-                        <SimpleCard imgHeight="0px" topTitle="Want to try lessons?" topTitleColor="white" topTitleBreakPoint={msTheme.breakPoints.large}>
-                            <p>Learning alone is hard. I offer music lessons over the internet.</p>
-                            <ButtonCTA text="Read About Lessons" to="/learn#lessons" bgColor={msTheme.colors.primary} color="white" />
-                        </SimpleCard>
-                    </GridItem>
-
-                    <GridItem alignSelf="end">
-                        <SimpleCard imgHeight="0px" topTitle="Join the Forums" topTitleColor="white" topTitleBreakPoint={msTheme.breakPoints.large}>
-
-                            <p>Jump in, talk about music, make friends, and everyone learns.</p>
-                            <ButtonCTA href="https://forum.musicsequencing.com" text="Go to Forums" bgColor={msTheme.colors.primary} color="white" />
-
-                        </SimpleCard>
-                    </GridItem>
-                </GridContainer>
-            </PaddingWrapper> */}

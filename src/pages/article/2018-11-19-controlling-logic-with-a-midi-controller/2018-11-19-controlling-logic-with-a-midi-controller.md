@@ -135,8 +135,3 @@ Step 4. While Learn Mode is pressed, move the fader or knob on your midi control
 
 Step 5. Close the menu or Start from Step 2 and move something else like a pan or a send to set it up.
 
-## Additional Info
-
-You might have quite a bit of fiddling around until you find what fits your workflow or if using a controller works for you at all.
-
-If you would like additional help or have any suggestions feel free to contact me. Anyone interested in 1-On-1 lessons in music production, theory and technology please checkout out <a href="/learn#lessons">lessons on the learn page</a> for more details.

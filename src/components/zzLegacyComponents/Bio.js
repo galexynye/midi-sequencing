@@ -16,7 +16,7 @@ class Bio extends React.Component {
   render() {
     return (
       <BioWrapper>
-        <p>Gear Reviews, Tutorials, and 1-on-1 Lessons</p>
+        <p>Gear Reviews, Tutorials, and guides.</p>
       </BioWrapper>
     )
   }

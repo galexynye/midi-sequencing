@@ -27,7 +27,7 @@ class Privacy extends React.PureComponent {
                     <h2>Private Forever</h2>
                     <p>Giving your email to get an ebook is strictly between you and me. When you send your email to me, Alex Nye, through Music Sequencing, it will hang out safely encrypted with all the other emails on the list.</p>
                     <h2>How will you use my email?</h2>
-                    <p>As of today, January 22nd 2020, I have never sent an email to anyone on the list. It's only used to send a download link for my free eBook, "<Link to="/ultimate-producers-workflow">The Ultimate Producer's Workflow</Link>".
+                    <p>As of today, February 6th 2021, I have never sent an email to anyone on the list. It's only used to send a download link for my free eBook, "<Link to="/ultimate-producers-workflow">The Ultimate Producer's Workflow</Link>".
                         I plan on making major improvements to the book and after I write a new edition I will be emailing those who got it to let them know.
                     </p>
 

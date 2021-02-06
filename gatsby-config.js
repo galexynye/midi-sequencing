@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Music Sequencing',
     author: 'Alex Nye',
-    description: 'Learn Music Production: Free Tutorials, Gear Reviews and Private Lessons',
+    description: 'Learn Music Production: Free Tutorials and Gear Reviews',
     siteUrl: 'https://www.musicsequencing.com',
   },
   pathPrefix: '/',
