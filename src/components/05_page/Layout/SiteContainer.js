@@ -336,7 +336,8 @@ class SiteContainer extends React.Component {
                         },
                     ]}
                 >
-                    <script data-ad-client="ca-pub-1072293802998054" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    {/* <script data-ad-client="ca-pub-1072293802998054" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> */}
+                    <script data-ad-client="ca-pub-2453273922552091" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 </Helmet>
                 <GlobalStyle />
                 <SidebarMobileNav mobileMenuOpen={this.state.mobileMenuOpen} toggleMobileMenu={this._toggleMobileMenu} />
